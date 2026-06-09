@@ -25,38 +25,38 @@ wheels = [
 
 [[package]]
 name = "bitgn-api-connectrpc-python"
-version = "0.10.0.1.20260528115439+d3855da61ce2"
+version = "0.10.1.1.20260609131003+ed9edb653ac2"
 source = { registry = "https://buf.build/gen/python" }
 dependencies = [
     { name = "bitgn-api-protocolbuffers-python" },
     { name = "connectrpc" },
 ]
 wheels = [
-    { url = "https://buf.build/gen/python/bitgn-api-connectrpc-python/bitgn_api_connectrpc_python-0.10.0.1.20260528115439+d3855da61ce2-py3-none-any.whl", upload-time = "2026-05-28T11:54:39Z" },
+    { url = "https://buf.build/gen/python/bitgn-api-connectrpc-python/bitgn_api_connectrpc_python-0.10.1.1.20260609131003+ed9edb653ac2-py3-none-any.whl", upload-time = "2026-06-09T13:10:03Z" },
 ]
 
 [[package]]
 name = "bitgn-api-protocolbuffers-pyi"
-version = "35.0.0.1.20260528115439+d3855da61ce2"
+version = "35.0.0.1.20260609131003+ed9edb653ac2"
 source = { registry = "https://buf.build/gen/python" }
 dependencies = [
     { name = "protobuf" },
     { name = "types-protobuf" },
 ]
 wheels = [
-    { url = "https://buf.build/gen/python/bitgn-api-protocolbuffers-pyi/bitgn_api_protocolbuffers_pyi-35.0.0.1.20260528115439+d3855da61ce2-py3-none-any.whl", upload-time = "2026-05-28T11:54:39Z" },
+    { url = "https://buf.build/gen/python/bitgn-api-protocolbuffers-pyi/bitgn_api_protocolbuffers_pyi-35.0.0.1.20260609131003+ed9edb653ac2-py3-none-any.whl", upload-time = "2026-06-09T13:10:03Z" },
 ]
 
 [[package]]
 name = "bitgn-api-protocolbuffers-python"
-version = "35.0.0.1.20260528115439+d3855da61ce2"
+version = "35.0.0.1.20260609131003+ed9edb653ac2"
 source = { registry = "https://buf.build/gen/python" }
 dependencies = [
     { name = "bitgn-api-protocolbuffers-pyi" },
     { name = "protobuf" },
 ]
 wheels = [
-    { url = "https://buf.build/gen/python/bitgn-api-protocolbuffers-python/bitgn_api_protocolbuffers_python-35.0.0.1.20260528115439+d3855da61ce2-py3-none-any.whl", upload-time = "2026-05-28T11:54:39Z" },
+    { url = "https://buf.build/gen/python/bitgn-api-protocolbuffers-python/bitgn_api_protocolbuffers_python-35.0.0.1.20260609131003+ed9edb653ac2-py3-none-any.whl", upload-time = "2026-06-09T13:10:03Z" },
 ]
 
 [[package]]
@@ -75,8 +75,8 @@ dependencies = [
 [package.metadata]
 requires-dist = [
     { name = "annotated-types", specifier = ">=0.7.0" },
-    { name = "bitgn-api-connectrpc-python", specifier = "==0.10.0.1.20260528115439+d3855da61ce2" },
-    { name = "bitgn-api-protocolbuffers-python", specifier = "==35.0.0.1.20260528115439+d3855da61ce2" },
+    { name = "bitgn-api-connectrpc-python", specifier = "==0.10.1.1.20260609131003+ed9edb653ac2" },
+    { name = "bitgn-api-protocolbuffers-python", specifier = "==35.0.0.1.20260609131003+ed9edb653ac2" },
     { name = "openai", specifier = ">=2.26.0" },
     { name = "protobuf", specifier = ">=7.35.0" },
     { name = "pydantic", specifier = ">=2.12.5" },
@@ -102,15 +102,15 @@ wheels = [
 
 [[package]]
 name = "connectrpc"
-version = "0.10.0"
+version = "0.10.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "protobuf" },
     { name = "pyqwest" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/03/21/bb02a054348901d90d98a680864b2a97b6a89bd33285632821d3a1864e5a/connectrpc-0.10.0.tar.gz", hash = "sha256:44f89b70abae9f8192883e79e8a3317bdca555036ed3bd4a20f398c0bac7162f", size = 46893, upload-time = "2026-04-28T16:07:16.921Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/93/11/adb3ab104282202000b1c98213c70c7068d76917d9f17c83b818e3d212c1/connectrpc-0.10.1.tar.gz", hash = "sha256:eaf093a4f0d1b9c854c71839083ed5242a551100e99cf52e3cc5e35663f2a5ea", size = 47043, upload-time = "2026-05-29T02:19:57.2Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/6e/80/c701d8ea2013b32696d96ad76f841e7ce61bfb092a7d5dc823a15d87115c/connectrpc-0.10.0-py3-none-any.whl", hash = "sha256:fedaf5abb8c90ab69662958b88f23f4cc18b7a0b0359401d8e5776ccfceefc38", size = 64007, upload-time = "2026-04-28T16:07:15.59Z" },
+    { url = "https://files.pythonhosted.org/packages/cf/67/49a6a2d1d0ee04b4d96410d12c751a44437a9bdf4991d7b88fa5c231c0d2/connectrpc-0.10.1-py3-none-any.whl", hash = "sha256:6e965625bbc4b185532bd98e4919528bea6d1c24619b6dba416d0dfafc10e344", size = 64120, upload-time = "2026-05-29T02:19:55.991Z" },
 ]
 
 [[package]]

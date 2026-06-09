@@ -1,0 +1,87 @@
+syntax = "proto3";
+// Provides the Agentic OS API for one BitGN agent runtime trial.
+package bitgn.vm.agentos;
+
+option go_package = "bitgn.com/harness/v2/api/agentos;agentos";
+
+// AICODE-NOTE: AgentOSRuntime is the reusable Agentic OS candidate surface: a
+// text-first operating surface for agents where files, commands, policies,
+// business systems, and evidence sit behind one deterministic command API.
+
+// ExecRequest invokes one runtime-owned executable such as `/bin/tree`,
+// `/bin/cat`, `/bin/rg`, `/bin/payments`, or `/bin/answer`.
+//
+// This is not host process execution. The runtime resolves `path` inside the
+// trial virtual filesystem and dispatches a deterministic command handler with
+// no ambient host filesystem, network, clock, environment, or shell expansion.
+//
+// The Agentic OS boundary is intentionally text-first because LLM agents reason
+// through text transcripts. Binary artifacts should be represented as read-only
+// virtual files or blob handles, then converted to text through commands such as
+// `/bin/file`, `/bin/pdf text`, `/bin/image describe`, or `/bin/ocr`.
+message ExecRequest {
+  // Absolute path to an executable file in the runtime filesystem.
+  //
+  // Examples:
+  //
+  //   /bin/tree
+  //   /bin/cat
+  //   /bin/rg
+  //   /bin/date
+  //   /bin/sql
+  //   /bin/checkout
+  //   /bin/payments
+  //   /bin/answer
+  string path = 1;
+
+  // Command arguments after argv[0]. The runtime must not parse these through a
+  // host shell; clients pass already-tokenized arguments.
+  repeated string args = 2;
+
+  // UTF-8 stdin supplied to the command. Large binary artifacts should be passed
+  // by virtual path or content-addressed blob reference instead of inlining
+  // bytes into the agent transcript.
+  string stdin = 3;
+}
+
+// ExecResponse is deliberately terminal-shaped: commands communicate normal
+// results through stdout, user-actionable failures through stderr + non-zero
+// exit_code, and transport/runtime faults through the RPC error channel.
+message ExecResponse {
+  // Process-style exit status. Zero means the command completed successfully.
+  int32 exit_code = 1;
+
+  // UTF-8 stdout emitted by the command.
+  string stdout = 2;
+
+  // UTF-8 stderr emitted by the command.
+  string stderr = 3;
+}
+
+// buf:lint:ignore SERVICE_SUFFIX
+// Agentic OS runtime for one concrete evaluation trial.
+//
+// Agentic OS is a text-first operating surface for agents. It lets external
+// agents such as Codex solve business scenarios by using files, tools, policies,
+// and evidence through one deterministic command interface.
+//
+// PAC1 and ECOM1 exposed filesystem, context, mutation, and answer operations as
+// typed RPCs while gradually moving domain actions behind `/bin/*` tools. This
+// API pushes that direction to the end: the stable public API is only Exec,
+// while the runtime owns command contracts inside the virtual filesystem.
+//
+// Expected command families include:
+//
+//   /bin/tree, /bin/ls, /bin/cat, /bin/rg, /bin/find, /bin/stat
+//   /bin/write, /bin/rm, /bin/mkdir, /bin/mv
+//   /bin/date, /bin/id, /bin/sql, domain-specific /bin/* action tools
+//   /bin/answer
+//
+// `/bin/answer` should be the terminal submission command. The draft convention
+// is that a successful answer command atomically creates `/run/answer.json` with
+// fields such as `message`, `outcome`, and `refs`, and rejects a second
+// successful submission. The evaluator can then grade the same virtual
+// filesystem/event state that every other command mutates.
+service AgentOSRuntime {
+  rpc Exec(ExecRequest) returns (ExecResponse);
+}
