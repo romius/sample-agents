@@ -1,0 +1,438 @@
+{
+  "scope": "Exact function and main-loop guard extraction; excludes forced-report call, routing, action processing, SDK host retry and live inference. Not whole-agent success evidence.",
+  "sources": {
+    "research/ecom1/2026-10-23-stack-e-record-review/upstream/readable.py": {
+      "sha256": "d6ae7201e116520be92f1e81f83a15644a167eb4003c32c0026f905d27d884eb",
+      "bytes": 145858
+    },
+    "research/ecom1/2026-10-22-record-integration/readable.py": {
+      "sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d",
+      "bytes": 154813
+    }
+  },
+  "lookup_cases": [
+    {
+      "case": "missing-executable",
+      "tool": "exec",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "record": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found",
+            "message": "runtime tool not found: not found"
+          }
+        },
+        "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+      },
+      "donor": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found",
+            "message": "runtime tool not found: not found"
+          }
+        },
+        "unavailable_tool": "/bin/example",
+        "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+      }
+    },
+    {
+      "case": "missing-payment",
+      "tool": "exec",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"payment not found\"}",
+      "record": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found",
+            "message": "payment not found"
+          }
+        },
+        "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+      },
+      "donor": null
+    },
+    {
+      "case": "missing-exec-generic",
+      "tool": "exec",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\"}",
+      "record": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found"
+          }
+        },
+        "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+      },
+      "donor": null
+    },
+    {
+      "case": "delete-404",
+      "tool": "delete",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"delete failed: not found\"}",
+      "record": null,
+      "donor": {
+        "delete_error": {
+          "status": 404,
+          "detail": "{\"code\":\"not_found\",\"message\":\"delete failed: not found\"}"
+        },
+        "outcome_unconfirmed": true,
+        "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+      }
+    },
+    {
+      "case": "delete-malformed-404",
+      "tool": "delete",
+      "error": "BitGN HTTP 404: {}",
+      "record": null,
+      "donor": {
+        "delete_error": {
+          "status": 404,
+          "detail": "{}"
+        },
+        "outcome_unconfirmed": true,
+        "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+      }
+    },
+    {
+      "case": "read-404",
+      "tool": "read",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\"}",
+      "record": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found"
+          }
+        },
+        "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+      },
+      "donor": {
+        "lookup_error": {
+          "status": 404,
+          "code": "not_found",
+          "detail": {
+            "code": "not_found"
+          }
+        },
+        "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+      }
+    },
+    {
+      "case": "write-404",
+      "tool": "write",
+      "error": "BitGN HTTP 404: {\"code\":\"not_found\"}",
+      "record": null,
+      "donor": null
+    },
+    {
+      "case": "wrong-code",
+      "tool": "exec",
+      "error": "BitGN HTTP 404: {\"code\":\"denied\",\"message\":\"runtime tool not found\"}",
+      "record": null,
+      "donor": null
+    },
+    {
+      "case": "malformed",
+      "tool": "exec",
+      "error": "BitGN HTTP 404: bad json",
+      "record": null,
+      "donor": null
+    },
+    {
+      "case": "permission",
+      "tool": "exec",
+      "error": "BitGN HTTP 403: denied",
+      "record": {
+        "lookup_error": {
+          "status": "403",
+          "detail": "denied"
+        },
+        "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+      },
+      "donor": {
+        "lookup_error": {
+          "status": "403",
+          "detail": "denied"
+        },
+        "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+      }
+    },
+    {
+      "case": "server",
+      "tool": "exec",
+      "error": "BitGN HTTP 500: unavailable",
+      "record": null,
+      "donor": null
+    },
+    {
+      "case": "unknown",
+      "tool": "exec",
+      "error": "database is locked",
+      "record": null,
+      "donor": null
+    }
+  ],
+  "retry_cases": [
+    {
+      "error": "HTTP 503 unavailable",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        }
+      }
+    },
+    {
+      "error": "HTTP 503 unavailable",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 9,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 3,
+          "success": false,
+          "raised": "HTTP 503 unavailable"
+        }
+      }
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        }
+      }
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 9,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 3,
+          "success": false,
+          "raised": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out"
+        }
+      }
+    },
+    {
+      "error": "HTTP 429 timeout",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "HTTP 429 timeout"
+        }
+      }
+    },
+    {
+      "error": "HTTP 429 timeout",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "HTTP 429 timeout"
+        }
+      }
+    },
+    {
+      "error": "HTTP 400 connection",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "HTTP 400 connection"
+        }
+      }
+    },
+    {
+      "error": "HTTP 400 connection",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "HTTP 400 connection"
+        }
+      }
+    },
+    {
+      "error": "database is locked",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "database is locked"
+        }
+      }
+    },
+    {
+      "error": "database is locked",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "database is locked"
+        }
+      }
+    },
+    {
+      "error": "cancelled",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "cancelled"
+        }
+      }
+    },
+    {
+      "error": "cancelled",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 1,
+          "success": false,
+          "raised": "cancelled"
+        }
+      }
+    }
+  ],
+  "conclusion": "Do not stack MSR inside the existing main-loop all-exception retry guard. A main request may otherwise be attempted nine times before the separate forced report. Preserve narrow Exec missing-executable semantics; add unconfirmed Delete recovery independently; neither lookup recovery retries a mutation."
+}
