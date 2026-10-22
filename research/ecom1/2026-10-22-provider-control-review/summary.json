@@ -1,0 +1,160 @@
+{
+  "source_sha256": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "pydantic_monty": "1.2.0",
+  "old_job": {
+    "author": "romius",
+    "cancellation": null,
+    "created_at": "2026-10-22T08:56:42.440184+00:00",
+    "document": "d2499",
+    "error": null,
+    "finished_at": "2026-10-22T12:56:18.237599+00:00",
+    "id": "jd8713c77f6ab4a0e9f67bcd614d8d2e9",
+    "name": "romius d1857 + existence + 3DS integration full100",
+    "path": "experiments/2026-10-22T0851Z-romius-existence-3ds-integration/agent.py",
+    "queue": "normal",
+    "result_available": true,
+    "revision": 1,
+    "run_id": "run-22rF1LE4MzDb7NdkS8z8vcLjX",
+    "sdk_version": "0.3.6",
+    "session": "s3226",
+    "source_blob": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+    "started_at": "2026-10-22T12:40:11.360930+00:00",
+    "state": "completed",
+    "summary_blob": "c62aa8b8483b9ee1508cb432ee5b7579177b2f8686815ecd6985d63ca8170e5b",
+    "trial_count": 100,
+    "workspace": "w1"
+  },
+  "new_job": {
+    "author": "aiweapps_agent",
+    "cancellation": null,
+    "created_at": "2026-10-22T15:20:01.173721+00:00",
+    "document": "d2499",
+    "error": null,
+    "finished_at": "2026-10-22T22:21:17.197497+00:00",
+    "id": "je58047e416f64e06bcec3ba91d7ef733",
+    "name": "aiweapps exact d2499r1 provider-change control DeepInfra BF16 full100",
+    "path": "experiments/2026-10-22T0851Z-romius-existence-3ds-integration/agent.py",
+    "queue": "normal",
+    "result_available": true,
+    "revision": 1,
+    "run_id": "run-22rJLA8nTWyVkAnedEf6YowYD",
+    "sdk_version": "0.3.7",
+    "session": "s5078",
+    "source_blob": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+    "started_at": "2026-10-22T20:53:33.682139+00:00",
+    "state": "completed",
+    "summary_blob": "2f359eb040098cbf70ef4094f6c097738e61d9126c89d0ffc9fd692da3a6fac3",
+    "trial_count": 100,
+    "workspace": "w1"
+  },
+  "old_official_score": "0.83099496",
+  "new_official_score": "0.780781",
+  "delta_points": "-5.02139600",
+  "official_record": "0.9012601",
+  "promotion": false,
+  "old_trial_grade_sum": "83.09949513",
+  "new_trial_grade_sum": "78.07809275",
+  "note": "Official run scores are authoritative; sums of individually rounded trial grades differ slightly.",
+  "new_full_credit": 74,
+  "new_zeros": 21,
+  "new_partials": 5,
+  "zero_categories": {
+    "inference_timeout": [
+      "t003",
+      "t045",
+      "t056",
+      "t059"
+    ],
+    "catalogue_reference_mismatch": [
+      "t022",
+      "t027",
+      "t042",
+      "t062",
+      "t065"
+    ],
+    "ambiguous_SKU_false_OK": [
+      "t001",
+      "t061"
+    ],
+    "crosslist_outcome_or_export": [
+      "t016",
+      "t036",
+      "t076"
+    ],
+    "receipt_denied_security": [
+      "t023"
+    ],
+    "file_change_mismatch": [
+      "t038",
+      "t039",
+      "t060"
+    ],
+    "count_answer": [
+      "t047"
+    ],
+    "inventory_export": [
+      "t091"
+    ],
+    "security_false_OK": [
+      "t093"
+    ]
+  },
+  "same_instruction_tasks": [
+    "t070",
+    "t071",
+    "t081",
+    "t083",
+    "t086",
+    "t087"
+  ],
+  "changed_instructions": 94,
+  "instruction_pairing_limit": "Six exact instruction matches all score1 in both; world files, policies, identities and provider outputs not proved identical. No fully paired causal comparison.",
+  "failures": [
+    {
+      "task_id": "t003",
+      "trace": {
+        "blob": "1b877706c262f917fd1ea4cf30946552e056dab40262ba58d6ba1d341cfbd533",
+        "bytes": 82498,
+        "scope": "trial-3",
+        "sealed": true
+      },
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 944, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=2048,reasoning={'effort':'medium'},temperature=0);choice=response['choices'][0];content=choice['message'].get('content')or''\n             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out"
+    },
+    {
+      "task_id": "t045",
+      "trace": {
+        "blob": "283e2f4862b9b2bbe7d1e52a0012be5d5ab97094d7357945117f7087835ec550",
+        "bytes": 117776,
+        "scope": "trial-45",
+        "sealed": true
+      },
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 944, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=2048,reasoning={'effort':'medium'},temperature=0);choice=response['choices'][0];content=choice['message'].get('content')or''\n             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out"
+    },
+    {
+      "task_id": "t056",
+      "trace": {
+        "blob": "a33b14bd8b2fbdb7e2f52e03151e24e9cda62f73a6ce523c2729da42ee7d9037",
+        "bytes": 733230,
+        "scope": "trial-56",
+        "sealed": true
+      },
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 944, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=2048,reasoning={'effort':'medium'},temperature=0);choice=response['choices'][0];content=choice['message'].get('content')or''\n             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out"
+    },
+    {
+      "task_id": "t059",
+      "trace": {
+        "blob": "0f8990b7deba00eba664b85f9a25dbda22a3dfa4672ae6187b6a661d7fe6579d",
+        "bytes": 116749,
+        "scope": "trial-59",
+        "sealed": true
+      },
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 944, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=2048,reasoning={'effort':'medium'},temperature=0);choice=response['choices'][0];content=choice['message'].get('content')or''\n             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out"
+    }
+  ],
+  "old_reported_cost": "0.66980710",
+  "new_reported_cost": "0.072922019",
+  "old_unknown_cost_calls": 0,
+  "new_unknown_cost_calls": 4,
+  "limitations": "Same source bytes, changed provider Cerebras FP16→DeepInfra BF16 and SDK0.3.6→0.3.7, 94 changed instructions, time/load and generated worlds. No code fix or isolated provider causal effect. All100 result rows reviewed; complete traces not exhaustively read. Four failure selected trace events and all100 StartTrial instructions inspected."
+}

@@ -1,0 +1,79 @@
+{
+  "status": "passed",
+  "source_sha256": "aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1",
+  "guards": [
+    "MSR",
+    "recoverable_lookup_error"
+  ],
+  "current_readable_sha256": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41",
+  "current_guard_AST_equal": true,
+  "cases": [
+    {
+      "task": "t003",
+      "permanent": false,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t003",
+      "permanent": true,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t045",
+      "permanent": false,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t045",
+      "permanent": true,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t056",
+      "permanent": false,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t056",
+      "permanent": true,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t059",
+      "permanent": false,
+      "attempts": 3,
+      "identical_requests": true
+    },
+    {
+      "task": "t059",
+      "permanent": true,
+      "attempts": 3,
+      "identical_requests": true
+    }
+  ],
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "native_pass": true,
+  "old_Exec404_recovery": {
+    "lookup_error": {
+      "status": 404,
+      "code": "not_found",
+      "detail": {
+        "code": "not_found",
+        "message": "runtime tool not found: not found"
+      }
+    },
+    "unavailable_tool": "/bin/ls",
+    "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+  },
+  "limitation": "Simulated inference recovery only. Three agent-level attempts are not a guarantee of three provider attempts under SDK host retries. No live recovery, later-task completion or score effect established."
+}
