@@ -10,7 +10,7 @@ SOURCE = P.parent / '2026-10-23-stack-e-record-review/upstream'
 parent = (SOURCE / 'readable.py').read_text()
 packed = (SOURCE / 'agent.py').read_bytes()
 assert hashlib.sha256(packed).hexdigest() == '56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c'
-pattern = r'(?im)^[ \t]*#[# \t]*scanline[ \t]*#[# \t]*(?=total requested (?:lines|units):[ \t]*[0-9]+[ \t]*$)'
+pattern = '(?m)^[ \\t]*#[# \\t]*[sS][cC][aA][nN][lL][iI][nN][eE][ \\t]*#[# \\t]*(?=[tT][oO][tT][aA][lL] [rR][eE][qQ][uU][eE][sS][tT][eE][dD] (?:[lL][iI][nN][eE][sS]|[uU][nN][iI][tT][sS]):[ \\t]*[0-9]+[ \\t]*$)'
 old = 'def crosslist_parse_ocr(text):\n    text = crosslist_text(text)\n'
 new = old + '    text = re.sub(' + repr(pattern) + ", '', text)\n"
 assert parent.count(old) == 1

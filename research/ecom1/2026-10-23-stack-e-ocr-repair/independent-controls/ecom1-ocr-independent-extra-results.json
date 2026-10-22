@@ -1,0 +1,846 @@
+{
+  "scope": "independent unrelated two-row OCR; parser only",
+  "cases": 44,
+  "executions": 176,
+  "results": {
+    "parent": [
+      {
+        "name": "independent-clean",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "both-prefixed",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "both-prefixed-uppercase",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "leading-zero-counts",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "eof-without-newline",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "mixed-tabs",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "actual-CRLF",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "escaped-CRLF",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "totals-before-rows",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-noisy-units",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "conflicting-noisy-units",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "duplicate-two-noisy-units",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-noisy-lines",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "conflicting-noisy-lines",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "duplicate-two-noisy-lines",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "leading-prose",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "nested-quote",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "open-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "no-open-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "mixed-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "inline-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "trailing-instruction",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "trailing-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "NBSP-prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "unicode-hashes",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number--3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-+3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-3.0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-3,0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-\u0663",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-three",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-1000000001",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "valid-prose-outside",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "marker-inside-value",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue #scanline# Total requested units: 999",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "unknown-property-preserved",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false",
+                "independent_marker": "yes"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "duplicate-property",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "missing-specs",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-branch",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "wrong-row-number",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "long-s-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotted-I-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotless-I-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotted-I-total-keyword",
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    ],
+    "candidate": [
+      {
+        "name": "independent-clean",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "both-prefixed",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "both-prefixed-uppercase",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "leading-zero-counts",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "eof-without-newline",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "mixed-tabs",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "actual-CRLF",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "escaped-CRLF",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "totals-before-rows",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "duplicate-noisy-units",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "conflicting-noisy-units",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-two-noisy-units",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-noisy-lines",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "conflicting-noisy-lines",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "duplicate-two-noisy-lines",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "leading-prose",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "nested-quote",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "open-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "no-open-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "mixed-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "inline-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "trailing-instruction",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "trailing-hash",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "NBSP-prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "unicode-hashes",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number--3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-+3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-3.0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-3,0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-\u0663",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-three",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "invalid-or-conflicting-number-0",
+        "error": "OCR row or quantity total mismatch"
+      },
+      {
+        "name": "invalid-or-conflicting-number-1000000001",
+        "error": "OCR row or quantity total mismatch"
+      },
+      {
+        "name": "valid-prose-outside",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "marker-inside-value",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue #scanline# Total requested units: 999",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "unknown-property-preserved",
+        "parsed": {
+          "branch": "Independent West",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 2,
+              "competitor_code": "EXT-A",
+              "description": "Neutral widget",
+              "properties": {
+                "finish": "blue",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 1,
+              "competitor_code": "EXT-B",
+              "description": "Plain bracket",
+              "properties": {
+                "size": "small",
+                "reversible": "false",
+                "independent_marker": "yes"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "name": "duplicate-property",
+        "error": "Invalid or duplicate specification"
+      },
+      {
+        "name": "missing-specs",
+        "error": "Missing requested properties"
+      },
+      {
+        "name": "duplicate-branch",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "wrong-row-number",
+        "error": "OCR line numbers must be unique and consecutive"
+      },
+      {
+        "name": "long-s-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotted-I-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotless-I-marker",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "name": "dotted-I-total-keyword",
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    ]
+  },
+  "fixture_sha256": "41868cb642a9fd89ccb035326c4fe08d7711887d51a091e8ac1c8eca1cad9c4a"
+}

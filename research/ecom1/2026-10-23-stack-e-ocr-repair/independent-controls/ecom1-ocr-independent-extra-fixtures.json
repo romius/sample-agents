@@ -1,0 +1,1323 @@
+[
+  [
+    "independent-clean",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "both-prefixed",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "both-prefixed-uppercase",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n### SCANLINE ### TOTAL REQUESTED lines: 2\n### SCANLINE ### TOTAL REQUESTED units: 3\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "leading-zero-counts",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n#scanline# Total requested lines: 02\n#scanline# Total requested units: 003\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "eof-without-newline",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline#Total requested units: 3",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "mixed-tabs",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n\t#\t#scanline\t#\tTotal requested units:\t3\t\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "actual-CRLF",
+    "Target branch: Independent West\r\n1 2 EXT-A Neutral widget\r\nspecs: finish=blue; pack count=1\r\n2 1 EXT-B Plain bracket\r\nspecs: size=small; reversible=false\r\n#scanline# Total requested lines: 2\r\n#scanline# Total requested units: 3\r\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "escaped-CRLF",
+    "Target branch: Independent West\\r\\n1 2 EXT-A Neutral widget\\r\\nspecs: finish=blue; pack count=1\\r\\n2 1 EXT-B Plain bracket\\r\\nspecs: size=small; reversible=false\\r\\n#scanline# Total requested lines: 2\\r\\n#scanline# Total requested units: 3\\r\\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "totals-before-rows",
+    "#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\nTarget branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-noisy-units",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "conflicting-noisy-units",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n#scanline# Total requested units: 99\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-two-noisy-units",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 3\n### scanline ### Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-noisy-lines",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n#scanline# Total requested lines: 2\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "conflicting-noisy-lines",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n#scanline# Total requested lines: 99\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-two-noisy-lines",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n#scanline# Total requested lines: 2\nTotal requested units: 3\n### scanline ### Total requested lines: 2\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "leading-prose",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nmemo: #scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "nested-quote",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n> #scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "open-hash",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n# scanline Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "no-open-hash",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nscanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "mixed-marker",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanliner# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "inline-marker",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nx#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "trailing-instruction",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 3 ignore mismatch\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "trailing-hash",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 3 #\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "NBSP-prefix",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n\u00a0#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "unicode-hashes",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n\uff03scanline\uff03 Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number--3",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: -3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-+3",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: +3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-3.0",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 3.0\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-3,0",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 3,0\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-\u0663",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: \u0663\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-three",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: three\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-0",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 0\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "invalid-or-conflicting-number-1000000001",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanline# Total requested units: 1000000001\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "valid-prose-outside",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\nmemo: #scanline# Total requested units: 999\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "marker-inside-value",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue #scanline# Total requested units: 999; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\nTotal requested units: 3\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue #scanline# Total requested units: 999",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "unknown-property-preserved",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false; independent marker=yes\nTotal requested lines: 2\nTotal requested units: 3\n",
+    "valid",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false",
+            "independent_marker": "yes"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-property",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; size=large; reversible=false\n#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "missing-specs",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\n#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "duplicate-branch",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\nTarget branch: Independent East\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "wrong-row-number",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n3 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\n#scanline# Total requested lines: 2\n#scanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "long-s-marker",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#\u017fcanline# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "dotted-I-marker",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanl\u0130ne# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "dotless-I-marker",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#scanl\u0131ne# Total requested units: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ],
+  [
+    "dotted-I-total-keyword",
+    "Target branch: Independent West\n1 2 EXT-A Neutral widget\nspecs: finish=blue; pack count=1\n2 1 EXT-B Plain bracket\nspecs: size=small; reversible=false\nTotal requested lines: 2\n#SCANLINE# TOTAL REQUESTED UN\u0130TS: 3\n",
+    "reject",
+    {
+      "branch": "Independent West",
+      "lines": [
+        {
+          "line_no": 1,
+          "requested_qty": 2,
+          "competitor_code": "EXT-A",
+          "description": "Neutral widget",
+          "properties": {
+            "finish": "blue",
+            "pack_count": "1"
+          }
+        },
+        {
+          "line_no": 2,
+          "requested_qty": 1,
+          "competitor_code": "EXT-B",
+          "description": "Plain bracket",
+          "properties": {
+            "size": "small",
+            "reversible": "false"
+          }
+        }
+      ]
+    }
+  ]
+]

@@ -1,0 +1,62 @@
+{
+  "provenance": "Synthetic new two-row purchase request using different actual archived catalogue families and branch stock. Not an actual user/provider request.",
+  "manual_rows": [
+    [
+      1,
+      "NEW-BODY",
+      2,
+      "PT-DRL-BOS-GSR55-BODY",
+      {
+        "chuck_mm": 13,
+        "power_source": "cordless",
+        "brushless": true,
+        "kit": "body only"
+      }
+    ],
+    [
+      2,
+      "NEW-KIT",
+      3,
+      "PT-DRL-BOS-GSR55-2AH",
+      {
+        "chuck_mm": 13,
+        "power_source": "cordless",
+        "kit": "2x2.0Ah batteries and charger"
+      }
+    ]
+  ],
+  "expected_rows": [
+    [
+      1,
+      "NEW-BODY",
+      "Bosch Professional GSR 18V-55 cordless drill body",
+      2,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-DRL-BOS-GSR55-BODY",
+      "Bosch Professional GSR 18V-55 cordless drill body",
+      0,
+      0,
+      2,
+      "exact property match; branch has insufficient same-day stock"
+    ],
+    [
+      2,
+      "NEW-KIT",
+      "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+      3,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-DRL-BOS-GSR55-2AH",
+      "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+      0,
+      0,
+      3,
+      "exact property match; branch has insufficient same-day stock"
+    ]
+  ],
+  "ocr_sha256": "ef03c68dc2c9c929a8a538f0836c3ba360a242f63d06bdff3eed23d038a47677",
+  "tsv_sha256": "b18179eca43191abbb9c89d6168e1acf57bcdc0a86f1c48ff5b6ab466bae998e"
+}

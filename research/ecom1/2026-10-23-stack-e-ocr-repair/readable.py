@@ -3153,7 +3153,7 @@ def crosslist_uint(value, label, positive=False):
 
 def crosslist_parse_ocr(text):
     text = crosslist_text(text)
-    text = re.sub('(?im)^[ \\t]*#[# \\t]*scanline[ \\t]*#[# \\t]*(?=total requested (?:lines|units):[ \\t]*[0-9]+[ \\t]*$)', '', text)
+    text = re.sub('(?m)^[ \\t]*#[# \\t]*[sS][cC][aA][nN][lL][iI][nN][eE][ \\t]*#[# \\t]*(?=[tT][oO][tT][aA][lL] [rR][eE][qQ][uU][eE][sS][tT][eE][dD] (?:[lL][iI][nN][eE][sS]|[uU][nN][iI][tT][sS]):[ \\t]*[0-9]+[ \\t]*$)', '', text)
     branches = re.findall('(?im)^[^\\n:]*target branch:\\s*([^\\n]+)$', text)
     totals = re.findall('(?im)^\\s*total requested lines:\\s*(\\d+)\\s*$', text)
     units = re.findall('(?im)^\\s*total requested units:\\s*(\\d+)\\s*$', text)

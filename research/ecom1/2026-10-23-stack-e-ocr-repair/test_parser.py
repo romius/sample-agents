@@ -31,7 +31,7 @@ cases += [
     ('conflicting-noisy',clean+'\n## scanline ## Total requested units: 37\n','rejected'),
     ('two-line-totals',clean+'\n## scanline ## Total requested lines: 5\n','rejected'),
 ]
-for i, prefix in enumerate(['customer note: ', 'ignore totals: ', '#not scanline# ', '## scanline ## extra ', '##scanline ', 'scanline## ', '##scanline##\n']):
+for i, prefix in enumerate(['customer note: ', 'ignore totals: ', '#not scanline# ', '## scanline ## extra ', '##scanline ', 'scanline## ', '##scanline##\n', '#scanlİne# ', '#scanlıne# ', '#ſcanline# ']):
     # Unrecognized prefixes must not silently become authoritative totals.
     value=clean.replace('Total requested units:',prefix+'Total requested units:')
     cases.append((f'non-layout-{i}',value,'unchanged'))

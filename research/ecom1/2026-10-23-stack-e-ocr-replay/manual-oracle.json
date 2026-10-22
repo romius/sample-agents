@@ -1,0 +1,158 @@
+{
+  "ocr_response_seq": 10098,
+  "ocr_sha256": "96d2981de02e5d44760201b2130e4ad7568dad0882d7250d684ca8d18928ab48",
+  "policy_response_seq": 10094,
+  "branch": "PowerTools Graz Center",
+  "manual_ocr_rows": [
+    [
+      1,
+      "CMP-E2YTNR",
+      9,
+      "Einhell TE-AC 270/50 Silent Plus compressor",
+      {
+        "noise_db": 88,
+        "oil_free": false,
+        "tank_l": 50
+      }
+    ],
+    [
+      2,
+      "CMP-4ZDNFH",
+      8,
+      "Karcher K4 Power Control Car and Home set",
+      {
+        "accessory_set": "car and home kit",
+        "detergent_system": "plug and clean",
+        "flow_l_h": 410,
+        "pump_material": "aluminium"
+      }
+    ],
+    [
+      3,
+      "CMP-JWCCAD",
+      6,
+      "3M SecureFit 400 clear safety glasses with foam gasket",
+      {
+        "adjustable": false,
+        "certification": "EN166",
+        "pack_count": 1
+      }
+    ],
+    [
+      4,
+      "CMP-32UKXC",
+      4,
+      "Aircraft Compact-Air 240/24 compressor accessory set",
+      {
+        "intake_l_min": 240,
+        "noise_db": 97,
+        "wheels": true
+      }
+    ],
+    [
+      5,
+      "CMP-HKAPN2",
+      9,
+      "Uvex Pheos helmet visor kit",
+      {
+        "pack_count": 1,
+        "protection_type": "face",
+        "size": "helmet mounted"
+      }
+    ]
+  ],
+  "columns": [
+    "line_no",
+    "competitor_code",
+    "requested_description",
+    "requested_qty",
+    "branch_id",
+    "branch_open",
+    "match_status",
+    "matched_sku",
+    "matched_product_name",
+    "available_today",
+    "fulfillable_qty",
+    "short_qty",
+    "reason"
+  ],
+  "expected_rows": [
+    [
+      1,
+      "CMP-E2YTNR",
+      "Einhell TE-AC 270/50 Silent Plus compressor",
+      9,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-CMP-EIN-TEAC270-50S",
+      "Einhell TE-AC 270/50 Silent Plus compressor",
+      8,
+      8,
+      1,
+      "exact property match; branch has insufficient same-day stock"
+    ],
+    [
+      2,
+      "CMP-4ZDNFH",
+      "Karcher K4 Power Control Car and Home set",
+      8,
+      "store-graz-center",
+      "true",
+      "property_mismatch",
+      "",
+      "",
+      0,
+      0,
+      8,
+      "requested properties do not exactly match catalogue product"
+    ],
+    [
+      3,
+      "CMP-JWCCAD",
+      "3M SecureFit 400 clear safety glasses with foam gasket",
+      6,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-SAFE-3M-SF400-GASKET",
+      "3M SecureFit 400 clear safety glasses with foam gasket",
+      2,
+      2,
+      4,
+      "exact property match; branch has insufficient same-day stock"
+    ],
+    [
+      4,
+      "CMP-32UKXC",
+      "Aircraft Compact-Air 240/24 compressor accessory set",
+      4,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-CMP-AIR-CA240-SET",
+      "Aircraft Compact-Air 240/24 compressor accessory set",
+      0,
+      0,
+      4,
+      "exact property match; branch has insufficient same-day stock"
+    ],
+    [
+      5,
+      "CMP-HKAPN2",
+      "Uvex Pheos helmet visor kit",
+      9,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-SAFE-UVEX-PHEOS-HELMET",
+      "Uvex Pheos helmet visor kit",
+      0,
+      0,
+      9,
+      "exact property match; branch has insufficient same-day stock"
+    ]
+  ],
+  "expected_tsv_sha256": "0bb89033e80c45603f6c9775c0f235b88a0196a3312844fa549d57fde3a3fc8d",
+  "independence": "No candidate parser/render/stock helper used. Exact manually typed properties compared with complete actual catalogue JSONs and actual branch inventory; row2 flow410 conflicts with420."
+}
