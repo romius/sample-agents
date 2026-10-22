@@ -1,0 +1,80 @@
+{
+  "status": "passed isolated offline reproduction",
+  "files": 201,
+  "archive_bytes": 2164163,
+  "archive_sha256": "1db177cdade17829047a4971040365b5530f477d4483691f6afa5c4b2facb24d",
+  "uncompressed_bytes": 12132142,
+  "environment": {
+    "python": "3.14.3",
+    "zlib_build": "1.2.12",
+    "zlib_runtime": "1.2.12",
+    "pydantic_monty": "1.2.0",
+    "python_minifier": "3.4.0"
+  },
+  "deterministic_double_write": true,
+  "extracted_archive_builder_identical": true,
+  "exact_eight_candidate_artifacts": {
+    "d5204/prepack.py": "019d58031a3dbb91aa0b40fb4e2a11d7a2fc0ab3a27fb897711a91f1539df9a8",
+    "d5204/agent.py": "1b4d188c6809b4111c499cbf0679707409e8e78da9a3e107174b9df4c9a9b2ba",
+    "d5204/manifest.json": "7a86ea9e1c536378d9929e5eadd19a98aa3d13ec962b6ed2973569e99e321d7c",
+    "d5204/readable.py": "750a8246b4d9dca8e29b4d5b19ef0691b0b3696b527fac4f1d1c4f47efbf276e",
+    "d5785/prepack.py": "5f6781c4ab6fdc6e693031a3785adc57583b2f7f26ed88072f0dad11fef79464",
+    "d5785/agent.py": "ac1ec39aec19ae1ff3ceb794cd95f1bcff5df017fc8c3fd586bf93dcf5921b78",
+    "d5785/manifest.json": "4bc10a54da2d6f8cc0ce4800297ee6d23fb49d6f9296b903198ca15133babc74",
+    "d5785/readable.py": "7d75c1550c03809b16d488bb19ca3182e1e4d66bbabc53954e6e6ffb64b65322"
+  },
+  "core": {
+    "status": "passed offline",
+    "candidate_native_world_runs": 6,
+    "parent_failure_controls": 4,
+    "small_proxy_controls": 3,
+    "rows": [
+      {
+        "source": "d5204",
+        "form": "readable.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      },
+      {
+        "source": "d5204",
+        "form": "prepack.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      },
+      {
+        "source": "d5204",
+        "form": "agent.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      },
+      {
+        "source": "d5785",
+        "form": "readable.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      },
+      {
+        "source": "d5785",
+        "form": "prepack.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      },
+      {
+        "source": "d5785",
+        "form": "agent.py",
+        "native_proxy_parity": true,
+        "csv_oracle": true
+      }
+    ],
+    "full216_suite_repeated": false,
+    "real_model_calls": 0
+  },
+  "capture_68_native_equivalent": true,
+  "capture_timing_excluded_from_comparison": true,
+  "preserved_capture_bytes_unchanged": true,
+  "full216_suite_repeated": false,
+  "original_members_unchanged": true,
+  "independent_review_sha256": "2e543e07cfe3d6f9431213f9a3f7f575cb462ce74e72edb529a2937bf75136ef",
+  "no_model_calls": true,
+  "no_brain_writes": true
+}

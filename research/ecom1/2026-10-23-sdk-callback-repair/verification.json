@@ -1,0 +1,340 @@
+{
+  "status": "passed offline; actual hosted SDK check still separate",
+  "proxy": "pydantic_monty.ClassInstance(host, allowed_methods=task/call/answer/llm/usage); eager_attrs=None; lazy_attrs=None",
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "audit": [
+    {
+      "source": "d4702",
+      "form": "readable.py",
+      "sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d",
+      "decoded_sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d4702",
+      "form": "agent.py",
+      "sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8",
+      "decoded_sha256": "4f5b3f1379727719517802315271dd69c5c29c2854f44d1e0595fb6fb595f9fb",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d4955",
+      "form": "readable.py",
+      "sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+      "decoded_sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d4955",
+      "form": "agent.py",
+      "sha256": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20",
+      "decoded_sha256": "fb30ea73d523082ef91f60414698f449bb45feddbda35f44226418de6667018d",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5204",
+      "form": "readable.py",
+      "sha256": "aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1",
+      "decoded_sha256": "aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1",
+      "noncallee_bitgn_attributes": [
+        {
+          "attribute": "call",
+          "line": 3914,
+          "expression": "bitgn.call",
+          "context": "Call"
+        }
+      ]
+    },
+    {
+      "source": "d5204",
+      "form": "agent.py",
+      "sha256": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
+      "decoded_sha256": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259",
+      "noncallee_bitgn_attributes": [
+        {
+          "attribute": "call",
+          "line": 2094,
+          "expression": "bitgn.call",
+          "context": "Call"
+        }
+      ]
+    },
+    {
+      "source": "d5785",
+      "form": "readable.py",
+      "sha256": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41",
+      "decoded_sha256": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41",
+      "noncallee_bitgn_attributes": [
+        {
+          "attribute": "call",
+          "line": 4024,
+          "expression": "bitgn.call",
+          "context": "Call"
+        }
+      ]
+    },
+    {
+      "source": "d5785",
+      "form": "agent.py",
+      "sha256": "832be81a5fafec378320d42f3e5697cea00197dfe9bfbb061b2073880a203765",
+      "decoded_sha256": "956cac5eebce34fe830948c81d5d91378938ebdea04e5216b60d5f17338c9cfd",
+      "noncallee_bitgn_attributes": [
+        {
+          "attribute": "call",
+          "line": 2134,
+          "expression": "bitgn.call",
+          "context": "Call"
+        }
+      ]
+    },
+    {
+      "source": "d6280",
+      "form": "readable.py",
+      "sha256": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7",
+      "decoded_sha256": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d6280",
+      "form": "agent.py",
+      "sha256": "dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e",
+      "decoded_sha256": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5204-successor",
+      "form": "readable.py",
+      "sha256": "750a8246b4d9dca8e29b4d5b19ef0691b0b3696b527fac4f1d1c4f47efbf276e",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5204-successor",
+      "form": "prepack.py",
+      "sha256": "019d58031a3dbb91aa0b40fb4e2a11d7a2fc0ab3a27fb897711a91f1539df9a8",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5204-successor",
+      "form": "agent.py",
+      "sha256": "1b4d188c6809b4111c499cbf0679707409e8e78da9a3e107174b9df4c9a9b2ba",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5785-successor",
+      "form": "readable.py",
+      "sha256": "7d75c1550c03809b16d488bb19ca3182e1e4d66bbabc53954e6e6ffb64b65322",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5785-successor",
+      "form": "prepack.py",
+      "sha256": "5f6781c4ab6fdc6e693031a3785adc57583b2f7f26ed88072f0dad11fef79464",
+      "noncallee_bitgn_attributes": []
+    },
+    {
+      "source": "d5785-successor",
+      "form": "agent.py",
+      "sha256": "ac1ec39aec19ae1ff3ceb794cd95f1bcff5df017fc8c3fd586bf93dcf5921b78",
+      "noncallee_bitgn_attributes": []
+    }
+  ],
+  "boundary": [
+    {
+      "case": "direct_method_call",
+      "passed": true,
+      "calls": [
+        [
+          "Read",
+          {
+            "path": "/x"
+          }
+        ]
+      ]
+    },
+    {
+      "case": "rpc=bitgn.call",
+      "passed": true,
+      "error": "AttributeError: 'Probe' object has no attribute 'call'"
+    },
+    {
+      "case": "def take(rpc):return None\ntake(bitgn.call)",
+      "passed": true,
+      "error": "AttributeError: 'Probe' object has no attribute 'call'"
+    },
+    {
+      "case": "named_wrapper_callback",
+      "passed": true,
+      "calls": [
+        [
+          "Read",
+          {
+            "path": "/x"
+          }
+        ]
+      ]
+    }
+  ],
+  "whole_agent": [
+    {
+      "source": "d5204",
+      "form": "readable.py",
+      "world": "own",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5204",
+      "form": "agent.py",
+      "world": "own",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5204",
+      "form": "readable.py",
+      "world": "record",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5204",
+      "form": "agent.py",
+      "world": "record",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5204",
+      "form": "readable.py",
+      "world": "benign",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5204",
+      "form": "agent.py",
+      "world": "benign",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "readable.py",
+      "world": "own",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "agent.py",
+      "world": "own",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "readable.py",
+      "world": "record",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "agent.py",
+      "world": "record",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "readable.py",
+      "world": "benign",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    },
+    {
+      "source": "d5785",
+      "form": "agent.py",
+      "world": "benign",
+      "expected_failure": true,
+      "error": "AttributeError: 'Host' object has no attribute 'call'",
+      "model_calls": 0,
+      "writes": 0,
+      "rpc_calls": 0
+    }
+  ],
+  "regressions": [
+    {
+      "source": "d5204-successor",
+      "executions": 216,
+      "native_classinstance_executions": 108,
+      "success_worlds": 3,
+      "faults": 16,
+      "benign": 6,
+      "recovery": 11,
+      "advisory_replays": 27,
+      "source_forms": [
+        "readable.py",
+        "prepack.py",
+        "agent.py"
+      ],
+      "passed": true
+    },
+    {
+      "source": "d5785-successor",
+      "executions": 216,
+      "native_classinstance_executions": 108,
+      "success_worlds": 3,
+      "faults": 16,
+      "benign": 6,
+      "recovery": 11,
+      "advisory_replays": 27,
+      "source_forms": [
+        "readable.py",
+        "prepack.py",
+        "agent.py"
+      ],
+      "passed": true
+    }
+  ],
+  "seconds": 35.960686500009615,
+  "real_model_calls": 0,
+  "source_parents_unchanged": true
+}

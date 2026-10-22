@@ -1,0 +1,991 @@
+{
+  "format": "workspace-root-relative ZIP_DEFLATED level9; sorted;1980-01-01;0644",
+  "environment": {
+    "python": "3.14.3",
+    "zlib_build": "1.2.12",
+    "zlib_runtime": "1.2.12",
+    "pydantic_monty": "1.2.0",
+    "python_minifier": "3.4.0"
+  },
+  "members": {
+    "proto/bitgn/vm/ecom/ecom.proto": {
+      "bytes": 5146,
+      "sha256": "a09c007281062d927f003372d0b5e8654c22b91744fe2781c4ef6fc1c8404e9c"
+    },
+    "research/ecom1/2026-10-22-clarification-integration/agent.py": {
+      "bytes": 63582,
+      "sha256": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20"
+    },
+    "research/ecom1/2026-10-22-clarification-integration/readable.py": {
+      "bytes": 155658,
+      "sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44"
+    },
+    "research/ecom1/2026-10-22-huffman-packing-review/pack.py": {
+      "bytes": 3880,
+      "sha256": "4b54f5e0163499a458e29b82817301cda58cdc76b49b622794936ef8b9d6e10f"
+    },
+    "research/ecom1/2026-10-22-inventory-integration/agent.py": {
+      "bytes": 65292,
+      "sha256": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67"
+    },
+    "research/ecom1/2026-10-22-inventory-integration/lzpack_dp.py": {
+      "bytes": 1779,
+      "sha256": "ffdf9d25052904b5e64cd1b777f73f2751dea38e40b4a0febe4a7f6ce492ddd5"
+    },
+    "research/ecom1/2026-10-22-inventory-integration/prepack.py": {
+      "bytes": 118639,
+      "sha256": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259"
+    },
+    "research/ecom1/2026-10-22-inventory-integration/readable.py": {
+      "bytes": 183615,
+      "sha256": "aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1"
+    },
+    "research/ecom1/2026-10-22-inventory-integration/verify_integration.py": {
+      "bytes": 11557,
+      "sha256": "51347c7c5d7a4cb25cbe5a81a3a092fe24d445c9c7287e1cff077024eeab7661"
+    },
+    "research/ecom1/2026-10-22-inventory-review/dependencies.json": {
+      "bytes": 2771,
+      "sha256": "a003b46f5ca1cdbb08a9ba9031e7276f4c56eec4d6a9547d5f659954579443ee"
+    },
+    "research/ecom1/2026-10-22-inventory-review/longest-packing-results.json": {
+      "bytes": 488,
+      "sha256": "9355c9fd140f4b762f83947855e191f97d9083ff12ec87d9e6b49b9b0d0a02da"
+    },
+    "research/ecom1/2026-10-22-inventory-review/longest_probe.py": {
+      "bytes": 1022,
+      "sha256": "1e58091cdfd34bc2c8e6e4acd1b2bcb8d2cf91517a5d3a83c34aa571453f7754"
+    },
+    "research/ecom1/2026-10-22-inventory-review/lzpack_longest.py": {
+      "bytes": 5150,
+      "sha256": "ed2911781d8eaf932d4f22df95948199640e45e20240e9a5521fd8f27cbedeca"
+    },
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part0.json": {
+      "bytes": 94103,
+      "sha256": "cefec2ef65a069e4ffa985fb7fd40c827444ede0beb637e025aa1d02c2a9642c"
+    },
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part120.json": {
+      "bytes": 47879,
+      "sha256": "5032913e8f0b6939b2b9fddf563c0a250b3f19371753a1194c590bda199a010a"
+    },
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part40.json": {
+      "bytes": 39121,
+      "sha256": "9961f3bb3b791de926c411cc76dd14980649dfcd25601434a6cc0b0fca46a234"
+    },
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part80.json": {
+      "bytes": 85770,
+      "sha256": "0b7c5bf8dc2204a2a8ab970b8c396dd246c151ec2d7e69dcbfc7c5c649eb0e63"
+    },
+    "research/ecom1/2026-10-22-inventory-review/packing-results.json": {
+      "bytes": 752,
+      "sha256": "cc32c323ec59ca54f003d3d227a38bd184731ff1ad3b6ac0bd4d51da0045dda3"
+    },
+    "research/ecom1/2026-10-22-inventory-review/packing-variants.json": {
+      "bytes": 843,
+      "sha256": "3bb0907c1fe4fbceaa0d1845ebef62110b0d1cd332fd6778082cf54b88facce4"
+    },
+    "research/ecom1/2026-10-22-inventory-review/packing-verification.json": {
+      "bytes": 924,
+      "sha256": "bf3519256463b35c5aa6fb2225a660bf973846e4e1711c3de45d49bb267e0ef8"
+    },
+    "research/ecom1/2026-10-22-inventory-review/packing_probe.py": {
+      "bytes": 2831,
+      "sha256": "42b428c5342aba4b0c5b371835946ebf38a55b0a28ff844714b1f967415ce0e4"
+    },
+    "research/ecom1/2026-10-22-inventory-review/packing_variants.py": {
+      "bytes": 1306,
+      "sha256": "8a30224029303cce74ac795b04b3faeb5549d73a1e0ab5262532b28559d40ee4"
+    },
+    "research/ecom1/2026-10-22-inventory-review/record-t091-index.json": {
+      "bytes": 65326,
+      "sha256": "471dd56f5b424fa1f78d52116e8889e37dec66c7c12e710b4f1dc0e4a07d484f"
+    },
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part0.json": {
+      "bytes": 177308,
+      "sha256": "f24199674571cb7fdd09b0d97d097c3c8171a39c84b76f4cf8dcea836f3f6a09"
+    },
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part120.json": {
+      "bytes": 16717,
+      "sha256": "89c39fc582a2dc0251c8a4559ea6b528649dcba9c16bb5b4c14f58c3368d8e53"
+    },
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part40.json": {
+      "bytes": 40581,
+      "sha256": "1f5688e971ed09122bc69f7c9fd28f583136138d539e71c24f8b9c5368766d0e"
+    },
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part80.json": {
+      "bytes": 40251,
+      "sha256": "aea612b6a2c0bea4211805661184e9822e290c8a4022ed8d158c970776a1b7be"
+    },
+    "research/ecom1/2026-10-22-inventory-review/review-results.json": {
+      "bytes": 9857,
+      "sha256": "59a0c86a477fa33a8e128246f1e0a822958d9764000d5523607339712eb24690"
+    },
+    "research/ecom1/2026-10-22-inventory-review/review.py": {
+      "bytes": 9106,
+      "sha256": "a514f9e82181d3509d56bd22e94a54d29a4087646c4f8c5acb20cb99cf7dc28a"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d3969r1": {
+      "bytes": 1883,
+      "sha256": "c0eed9a2b430c234602fb5e0e8cbad030c27c976aedca2dc585734c344ba5b95"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d3969r2": {
+      "bytes": 5157,
+      "sha256": "3f61d8eb42b98a2ea66890a3157754ddabc5e78521a5cfbe0169cc1c499d67ef"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4005r1": {
+      "bytes": 2033,
+      "sha256": "b352ea46706884901d96209d52e0531952cfd0639212c69fd9604444e47ee196"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4006r1": {
+      "bytes": 3889,
+      "sha256": "6c54384354f02070f8fc780c18da64da1fad580d287a4cf5829283f45313c2c3"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4008r1": {
+      "bytes": 4015,
+      "sha256": "2af3c30bb4aa0bdbef4cfcb0744aa2fb74a8461aff6015d4a3f08039501cde04"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4009r1": {
+      "bytes": 1349,
+      "sha256": "0850bee3ed0f28035787a37a46dcb238d2e4436235b0545d7d09480f053a19b5"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4011r1": {
+      "bytes": 3883,
+      "sha256": "20f158f2d9c6941c0dd5ead7d09ce2cd9b0c78c54b03d91286fa797f90d395f9"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4012r1": {
+      "bytes": 83738,
+      "sha256": "6dfb12462ba0ef5261c7c61c46d07735fca67dec25552f3124c8b4831a8bf179"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4013r1": {
+      "bytes": 13532,
+      "sha256": "0f821a40340cae4556e1287f7a513754140a11bc8f67e36a44be260aeb05323f"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/lzpack_r3": {
+      "bytes": 5045,
+      "sha256": "e795d2803b7814e57132f926f130d7d429c6308b7e7447d742ba86a950b59cb2"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/lzpack_r3_notes": {
+      "bytes": 6662,
+      "sha256": "c30387d34d856f55f98a3cea4fd16e1a30612575ac8b1ec2d6ff47b71ed93478"
+    },
+    "research/ecom1/2026-10-22-inventory-review/upstream/zlib-smoke-receipt.json": {
+      "bytes": 2754,
+      "sha256": "83aa9b4806d19a18f005ed1d04d47eaf2b0dce46f03319fb53f14c21ebffefb7"
+    },
+    "research/ecom1/2026-10-22-inventory-review/verify_packing.py": {
+      "bytes": 2824,
+      "sha256": "2f485cd71cc2dc74d0ee84bc54eb3ce956ea099d47688266008751a0283b90e3"
+    },
+    "research/ecom1/2026-10-22-record-integration/agent.py": {
+      "bytes": 63209,
+      "sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8"
+    },
+    "research/ecom1/2026-10-22-record-integration/archived_receipt.json": {
+      "bytes": 1399,
+      "sha256": "1c0a28fb45262cdceaa7c5327936314eb78cd1ad3f3fecfb228b4786a834cc1b"
+    },
+    "research/ecom1/2026-10-22-record-integration/audit_summary.py": {
+      "bytes": 2855,
+      "sha256": "4c8c12bc7fbeb191341cca84eaf69b462c39a8cc07332eb5bfd60017d7543734"
+    },
+    "research/ecom1/2026-10-22-record-integration/build.py": {
+      "bytes": 4353,
+      "sha256": "c8057a5ab4eb8e79528e79815c2ab30eeb35733cd82a70a417d7f92857ded496"
+    },
+    "research/ecom1/2026-10-22-record-integration/lzpack.py": {
+      "bytes": 4270,
+      "sha256": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+    },
+    "research/ecom1/2026-10-22-record-integration/old_agent.py": {
+      "bytes": 53177,
+      "sha256": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1"
+    },
+    "research/ecom1/2026-10-22-record-integration/our_agent.py": {
+      "bytes": 57988,
+      "sha256": "592cef8dbac06373d23d54e5b24a2e35aaade4c466412d62e9a9b85a9f4851cb"
+    },
+    "research/ecom1/2026-10-22-record-integration/pack5h.py": {
+      "bytes": 1946,
+      "sha256": "c379d911dfd32c8ecd367402acda0b5f9291bbb620365eb5fc4590759fe16a77"
+    },
+    "research/ecom1/2026-10-22-record-integration/parent_agent.py": {
+      "bytes": 63211,
+      "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    "research/ecom1/2026-10-22-record-integration/parent_readable.py": {
+      "bytes": 153653,
+      "sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    "research/ecom1/2026-10-22-record-integration/readable.py": {
+      "bytes": 154813,
+      "sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d"
+    },
+    "research/ecom1/2026-10-22-record-integration/receipt_parent.py": {
+      "bytes": 62926,
+      "sha256": "2ef447520d2c17d8956426a17882a99e5cf59ee95e750b4afa4a784642f6d446"
+    },
+    "research/ecom1/2026-10-22-record-integration/record_agent.py": {
+      "bytes": 65212,
+      "sha256": "1e6a0ae3505593c380fbc1d3010295cef58e2b2a7a8aaf0cfe6a47da8591a86f"
+    },
+    "research/ecom1/2026-10-22-record-integration/record_readable.py": {
+      "bytes": 112007,
+      "sha256": "481491dc90e3f959838f11bfc9a4f877f7568120dc67de7ae2324b84e5356684"
+    },
+    "research/ecom1/2026-10-22-record-integration/recovery_donor.py": {
+      "bytes": 77348,
+      "sha256": "93c84f03c11cc567510510c53d49d124af02272127ac5b28d6a6d9e785470892"
+    },
+    "research/ecom1/2026-10-22-record-integration/replay.py": {
+      "bytes": 15306,
+      "sha256": "319170c255eed92d19949245931b05c6e8e38c59f2f9ca2ad648de23a553c9dd"
+    },
+    "research/ecom1/2026-10-22-record-integration/retry_donor.py": {
+      "bytes": 65495,
+      "sha256": "5c9fd63873d8c709ed6e74fbc7a444a3bbeeeb76ccb448e4b6360652c4f955b8"
+    },
+    "research/ecom1/2026-10-22-record-integration/review_batch.py": {
+      "bytes": 1390,
+      "sha256": "fd041396fbc58bafcc4e557a2924b29611fe51a57c5c1b47bf66b962ac5e321e"
+    },
+    "research/ecom1/2026-10-22-record-integration/run_suite.py": {
+      "bytes": 6693,
+      "sha256": "6d6d959f87e54f5342739fdf8f65a59ce321715045f1bbf70c3ec336d3fd06d8"
+    },
+    "research/ecom1/2026-10-22-record-integration/tds_tests.py": {
+      "bytes": 7370,
+      "sha256": "594458c897401c9693fe479726bdb9bf635a8995ea62d1306f3d7dea3da24f38"
+    },
+    "research/ecom1/2026-10-22-record-integration/test_combined.py": {
+      "bytes": 9626,
+      "sha256": "367760fcb255eb6e4047aa89bd2322a8da5d8106ff7f5dd2b2a96478f165ffcf"
+    },
+    "research/ecom1/2026-10-22-record-integration/verify.py": {
+      "bytes": 6500,
+      "sha256": "5e741393c56594e9761cd8473abf48aa38ecb0c16bcc3e21234745afea8a1a20"
+    },
+    "research/ecom1/2026-10-22-record-integration/verify_audit.py": {
+      "bytes": 3017,
+      "sha256": "9e9c9f14eb3624b66247b1536ef7ba39b1480725b1d3bacb056edb8f9106c87d"
+    },
+    "research/ecom1/2026-10-22-record-integration/verify_integration.py": {
+      "bytes": 6019,
+      "sha256": "6604110876b02ae336405560900c6fcdca4e37795e5101112758a59c9174bf35"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2713.json": {
+      "bytes": 293404,
+      "sha256": "a3a4cd1e4e5965facfb903cd827e476bd74c8ff244671e05dbf641aa4d4b1abb"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2714.json": {
+      "bytes": 312931,
+      "sha256": "e42a13b747d21cda0fb8a58782ae85b6e3904a88b3f8955db5a9f5a156055069"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2715.json": {
+      "bytes": 30589,
+      "sha256": "704ceed719e72b5aac876b7880e11842d2cb63e4283f96504e4e458807804563"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2716.json": {
+      "bytes": 293963,
+      "sha256": "dc182ae4c118a79c26c24d22f2ae69c9c5d86160a3becffb24dc6421be9eb153"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2717.json": {
+      "bytes": 39895,
+      "sha256": "a64dbc9eb80b09613f537843dda36617d361d9f94f1449d5261ee438ba599ee1"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2718.json": {
+      "bytes": 291864,
+      "sha256": "b9ea426f7fac3b462fc584996ea470f9906a651a88b001dafbfb5497048b32e1"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2719.json": {
+      "bytes": 21786,
+      "sha256": "5755049258ce7e390013ad52c31ae3dccb8a367a4b10c6a863d141a5f5413da6"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2720.json": {
+      "bytes": 25676,
+      "sha256": "b65478819960ea78aa8b5c1c5cc0c85fe70e3350fd3360186a14ae996afb069e"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2721.json": {
+      "bytes": 27046,
+      "sha256": "df0b14309d88560c0c17f791b23d678baa7b146d1ecdeb306c0eb3c2d37c9608"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2722.json": {
+      "bytes": 22957,
+      "sha256": "b037431cdaf4397b56827b5230b0ed20f25b6dd4f237054a380820bcbdbe820c"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2723.json": {
+      "bytes": 29702,
+      "sha256": "10945cd176c0cbf2bc5383fb3b9ea543f7616aa86f1b1be7ab4003837beb880f"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2724.json": {
+      "bytes": 28011,
+      "sha256": "dfa8a6c8319d50bfe29b38da6a6f45b378eafac960f012b7656f7097d0109db8"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2725.json": {
+      "bytes": 132910,
+      "sha256": "e0fa54d624761c2199312e36b3d523d4609fe5879e1ed9f3aef55fffe5e7cbb0"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2726.json": {
+      "bytes": 133968,
+      "sha256": "ad60d7ef070974a0b05df9b159387ec9afcfb8cc9c945a1179e433aa5a230e8b"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2727.json": {
+      "bytes": 20675,
+      "sha256": "715793c38f4b01ac14a81ed2669e72c43f04844eb21eb0ee305717120c9c338b"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2728.json": {
+      "bytes": 19025,
+      "sha256": "8c45bab56a3aed0c319d0fe452d7a49abf2466adbfd5599f4141a7220e7939e3"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2729.json": {
+      "bytes": 20479,
+      "sha256": "b0f1bd230cf881cc3d47395bbdf493eb5e30481ec0b21006a5309c5fb9276974"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2730.json": {
+      "bytes": 49525,
+      "sha256": "1f788e68ec3a58ae54e9b01908e948c37a988dc31384549641b53154caf20cfc"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2731.json": {
+      "bytes": 299703,
+      "sha256": "5cf058e78fca8f91acf878c8808c1c5a9a6e6335ade18e5a6429f10379d86f27"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2732.json": {
+      "bytes": 35077,
+      "sha256": "2e7882bf3cc8a748cd28d7927d09628a8dd3f33a08502e8b7b27e8e3a9cb533a"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2733.json": {
+      "bytes": 22955,
+      "sha256": "6beef051b316291d186524b026df262ec0db3cba0e3642633dc40eff9525a195"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2734.json": {
+      "bytes": 287516,
+      "sha256": "261b7ea3e110eb6b8c81f5aaaa0d15c46ecdfe212598fe9184e9a401a7959399"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2735.json": {
+      "bytes": 20811,
+      "sha256": "18320cc790ae272590e3438e133e2877874f98626f25b9adde48c3611e4f4449"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2736.json": {
+      "bytes": 83870,
+      "sha256": "be1f6ce6e7e9e34d81100c8ecbf578935874f3468350d12b56bdd276543da7a7"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2737.json": {
+      "bytes": 59368,
+      "sha256": "014045ed0c96f77ecde40a3b20ec31c76d5382adf9922e23420042a24974c4cc"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2738.json": {
+      "bytes": 79884,
+      "sha256": "cbb7642700335c0d2abbccf13a4a6a63a6eb25c4f4c495fbb7fef891ec36354b"
+    },
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2739.json": {
+      "bytes": 74202,
+      "sha256": "25a229530cf61c74e568d800215cfe7409bb81accdea224f39fddd67f24433f3"
+    },
+    "research/ecom1/2026-10-22-sku-evidence-integration/readable.py": {
+      "bytes": 189041,
+      "sha256": "e46d7d860a1b4c6dc1f7a876a2ee56ecde2df8bffdac041bc8562e71572e503e"
+    },
+    "research/ecom1/2026-10-22-sku-history-pressure-review/agent.py": {
+      "bytes": 60797,
+      "sha256": "832be81a5fafec378320d42f3e5697cea00197dfe9bfbb061b2073880a203765"
+    },
+    "research/ecom1/2026-10-22-sku-history-pressure-review/prepack.py": {
+      "bytes": 121753,
+      "sha256": "956cac5eebce34fe830948c81d5d91378938ebdea04e5216b60d5f17338c9cfd"
+    },
+    "research/ecom1/2026-10-22-sku-history-pressure-review/readable.py": {
+      "bytes": 189221,
+      "sha256": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-ablation-review/fixtures.json": {
+      "bytes": 55112,
+      "sha256": "c5d6199c9856f05aa6124e0d89348b7db522b735869f09f1fded97b60fe855c9"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/BUNDLE.md": {
+      "bytes": 2662,
+      "sha256": "950e1776c34e36c34fad7d1d3b29715fe8ed6775addf66bd5194d3d187c30453"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/DEPENDENCIES.json": {
+      "bytes": 10785,
+      "sha256": "c76458c0361725b7801b3a13a46c4e0d13b6f0e241d2a90fd8fa20a8ba1f6f20"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/DISPATCH-DECISION.md": {
+      "bytes": 4350,
+      "sha256": "f4892dc3f8333351a8c3527d1917f8e14b495c9541e3c9f3868589e159df574a"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/PREREGISTRATION.md": {
+      "bytes": 11105,
+      "sha256": "40a05874b42ab4d2f603365349daac7b209f4371e7726b5f4bcd93427cb9c16a"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/README.md": {
+      "bytes": 5731,
+      "sha256": "315eadb2be0f361740b4ef1a845576eda37354e089ad49a43ed31cd120285ec0"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/TRACE-READOUT.md": {
+      "bytes": 4557,
+      "sha256": "7210b6fe66614def11b9b5f45b9bf050b65404f685cee2f36e01bccbe1e1fe42"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/VALIDATION.md": {
+      "bytes": 4629,
+      "sha256": "45463aed75c8b1da69041d1431036c8600fe3c8d838fc0bad1efdaf43bf3c3f2"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/agent.py": {
+      "bytes": 28738,
+      "sha256": "dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/build.py": {
+      "bytes": 9247,
+      "sha256": "7367f07833484519705397e1b0a8a0e3e4c666134aa5f51920a704b86ad7d4a1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/build_archive.py": {
+      "bytes": 9427,
+      "sha256": "52b8f676eb1acf21660160ee39507d217b2e1b7745cf6161d9b218102fe93785"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/call-plan.json": {
+      "bytes": 13962,
+      "sha256": "89550772dc28c05a1f73d06d5c09d325e7c78de5fb7e89fd5d2c7c1490ff97a5"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/fixtures.json": {
+      "bytes": 539958,
+      "sha256": "c2dd7b4f5917d6118351becaa7d9aeee7cd2c7d510cb1c5eb5076bb202b57571"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/independent-review.md": {
+      "bytes": 7238,
+      "sha256": "70baeafd315f29d8b9e2f87c4ebf0b70b8daa63309d786cb860ec4133e84c2d6"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/capture.py": {
+      "bytes": 24186,
+      "sha256": "23b0ad73a34376be0dae1908a062eb26aefab214231c1c7300e5e876ad10e5bb"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/host-traces.json": {
+      "bytes": 536864,
+      "sha256": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E1_exact_identifier.json": {
+      "bytes": 43534,
+      "sha256": "64a31e992c3f4d15e40775a3ac1bbe4caf024be6aff83a97f5d463ba75221393"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E2_exact_conflict.json": {
+      "bytes": 43954,
+      "sha256": "cd6afcaa38f3366c474e9027c03d4a0a0ba6bc0fa5d0d11b545d502aaca988f8"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E3_exact_unknown.json": {
+      "bytes": 43707,
+      "sha256": "f3696c10e9da468de64fe0f01cefbfb2582ddb88680b402d934ef4ccb30219a0"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E4_unique_property.json": {
+      "bytes": 44381,
+      "sha256": "63fbaf2120166c58ab3b17aa1378e00c6345d627d9dc26d004186d9be5392a74"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F1_multiple_families.json": {
+      "bytes": 43723,
+      "sha256": "422e196222c1fb40c2ec746819950ab79cf224ff4ff8145d6652bda87a421c32"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F2_truncated_relevant_family.json": {
+      "bytes": 66573,
+      "sha256": "f2c41ae880d015abf7f2cc83c6344c66631432ebfa336ff5137cd14adaa32e85"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F3_lexical_distractor.json": {
+      "bytes": 49209,
+      "sha256": "22aaacf3a18633cdff9dc8f36a52dc98e4957b39856b4e385fe68e25c0a5b00b"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F4_false_missing_true.json": {
+      "bytes": 45617,
+      "sha256": "672b8b056b56087b8289bcb328de337d96936181f361f8219c2eb02c81cde22b"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N1_explicit_negative.json": {
+      "bytes": 43801,
+      "sha256": "6bf7f0fc7d047506bbafd99e55181d51b76ca30e4e8b0fb77d827551e0fe2f1c"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N2_negative_unknown.json": {
+      "bytes": 43626,
+      "sha256": "37dfe11db2ccf77600fe3423e092a442b9a03f7a6124ca52dfffd76992c42db4"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N3_exact_exclusion.json": {
+      "bytes": 46361,
+      "sha256": "8fc0921eed24b3fcd6b670b0538c00480bde4f3462b3d18f143a3137484f3024"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N4_negative_geometry.json": {
+      "bytes": 46792,
+      "sha256": "783d822a920002de9be11d77bab4677d8d410dbb5aa723e1cc9923e58bece0ca"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U1_missing_head.json": {
+      "bytes": 46244,
+      "sha256": "e2cefe06c1fc2e83f8f48f8bad546e12e6bab78870e62bbde17bcd012d62d872"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U2_empty.json": {
+      "bytes": 46363,
+      "sha256": "3b7faeda190df3d7867190b37ee2dfd6571d8d5d59050eb560d4b89a5e3031d1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U2_null.json": {
+      "bytes": 46362,
+      "sha256": "0e2f17a74691d75745b6169e862dd036d5f5c62cab5aead3ed9211241a20dd62"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U3_explicit_positive.json": {
+      "bytes": 46573,
+      "sha256": "5ca2412d934978bc008601026724e8c858866795c1f4587ff14d95e882acdad1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U4_supplied_synonym.json": {
+      "bytes": 46877,
+      "sha256": "6088ec14abb41d53764147c3ecc4b85b63f4e322ab519b1c5d4b2d343b7f6b48"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-README.md": {
+      "bytes": 7385,
+      "sha256": "18caaf4f7d0b3114e1eaefbb25c7784c8d7a5d199d8c197670ea79f338b8158a"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-dependencies.json": {
+      "bytes": 1348,
+      "sha256": "88b79794912d5f8ad3bade09574d61589f7febab20c1b76c7d8af79d669d0ea1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-independent-review.md": {
+      "bytes": 7852,
+      "sha256": "dcf4b2af1869430449bebe3f118ae92976a84f5bfd2fe7f092e92cfdc85511fa"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-results.json": {
+      "bytes": 26382,
+      "sha256": "a770f30a8c502bab0f36bd561fa6d3d9b859521367dc22a32528da8c114c223e"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/scaffolding-provenance.json": {
+      "bytes": 3340,
+      "sha256": "11f4a74a5244bb31d7ed83c1ef6809c1132fb873e8622c4d6828234743f4da6c"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/semantic-fixtures.json": {
+      "bytes": 55112,
+      "sha256": "c5d6199c9856f05aa6124e0d89348b7db522b735869f09f1fded97b60fe855c9"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/semantic-independent-review.md": {
+      "bytes": 8989,
+      "sha256": "366110de386f78070e497d0bdc48dbb6bc55ab8fc1b3c870bfb251eb150013f9"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/tree-depth-evidence.json": {
+      "bytes": 13005,
+      "sha256": "a408010fea1ea90b8ce23c360549feb3b13b59a7ef7ec9f192858583aeda2193"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/worlds.json": {
+      "bytes": 239670,
+      "sha256": "ca513e0b7f864b36ebb125c0d22abfc52d98971afb6ee35bb03ae3e00c894876"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/manifest.json": {
+      "bytes": 7093,
+      "sha256": "e3d83fe9f8d5d7fc041d032e3c198730360c842ddf8845ee43630a850d392ef1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/manual-review-sheet.json": {
+      "bytes": 43610,
+      "sha256": "dfc1e4927f53c14af7903c1a5d309f0fd19bd72c987e090a6640c7fd3f5ee535"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/readable.py": {
+      "bytes": 543012,
+      "sha256": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/reproduce.sh": {
+      "bytes": 144,
+      "sha256": "b712235ca2326fc1e4ddae932e13dc5477a6562cfbba709303191558d17aaa73"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/runner.py": {
+      "bytes": 1927,
+      "sha256": "1967934b4c116cc3e93df7f915345a568776d6a3cb8d591f91e822d52e89df52"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/verification.json": {
+      "bytes": 14491,
+      "sha256": "16bb99911438dba23a56e2ac21b73b1774f6fa1b9d66e5431c5c886c6b492e13"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/verify.py": {
+      "bytes": 12002,
+      "sha256": "661e866dbb77d1c4bce69d076b851c9eb9700d2b0402af97c45407af595203b5"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/DEPENDENCIES.json": {
+      "bytes": 1348,
+      "sha256": "88b79794912d5f8ad3bade09574d61589f7febab20c1b76c7d8af79d669d0ea1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/README.md": {
+      "bytes": 7385,
+      "sha256": "18caaf4f7d0b3114e1eaefbb25c7784c8d7a5d199d8c197670ea79f338b8158a"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/capture.py": {
+      "bytes": 24186,
+      "sha256": "23b0ad73a34376be0dae1908a062eb26aefab214231c1c7300e5e876ad10e5bb"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/host-traces.json": {
+      "bytes": 536864,
+      "sha256": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/independent-review.md": {
+      "bytes": 7852,
+      "sha256": "dcf4b2af1869430449bebe3f118ae92976a84f5bfd2fe7f092e92cfdc85511fa"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E1_exact_identifier.json": {
+      "bytes": 43534,
+      "sha256": "64a31e992c3f4d15e40775a3ac1bbe4caf024be6aff83a97f5d463ba75221393"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E2_exact_conflict.json": {
+      "bytes": 43954,
+      "sha256": "cd6afcaa38f3366c474e9027c03d4a0a0ba6bc0fa5d0d11b545d502aaca988f8"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E3_exact_unknown.json": {
+      "bytes": 43707,
+      "sha256": "f3696c10e9da468de64fe0f01cefbfb2582ddb88680b402d934ef4ccb30219a0"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E4_unique_property.json": {
+      "bytes": 44381,
+      "sha256": "63fbaf2120166c58ab3b17aa1378e00c6345d627d9dc26d004186d9be5392a74"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F1_multiple_families.json": {
+      "bytes": 43723,
+      "sha256": "422e196222c1fb40c2ec746819950ab79cf224ff4ff8145d6652bda87a421c32"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F2_truncated_relevant_family.json": {
+      "bytes": 66573,
+      "sha256": "f2c41ae880d015abf7f2cc83c6344c66631432ebfa336ff5137cd14adaa32e85"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F3_lexical_distractor.json": {
+      "bytes": 49209,
+      "sha256": "22aaacf3a18633cdff9dc8f36a52dc98e4957b39856b4e385fe68e25c0a5b00b"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F4_false_missing_true.json": {
+      "bytes": 45617,
+      "sha256": "672b8b056b56087b8289bcb328de337d96936181f361f8219c2eb02c81cde22b"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N1_explicit_negative.json": {
+      "bytes": 43801,
+      "sha256": "6bf7f0fc7d047506bbafd99e55181d51b76ca30e4e8b0fb77d827551e0fe2f1c"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N2_negative_unknown.json": {
+      "bytes": 43626,
+      "sha256": "37dfe11db2ccf77600fe3423e092a442b9a03f7a6124ca52dfffd76992c42db4"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N3_exact_exclusion.json": {
+      "bytes": 46361,
+      "sha256": "8fc0921eed24b3fcd6b670b0538c00480bde4f3462b3d18f143a3137484f3024"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N4_negative_geometry.json": {
+      "bytes": 46792,
+      "sha256": "783d822a920002de9be11d77bab4677d8d410dbb5aa723e1cc9923e58bece0ca"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U1_missing_head.json": {
+      "bytes": 46244,
+      "sha256": "e2cefe06c1fc2e83f8f48f8bad546e12e6bab78870e62bbde17bcd012d62d872"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U2_empty.json": {
+      "bytes": 46363,
+      "sha256": "3b7faeda190df3d7867190b37ee2dfd6571d8d5d59050eb560d4b89a5e3031d1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U2_null.json": {
+      "bytes": 46362,
+      "sha256": "0e2f17a74691d75745b6169e862dd036d5f5c62cab5aead3ed9211241a20dd62"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U3_explicit_positive.json": {
+      "bytes": 46573,
+      "sha256": "5ca2412d934978bc008601026724e8c858866795c1f4587ff14d95e882acdad1"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U4_supplied_synonym.json": {
+      "bytes": 46877,
+      "sha256": "6088ec14abb41d53764147c3ecc4b85b63f4e322ab519b1c5d4b2d343b7f6b48"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/results.json": {
+      "bytes": 26382,
+      "sha256": "a770f30a8c502bab0f36bd561fa6d3d9b859521367dc22a32528da8c114c223e"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/scaffolding-provenance.json": {
+      "bytes": 3340,
+      "sha256": "11f4a74a5244bb31d7ed83c1ef6809c1132fb873e8622c4d6828234743f4da6c"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/tree-depth-evidence.json": {
+      "bytes": 13005,
+      "sha256": "a408010fea1ea90b8ce23c360549feb3b13b59a7ef7ec9f192858583aeda2193"
+    },
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/worlds.json": {
+      "bytes": 239670,
+      "sha256": "ca513e0b7f864b36ebb125c0d22abfc52d98971afb6ee35bb03ae3e00c894876"
+    },
+    "research/ecom1/2026-10-22-sku-paired-diagnostic/fixtures.json": {
+      "bytes": 185691,
+      "sha256": "14a83867320e78183134af77809d30e69751afa141bfff7edb5f3d4169800b6a"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/ARCHIVE-DEPENDENCIES.json": {
+      "bytes": 11862,
+      "sha256": "875c0e6478385f287d5cd379cb9e0ef5b718f89d1c1e43b7e50dffe2ca5f3e98"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/BASELINE-SCOPE.md": {
+      "bytes": 1221,
+      "sha256": "2cb6c7ef32e35939f90da2302448fcdac642025494a335521a79b980fd353c4d"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/BUNDLE.md": {
+      "bytes": 2726,
+      "sha256": "c377999b077b73163de4e68f68964b6ade48822c7e68f13117e954c791b42834"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/DEPENDENCIES.json": {
+      "bytes": 16133,
+      "sha256": "386695f171284add5f10723420b248727e519c336ea264726e4d0858d860dad9"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/README.md": {
+      "bytes": 6498,
+      "sha256": "6a9a246b1055bf9e1d05c0dfcf62a3bb9173db067d4bbafd2029cdf3012a7c59"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/RUNTIME.json": {
+      "bytes": 1008,
+      "sha256": "154faa6cf02d24f0c901774c787c038999bba6026cff9efdb4d1a8d22ec7fa84"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/SHA256SUMS": {
+      "bytes": 1706,
+      "sha256": "3fe7522689420bc58d00518eecd5a7e78e5741ebfb805de3560d589df3e8490b"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/build.py": {
+      "bytes": 3355,
+      "sha256": "86822bddb8d33656b98c8c3f0e399d28117a832f0c5c3b6e74890d2b6dbd1f5e"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/build_archive.py": {
+      "bytes": 6288,
+      "sha256": "80af089d87a8a039f231b2d1b1ac93d4fba56a83758213fad31e9c3a62a48311"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/capture-equivalence.json": {
+      "bytes": 35010,
+      "sha256": "b5dfecc6c1b15466640ea5b76f145b8a2bce7405dfb7041757bb31e435f249eb"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/capture-host-traces.json": {
+      "bytes": 536864,
+      "sha256": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5204/agent.py": {
+      "bytes": 65307,
+      "sha256": "1b4d188c6809b4111c499cbf0679707409e8e78da9a3e107174b9df4c9a9b2ba"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5204/integration-results.json": {
+      "bytes": 61553,
+      "sha256": "977dfc4c3244bdb5c4fb5f7f47ffef50e3ba61dc9ea1b0fc965b574cc55b0057"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5204/manifest.json": {
+      "bytes": 807,
+      "sha256": "7a86ea9e1c536378d9929e5eadd19a98aa3d13ec962b6ed2973569e99e321d7c"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5204/prepack.py": {
+      "bytes": 118682,
+      "sha256": "019d58031a3dbb91aa0b40fb4e2a11d7a2fc0ab3a27fb897711a91f1539df9a8"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5204/readable.py": {
+      "bytes": 183669,
+      "sha256": "750a8246b4d9dca8e29b4d5b19ef0691b0b3696b527fac4f1d1c4f47efbf276e"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5785/agent.py": {
+      "bytes": 60808,
+      "sha256": "ac1ec39aec19ae1ff3ceb794cd95f1bcff5df017fc8c3fd586bf93dcf5921b78"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5785/integration-results.json": {
+      "bytes": 61553,
+      "sha256": "977dfc4c3244bdb5c4fb5f7f47ffef50e3ba61dc9ea1b0fc965b574cc55b0057"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5785/manifest.json": {
+      "bytes": 827,
+      "sha256": "4bc10a54da2d6f8cc0ce4800297ee6d23fb49d6f9296b903198ca15133babc74"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5785/prepack.py": {
+      "bytes": 121796,
+      "sha256": "5f6781c4ab6fdc6e693031a3785adc57583b2f7f26ed88072f0dad11fef79464"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/d5785/readable.py": {
+      "bytes": 189275,
+      "sha256": "7d75c1550c03809b16d488bb19ca3182e1e4d66bbabc53954e6e6ffb64b65322"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/independent-review.md": {
+      "bytes": 7594,
+      "sha256": "2e543e07cfe3d6f9431213f9a3f7f575cb462ce74e72edb529a2937bf75136ef"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/rebuild-verification.json": {
+      "bytes": 827,
+      "sha256": "a565619a167775dce5f42bcc29751a5530f49819048bcc9d3c74426947d6bd36"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/runtime_public/class_instance.py": {
+      "bytes": 17360,
+      "sha256": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/verification.json": {
+      "bytes": 9566,
+      "sha256": "f269012cfbc2eb9962f42b2f2a4aab4d92a2c7a7034d20d5f70d22f72d6830b1"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/verify.py": {
+      "bytes": 8039,
+      "sha256": "bb3858c1634691ad44372b437a64b5a7e0eddace9cbb7b86a60af228f98870f5"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/verify_archive_core.py": {
+      "bytes": 3143,
+      "sha256": "43b9c75e68395d09b148cc16d4854558a49b54f6878995f5eddb8efb7a98cd7c"
+    },
+    "research/ecom1/2026-10-23-sdk-callback-repair/verify_capture_equivalence.py": {
+      "bytes": 5230,
+      "sha256": "97496be943db44c3a6a216db006237caa6121f3a87d1e30e624e6c8ea0a46396"
+    }
+  },
+  "pinned_dependencies": {
+    "proto/bitgn/vm/ecom/ecom.proto": "a09c007281062d927f003372d0b5e8654c22b91744fe2781c4ef6fc1c8404e9c",
+    "research/ecom1/2026-10-22-clarification-integration/agent.py": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20",
+    "research/ecom1/2026-10-22-clarification-integration/readable.py": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+    "research/ecom1/2026-10-22-huffman-packing-review/pack.py": "4b54f5e0163499a458e29b82817301cda58cdc76b49b622794936ef8b9d6e10f",
+    "research/ecom1/2026-10-22-inventory-integration/agent.py": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
+    "research/ecom1/2026-10-22-inventory-integration/lzpack_dp.py": "ffdf9d25052904b5e64cd1b777f73f2751dea38e40b4a0febe4a7f6ce492ddd5",
+    "research/ecom1/2026-10-22-inventory-integration/prepack.py": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259",
+    "research/ecom1/2026-10-22-inventory-integration/readable.py": "aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1",
+    "research/ecom1/2026-10-22-inventory-integration/verify_integration.py": "51347c7c5d7a4cb25cbe5a81a3a092fe24d445c9c7287e1cff077024eeab7661",
+    "research/ecom1/2026-10-22-inventory-review/dependencies.json": "a003b46f5ca1cdbb08a9ba9031e7276f4c56eec4d6a9547d5f659954579443ee",
+    "research/ecom1/2026-10-22-inventory-review/longest-packing-results.json": "9355c9fd140f4b762f83947855e191f97d9083ff12ec87d9e6b49b9b0d0a02da",
+    "research/ecom1/2026-10-22-inventory-review/longest_probe.py": "1e58091cdfd34bc2c8e6e4acd1b2bcb8d2cf91517a5d3a83c34aa571453f7754",
+    "research/ecom1/2026-10-22-inventory-review/lzpack_longest.py": "ed2911781d8eaf932d4f22df95948199640e45e20240e9a5521fd8f27cbedeca",
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part0.json": "cefec2ef65a069e4ffa985fb7fd40c827444ede0beb637e025aa1d02c2a9642c",
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part120.json": "5032913e8f0b6939b2b9fddf563c0a250b3f19371753a1194c590bda199a010a",
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part40.json": "9961f3bb3b791de926c411cc76dd14980649dfcd25601434a6cc0b0fca46a234",
+    "research/ecom1/2026-10-22-inventory-review/own-t091-part80.json": "0b7c5bf8dc2204a2a8ab970b8c396dd246c151ec2d7e69dcbfc7c5c649eb0e63",
+    "research/ecom1/2026-10-22-inventory-review/packing-results.json": "cc32c323ec59ca54f003d3d227a38bd184731ff1ad3b6ac0bd4d51da0045dda3",
+    "research/ecom1/2026-10-22-inventory-review/packing-variants.json": "3bb0907c1fe4fbceaa0d1845ebef62110b0d1cd332fd6778082cf54b88facce4",
+    "research/ecom1/2026-10-22-inventory-review/packing-verification.json": "bf3519256463b35c5aa6fb2225a660bf973846e4e1711c3de45d49bb267e0ef8",
+    "research/ecom1/2026-10-22-inventory-review/packing_probe.py": "42b428c5342aba4b0c5b371835946ebf38a55b0a28ff844714b1f967415ce0e4",
+    "research/ecom1/2026-10-22-inventory-review/packing_variants.py": "8a30224029303cce74ac795b04b3faeb5549d73a1e0ab5262532b28559d40ee4",
+    "research/ecom1/2026-10-22-inventory-review/record-t091-index.json": "471dd56f5b424fa1f78d52116e8889e37dec66c7c12e710b4f1dc0e4a07d484f",
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part0.json": "f24199674571cb7fdd09b0d97d097c3c8171a39c84b76f4cf8dcea836f3f6a09",
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part120.json": "89c39fc582a2dc0251c8a4559ea6b528649dcba9c16bb5b4c14f58c3368d8e53",
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part40.json": "1f5688e971ed09122bc69f7c9fd28f583136138d539e71c24f8b9c5368766d0e",
+    "research/ecom1/2026-10-22-inventory-review/record-t091-part80.json": "aea612b6a2c0bea4211805661184e9822e290c8a4022ed8d158c970776a1b7be",
+    "research/ecom1/2026-10-22-inventory-review/review-results.json": "59a0c86a477fa33a8e128246f1e0a822958d9764000d5523607339712eb24690",
+    "research/ecom1/2026-10-22-inventory-review/review.py": "a514f9e82181d3509d56bd22e94a54d29a4087646c4f8c5acb20cb99cf7dc28a",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d3969r1": "c0eed9a2b430c234602fb5e0e8cbad030c27c976aedca2dc585734c344ba5b95",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d3969r2": "3f61d8eb42b98a2ea66890a3157754ddabc5e78521a5cfbe0169cc1c499d67ef",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4005r1": "b352ea46706884901d96209d52e0531952cfd0639212c69fd9604444e47ee196",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4006r1": "6c54384354f02070f8fc780c18da64da1fad580d287a4cf5829283f45313c2c3",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4008r1": "2af3c30bb4aa0bdbef4cfcb0744aa2fb74a8461aff6015d4a3f08039501cde04",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4009r1": "0850bee3ed0f28035787a37a46dcb238d2e4436235b0545d7d09480f053a19b5",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4011r1": "20f158f2d9c6941c0dd5ead7d09ce2cd9b0c78c54b03d91286fa797f90d395f9",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4012r1": "6dfb12462ba0ef5261c7c61c46d07735fca67dec25552f3124c8b4831a8bf179",
+    "research/ecom1/2026-10-22-inventory-review/upstream/d4013r1": "0f821a40340cae4556e1287f7a513754140a11bc8f67e36a44be260aeb05323f",
+    "research/ecom1/2026-10-22-inventory-review/upstream/lzpack_r3": "e795d2803b7814e57132f926f130d7d429c6308b7e7447d742ba86a950b59cb2",
+    "research/ecom1/2026-10-22-inventory-review/upstream/lzpack_r3_notes": "c30387d34d856f55f98a3cea4fd16e1a30612575ac8b1ec2d6ff47b71ed93478",
+    "research/ecom1/2026-10-22-inventory-review/upstream/zlib-smoke-receipt.json": "83aa9b4806d19a18f005ed1d04d47eaf2b0dce46f03319fb53f14c21ebffefb7",
+    "research/ecom1/2026-10-22-inventory-review/verify_packing.py": "2f485cd71cc2dc74d0ee84bc54eb3ce956ea099d47688266008751a0283b90e3",
+    "research/ecom1/2026-10-22-record-integration/agent.py": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8",
+    "research/ecom1/2026-10-22-record-integration/archived_receipt.json": "1c0a28fb45262cdceaa7c5327936314eb78cd1ad3f3fecfb228b4786a834cc1b",
+    "research/ecom1/2026-10-22-record-integration/audit_summary.py": "4c8c12bc7fbeb191341cca84eaf69b462c39a8cc07332eb5bfd60017d7543734",
+    "research/ecom1/2026-10-22-record-integration/build.py": "c8057a5ab4eb8e79528e79815c2ab30eeb35733cd82a70a417d7f92857ded496",
+    "research/ecom1/2026-10-22-record-integration/lzpack.py": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a",
+    "research/ecom1/2026-10-22-record-integration/old_agent.py": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+    "research/ecom1/2026-10-22-record-integration/our_agent.py": "592cef8dbac06373d23d54e5b24a2e35aaade4c466412d62e9a9b85a9f4851cb",
+    "research/ecom1/2026-10-22-record-integration/pack5h.py": "c379d911dfd32c8ecd367402acda0b5f9291bbb620365eb5fc4590759fe16a77",
+    "research/ecom1/2026-10-22-record-integration/parent_agent.py": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+    "research/ecom1/2026-10-22-record-integration/parent_readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "research/ecom1/2026-10-22-record-integration/readable.py": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d",
+    "research/ecom1/2026-10-22-record-integration/receipt_parent.py": "2ef447520d2c17d8956426a17882a99e5cf59ee95e750b4afa4a784642f6d446",
+    "research/ecom1/2026-10-22-record-integration/record_agent.py": "1e6a0ae3505593c380fbc1d3010295cef58e2b2a7a8aaf0cfe6a47da8591a86f",
+    "research/ecom1/2026-10-22-record-integration/record_readable.py": "481491dc90e3f959838f11bfc9a4f877f7568120dc67de7ae2324b84e5356684",
+    "research/ecom1/2026-10-22-record-integration/recovery_donor.py": "93c84f03c11cc567510510c53d49d124af02272127ac5b28d6a6d9e785470892",
+    "research/ecom1/2026-10-22-record-integration/replay.py": "319170c255eed92d19949245931b05c6e8e38c59f2f9ca2ad648de23a553c9dd",
+    "research/ecom1/2026-10-22-record-integration/retry_donor.py": "5c9fd63873d8c709ed6e74fbc7a444a3bbeeeb76ccb448e4b6360652c4f955b8",
+    "research/ecom1/2026-10-22-record-integration/review_batch.py": "fd041396fbc58bafcc4e557a2924b29611fe51a57c5c1b47bf66b962ac5e321e",
+    "research/ecom1/2026-10-22-record-integration/run_suite.py": "6d6d959f87e54f5342739fdf8f65a59ce321715045f1bbf70c3ec336d3fd06d8",
+    "research/ecom1/2026-10-22-record-integration/tds_tests.py": "594458c897401c9693fe479726bdb9bf635a8995ea62d1306f3d7dea3da24f38",
+    "research/ecom1/2026-10-22-record-integration/test_combined.py": "367760fcb255eb6e4047aa89bd2322a8da5d8106ff7f5dd2b2a96478f165ffcf",
+    "research/ecom1/2026-10-22-record-integration/verify.py": "5e741393c56594e9761cd8473abf48aa38ecb0c16bcc3e21234745afea8a1a20",
+    "research/ecom1/2026-10-22-record-integration/verify_audit.py": "9e9c9f14eb3624b66247b1536ef7ba39b1480725b1d3bacb056edb8f9106c87d",
+    "research/ecom1/2026-10-22-record-integration/verify_integration.py": "6604110876b02ae336405560900c6fcdca4e37795e5101112758a59c9174bf35",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2713.json": "a3a4cd1e4e5965facfb903cd827e476bd74c8ff244671e05dbf641aa4d4b1abb",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2714.json": "e42a13b747d21cda0fb8a58782ae85b6e3904a88b3f8955db5a9f5a156055069",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2715.json": "704ceed719e72b5aac876b7880e11842d2cb63e4283f96504e4e458807804563",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2716.json": "dc182ae4c118a79c26c24d22f2ae69c9c5d86160a3becffb24dc6421be9eb153",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2717.json": "a64dbc9eb80b09613f537843dda36617d361d9f94f1449d5261ee438ba599ee1",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2718.json": "b9ea426f7fac3b462fc584996ea470f9906a651a88b001dafbfb5497048b32e1",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2719.json": "5755049258ce7e390013ad52c31ae3dccb8a367a4b10c6a863d141a5f5413da6",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2720.json": "b65478819960ea78aa8b5c1c5cc0c85fe70e3350fd3360186a14ae996afb069e",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2721.json": "df0b14309d88560c0c17f791b23d678baa7b146d1ecdeb306c0eb3c2d37c9608",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2722.json": "b037431cdaf4397b56827b5230b0ed20f25b6dd4f237054a380820bcbdbe820c",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2723.json": "10945cd176c0cbf2bc5383fb3b9ea543f7616aa86f1b1be7ab4003837beb880f",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2724.json": "dfa8a6c8319d50bfe29b38da6a6f45b378eafac960f012b7656f7097d0109db8",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2725.json": "e0fa54d624761c2199312e36b3d523d4609fe5879e1ed9f3aef55fffe5e7cbb0",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2726.json": "ad60d7ef070974a0b05df9b159387ec9afcfb8cc9c945a1179e433aa5a230e8b",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2727.json": "715793c38f4b01ac14a81ed2669e72c43f04844eb21eb0ee305717120c9c338b",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2728.json": "8c45bab56a3aed0c319d0fe452d7a49abf2466adbfd5599f4141a7220e7939e3",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2729.json": "b0f1bd230cf881cc3d47395bbdf493eb5e30481ec0b21006a5309c5fb9276974",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2730.json": "1f788e68ec3a58ae54e9b01908e948c37a988dc31384549641b53154caf20cfc",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2731.json": "5cf058e78fca8f91acf878c8808c1c5a9a6e6335ade18e5a6429f10379d86f27",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2732.json": "2e7882bf3cc8a748cd28d7927d09628a8dd3f33a08502e8b7b27e8e3a9cb533a",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2733.json": "6beef051b316291d186524b026df262ec0db3cba0e3642633dc40eff9525a195",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2734.json": "261b7ea3e110eb6b8c81f5aaaa0d15c46ecdfe212598fe9184e9a401a7959399",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2735.json": "18320cc790ae272590e3438e133e2877874f98626f25b9adde48c3611e4f4449",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2736.json": "be1f6ce6e7e9e34d81100c8ecbf578935874f3468350d12b56bdd276543da7a7",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2737.json": "014045ed0c96f77ecde40a3b20ec31c76d5382adf9922e23420042a24974c4cc",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2738.json": "cbb7642700335c0d2abbccf13a4a6a63a6eb25c4f4c495fbb7fef891ec36354b",
+    "research/ecom1/2026-10-22-record-integration/worlds/world_2739.json": "25a229530cf61c74e568d800215cfe7409bb81accdea224f39fddd67f24433f3",
+    "research/ecom1/2026-10-22-sku-evidence-integration/readable.py": "e46d7d860a1b4c6dc1f7a876a2ee56ecde2df8bffdac041bc8562e71572e503e",
+    "research/ecom1/2026-10-22-sku-history-pressure-review/agent.py": "832be81a5fafec378320d42f3e5697cea00197dfe9bfbb061b2073880a203765",
+    "research/ecom1/2026-10-22-sku-history-pressure-review/prepack.py": "956cac5eebce34fe830948c81d5d91378938ebdea04e5216b60d5f17338c9cfd",
+    "research/ecom1/2026-10-22-sku-history-pressure-review/readable.py": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41",
+    "research/ecom1/2026-10-22-sku-lexical-ablation-review/fixtures.json": "c5d6199c9856f05aa6124e0d89348b7db522b735869f09f1fded97b60fe855c9",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/BUNDLE.md": "950e1776c34e36c34fad7d1d3b29715fe8ed6775addf66bd5194d3d187c30453",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/DEPENDENCIES.json": "c76458c0361725b7801b3a13a46c4e0d13b6f0e241d2a90fd8fa20a8ba1f6f20",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/DISPATCH-DECISION.md": "f4892dc3f8333351a8c3527d1917f8e14b495c9541e3c9f3868589e159df574a",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/PREREGISTRATION.md": "40a05874b42ab4d2f603365349daac7b209f4371e7726b5f4bcd93427cb9c16a",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/README.md": "315eadb2be0f361740b4ef1a845576eda37354e089ad49a43ed31cd120285ec0",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/TRACE-READOUT.md": "7210b6fe66614def11b9b5f45b9bf050b65404f685cee2f36e01bccbe1e1fe42",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/VALIDATION.md": "45463aed75c8b1da69041d1431036c8600fe3c8d838fc0bad1efdaf43bf3c3f2",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/agent.py": "dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/build.py": "7367f07833484519705397e1b0a8a0e3e4c666134aa5f51920a704b86ad7d4a1",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/build_archive.py": "52b8f676eb1acf21660160ee39507d217b2e1b7745cf6161d9b218102fe93785",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/call-plan.json": "89550772dc28c05a1f73d06d5c09d325e7c78de5fb7e89fd5d2c7c1490ff97a5",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/fixtures.json": "c2dd7b4f5917d6118351becaa7d9aeee7cd2c7d510cb1c5eb5076bb202b57571",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/independent-review.md": "70baeafd315f29d8b9e2f87c4ebf0b70b8daa63309d786cb860ec4133e84c2d6",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/capture.py": "23b0ad73a34376be0dae1908a062eb26aefab214231c1c7300e5e876ad10e5bb",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/host-traces.json": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E1_exact_identifier.json": "64a31e992c3f4d15e40775a3ac1bbe4caf024be6aff83a97f5d463ba75221393",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E2_exact_conflict.json": "cd6afcaa38f3366c474e9027c03d4a0a0ba6bc0fa5d0d11b545d502aaca988f8",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E3_exact_unknown.json": "f3696c10e9da468de64fe0f01cefbfb2582ddb88680b402d934ef4ccb30219a0",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/E4_unique_property.json": "63fbaf2120166c58ab3b17aa1378e00c6345d627d9dc26d004186d9be5392a74",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F1_multiple_families.json": "422e196222c1fb40c2ec746819950ab79cf224ff4ff8145d6652bda87a421c32",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F2_truncated_relevant_family.json": "f2c41ae880d015abf7f2cc83c6344c66631432ebfa336ff5137cd14adaa32e85",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F3_lexical_distractor.json": "22aaacf3a18633cdff9dc8f36a52dc98e4957b39856b4e385fe68e25c0a5b00b",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/F4_false_missing_true.json": "672b8b056b56087b8289bcb328de337d96936181f361f8219c2eb02c81cde22b",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N1_explicit_negative.json": "6bf7f0fc7d047506bbafd99e55181d51b76ca30e4e8b0fb77d827551e0fe2f1c",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N2_negative_unknown.json": "37dfe11db2ccf77600fe3423e092a442b9a03f7a6124ca52dfffd76992c42db4",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N3_exact_exclusion.json": "8fc0921eed24b3fcd6b670b0538c00480bde4f3462b3d18f143a3137484f3024",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/N4_negative_geometry.json": "783d822a920002de9be11d77bab4677d8d410dbb5aa723e1cc9923e58bece0ca",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U1_missing_head.json": "e2cefe06c1fc2e83f8f48f8bad546e12e6bab78870e62bbde17bcd012d62d872",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U2_empty.json": "3b7faeda190df3d7867190b37ee2dfd6571d8d5d59050eb560d4b89a5e3031d1",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U2_null.json": "0e2f17a74691d75745b6169e862dd036d5f5c62cab5aead3ed9211241a20dd62",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U3_explicit_positive.json": "5ca2412d934978bc008601026724e8c858866795c1f4587ff14d95e882acdad1",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/requests/U4_supplied_synonym.json": "6088ec14abb41d53764147c3ecc4b85b63f4e322ab519b1c5d4b2d343b7f6b48",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-README.md": "18caaf4f7d0b3114e1eaefbb25c7784c8d7a5d199d8c197670ea79f338b8158a",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-dependencies.json": "88b79794912d5f8ad3bade09574d61589f7febab20c1b76c7d8af79d669d0ea1",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-independent-review.md": "dcf4b2af1869430449bebe3f118ae92976a84f5bfd2fe7f092e92cfdc85511fa",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/runtime-results.json": "a770f30a8c502bab0f36bd561fa6d3d9b859521367dc22a32528da8c114c223e",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/scaffolding-provenance.json": "11f4a74a5244bb31d7ed83c1ef6809c1132fb873e8622c4d6828234743f4da6c",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/semantic-fixtures.json": "c5d6199c9856f05aa6124e0d89348b7db522b735869f09f1fded97b60fe855c9",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/semantic-independent-review.md": "366110de386f78070e497d0bdc48dbb6bc55ab8fc1b3c870bfb251eb150013f9",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/tree-depth-evidence.json": "a408010fea1ea90b8ce23c360549feb3b13b59a7ef7ec9f192858583aeda2193",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/inputs/worlds.json": "ca513e0b7f864b36ebb125c0d22abfc52d98971afb6ee35bb03ae3e00c894876",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/manifest.json": "e3d83fe9f8d5d7fc041d032e3c198730360c842ddf8845ee43630a850d392ef1",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/manual-review-sheet.json": "dfc1e4927f53c14af7903c1a5d309f0fd19bd72c987e090a6640c7fd3f5ee535",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/readable.py": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/reproduce.sh": "b712235ca2326fc1e4ddae932e13dc5477a6562cfbba709303191558d17aaa73",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/runner.py": "1967934b4c116cc3e93df7f915345a568776d6a3cb8d591f91e822d52e89df52",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/verification.json": "16bb99911438dba23a56e2ac21b73b1774f6fa1b9d66e5431c5c886c6b492e13",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/verify.py": "661e866dbb77d1c4bce69d076b851c9eb9700d2b0402af97c45407af595203b5",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/DEPENDENCIES.json": "88b79794912d5f8ad3bade09574d61589f7febab20c1b76c7d8af79d669d0ea1",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/README.md": "18caaf4f7d0b3114e1eaefbb25c7784c8d7a5d199d8c197670ea79f338b8158a",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/capture.py": "23b0ad73a34376be0dae1908a062eb26aefab214231c1c7300e5e876ad10e5bb",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/host-traces.json": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/independent-review.md": "dcf4b2af1869430449bebe3f118ae92976a84f5bfd2fe7f092e92cfdc85511fa",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E1_exact_identifier.json": "64a31e992c3f4d15e40775a3ac1bbe4caf024be6aff83a97f5d463ba75221393",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E2_exact_conflict.json": "cd6afcaa38f3366c474e9027c03d4a0a0ba6bc0fa5d0d11b545d502aaca988f8",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E3_exact_unknown.json": "f3696c10e9da468de64fe0f01cefbfb2582ddb88680b402d934ef4ccb30219a0",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/E4_unique_property.json": "63fbaf2120166c58ab3b17aa1378e00c6345d627d9dc26d004186d9be5392a74",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F1_multiple_families.json": "422e196222c1fb40c2ec746819950ab79cf224ff4ff8145d6652bda87a421c32",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F2_truncated_relevant_family.json": "f2c41ae880d015abf7f2cc83c6344c66631432ebfa336ff5137cd14adaa32e85",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F3_lexical_distractor.json": "22aaacf3a18633cdff9dc8f36a52dc98e4957b39856b4e385fe68e25c0a5b00b",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/F4_false_missing_true.json": "672b8b056b56087b8289bcb328de337d96936181f361f8219c2eb02c81cde22b",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N1_explicit_negative.json": "6bf7f0fc7d047506bbafd99e55181d51b76ca30e4e8b0fb77d827551e0fe2f1c",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N2_negative_unknown.json": "37dfe11db2ccf77600fe3423e092a442b9a03f7a6124ca52dfffd76992c42db4",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N3_exact_exclusion.json": "8fc0921eed24b3fcd6b670b0538c00480bde4f3462b3d18f143a3137484f3024",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/N4_negative_geometry.json": "783d822a920002de9be11d77bab4677d8d410dbb5aa723e1cc9923e58bece0ca",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U1_missing_head.json": "e2cefe06c1fc2e83f8f48f8bad546e12e6bab78870e62bbde17bcd012d62d872",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U2_empty.json": "3b7faeda190df3d7867190b37ee2dfd6571d8d5d59050eb560d4b89a5e3031d1",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U2_null.json": "0e2f17a74691d75745b6169e862dd036d5f5c62cab5aead3ed9211241a20dd62",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U3_explicit_positive.json": "5ca2412d934978bc008601026724e8c858866795c1f4587ff14d95e882acdad1",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/requests/U4_supplied_synonym.json": "6088ec14abb41d53764147c3ecc4b85b63f4e322ab519b1c5d4b2d343b7f6b48",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/results.json": "a770f30a8c502bab0f36bd561fa6d3d9b859521367dc22a32528da8c114c223e",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/scaffolding-provenance.json": "11f4a74a5244bb31d7ed83c1ef6809c1132fb873e8622c4d6828234743f4da6c",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/tree-depth-evidence.json": "a408010fea1ea90b8ce23c360549feb3b13b59a7ef7ec9f192858583aeda2193",
+    "research/ecom1/2026-10-22-sku-lexical-runtime-prompts/worlds.json": "ca513e0b7f864b36ebb125c0d22abfc52d98971afb6ee35bb03ae3e00c894876",
+    "research/ecom1/2026-10-22-sku-paired-diagnostic/fixtures.json": "14a83867320e78183134af77809d30e69751afa141bfff7edb5f3d4169800b6a"
+  }
+}

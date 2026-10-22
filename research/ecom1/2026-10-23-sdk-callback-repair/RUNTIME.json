@@ -1,0 +1,25 @@
+{
+  "python": "3.14.3",
+  "python_minifier": "3.4.0",
+  "pydantic_monty": "1.2.0",
+  "class_instance_source_sha256": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6",
+  "class_instance_source_path": "/private/tmp/ecom1-uv-cache/archive-v0/r9YlNqEbpR-drZJxnu69d/lib/python3.14/site-packages/pydantic_monty/class_instance.py",
+  "class_instance_signature": "(value: 'Any', *, eager_attrs: 'Policy' = None, lazy_attrs: 'Policy' = None, allowed_methods: 'Policy' = None, id: 'UUID' = <factory>, class_type: 'ClassType | None' = None) -> None",
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "policy": {
+    "allowed_methods": [
+      "task",
+      "call",
+      "answer",
+      "llm",
+      "usage"
+    ],
+    "eager_attrs": null,
+    "lazy_attrs": null
+  },
+  "meaning": "Native ClassInstance policy boundary, not an ordinary source-defined SDK mock. Actual hosted SDK confirmation is a separate root diagnostic."
+}
