@@ -1,0 +1,85 @@
+{
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "status": "passed",
+  "seed": 10222026,
+  "packer": {
+    "exhaustive_binary_strings_0_to_12": 8191,
+    "random_small_oracle_cases": 350,
+    "roundtrip_vectors": 161,
+    "validated_nonoverlapping_references": 1190,
+    "exact_65535_offset_observed": true,
+    "agent_sha256": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
+    "prepack_sha256": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259",
+    "artifact_decodes_exactly": true,
+    "optimality_limit": "Minimum encoded token BYTES for all matches in small exhaustive cases. Production search is candidate-bounded; no global optimality claim for large inputs."
+  },
+  "removal": {
+    "fixed_source_removals_supported": true,
+    "overwritten_definition_evidence": [
+      {
+        "name": "ix_request",
+        "first_line": 20,
+        "replacement_line": 399,
+        "no_eager_capture_or_nonliteral_definition_time_expression_in_fixed_interval": true
+      },
+      {
+        "name": "ix_policy_key",
+        "first_line": 300,
+        "replacement_line": 477,
+        "no_eager_capture_or_nonliteral_definition_time_expression_in_fixed_interval": true
+      }
+    ],
+    "parent_cleanup_definition_count": 1,
+    "parent_cleanup_direct_or_string_references": 0,
+    "fixed_parent_dynamic_namespace_calls": [],
+    "parent_readable_sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+    "donor_sha256": "6dfb12462ba0ef5261c7c61c46d07735fca67dec25552f3124c8b4831a8bf179",
+    "generalized_proof_weaknesses": [
+      {
+        "issue": "replacement_default_captures_previous_definition",
+        "exact_build_checker_accepts": true,
+        "before": "old",
+        "after": "NameError",
+        "present_in_pinned_sources": false
+      },
+      {
+        "issue": "intervening_indirect_capture",
+        "exact_build_checker_accepts": true,
+        "before": "old",
+        "after": "NameError",
+        "present_in_pinned_sources": false
+      },
+      {
+        "issue": "inert_definition_omits_vararg_and_kwarg_annotations",
+        "exact_build_checker_accepts": true,
+        "present_in_pinned_sources": false,
+        "note": "Python 3.14 annotations are lazy; this alone is not an eager side-effect proof."
+      }
+    ],
+    "scope": "Pinned-source audit, not a general dead-code elimination proof. Fresh adversarial examples expose limits of build assertions without demonstrating a defect in this candidate."
+  },
+  "native_monty": [
+    {
+      "source_sha256": "8bb5fa226953d89800c91f1a62ceae4601595fe85fa9d242e44f711a7c823034",
+      "exact_print_events_equal": true
+    },
+    {
+      "source_sha256": "39a8a6b32bf1dace54ce153f3b6edff1a371c428de2506e620add9073103c8c8",
+      "exact_print_events_equal": true
+    },
+    {
+      "source_sha256": "4c3f7f4febcf5a924b4017164f4fde3d74ce1f93c9583609fa74368692b08339",
+      "exact_print_events_equal": true
+    },
+    {
+      "source_sha256": "95d829e6d2b743c6e9895e3183a81f173aaab2a1a9396eb562d2ce96013c5aed",
+      "exact_print_events_equal": true
+    }
+  ],
+  "input_sha256": {
+    "lzpack_dp.py": "ffdf9d25052904b5e64cd1b777f73f2751dea38e40b4a0febe4a7f6ce492ddd5",
+    "build.py": "8a93be8b1b5dc2e15250087879bd22dfc30d95c848610ce9293e00dd29a95395",
+    "agent.py": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
+    "prepack.py": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259"
+  }
+}
