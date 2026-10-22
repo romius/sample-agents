@@ -1,0 +1,524 @@
+{
+  "status": "passed",
+  "calls_checked": 16,
+  "changed_messages": [
+    1,
+    10
+  ],
+  "source": "2026-10-22-clarification-integration/readable.py",
+  "source_sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+  "runtime": "CPython actual parent definitions; answer-only stub, no ECOM RPCs",
+  "rows": [
+    {
+      "call": 1,
+      "step": {
+        "case_index": 0,
+        "case": "archived_case_ambiguity",
+        "repeat": 0,
+        "arm": "parent",
+        "request_sha256": "6b6baa034081d68a7f9bfc4dcbde5a49890031fe7f749b804bd701f038dffd82"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [],
+        "message": "Multiple DeWalt DCF887 XR kits with case found. Please specify battery capacity (2AH or 5AH).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple DeWalt DCF887 XR kits with case found. Please specify battery capacity (2AH or 5AH). Candidates: PT-IMP-DEW-DCF887-2AH, PT-IMP-DEW-DCF887-5AH",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": true
+    },
+    {
+      "call": 2,
+      "step": {
+        "case_index": 0,
+        "case": "archived_case_ambiguity",
+        "repeat": 0,
+        "arm": "treatment",
+        "request_sha256": "a7e802aa70702a56623433948383e9b3ab19c3c2ffbadf2ee10fcd3dc82783c0"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for DeWalt DCF887 XR kit with case"
+        ],
+        "message": "Multiple products match your description. Please specify which kit you need (e.g., battery capacity). Candidates: PT-IMP-DEW-DCF887-2AH (2x2.0Ah batteries and case), PT-IMP-DEW-DCF887-5AH (2x5.0Ah batteries and case).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple products match your description. Please specify which kit you need (e.g., battery capacity). Candidates: PT-IMP-DEW-DCF887-2AH (2x2.0Ah batteries and case), PT-IMP-DEW-DCF887-5AH (2x5.0Ah batteries and case).",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 3,
+      "step": {
+        "case_index": 1,
+        "case": "archived_standard_head",
+        "repeat": 0,
+        "arm": "treatment",
+        "request_sha256": "29792259c94da795e7c827146b408826e3976a41e609c3f5086e959ee9df7629"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup for Metabo W18 125 standard head grinder"
+        ],
+        "message": "Multiple products match the request. Please clarify which you need: PT-GRD-MET-W18-125-BODY (standard grinder body) or PT-GRD-MET-W18-125-4AH (grinder kit with batteries).",
+        "grounding_refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple products match the request. Please clarify which you need: PT-GRD-MET-W18-125-BODY (standard grinder body) or PT-GRD-MET-W18-125-4AH (grinder kit with batteries).",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 4,
+      "step": {
+        "case_index": 1,
+        "case": "archived_standard_head",
+        "repeat": 0,
+        "arm": "parent",
+        "request_sha256": "4393e44ea1790bae7a2b9373ba9de87c4559bec28bb9871cf8cc08d08b7b4a4c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up catalogue for Metabo W18 125 standard head grinder",
+          "identified unique SKU PT-GRD-MET-W18-125-FLAT"
+        ],
+        "message": "PT-GRD-MET-W18-125-FLAT",
+        "grounding_refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-GRD-MET-W18-125-FLAT",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 5,
+      "step": {
+        "case_index": 2,
+        "case": "derived_exact_sku",
+        "repeat": 0,
+        "arm": "parent",
+        "request_sha256": "d75a7ca82df7983248fa1c458a00c70e33c9d2e8b82189c06fb1c93246674f00"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 6,
+      "step": {
+        "case_index": 2,
+        "case": "derived_exact_sku",
+        "repeat": 0,
+        "arm": "treatment",
+        "request_sha256": "446f0d3c196ac81b3e06e793ef67cfb429a07d74026a863f979e4588c49e715c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU PT-IMP-DEW-DCF887-2AH"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 7,
+      "step": {
+        "case_index": 3,
+        "case": "derived_unique_variant",
+        "repeat": 0,
+        "arm": "treatment",
+        "request_sha256": "46ae2e54a6f4fae5fa5a82dabeae467473524a453be7956ecbc403a373a3485c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 8,
+      "step": {
+        "case_index": 3,
+        "case": "derived_unique_variant",
+        "repeat": 0,
+        "arm": "parent",
+        "request_sha256": "b13326a614056297d0f18b4df945c39201dfb7fee6f1c2d65942451d1dd4e068"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU for DeWalt DCF887 XR kit 2x2.0Ah batteries and case"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 9,
+      "step": {
+        "case_index": 0,
+        "case": "archived_case_ambiguity",
+        "repeat": 1,
+        "arm": "treatment",
+        "request_sha256": "a7e802aa70702a56623433948383e9b3ab19c3c2ffbadf2ee10fcd3dc82783c0"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for DeWalt DCF887 XR kit with case"
+        ],
+        "message": "Multiple products match your description. Please specify which kit you need (e.g., battery capacity). Candidates: PT-IMP-DEW-DCF887-2AH (2x2.0Ah batteries and case), PT-IMP-DEW-DCF887-5AH (2x5.0Ah batteries and case).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple products match your description. Please specify which kit you need (e.g., battery capacity). Candidates: PT-IMP-DEW-DCF887-2AH (2x2.0Ah batteries and case), PT-IMP-DEW-DCF887-5AH (2x5.0Ah batteries and case).",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 10,
+      "step": {
+        "case_index": 0,
+        "case": "archived_case_ambiguity",
+        "repeat": 1,
+        "arm": "parent",
+        "request_sha256": "6b6baa034081d68a7f9bfc4dcbde5a49890031fe7f749b804bd701f038dffd82"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple products match 'DeWalt DCF887 XR kit with case'. Please specify which battery capacity you need (2AH or 5AH).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple products match 'DeWalt DCF887 XR kit with case'. Please specify which battery capacity you need (2AH or 5AH). Candidates: PT-IMP-DEW-DCF887-2AH, PT-IMP-DEW-DCF887-5AH",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": true
+    },
+    {
+      "call": 11,
+      "step": {
+        "case_index": 1,
+        "case": "archived_standard_head",
+        "repeat": 1,
+        "arm": "parent",
+        "request_sha256": "4393e44ea1790bae7a2b9373ba9de87c4559bec28bb9871cf8cc08d08b7b4a4c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up catalogue for Metabo W18 125 standard head grinder",
+          "identified unique SKU PT-GRD-MET-W18-125-FLAT"
+        ],
+        "message": "PT-GRD-MET-W18-125-FLAT",
+        "grounding_refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-GRD-MET-W18-125-FLAT",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 12,
+      "step": {
+        "case_index": 1,
+        "case": "archived_standard_head",
+        "repeat": 1,
+        "arm": "treatment",
+        "request_sha256": "29792259c94da795e7c827146b408826e3976a41e609c3f5086e959ee9df7629"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup for Metabo W18 125 grinder"
+        ],
+        "message": "Multiple Metabo W18 125 grinder variants found. Which one do you need? Options: PT-GRD-MET-W18-125-FLAT (flat‑head grinder body), PT-GRD-MET-W18-125-BODY (grinder body), PT-GRD-MET-W18-125-4AH (kit with 2×4.0 Ah batteries).",
+        "grounding_refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "formatted_answer": {
+        "message": "Multiple Metabo W18 125 grinder variants found. Which one do you need? Options: PT-GRD-MET-W18-125-FLAT (flat‑head grinder body), PT-GRD-MET-W18-125-BODY (grinder body), PT-GRD-MET-W18-125-4AH (kit with 2×4.0 Ah batteries).",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+          "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 13,
+      "step": {
+        "case_index": 2,
+        "case": "derived_exact_sku",
+        "repeat": 1,
+        "arm": "treatment",
+        "request_sha256": "446f0d3c196ac81b3e06e793ef67cfb429a07d74026a863f979e4588c49e715c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 14,
+      "step": {
+        "case_index": 2,
+        "case": "derived_exact_sku",
+        "repeat": 1,
+        "arm": "parent",
+        "request_sha256": "d75a7ca82df7983248fa1c458a00c70e33c9d2e8b82189c06fb1c93246674f00"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 15,
+      "step": {
+        "case_index": 3,
+        "case": "derived_unique_variant",
+        "repeat": 1,
+        "arm": "parent",
+        "request_sha256": "b13326a614056297d0f18b4df945c39201dfb7fee6f1c2d65942451d1dd4e068"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    },
+    {
+      "call": 16,
+      "step": {
+        "case_index": 3,
+        "case": "derived_unique_variant",
+        "repeat": 1,
+        "arm": "treatment",
+        "request_sha256": "46ae2e54a6f4fae5fa5a82dabeae467473524a453be7956ecbc403a373a3485c"
+      },
+      "model_action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "formatted_answer": {
+        "message": "PT-IMP-DEW-DCF887-2AH",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+          "/docs/security.md",
+          "/docs/catalogue-lookup.md"
+        ]
+      },
+      "message_changed": false
+    }
+  ],
+  "limits": "Action/formatter replay only. No full-agent model regeneration, grade, or claim that semantic issues are repaired."
+}

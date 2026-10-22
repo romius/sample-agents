@@ -1,0 +1,48 @@
+{
+  "python": "3.12.7",
+  "external_packages_required": false,
+  "parent_candidate_archive": "d5624r1",
+  "frozen_acceptance": "d5820r1",
+  "dependency_files": [
+    {
+      "path": "../fixtures.json",
+      "bytes": 185691,
+      "sha256": "14a83867320e78183134af77809d30e69751afa141bfff7edb5f3d4169800b6a"
+    },
+    {
+      "path": "../manifest.json",
+      "bytes": 982,
+      "sha256": "a6fc85f1d72549c643b6524a254bfbddd2d44207159feccc59b62ecd57feca57"
+    },
+    {
+      "path": "../readable.py",
+      "bytes": 193001,
+      "sha256": "0d5d10221dd51c2d08fd520d1e9c780c8e83fcb896686d78b7c6960772f2c269"
+    },
+    {
+      "path": "../agent.py",
+      "bytes": 18592,
+      "sha256": "7901ca19bdd8ec9204199a870738836e8625e2a940f582a0e165e2e989341ddc"
+    },
+    {
+      "path": "../../2026-10-22-monitor-2133/upstream/acceptance.py",
+      "bytes": 6641,
+      "sha256": "c80e1476325d2c35a5778f0bb897762a860529b2693082c8035fc8ab70af128a"
+    },
+    {
+      "path": "../../2026-10-22-clarification-integration/readable.py",
+      "bytes": 155658,
+      "sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44"
+    },
+    {
+      "path": "../../2026-10-22-clarification-review/world-fixtures.json",
+      "bytes": 151602,
+      "sha256": "e5ba5a95789454a6da79b25d33cdbe1cd5e7957ef113dc87b4acf66691b22434"
+    }
+  ],
+  "checks": [
+    "verify_capture.py: sealed trace/all16 prompt-response pairs/provider/cost match",
+    "verify_formatter_overlap.py: all16 actual actions, existing parent dispatch, no ECOM RPC",
+    "frozen d5820r1 scorer: regenerated JSON exactly equals saved report"
+  ]
+}

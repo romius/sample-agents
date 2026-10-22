@@ -1,0 +1,604 @@
+{
+  "items": [
+    {
+      "seq": 4,
+      "time": "2026-10-22T21:44:17.511539+00:00",
+      "kind": "rpc_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 0,
+          "bytes": 207
+        },
+        "method": "StartTrial",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8"
+      }
+    },
+    {
+      "seq": 5,
+      "time": "2026-10-22T21:44:17.563056+00:00",
+      "kind": "rpc_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 207,
+          "bytes": 798
+        },
+        "method": "StartTrial",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "ms": 48
+      }
+    },
+    {
+      "seq": 6,
+      "time": "2026-10-22T21:44:17.700020+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 1005,
+          "bytes": 19394
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 1,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 7,
+      "time": "2026-10-22T21:44:31.899553+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 20399,
+          "bytes": 3837
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 1,
+        "model": "openai/gpt-oss-120b",
+        "ms": 14195
+      }
+    },
+    {
+      "seq": 8,
+      "time": "2026-10-22T21:44:31.908859+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 24236,
+          "bytes": 24414
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 2,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 9,
+      "time": "2026-10-22T21:44:40.862960+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 48650,
+          "bytes": 3288
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 2,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8950
+      }
+    },
+    {
+      "seq": 10,
+      "time": "2026-10-22T21:44:40.874255+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 51938,
+          "bytes": 24456
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 3,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 11,
+      "time": "2026-10-22T21:45:04.117279+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 76394,
+          "bytes": 6929
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 3,
+        "model": "openai/gpt-oss-120b",
+        "ms": 23239
+      }
+    },
+    {
+      "seq": 12,
+      "time": "2026-10-22T21:45:04.127328+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 83323,
+          "bytes": 19440
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 4,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 13,
+      "time": "2026-10-22T21:45:17.282945+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 102763,
+          "bytes": 3742
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 4,
+        "model": "openai/gpt-oss-120b",
+        "ms": 13149
+      }
+    },
+    {
+      "seq": 14,
+      "time": "2026-10-22T21:45:17.289870+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 106505,
+          "bytes": 19376
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 5,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 15,
+      "time": "2026-10-22T21:45:22.661428+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 125881,
+          "bytes": 2638
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 5,
+        "model": "openai/gpt-oss-120b",
+        "ms": 5365
+      }
+    },
+    {
+      "seq": 16,
+      "time": "2026-10-22T21:45:22.903425+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 128519,
+          "bytes": 24501
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 6,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 17,
+      "time": "2026-10-22T21:45:31.055228+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 153020,
+          "bytes": 3370
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 6,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8147
+      }
+    },
+    {
+      "seq": 18,
+      "time": "2026-10-22T21:45:31.168256+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 156390,
+          "bytes": 25051
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 7,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 19,
+      "time": "2026-10-22T21:45:39.618012+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 181441,
+          "bytes": 2748
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 7,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8446
+      }
+    },
+    {
+      "seq": 20,
+      "time": "2026-10-22T21:45:40.155664+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 184189,
+          "bytes": 19622
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 8,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 21,
+      "time": "2026-10-22T21:45:50.977761+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 203811,
+          "bytes": 3333
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 8,
+        "model": "openai/gpt-oss-120b",
+        "ms": 10809
+      }
+    },
+    {
+      "seq": 22,
+      "time": "2026-10-22T21:45:52.321495+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 207144,
+          "bytes": 24415
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 9,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 23,
+      "time": "2026-10-22T21:46:04.337491+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 231559,
+          "bytes": 3290
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 9,
+        "model": "openai/gpt-oss-120b",
+        "ms": 12012
+      }
+    },
+    {
+      "seq": 24,
+      "time": "2026-10-22T21:46:04.524920+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 234849,
+          "bytes": 19396
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 10,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 25,
+      "time": "2026-10-22T21:46:12.939720+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 254245,
+          "bytes": 3053
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 10,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8409
+      }
+    },
+    {
+      "seq": 26,
+      "time": "2026-10-22T21:46:19.903722+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 257298,
+          "bytes": 19441
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 11,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 27,
+      "time": "2026-10-22T21:46:29.766796+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 276739,
+          "bytes": 3742
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 11,
+        "model": "openai/gpt-oss-120b",
+        "ms": 9856
+      }
+    },
+    {
+      "seq": 28,
+      "time": "2026-10-22T21:46:31.424408+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 280481,
+          "bytes": 24457
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 12,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 29,
+      "time": "2026-10-22T21:46:42.149502+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 304938,
+          "bytes": 3504
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 12,
+        "model": "openai/gpt-oss-120b",
+        "ms": 10720
+      }
+    },
+    {
+      "seq": 30,
+      "time": "2026-10-22T21:46:46.197005+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 308442,
+          "bytes": 24502
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 13,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 31,
+      "time": "2026-10-22T21:46:55.166553+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 332944,
+          "bytes": 3925
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 13,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8963
+      }
+    },
+    {
+      "seq": 32,
+      "time": "2026-10-22T21:46:57.644885+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 336869,
+          "bytes": 19377
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 14,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 33,
+      "time": "2026-10-22T21:47:03.716584+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 356246,
+          "bytes": 2639
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 14,
+        "model": "openai/gpt-oss-120b",
+        "ms": 6064
+      }
+    },
+    {
+      "seq": 34,
+      "time": "2026-10-22T21:47:04.363068+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 358885,
+          "bytes": 19623
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 15,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 35,
+      "time": "2026-10-22T21:47:10.432553+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 378508,
+          "bytes": 2325
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 15,
+        "model": "openai/gpt-oss-120b",
+        "ms": 4631
+      }
+    },
+    {
+      "seq": 36,
+      "time": "2026-10-22T21:47:10.441153+00:00",
+      "kind": "llm_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 380833,
+          "bytes": 25052
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 16,
+        "model": "openai/gpt-oss-120b"
+      }
+    },
+    {
+      "seq": 37,
+      "time": "2026-10-22T21:47:19.215037+00:00",
+      "kind": "llm_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 405885,
+          "bytes": 2749
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "call": 16,
+        "model": "openai/gpt-oss-120b",
+        "ms": 8763
+      }
+    },
+    {
+      "seq": 38,
+      "time": "2026-10-22T21:47:20.484865+00:00",
+      "kind": "rpc_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 408634,
+          "bytes": 338
+        },
+        "method": "Answer",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8"
+      }
+    },
+    {
+      "seq": 39,
+      "time": "2026-10-22T21:47:20.766056+00:00",
+      "kind": "rpc_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 408972,
+          "bytes": 169
+        },
+        "method": "Answer",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "ms": 46
+      }
+    },
+    {
+      "seq": 40,
+      "time": "2026-10-22T21:47:21.602934+00:00",
+      "kind": "agent_finished",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 409141,
+          "bytes": 64313
+        },
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "task_id": "t001",
+        "state": "answered"
+      }
+    },
+    {
+      "seq": 41,
+      "time": "2026-10-22T21:47:21.606787+00:00",
+      "kind": "rpc_request",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 473454,
+          "bytes": 206
+        },
+        "method": "EndTrial",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8"
+      }
+    },
+    {
+      "seq": 42,
+      "time": "2026-10-22T21:47:21.664014+00:00",
+      "kind": "rpc_response",
+      "data": {
+        "trace": {
+          "scope": "trial-1",
+          "offset": 473660,
+          "bytes": 241
+        },
+        "method": "EndTrial",
+        "trial_id": "vm2-M6yTuG6KzN3VoMopRHU6gFoiBi8",
+        "ms": 54
+      }
+    }
+  ],
+  "more": false,
+  "next_after": 42
+}
