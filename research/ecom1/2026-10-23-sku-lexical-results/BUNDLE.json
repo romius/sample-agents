@@ -1,0 +1,38 @@
+{
+  "status": "passed isolated offline archive reproduction",
+  "files": 88,
+  "archive_bytes": 498884,
+  "archive_sha256": "81e9e377f85dcc0f1622a0188351a0b198ea5a05c98da51e65c6da474095073b",
+  "uncompressed_bytes": 2645558,
+  "environment": {
+    "python": "3.14.3",
+    "zlib_build": "1.2.12",
+    "zlib_runtime": "1.2.12"
+  },
+  "dependency_pins": 68,
+  "v2_dependency_pins": 64,
+  "extra_review_evidence_pins": 4,
+  "exact_source_fixture_plan_seal_review_hashes": {
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/agent.py": "dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/call-plan.json": "89550772dc28c05a1f73d06d5c09d325e7c78de5fb7e89fd5d2c7c1490ff97a5",
+    "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/fixtures.json": "c2dd7b4f5917d6118351becaa7d9aeee7cd2c7d510cb1c5eb5076bb202b57571",
+    "research/ecom1/2026-10-22-sku-paired-diagnostic/agent.py": "7901ca19bdd8ec9204199a870738836e8625e2a940f582a0e165e2e989341ddc",
+    "research/ecom1/2026-10-22-sku-paired-diagnostic/fixtures.json": "14a83867320e78183134af77809d30e69751afa141bfff7edb5f3d4169800b6a",
+    "research/ecom1/2026-10-23-sku-lexical-results/SHA256SUMS": "07235d2ed637616e2b191da94dff48a1fc59343566d68002e22546075d08d550",
+    "research/ecom1/2026-10-23-sku-lexical-results/SHA256SUMS-v2": "96a892ba06e26313952880b36a74c07a38f3708786f1395cfacd85df55cded77",
+    "research/ecom1/2026-10-23-sku-lexical-results/independent-review.md": "ec1060e8a761e8da4a160a0dd1e6a3ea7224010dc7d47a6a5aa0d14f70aafb04",
+    "research/ecom1/2026-10-23-sku-lexical-results/validate_trace_v2.py": "737b19d45ed6dd8af7495a2baab56ae0bfba622989e65d13a4ad75410e875cf2"
+  },
+  "tests": 50,
+  "test_report_byte_identical": true,
+  "archived16_verifier_reproduced": true,
+  "deterministic_double_write": true,
+  "extracted_builder_identical": true,
+  "original_members_unchanged": true,
+  "both_seals_verified": true,
+  "real68_results": false,
+  "model_calls": 0,
+  "brain_writes": false,
+  "git_operations": false,
+  "test_stdout": "PASS archived retry accounting evidence:47 unique transportcalls/43 logical starts; no fabricated full trace.\nPASS 50 offline trace checks; original archived16 verifier reproduced; no real68 outputs or model calls.\n"
+}

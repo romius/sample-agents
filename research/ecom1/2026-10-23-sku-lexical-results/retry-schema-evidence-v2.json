@@ -1,0 +1,34 @@
+{
+  "sdk": "0.3.7",
+  "job_id": "j9b8c85def8734dff9af15bcfd48ad4cc",
+  "summary_blob": "26addbd49066b6c71dd822fa4ae31adbcd2a6403c231efb10b6c365dedb55dd4",
+  "source": {
+    "document": "d6204",
+    "revision": 1,
+    "sha256": "85e7c54b63e6cbd355ed94e924fcceb72502bf79bebfe27691d8599b055ff28f",
+    "sdk_version": "0.3.7"
+  },
+  "summary_path": "2026-10-23-expanded-pairs-review/continuation-index-result.json",
+  "trial_model_calls": 47,
+  "job_model_calls": 47,
+  "wire_request_events": 47,
+  "unique_transport_call_ids": 47,
+  "logical_starts": 43,
+  "retry_attempts": 4,
+  "example": [
+    {
+      "seq": 8,
+      "call": 2,
+      "attempt": 1,
+      "request_sha256": "ca5f78abe38e3fe6e2234d77a2bd2ac8c1ee4d8e84569db29253f4877b9cacc0"
+    },
+    {
+      "seq": 11,
+      "call": 3,
+      "attempt": 2,
+      "request_sha256": "ca5f78abe38e3fe6e2234d77a2bd2ac8c1ee4d8e84569db29253f4877b9cacc0"
+    }
+  ],
+  "meaning": "Durable model_calls counts47 HTTP attempts, not43 logical requests. Retries allocate fresh call IDs and increment attempt. Exact retry request payloads are preserved.",
+  "limits": "These local files contain full request bodies and a settled summary, plus retry indexes. They do not contain every full llm_retry body, so this evidence is not presented as a complete raw-trace reconciliation. V2 requires actual full retry events for a future audited chain."
+}

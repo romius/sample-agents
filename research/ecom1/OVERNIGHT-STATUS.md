@@ -1,6 +1,18 @@
 # ECOM1 overnight status
 
-Updated 2026-10-22 23:20 UTC. Goal ACTIVE until the human explicitly stops or pauses it. Read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md` first. This is substantive progress, not a waiting-only turn. Earlier detail remains in Git history and linked experiment packages.
+Updated 2026-10-22 23:33 UTC. Goal ACTIVE until the human explicitly stops or pauses it. Read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md` first. This is substantive progress, not a waiting-only turn. Earlier detail remains in Git history and linked experiment packages.
+
+## Latest 23:30 monitoring and work (supersedes pending labels below)
+
+- Record remains **d3909r1 94.11366**, installedd298r18/BASELINEd7r30. All three own full100s stillqueued; no newfull100 capacity, no cancellation. Next regularcheck00:00UTC. New duplicatecommunityd4007 full100j479924ba7d6d4a9ca869aac85861d218 also0score/100failed/0model; no recordchallenge.
+- **Both short diagnostics completed.** C/L68 j8359aedb3a54484e876f62f0bba9221a finished23:14:49,68attempts,$0.012366758complete,248387tokens, sealed1297613Btrace SHA6b5c7026c7d3def4d6a5d60e954f2881d098cd4a52b1df4282b662dc7661f980. evaluation_strategy harvestingall149events innewactual-results directory and applying independentlyreviewedv2validator. Manualsemanticreviewstillrequired; no scorer/gradeclaim.
+- **HostedSDKprobe confirms boundary**, j9b18bdffe5fa4ac39383f908170b20a0 finished23:25:06,0modelcalls,$0complete. Method-valueaccessraises, directandnamedwrapperExecbothreturnidenticalidentitystdout. All11events3244Bhash e102a5f3ef60e690915f8f4059f4abfff090f9ed3c4c6074ff5ebcf5f923068f verified. NoexitCodefield,noexitcodeclaim. Resultsd6420..d6425/forumd6426,Git2400326. Do notresubmit.
+- **All100recordaudit preserved**, exactd3756r1+d3585r2 reproducesd3909bytes; all100instructions/grades,all10lossindexes/selectedprimaryresponses andmodelresponses/errors. Archive **d6416r1**,435954B/67files SHAe3aa3efd7f05435c7b982a7b3e826896e31b60e9221993321417bd4b4762ab2b;README d6417/provenanced6418/forumcorrectionsd6419,Git2400326. Rootreranbuild/audit/packageexact. Only3instructionsmatchd2499control; no causalaggregateclaim.
+- **Community d6366/d6402/d6388 reviewed.** Sharedcorrections: recordhasactivei2c_crosslistexporter; t076prefixhidesunits,totalnotmissingexporthandler. t091CSVmatchesindependentoracle/allsourcecitesread,onlyoutputunread; width/stalerootnotestablished. Bobcattakinggeneraloutside-Xexclusionlane; donotduplicatetheirwork. OurC/Lscopeexcludesactualcount/stockzeros.
+- **Concreteintegrationplan d6406**, testsd6407/resultsd6408/independentreviewd6410/forumd6411,Git36798fb/11e6ae1. 12lookup/16retryscenarios:naiveMSRnest9calls,donorMSRsyntheticcancellationtransientoverlapneedsfix. No wholesaleoldstackport.
+- **One-lineOCRcandidate in validation**, folder2026-10-23-stack-e-ocr-repair. Initialbea10fc62554B passed28parsercasesCPython/native,56wholeagentarchivedreplayswithindependent5rowTSVoracle/0unmatchedRPC. ReviewerfoundTurkishcasefolddivergence; rootnowbuildingASCIIcase-pairrevision, then31parsercasesandrepinwholeagentreplay. Do notsubmitinitialbytes. integration_planreviewing;score_opportunitiesownsnewstack-e-ocr-replay. No paidcall.
+- **Offlinevalidatorv2 complete**,50tests/independentreviewPASS; actualSDKretryusesfreshtransportIDs. Archive498884B/88files SHA81e9e377f85dcc0f1622a0188351a0b198ea5a05c98da51e65c6da474095073b awaitingGit/Brainpublication. Usevalidate_trace_v2.py, nothistoricalv1; preservev1seal/evidence. Authorharvestingreal68now.
+- s7708committedclosed; noactiverootBrainsession. Currentnewwork substantive,goalcontinues.
 
 ## Current decisions (supersede historical details below)
 

@@ -1,0 +1,320 @@
+{
+  "status": "offline tests passed",
+  "real68_results_available": false,
+  "real_model_calls": 0,
+  "tests": [
+    {
+      "name": "actual_archived16_schema_and_cost",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": true
+    },
+    {
+      "name": "synthetic68_complete_metadata_only",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_prompt",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "wire_request_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_completion_limit",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "wire_request_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "provider_fallback",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "wire_request_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_source",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "source_identity_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_job",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "job_identity_missing_or_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_trial",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "event_trial_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "missing_response",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "raw_final_event_missing",
+        "terminal_attempt_event_missing_or_duplicate"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "missing_request",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "request_event_missing_or_duplicate",
+        "wire_request_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "wrong_metadata_id",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "response_metadata_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "missing_all_stdout",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "begin_marker_mismatch",
+        "end_marker_missing_or_duplicate",
+        "incomplete_planned_execution",
+        "logical_call_marker_count_mismatch",
+        "result_metadata_missing"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "stdout_truncated_json",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "end_marker_missing_or_duplicate",
+        "malformed_stdout_marker"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "unexpected_world_action",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "carrier_lifecycle_mismatch",
+        "unexpected_ecom_action"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "not_terminal",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "job_not_terminal"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "entire_call_missing_not_shifted_into_success",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "attempted_call_events_missing",
+        "logical_call_marker_count_mismatch",
+        "response_metadata_mismatch",
+        "wire_request_mismatch"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "immutable_trace_hash_mismatch",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "trace_hash_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "length_and_malformed_content_preserved",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": true
+    },
+    {
+      "name": "observed429_schema_separate_attempt",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": false
+    },
+    {
+      "name": "retry_event_missing",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "unsupported_or_missing_retry"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "retry_with_generation_evidence_rejected",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "unsupported_or_missing_retry"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "observed_timeout_schema_raw_error_linked",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": false
+    },
+    {
+      "name": "cancellation_keeps_all68_cells",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": false
+    },
+    {
+      "name": "cancelled_inflight_missing_terminal_event",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "raw_final_event_missing",
+        "terminal_attempt_event_missing_or_duplicate"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "settled_cost_mismatch_flagged_separately",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": false
+    },
+    {
+      "name": "missing_cost_not_zero_imputed",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "reconciled",
+      "problem_codes": [],
+      "cost_complete": false
+    },
+    {
+      "name": "truncated_paginated_trace_not_complete",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "begin_marker_mismatch",
+        "carrier_lifecycle_mismatch",
+        "end_marker_missing_or_duplicate",
+        "incomplete_planned_execution",
+        "logical_call_marker_count_mismatch",
+        "malformed_trace_line",
+        "missing_or_duplicate_agent_finished",
+        "result_metadata_missing",
+        "trace_hash_mismatch",
+        "trace_size_mismatch",
+        "unattempted_without_cancellation"
+      ],
+      "cost_complete": false
+    },
+    {
+      "name": "interleaved_logical_calls",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "logical_calls_interleaved"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "duplicate_request_event",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "request_event_missing_or_duplicate",
+        "wire_request_mismatch"
+      ],
+      "cost_complete": true
+    },
+    {
+      "name": "cancel_status_without_stdout_not_unattempted",
+      "passed": true,
+      "scope": "offline test; not real68 results",
+      "status": "incomplete_or_deviating",
+      "problem_codes": [
+        "begin_marker_mismatch",
+        "carrier_answer_after_cancel",
+        "logical_call_marker_count_mismatch",
+        "result_metadata_missing"
+      ],
+      "cost_complete": true
+    }
+  ],
+  "total_tests": 30,
+  "original_verifier_reused_unchanged": true,
+  "no_semantic_scorer": true
+}
