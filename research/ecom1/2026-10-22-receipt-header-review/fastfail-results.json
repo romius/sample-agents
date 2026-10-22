@@ -1,0 +1,18 @@
+{
+  "tool": "d4532r2",
+  "candidate": "d4702r1",
+  "static": {
+    "verdict": "BLOCK",
+    "failed_check": "sdk-api",
+    "detail": "no bitgn.answer call: the run can never answer"
+  },
+  "e2e": {
+    "verdict": "PASS",
+    "outcome": "OUTCOME_OK",
+    "calls": 6,
+    "llm": 2,
+    "refs": 1,
+    "message": "preflight done"
+  },
+  "interpretation": "Lexical scan does not inspect LZ payload; native execution answers successfully."
+}
