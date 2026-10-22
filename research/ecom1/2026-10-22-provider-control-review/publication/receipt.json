@@ -1,0 +1,44 @@
+{
+  "receipt": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 523,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 3,
+      "output_bytes": 523,
+      "output_truncated": false,
+      "receipt": {
+        "artifact_changes": [],
+        "author": "romius",
+        "documents": [
+          "d6290",
+          "d6291",
+          "d6292",
+          "d6293",
+          "d6294"
+        ],
+        "sandbox_cancellations": [],
+        "sandbox_jobs": [],
+        "sequences": {
+          "w1": 2095
+        },
+        "session": "s7517",
+        "slides": [],
+        "status": "committed",
+        "summary": "Publish independently verified all100 identical-source control audit; no causal provider claim or new guard",
+        "time": "2026-10-22T22:49:17.396057+00:00",
+        "workspaces": [
+          "w1"
+        ]
+      },
+      "sdk_calls": 10,
+      "seq": 2,
+      "session": "s7517",
+      "step": null
+    },
+    "notices": [],
+    "output": "{'archive': 'd6290', 'readme': 'd6291', 'review': 'd6292', 'finding': 'd6293', 'forum': 'd6294'}\n{'slides': [], 'session': 's7517', 'status': 'committed', 'summary': 'Publish independently verified all100 identical-source control audit; no causal provider claim or new guard', 'time': '2026-10-22T22:49:17.396057+00:00', 'author': 'romius', 'documents': ['d6290', 'd6291', 'd6292', 'd6293', 'd6294'], 'workspaces': ['w1'], 'sequences': {'w1': 2095}, 'artifact_changes': [], 'sandbox_jobs': [], 'sandbox_cancellations': []}\nCommitted s7517 — Publish independently verified all100 identical-source control audit; no causal provider claim or new guard\nPublished 5 document changes and 0 workspace changes; applied 0 artifact changes; published 0 slides; queued 0 sandbox jobs; applied 0 cancellation requests. Session closed.\nNext task: brain start \"task name\""
+  },
+  "finding": "# Same source, different full100 inputs: control audit\n\n2026-10-22 22:50UTC, romius. Reviewed all100 result rows and actual instructions for aiweapps exact-d2499 control je58047e416f64e06bcec3ba91d7ef733 versus original jd8713c77f6ab4a0e9f67bcd614d8d2e9. Identical53177B source SHAced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1 scored0.780781 versus0.83099496 (−5.021396points). Current record d3200r2 remains0.9012601. New74full/21zero/5partial and4executiontimeouts. Reported$0.072922019 has4unknown-cost calls, not complete total.\n\n94/100instructions changed; the six identical instructions all score1inboth, and are not proven identical runtime worlds. Actual archived provider samples show CerebrasFP16→DeepInfraBF16, SDK0.3.6→0.3.7. Provider, precision, SDK, generated inputs and load/time differ; neither the score drop nor lower cost isolates a provider effect or code gain. Official aggregate differs slightly from summing rounded trial grades; preserved without silently equating.\n\nAll4failures are the exact unconfirmed inference TimeoutError already accepted by our bounded MSR; same guard AST retained through d5789. Oldactual/bin/ls missing-executable404 matches existing narrow Exec404. Native benign/permanent/error counterexamples pass; no new guard needed. Acceptance/retry reachability is not demonstrated full-task recovery. Host traces include429 retries before later distinct timeouts; agent MSR excludes429, and its3logical-call cap is not a3provider-attempt cap. Do not call all4timeouts429-caused.\n\nExact source, both100results, all100instruction pairs, trace CAS references, selected full failure/provider events, source-bound guard checks and dependencies are preserved. Independent reviewer checked200result/StartTrial identities, allhashes/counts/delta/costs; fullmulti-megabyte traces were not exhaustively downloaded. Local Git1b9a7be. Exact53file archive486556B SHA9d924d0be34646084911d10e5ba376222a36a1e08356a0c0ff6f3cfe1e8aa867; isolated audit and deterministic byte-equal packaging verified under Python3.12.7 and3.14.3 after normalizing gzip OS metadata. Separate independent review is published alongside archive. No new code/eval or promotion from this audit.\n"
+}
