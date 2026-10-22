@@ -1,0 +1,1438 @@
+{
+  "cases": 28,
+  "runtimes": [
+    "CPython",
+    "native Monty"
+  ],
+  "results": {
+    "record": [
+      {
+        "case": "archived",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "clean",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-units-0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-lines-0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-units-1",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-lines-1",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-units-2",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-lines-2",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-units-3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "noise-lines-3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "CRLF",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "literal-newlines",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "wrong-total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "duplicate-clean",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "duplicate-noisy",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "conflicting-noisy",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "two-line-totals",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "non-layout-0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-1",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-2",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-4",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-5",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-6",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "trailing-prose",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "duplicate-branch",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "invalid-spec",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "prose-after-clean",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "candidate": [
+      {
+        "case": "archived",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "clean",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-units-0",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-lines-0",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-units-1",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-lines-1",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-units-2",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-lines-2",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-units-3",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "noise-lines-3",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "CRLF",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "literal-newlines",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "wrong-total",
+        "error": "OCR row or quantity total mismatch"
+      },
+      {
+        "case": "duplicate-clean",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "duplicate-noisy",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "conflicting-noisy",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "two-line-totals",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-0",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-1",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-2",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-3",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-4",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-5",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "non-layout-6",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "trailing-prose",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "duplicate-branch",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "invalid-spec",
+        "error": "Uncertain OCR specification; no property key or value inferred"
+      },
+      {
+        "case": "prose-after-clean",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "scope": "Exact parser functions only; no whole-handler/agent or live grader claim. Recognized duplicate noisy totals are deliberately validated together, even when a clean total exists."
+}

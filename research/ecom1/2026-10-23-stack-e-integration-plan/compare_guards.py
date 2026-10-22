@@ -67,7 +67,7 @@ class Provider:
         return {'choices': [{'message': {'content': '{}'}}]}
 
 retry = []
-for error in ['HTTP 503 unavailable', 'Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out', 'HTTP 429 timeout', 'HTTP 400 connection', 'database is locked', 'cancelled']:
+for error in ['HTTP 503 unavailable', 'Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out', 'HTTP 429 timeout', 'HTTP 400 connection', 'database is locked', 'cancelled', 'Cancelled: connection closed', 'HTTP 503 request cancelled']:
     for failures in [1, 99]:
         counts = {}
         for mode in ['record-main', 'naive-MSR-plus-record-main', 'MSR-alone']:
@@ -85,7 +85,7 @@ for error in ['HTTP 503 unavailable', 'Inference outcome/cost unconfirmed: Timeo
             assert all(r == provider.requests[0] for r in provider.requests)
             counts[mode] = {'calls': len(provider.requests), 'success': 'response' in ns, 'raised': raised}
         retry.append({'error': error, 'failures': failures, 'modes': counts})
-        transient = error.startswith('HTTP 503') or 'TimeoutError' in error
+        transient = error.startswith('HTTP 503') or 'TimeoutError' in error or error == 'Cancelled: connection closed'
         assert counts['record-main']['calls'] == (2 if failures == 1 else 3)
         assert counts['naive-MSR-plus-record-main']['calls'] == (2 if failures == 1 else (9 if transient else 3))
         assert counts['MSR-alone']['calls'] == ((2 if failures == 1 else 3) if transient else 1)
@@ -93,6 +93,6 @@ for error in ['HTTP 503 unavailable', 'Inference outcome/cost unconfirmed: Timeo
 result = {'scope': 'Exact function and main-loop guard extraction; excludes forced-report call, routing, action processing, SDK host retry and live inference. Not whole-agent success evidence.',
           'sources': {str(p.relative_to(ROOT)): {'sha256': hashlib.sha256(p.read_bytes()).hexdigest(), 'bytes': p.stat().st_size} for p in [PARENT, DONOR]},
           'lookup_cases': lookup, 'retry_cases': retry,
-          'conclusion': 'Do not stack MSR inside the existing main-loop all-exception retry guard. A main request may otherwise be attempted nine times before the separate forced report. Preserve narrow Exec missing-executable semantics; add unconfirmed Delete recovery independently; neither lookup recovery retries a mutation.'}
+          'conclusion': 'Do not stack MSR inside the existing main-loop all-exception retry guard. A main request may otherwise be attempted nine times before the separate forced report. Donor MSR also retries synthetic cancellation messages containing connection or HTTP503; a future wrapper needs explicit cancellation handling, not wholesale reuse. Preserve narrow Exec missing-executable semantics; add unconfirmed Delete recovery independently; neither lookup recovery retries a mutation.'}
 OUT.joinpath('guard-comparison.json').write_text(json.dumps(result, indent=2) + '\n')
-print('PASS: 12 lookup boundaries and 12 retry scenarios across three exact-guard compositions')
+print('PASS: 12 lookup boundaries and 16 retry scenarios across three exact-guard compositions')

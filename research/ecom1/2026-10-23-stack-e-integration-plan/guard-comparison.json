@@ -432,7 +432,91 @@
           "raised": "cancelled"
         }
       }
+    },
+    {
+      "error": "Cancelled: connection closed",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        }
+      }
+    },
+    {
+      "error": "Cancelled: connection closed",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 9,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 3,
+          "success": false,
+          "raised": "Cancelled: connection closed"
+        }
+      }
+    },
+    {
+      "error": "HTTP 503 request cancelled",
+      "failures": 1,
+      "modes": {
+        "record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 2,
+          "success": true,
+          "raised": null
+        }
+      }
+    },
+    {
+      "error": "HTTP 503 request cancelled",
+      "failures": 99,
+      "modes": {
+        "record-main": {
+          "calls": 3,
+          "success": false,
+          "raised": null
+        },
+        "naive-MSR-plus-record-main": {
+          "calls": 9,
+          "success": false,
+          "raised": null
+        },
+        "MSR-alone": {
+          "calls": 3,
+          "success": false,
+          "raised": "HTTP 503 request cancelled"
+        }
+      }
     }
   ],
-  "conclusion": "Do not stack MSR inside the existing main-loop all-exception retry guard. A main request may otherwise be attempted nine times before the separate forced report. Preserve narrow Exec missing-executable semantics; add unconfirmed Delete recovery independently; neither lookup recovery retries a mutation."
+  "conclusion": "Do not stack MSR inside the existing main-loop all-exception retry guard. A main request may otherwise be attempted nine times before the separate forced report. Donor MSR also retries synthetic cancellation messages containing connection or HTTP503; a future wrapper needs explicit cancellation handling, not wholesale reuse. Preserve narrow Exec missing-executable semantics; add unconfirmed Delete recovery independently; neither lookup recovery retries a mutation."
 }

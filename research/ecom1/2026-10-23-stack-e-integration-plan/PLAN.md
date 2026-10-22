@@ -34,4 +34,6 @@ This is an observed +3.98765 points against inara d3200r2, not a causal estimate
 
 ## Focused guard evidence
 
-Run `python3 -W ignore::SyntaxWarning research/ecom1/2026-10-23-stack-e-integration-plan/compare_guards.py` from the workspace. It extracts the actual recovery functions and main-loop exception AST from pinned local sources, tests12 lookup boundaries and12 error scenarios across three retry compositions, and records source hashes. It deliberately excludes forced-report calls, routing, action processing, native SDK dispatch and provider retries. It is a control-flow counterexample, not an archived-world replay or whole-task recovery claim.
+Run `python3 -W ignore::SyntaxWarning research/ecom1/2026-10-23-stack-e-integration-plan/compare_guards.py` from the workspace. It extracts the actual recovery functions and main-loop exception AST from pinned local sources, tests12 lookup boundaries and16 error scenarios across three retry compositions, and records source hashes. It deliberately excludes forced-report calls, routing, action processing, native SDK dispatch and provider retries. It is a control-flow counterexample, not an archived-world replay or whole-task recovery claim.
+
+Independent guard review found synthetic cancellation messages containing `connection` or HTTP503 are retried by donor MSR. These two counterexamples are now included: the old wrapper is not cancellation-safe merely because literal `cancelled` alone is rejected. A new integration must resolve this before any hosted execution.
