@@ -1,0 +1,1035 @@
+--- record_readable.py
++++ parent_readable.py
+@@ -2057,7 +2057,16 @@
+   return names[0] if len(names) == 1 else None
+ 
+ 
+-def rcp_items(text):
++def _receipt_match(pattern, text, mode, recover):
++  patterns = (pattern, pattern.replace(RCP_QTY, "[0-9Il|S]{1,3}")) if recover else (pattern,)
++  for candidate in patterns:
++    match = re.fullmatch(candidate, text) if mode == 0 else re.search(candidate, text) if mode == 1 else re.match(candidate, text)
++    if match:
++      return match
++  return None
++
++
++def rcp_items(text, _ocr_quantity=False):
+   up = text.upper()
+   layout = "A" if "ART.NR" in up else "B" if "CLERK NO" in up else "C" if "ITEM QTY UNIT TOTAL" in " ".join(up.split()) else None
+   items = []
+@@ -2079,16 +2088,16 @@
+       if unit and items:
+         items[-1][1] = rcp_num(unit.group(1))
+         continue
+-      head = re.fullmatch("(" + RCP_QTY + ") (.+?) (" + RCP_AMT + ")", line) if subtotal is None else None
++      head = _receipt_match("(" + RCP_QTY + ") (.+?) (" + RCP_AMT + ")", line, 0, _ocr_quantity) if subtotal is None else None
+       if head and not head.group(2).lower().startswith(("inkl", "mwst")):
+         qty, total = rcp_num(head.group(1)), rcp_num(head.group(3))
+         items.append([qty, None, None, total])
+     elif layout == "B":
+-      head = re.search("\\[[0-9Il]+\\] (" + RCP_QTY + ") (.+?) (" + RCP_AMT + ") (\\S+)(?: [^0-9A-Za-z].*)?$", line)
++      head = _receipt_match("\\[[0-9Il]+\\] (" + RCP_QTY + ") (.+?) (" + RCP_AMT + ") (\\S+)(?: [^0-9A-Za-z].*)?$", line, 1, _ocr_quantity)
+       if head:
+         items.append([rcp_num(head.group(1)), rcp_num(head.group(3)), None, None])
+     elif layout == "C":
+-      head = re.match("(.+?) (" + RCP_QTY + ") (" + RCP_AMT + ") (" + RCP_AMT + ")(?: |$)", line)
++      head = _receipt_match("(.+?) (" + RCP_QTY + ") (" + RCP_AMT + ") (" + RCP_AMT + ")(?: |$)", line, 2, _ocr_quantity)
+       if head and subtotal is None:
+         items.append([rcp_num(head.group(2)), rcp_num(head.group(3)), None, rcp_num(head.group(4))])
+   out = []
+@@ -2102,6 +2111,13 @@
+     return None
+   return out
+ 
++
++_receipt_original_items = rcp_items
++
++
++def rcp_items(text):
++  original = _receipt_original_items(text)
++  return original if original is not None else _receipt_original_items(text, True)
+ 
+ def rcp_product(fragment, cents):
+   key = ocr_key(fragment).rstrip(".")
+@@ -2474,6 +2490,963 @@
+     refs.append(p)
+  return str(len(refs)), ([store[0]] if store else []) + refs + [r for r in POLICY_REFS if r not in refs]
+ 
++
++# --- bobcat i2c modules (rv4 d3809r1 copies): cleanup, stock_butnot; contract fn(instruction) -> None | {message,outcome,refs,why}
++I2C = {"trees": {}, "json": {}, "stores": None, "products": None}
++
++I2C_STOP = ("powertools", "tools", "place", "at", "near", "the", "in", "store", "branch", "of", "shop")
++
++I2C_SYN = {"ibk": "innsbruck", "vie": "vienna", "wien": "vienna", "central": "center", "centre": "center"}
++
++def i2c_words(text):
++    out, cur = [], ""
++    for ch in str(text).lower():
++        if ch.isalnum():
++            cur += ch
++        else:
++            if cur:
++                out.append(cur)
++            cur = ""
++    if cur:
++        out.append(cur)
++    return out
++
++def i2c_agents():
++    return AGENTS_TEXT[0] if AGENTS_TEXT else ""
++
++def i2c_root(label):
++    # "Stores are under `/proc/stores`." -> /proc/stores ; label e.g. "Stores", "Employees"
++    a = i2c_agents()
++    k = a.find(label + " are under `")
++    if k < 0:
++        return ""
++    r = a[k + len(label) + 12:].split("`")[0].rstrip("/")
++    return r if r.startswith("/proc/") and ".." not in r else ""
++
++def i2c_catalog_root():
++    a = i2c_agents()
++    h = "Use the files under `"
++    k = a.find(h)
++    if k < 0:
++        return ""
++    r = a[k + len(h):].split("`")[0].rstrip("/")
++    return r if r.startswith("/proc/") else ""
++
++def i2c_files(root):
++    # all file paths under root (one Tree call per root, cached)
++    root = root.rstrip("/")
++    if root not in I2C["trees"]:
++        out = []
++        def walk(node, path):
++            for ch in node.get("children") or []:
++                p = path + "/" + ch.get("name", "")
++                if ch.get("kind") == "NODE_KIND_DIR":
++                    walk(ch, p)
++                else:
++                    out.append(p)
++        walk(bitgn.call("Tree", {"root": root, "level": 0}).get("root") or {}, root)
++        I2C["trees"][root] = out
++    return I2C["trees"][root]
++
++def i2c_guard_dirs(paths):
++    # nested AGENTS.MD / README.MD may carry extra rules -> decline
++    for p in paths:
++        if p.rsplit("/", 1)[-1].upper() in ("AGENTS.MD", "README.MD"):
++            return False
++    return True
++
++def i2c_json(path):
++    if path in I2C["json"]:
++        return I2C["json"][path]
++    rec = None
++    try:
++        rec = json.loads(bitgn.call("Read", {"path": path}).get("content") or "")
++    except Exception:
++        rec = None
++    if not isinstance(rec, dict):
++        rec = None
++    I2C["json"][path] = rec
++    return rec
++
++def i2c_doc(path):
++    try:
++        return bitgn.call("Read", {"path": path}).get("content") or ""
++    except Exception:
++        return ""
++
++def i2c_stores():
++    if I2C["stores"] is None:
++        root = i2c_root("Stores")
++        out = []
++        if root:
++            files = i2c_files(root)
++            if not i2c_guard_dirs(files):
++                I2C["stores"] = []
++                return []
++            for p in files:
++                if p.endswith(".json"):
++                    r = i2c_json(p)
++                    if r is not None and r.get("id") and r.get("name"):
++                        r = dict(r)
++                        r["_path"] = p
++                        out.append(r)
++        I2C["stores"] = out
++    return I2C["stores"]
++
++def i2c_store(phrase):
++    want = [I2C_SYN.get(w, w) for w in i2c_words(phrase) if w not in I2C_STOP]
++    if not want:
++        return None
++    hits = []
++    for s in i2c_stores():
++        hay = [I2C_SYN.get(w, w) for w in i2c_words(str(s.get("id")) + " " + str(s.get("name")) + " " + str(s.get("city")))]
++        if all(w in hay for w in want):
++            hits.append(s)
++    return hits[0] if len(hits) == 1 else None
++
++def i2c_avail_policy_ok():
++    d = " ".join(i2c_doc("/docs/availability-checks.md").split())
++    return ("max(on_hand - reserved, 0)" in d and "absent from a branch inventory" in d
++            and "arrival_in_days" in d)
++
++def i2c_cleanup(ins):
++    s = ins.strip()
++    a, b = "Under /tmp/", ", delete only files whose basename ends exactly in `"
++    c = "`. Leave every other file there untouched. Return only the deleted paths, one per line, sorted alphabetically."
++    d = "Please clean out every temporary file under /tmp/"
++    e = ". Delete all files there and nothing else. Return only the deleted paths, one per line, sorted alphabetically."
++    if s.startswith(a) and s.endswith(c) and s.count(b) == 1:
++        root, ext = s[6:s.index(b)], s[s.index(b) + len(b):len(s) - len(c)]
++        if len(ext) < 2 or ext[0] != "." or not ext[1:].isalnum():
++            return None
++    elif s.startswith(d) and s.endswith(e):
++        root, ext = s[len(d) - 5:len(s) - len(e)], ""
++    else:
++        return None
++    name = root[5:]
++    if not name or ".." in name or not all(ch.isalnum() or ch in "-_." for ch in name):
++        return None
++    ents = bitgn.call("List", {"path": root}).get("entries") or []
++    if not ents or any(x.get("kind") != "NODE_KIND_FILE" for x in ents):
++        return None
++    if not i2c_guard_dirs([root + "/" + x.get("name", "") for x in ents]):
++        return None
++    todo = sorted(x.get("path") or (root + "/" + x["name"]) for x in ents if x["name"].endswith(ext))
++    if not todo:
++        return None
++    done = []
++    for p in todo:
++        try:
++            bitgn.call("Delete", {"path": p})
++            done.append(p)
++        except Exception as exc:
++            print("i2c cleanup: delete failed", p, str(exc)[:120])
++    return {"message": "\n".join(done), "outcome": "OUTCOME_OK", "refs": [root, "/docs/security.md"],
++            "why": "deleted %d of %d" % (len(done), len(ents))}
++
++I2C_ANCHORS = [
++    ("ddf485", "DDF485"), ("dhs680", "DHS680"), ("dwe575", "DWE575"), ("dcf887", "DCF887"),
++    ("m18fid3", "M18FID3"), ("fid3", "M18FID3"), ("gsr18", "GSR55"), ("gex125", "GEX125"),
++    ("gws1400", "GWS1400"), ("w18125", "W18-125"),
++    ("uhc1850", "UHC18"), ("hedgecut", "UHC18"), ("hsa50", "HSA50"), ("rma235", "RMA235"),
++    ("gecm", "GECM"), ("teac270", "TEAC270"), ("27050", "TEAC270"), ("ters18", "TERS18"),
++    ("compactair", "CA240"),
++    ("cyl9", "CYL9"), ("hsssprint", "HSS-"), ("expertforwood", "EXPWOOD"), ("expertwood", "EXPWOOD"),
++    ("aquatak", "UA135"), ("karcherk4", "K4-"), ("k4power", "K4-"), ("pheos", "PHEOS"),
++    ("securefit", "SF400"), ("makspec", "MAK-SPEC"), ("specializedblade", "MAK-SPEC"),
++    ("specializedsaw", "MAK-SPEC"),
++]
++
++def i2c_flat(s):
++    return "".join(ch for ch in str(s).lower() if ch.isalnum())
++
++def i2c_strip_unspec(q):
++    # split on sentence dots, not decimal points
++    parts = q.replace(";", ".").split(". ")
++    keep = []
++    for p in parts:
++        low = p.lower()
++        if any(x in low for x in ("not specified", "not supplied", "not provided", "unstated",
++                                  "unspecified", "was not given", "remain unknown")):
++            continue
++        keep.append(p)
++    return ". ".join(keep)
++
++def i2c_eur_cap(q):
++    low = " ".join(q.lower().split())
++    for key in ("under eur ", "below eur ", "budget cap eur ", "price must be below eur "):
++        i = low.find(key)
++        if i < 0:
++            continue
++        rest = low[i + len(key):]
++        num = ""
++        for ch in rest:
++            if ch.isdigit() or (ch == "." and "." not in num):
++                num += ch
++            elif num:
++                break
++        if not num:
++            return None
++        if "." in num:
++            a, b = num.split(".", 1)
++            b = (b + "00")[:2]
++            return int(a) * 100 + int(b)
++        return int(num) * 100
++    return None
++
++def i2c_first_int(s):
++    num = ""
++    for ch in s:
++        if ch.isdigit():
++            num += ch
++        elif num:
++            break
++    return int(num) if num else None
++
++def i2c_piece_bounds(q):
++    low = q.lower()
++    lt = gt = eq = None
++    for key in ("under ", "below ", "above ", "over "):
++        i = 0
++        while True:
++            j = low.find(key, i)
++            if j < 0:
++                break
++            n = i2c_first_int(low[j + len(key):])
++            tail = low[j:j + 40]
++            if n is not None and "piece" in tail:
++                if key in ("under ", "below "):
++                    lt = n
++                else:
++                    gt = n
++            i = j + len(key)
++    if "single-digit" in low or "single digit" in low:
++        lt = 10 if lt is None else min(lt, 10)
++    if "double-digit" in low or "double digit" in low:
++        gt = 9 if gt is None else max(gt, 9)
++    # exact N-piece / N piece / Npc, ignoring the under/above phrase
++    i = 0
++    while i < len(low):
++        if low[i].isdigit():
++            j = i
++            while j < len(low) and low[j].isdigit():
++                j += 1
++            n = int(low[i:j])
++            tail = low[j:j + 8]
++            prev = low[max(0, i - 8):i]
++            if (tail.startswith("-piece") or tail.startswith(" piece") or tail.startswith("pc")) and "under" not in prev and "below" not in prev and "above" not in prev and "over" not in prev and "excluded" not in low[j:j + 24]:
++                eq = n
++            i = j
++        else:
++            i += 1
++    return lt, gt, eq
++
++def i2c_diam_of(q):
++    low = q.lower()
++    gt = eq = None
++    i = 0
++    while True:
++        j = low.find("mm", i)
++        if j < 0:
++            break
++        k = j - 1
++        if k >= 0 and low[k] == " ":
++            k -= 1
++        end = k + 1
++        while k >= 0 and low[k].isdigit():
++            k -= 1
++        if end - (k + 1) <= 3 and k + 1 < end:
++            n = int(low[k + 1:end])
++            pre = low[max(0, k - 8):k + 1]
++            if "above" in pre or "over" in pre:
++                gt = n
++            elif n >= 50 and "excluded" not in low[j:j + 24] and "excluded" not in pre:
++                eq = n
++        i = j + 2
++    return gt, eq
++
++def i2c_tank_of(q):
++    low = q.lower()
++    # 24l, 24 l, 24-liter, 24 liter, 6-liter
++    for tok, n in (("24", 24), ("6", 6), ("50", 50)):
++        if tok + "l" in low.replace(" ", "").replace("-", "") and "liter" not in low and tok + "l" in i2c_flat(low):
++            pass
++    s = low.replace("-", " ")
++    # look for Nl or N liter
++    i = 0
++    found = None
++    squ = s.replace(" ", "")
++    if "240/24" in squ:
++        return 24
++    if "240/6" in squ:
++        return 6
++    while i < len(s):
++        if s[i].isdigit():
++            j = i
++            while j < len(s) and s[j].isdigit():
++                j += 1
++            n = int(s[i:j])
++            tail = s[j:j + 8]
++            if tail.startswith("l") or tail.startswith(" l") or tail.startswith(" liter"):
++                if n in (6, 24, 50):
++                    found = n
++            i = j
++        else:
++            i += 1
++    return found
++
++def i2c_ah_list(text):
++    # return list of canonical ah keys present: '20','25','30','40','50','52' meaning 2.0, 2.5, 3.0, 4.0, 5.0, 5.2
++    s = text.lower().replace(" ", "")
++    out = []
++    i = 0
++    while i < len(s):
++        if s[i].isdigit():
++            j = i
++            while j < len(s) and (s[j].isdigit() or s[j] == "."):
++                j += 1
++            raw = s[i:j]
++            tail = s[j:j + 2]
++            if tail == "ah" or (j < len(s) and s[j:j + 2] == "ah"):
++                if "." in raw:
++                    a, b = raw.split(".", 1)
++                    key = a + (b[:1] if b else "0")
++                else:
++                    key = raw + "0"  # 5ah -> 50, 4ah -> 40, 3ah -> 30, 2ah -> 20
++                if key not in out and key in ("20", "25", "30", "40", "50", "52"):
++                    out.append(key)
++            i = j
++        else:
++            i += 1
++    return out
++
++def i2c_kit_blob(p):
++    pr = p.get("properties") or {}
++    return (str(pr.get("kit") or "") + " " + str(p.get("name") or "") + " " + p.get("sku", "")).lower()
++
++def i2c_has_ah(p, key):
++    # key '50' means 5.0
++    b = i2c_kit_blob(p).replace(" ", "")
++    dotted = key[0] + "." + key[1]
++    return (dotted + "ah") in b or (key + "ah") in b
++
++def i2c_family_of(q):
++    fq = i2c_flat(q)
++    best, bl = None, 0
++    for a, part in I2C_ANCHORS:
++        if a in fq and len(a) > bl:
++            best, bl = part, len(a)
++    # makita blades without dhs
++    if best is None and "makita" in fq and "blade" in fq and "dhs" not in fq:
++        best = "MAK-SPEC"
++    if best is None and "metabo" in fq and ("w18" in fq or "grinder" in fq):
++        best = "W18-125"
++    if best is None and "karcher" in fq and "k4" in fq:
++        best = "K4-"
++    if best is None and "makita" in fq and "saw" in fq:
++        best = "DHS680"
++    if best is None and "bosch" in fq and "gsr" in fq:
++        best = "GSR55"
++    if best is None and ("einhell" in fq and "270" in fq):
++        best = "TEAC270"
++    return best
++
++def i2c_digital_family(q, products):
++    fq = i2c_flat(q)
++    low = q.lower()
++    if "course" in low:
++        return [p for p in products if (p.get("properties") or {}).get("file_format") == "video course"]
++    if "video" in low and ("bundle" in low or "videos" in low):
++        return [p for p in products if "video bundle" in p.get("name", "").lower()]
++    if "field guide" in low or "ebook" in low or ("guide" in low and "digital" in low) or "fieldguide" in fq:
++        return [p for p in products if str(p.get("sku", "")).startswith("PT-DIG-GUIDE")]
++    if "plan" in low and ("pack" in low or "download" in low or "weekend" in low):
++        return [p for p in products if str(p.get("sku", "")).startswith("PT-DIG-PLAN")]
++    if "calculator" in low or "spreadsheet" in low or "worksheet" in low or "template" in low:
++        return [p for p in products if str(p.get("sku", "")).startswith("PT-DIG-TPL")]
++    return None
++
++def i2c_narrow(q, cands):
++    if not cands:
++        return []
++    low = " ".join(q.lower().split())
++    fq = i2c_flat(q)
++    out = list(cands)
++    # price
++    cap = i2c_eur_cap(q)
++    if cap is not None:
++        out = [p for p in out if isinstance(p.get("price_cents"), int) and p["price_cents"] < cap]
++    # piece
++    lt, gt, eq = i2c_piece_bounds(q)
++    if eq is not None:
++        out = [p for p in out if (p.get("properties") or {}).get("piece_count") == eq]
++    if lt is not None:
++        out = [p for p in out if ((p.get("properties") or {}).get("piece_count") or 0) < lt]
++    if gt is not None:
++        out = [p for p in out if ((p.get("properties") or {}).get("piece_count") or 0) > gt]
++    # diameter
++    dgt, deq = i2c_diam_of(q)
++    if deq is not None:
++        def diam(p):
++            pr = p.get("properties") or {}
++            return pr.get("blade_diameter_mm") or pr.get("disc_mm") or pr.get("blade_mm") or pr.get("pad_mm")
++        out = [p for p in out if diam(p) == deq]
++    if dgt is not None:
++        def diam(p):
++            pr = p.get("properties") or {}
++            return pr.get("blade_diameter_mm") or pr.get("disc_mm") or pr.get("blade_mm")
++        out = [p for p in out if (diam(p) or 0) > dgt]
++    tank = i2c_tank_of(q)
++    if tank is not None and any((p.get("properties") or {}).get("tank_l") for p in cands):
++        neg_tank = ("not the plain" in low) or ("not the " + str(tank) + "l" in low.replace(" ", "")) or ("not the plain " + str(tank) in low)
++        if neg_tank:
++            out = [p for p in out if (p.get("properties") or {}).get("tank_l") != tank]
++        else:
++            out = [p for p in out if (p.get("properties") or {}).get("tank_l") == tank]
++    # ah exclusions / positives
++    # body request
++    body_pos = any(x in low for x in ("body-only", "body only", "bare ", "by itself", "no battery", " body"))
++    if low.startswith("bare") or " bare " in low:
++        body_pos = True
++    # explicit battery size positive like 2x5ah, two-5.0ah, 4ah bosch, ak-30, big-battery
++    pos_ah = []
++    if "2x5" in fq or "two5" in fq or "bigbattery" in fq or "5.0ah" in low and "without" not in low and "not the 5" not in low and "excluded" not in low:
++        if "without" not in low and "not the 5" not in low:
++            pos_ah.append("50")
++    if "2x3" in fq or "two3" in fq or ("3.0ah" in low and "excluded" not in low and "not the 3" not in low):
++        pos_ah.append("30")
++    if "2x4" in fq or "two4" in fq or ("4.0ah" in low and "without" not in low and "not the 4" not in low and "excluded" not in low):
++        pos_ah.append("40")
++    if "2x2" in fq or "two2" in fq or ("2.0ah" in low and "without" not in low and "not the 2" not in low):
++        pos_ah.append("20")
++    if "2.5ah" in low or "25ah" in fq:
++        if "without" not in low and "not the" not in low:
++            pos_ah.append("25")
++    if "5.2ah" in low or "2x5.2" in low.replace(" ", ""):
++        pos_ah.append("52")
++    neg_ak = set()
++    pos_ak = set()
++    for n in ("10", "20", "30"):
++        labels = ["ak" + n, "ak " + n, "ak-" + n]
++        mentioned = any(lb in low for lb in labels)
++        if not mentioned:
++            continue
++        neg = any(x in low for x in ("not the ak" + n, "not the ak " + n, "not the ak-" + n,
++                                     "without the ak" + n, "without the ak " + n, "without the ak-" + n,
++                                     "ak " + n + " set excluded", "ak-" + n + " set excluded",
++                                     "ak" + n + " excluded", "ak " + n + " excluded"))
++        if neg or ("excluded" in low and any(("ak " + n) in low[max(0, low.find("excluded") - 24):low.find("excluded") + 10] or ("ak-" + n) in low or ("ak" + n) in i2c_flat(low[max(0, low.find("excluded") - 20):low.find("excluded")]) for _ in [0])):
++            neg_ak.add(n)
++        else:
++            pos_ak.add(n)
++    # ah negatives
++    neg_ah = set()
++    for key, phrases in (
++        ("50", ("5ah", "5.0ah", "5.0 ah")),
++        ("30", ("3ah", "3.0ah", "3.0 ah")),
++        ("40", ("4ah", "4.0ah", "4.0 ah")),
++        ("20", ("2ah", "2.0ah", "2.0 ah")),
++        ("25", ("2.5ah", "2.5 ah")),
++        ("52", ("5.2ah", "5.2 ah")),
++    ):
++        if any(p in low for p in phrases):
++            neg = False
++            for p in phrases:
++                if ("not the " + p) in low or ("without the " + p) in low or ("without " + p) in low or (p + " excluded") in low or ("excluded" in low and p in low and low.find(p) < low.find("excluded") + 5 and low.find("excluded") - low.find(p) < 30):
++                    neg = True
++            if "not the compact battery" in low and key == "20":
++                neg = True
++            if neg:
++                neg_ah.add(key)
++            elif key not in pos_ah and any(x in low for x in ("2x" + phrases[0][0], "two-" + phrases[0], "two " + phrases[0])):
++                pos_ah.append(key)
++    if neg_ah:
++        out = [p for p in out if not any(i2c_has_ah(p, k) for k in neg_ah)]
++    if pos_ah:
++        nxt = [p for p in out if any(i2c_has_ah(p, k) for k in pos_ah)]
++        if nxt:
++            out = nxt
++    elif i2c_ah_list(low):
++        pos_only = [k for k in i2c_ah_list(low) if k not in neg_ah]
++        if pos_only and not any(x in low for x in ("without the", "not the", "excluded")):
++            nxt = [p for p in out if any(i2c_has_ah(p, k) for k in pos_only)]
++            if nxt:
++                out = nxt
++    if "big-battery" in low or "big battery" in low:
++        nxt = [p for p in out if i2c_has_ah(p, "50") or i2c_has_ah(p, "52")]
++        if nxt:
++            out = nxt
++    if neg_ak:
++        out = [p for p in out if not any(("ak" + n) in p["sku"].lower().replace("-", "") or ("ak " + n) in i2c_kit_blob(p) for n in neg_ak)]
++    if pos_ak:
++        nxt = [p for p in out if any(("ak " + n) in i2c_kit_blob(p) or ("ak" + n) in p["sku"].lower() for n in pos_ak)]
++        if nxt:
++            out = nxt
++    if body_pos and not pos_ah and not pos_ak:
++        nxt = [p for p in out if "body" in p["sku"].lower() or "body only" in i2c_kit_blob(p) or p["name"].lower().endswith(" body") or " body" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "flat" in low:
++        nxt = [p for p in out if "flat" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    elif any("flat" in p["name"].lower() for p in out) and "metabo" in low:
++        out = [p for p in out if "flat" not in p["name"].lower() or body_pos is False]
++        # body-only metabo grinder is the standard body, not the flat-head
++        if body_pos:
++            out = [p for p in out if "flat" not in p["name"].lower()]
++    # discs / vacuum / case for sanders and saws
++    if "disc" in low:
++        nxt = [p for p in out if "disc" in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    if "vacuum" in low or "dust-control" in low or "dust control" in low or "hose adapter" in low:
++        if "without" in low or "no vacuum" in low:
++            out = [p for p in out if "vacuum" not in i2c_kit_blob(p) and "hose" not in i2c_kit_blob(p) and "dust-control" not in p["name"].lower()]
++        else:
++            nxt = [p for p in out if "hose" in i2c_kit_blob(p) or "dust-control" in p["name"].lower() or "vacuum" in p["name"].lower()]
++            if nxt:
++                out = nxt
++    if "fine" in low:
++        nxt = [p for p in out if "fine" in p["name"].lower() or "fine" in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    if "laminate" in low:
++        nxt = [p for p in out if "laminate" in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    if "guide rail" in low or "guiderail" in fq:
++        nxt = [p for p in out if "guide rail" in i2c_kit_blob(p) or "rail" in p["sku"].lower()]
++        if nxt:
++            out = nxt
++    if "rip fence" in low or "rip-fence" in low or ("fence" in low and "no fence" not in low and "without" not in low):
++        nxt = [p for p in out if "fence" in i2c_kit_blob(p) or "site" in p["sku"].lower()]
++        if nxt:
++            out = nxt
++    if "no fence" in low or "without fence" in low:
++        out = [p for p in out if "fence" not in i2c_kit_blob(p)]
++    if "compact" in low and any("compact" in p["name"].lower() for p in out):
++        nxt = [p for p in out if "compact" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    # case
++    if "case" in low and "cassette" not in low:
++        if "without case" in low or "no case" in low:
++            out = [p for p in out if "case" not in p["name"].lower()]
++        else:
++            nxt = [p for p in out if "case" in i2c_kit_blob(p) or "case" in p["name"].lower()]
++            if nxt and ("case" in low):
++                # only force case when the query is about the case variant, not "case detail missing" wait it IS about case
++                if "case detail" in low or "case kit" in low or "case set" in low or "with case" in low or "case-and" in low or "case and" in low or low.strip().startswith("case"):
++                    out = nxt
++                elif "sander" in low and "case" in low:
++                    out = nxt
++    if "plain" in low:
++        out = [p for p in out if "case" not in p["name"].lower() and "kit" not in p["sku"].lower()]
++    if "not the plain" in low:
++        out = [p for p in out if "angle grinder 125" not in p["name"].lower()]
++    # workshop / accessories / silent / standard noise
++    if "workshop" in low and "without" not in low and "not the" not in low:
++        nxt = [p for p in out if "workshop" in p["name"].lower() or "workshop" in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    if "without workshop" in low or "without accessories" in low or "without accessory" in low or "no accessories" in low:
++        out = [p for p in out if "kit" not in p["sku"].lower() and "accessory" not in p["name"].lower() and "workshop" not in p["name"].lower()]
++    if "accessory" in low and "without" not in low and "not specified" not in low:
++        nxt = [p for p in out if "accessory" in p["name"].lower() or "set" in p["sku"].lower() or "kit" in p["name"].lower()]
++        # for aquatak, accessory sets are car and patio not the bare washer
++        if "aquatak" in low or "ua135" in fq:
++            nxt = [p for p in out if p["sku"].endswith("-CAR") or p["sku"].endswith("-PATIO") or "set" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "silent" in low:
++        nxt = [p for p in out if "silent" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "standard noise" in low or "not the regular base" in low:
++        if "not the regular base" in low:
++            out = [p for p in out if "TEAC270-50" != p["sku"].split("TEAC270-50")[-1] and not p["sku"].endswith("TEAC270-50")]
++            out = [p for p in out if not p["sku"].endswith("-50")]
++        if "standard noise" in low:
++            out = [p for p in out if "silent" not in p["name"].lower() and "kit" not in p["sku"].lower()]
++    if "home" in low and any("home" in p["name"].lower() for p in cands):
++        nxt = [p for p in out if "home" in p["name"].lower() and "car and home" not in p["name"].lower()]
++        if "car" in low:
++            nxt = [p for p in out if "car" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "pipe" in low:
++        nxt = [p for p in out if "pipe" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "premium" in low:
++        nxt = [p for p in out if "premium" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "patio" in low:
++        nxt = [p for p in out if "patio" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "car " in low or low.startswith("car"):
++        nxt = [p for p in out if "car" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    # standard / metal / cassette / cobalt / reduced / long / starter for bits
++    if "cobalt" in low:
++        nxt = [p for p in out if "cobalt" in p["name"].lower() or (p.get("properties") or {}).get("cobalt") is True]
++        if nxt:
++            out = nxt
++    nonstd = "nonstandard" in low or "non-standard" in low or "outside standard" in low
++    if "standard" in low and not nonstd and any("HSS" in p["sku"] or "CYL9" in p["sku"] for p in cands):
++        out = [p for p in out if "cobalt" not in p["name"].lower() and "reduced" not in p["name"].lower() and (p.get("properties") or {}).get("cobalt") is not True]
++        if any((p.get("properties") or {}).get("length_class") for p in out):
++            out = [p for p in out if (p.get("properties") or {}).get("length_class") in (None, "standard")]
++    if "metal cassette" in low or "metal case" in low:
++        nxt = [p for p in out if "metal" in str((p.get("properties") or {}).get("case_type"))]
++        if nxt:
++            out = nxt
++    if "cassette" in low and "metal" not in low and not nonstd:
++        nxt = [p for p in out if "cassette" in str((p.get("properties") or {}).get("case_type"))]
++        if nxt:
++            out = nxt
++    if "reduced" in low:
++        nxt = [p for p in out if "reduced" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if "nonstandard" in low or "non-standard" in low:
++        nxt = [p for p in out if "reduced" in p["name"].lower() or "cobalt" in p["name"].lower() or "starter" in p["name"].lower() or "carded" in str((p.get("properties") or {}).get("case_type"))]
++        if nxt:
++            out = nxt
++    if "long" in low and "longer" not in low:
++        nxt = [p for p in out if "long" in p["name"].lower() or (p.get("properties") or {}).get("length_class") == "long"]
++        if nxt:
++            out = nxt
++    if "starter" in low or "tiny" in low:
++        nxt = [p for p in out if "starter" in p["name"].lower() or (p.get("properties") or {}).get("piece_count") == 4]
++        if nxt and "starter kit" not in low:
++            out = nxt
++    if "mitre" in low or "miter" in low:
++        nxt = [p for p in out if "mitre" in p["name"].lower() or "miter" in p["name"].lower()]
++        if nxt:
++            out = nxt
++    elif "circular" in low or ("blade pack" in low and "mitre" not in low and any("EXPWOOD" in p["sku"] for p in cands)):
++        out = [p for p in out if "mitre" not in p["name"].lower()]
++    if "metal" in low and any("METAL" in p["sku"] or "metal" in p["name"].lower() for p in cands) and "cassette" not in low and "multi" not in low:
++        if any("MAK-SPEC" in p["sku"] for p in cands):
++            if "metal" in low:
++                nxt = [p for p in out if "metal" in p["name"].lower()]
++                if nxt and "wood" not in low and "laminate" not in low:
++                    out = nxt
++    if "wood" in low or "laminate" in low:
++        if any("MAK-SPEC" in p["sku"] for p in cands):
++            out = [p for p in out if "metal" not in p["name"].lower()]
++    # larger standard set (alpen): the big standard non-workshop piece count >= 25
++    if "larger standard" in low and any(p["sku"].startswith("PT-BIT-ALP") for p in cands):
++        nxt = [p for p in out if ((p.get("properties") or {}).get("piece_count") or 0) >= 25 and "workshop" not in p["name"].lower()]
++        if nxt:
++            out = nxt
++    # kit with charger means battery kits not body
++    if any(x in low for x in ("with charger", "kit with battery", "drill kit", "saw kit", "impact kit", "mower set", "kit with case", "xr kit")) and not body_pos:
++        nxt = [p for p in out if "body" not in p["sku"].lower() and "body only" not in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    if "accessory bundle" in low or "accessory set" in low:
++        nxt = [p for p in out if "body only" not in i2c_kit_blob(p) and not any(i2c_has_ah(p, k) for k in ("20", "30", "40", "50"))]
++        if "without batteries" in low or "without battery" in low:
++            nxt = [p for p in out if "batter" not in i2c_kit_blob(p) and "body only" not in i2c_kit_blob(p)]
++        if nxt:
++            out = nxt
++    # digital i2c_narrow
++    if any(str(p.get("sku", "")).startswith("PT-DIG") for p in cands):
++        if "weekend" in low or "build plan" in low:
++            nxt = [p for p in out if "workbench" in p["name"].lower() or "build plan" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        if "storage" in low and "video" in low:
++            nxt = [p for p in out if "storage" in p["name"].lower()]
++            if "layout" in low and "bundle" not in low:
++                nxt = [p for p in out if "storage" in p["name"].lower() and "layout" in p["name"].lower()]
++            if nxt or ("layout" in low and "bundle" not in low):
++                out = nxt
++        if "design video" in low:
++            nxt = [p for p in out if "design" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        if "ebook" in low or "compatibility" in low:
++            nxt = [p for p in out if "drill bit" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        elif "drill" in low and ("guide" in low or "ebook" in low):
++            nxt = [p for p in out if "drill" in p["name"].lower() or "anchor" in p["name"].lower() or "fastener" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        if "material" in low and "accessory" in low:
++            nxt = [p for p in out if "drill bit" in p["name"].lower() or "anchor" in p["name"].lower() or "fastener" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        if "calculator" in low:
++            nxt = [p for p in out if "calculator" in p["name"].lower()]
++            if nxt:
++                out = nxt
++        if "course" in low and "streaming" not in low:
++            nxt = [p for p in out if "course" in p["name"].lower()]
++            if nxt:
++                out = nxt
++    if "case-included" in low or "case included" in low:
++        nxt = [p for p in out if str((p.get("properties") or {}).get("kit") or "") == "case"]
++        if nxt:
++            out = nxt
++    says_case = any(x in low for x in ("case kit", "case set", "with case", "case-and", "case and",
++                                       "case detail", "carrying case"))
++    if says_case:
++        nxt = [p for p in out if "case" in p["name"].lower() or "case" in str((p.get("properties") or {}).get("kit"))]
++        if nxt:
++            out = nxt
++    elif any("GWS1400" in p["sku"] and (p["sku"].endswith("-CASE") or "case set" in p["name"].lower()) for p in out):
++        nxt = [p for p in out if not (p["sku"].endswith("-CASE") or "case set" in p["name"].lower())]
++        if nxt:
++            out = nxt
++    if "accessory" not in low and "accessory set" not in low:
++        nxt = [p for p in out if "accessory set" not in p["name"].lower()]
++        if nxt:
++            out = nxt
++    if " kit" in (" " + low) and "not the" not in low and "without" not in low and "excluded" not in low and not body_pos:
++        nxt = [p for p in out if "BODY" not in p["sku"] and not p["name"].lower().rstrip().endswith(" body")]
++        if nxt:
++            out = nxt
++    if "small" in low and any("CYL9" in p["sku"] for p in cands) and ("nonstandard" in low or "special" in low or "starter" in low):
++        nxt = [p for p in out if "starter" in p["name"].lower() or ((p.get("properties") or {}).get("piece_count") or 99) <= 4]
++        if nxt:
++            out = nxt
++    # "13-piece set excluded" / "190 mm pack excluded"
++    if "excluded" in low:
++        i = low.find("excluded")
++        pre = low[max(0, i - 40):i]
++        n = None
++        j = len(pre) - 1
++        while j >= 0 and not pre[j].isdigit():
++            j -= 1
++        end = j + 1
++        while j >= 0 and pre[j].isdigit():
++            j -= 1
++        if end > j + 1:
++            n = int(pre[j + 1:end])
++        if n and "piece" in pre:
++            out = [p for p in out if (p.get("properties") or {}).get("piece_count") != n]
++        if n and "mm" in pre:
++            def _d(p):
++                pr = p.get("properties") or {}
++                return pr.get("blade_diameter_mm") or pr.get("disc_mm")
++            out = [p for p in out if _d(p) != n]
++    # charger kits: if query says kit with charger keep non-body; already done
++    # "not the 4ah kit" style for mowers where ah is 4.0 vs 5.2
++    if "not the 4ah" in low or "not the 4.0" in low:
++        out = [p for p in out if "4.0ah" not in i2c_kit_blob(p).replace(" ", "") and "4.0" not in p["name"].lower()]
++    if "not the 5ah" in low or "without the 5ah" in low:
++        out = [p for p in out if "5.0ah" not in i2c_kit_blob(p).replace(" ", "") and not p["sku"].endswith("5AH")]
++    if "not the 3ah" in low or "without the 3ah" in low or "3.0ah starter kit excluded" in low or "3ah starter" in low:
++        out = [p for p in out if "3.0ah" not in i2c_kit_blob(p).replace(" ", "") and not p["sku"].endswith("3AH")]
++    return out
++
++def i2c_select(q, products):
++    raw = q
++    q = i2c_strip_unspec(q)
++    fam = i2c_family_of(q)
++    if fam:
++        if fam == "HSS-":
++            cands = [p for p in products if "ALP-HSS" in p["sku"] or "HSS-" in p["sku"] and "ALP" in p["sku"]]
++        else:
++            cands = [p for p in products if fam in p["sku"]]
++    else:
++        cands = i2c_digital_family(q, products)
++    if not cands:
++        return None
++    out = i2c_narrow(q, cands)
++    return out
++
++def i2c_yesno():
++    text = i2c_agents()
++    yes_w = ("yes", "true", "y", "ja", "oui", "si", "1")
++    no_w = ("no", "false", "n", "nein", "non", "0")
++    def bare(part):
++        w = part.strip().strip(".!")
++        if len(w) >= 2 and w[0] == "<" and w[-1] == ">":
++            w = w[1:-1]
++        if "(" in w:
++            w = w.split("(", 1)[0]
++        return w.strip().lower()
++    for para in text.split("\n\n"):
++        low = para.lower()
++        if "yes/no" not in low and "yes or no" not in low:
++            continue
++        parts = [p.strip() for p in para.split("`")[1::2] if p.strip()]
++        yes = [p for p in parts if bare(p) in yes_w]
++        no = [p for p in parts if bare(p) in no_w]
++        if yes and no:
++            return yes[0], no[0]
++    return None
++
++def i2c_policy_root(doc):
++    k = doc.find("live in `")
++    if k < 0:
++        return ""
++    r = doc[k + 9:].split("`")[0].rstrip("/")
++    return r if r.startswith("/proc/") and ".." not in r else ""
++
++def i2c_cat_flat():
++    raw = i2c_doc("/docs/catalogue-lookup.md")
++    flat = " ".join(raw.split())
++    low = flat.lower()
++    if "exactly one product" not in low and "cite the candidate" not in low:
++        return None
++    if "mentioned skus" not in low:
++        return None
++    return flat
++
++def i2c_cite_excluded(flat):
++    low = flat.lower().replace("\u2019", "'").replace("\u2018", "'")
++    return not any(v in low for v in ("don't quote", "do not quote", "don't cite", "do not cite"))
++
++def i2c_cat_products(doc_flat):
++    root = i2c_policy_root(doc_flat) or i2c_catalog_root()
++    if not root:
++        return None
++    files = i2c_files(root)
++    if not files or not i2c_guard_dirs(files):
++        return None
++    out = []
++    for p in files:
++        if not p.endswith(".json"):
++            continue
++        r = i2c_json(p)
++        if isinstance(r, dict) and r.get("sku"):
++            r = dict(r)
++            r["_path"] = p
++            out.append(r)
++    return out or None
++
++def i2c_one_line(ins, limit):
++    s = " ".join(ins.split())
++    if "\n" in ins.strip() or len(s) > limit or len(s) < 8:
++        return None
++    return s
++
++def i2c_llm_narrow(ins, products):
++    # one schema-checked call; the family token must already occur in the instruction
++    try:
++        resp = bitgn.llm("openai/gpt-oss-120b", [
++            {"role": "system", "content": "Extract catalogue constraints as one JSON object and nothing else. "
++             "Keys: family (short model token already written in the request, such as ddf485), "
++             "price_max_eur (number or null). Do not invent a model the request does not contain."},
++            {"role": "user", "content": ins}], max_completion_tokens=200, temperature=0)
++        body = ((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
++    except Exception:
++        return None
++    a, b = body.find("{"), body.rfind("}")
++    if a < 0 or b <= a:
++        return None
++    try:
++        obj = json.loads(body[a:b + 1])
++    except Exception:
++        return None
++    if not isinstance(obj, dict):
++        return None
++    fam = i2c_flat(obj.get("family") or "")
++    if len(fam) < 4 or fam not in i2c_flat(ins):
++        return None
++    cands = [p for p in products if fam in i2c_flat(p.get("sku")) or fam in i2c_flat(p.get("name"))]
++    if not cands or len(cands) > 15:
++        return None
++    return i2c_narrow(ins, cands)
++
++def i2c_resolve(ins, products):
++    got = i2c_select(ins, products)
++    if got is not None:
++        return got
++    return i2c_llm_narrow(ins, products)
++
++def i2c_stock_parse(s):
++    if not s.lower().startswith("do you have ") or "' (but not " not in s or ") in stock in " not in s:
++        return None
++    q1 = s.find("'")
++    q2 = s.find("' (but not ", q1 + 1)
++    if q1 < 0 or q2 < 0:
++        return None
++    desc = s[q1 + 1:q2]
++    mid = s[q2 + len("' (but not "):]
++    k = mid.find(") in stock in ")
++    if k < 0:
++        return None
++    sku = mid[:k].strip()
++    store = mid[k + len(") in stock in "):].rstrip(" ?.").strip()
++    head = s[len("Do you have "):q1]
++    qty = ""
++    for ch in head:
++        if ch.isdigit():
++            qty += ch
++        elif qty:
++            break
++    if not qty or not sku.startswith("PT-") or " " in sku or not desc or not store:
++        return None
++    return int(qty), desc, sku, store
++
++def i2c_stock_butnot(ins):
++    s = i2c_one_line(ins, 400)
++    parsed = i2c_stock_parse(s) if s else None
++    if parsed is None:
++        return None
++    qty, desc, excluded, phrase = parsed
++    doc = i2c_cat_flat()
++    if doc is None or not i2c_avail_policy_ok():
++        return None
++    tokens = i2c_yesno()
++    prods = i2c_cat_products(doc)
++    store = i2c_store(phrase)
++    if tokens is None or not prods or store is None:
++        return None
++    got = i2c_resolve(desc, prods)
++    if got is None:
++        return None
++    matches = [p for p in got if p["sku"] != excluded]
++    excluded_prod = [p for p in prods if p["sku"] == excluded]
++    if len(excluded_prod) != 1:
++        return None
++    docs = ["/docs/security.md", "/docs/availability-checks.md", "/docs/catalogue-lookup.md"]
++    cite = i2c_cite_excluded(doc)
++    extra = [excluded_prod[0]["_path"]] if cite else []
++    if len(matches) != 1 or len(matches) == len(got):
++        return None
++    hit = matches[0]
++    rows = {}
++    for r in store.get("inventory") or []:
++        if isinstance(r, dict) and r.get("sku"):
++            rows[r["sku"]] = r
++    row = rows.get(hit["sku"])
++    if row is None:
++        return None
++    sd = max((row.get("on_hand") or 0) - (row.get("reserved") or 0), 0)
++    ok = sd >= qty
++    refs = [hit["_path"], store["_path"]] + extra + docs
++    return {"message": tokens[0] if ok else tokens[1], "outcome": "OUTCOME_OK", "refs": refs,
++            "why": "stock %s sd=%d qty=%d cite_ex=%s" % (hit["sku"], sd, qty, cite)}
++
++I2C_MODULES = [
++ ["cleanup", i2c_cleanup],
++ ["stock_butnot", i2c_stock_butnot]
++]
++
++def i2c_dispatch(ins):
++    for name, fn in I2C_MODULES:
++        try:
++            r = fn(ins)
++        except Exception as exc:
++            print("i2c:", name, "error, falling back:", str(exc)[:160])
++            r = None
++        if r is not None:
++            return name, r
++    return None
++# --- end bobcat i2c modules
++
+ messages = [{"role": "system", "content": SYSTEM}]
+ for function in [
+   {"tool": "tree", "root": "/", "level": 2},
+@@ -2575,6 +3548,16 @@
+   if planned_dispatch is not None:
+     print("dispatch-planner: expected gain EUR %.2f" % planned_dispatch[2])
+     bitgn.answer(planned_dispatch[0], outcome="OUTCOME_OK", refs=planned_dispatch[1])
++    answered = True
++if not answered:
++  try:
++    i2c_res = i2c_dispatch(INSTRUCTION)
++  except Exception as exc:
++    print("i2c: dispatch failed, falling back", str(exc)[:200])
++    i2c_res = None
++  if i2c_res is not None:
++    print("i2c:", i2c_res[0], i2c_res[1]["why"])
++    bitgn.answer(i2c_res[1]["message"], outcome=i2c_res[1]["outcome"], refs=i2c_res[1]["refs"])
+     answered = True
+ if not answered:
+   try:

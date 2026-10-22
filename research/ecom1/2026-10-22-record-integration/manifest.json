@@ -1,0 +1,25 @@
+{
+  "parent": "d4353r1/d4354r1 on d3200r2",
+  "retry_donor": "d4445r1 MSR exact AST",
+  "recovery_donor": "d3513r1 explicit missing Exec branch only",
+  "sources": {
+    "parent_agent.py": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+    "parent_readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "retry_donor.py": "5c9fd63873d8c709ed6e74fbc7a444a3bbeeeb76ccb448e4b6360652c4f955b8",
+    "lzpack.py": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+  },
+  "agent_sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8",
+  "bytes": 63209,
+  "changed_parent_nodes": [
+    "route_policy_docs",
+    "recoverable_lookup_error",
+    "observation",
+    "i2c_llm_narrow",
+    "Assign",
+    "For",
+    "If"
+  ],
+  "all_other_parent_nodes_preserved": true,
+  "four_llm_sites_wrapped": true,
+  "delete_404_preserved": true
+}

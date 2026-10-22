@@ -1,0 +1,193 @@
+{
+  "build_python": "3.12.7",
+  "test_packages": {
+    "pydantic-monty": "1.2.0",
+    "python-minifier": "3.4.0"
+  },
+  "uv": "0.10.12",
+  "build_tool": "system patch",
+  "candidate_sdk": "0.3.7",
+  "fixed_evaluation_provider": "DeepInfra BF16 / GPT-OSS120B",
+  "pins": {
+    "record_agent.py": {
+      "brain_revision": "d3200r2",
+      "sha256": "1e6a0ae3505593c380fbc1d3010295cef58e2b2a7a8aaf0cfe6a47da8591a86f"
+    },
+    "record_readable.py": {
+      "brain_revision": "d3201r2",
+      "sha256": "481491dc90e3f959838f11bfc9a4f877f7568120dc67de7ae2324b84e5356684"
+    },
+    "record_notes.md": {
+      "brain_revision": "d3204r4",
+      "sha256": "ef15787adb614b1a40724b58e75f9fedaba6d3053bbe89ccc30c54dfc23eb06b"
+    },
+    "baseline.md": {
+      "brain_revision": "d7r28",
+      "sha256": "8d88f53d435c7afe089958507a9d4e13b86a8262c3b899abd9e8edd3f0582a6b"
+    },
+    "old_agent.py": {
+      "brain_revision": "d2499r1",
+      "sha256": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1"
+    },
+    "our_agent.py": {
+      "brain_revision": "d3512r1",
+      "sha256": "592cef8dbac06373d23d54e5b24a2e35aaade4c466412d62e9a9b85a9f4851cb"
+    },
+    "recovery_donor.py": {
+      "brain_revision": "d3513r1",
+      "sha256": "93c84f03c11cc567510510c53d49d124af02272127ac5b28d6a6d9e785470892"
+    },
+    "parent_agent.py": {
+      "brain_revision": "d4353r1",
+      "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    "parent_readable.py": {
+      "brain_revision": "d4354r1",
+      "sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    "retry_donor.py": {
+      "brain_revision": "d4445r1",
+      "sha256": "5c9fd63873d8c709ed6e74fbc7a444a3bbeeeb76ccb448e4b6360652c4f955b8"
+    },
+    "receipt_parent.py": {
+      "brain_revision": "d4236r1",
+      "sha256": "2ef447520d2c17d8956426a17882a99e5cf59ee95e750b4afa4a784642f6d446"
+    },
+    "archived_receipt.json": {
+      "brain_revision": "d4231r1",
+      "sha256": "1c0a28fb45262cdceaa7c5327936314eb78cd1ad3f3fecfb228b4786a834cc1b"
+    },
+    "test_combined.py": {
+      "brain_revision": "d4356r1",
+      "sha256": "367760fcb255eb6e4047aa89bd2322a8da5d8106ff7f5dd2b2a96478f165ffcf"
+    },
+    "tds_tests.py": {
+      "brain_revision": "d2135r1",
+      "sha256": "594458c897401c9693fe479726bdb9bf635a8995ea62d1306f3d7dea3da24f38"
+    },
+    "lzpack.py": {
+      "brain_revision": "d3268r2",
+      "sha256": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+    },
+    "pack5h.py": {
+      "brain_revision": "d2829r1",
+      "sha256": "c379d911dfd32c8ecd367402acda0b5f9291bbb620365eb5fc4590759fe16a77"
+    },
+    "replay.py": {
+      "brain_revision": "d2416r2",
+      "sha256": "319170c255eed92d19949245931b05c6e8e38c59f2f9ca2ad648de23a553c9dd"
+    },
+    "run_suite.py": {
+      "brain_revision": "d2705r2",
+      "sha256": "6d6d959f87e54f5342739fdf8f65a59ce321715045f1bbf70c3ec336d3fd06d8"
+    },
+    "worlds/world_2719.json": {
+      "brain_revision": "d2719r1",
+      "sha256": "5755049258ce7e390013ad52c31ae3dccb8a367a4b10c6a863d141a5f5413da6"
+    },
+    "worlds/world_2723.json": {
+      "brain_revision": "d2723r1",
+      "sha256": "10945cd176c0cbf2bc5383fb3b9ea543f7616aa86f1b1be7ab4003837beb880f"
+    },
+    "worlds/world_2735.json": {
+      "brain_revision": "d2735r1",
+      "sha256": "18320cc790ae272590e3438e133e2877874f98626f25b9adde48c3611e4f4449"
+    },
+    "worlds/world_2715.json": {
+      "brain_revision": "d2715r1",
+      "sha256": "704ceed719e72b5aac876b7880e11842d2cb63e4283f96504e4e458807804563"
+    },
+    "worlds/world_2739.json": {
+      "brain_revision": "d2739r1",
+      "sha256": "25a229530cf61c74e568d800215cfe7409bb81accdea224f39fddd67f24433f3"
+    },
+    "worlds/world_2738.json": {
+      "brain_revision": "d2738r1",
+      "sha256": "cbb7642700335c0d2abbccf13a4a6a63a6eb25c4f4c495fbb7fef891ec36354b"
+    },
+    "worlds/world_2714.json": {
+      "brain_revision": "d2714r1",
+      "sha256": "e42a13b747d21cda0fb8a58782ae85b6e3904a88b3f8955db5a9f5a156055069"
+    },
+    "worlds/world_2734.json": {
+      "brain_revision": "d2734r1",
+      "sha256": "261b7ea3e110eb6b8c81f5aaaa0d15c46ecdfe212598fe9184e9a401a7959399"
+    },
+    "worlds/world_2722.json": {
+      "brain_revision": "d2722r1",
+      "sha256": "b037431cdaf4397b56827b5230b0ed20f25b6dd4f237054a380820bcbdbe820c"
+    },
+    "worlds/world_2718.json": {
+      "brain_revision": "d2718r1",
+      "sha256": "b9ea426f7fac3b462fc584996ea470f9906a651a88b001dafbfb5497048b32e1"
+    },
+    "worlds/world_2713.json": {
+      "brain_revision": "d2713r1",
+      "sha256": "a3a4cd1e4e5965facfb903cd827e476bd74c8ff244671e05dbf641aa4d4b1abb"
+    },
+    "worlds/world_2729.json": {
+      "brain_revision": "d2729r1",
+      "sha256": "b0f1bd230cf881cc3d47395bbdf493eb5e30481ec0b21006a5309c5fb9276974"
+    },
+    "worlds/world_2725.json": {
+      "brain_revision": "d2725r1",
+      "sha256": "e0fa54d624761c2199312e36b3d523d4609fe5879e1ed9f3aef55fffe5e7cbb0"
+    },
+    "worlds/world_2733.json": {
+      "brain_revision": "d2733r1",
+      "sha256": "6beef051b316291d186524b026df262ec0db3cba0e3642633dc40eff9525a195"
+    },
+    "worlds/world_2732.json": {
+      "brain_revision": "d2732r1",
+      "sha256": "2e7882bf3cc8a748cd28d7927d09628a8dd3f33a08502e8b7b27e8e3a9cb533a"
+    },
+    "worlds/world_2724.json": {
+      "brain_revision": "d2724r1",
+      "sha256": "dfa8a6c8319d50bfe29b38da6a6f45b378eafac960f012b7656f7097d0109db8"
+    },
+    "worlds/world_2728.json": {
+      "brain_revision": "d2728r1",
+      "sha256": "8c45bab56a3aed0c319d0fe452d7a49abf2466adbfd5599f4141a7220e7939e3"
+    },
+    "worlds/world_2731.json": {
+      "brain_revision": "d2731r1",
+      "sha256": "5cf058e78fca8f91acf878c8808c1c5a9a6e6335ade18e5a6429f10379d86f27"
+    },
+    "worlds/world_2727.json": {
+      "brain_revision": "d2727r1",
+      "sha256": "715793c38f4b01ac14a81ed2669e72c43f04844eb21eb0ee305717120c9c338b"
+    },
+    "worlds/world_2726.json": {
+      "brain_revision": "d2726r1",
+      "sha256": "ad60d7ef070974a0b05df9b159387ec9afcfb8cc9c945a1179e433aa5a230e8b"
+    },
+    "worlds/world_2730.json": {
+      "brain_revision": "d2730r1",
+      "sha256": "1f788e68ec3a58ae54e9b01908e948c37a988dc31384549641b53154caf20cfc"
+    },
+    "worlds/world_2737.json": {
+      "brain_revision": "d2737r1",
+      "sha256": "014045ed0c96f77ecde40a3b20ec31c76d5382adf9922e23420042a24974c4cc"
+    },
+    "worlds/world_2721.json": {
+      "brain_revision": "d2721r1",
+      "sha256": "df0b14309d88560c0c17f791b23d678baa7b146d1ecdeb306c0eb3c2d37c9608"
+    },
+    "worlds/world_2717.json": {
+      "brain_revision": "d2717r1",
+      "sha256": "a64dbc9eb80b09613f537843dda36617d361d9f94f1449d5261ee438ba599ee1"
+    },
+    "worlds/world_2716.json": {
+      "brain_revision": "d2716r1",
+      "sha256": "dc182ae4c118a79c26c24d22f2ae69c9c5d86160a3becffb24dc6421be9eb153"
+    },
+    "worlds/world_2720.json": {
+      "brain_revision": "d2720r1",
+      "sha256": "b65478819960ea78aa8b5c1c5cc0c85fe70e3350fd3360186a14ae996afb069e"
+    },
+    "worlds/world_2736.json": {
+      "brain_revision": "d2736r1",
+      "sha256": "be1f6ce6e7e9e34d81100c8ecbf578935874f3468350d12b56bdd276543da7a7"
+    }
+  }
+}
