@@ -1,0 +1,2178 @@
+[
+  {
+    "step": {
+      "ordinal": 1,
+      "case_index": 0,
+      "case": "U1_missing_head",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "0611a0fe6f8e27a83b982dd6ca13fc3b09bd10dee0a2924bdb615d9fc6a3b904"
+    },
+    "response_ref": {
+      "event_seq": 7,
+      "sha256": "ab5ae45f9b16ac7ce3d3690e23185547702ab51cda155b14be822b9fdff04808",
+      "response_id": "gen-1792710201-HX7CVgZUCX7NJZQ1enBp"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants\"],\"message\":\"Multiple products match \\\"Nera G1 standard head grinder\\\". Please clarify which you need: P-G1-A (grinder body), P-G1-B (grinder kit), or P-G1-C (flat-head grinder body).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "0611a0fe6f8e27a83b982dd6ca13fc3b09bd10dee0a2924bdb615d9fc6a3b904",
+      "fixture_case": "U1_missing_head"
+    },
+    "rationale": "Calls multiple products matches for standard head and offers explicitly flat C. A/B are unknown; the clarification does not preserve this uncertainty.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 2,
+      "case_index": 0,
+      "case": "U1_missing_head",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "6e2c8a07eb30563cb1759420fd7cc0d15c35aea5883f4f38f4f6be7c8b6f7d5a"
+    },
+    "response_ref": {
+      "event_seq": 9,
+      "sha256": "bbcc6da24a150b9a8cf689fdbb50021771a75baef3044a133aebadbd25a64d04",
+      "response_id": "gen-1792710210-WQcOA5g5mo9PcxU3ergJ"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for Nera G1 standard head grinder\"],\"message\":\"Multiple products match \\\"standard head grinder\\\". Please specify if you need the body only or the full kit.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "6e2c8a07eb30563cb1759420fd7cc0d15c35aea5883f4f38f4f6be7c8b6f7d5a",
+      "fixture_case": "U1_missing_head"
+    },
+    "rationale": "Removes flat C, but still calls A/B matches for standard head and reduces unresolved geometry to body-versus-kit choice. Partial improvement, not a correct clarification.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 3,
+      "case_index": 1,
+      "case": "U2_null",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "a1c3081c2f27305580140fec4095b37094d9133bc26c4864704dc6f512e958dc"
+    },
+    "response_ref": {
+      "event_seq": 11,
+      "sha256": "89d41c94e81e0538ce3dfac5113227afd94ffe380f3f807071a873a9c50171f9",
+      "response_id": "gen-1792710221-ZddSsf9SVIYl2nmhuc5w"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants\",\"identified standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "a1c3081c2f27305580140fec4095b37094d9133bc26c4864704dc6f512e958dc",
+      "fixture_case": "U2_null"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 4,
+      "case_index": 1,
+      "case": "U2_null",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "983e25c0d5de6a3d6a673132628a2fd82d28939e91f26a149f74dd0572bdeaae"
+    },
+    "response_ref": {
+      "event_seq": 13,
+      "sha256": "6234ef2f2f05df1e0d1bc9fcfac35b1905b2377463c1210a1552c76b10bb4386",
+      "response_id": "gen-1792710231-CPFNsgblxRptKK42g2Wn"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants\",\"identified standard head variant\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "983e25c0d5de6a3d6a673132628a2fd82d28939e91f26a149f74dd0572bdeaae",
+      "fixture_case": "U2_null"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 5,
+      "case_index": 2,
+      "case": "U2_empty",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "687feddcdb0952aabfe6023673f7fa0cf6a4b5c9721abe42a1bc679d49b199f7"
+    },
+    "response_ref": {
+      "event_seq": 15,
+      "sha256": "060df80fdbc90e13d80fdf9ae7dd39b9c4c502053d60209498f4df9e489ca91f",
+      "response_id": "gen-1792710239-rioGamG5pfJsqgmz3Dc2"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up SKU for Nera G1 standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "687feddcdb0952aabfe6023673f7fa0cf6a4b5c9721abe42a1bc679d49b199f7",
+      "fixture_case": "U2_empty"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 6,
+      "case_index": 2,
+      "case": "U2_empty",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "40029d82291d426ed702c3fa9f0b739690bf52077712d31978effc61d7d9ed0b"
+    },
+    "response_ref": {
+      "event_seq": 17,
+      "sha256": "c0d11e1d4e574ba12034e51274a259398d7ffc104b3982fe8bc695aad19bdfc4",
+      "response_id": "gen-1792710251-xTsP1pt4znl0KrYCYxzV"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "40029d82291d426ed702c3fa9f0b739690bf52077712d31978effc61d7d9ed0b",
+      "fixture_case": "U2_empty"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 7,
+      "case_index": 3,
+      "case": "U3_explicit_positive",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "707380bc5c90c1fd26b259169d690fc2e56c922777935dc94c61cdca309957d2"
+    },
+    "response_ref": {
+      "event_seq": 19,
+      "sha256": "b401bca745cc6a9af2b3ffe374a8cd5e26076667d21ca6fb9764e0c99e6bfbc3",
+      "response_id": "gen-1792710268-N4QtR8ytEwQd2BzoxGti"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "707380bc5c90c1fd26b259169d690fc2e56c922777935dc94c61cdca309957d2",
+      "fixture_case": "U3_explicit_positive"
+    },
+    "rationale": "A is explicitly standard and the visible B/C are flat, so local positive distinction is recognized. Final OK nevertheless resolves uniqueness while pool_complete=false and the instruction requires complete retrieval. This false_OK flag is solely a completion-scope problem, not a wrong property/SKU claim.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 8,
+      "case_index": 3,
+      "case": "U3_explicit_positive",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "daa76aa04071099082f58c34a9c6e31cc2e06c3c5ae6d375a17e5d131a68fb4b"
+    },
+    "response_ref": {
+      "event_seq": 21,
+      "sha256": "cf8648f64ad72978582141391878d20deb185ce1778b37d6f2de25b0a12a0b31",
+      "response_id": "gen-1792710275-jHZclz47GnFwV5rMn5Fp"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 standard head grinder\",\"identified unique SKU P-G1-A\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "daa76aa04071099082f58c34a9c6e31cc2e06c3c5ae6d375a17e5d131a68fb4b",
+      "fixture_case": "U3_explicit_positive"
+    },
+    "rationale": "A is explicitly standard and the visible B/C are flat, so local positive distinction is recognized. Final OK nevertheless resolves uniqueness while pool_complete=false and the instruction requires complete retrieval. This false_OK flag is solely a completion-scope problem, not a wrong property/SKU claim.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 9,
+      "case_index": 4,
+      "case": "U4_supplied_synonym",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "74ebf9c9cf88966b824ff487a43fb8e417836d778c46a013162adda1ce5d046b"
+    },
+    "response_ref": {
+      "event_seq": 23,
+      "sha256": "830bcf4e22de8c69d3a2325f9f284e1a0bfd12716fa96f183ae988dfa47ad36a",
+      "response_id": "gen-1792710284-Iwyhj4n4zKllc6xXlnB2"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Identified SKU P-G1-A as the Nera G1 grinder with standard (orthogonal) head\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "74ebf9c9cf88966b824ff487a43fb8e417836d778c46a013162adda1ce5d046b",
+      "fixture_case": "U4_supplied_synonym"
+    },
+    "rationale": "A is supported by the shared orthogonal-to-standard glossary and visible B/C contradict. Local positive control preserved. Global completion/uniqueness is unverified; false_OK here is scope-only, not wrong synonym recognition.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 10,
+      "case_index": 4,
+      "case": "U4_supplied_synonym",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "99b6988eba2a47bbd2ae37c8589f5b749d0f120335e47adb52122839f278175f"
+    },
+    "response_ref": {
+      "event_seq": 25,
+      "sha256": "be46084bfa8131182490616938a513b74e6459a991df779c19a262f2c7e6650d",
+      "response_id": "gen-1792710291-cFSwyz7rj4LTTXfF7u08"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Provided SKU for standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "99b6988eba2a47bbd2ae37c8589f5b749d0f120335e47adb52122839f278175f",
+      "fixture_case": "U4_supplied_synonym"
+    },
+    "rationale": "A is supported by the shared orthogonal-to-standard glossary and visible B/C contradict. Local positive control preserved. Global completion/uniqueness is unverified; false_OK here is scope-only, not wrong synonym recognition.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 11,
+      "case_index": 5,
+      "case": "N1_explicit_negative",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "97f786280f7a70f1d846272c4e0746eb5107e035c226e2bb0b281123d63344cf"
+    },
+    "response_ref": {
+      "event_seq": 27,
+      "sha256": "07bacd7d5bbe7e13fbe1a217c7c83d94ac51f782d2c7584b7caa7fee4b8a0efe",
+      "response_id": "gen-1792710300-hHctODigyuoKhUWeuOBX"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Queried catalogue for Nera G1 grinder\",\"Identified SKU without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "97f786280f7a70f1d846272c4e0746eb5107e035c226e2bb0b281123d63344cf",
+      "fixture_case": "N1_explicit_negative"
+    },
+    "rationale": "Explicit false batteries supports A and true contradicts B. Negative polarity recognition is preserved. pool_complete=false leaves global uniqueness unverified; false_OK here is scope-only, not a wrong negative property.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 12,
+      "case_index": 5,
+      "case": "N1_explicit_negative",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "85df77a8e4b93ab58e2659733532e97e9491e6d32ad52a1788ceb32ccf769287"
+    },
+    "response_ref": {
+      "event_seq": 29,
+      "sha256": "549d211596673a6e8e46a332aa388ac12487f38c16d61876242eb8b46ed5ea5a",
+      "response_id": "gen-1792710305-P9sJ4Lyesoc8p5WlOuNY"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"found SKU for Nera G1 grinder without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "85df77a8e4b93ab58e2659733532e97e9491e6d32ad52a1788ceb32ccf769287",
+      "fixture_case": "N1_explicit_negative"
+    },
+    "rationale": "Explicit false batteries supports A and true contradicts B. Negative polarity recognition is preserved. pool_complete=false leaves global uniqueness unverified; false_OK here is scope-only, not a wrong negative property.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 13,
+      "case_index": 6,
+      "case": "N2_negative_unknown",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "600c6c220335ed0c1099b863b6a5d8faae3c900a975796547d09312e071d21bd"
+    },
+    "response_ref": {
+      "event_seq": 31,
+      "sha256": "bcfd2ec58a1ebb5d5903efb39d3290f556bb1e36568d3bde5190e51057691b86",
+      "response_id": "gen-1792710312-PKYkpi1k7CVolqPh9H7O"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants, selected SKU without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "600c6c220335ed0c1099b863b6a5d8faae3c900a975796547d09312e071d21bd",
+      "fixture_case": "N2_negative_unknown"
+    },
+    "rationale": "Missing batteries field on neutral-name A is unknown; final A and completed-step assertion without batteries invent a negative property. B being true does not prove A false.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 14,
+      "case_index": 6,
+      "case": "N2_negative_unknown",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "36d5c50dfaedf44473e52950e30be2a1ce1f5b0483b0c3a7dee482fba23a1b89"
+    },
+    "response_ref": {
+      "event_seq": 33,
+      "sha256": "62fb9cc100819be537c324a970556404d339b7cfb6a1a6331575feb4f9845985",
+      "response_id": "gen-1792710321-47gAUZNpG6YKOkomgc6f"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Queried catalogue for Nera G1 grinder\",\"Identified SKU P-BAT-A matches request without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "36d5c50dfaedf44473e52950e30be2a1ce1f5b0483b0c3a7dee482fba23a1b89",
+      "fixture_case": "N2_negative_unknown"
+    },
+    "rationale": "Missing batteries field on neutral-name A is unknown; final A and completed-step assertion without batteries invent a negative property. B being true does not prove A false.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 15,
+      "case_index": 7,
+      "case": "N3_exact_exclusion",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "ce6b4fe6b7342cd8764e4eb7b8da161926a920cf555e6ce7ba838a28fff484c6"
+    },
+    "response_ref": {
+      "event_seq": 35,
+      "sha256": "1680361e4d1a19ab940d181ba8f0a9ed6a0b75d5a1afff4a8e79c316ba9885ae",
+      "response_id": "gen-1792710327-IUrOds1m3HoD8AYAx2Yk"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder SKUs\"],\"message\":\"Multiple matching SKUs found excluding P-G1-A: P-G1-B, P-G1-C. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "ce6b4fe6b7342cd8764e4eb7b8da161926a920cf555e6ce7ba838a28fff484c6",
+      "fixture_case": "N3_exact_exclusion"
+    },
+    "rationale": "Clarification preserves explicit exclusion of A; cites only B/C. Text mentions A only to explain rejection. Does not choose a unique winner.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 16,
+      "case_index": 7,
+      "case": "N3_exact_exclusion",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "0e7354b25d9c4193fe047ce929c2faeb0c2064d0f70995f878db7389b34f92a4"
+    },
+    "response_ref": {
+      "event_seq": 37,
+      "sha256": "05cd934dcdd1ec40ab62518bf6432520d6971ec7a695f1f954540379f545f938",
+      "response_id": "gen-1792710339-NRVkpJHLwnW53SsGqtcs"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder, excluded P-G1-A\"],\"message\":\"Multiple products match the request after excluding P-G1-A. Please specify which one you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "0e7354b25d9c4193fe047ce929c2faeb0c2064d0f70995f878db7389b34f92a4",
+      "fixture_case": "N3_exact_exclusion"
+    },
+    "rationale": "Clarification preserves explicit exclusion of A; cites only B/C. Text mentions A only to explain rejection. Does not choose a unique winner.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 17,
+      "case_index": 8,
+      "case": "N4_negative_geometry",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "9a2745b45f3723bdbf8b3154fe92afccaae14d8d4734c7d6a28adfe82164ff3b"
+    },
+    "response_ref": {
+      "event_seq": 39,
+      "sha256": "6a81bc6085de9b92a696c97ad7c543de5883bdb9716939f2f211f62ad4df5b12",
+      "response_id": "gen-1792710348-Moker9odRH3LpmRC6pbt"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple non‑flat‑head Nera G1 grinder products found: SKU P-G1-A (grinder body) and SKU P-G1-B (grinder kit). Please specify which you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "9a2745b45f3723bdbf8b3154fe92afccaae14d8d4734c7d6a28adfe82164ff3b",
+      "fixture_case": "N4_negative_geometry"
+    },
+    "rationale": "Both arms treat unknown A as non-flat/matching, replacing unresolved geometry with body/kit choice. B has supported standard geometry; C is correctly omitted, but this does not establish A compatibility.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 18,
+      "case_index": 8,
+      "case": "N4_negative_geometry",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "b5d6681d38ab915cd2d4c9368ff82387845151991e71fba11ba0bead537d672d"
+    },
+    "response_ref": {
+      "event_seq": 41,
+      "sha256": "3e59f82eeab5ac2b5fdc2965a8126afe704b08a480f0ab869378b23949ed344e",
+      "response_id": "gen-1792710357-wR08kAbYSXlmOxOU4GtS"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for Nera G1 grinder\"],\"message\":\"Multiple products match the request (excluding the flat‑head version). Please specify which one you need: SKU P-G1-A (grinder body) or SKU P-G1-B (grinder kit with standard head).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "b5d6681d38ab915cd2d4c9368ff82387845151991e71fba11ba0bead537d672d",
+      "fixture_case": "N4_negative_geometry"
+    },
+    "rationale": "Both arms treat unknown A as non-flat/matching, replacing unresolved geometry with body/kit choice. B has supported standard geometry; C is correctly omitted, but this does not establish A compatibility.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 19,
+      "case_index": 9,
+      "case": "E1_exact_identifier",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "4740e341c69947ee14e944237630772cf526d8ab1210b4260d7a625b64bc436a"
+    },
+    "response_ref": {
+      "event_seq": 43,
+      "sha256": "5a60f8d108624aa2a164f33755db8d4cdf68164d2cabf63b3d4616c55d84abb2",
+      "response_id": "gen-1792710366-V9AbDKbWB4caRKiYidZW"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up SKU\"],\"message\":\"P-KIT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "4740e341c69947ee14e944237630772cf526d8ab1210b4260d7a625b64bc436a",
+      "fixture_case": "E1_exact_identifier"
+    },
+    "rationale": "Exact existing P-KIT-A with no added qualifier. Correct identity recognized; irrelevant siblings do not create ambiguity.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 20,
+      "case_index": 9,
+      "case": "E1_exact_identifier",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "657a16eefd8c1bf647878413e3c16d522426f76071f279fe4f25985435d0207f"
+    },
+    "response_ref": {
+      "event_seq": 45,
+      "sha256": "4ccd737ee883d0d3fd0287857b8a559c287c9874d27dac6351f710076b6f729c",
+      "response_id": "gen-1792710378-bRhkffI9EqlKLL6WHi1e"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up SKU P-KIT-A\"],\"message\":\"P-KIT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "657a16eefd8c1bf647878413e3c16d522426f76071f279fe4f25985435d0207f",
+      "fixture_case": "E1_exact_identifier"
+    },
+    "rationale": "Exact existing P-KIT-A with no added qualifier. Correct identity recognized; irrelevant siblings do not create ambiguity.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 21,
+      "case_index": 10,
+      "case": "E2_exact_conflict",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "18f801cf819d7e528b44f8f67e2b3f1e8797a9bf243a5e51b6a71e08526a0e0d"
+    },
+    "response_ref": {
+      "event_seq": 47,
+      "sha256": "156a86d1e549b9464486380dc2f9e32540378aa20d700998663a68def641b99e",
+      "response_id": "gen-1792710393-ebUHEnus3i0tkvv2kVaL"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple products match the description. P-KIT-A has 5.0Ah batteries, while P-KIT-B has 2.0Ah batteries. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "18f801cf819d7e528b44f8f67e2b3f1e8797a9bf243a5e51b6a71e08526a0e0d",
+      "fixture_case": "E2_exact_conflict"
+    },
+    "rationale": "Opening multiple-match phrase is imprecise, but full final message explicitly contrasts A=5.0Ah with B=2.0Ah and asks user which SKU. Preserves exact-ID/capacity conflict and makes no silent substitution.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 22,
+      "case_index": 10,
+      "case": "E2_exact_conflict",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "1b23551af543c489e4142e097f315b294b787410a3e925ebaed8f2faf7385111"
+    },
+    "response_ref": {
+      "event_seq": 49,
+      "sha256": "6acb434069e0975818968bc0004a7f41e24d28ba4ed59d75e5d641ffbfae22cb",
+      "response_id": "gen-1792710400-oKVULMQdlvCk0sjTvGfU"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for P-KIT-A\"],\"message\":\"Multiple products match the description. P-KIT-A has 5.0Ah batteries, while P-KIT-B has 2.0Ah batteries. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "1b23551af543c489e4142e097f315b294b787410a3e925ebaed8f2faf7385111",
+      "fixture_case": "E2_exact_conflict"
+    },
+    "rationale": "Opening multiple-match phrase is imprecise, but full final message explicitly contrasts A=5.0Ah with B=2.0Ah and asks user which SKU. Preserves exact-ID/capacity conflict and makes no silent substitution.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 23,
+      "case_index": 11,
+      "case": "E3_exact_unknown",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959"
+    },
+    "response_ref": {
+      "event_seq": 51,
+      "sha256": "252d537b8044dcf8bb255e57be0f2d80ca214af75117dabba641d030cdd2e8a0",
+      "response_id": "gen-1792710408-7EJj4837bCeQHAil6r7l"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for P-KIT-A\"],\"message\":\"Multiple products match the query. Candidates are SKU P-KIT-A (Nera G1 grinder kit) and SKU P-KIT-B (Nera G1 grinder kit). Which one do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959",
+      "fixture_case": "E3_exact_unknown"
+    },
+    "rationale": "Calls A/B matches to query and asks which SKU, losing exact A and unresolved waterproofing. Does not explain unknown property. Unsupported assignment is implicit full-query match rather than a literal waterproof adjective.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 24,
+      "case_index": 11,
+      "case": "E3_exact_unknown",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a"
+    },
+    "response_ref": {
+      "event_seq": 53,
+      "sha256": "5abf0c8923a0f274152d759006cca729c21ffffe7d9f53836d72547827a0c965",
+      "response_id": "gen-1792710415-foliIvxz1hWTmL793AQB"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple products match \\\"P-KIT-A waterproof\\\". Please clarify which SKU you need: P-KIT-A or P-KIT-B.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a",
+      "fixture_case": "E3_exact_unknown"
+    },
+    "rationale": "Explicitly calls multiple products matches to P-KIT-A waterproof and asks A or B. Neither waterproofing nor identity ambiguity is established; repeats qualifier as supported rather than preserving unknown.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 25,
+      "case_index": 12,
+      "case": "E4_unique_property",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "f341aca1338fa09b3b60262e7cd7520ae9231807db572250a672092cc39ff278"
+    },
+    "response_ref": {
+      "event_seq": 55,
+      "sha256": "b2afc9b422710b297dd1ad2356f871a3d1c31ac4534b790ee134b98f360a7074",
+      "response_id": "gen-1792710423-rzbNwKo8gGkodeudj9X1"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 grinder kit\"],\"message\":\"P-KIT-B\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "f341aca1338fa09b3b60262e7cd7520ae9231807db572250a672092cc39ff278",
+      "fixture_case": "E4_unique_property"
+    },
+    "rationale": "B has explicit 2.0Ah and case versus A=5.0Ah: positive distinction retained. Final unique disposition exceeds pool_complete=false evidence. Scope-only false_OK, separate from correct visible property selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 26,
+      "case_index": 12,
+      "case": "E4_unique_property",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "6796a065b61dbd6f97f3ecd884078f39cfa865d89a32f82c5d8f991846316be1"
+    },
+    "response_ref": {
+      "event_seq": 57,
+      "sha256": "acc204aea6db826ba7333fc9b5966723133e0ecb1fa6cbaf4d829bbcf2f5a884",
+      "response_id": "gen-1792710432-kVV8tValaRWnHKg2zCl1"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 grinder kit with case and 2.0Ah batteries\",\"identified unique matching SKU P-KIT-B\"],\"message\":\"P-KIT-B\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "6796a065b61dbd6f97f3ecd884078f39cfa865d89a32f82c5d8f991846316be1",
+      "fixture_case": "E4_unique_property"
+    },
+    "rationale": "B has explicit 2.0Ah and case versus A=5.0Ah: positive distinction retained. Final unique disposition exceeds pool_complete=false evidence. Scope-only false_OK, separate from correct visible property selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 27,
+      "case_index": 13,
+      "case": "F1_multiple_families",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "d050b6b62eb03f3612c0856ea9a750d9cb1880ef6dc9df5fbb567847f28a34bf"
+    },
+    "response_ref": {
+      "event_seq": 59,
+      "sha256": "18c8ab4d9becd58eaa2da83208b7c1875f15a7c06d71be8ffefbd4bed33d9ad6",
+      "response_id": "gen-1792710440-Th4DxGI2Sowd5ZEKJI4U"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for compact grinder\"],\"message\":\"Multiple products match the description: P-MULT-A (Nera compact grinder) and P-MULT-B (Oros compact grinder). Please specify which SKU you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-MULT-A.json\",\"/proc/catalog/Oros/P-MULT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "d050b6b62eb03f3612c0856ea9a750d9cb1880ef6dc9df5fbb567847f28a34bf",
+      "fixture_case": "F1_multiple_families"
+    },
+    "rationale": "Both visible families support requested standard-head constraint. Clarifies two valid alternatives without claiming unique winner; preserves constraint through supported records even where final text is abbreviated.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 28,
+      "case_index": 13,
+      "case": "F1_multiple_families",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "e7fb4a99a7665c396b5de3f68865f6fb1bcec8435a2f2cfbbe33c2c0463c4f64"
+    },
+    "response_ref": {
+      "event_seq": 61,
+      "sha256": "adb4e659d48f03c3a4c3c788f20d92cc52744bfc8faf4341926b77d9bd25c41a",
+      "response_id": "gen-1792710449-4h1ajmEW6kgz13Zg9Cri"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"found two matching grinders\"],\"message\":\"Multiple products match \\\"compact standard head grinder\\\". Please specify which you need: SKU P-MULT-A (Nera compact grinder) or SKU P-MULT-B (Oros compact grinder).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-MULT-A.json\",\"/proc/catalog/Oros/P-MULT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "e7fb4a99a7665c396b5de3f68865f6fb1bcec8435a2f2cfbbe33c2c0463c4f64",
+      "fixture_case": "F1_multiple_families"
+    },
+    "rationale": "Both visible families support requested standard-head constraint. Clarifies two valid alternatives without claiming unique winner; preserves constraint through supported records even where final text is abbreviated.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 29,
+      "case_index": 14,
+      "case": "F2_truncated_relevant_family",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "412d245d89e7d71fd3e93041301f4c2ebd32052dfff1cea94674edfc58f48780"
+    },
+    "response_ref": {
+      "event_seq": 63,
+      "sha256": "5a1ce30bc138178000e6a2828d7d4bbade8bbff30795c998da2ba9ee523ee18e",
+      "response_id": "gen-1792710456-ZX24fiaJq8RbtWpSW2uu"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"asked for clarification\"],\"message\":\"Multiple products match \\\"compact grinder\\\". Please specify which one you need. Candidates: P-N00, P-N01, P-N02, P-N03, P-N04, P-N05, P-N06, P-N07, P-N08, P-N09.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-N00.json\",\"/proc/catalog/Nera/P-N01.json\",\"/proc/catalog/Nera/P-N02.json\",\"/proc/catalog/Nera/P-N03.json\",\"/proc/catalog/Nera/P-N04.json\",\"/proc/catalog/Nera/P-N05.json\",\"/proc/catalog/Nera/P-N06.json\",\"/proc/catalog/Nera/P-N07.json\",\"/proc/catalog/Nera/P-N08.json\",\"/proc/catalog/Nera/P-N09.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "412d245d89e7d71fd3e93041301f4c2ebd32052dfff1cea94674edfc58f48780",
+      "fixture_case": "F2_truncated_relevant_family"
+    },
+    "rationale": "Clarification reduces request to compact grinder, lists ten unknown-geometry records, and does not preserve standard-head uncertainty or incomplete/truncated coverage. No explicit positive standard assignment in final text.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 30,
+      "case_index": 14,
+      "case": "F2_truncated_relevant_family",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e"
+    },
+    "response_ref": {
+      "event_seq": 65,
+      "sha256": "6e9b22448af4f9f9e32c4627f08d85bfd9d2fa69f70e1f439419a147a04d3994",
+      "response_id": "gen-1792710466-V9yu8JdxGvONY6Iindg2"
+    },
+    "action_class": "deferred_catalog",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": true,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"catalog\",\"query\":\"standard head grinder\",\"limit\":5}",
+      "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e",
+      "fixture_case": "F2_truncated_relevant_family"
+    },
+    "rationale": "Requests catalogue evidence for standard head grinder; targets missing geometry and incomplete retrieval. Drops compact from this retrieval query but does not make final decision or assert compatibility. Deferred action only, not a solved task; extra limit field is accepted by parent interface.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 31,
+      "case_index": 15,
+      "case": "F3_lexical_distractor",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73"
+    },
+    "response_ref": {
+      "event_seq": 67,
+      "sha256": "cd2910d96ef388bf9ee15c27d16489a885c4c8e091d01fbd6e604a013d93d32b",
+      "response_id": "gen-1792710470-sJSFBA9ZNLlM6CcPy33r"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 standard head grinder\"],\"message\":\"P-G1-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73",
+      "fixture_case": "F3_lexical_distractor"
+    },
+    "rationale": "Final C is explicitly flat, contradicting requested standard head. Strong regression from already-defective C-arm clarification to incorrect final selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 32,
+      "case_index": 15,
+      "case": "F3_lexical_distractor",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "a3bb4d1cb21389d2a773ee92691d749897943dfc9151b4a6a7f0a79688420744"
+    },
+    "response_ref": {
+      "event_seq": 69,
+      "sha256": "c4cb15861b36620535a23a71886e36de36cf9397ae03499bd0e086aaaf584a5e",
+      "response_id": "gen-1792710482-UJcP109c0AIj1QoYWK6G"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalogue lookup for Nera G1 standard head grinder\"],\"message\":\"Multiple products match the description. Please clarify which you need. Candidates: P-DIST-A (standard head Nera G1 grinder compatible marketing card), P-G1-C (Nera G1 flat‑head grinder body), P-G1-A (Nera G1 grinder body), P-G1-B (Nera G1 grinder kit).\",\"grounding_refs\":[\"/proc/catalog/Oros/P-DIST-A.json\",\"/proc/catalog/Nera/P-G1-C.json\",\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "a3bb4d1cb21389d2a773ee92691d749897943dfc9151b4a6a7f0a79688420744",
+      "fixture_case": "F3_lexical_distractor"
+    },
+    "rationale": "Offers printed marketing card and flat C as matches despite kind/property contradiction; A/B geometry also unknown. Clarification is not safe merely because outcome is non-OK.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 33,
+      "case_index": 16,
+      "case": "F4_false_missing_true",
+      "repeat": 1,
+      "arm": "C",
+      "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b"
+    },
+    "response_ref": {
+      "event_seq": 71,
+      "sha256": "31a690368aeac6ce041bf6f1724e80ae1191c499c820ded2c1e10783eff2926c",
+      "response_id": "gen-1792710497-ZZL8nBjBrUUIDNq3JeJ8"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Identified brushless grinder SKU\"],\"message\":\"P-BR-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BR-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b",
+      "fixture_case": "F4_false_missing_true"
+    },
+    "rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 34,
+      "case_index": 16,
+      "case": "F4_false_missing_true",
+      "repeat": 1,
+      "arm": "L",
+      "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb"
+    },
+    "response_ref": {
+      "event_seq": 73,
+      "sha256": "bd16b7bb2208a4a5a9e4f056fee83a1c575f3f5f7715593ec8907e26051c8a1a",
+      "response_id": "gen-1792710513-wKTsBSC5q0aehHbbRTtx"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"identified SKU for brushless grinder\"],\"message\":\"P-BR-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BR-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb",
+      "fixture_case": "F4_false_missing_true"
+    },
+    "rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 35,
+      "case_index": 0,
+      "case": "U1_missing_head",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "6e2c8a07eb30563cb1759420fd7cc0d15c35aea5883f4f38f4f6be7c8b6f7d5a"
+    },
+    "response_ref": {
+      "event_seq": 75,
+      "sha256": "ab5a6c6fee97effcd429dbf0e7f6f614e5c2e5dd85479c8e0139965077f79453",
+      "response_id": "gen-1792710539-h1KrtpeDxjrb0Q347JAh"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for Nera G1 standard head grinder\"],\"message\":\"Multiple products match \\\"standard head grinder\\\". Please specify if you need the body only or the full kit.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "6e2c8a07eb30563cb1759420fd7cc0d15c35aea5883f4f38f4f6be7c8b6f7d5a",
+      "fixture_case": "U1_missing_head"
+    },
+    "rationale": "Removes flat C, but still calls A/B matches for standard head and reduces unresolved geometry to body-versus-kit choice. Partial improvement, not a correct clarification.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 36,
+      "case_index": 0,
+      "case": "U1_missing_head",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "0611a0fe6f8e27a83b982dd6ca13fc3b09bd10dee0a2924bdb615d9fc6a3b904"
+    },
+    "response_ref": {
+      "event_seq": 77,
+      "sha256": "164a03bafbaf5a48d92108c6b03d3027c2c65604aca05b04ee6964fe9ca088f7",
+      "response_id": "gen-1792710552-kXm63zO6iiT14SN7etPQ"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants\"],\"message\":\"Multiple products match \\\"Nera G1 standard head grinder\\\". Please clarify which you need: P-G1-A (grinder body), P-G1-B (grinder kit), or P-G1-C (flat-head grinder body).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "0611a0fe6f8e27a83b982dd6ca13fc3b09bd10dee0a2924bdb615d9fc6a3b904",
+      "fixture_case": "U1_missing_head"
+    },
+    "rationale": "Calls multiple products matches for standard head and offers explicitly flat C. A/B are unknown; the clarification does not preserve this uncertainty.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 37,
+      "case_index": 1,
+      "case": "U2_null",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "983e25c0d5de6a3d6a673132628a2fd82d28939e91f26a149f74dd0572bdeaae"
+    },
+    "response_ref": {
+      "event_seq": 79,
+      "sha256": "2d070341515e47c456301763dc46cd6a8f700ddf416694f88e237d6867798ab2",
+      "response_id": "gen-1792710560-7KU633xcxGGTKNcTBxbx"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants\",\"identified standard head variant\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "983e25c0d5de6a3d6a673132628a2fd82d28939e91f26a149f74dd0572bdeaae",
+      "fixture_case": "U2_null"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 38,
+      "case_index": 1,
+      "case": "U2_null",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "a1c3081c2f27305580140fec4095b37094d9133bc26c4864704dc6f512e958dc"
+    },
+    "response_ref": {
+      "event_seq": 81,
+      "sha256": "b6626fadf82184558ae0c4e73ef9600075a9ea040d6816c27beeff1704062158",
+      "response_id": "gen-1792710569-Nm5DKZBzovr3vOKJsqWi"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up product SKUs\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "a1c3081c2f27305580140fec4095b37094d9133bc26c4864704dc6f512e958dc",
+      "fixture_case": "U2_null"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 39,
+      "case_index": 2,
+      "case": "U2_empty",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "40029d82291d426ed702c3fa9f0b739690bf52077712d31978effc61d7d9ed0b"
+    },
+    "response_ref": {
+      "event_seq": 83,
+      "sha256": "1aa7906f19e8cdd9fc8741e4b4eb654048b4e37f63932a89823d2562775c7efe",
+      "response_id": "gen-1792710581-hSO0TnxyCd7t3AeKWUtH"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "40029d82291d426ed702c3fa9f0b739690bf52077712d31978effc61d7d9ed0b",
+      "fixture_case": "U2_empty"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 40,
+      "case_index": 2,
+      "case": "U2_empty",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "687feddcdb0952aabfe6023673f7fa0cf6a4b5c9721abe42a1bc679d49b199f7"
+    },
+    "response_ref": {
+      "event_seq": 85,
+      "sha256": "2b2ee9d274e999f96618c26bf4636e82504982725ea1445548c2fd24a409d9b0",
+      "response_id": "gen-1792710596-XgkwUJWKmEr3avcm1Xhf"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"identified SKU for Nera G1 standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "687feddcdb0952aabfe6023673f7fa0cf6a4b5c9721abe42a1bc679d49b199f7",
+      "fixture_case": "U2_empty"
+    },
+    "rationale": "Final A silently treats absent/null/empty head geometry as standard; no positive geometry evidence or uniqueness. Both arms fail this same distinction.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 41,
+      "case_index": 3,
+      "case": "U3_explicit_positive",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "daa76aa04071099082f58c34a9c6e31cc2e06c3c5ae6d375a17e5d131a68fb4b"
+    },
+    "response_ref": {
+      "event_seq": 87,
+      "sha256": "8a1f3edc8b125dafb043fde9fb2acd7a49ba047d3a560d0c1f9c01416a74ae79",
+      "response_id": "gen-1792710606-ZFpsUh9Uzo4L0BV7EC3a"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 standard head grinder\",\"identified unique SKU P-G1-A\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "daa76aa04071099082f58c34a9c6e31cc2e06c3c5ae6d375a17e5d131a68fb4b",
+      "fixture_case": "U3_explicit_positive"
+    },
+    "rationale": "A is explicitly standard and the visible B/C are flat, so local positive distinction is recognized. Final OK nevertheless resolves uniqueness while pool_complete=false and the instruction requires complete retrieval. This false_OK flag is solely a completion-scope problem, not a wrong property/SKU claim.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 42,
+      "case_index": 3,
+      "case": "U3_explicit_positive",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "707380bc5c90c1fd26b259169d690fc2e56c922777935dc94c61cdca309957d2"
+    },
+    "response_ref": {
+      "event_seq": 89,
+      "sha256": "6e2b3904fedbe30309e965aaf2cc112a027e0cf56e8739947e112c6baf2b7321",
+      "response_id": "gen-1792710615-llxzBz5ZaIv2PhE3DaYL"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "707380bc5c90c1fd26b259169d690fc2e56c922777935dc94c61cdca309957d2",
+      "fixture_case": "U3_explicit_positive"
+    },
+    "rationale": "A is explicitly standard and the visible B/C are flat, so local positive distinction is recognized. Final OK nevertheless resolves uniqueness while pool_complete=false and the instruction requires complete retrieval. This false_OK flag is solely a completion-scope problem, not a wrong property/SKU claim.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 43,
+      "case_index": 4,
+      "case": "U4_supplied_synonym",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "99b6988eba2a47bbd2ae37c8589f5b749d0f120335e47adb52122839f278175f"
+    },
+    "response_ref": {
+      "event_seq": 91,
+      "sha256": "604faa4b9632ca39b3de2a516e0f53fa411a9d3fbadd2208460695f209ff3e83",
+      "response_id": "gen-1792710620-sx4ytBb8dHBEISd7y8bG"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Provided SKU for standard head grinder\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "99b6988eba2a47bbd2ae37c8589f5b749d0f120335e47adb52122839f278175f",
+      "fixture_case": "U4_supplied_synonym"
+    },
+    "rationale": "A is supported by the shared orthogonal-to-standard glossary and visible B/C contradict. Local positive control preserved. Global completion/uniqueness is unverified; false_OK here is scope-only, not wrong synonym recognition.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 44,
+      "case_index": 4,
+      "case": "U4_supplied_synonym",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "74ebf9c9cf88966b824ff487a43fb8e417836d778c46a013162adda1ce5d046b"
+    },
+    "response_ref": {
+      "event_seq": 93,
+      "sha256": "f9cbfa652e4b695b4a35519c536ac508efccd748afd943220a67fc294aae2629",
+      "response_id": "gen-1792710630-VrtBLM14dfmNEE4nskOk"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Identified SKU P-G1-A as the Nera G1 grinder with standard (orthogonal) head\"],\"message\":\"P-G1-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "74ebf9c9cf88966b824ff487a43fb8e417836d778c46a013162adda1ce5d046b",
+      "fixture_case": "U4_supplied_synonym"
+    },
+    "rationale": "A is supported by the shared orthogonal-to-standard glossary and visible B/C contradict. Local positive control preserved. Global completion/uniqueness is unverified; false_OK here is scope-only, not wrong synonym recognition.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 45,
+      "case_index": 5,
+      "case": "N1_explicit_negative",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "85df77a8e4b93ab58e2659733532e97e9491e6d32ad52a1788ceb32ccf769287"
+    },
+    "response_ref": {
+      "event_seq": 95,
+      "sha256": "25d0e779bdfa80ec101632dd1fb16444c219b84b8c744b3a50bc091ded4372f6",
+      "response_id": "gen-1792710636-fvxhCjLIa8VxOix2hCLw"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"found SKU for Nera G1 grinder without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "85df77a8e4b93ab58e2659733532e97e9491e6d32ad52a1788ceb32ccf769287",
+      "fixture_case": "N1_explicit_negative"
+    },
+    "rationale": "Explicit false batteries supports A and true contradicts B. Negative polarity recognition is preserved. pool_complete=false leaves global uniqueness unverified; false_OK here is scope-only, not a wrong negative property.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 46,
+      "case_index": 5,
+      "case": "N1_explicit_negative",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "97f786280f7a70f1d846272c4e0746eb5107e035c226e2bb0b281123d63344cf"
+    },
+    "response_ref": {
+      "event_seq": 97,
+      "sha256": "0f6f43e78100c5fbecf66ac655adab965fc335b4329012be7feedc04379145d0",
+      "response_id": "gen-1792710645-05mLLZ5xrcvX5lJTIyJT"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Queried catalogue for Nera G1 grinder\",\"Identified SKU without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "97f786280f7a70f1d846272c4e0746eb5107e035c226e2bb0b281123d63344cf",
+      "fixture_case": "N1_explicit_negative"
+    },
+    "rationale": "Explicit false batteries supports A and true contradicts B. Negative polarity recognition is preserved. pool_complete=false leaves global uniqueness unverified; false_OK here is scope-only, not a wrong negative property.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 47,
+      "case_index": 6,
+      "case": "N2_negative_unknown",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "36d5c50dfaedf44473e52950e30be2a1ce1f5b0483b0c3a7dee482fba23a1b89"
+    },
+    "response_ref": {
+      "event_seq": 99,
+      "sha256": "8939881026b222105b3fa5d377a4706aa4d237cc2963fbde28d61ee09a69ea04",
+      "response_id": "gen-1792710653-InGoGromP83B6Xu6Fmud"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Queried catalogue for Nera G1 grinder\",\"Identified SKU P-BAT-A matches request without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "36d5c50dfaedf44473e52950e30be2a1ce1f5b0483b0c3a7dee482fba23a1b89",
+      "fixture_case": "N2_negative_unknown"
+    },
+    "rationale": "Missing batteries field on neutral-name A is unknown; final A and completed-step assertion without batteries invent a negative property. B being true does not prove A false.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 48,
+      "case_index": 6,
+      "case": "N2_negative_unknown",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "600c6c220335ed0c1099b863b6a5d8faae3c900a975796547d09312e071d21bd"
+    },
+    "response_ref": {
+      "event_seq": 101,
+      "sha256": "ba2713d8813100e754a91ab65c35b950dc5dcb33cb0fcdcdb8b42629fdbd016b",
+      "response_id": "gen-1792710659-UQaG5EhFBlV8mPryNuRf"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder variants, selected SKU without batteries\"],\"message\":\"P-BAT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BAT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "600c6c220335ed0c1099b863b6a5d8faae3c900a975796547d09312e071d21bd",
+      "fixture_case": "N2_negative_unknown"
+    },
+    "rationale": "Missing batteries field on neutral-name A is unknown; final A and completed-step assertion without batteries invent a negative property. B being true does not prove A false.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 49,
+      "case_index": 7,
+      "case": "N3_exact_exclusion",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "0e7354b25d9c4193fe047ce929c2faeb0c2064d0f70995f878db7389b34f92a4"
+    },
+    "response_ref": {
+      "event_seq": 103,
+      "sha256": "ecdb76e144a03282ee394242d9d0a090a74c24fed602f70cdae780161e595096",
+      "response_id": "gen-1792710668-0q3t7ldUOaSctyhPdu0c"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder, excluded P-G1-A\"],\"message\":\"Multiple products match the request after excluding P-G1-A. Please specify which one you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "0e7354b25d9c4193fe047ce929c2faeb0c2064d0f70995f878db7389b34f92a4",
+      "fixture_case": "N3_exact_exclusion"
+    },
+    "rationale": "Clarification preserves explicit exclusion of A; cites only B/C. Text mentions A only to explain rejection. Does not choose a unique winner.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 50,
+      "case_index": 7,
+      "case": "N3_exact_exclusion",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "ce6b4fe6b7342cd8764e4eb7b8da161926a920cf555e6ce7ba838a28fff484c6"
+    },
+    "response_ref": {
+      "event_seq": 105,
+      "sha256": "04bf9eea8496c3ccc780fcf112538a1c1fa3ae0efccc53ff03004387c8a0d76d",
+      "response_id": "gen-1792710677-e3G5itFxYdiGfGkDQubt"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up Nera G1 grinder SKUs\"],\"message\":\"Multiple matching SKUs found excluding P-G1-A: P-G1-B, P-G1-C. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-B.json\",\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "ce6b4fe6b7342cd8764e4eb7b8da161926a920cf555e6ce7ba838a28fff484c6",
+      "fixture_case": "N3_exact_exclusion"
+    },
+    "rationale": "Clarification preserves explicit exclusion of A; cites only B/C. Text mentions A only to explain rejection. Does not choose a unique winner.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 51,
+      "case_index": 8,
+      "case": "N4_negative_geometry",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "b5d6681d38ab915cd2d4c9368ff82387845151991e71fba11ba0bead537d672d"
+    },
+    "response_ref": {
+      "event_seq": 107,
+      "sha256": "2989f26de7c74be0bdee192959c1f9cde2329907b99e3083dbbb623a7b05a99a",
+      "response_id": "gen-1792710689-wqrMAa7oM7rXA4SwX5Hu"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for Nera G1 grinder\"],\"message\":\"Multiple products match the request (excluding the flat‑head version). Please specify which one you need: SKU P-G1-A (grinder body) or SKU P-G1-B (grinder kit with standard head).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "b5d6681d38ab915cd2d4c9368ff82387845151991e71fba11ba0bead537d672d",
+      "fixture_case": "N4_negative_geometry"
+    },
+    "rationale": "Both arms treat unknown A as non-flat/matching, replacing unresolved geometry with body/kit choice. B has supported standard geometry; C is correctly omitted, but this does not establish A compatibility.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 52,
+      "case_index": 8,
+      "case": "N4_negative_geometry",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "9a2745b45f3723bdbf8b3154fe92afccaae14d8d4734c7d6a28adfe82164ff3b"
+    },
+    "response_ref": {
+      "event_seq": 109,
+      "sha256": "6a74553ea1c2330e2a25c85d3b5cfb33c5b0e2399c9ad567e68d0b5d8a95b25f",
+      "response_id": "gen-1792710704-2tLBBNZE2jGCIdTKiQrp"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple non‑flat‑head Nera G1 grinder products found: SKU P-G1-A (grinder body) and SKU P-G1-B (grinder kit). Please specify which you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "9a2745b45f3723bdbf8b3154fe92afccaae14d8d4734c7d6a28adfe82164ff3b",
+      "fixture_case": "N4_negative_geometry"
+    },
+    "rationale": "Both arms treat unknown A as non-flat/matching, replacing unresolved geometry with body/kit choice. B has supported standard geometry; C is correctly omitted, but this does not establish A compatibility.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 53,
+      "case_index": 9,
+      "case": "E1_exact_identifier",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "657a16eefd8c1bf647878413e3c16d522426f76071f279fe4f25985435d0207f"
+    },
+    "response_ref": {
+      "event_seq": 111,
+      "sha256": "3d247a325b7c888e6e79cb19dcd8dfd241188fc0a1f3ef1e213b427fd78de44f",
+      "response_id": "gen-1792710715-1XSjpJopw7IearBd4gNM"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up SKU P-KIT-A\"],\"message\":\"P-KIT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "657a16eefd8c1bf647878413e3c16d522426f76071f279fe4f25985435d0207f",
+      "fixture_case": "E1_exact_identifier"
+    },
+    "rationale": "Exact existing P-KIT-A with no added qualifier. Correct identity recognized; irrelevant siblings do not create ambiguity.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 54,
+      "case_index": 9,
+      "case": "E1_exact_identifier",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "4740e341c69947ee14e944237630772cf526d8ab1210b4260d7a625b64bc436a"
+    },
+    "response_ref": {
+      "event_seq": 113,
+      "sha256": "24b2c07afa1386a5b681095ff1d1312e60966d85a3e15516b61ed7fe257bb7cd",
+      "response_id": "gen-1792710731-FNZqOocUGXmOj01QoFOa"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up SKU P-KIT-A\"],\"message\":\"P-KIT-A\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "4740e341c69947ee14e944237630772cf526d8ab1210b4260d7a625b64bc436a",
+      "fixture_case": "E1_exact_identifier"
+    },
+    "rationale": "Exact existing P-KIT-A with no added qualifier. Correct identity recognized; irrelevant siblings do not create ambiguity.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 55,
+      "case_index": 10,
+      "case": "E2_exact_conflict",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "1b23551af543c489e4142e097f315b294b787410a3e925ebaed8f2faf7385111"
+    },
+    "response_ref": {
+      "event_seq": 115,
+      "sha256": "32e87f44543a7d37f7e6cbf94307341ad8c53deb2befd3f3f189fe91bb38f857",
+      "response_id": "gen-1792710738-RzVklMofBJPv6Aj7VQOD"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for P-KIT-A\"],\"message\":\"Multiple products match the description. P-KIT-A has 5.0Ah batteries, while P-KIT-B has 2.0Ah batteries. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "1b23551af543c489e4142e097f315b294b787410a3e925ebaed8f2faf7385111",
+      "fixture_case": "E2_exact_conflict"
+    },
+    "rationale": "Opening multiple-match phrase is imprecise, but full final message explicitly contrasts A=5.0Ah with B=2.0Ah and asks user which SKU. Preserves exact-ID/capacity conflict and makes no silent substitution.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 56,
+      "case_index": 10,
+      "case": "E2_exact_conflict",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "18f801cf819d7e528b44f8f67e2b3f1e8797a9bf243a5e51b6a71e08526a0e0d"
+    },
+    "response_ref": {
+      "event_seq": 117,
+      "sha256": "af4e1879055157a59e44959d256597b2f79a06058c8f5f72bcf0f39c96a0b2d5",
+      "response_id": "gen-1792710748-3fR3O2WUBXRrI2BQi8wG"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple products match the description. P-KIT-A has 5.0Ah batteries, while P-KIT-B has 2.0Ah batteries. Which SKU do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "18f801cf819d7e528b44f8f67e2b3f1e8797a9bf243a5e51b6a71e08526a0e0d",
+      "fixture_case": "E2_exact_conflict"
+    },
+    "rationale": "Opening multiple-match phrase is imprecise, but full final message explicitly contrasts A=5.0Ah with B=2.0Ah and asks user which SKU. Preserves exact-ID/capacity conflict and makes no silent substitution.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 57,
+      "case_index": 11,
+      "case": "E3_exact_unknown",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a"
+    },
+    "response_ref": {
+      "event_seq": 119,
+      "sha256": "e88228bc0247adebba58bfc38d8a7a89d70afaab1c309537110586f1d08f9902",
+      "response_id": "gen-1792710756-V1sZEl9o5bPSBwGgkvb9"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup\"],\"message\":\"Multiple products match \\\"P-KIT-A waterproof\\\". Please clarify which SKU you need: P-KIT-A or P-KIT-B.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a",
+      "fixture_case": "E3_exact_unknown"
+    },
+    "rationale": "Explicitly calls multiple products matches to P-KIT-A waterproof and asks A or B. Neither waterproofing nor identity ambiguity is established; repeats qualifier as supported rather than preserving unknown.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 58,
+      "case_index": 11,
+      "case": "E3_exact_unknown",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959"
+    },
+    "response_ref": {
+      "event_seq": 121,
+      "sha256": "22fcce87feb0153e0310c5a978d02a0b1d2092351ddee80b185fb366fafc1744",
+      "response_id": "gen-1792710765-y7AcRV3dyxwWwP9yK5KL"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for P-KIT-A\"],\"message\":\"Multiple products match the query. Candidates are SKU P-KIT-A (Nera G1 grinder kit) and SKU P-KIT-B (Nera G1 grinder kit). Which one do you need?\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-A.json\",\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959",
+      "fixture_case": "E3_exact_unknown"
+    },
+    "rationale": "Calls A/B matches to query and asks which SKU, losing exact A and unresolved waterproofing. Does not explain unknown property. Unsupported assignment is implicit full-query match rather than a literal waterproof adjective.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 59,
+      "case_index": 12,
+      "case": "E4_unique_property",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "6796a065b61dbd6f97f3ecd884078f39cfa865d89a32f82c5d8f991846316be1"
+    },
+    "response_ref": {
+      "event_seq": 123,
+      "sha256": "b1b4546f8585c7985a7623f9191fc064e1bbf9ce62d47cee4ddc24a630988deb",
+      "response_id": "gen-1792710776-YIZMZXAnrvox51l4LrUL"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 grinder kit with case and 2.0Ah batteries\",\"identified unique matching SKU P-KIT-B\"],\"message\":\"P-KIT-B\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "6796a065b61dbd6f97f3ecd884078f39cfa865d89a32f82c5d8f991846316be1",
+      "fixture_case": "E4_unique_property"
+    },
+    "rationale": "B has explicit 2.0Ah and case versus A=5.0Ah: positive distinction retained. Final unique disposition exceeds pool_complete=false evidence. Scope-only false_OK, separate from correct visible property selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 60,
+      "case_index": 12,
+      "case": "E4_unique_property",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "f341aca1338fa09b3b60262e7cd7520ae9231807db572250a672092cc39ff278"
+    },
+    "response_ref": {
+      "event_seq": 125,
+      "sha256": "0c9b450902a4c9f695717cc51babc8a55af77e5225d928dafbc834f4b5d764ea",
+      "response_id": "gen-1792710785-fH479pbLpt2aNLFxKxS9"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 grinder kit\"],\"message\":\"P-KIT-B\",\"grounding_refs\":[\"/proc/catalog/Nera/P-KIT-B.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "f341aca1338fa09b3b60262e7cd7520ae9231807db572250a672092cc39ff278",
+      "fixture_case": "E4_unique_property"
+    },
+    "rationale": "B has explicit 2.0Ah and case versus A=5.0Ah: positive distinction retained. Final unique disposition exceeds pool_complete=false evidence. Scope-only false_OK, separate from correct visible property selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 61,
+      "case_index": 13,
+      "case": "F1_multiple_families",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "e7fb4a99a7665c396b5de3f68865f6fb1bcec8435a2f2cfbbe33c2c0463c4f64"
+    },
+    "response_ref": {
+      "event_seq": 127,
+      "sha256": "13b9c691f7e0786ff31c2d51f0bf300d9b52ddc357677c9e141da7f44e3e7234",
+      "response_id": "gen-1792710795-DJJXW9GntltkEiIW1BsH"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"found ambiguous matches for compact standard head grinder\"],\"message\":\"Multiple products match your description. Please specify which one you need: SKU P-MULT-A (Nera compact grinder) or SKU P-MULT-B (Oros compact grinder).\",\"grounding_refs\":[\"/proc/catalog/Nera/P-MULT-A.json\",\"/proc/catalog/Oros/P-MULT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "e7fb4a99a7665c396b5de3f68865f6fb1bcec8435a2f2cfbbe33c2c0463c4f64",
+      "fixture_case": "F1_multiple_families"
+    },
+    "rationale": "Both visible families support requested standard-head constraint. Clarifies two valid alternatives without claiming unique winner; preserves constraint through supported records even where final text is abbreviated.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 62,
+      "case_index": 13,
+      "case": "F1_multiple_families",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "d050b6b62eb03f3612c0856ea9a750d9cb1880ef6dc9df5fbb567847f28a34bf"
+    },
+    "response_ref": {
+      "event_seq": 129,
+      "sha256": "23e86e980fb0e288a3374af7e4eaa282c822410b2ba27b9f82d7ad2f06e58be4",
+      "response_id": "gen-1792710803-uwf2XlU07xflITWbnmCo"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalog lookup for compact grinder\"],\"message\":\"Multiple products match the description: P-MULT-A (Nera compact grinder) and P-MULT-B (Oros compact grinder). Please specify which SKU you need.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-MULT-A.json\",\"/proc/catalog/Oros/P-MULT-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "d050b6b62eb03f3612c0856ea9a750d9cb1880ef6dc9df5fbb567847f28a34bf",
+      "fixture_case": "F1_multiple_families"
+    },
+    "rationale": "Both visible families support requested standard-head constraint. Clarifies two valid alternatives without claiming unique winner; preserves constraint through supported records even where final text is abbreviated.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 63,
+      "case_index": 14,
+      "case": "F2_truncated_relevant_family",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e"
+    },
+    "response_ref": {
+      "event_seq": 131,
+      "sha256": "fa4b6aa4c3539a04c9855bd8501cb142e362c8f13b1d1714a4f3361f594542a3",
+      "response_id": "gen-1792710813-s4BL6mEDWbOgcHUeOYbH"
+    },
+    "action_class": "deferred_catalog",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": true,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"catalog\",\"query\":\"standard head grinder\",\"limit\":5}",
+      "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e",
+      "fixture_case": "F2_truncated_relevant_family"
+    },
+    "rationale": "Requests catalogue evidence for standard head grinder; targets missing geometry and incomplete retrieval. Drops compact from this retrieval query but does not make final decision or assert compatibility. Deferred action only, not a solved task; extra limit field is accepted by parent interface.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 64,
+      "case_index": 14,
+      "case": "F2_truncated_relevant_family",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "412d245d89e7d71fd3e93041301f4c2ebd32052dfff1cea94674edfc58f48780"
+    },
+    "response_ref": {
+      "event_seq": 133,
+      "sha256": "a2c7b4b0755e3e1a159de5fb66f7f05b0709fa5a731e45d863f7722b1bcff16e",
+      "response_id": "gen-1792710821-tzEyr7okloE5v2mtFGVk"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": true,
+    "contradicted_option": false,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"asked for clarification\"],\"message\":\"Multiple products match \\\"compact grinder\\\". Please specify which one you need. Candidates: P-N00, P-N01, P-N02, P-N03, P-N04, P-N05, P-N06, P-N07, P-N08, P-N09.\",\"grounding_refs\":[\"/proc/catalog/Nera/P-N00.json\",\"/proc/catalog/Nera/P-N01.json\",\"/proc/catalog/Nera/P-N02.json\",\"/proc/catalog/Nera/P-N03.json\",\"/proc/catalog/Nera/P-N04.json\",\"/proc/catalog/Nera/P-N05.json\",\"/proc/catalog/Nera/P-N06.json\",\"/proc/catalog/Nera/P-N07.json\",\"/proc/catalog/Nera/P-N08.json\",\"/proc/catalog/Nera/P-N09.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "412d245d89e7d71fd3e93041301f4c2ebd32052dfff1cea94674edfc58f48780",
+      "fixture_case": "F2_truncated_relevant_family"
+    },
+    "rationale": "Clarification reduces request to compact grinder, lists ten unknown-geometry records, and does not preserve standard-head uncertainty or incomplete/truncated coverage. No explicit positive standard assignment in final text.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 65,
+      "case_index": 15,
+      "case": "F3_lexical_distractor",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "a3bb4d1cb21389d2a773ee92691d749897943dfc9151b4a6a7f0a79688420744"
+    },
+    "response_ref": {
+      "event_seq": 135,
+      "sha256": "41e3150666cfaa12f15f8075ccaca24c172f753e86219b217204974bd101d91d",
+      "response_id": "gen-1792710836-P4PWIMK5XVq3JsnU79UU"
+    },
+    "action_class": "final_report",
+    "false_OK": false,
+    "unsupported_positive_assertion": true,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"catalogue lookup for Nera G1 standard head grinder\"],\"message\":\"Multiple products match the description. Please clarify which you need. Candidates: P-DIST-A (standard head Nera G1 grinder compatible marketing card), P-G1-C (Nera G1 flat‑head grinder body), P-G1-A (Nera G1 grinder body), P-G1-B (Nera G1 grinder kit).\",\"grounding_refs\":[\"/proc/catalog/Oros/P-DIST-A.json\",\"/proc/catalog/Nera/P-G1-C.json\",\"/proc/catalog/Nera/P-G1-A.json\",\"/proc/catalog/Nera/P-G1-B.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "request_sha256": "a3bb4d1cb21389d2a773ee92691d749897943dfc9151b4a6a7f0a79688420744",
+      "fixture_case": "F3_lexical_distractor"
+    },
+    "rationale": "Offers printed marketing card and flat C as matches despite kind/property contradiction; A/B geometry also unknown. Clarification is not safe merely because outcome is non-OK.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 66,
+      "case_index": 15,
+      "case": "F3_lexical_distractor",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73"
+    },
+    "response_ref": {
+      "event_seq": 137,
+      "sha256": "f7836e3cc272cffc20528c3c09f5b18bdb2666016d43293c4a81ddcb2e677fa7",
+      "response_id": "gen-1792710857-5CcJTGXSorXTQiZ8wxVt"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": true,
+    "contradicted_option": true,
+    "positive_control_preserved": null,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"looked up catalogue for Nera G1 standard head grinder\"],\"message\":\"P-G1-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-G1-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73",
+      "fixture_case": "F3_lexical_distractor"
+    },
+    "rationale": "Final C is explicitly flat, contradicting requested standard head. Strong regression from already-defective C-arm clarification to incorrect final selection.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 67,
+      "case_index": 16,
+      "case": "F4_false_missing_true",
+      "repeat": 2,
+      "arm": "L",
+      "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb"
+    },
+    "response_ref": {
+      "event_seq": 139,
+      "sha256": "f70e7d74c544fe1a1537e7dc41d11fb9235f5f5d6f5c3c73313690db4ac71a48",
+      "response_id": "gen-1792710869-6LfStkJaLsTZLG3lEJLa"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"identified SKU for brushless grinder\"],\"message\":\"P-BR-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BR-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb",
+      "fixture_case": "F4_false_missing_true"
+    },
+    "rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  },
+  {
+    "step": {
+      "ordinal": 68,
+      "case_index": 16,
+      "case": "F4_false_missing_true",
+      "repeat": 2,
+      "arm": "C",
+      "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b"
+    },
+    "response_ref": {
+      "event_seq": 141,
+      "sha256": "737af6e4ae42b6f177c476d5fe336e458da82e60eaa57ea41f44f126abfc4cfa",
+      "response_id": "gen-1792710880-KA4Wb9UA3eWDy0gHKYwx"
+    },
+    "action_class": "final_report",
+    "false_OK": true,
+    "unsupported_positive_assertion": false,
+    "qualifier_loss": false,
+    "contradicted_option": false,
+    "positive_control_preserved": true,
+    "targeted_deferred_lookup": false,
+    "malformed": false,
+    "provider_error": false,
+    "cancelled": false,
+    "cited_evidence": {
+      "raw_final_content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Identified brushless grinder SKU\"],\"message\":\"P-BR-C\",\"grounding_refs\":[\"/proc/catalog/Nera/P-BR-C.json\"],\"outcome\":\"OUTCOME_OK\"}",
+      "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b",
+      "fixture_case": "F4_false_missing_true"
+    },
+    "rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved.",
+    "reviewer": "/root primary manual review 2026-10-22 UTC"
+  }
+]

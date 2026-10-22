@@ -1,0 +1,272 @@
+{
+  "status": "all_68_response_identity_and_full_content_joins_pass",
+  "source_sha256": {
+    "independent-semantic-review.json": "273cddfd855af0930735068a036392b3976936fdb46b4d01726b98357b9186a4",
+    "primary-manual-review.json": "c273df1b1fd1d85959d0bd5c7f8f52fd1c98bd6b1ac4a7ca980d9a6b36733370",
+    "manual-review-inputs.json": "6d66d7da68fea9d7af283ec6982f2a2423225c5bedd0de71c6e731114f8b145f"
+  },
+  "reviewed_ordinals": 68,
+  "compared_fields": [
+    "action_class",
+    "false_OK",
+    "unsupported_positive_assertion",
+    "qualifier_loss",
+    "contradicted_option",
+    "positive_control_preserved",
+    "targeted_deferred_lookup",
+    "malformed",
+    "provider_error",
+    "cancelled"
+  ],
+  "rows_with_flag_or_label_difference": 12,
+  "differences": [
+    {
+      "step": {
+        "ordinal": 23,
+        "case_index": 11,
+        "case": "E3_exact_unknown",
+        "repeat": 1,
+        "arm": "L",
+        "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959"
+      },
+      "differences": [
+        {
+          "field": "contradicted_option",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes an offered B as contradicting the explicit A identity constraint. Primary records this as identity/qualifier loss without this additional flag. Both describe the same unsupported identity ambiguity."
+        }
+      ],
+      "independent_rationale": "Waterproofing of exact A is unknown. The message omits waterproofing entirely. Offering B as another match also creates identity ambiguity where the user named A; it is not a supported response to the unresolved property.",
+      "primary_rationale": "Calls A/B matches to query and asks which SKU, losing exact A and unresolved waterproofing. Does not explain unknown property. Unsupported assignment is implicit full-query match rather than a literal waterproof adjective."
+    },
+    {
+      "step": {
+        "ordinal": 24,
+        "case_index": 11,
+        "case": "E3_exact_unknown",
+        "repeat": 1,
+        "arm": "C",
+        "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a"
+      },
+      "differences": [
+        {
+          "field": "contradicted_option",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes an offered B as contradicting the explicit A identity constraint. Primary records this as identity/qualifier loss without this additional flag. Both describe the same unsupported identity ambiguity."
+        }
+      ],
+      "independent_rationale": "Waterproofing of exact A is unknown. Quoting P-KIT-A waterproof inside a multiple-match claim does not preserve that unknown status. Offering B as another match also creates identity ambiguity where the user named A; it is not a supported response to the unresolved property.",
+      "primary_rationale": "Explicitly calls multiple products matches to P-KIT-A waterproof and asks A or B. Neither waterproofing nor identity ambiguity is established; repeats qualifier as supported rather than preserving unknown."
+    },
+    {
+      "step": {
+        "ordinal": 30,
+        "case_index": 14,
+        "case": "F2_truncated_relevant_family",
+        "repeat": 1,
+        "arm": "L",
+        "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e"
+      },
+      "differences": [
+        {
+          "field": "action_class",
+          "independent": "deferred_catalogue",
+          "primary": "deferred_catalog",
+          "interpretation": "Spelling alias only: deferred_catalogue and deferred_catalog both denote the identical supported catalog tool action. Both mark targeted_deferred_lookup true; neither claims executed lookup or task success."
+        }
+      ],
+      "independent_rationale": "The next catalogue query targets the unresolved standard-head evidence and can broaden the earlier compact-only retrieval. Compact remains in prior context; a tool query need not restate every final constraint. This is relevant deferred evidence collection, not a solved task, complete retrieval, or demonstrated hidden-SKU discovery.",
+      "primary_rationale": "Requests catalogue evidence for standard head grinder; targets missing geometry and incomplete retrieval. Drops compact from this retrieval query but does not make final decision or assert compatibility. Deferred action only, not a solved task; extra limit field is accepted by parent interface."
+    },
+    {
+      "step": {
+        "ordinal": 31,
+        "case_index": 15,
+        "case": "F3_lexical_distractor",
+        "repeat": 1,
+        "arm": "L",
+        "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73"
+      },
+      "differences": [
+        {
+          "field": "unsupported_positive_assertion",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes implicit full-request compatibility of the contradicted final choice. Primary records the known contradiction in contradicted_option and false_OK, without additionally flagging unsupported_positive_assertion. Both reject the flat final selection."
+        }
+      ],
+      "independent_rationale": "Final P-G1-C is explicitly flat and contradicts the requested standard head. Avoiding the printed card does not make this a valid answer. This is a contradicted final selection, not merely insufficient global completeness.",
+      "primary_rationale": "Final C is explicitly flat, contradicting requested standard head. Strong regression from already-defective C-arm clarification to incorrect final selection."
+    },
+    {
+      "step": {
+        "ordinal": 33,
+        "case_index": 16,
+        "case": "F4_false_missing_true",
+        "repeat": 1,
+        "arm": "C",
+        "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b"
+      },
+      "differences": [
+        {
+          "field": "positive_control_preserved",
+          "independent": null,
+          "primary": true,
+          "interpretation": "Independent reserves this flag for named positive controls and leaves F4 null, while separately recording local positive recognition. Primary also uses this flag for F4 local positive recognition. Both credit C=true and identify unresolved B/pool uniqueness."
+        }
+      ],
+      "independent_rationale": "C explicitly supports brushless=true, so this is correct local positive recognition. A=false is excluded. B remains unknown, however, and the final unique selection does not resolve B or pool completeness. The response does not explicitly claim B is false; the error basis is unjustified final uniqueness, not a fabricated negative value.",
+      "primary_rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved."
+    },
+    {
+      "step": {
+        "ordinal": 34,
+        "case_index": 16,
+        "case": "F4_false_missing_true",
+        "repeat": 1,
+        "arm": "L",
+        "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb"
+      },
+      "differences": [
+        {
+          "field": "positive_control_preserved",
+          "independent": null,
+          "primary": true,
+          "interpretation": "Independent reserves this flag for named positive controls and leaves F4 null, while separately recording local positive recognition. Primary also uses this flag for F4 local positive recognition. Both credit C=true and identify unresolved B/pool uniqueness."
+        }
+      ],
+      "independent_rationale": "C explicitly supports brushless=true, so this is correct local positive recognition. A=false is excluded. B remains unknown, however, and the final unique selection does not resolve B or pool completeness. The response does not explicitly claim B is false; the error basis is unjustified final uniqueness, not a fabricated negative value.",
+      "primary_rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved."
+    },
+    {
+      "step": {
+        "ordinal": 57,
+        "case_index": 11,
+        "case": "E3_exact_unknown",
+        "repeat": 2,
+        "arm": "C",
+        "request_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a"
+      },
+      "differences": [
+        {
+          "field": "contradicted_option",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes an offered B as contradicting the explicit A identity constraint. Primary records this as identity/qualifier loss without this additional flag. Both describe the same unsupported identity ambiguity."
+        }
+      ],
+      "independent_rationale": "Waterproofing of exact A is unknown. Quoting P-KIT-A waterproof inside a multiple-match claim does not preserve that unknown status. Offering B as another match also creates identity ambiguity where the user named A; it is not a supported response to the unresolved property.",
+      "primary_rationale": "Explicitly calls multiple products matches to P-KIT-A waterproof and asks A or B. Neither waterproofing nor identity ambiguity is established; repeats qualifier as supported rather than preserving unknown."
+    },
+    {
+      "step": {
+        "ordinal": 58,
+        "case_index": 11,
+        "case": "E3_exact_unknown",
+        "repeat": 2,
+        "arm": "L",
+        "request_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959"
+      },
+      "differences": [
+        {
+          "field": "contradicted_option",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes an offered B as contradicting the explicit A identity constraint. Primary records this as identity/qualifier loss without this additional flag. Both describe the same unsupported identity ambiguity."
+        }
+      ],
+      "independent_rationale": "Waterproofing of exact A is unknown. The message omits waterproofing entirely. Offering B as another match also creates identity ambiguity where the user named A; it is not a supported response to the unresolved property.",
+      "primary_rationale": "Calls A/B matches to query and asks which SKU, losing exact A and unresolved waterproofing. Does not explain unknown property. Unsupported assignment is implicit full-query match rather than a literal waterproof adjective."
+    },
+    {
+      "step": {
+        "ordinal": 63,
+        "case_index": 14,
+        "case": "F2_truncated_relevant_family",
+        "repeat": 2,
+        "arm": "L",
+        "request_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e"
+      },
+      "differences": [
+        {
+          "field": "action_class",
+          "independent": "deferred_catalogue",
+          "primary": "deferred_catalog",
+          "interpretation": "Spelling alias only: deferred_catalogue and deferred_catalog both denote the identical supported catalog tool action. Both mark targeted_deferred_lookup true; neither claims executed lookup or task success."
+        }
+      ],
+      "independent_rationale": "The next catalogue query targets the unresolved standard-head evidence and can broaden the earlier compact-only retrieval. Compact remains in prior context; a tool query need not restate every final constraint. This is relevant deferred evidence collection, not a solved task, complete retrieval, or demonstrated hidden-SKU discovery.",
+      "primary_rationale": "Requests catalogue evidence for standard head grinder; targets missing geometry and incomplete retrieval. Drops compact from this retrieval query but does not make final decision or assert compatibility. Deferred action only, not a solved task; extra limit field is accepted by parent interface."
+    },
+    {
+      "step": {
+        "ordinal": 66,
+        "case_index": 15,
+        "case": "F3_lexical_distractor",
+        "repeat": 2,
+        "arm": "L",
+        "request_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73"
+      },
+      "differences": [
+        {
+          "field": "unsupported_positive_assertion",
+          "independent": true,
+          "primary": false,
+          "interpretation": "Independent includes implicit full-request compatibility of the contradicted final choice. Primary records the known contradiction in contradicted_option and false_OK, without additionally flagging unsupported_positive_assertion. Both reject the flat final selection."
+        }
+      ],
+      "independent_rationale": "Final P-G1-C is explicitly flat and contradicts the requested standard head. Avoiding the printed card does not make this a valid answer. This is a contradicted final selection, not merely insufficient global completeness.",
+      "primary_rationale": "Final C is explicitly flat, contradicting requested standard head. Strong regression from already-defective C-arm clarification to incorrect final selection."
+    },
+    {
+      "step": {
+        "ordinal": 67,
+        "case_index": 16,
+        "case": "F4_false_missing_true",
+        "repeat": 2,
+        "arm": "L",
+        "request_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb"
+      },
+      "differences": [
+        {
+          "field": "positive_control_preserved",
+          "independent": null,
+          "primary": true,
+          "interpretation": "Independent reserves this flag for named positive controls and leaves F4 null, while separately recording local positive recognition. Primary also uses this flag for F4 local positive recognition. Both credit C=true and identify unresolved B/pool uniqueness."
+        }
+      ],
+      "independent_rationale": "C explicitly supports brushless=true, so this is correct local positive recognition. A=false is excluded. B remains unknown, however, and the final unique selection does not resolve B or pool completeness. The response does not explicitly claim B is false; the error basis is unjustified final uniqueness, not a fabricated negative value.",
+      "primary_rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved."
+    },
+    {
+      "step": {
+        "ordinal": 68,
+        "case_index": 16,
+        "case": "F4_false_missing_true",
+        "repeat": 2,
+        "arm": "C",
+        "request_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b"
+      },
+      "differences": [
+        {
+          "field": "positive_control_preserved",
+          "independent": null,
+          "primary": true,
+          "interpretation": "Independent reserves this flag for named positive controls and leaves F4 null, while separately recording local positive recognition. Primary also uses this flag for F4 local positive recognition. Both credit C=true and identify unresolved B/pool uniqueness."
+        }
+      ],
+      "independent_rationale": "C explicitly supports brushless=true, so this is correct local positive recognition. A=false is excluded. B remains unknown, however, and the final unique selection does not resolve B or pool completeness. The response does not explicitly claim B is false; the error basis is unjustified final uniqueness, not a fabricated negative value.",
+      "primary_rationale": "C explicitly brushless=true is locally supported, but B missing remains unknown and pool incomplete. Final unique C is premature; no literal claim that B is false. Positive evidence recognized, uncertainty not resolved."
+    }
+  ],
+  "interpretation": "Differences are retained, not resolved by rewriting either reviewer. Detailed rationales agree on material observed behavior; these field-definition differences prohibit treating the flags as interchangeable scores.",
+  "additional_independent_observation": "N3 all four actions quote excluded P-G1-A in an exclusion clause despite the literal shared no-quote policy. This is separate from offering/citing the excluded SKU; both reviews agree it is correctly excluded from offered/cited options.",
+  "not_measured": [
+    "overall semantic pass rate",
+    "full100 score change",
+    "causal treatment effect",
+    "post-action tool success"
+  ]
+}

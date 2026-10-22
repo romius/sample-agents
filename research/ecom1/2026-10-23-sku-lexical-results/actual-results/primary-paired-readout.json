@@ -1,0 +1,1041 @@
+{
+  "method": "Join of explicit manual judgments; not automated semantic assessment or overall pass score.",
+  "pairs": [
+    {
+      "case": "U1_missing_head",
+      "repeat": 1,
+      "C_ordinal": 1,
+      "L_ordinal": 2,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "contradicted_option"
+      ],
+      "interpretation": "Partial improvement: L removes flat option but still asserts unknown standard geometry."
+    },
+    {
+      "case": "U2_null",
+      "repeat": 1,
+      "C_ordinal": 4,
+      "L_ordinal": 3,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U2_empty",
+      "repeat": 1,
+      "C_ordinal": 5,
+      "L_ordinal": 6,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U3_explicit_positive",
+      "repeat": 1,
+      "C_ordinal": 8,
+      "L_ordinal": 7,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U4_supplied_synonym",
+      "repeat": 1,
+      "C_ordinal": 9,
+      "L_ordinal": 10,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N1_explicit_negative",
+      "repeat": 1,
+      "C_ordinal": 12,
+      "L_ordinal": 11,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N2_negative_unknown",
+      "repeat": 1,
+      "C_ordinal": 13,
+      "L_ordinal": 14,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N3_exact_exclusion",
+      "repeat": 1,
+      "C_ordinal": 16,
+      "L_ordinal": 15,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N4_negative_geometry",
+      "repeat": 1,
+      "C_ordinal": 17,
+      "L_ordinal": 18,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E1_exact_identifier",
+      "repeat": 1,
+      "C_ordinal": 20,
+      "L_ordinal": 19,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E2_exact_conflict",
+      "repeat": 1,
+      "C_ordinal": 21,
+      "L_ordinal": 22,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E3_exact_unknown",
+      "repeat": 1,
+      "C_ordinal": 24,
+      "L_ordinal": 23,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E4_unique_property",
+      "repeat": 1,
+      "C_ordinal": 25,
+      "L_ordinal": 26,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "F1_multiple_families",
+      "repeat": 1,
+      "C_ordinal": 28,
+      "L_ordinal": 27,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "F2_truncated_relevant_family",
+      "repeat": 1,
+      "C_ordinal": 29,
+      "L_ordinal": 30,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": true,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "qualifier_loss",
+        "targeted_deferred_lookup"
+      ],
+      "interpretation": "L requests relevant additional evidence; no task actions executed or success demonstrated."
+    },
+    {
+      "case": "F3_lexical_distractor",
+      "repeat": 1,
+      "C_ordinal": 32,
+      "L_ordinal": 31,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "false_OK",
+        "unsupported_positive_assertion"
+      ],
+      "interpretation": "L incorrectly terminates with explicitly flat SKU; C also offers contradicted options."
+    },
+    {
+      "case": "F4_false_missing_true",
+      "repeat": 1,
+      "C_ordinal": 33,
+      "L_ordinal": 34,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U1_missing_head",
+      "repeat": 2,
+      "C_ordinal": 36,
+      "L_ordinal": 35,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "contradicted_option"
+      ],
+      "interpretation": "Partial improvement: L removes flat option but still asserts unknown standard geometry."
+    },
+    {
+      "case": "U2_null",
+      "repeat": 2,
+      "C_ordinal": 37,
+      "L_ordinal": 38,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U2_empty",
+      "repeat": 2,
+      "C_ordinal": 40,
+      "L_ordinal": 39,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U3_explicit_positive",
+      "repeat": 2,
+      "C_ordinal": 41,
+      "L_ordinal": 42,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "U4_supplied_synonym",
+      "repeat": 2,
+      "C_ordinal": 44,
+      "L_ordinal": 43,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N1_explicit_negative",
+      "repeat": 2,
+      "C_ordinal": 45,
+      "L_ordinal": 46,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N2_negative_unknown",
+      "repeat": 2,
+      "C_ordinal": 48,
+      "L_ordinal": 47,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N3_exact_exclusion",
+      "repeat": 2,
+      "C_ordinal": 49,
+      "L_ordinal": 50,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "N4_negative_geometry",
+      "repeat": 2,
+      "C_ordinal": 52,
+      "L_ordinal": 51,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E1_exact_identifier",
+      "repeat": 2,
+      "C_ordinal": 53,
+      "L_ordinal": 54,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E2_exact_conflict",
+      "repeat": 2,
+      "C_ordinal": 56,
+      "L_ordinal": 55,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E3_exact_unknown",
+      "repeat": 2,
+      "C_ordinal": 57,
+      "L_ordinal": 58,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "E4_unique_property",
+      "repeat": 2,
+      "C_ordinal": 60,
+      "L_ordinal": 59,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "F1_multiple_families",
+      "repeat": 2,
+      "C_ordinal": 61,
+      "L_ordinal": 62,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    },
+    {
+      "case": "F2_truncated_relevant_family",
+      "repeat": 2,
+      "C_ordinal": 64,
+      "L_ordinal": 63,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": true,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": true,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "qualifier_loss",
+        "targeted_deferred_lookup"
+      ],
+      "interpretation": "L requests relevant additional evidence; no task actions executed or success demonstrated."
+    },
+    {
+      "case": "F3_lexical_distractor",
+      "repeat": 2,
+      "C_ordinal": 65,
+      "L_ordinal": 66,
+      "C_flags": {
+        "false_OK": false,
+        "unsupported_positive_assertion": true,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": true,
+        "contradicted_option": true,
+        "positive_control_preserved": null,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [
+        "false_OK",
+        "unsupported_positive_assertion"
+      ],
+      "interpretation": "L incorrectly terminates with explicitly flat SKU; C also offers contradicted options."
+    },
+    {
+      "case": "F4_false_missing_true",
+      "repeat": 2,
+      "C_ordinal": 68,
+      "L_ordinal": 67,
+      "C_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "L_flags": {
+        "false_OK": true,
+        "unsupported_positive_assertion": false,
+        "qualifier_loss": false,
+        "contradicted_option": false,
+        "positive_control_preserved": true,
+        "targeted_deferred_lookup": false,
+        "malformed": false,
+        "provider_error": false,
+        "cancelled": false
+      },
+      "changed_flags": [],
+      "interpretation": "No primary semantic-flag difference between arms; read full per-row rationale, including scope-only false OK."
+    }
+  ]
+}

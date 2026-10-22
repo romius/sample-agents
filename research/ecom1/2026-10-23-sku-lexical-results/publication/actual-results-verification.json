@@ -1,0 +1,78 @@
+{
+  "status": "passed offline clean-extracted reproduction",
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "zlib": "1.2.12",
+  "exact_diagnostic_source_build": true,
+  "fake_host_diagnostic_checks": 40,
+  "unchanged_v2_validator_tests": 50,
+  "actual_trace_events": 149,
+  "actual_requests_verified": 68,
+  "actual_provider_attempts": 68,
+  "retry_events": 0,
+  "complete_cost_usd": "0.012366758",
+  "manual_semantics_recomputed": false,
+  "manual_transcription_reproduced": true,
+  "primary_response_joins_verified": 68,
+  "primary_paired_joins_verified": 34,
+  "independent_primary_full_content_joins_verified": 68,
+  "review_difference_rows_retained": 12,
+  "all_members_unchanged": true,
+  "deterministic_archive_and_extracted_repack": true,
+  "archive_sha256": "ce48d493f987e3a665468cab73090c4eae69f5bfde58f90d14e3340f4db72467",
+  "archive_bytes": 1916783,
+  "archive_files": 354,
+  "model_calls": 0,
+  "brain_writes": false,
+  "git_operations": false,
+  "logs": [
+    {
+      "script": "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/build.py",
+      "returncode": 0,
+      "stdout": "{\n  \"status\": \"prepared locally; NOT SUBMITTED\",\n  \"purpose\": \"68-call C-versus-L next-action diagnostic; not a task-solving source, benchmark run, score or promotion candidate\",\n  \"production_source\": \"d5785r1 / readable d5789r1\",\n  \"production_source_hashes\": {\n    \"2026-10-22-sku-history-pressure-review/agent.py\": \"832be81a5fafec378320d42f3e5697cea00197dfe9bfbb061b2073880a203765\",\n    \"2026-10-22-sku-history-pressure-review/readable.py\": \"0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41\"\n  },\n  \"diagnostic_packed_bytes\": 28738,\n  \"diagnostic_packed_sha256\": \"dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e\",\n  \"diagnostic_readable_bytes\": 543012,\n  \"diagnostic_readable_sha256\": \"52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7\",\n  \"fixtures_sha256\": \"c2dd7b4f5917d6118351becaa7d9aeee7cd2c7d510cb1c5eb5076bb202b57571\",\n  \"call_plan_sha256\": \"89550772dc28c05a1f73d06d5c09d325e7c78de5fb7e89fd5d2c7c1490ff97a5\",\n  \"dependency_sha256\": \"c76458c0361725b7801b3a13a46c4e0d13b6f0e241d2a90fd8fa20a8ba1f6f20\",\n  \"logical_model_calls\": 68,\n  \"unique_cases\": 17,\n  \"arms\": [\n    \"C\",\n    \"L\"\n  ],\n  \"repeats\": 2,\n  \"sdk\": \"0.3.7\",\n  \"provider\": \"deepinfra/bf16 pinned by SDK; private transport encoding not synthesized\",\n  \"settings\": {\n    \"model\": \"openai/gpt-oss-120b\",\n    \"max_completion_tokens\": 2048,\n    \"reasoning\": {\n      \"effort\": \"medium\"\n    },\n    \"temperature\": 0\n  },\n  \"native_limits\": {\n    \"max_feed_duration_secs\": 10,\n    \"max_turn_duration_secs\": 10,\n    \"max_suspensions\": 1000\n  },\n  \"paid_calls_during_preparation\": 0,\n  \"no_custom_retry\": true,\n  \"stdout_limit_bytes\": 65536,\n  \"stdout_protocol\": \"bounded metadata only; raw responses/errors and usage harvested from immutable trace events\",\n  \"runner_sha256\": \"1967934b4c116cc3e93df7f915345a568776d6a3cb8d591f91e822d52e89df52\",\n  \"cancellation\": \"re-raise errors containing cancel; no subsequent call or carrier Answer\",\n  \"no_ecom_actions\": true,\n  \"carrier_grade\": \"irrelevant; must not be reported as research score\",\n  \"limitations\": [\n    \"No main-agent action is executed from any model reply.\",\n    \"Only immediate next actions are observed; deferred actions are not task successes.\",\n    \"SDK may retry eligible provider responses; 68 logical calls is not a bound on transport attempts.\",\n    \"Counterbalanced repeat order is fixed, not random; repeated requests are not independent tasks.\",\n    \"L is shorter; label semantics and generic length/attention effects cannot be separated.\",\n    \"Every attachment says pool_complete=false; no global catalogue coverage claim.\"\n  ]\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-22-sku-lexical-paired-diagnostic/verify.py",
+      "returncode": 0,
+      "stdout": "PASS: 40 runner executions; 68 exact ordered requests; readable/packed CPython/native parity; bounded stdout including oversized Unicode responses/errors; cancellation; no actions or usage dumps.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/test_validator_v2.py",
+      "returncode": 0,
+      "stdout": "PASS archived retry accounting evidence:47 unique transportcalls/43 logical starts; no fabricated full trace.\nPASS 50 offline trace checks; original archived16 verifier reproduced; no real68 outputs or model calls.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/actual-results/reassemble.py",
+      "returncode": 0,
+      "stdout": "PASS:149 events,220 chunks; exact trial and run CAS bytes verified.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/validate_trace_v2.py",
+      "returncode": 0,
+      "stdout": "{\"status\": \"reconciled\", \"planned_calls\": 68, \"observed_logical_calls\": 68, \"provider_attempts\": 68, \"retry_events\": 0, \"cancelled\": false}\nFull evidence and deviations written; semantic review remains manual.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/actual-results/prepare_review.py",
+      "returncode": 0,
+      "stdout": "Prepared68 raw answers; all manual judgments remain pending.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/actual-results/primary-review-transcription.py",
+      "returncode": 0,
+      "stdout": "Saved 68 individually reviewed rows; semantic decisions explicit, no automatic pass tally.\n",
+      "stderr": ""
+    },
+    {
+      "script": "research/ecom1/2026-10-23-sku-lexical-results/actual-results/compare-independent-primary.py",
+      "returncode": 0,
+      "stdout": "PASS: 68 exact identity/content joins; 12 retained flag/label difference rows; no semantic scoring.\n",
+      "stderr": ""
+    }
+  ]
+}
