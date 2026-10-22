@@ -1,5 +1,5 @@
 {
-  "state": "offline_verified_ready_for_inventory_only_full100",
+  "state": "queued",
   "source_sha256": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
   "source_bytes": 65292,
   "verified_baseline": "d3200r2",
@@ -14,5 +14,12 @@
   "integration_tests": "integration-results.json",
   "packing_tests": "test_packer_independent_results.json",
   "authorization": "One additional outstanding full100 specifically for inventory CSV repair. After submission normal maximum2 resumes; no cancellations. One new per30minutes remains. Last prior19:28:55UTC.",
-  "limits": "No live score claimed. See README for replay, provider, latency and source-size limitations."
+  "limits": "No live score claimed. See README for replay, provider, latency and source-size limitations.",
+  "candidate": "d5204r1",
+  "job_id": "j2f9717b672c04c9a94f1df3219579692",
+  "submitted_at": "2026-10-22T20:03:58.898045+00:00",
+  "temporary_third_slot_consumed": true,
+  "normal_outstanding_limit": 2,
+  "git_commit": "cedfcd64b9ca7252240d1acfc249d4ea9541f4c2",
+  "brain_exact_git_archive": "d5211r1"
 }
