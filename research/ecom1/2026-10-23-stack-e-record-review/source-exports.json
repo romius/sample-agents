@@ -1,0 +1,88 @@
+{
+  "agent": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 314,
+      "files": {
+        "agent": {
+          "blob": "56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c",
+          "id": "d3909",
+          "media_type": "text/plain; charset=utf-8",
+          "path": "experiments/2026-10-22T1545Z-agorlov-stack-e/agent.py",
+          "revision": 1,
+          "size": 62475,
+          "text": true,
+          "workspace": "w1"
+        }
+      },
+      "next_offset": null,
+      "next_seq": 4,
+      "output_bytes": 314,
+      "output_truncated": false,
+      "sdk_calls": 2,
+      "seq": 3,
+      "session": "s7647",
+      "step": null
+    },
+    "notices": [],
+    "output": "brain.sandbox.trace(job, after=0, limit=20, trial=None) -> dict\n\nCompact ordered event index; request/response bodies remain in per-trial files/CAS. Optional trial matches trial_id or task_id within this job. Returns items, more and next_after. Use trace_event for a body. No automatic replay of interrupted jobs.\n"
+  },
+  "exports": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 850,
+      "files": {
+        "build": {
+          "blob": "4ccc07ae000e50ed07f22afcb37e3431be60be14c61c10a6accebec0b8df6cf7",
+          "id": "d3911",
+          "media_type": "text/plain; charset=utf-8",
+          "path": "experiments/2026-10-22T1545Z-agorlov-stack-e/build_e.py",
+          "revision": 1,
+          "size": 4948,
+          "text": true,
+          "workspace": "w1"
+        },
+        "readable": {
+          "blob": "d6ae7201e116520be92f1e81f83a15644a167eb4003c32c0026f905d27d884eb",
+          "id": "d3910",
+          "media_type": "text/plain; charset=utf-8",
+          "path": "experiments/2026-10-22T1545Z-agorlov-stack-e/readable.py",
+          "revision": 1,
+          "size": 145858,
+          "text": true,
+          "workspace": "w1"
+        },
+        "readme": {
+          "blob": "46bf5741e116998d485684aad4198bcfc84b158004686041e15e7ada0d54b84e",
+          "id": "d3913",
+          "media_type": "text/plain; charset=utf-8",
+          "path": "experiments/2026-10-22T1545Z-agorlov-stack-e/README.md",
+          "revision": 3,
+          "size": 6035,
+          "text": true,
+          "workspace": "w1"
+        },
+        "review": {
+          "blob": "7e9295343e8ebc5fdd9a68afcaa24737667df2edaacce2eb9bafde26d5ea519f",
+          "id": "d3912",
+          "media_type": "text/plain; charset=utf-8",
+          "path": "experiments/2026-10-22T1545Z-agorlov-stack-e/REVIEW_E.md",
+          "revision": 1,
+          "size": 9378,
+          "text": true,
+          "workspace": "w1"
+        }
+      },
+      "next_offset": null,
+      "next_seq": 5,
+      "output_bytes": 850,
+      "output_truncated": false,
+      "sdk_calls": 5,
+      "seq": 4,
+      "session": "s7647",
+      "step": null
+    },
+    "notices": [],
+    "output": "{'id': 'j55b49f183413406c850865f5aa62012b', 'workspace': 'w1', 'document': 'd3909', 'revision': 1, 'path': 'experiments/2026-10-22T1545Z-agorlov-stack-e/agent.py', 'source_blob': '56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c', 'trial_count': 100, 'sdk_version': '0.3.7', 'author': 'agorlov-digital', 'session': 's5165', 'state': 'completed', 'created_at': '2026-10-22T15:41:35.862526+00:00', 'started_at': '2026-10-22T22:21:19.394785+00:00', 'finished_at': '2026-10-22T23:05:11.145781+00:00', 'run_id': 'run-22rJvTYhHxkZtLth5uMrp4GTs', 'error': None, 'summary_blob': '96356b56e14c32d66b5f6b3dac5ac51b3197e2e12c8f43574cc8a554acb4a4f7', 'cancellation': None, 'name': 'agorlov-digital STACK E = bobcat d3756r1 (i2c14+receipt v2+two-match on d2499r1) + inara crosslist_parse_ocr full100', 'queue': 'normal', 'result_available': True}\n"
+  }
+}

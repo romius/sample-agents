@@ -1,0 +1,436 @@
+{
+  "python": "3.12.7",
+  "real_sdk_calls": 0,
+  "model_calls": 0,
+  "checks": {
+    "negative_diameter": {
+      "request": "Resolve this product request: makita specialized blade pack outside 190mm listing. Constraint: price must be below EUR 53.69. Respond with # of matching products as number only",
+      "parsed_diameter": [
+        null,
+        190
+      ],
+      "actual_selection": [
+        "PT-BLA-MAK-SPEC-190"
+      ],
+      "manual_expected": "PT-BLA-MAK-SPEC-165",
+      "evidence": "all three actual Makita SPEC product JSONs; grader expected ref; outside190 negation"
+    },
+    "diameter_counterexamples": [
+      {
+        "request": "190mm blade",
+        "parsed": [
+          null,
+          190
+        ]
+      },
+      {
+        "request": "outside 190mm listing",
+        "parsed": [
+          null,
+          190
+        ]
+      },
+      {
+        "request": "not 190mm blade",
+        "parsed": [
+          null,
+          190
+        ]
+      },
+      {
+        "request": "190mm excluded",
+        "parsed": [
+          null,
+          null
+        ]
+      },
+      {
+        "request": "above 165mm blade",
+        "parsed": [
+          165,
+          null
+        ]
+      }
+    ],
+    "crosslist_decline": [
+      {
+        "variant": "actual",
+        "sha256": "96d2981de02e5d44760201b2130e4ad7568dad0882d7250d684ca8d18928ab48",
+        "exception_type": "ValueError",
+        "message": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "variant": "remove_totals_noise_only",
+        "sha256": "94e82c2f2af2d12639d2a9ad78e05e7ca5345f99a16828cae0b0e8c9124d56b3",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "variant": "remove_totals_and_memo_prefix_noise",
+        "sha256": "e50e80909bba41ce9fbd2a6b757b025f5a3b92955c87676901560a681dfed147",
+        "parsed": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 9,
+              "competitor_code": "CMP-E2YTNR",
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 8,
+              "competitor_code": "CMP-4ZDNFH",
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 6,
+              "competitor_code": "CMP-JWCCAD",
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 4,
+              "competitor_code": "CMP-32UKXC",
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 9,
+              "competitor_code": "CMP-HKAPN2",
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "parser_lineage": {
+      "record_crosslist": {
+        "exception_type": "ValueError",
+        "message": "OCR must identify one branch and both complete totals"
+      },
+      "our_d5789_crosslist": {
+        "exception_type": "ValueError",
+        "message": "OCR must identify one branch and both complete totals"
+      },
+      "bobcat_pre_inara_i2c_xparse": {
+        "result": {
+          "branch": "PowerTools Graz Center",
+          "lines": [
+            {
+              "line_no": 1,
+              "qty": 9,
+              "code": "CMP-E2YTNR",
+              "desc": [
+                "Einhell TE-AC 270/50 Silent Plus",
+                "compressor"
+              ],
+              "specs": [
+                "noise db=88; oil free=false; tank l=50"
+              ],
+              "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+              "properties": {
+                "noise_db": "88",
+                "oil_free": "false",
+                "tank_l": "50"
+              }
+            },
+            {
+              "line_no": 2,
+              "qty": 8,
+              "code": "CMP-4ZDNFH",
+              "desc": [
+                "Karcher K4 Power Control Car and Home",
+                "set"
+              ],
+              "specs": [
+                "ACCESSORY SET=CAR AND HOME KIT; DETERGENT SYSTEM=PLUG",
+                "and clean; flow l h=410; pump material=aluminium"
+              ],
+              "description": "Karcher K4 Power Control Car and Home set",
+              "properties": {
+                "accessory_set": "CAR AND HOME KIT",
+                "detergent_system": "PLUG and clean",
+                "flow_l_h": "410",
+                "pump_material": "aluminium"
+              }
+            },
+            {
+              "line_no": 3,
+              "qty": 6,
+              "code": "CMP-JWCCAD",
+              "desc": [
+                "3M SecureFit 400 clear safety glasses",
+                "with foam gasket"
+              ],
+              "specs": [
+                "adjustable=false; certification=EN166; pack count=1"
+              ],
+              "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+              "properties": {
+                "adjustable": "false",
+                "certification": "EN166",
+                "pack_count": "1"
+              }
+            },
+            {
+              "line_no": 4,
+              "qty": 4,
+              "code": "CMP-32UKXC",
+              "desc": [
+                "Aircraft Compact-Air 240/24 compressor",
+                "accessory set"
+              ],
+              "specs": [
+                "intake l min=240; noise db=97; wheels=true"
+              ],
+              "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+              "properties": {
+                "intake_l_min": "240",
+                "noise_db": "97",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 5,
+              "qty": 9,
+              "code": "CMP-HKAPN2",
+              "desc": [
+                "UVEX PHEOS HELMET VISOR",
+                "kit"
+              ],
+              "specs": [
+                "pack count=1; protection type=face; size=helmet mounted"
+              ],
+              "description": "UVEX PHEOS HELMET VISOR kit",
+              "properties": {
+                "pack_count": "1",
+                "protection_type": "face",
+                "size": "helmet mounted"
+              }
+            }
+          ]
+        }
+      }
+    },
+    "crosslist_counterexamples": [
+      {
+        "case": "duplicate_units",
+        "exception_type": "ValueError",
+        "message": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "wrong_units",
+        "exception_type": "ValueError",
+        "message": "OCR row or quantity total mismatch"
+      },
+      {
+        "case": "embedded_second_units",
+        "parsed_rows": 5
+      }
+    ],
+    "CL_scope": [
+      {
+        "request": "Resolve this product request: makita specialized blade pack outside 190mm listing. Constraint: price must be below EUR 53.69. Respond with # of matching products as number only",
+        "recognized_description": null
+      },
+      {
+        "request": "Do you have 1 of 'karcher k4 outside the home car reel listings' (but not PT-WASH-KAR-K4-PC) in stock in maxglan tools place?",
+        "recognized_description": null
+      },
+      {
+        "request": "sku for makita blade outside 190mm listing. sku only",
+        "recognized_description": "makita blade outside 190mm listing"
+      },
+      {
+        "request": "sku for karcher k4 outside the home car reel listings. sku only",
+        "recognized_description": "karcher k4 outside the home car reel listings"
+      }
+    ],
+    "CL_scope_note": "The scope helper has no outside/negation solver. Supported SKU-only outside descriptions are admitted verbatim; lexical metadata does not invert excluded properties. Neither actual count nor stock request reaches this attachment, and early deterministic answers precede it.",
+    "cleanup": [
+      {
+        "case": "success",
+        "result": {
+          "message": "/tmp/review/a.txt\n/tmp/review/b.txt",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/review",
+            "/docs/security.md"
+          ],
+          "why": "deleted 2 of 2"
+        },
+        "calls": [
+          [
+            "List",
+            {
+              "path": "/tmp/review"
+            }
+          ],
+          [
+            "Delete",
+            {
+              "path": "/tmp/review/a.txt"
+            }
+          ],
+          [
+            "Delete",
+            {
+              "path": "/tmp/review/b.txt"
+            }
+          ]
+        ],
+        "remaining": []
+      },
+      {
+        "case": "partial_delete_404",
+        "result": {
+          "message": "/tmp/review/a.txt",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/review",
+            "/docs/security.md"
+          ],
+          "why": "deleted 1 of 2"
+        },
+        "calls": [
+          [
+            "List",
+            {
+              "path": "/tmp/review"
+            }
+          ],
+          [
+            "Delete",
+            {
+              "path": "/tmp/review/a.txt"
+            }
+          ],
+          [
+            "Delete",
+            {
+              "path": "/tmp/review/b.txt"
+            }
+          ]
+        ],
+        "remaining": [
+          "b.txt"
+        ]
+      },
+      {
+        "case": "directory_decline",
+        "result": null,
+        "calls": [
+          [
+            "List",
+            {
+              "path": "/tmp/review"
+            }
+          ]
+        ],
+        "remaining": [
+          "a.txt",
+          "b.txt"
+        ]
+      }
+    ],
+    "inventory": {
+      "csv_matches_independent_oracle": true,
+      "rows": 5,
+      "write_count": 1,
+      "destination_readback": false,
+      "refs_not_read": [
+        "/exports/inventory-family-eqMvAeV3.csv"
+      ],
+      "all_other_refs_were_read": true,
+      "grade_detail": "['answer contains too many invalid references']",
+      "limit": "Grader gives no per-ref invalidity list; omission of report readback is a testable hypothesis, not established sole cause."
+    }
+  }
+}

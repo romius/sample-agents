@@ -1,0 +1,159 @@
+{
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "record_readable_sha256": "d6ae7201e116520be92f1e81f83a15644a167eb4003c32c0026f905d27d884eb",
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "scope": "Native method-only-host checks of exact isolated definitions, not whole-agent validation.",
+  "checks": [
+    {
+      "case": "cleanup_success",
+      "calls": [
+        [
+          "List",
+          {
+            "path": "/tmp/review"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/review/a.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/review/b.txt"
+          }
+        ]
+      ],
+      "result": {
+        "message": "/tmp/review/a.txt\n/tmp/review/b.txt",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/tmp/review",
+          "/docs/security.md"
+        ],
+        "why": "deleted 2 of 2"
+      }
+    },
+    {
+      "case": "cleanup_partial",
+      "calls": [
+        [
+          "List",
+          {
+            "path": "/tmp/review"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/review/a.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/review/b.txt"
+          }
+        ]
+      ],
+      "result": {
+        "message": "/tmp/review/a.txt",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/tmp/review",
+          "/docs/security.md"
+        ],
+        "why": "deleted 1 of 2"
+      }
+    },
+    {
+      "case": "negative_diameter",
+      "calls": [],
+      "result": [
+        null,
+        190
+      ]
+    },
+    {
+      "case": "original_ocr",
+      "calls": [],
+      "result": {
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    },
+    {
+      "case": "single_prefix_removed",
+      "calls": [],
+      "result": {
+        "branch": "PowerTools Graz Center",
+        "lines": [
+          {
+            "line_no": 1,
+            "requested_qty": 9,
+            "competitor_code": "CMP-E2YTNR",
+            "description": "Einhell TE-AC 270/50 Silent Plus compressor",
+            "properties": {
+              "noise_db": "88",
+              "oil_free": "false",
+              "tank_l": "50"
+            }
+          },
+          {
+            "line_no": 2,
+            "requested_qty": 8,
+            "competitor_code": "CMP-4ZDNFH",
+            "description": "Karcher K4 Power Control Car and Home set",
+            "properties": {
+              "accessory_set": "CAR AND HOME KIT",
+              "detergent_system": "PLUG and clean",
+              "flow_l_h": "410",
+              "pump_material": "aluminium"
+            }
+          },
+          {
+            "line_no": 3,
+            "requested_qty": 6,
+            "competitor_code": "CMP-JWCCAD",
+            "description": "3M SecureFit 400 clear safety glasses with foam gasket",
+            "properties": {
+              "adjustable": "false",
+              "certification": "EN166",
+              "pack_count": "1"
+            }
+          },
+          {
+            "line_no": 4,
+            "requested_qty": 4,
+            "competitor_code": "CMP-32UKXC",
+            "description": "Aircraft Compact-Air 240/24 compressor accessory set",
+            "properties": {
+              "intake_l_min": "240",
+              "noise_db": "97",
+              "wheels": "true"
+            }
+          },
+          {
+            "line_no": 5,
+            "requested_qty": 9,
+            "competitor_code": "CMP-HKAPN2",
+            "description": "UVEX PHEOS HELMET VISOR kit",
+            "properties": {
+              "pack_count": "1",
+              "protection_type": "face",
+              "size": "helmet mounted"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "real_sdk_calls": 0,
+  "model_calls": 0
+}
