@@ -1,0 +1,13 @@
+{
+  "session": "s6678",
+  "seq": 17,
+  "tested_source": "d5335 (draft)",
+  "expected": "d5200r1",
+  "result": "TimeoutError: feed time limit exceeded: 250.008372ms > 250ms",
+  "changes": false,
+  "interpretation": "Brain SDK control-plane decoder check did not finish. Benchmark limits are separate. No successful Brain-native exact-decode claim. Local pydantic-monty1.2.0 exact decode and full-agent tests passed; production benchmark loading overhead remains unmeasured.",
+  "source_sha256": "0a75eafef17089209235a33b21d0f0e242fb6d5a78149cc9b85461b96fff4d7e",
+  "archive": "d5341",
+  "archive_sha256": "cae19cd092f1d65a210ec77f357e44dbc83db2f38c677a865dc756e3c8d73b8d",
+  "git": "02bb4e894b35e8d2a60b3ac45d11b53df7c20d10"
+}
