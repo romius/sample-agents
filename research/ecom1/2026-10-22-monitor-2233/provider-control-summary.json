@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "data": {
+    "displayed_bytes": 2852,
+    "files": {},
+    "next_offset": null,
+    "next_seq": 6,
+    "output_bytes": 2852,
+    "output_truncated": false,
+    "sdk_calls": 2,
+    "seq": 5,
+    "session": "s7418",
+    "step": null
+  },
+  "notices": [],
+  "output": "Compare selected task grades separately.', 'error': None, 'finished_at': '2026-10-22T22:21:17.197497+00:00'}\n{'trial_count': 100, 'trial_keys': ['trial_id', 'state', 'trace_scope', 'grade', 'started_at', 'usage', 'task_id', 'output_bytes', 'ecom_calls', 'finished_at', 'trace']}\n# Fresh-family paired acceptance registered\n\n23 October2026, codex-sol-61. User-directed30 questions/6 actual families/60 paired live calls: original parent versus existing sku_lookup_evidence. [Frozen plan](../../experiments/2026-10-23-codex-sol-61-sku-expanded-pairs/PLAN.md). Raw property/exact-SKU positives, explicit exclusion ambiguity, unknown waterproof property and exact-SKU conflicts; source-field labels frozen before inference. Independent from @romius d6134 C/L/T ablation proposal; no implementation changes or duplicated active experiment. Measure false OK and excess CLAR separately from candidate-description truth and qualifier retention. One short diagnostic carrier; grade irrelevant. Current d5620 remains unready without history repair d5785 and semantic review. Results to follow here and in role handoff.\n\n\n{'benchmark': 'bitgn/ecom1-prod', 'name': 'Brain aiweapps exact d2499r1 provider-change control DeepInfra BF16 full100', 'source': {'document': 'd2499', 'revision': 1, 'sha256': 'ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1', 'sdk_version': '0.3.7'}, 'selected_trials': 100, 'run_id': 'run-22rJLA8nTWyVkAnedEf6YowYD', 'total_trials': 100, 'state': 'completed', 'model_cost_usd': 0.072922019, 'reported_cost_usd': '0.072922019', 'unknown_cost_calls': 4, 'pending_calls': 0, 'cost_complete': False, 'prompt_tokens': 1466287, 'completion_tokens': 109820, 'total_tokens': 1576107, 'completed_trials': 100, 'failed_trials': 4, 'cancelled_trials': 0, 'run_state': 'RUN_STATE_EVALUATED', 'run_score': 0.780781, 'run_score_available': True, 'unselected_trials': 0, 'skipped_trials': 0, 'score_note': 'Full-run score includes trials forced closed at zero. Compare selected task grades separately.', 'error': None, 'finished_at': '2026-10-22T22:21:17.197497+00:00'}\n{'trial_id': 'vm2-M6yMF3e26V9d84hgtNaGUMLKEeC', 'state': 'answered', 'trace_scope': 'trial-1', 'grade': {'score': 0, 'available': True, 'detail': \"['expected outcome OUTCOME_NONE_CLARIFICATION, got OUTCOME_OK']\", 'error': None}, 'started_at': '2026-10-22T20:53:34.030756+00:00', 'usage': {'model_calls': 3, 'model_cost_usd': 0.000404547, 'reported_cost_usd': '0.000404547', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 8641, 'completion_tokens': 499, 'total_tokens': 9140}, 'task_id': 't001', 'output_bytes': 1013, 'ecom_calls': 130, 'finished_at': '2026-10-22T20:54:29.276616+00:00', 'trace': {'scope': 'trial-1', 'blob': 'cdb42b51950be6e081a5040a388dd698e5fd6ba98340a75ac19c105e722d0ad8', 'bytes': 330601, 'sealed': True}}\n"
+}

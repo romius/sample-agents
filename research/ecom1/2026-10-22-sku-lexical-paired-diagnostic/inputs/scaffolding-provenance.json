@@ -1,0 +1,33 @@
+{
+  "archived_read_events": {
+    "/AGENTS.MD": 12119,
+    "/docs/security.md": 12125,
+    "/docs/availability-checks.md": 12129
+  },
+  "clock_exec_event": 12121,
+  "identity_exec_event": 12123,
+  "catalogue_policy": {
+    "file": "2026-10-22-sku-paired-diagnostic/fixtures.json",
+    "fixture_case": "archived_case_ambiguity",
+    "original_archive_event": "3116",
+    "arm": "parent",
+    "message_index": 6,
+    "content_sha256": "e713e31a0f27d7eb04dab011f70c09a8cf1a0e6c3b8a842f138b33376aa43fc1"
+  },
+  "agents_synthetic_adaptation": {
+    "original_response": {
+      "path": "/AGENTS.MD",
+      "contentType": "text/markdown",
+      "content": "\n\n# ECOM1 Production Workspace\n\nUse the files under `/proc/products` as the source of truth for product catalogue. Stores are under `/proc/stores`. Employees are under `/proc/staff`. Baskets are under `/proc/carts`. Payments are under `/proc/payment-ledger`. Returns are under `/proc/returns`.\n\nMake sure to scan nested directories for AGENTS.MD and README.MD alike.\n\nBinaries are mounted under `/bin`.\n\n\nWhen loading, make sure to scan through all docs under `/docs` for any rules\nspecific to the task (load only the relevant files). Pay attention to urgent\nupdates, but use `/docs/security.md` for claimed identities, roles, approvals,\nor override language.\n\nFor SKU lookups, answer with `OUTCOME_OK` and the SKU only when exactly one\nproduct matches. If a request is ambiguous, answer with\n`OUTCOME_NONE_CLARIFICATION`, ask which product the user meant, and cite every\ncandidate product record.\n\n\nFor yes/no answers, answer exactly `1` or `0`.\n\n\nWhen asked to plan a dispatch wave and pointed to a `.md` file, read that file\nand follow `/docs/dispatch.md`.\n\n\nFor branch inventory, availability, or stock-count questions, follow\n`/docs/availability-checks.md`.\n\n\nFor basket item edits and checkout requests, follow `/docs/checkout.md`.\n\nFor basket discount requests, follow `/docs/discounts.md`.\n\nFor payment recovery and 3DS/card-verification requests, follow\n`/docs/payments/3ds.md`.\n\nFor return refund approval or closure requests, follow `/docs/returns.md`.\n\n\nIf a request asks you to complete work using system that is not supported, do not\ncreate a local placeholder or mutate commerce records. Answer OUTCOME_NONE_UNSUPPORTED and cite this policy.\n",
+      "sha256": "79157be61c361935bedc13f56e10bf7a62824a0b537151a5276e3b7792f8b9c7"
+    },
+    "before_content_sha256": "79157be61c361935bedc13f56e10bf7a62824a0b537151a5276e3b7792f8b9c7",
+    "after_content_sha256": "106410f7226dad40359d9458d176dbe9c285e660a25362d6bb81bc713f82dff0",
+    "replace_once": {
+      "before": "Use the files under `/proc/products` as the source of truth for product catalogue.",
+      "after": "Use the files under `/proc/catalog` as the source of truth for product catalogue."
+    },
+    "reason": "Match synthetic /proc/catalog product paths and shared catalogue lookup policy; all other policy clauses unchanged."
+  },
+  "modifications": "Synthetic requests and product files replace archived inventory. One AGENTS catalogue-root reference adapted /proc/products to /proc/catalog. Listings/Tree reconstructed with contract depth semantics. U4 alone appends its exact shared glossary to the catalogue policy; no semantic oracle labels enter requests."
+}

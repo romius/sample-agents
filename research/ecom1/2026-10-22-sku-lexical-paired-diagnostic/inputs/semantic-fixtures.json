@@ -1,0 +1,1564 @@
+[
+  {
+    "case": "U1_missing_head",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Body/kit names do not establish head geometry."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "properties.head_type",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Body/kit names do not establish head geometry."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit flat geometry conflicts with the requested standard geometry."
+      }
+    ],
+    "required_semantics": "Preserve standard head as unverified for A/B; do not call A standard or offer C as satisfying it.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "U2_null",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only",
+          "head_type": null
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": null,
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Null/empty is no positive or negative evidence."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "properties.head_type",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Body/kit names do not establish head geometry."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit flat geometry conflicts with the requested standard geometry."
+      }
+    ],
+    "required_semantics": "Preserve the unknown qualifier; no absent/null/empty-to-false coercion.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "U2_empty",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only",
+          "head_type": ""
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": "",
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Null/empty is no positive or negative evidence."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "properties.head_type",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Body/kit names do not establish head geometry."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit flat geometry conflicts with the requested standard geometry."
+      }
+    ],
+    "required_semantics": "Preserve the unknown qualifier; no absent/null/empty-to-false coercion.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "U3_explicit_positive",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only",
+          "head_type": "standard"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case",
+          "head_type": "flat"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": "standard",
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Direct property supports the request."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit incompatible property."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit flat geometry conflicts with the requested standard geometry."
+      }
+    ],
+    "required_semantics": "A uniquely satisfies the head constraint within this full synthetic fixture; do not infer global coverage from helper metadata.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "U4_supplied_synonym",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only",
+          "head_type": "orthogonal"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case",
+          "head_type": "flat"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": "orthogonal",
+        "relation_to_requested_constraint": "supported_with_supplied_glossary",
+        "explanation": "Fixture glossary explicitly equates orthogonal and standard head."
+      }
+    ],
+    "required_semantics": "Literal absence of standard is not negative evidence when supplied glossary supports equivalence.",
+    "policy_glossary": {
+      "head_type": {
+        "orthogonal": "standard"
+      }
+    },
+    "future_request_requirements": {
+      "shared_context": "For this catalogue, head_type orthogonal means standard head.",
+      "must_appear_identically_in_both_complete_runtime_format_requests": true,
+      "offline_observation_alone_supplies_glossary": false
+    }
+  },
+  {
+    "case": "N1_explicit_negative",
+    "instruction": "need code: Nera G1 grinder without batteries. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-BAT-A",
+        "name": "Nera G1 grinder unit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BAT-A.json",
+        "properties": {
+          "batteries_included": false
+        }
+      },
+      {
+        "sku": "P-BAT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BAT-B.json",
+        "properties": {
+          "batteries_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-BAT-A",
+        "field": "properties.batteries_included",
+        "expected": false,
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Explicit false supports without batteries."
+      },
+      {
+        "sku": "P-BAT-B",
+        "field": "properties.batteries_included",
+        "expected": true,
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit true conflicts with without batteries."
+      }
+    ],
+    "required_semantics": "Do not require the literal token without in a product name; preserve negative polarity.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "N2_negative_unknown",
+    "instruction": "need code: Nera G1 grinder without batteries. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-BAT-A",
+        "name": "Nera G1 grinder unit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BAT-A.json",
+        "properties": {}
+      },
+      {
+        "sku": "P-BAT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BAT-B.json",
+        "properties": {
+          "batteries_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-BAT-A",
+        "field": "properties.batteries_included",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "The batteries field is absent and the neutral unit name supplies no battery-inclusion claim."
+      },
+      {
+        "sku": "P-BAT-B",
+        "field": "properties.batteries_included",
+        "expected": true,
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit true conflicts."
+      }
+    ],
+    "required_semantics": "Do not convert missing batteries data into false.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "N3_exact_exclusion",
+    "instruction": "need code: Nera G1 grinder but not P-G1-A. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "sku",
+        "expected": "P-G1-A",
+        "relation_to_requested_constraint": "excluded_by_request",
+        "explanation": "Exact identifier is explicitly excluded."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "family_id",
+        "expected": "fam-nera-g1",
+        "relation_to_requested_constraint": "remaining_candidate",
+        "explanation": "Another family member remains."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "family_id",
+        "expected": "fam-nera-g1",
+        "relation_to_requested_constraint": "remaining_candidate",
+        "explanation": "Another family member remains."
+      }
+    ],
+    "required_semantics": "Exclude A only; B/C remain ambiguous. Candidate reference policy must be supplied before later answer evaluation.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "N4_negative_geometry",
+    "instruction": "need code: Nera G1 grinder not the flat-head version. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case",
+          "head_type": "standard"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-G1-A",
+        "field": "properties.head_type",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Body/kit names do not establish head geometry."
+      },
+      {
+        "sku": "P-G1-B",
+        "field": "properties.head_type",
+        "expected": "standard",
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Explicit standard is not flat in this fixture."
+      },
+      {
+        "sku": "P-G1-C",
+        "field": "properties.head_type",
+        "expected": "flat",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Negation excludes explicit flat head."
+      }
+    ],
+    "required_semantics": "B supports the constraint, A remains unknown, C contradicts it; no blanket unique claim while A unresolved.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "E1_exact_identifier",
+    "instruction": "need code: P-KIT-A. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "P-KIT-A",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-KIT-A",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-A.json",
+        "properties": {
+          "battery_ah": 5.0,
+          "case_included": true
+        }
+      },
+      {
+        "sku": "P-KIT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-B.json",
+        "properties": {
+          "battery_ah": 2.0,
+          "case_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-KIT-A",
+        "field": "sku",
+        "expected": "P-KIT-A",
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Exact existing SKU with no conflicting additional constraint."
+      }
+    ],
+    "required_semantics": "Do not introduce generic ambiguity merely because siblings exist.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "E2_exact_conflict",
+    "instruction": "need code: P-KIT-A with 2.0Ah batteries. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "P-KIT-A",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-KIT-A",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-A.json",
+        "properties": {
+          "battery_ah": 5.0,
+          "case_included": true
+        }
+      },
+      {
+        "sku": "P-KIT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-B.json",
+        "properties": {
+          "battery_ah": 2.0,
+          "case_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-KIT-A",
+        "field": "properties.battery_ah",
+        "expected": 5.0,
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "The named SKU explicitly has 5.0Ah, not requested 2.0Ah."
+      },
+      {
+        "sku": "P-KIT-B",
+        "field": "properties.battery_ah",
+        "expected": 2.0,
+        "relation_to_requested_constraint": "supports_attribute_but_not_identifier",
+        "explanation": "Cannot silently substitute B for the exact requested A."
+      }
+    ],
+    "required_semantics": "Ask which conflicting requirement governs; no silent substitution or unqualified exact-SKU answer.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "E3_exact_unknown",
+    "instruction": "need code: P-KIT-A waterproof. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "P-KIT-A",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-KIT-A",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-A.json",
+        "properties": {
+          "battery_ah": 5.0,
+          "case_included": true
+        }
+      },
+      {
+        "sku": "P-KIT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-B.json",
+        "properties": {
+          "battery_ah": 2.0,
+          "case_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-KIT-A",
+        "field": "properties.waterproof",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Exact identifier establishes identity, not waterproofing."
+      }
+    ],
+    "required_semantics": "Preserve waterproof as unverified.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "E4_unique_property",
+    "instruction": "need code: Nera G1 grinder kit with case and 2.0Ah batteries. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-KIT-A",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-A.json",
+        "properties": {
+          "battery_ah": 5.0,
+          "case_included": true
+        }
+      },
+      {
+        "sku": "P-KIT-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-KIT-B.json",
+        "properties": {
+          "battery_ah": 2.0,
+          "case_included": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-KIT-A",
+        "field": "properties.battery_ah",
+        "expected": 5.0,
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Case is shared; capacity distinguishes the variants."
+      },
+      {
+        "sku": "P-KIT-B",
+        "field": "properties.battery_ah",
+        "expected": 2.0,
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Distinctive requested capacity is explicit."
+      }
+    ],
+    "required_semantics": "Do not discard positive property evidence because literal tokens are absent or helper pool coverage is unverified.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "F1_multiple_families",
+    "instruction": "need code: compact standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "compact grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-MULT-A",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-MULT-A.json",
+        "properties": {
+          "head_type": "standard"
+        }
+      },
+      {
+        "sku": "P-MULT-B",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros-g2",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-MULT-B.json",
+        "properties": {
+          "head_type": "standard"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-MULT-A",
+        "field": "properties.head_type",
+        "expected": "standard",
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Both families explicitly satisfy this constraint."
+      },
+      {
+        "sku": "P-MULT-B",
+        "field": "properties.head_type",
+        "expected": "standard",
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Both families explicitly satisfy this constraint."
+      }
+    ],
+    "required_semantics": "No unique claim from first-family/score ordering.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "F2_truncated_relevant_family",
+    "instruction": "need code: compact standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "compact grinder",
+      "limit": 2
+    },
+    "products": [
+      {
+        "sku": "P-N00",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N00.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O00",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O00.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N01",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N01.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O01",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O01.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N02",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N02.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O02",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O02.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N03",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N03.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O03",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O03.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N04",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N04.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O04",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O04.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N05",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N05.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O05",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O05.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N06",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N06.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O06",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O06.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N07",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N07.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O07",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O07.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N08",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N08.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O08",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O08.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N09",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N09.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O09",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O09.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N10",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N10.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O10",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O10.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N11",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N11.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O11",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O11.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N12",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N12.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O12",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O12.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N13",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N13.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O13",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O13.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N14",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N14.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-O14",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O14.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail "
+        }
+      },
+      {
+        "sku": "P-N15",
+        "name": "Nera compact grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-N15.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail ",
+          "head_type": "standard"
+        }
+      },
+      {
+        "sku": "P-O15",
+        "name": "Oros compact grinder",
+        "brand": "Oros",
+        "family_id": "fam-oros",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-O15.json",
+        "properties": {
+          "configuration": "plain",
+          "description": "neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail neutral detail ",
+          "head_type": "standard"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-N15",
+        "field": "properties.head_type",
+        "expected": "standard",
+        "relation_to_requested_constraint": "supported_in_full_fixture",
+        "explanation": "Supporting row may be outside bounded observation; not evidence visible to the model when omitted."
+      }
+    ],
+    "required_semantics": "Truncation does not support global absence or uniqueness.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "F3_lexical_distractor",
+    "instruction": "need code: Nera G1 standard head grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "standard head Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-G1-A",
+        "name": "Nera G1 grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-A.json",
+        "properties": {
+          "kit": "body only"
+        }
+      },
+      {
+        "sku": "P-G1-B",
+        "name": "Nera G1 grinder kit",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-B.json",
+        "properties": {
+          "kit": "batteries and case"
+        }
+      },
+      {
+        "sku": "P-G1-C",
+        "name": "Nera G1 flat-head grinder body",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-G1-C.json",
+        "properties": {
+          "head_type": "flat",
+          "kit": "body only"
+        }
+      },
+      {
+        "sku": "P-DIST-A",
+        "name": "standard head Nera G1 grinder compatible marketing card",
+        "brand": "Oros",
+        "family_id": "fam-card",
+        "kind_id": "kind-printed-card",
+        "category_id": "cat-printed-materials",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Oros/P-DIST-A.json",
+        "properties": {
+          "head_type": "flat",
+          "product_type": "printed card"
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-DIST-A",
+        "field": "kind_id",
+        "expected": "kind-printed-card",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Primary kind explicitly identifies a card, not a grinder."
+      },
+      {
+        "sku": "P-DIST-A",
+        "field": "category_id",
+        "expected": "cat-printed-materials",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Primary category agrees with card type."
+      },
+      {
+        "sku": "P-DIST-A",
+        "field": "properties.product_type",
+        "expected": "printed card",
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Property agrees with primary type; matching marketing words do not establish a grinder."
+      }
+    ],
+    "required_semantics": "Full token coverage does not override contradictory product evidence.",
+    "policy_glossary": {}
+  },
+  {
+    "case": "F4_false_missing_true",
+    "instruction": "need code: Nera G1 brushless grinder. answer only with sku.",
+    "action": {
+      "tool": "catalog",
+      "query": "Nera G1 grinder",
+      "limit": 8
+    },
+    "products": [
+      {
+        "sku": "P-BR-A",
+        "name": "Nera G1 grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BR-A.json",
+        "properties": {
+          "brushless": false
+        }
+      },
+      {
+        "sku": "P-BR-B",
+        "name": "Nera G1 grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BR-B.json",
+        "properties": {}
+      },
+      {
+        "sku": "P-BR-C",
+        "name": "Nera G1 grinder",
+        "brand": "Nera",
+        "family_id": "fam-nera-g1",
+        "kind_id": "kind-grinder",
+        "category_id": "cat-tools",
+        "price_cents": 10000,
+        "_path": "/proc/catalog/Nera/P-BR-C.json",
+        "properties": {
+          "brushless": true
+        }
+      }
+    ],
+    "oracle": [
+      {
+        "sku": "P-BR-A",
+        "field": "properties.brushless",
+        "expected": false,
+        "relation_to_requested_constraint": "contradicted",
+        "explanation": "Explicit false differs from missing."
+      },
+      {
+        "sku": "P-BR-B",
+        "field": "properties.brushless",
+        "expected": {
+          "field_absent": true
+        },
+        "relation_to_requested_constraint": "unknown",
+        "explanation": "Absent is unknown."
+      },
+      {
+        "sku": "P-BR-C",
+        "field": "properties.brushless",
+        "expected": true,
+        "relation_to_requested_constraint": "supported",
+        "explanation": "Explicit true supports the request."
+      }
+    ],
+    "required_semantics": "Keep false, absent, and true distinct; no truthiness-based coercion.",
+    "policy_glossary": {}
+  }
+]

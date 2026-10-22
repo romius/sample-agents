@@ -1,0 +1,823 @@
+{
+  "status": "offline request capture and C/L isolation passed; not a model diagnostic",
+  "source": {
+    "packed": "d5785r1",
+    "readable": "d5789r1",
+    "hashes": {
+      "readable.py": "0f7925c41f2783b6617ec7777757bec6fee5971f483159e26b32fae8082f7c41",
+      "agent.py": "832be81a5fafec378320d42f3e5697cea00197dfe9bfbb061b2073880a203765"
+    },
+    "lineage": "d3200r2 record -> own pending d4955/d5204 -> scoped SKU evidence d5620 -> forced-report history repair d5785"
+  },
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "fixtures": 17,
+  "agent_executions": 68,
+  "real_model_calls": 0,
+  "network_calls": 0,
+  "paid_cost_usd": 0,
+  "scripted_llm_invocations": 204,
+  "rows": [
+    {
+      "case": "U1_missing_head",
+      "request_file": "requests/U1_missing_head.json",
+      "C_sha256": "0611a0fe6f8e27a83b982dd6ca13fc3b09bd10dee0a2924bdb615d9fc6a3b904",
+      "L_sha256": "6e2c8a07eb30563cb1759420fd7cc0d15c35aea5883f4f38f4f6be7c8b6f7d5a",
+      "C_compact_bytes": 14652,
+      "L_compact_bytes": 14280,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.024564
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.042015
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048674
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.114348
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "U2_null",
+      "request_file": "requests/U2_null.json",
+      "C_sha256": "983e25c0d5de6a3d6a673132628a2fd82d28939e91f26a149f74dd0572bdeaae",
+      "L_sha256": "a1c3081c2f27305580140fec4095b37094d9133bc26c4864704dc6f512e958dc",
+      "C_compact_bytes": 14694,
+      "L_compact_bytes": 14322,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.02217
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013098
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.055353
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.112174
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "U2_empty",
+      "request_file": "requests/U2_empty.json",
+      "C_sha256": "687feddcdb0952aabfe6023673f7fa0cf6a4b5c9721abe42a1bc679d49b199f7",
+      "L_sha256": "40029d82291d426ed702c3fa9f0b739690bf52077712d31978effc61d7d9ed0b",
+      "C_compact_bytes": 14694,
+      "L_compact_bytes": 14322,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020478
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.012866
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048498
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.112412
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "U3_explicit_positive",
+      "request_file": "requests/U3_explicit_positive.json",
+      "C_sha256": "daa76aa04071099082f58c34a9c6e31cc2e06c3c5ae6d375a17e5d131a68fb4b",
+      "L_sha256": "707380bc5c90c1fd26b259169d690fc2e56c922777935dc94c61cdca309957d2",
+      "C_compact_bytes": 14760,
+      "L_compact_bytes": 14388,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020324
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013494
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.050924
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.124444
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "U4_supplied_synonym",
+      "request_file": "requests/U4_supplied_synonym.json",
+      "C_sha256": "74ebf9c9cf88966b824ff487a43fb8e417836d778c46a013162adda1ce5d046b",
+      "L_sha256": "99b6988eba2a47bbd2ae37c8589f5b749d0f120335e47adb52122839f278175f",
+      "C_compact_bytes": 14862,
+      "L_compact_bytes": 14490,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": true,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.022948
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.015525
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.052605
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.119759
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "N1_explicit_negative",
+      "request_file": "requests/N1_explicit_negative.json",
+      "C_sha256": "85df77a8e4b93ab58e2659733532e97e9491e6d32ad52a1788ceb32ccf769287",
+      "L_sha256": "97f786280f7a70f1d846272c4e0746eb5107e035c226e2bb0b281123d63344cf",
+      "C_compact_bytes": 13902,
+      "L_compact_bytes": 13646,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020831
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013067
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048783
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.113194
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "N2_negative_unknown",
+      "request_file": "requests/N2_negative_unknown.json",
+      "C_sha256": "600c6c220335ed0c1099b863b6a5d8faae3c900a975796547d09312e071d21bd",
+      "L_sha256": "36d5c50dfaedf44473e52950e30be2a1ce1f5b0483b0c3a7dee482fba23a1b89",
+      "C_compact_bytes": 13844,
+      "L_compact_bytes": 13588,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020751
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013123
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048082
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.115501
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "N3_exact_exclusion",
+      "request_file": "requests/N3_exact_exclusion.json",
+      "C_sha256": "0e7354b25d9c4193fe047ce929c2faeb0c2064d0f70995f878db7389b34f92a4",
+      "L_sha256": "ce6b4fe6b7342cd8764e4eb7b8da161926a920cf555e6ce7ba838a28fff484c6",
+      "C_compact_bytes": 14678,
+      "L_compact_bytes": 14282,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020711
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013114
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.049138
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.112818
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "N4_negative_geometry",
+      "request_file": "requests/N4_negative_geometry.json",
+      "C_sha256": "9a2745b45f3723bdbf8b3154fe92afccaae14d8d4734c7d6a28adfe82164ff3b",
+      "L_sha256": "b5d6681d38ab915cd2d4c9368ff82387845151991e71fba11ba0bead537d672d",
+      "C_compact_bytes": 14815,
+      "L_compact_bytes": 14362,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020809
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.01409
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.049223
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.112921
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "E1_exact_identifier",
+      "request_file": "requests/E1_exact_identifier.json",
+      "C_sha256": "657a16eefd8c1bf647878413e3c16d522426f76071f279fe4f25985435d0207f",
+      "L_sha256": "4740e341c69947ee14e944237630772cf526d8ab1210b4260d7a625b64bc436a",
+      "C_compact_bytes": 13824,
+      "L_compact_bytes": 13638,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.022078
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.014364
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048544
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.116188
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "E2_exact_conflict",
+      "request_file": "requests/E2_exact_conflict.json",
+      "C_sha256": "18f801cf819d7e528b44f8f67e2b3f1e8797a9bf243a5e51b6a71e08526a0e0d",
+      "L_sha256": "1b23551af543c489e4142e097f315b294b787410a3e925ebaed8f2faf7385111",
+      "C_compact_bytes": 13946,
+      "L_compact_bytes": 13680,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.02349
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.018372
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.050765
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.11385
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "E3_exact_unknown",
+      "request_file": "requests/E3_exact_unknown.json",
+      "C_sha256": "10c719395cd554db8e32b94eec3c5b1a0ac6951c2fb2bc7782cab6249cce505a",
+      "L_sha256": "a59781c8b08fae7e191c227dbf0d47f1ce011b1c5dcce6ffb304f209ec0c0959",
+      "C_compact_bytes": 13876,
+      "L_compact_bytes": 13660,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020679
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.012977
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048468
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.114132
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "E4_unique_property",
+      "request_file": "requests/E4_unique_property.json",
+      "C_sha256": "f341aca1338fa09b3b60262e7cd7520ae9231807db572250a672092cc39ff278",
+      "L_sha256": "6796a065b61dbd6f97f3ecd884078f39cfa865d89a32f82c5d8f991846316be1",
+      "C_compact_bytes": 14076,
+      "L_compact_bytes": 13738,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.02032
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013064
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048302
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.112304
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "F1_multiple_families",
+      "request_file": "requests/F1_multiple_families.json",
+      "C_sha256": "e7fb4a99a7665c396b5de3f68865f6fb1bcec8435a2f2cfbbe33c2c0463c4f64",
+      "L_sha256": "d050b6b62eb03f3612c0856ea9a750d9cb1880ef6dc9df5fbb567847f28a34bf",
+      "C_compact_bytes": 13880,
+      "L_compact_bytes": 13642,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 4,
+      "catalogue_records_read": 2,
+      "rpc_count": 9,
+      "external_hook_count": 15,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.0229
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.012759
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048936
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.114543
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 2,
+        "eligible_indexed_siblings": 2,
+        "returned_siblings": 2,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "F2_truncated_relevant_family",
+      "request_file": "requests/F2_truncated_relevant_family.json",
+      "C_sha256": "412d245d89e7d71fd3e93041301f4c2ebd32052dfff1cea94674edfc58f48780",
+      "L_sha256": "0255471cc229d0627cdb1fa6f5f59b8aed385411928998109775c61b890b2e7e",
+      "C_compact_bytes": 20982,
+      "L_compact_bytes": 19792,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 20,
+      "catalogue_records_read": 32,
+      "rpc_count": 39,
+      "external_hook_count": 45,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.021156
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.018872
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.050217
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.121987
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 32,
+        "eligible_indexed_siblings": 16,
+        "returned_siblings": 10,
+        "evidence_truncated": true,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "F3_lexical_distractor",
+      "request_file": "requests/F3_lexical_distractor.json",
+      "C_sha256": "a3bb4d1cb21389d2a773ee92691d749897943dfc9151b4a6a7f0a79688420744",
+      "L_sha256": "aac651916fb82b234b0cd33b25634b591ea5e99557f9e36e12c1d728fc13fb73",
+      "C_compact_bytes": 15575,
+      "L_compact_bytes": 15077,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 8,
+      "catalogue_records_read": 4,
+      "rpc_count": 11,
+      "external_hook_count": 17,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.02205
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.015309
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.050416
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.114243
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 4,
+        "eligible_indexed_siblings": 4,
+        "returned_siblings": 4,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    },
+    {
+      "case": "F4_false_missing_true",
+      "request_file": "requests/F4_false_missing_true.json",
+      "C_sha256": "9af15a36e3ec244b7faca433cd813c19ffd4003afa3b3cc538a3a233c255036b",
+      "L_sha256": "2adce5829bde5f474723bc469f5926611455e1ae26c75a9585b8f94ae9b06deb",
+      "C_compact_bytes": 14447,
+      "L_compact_bytes": 14102,
+      "message_count": 10,
+      "changed_message_index": 9,
+      "removed_lexical_fields": 6,
+      "catalogue_records_read": 3,
+      "rpc_count": 10,
+      "external_hook_count": 16,
+      "form_runtime_parity": true,
+      "shared_glossary_actually_read_and_visible": false,
+      "durations": [
+        {
+          "source": "readable.py",
+          "runtime": "CPython",
+          "seconds": 0.020645
+        },
+        {
+          "source": "readable.py",
+          "runtime": "Monty",
+          "seconds": 0.013221
+        },
+        {
+          "source": "agent.py",
+          "runtime": "CPython",
+          "seconds": 0.048231
+        },
+        {
+          "source": "agent.py",
+          "runtime": "Monty",
+          "seconds": 0.114037
+        }
+      ],
+      "catalogue_evidence": {
+        "indexed_products": 3,
+        "eligible_indexed_siblings": 3,
+        "returned_siblings": 3,
+        "evidence_truncated": false,
+        "pool_complete": false
+      }
+    }
+  ],
+  "size_accounting": {
+    "unit": "UTF-8 compact JSON bytes, not tokens",
+    "sum_C_bytes": 251507,
+    "sum_L_bytes": 245009,
+    "future_inference_cost_estimate": null,
+    "reason": "No tokenization, provider billing quote, or real inference; bytes are not converted into tokens or dollars."
+  },
+  "limitations": "Real source/decoder runs against a scripted in-memory Host, not live ECOM. Depth-aware Tree/List/Read inventory reconstructed from synthetic files; AGENTS product root minimally adapted. WORLD never injected. Router and first action forced, final output stubbed. SDK inputs captured before any private transport/provider processing. No future model actions, grading, efficacy or full100 readiness claim.",
+  "artifact_sha256": {
+    "requests/E1_exact_identifier.json": "64a31e992c3f4d15e40775a3ac1bbe4caf024be6aff83a97f5d463ba75221393",
+    "requests/E2_exact_conflict.json": "cd6afcaa38f3366c474e9027c03d4a0a0ba6bc0fa5d0d11b545d502aaca988f8",
+    "requests/E3_exact_unknown.json": "f3696c10e9da468de64fe0f01cefbfb2582ddb88680b402d934ef4ccb30219a0",
+    "requests/E4_unique_property.json": "63fbaf2120166c58ab3b17aa1378e00c6345d627d9dc26d004186d9be5392a74",
+    "requests/F1_multiple_families.json": "422e196222c1fb40c2ec746819950ab79cf224ff4ff8145d6652bda87a421c32",
+    "requests/F2_truncated_relevant_family.json": "f2c41ae880d015abf7f2cc83c6344c66631432ebfa336ff5137cd14adaa32e85",
+    "requests/F3_lexical_distractor.json": "22aaacf3a18633cdff9dc8f36a52dc98e4957b39856b4e385fe68e25c0a5b00b",
+    "requests/F4_false_missing_true.json": "672b8b056b56087b8289bcb328de337d96936181f361f8219c2eb02c81cde22b",
+    "requests/N1_explicit_negative.json": "6bf7f0fc7d047506bbafd99e55181d51b76ca30e4e8b0fb77d827551e0fe2f1c",
+    "requests/N2_negative_unknown.json": "37dfe11db2ccf77600fe3423e092a442b9a03f7a6124ca52dfffd76992c42db4",
+    "requests/N3_exact_exclusion.json": "8fc0921eed24b3fcd6b670b0538c00480bde4f3462b3d18f143a3137484f3024",
+    "requests/N4_negative_geometry.json": "783d822a920002de9be11d77bab4677d8d410dbb5aa723e1cc9923e58bece0ca",
+    "requests/U1_missing_head.json": "e2cefe06c1fc2e83f8f48f8bad546e12e6bab78870e62bbde17bcd012d62d872",
+    "requests/U2_empty.json": "3b7faeda190df3d7867190b37ee2dfd6571d8d5d59050eb560d4b89a5e3031d1",
+    "requests/U2_null.json": "0e2f17a74691d75745b6169e862dd036d5f5c62cab5aead3ed9211241a20dd62",
+    "requests/U3_explicit_positive.json": "5ca2412d934978bc008601026724e8c858866795c1f4587ff14d95e882acdad1",
+    "requests/U4_supplied_synonym.json": "6088ec14abb41d53764147c3ecc4b85b63f4e322ab519b1c5d4b2d343b7f6b48",
+    "worlds.json": "ca513e0b7f864b36ebb125c0d22abfc52d98971afb6ee35bb03ae3e00c894876",
+    "host-traces.json": "8726d6011c25b155faca4a84accaf52b5f730017ec6c275e002b3f6e8f8984a6",
+    "scaffolding-provenance.json": "11f4a74a5244bb31d7ed83c1ef6809c1132fb873e8622c4d6828234743f4da6c",
+    "tree-depth-evidence.json": "a408010fea1ea90b8ce23c360549feb3b13b59a7ef7ec9f192858583aeda2193",
+    "DEPENDENCIES.json": "88b79794912d5f8ad3bade09574d61589f7febab20c1b76c7d8af79d669d0ea1"
+  }
+}

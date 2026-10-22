@@ -1,0 +1,41 @@
+{
+  "status": "passed offline; no dispatch",
+  "archive_name": "evidence-bundle.zip",
+  "files": 99,
+  "uncompressed_bytes": 5882274,
+  "archive_bytes": 677134,
+  "archive_sha256": "137724e1ef85e9f7f00ee8b6755a7473d8fee1efbc55785dce8ba2501fc2f697",
+  "python": "3.14.3",
+  "zlib_build": "1.2.12",
+  "zlib_runtime": "1.2.12",
+  "compression": "ZIP_DEFLATED level 9; byte reproducibility within pinned runtime",
+  "pydantic_monty": "1.2.0",
+  "deterministic_two_writes": true,
+  "extracted_builder_byte_identical": true,
+  "isolated_build_and_verify": true,
+  "verification_executions": 40,
+  "verification_equal_excluding_timing": true,
+  "exact_rebuilt_sha256": {
+    "agent.py": "dc5e1951f404dca549fe97a6fd38de36419ece9ecd0c3aa07d4f6369998bda3e",
+    "readable.py": "52c33ff84e7f1dfb59a83d5c80af787688518530640262b34a15f02fa3cf79e7",
+    "fixtures.json": "c2dd7b4f5917d6118351becaa7d9aeee7cd2c7d510cb1c5eb5076bb202b57571",
+    "call-plan.json": "89550772dc28c05a1f73d06d5c09d325e7c78de5fb7e89fd5d2c7c1490ff97a5",
+    "manual-review-sheet.json": "dfc1e4927f53c14af7903c1a5d309f0fd19bd72c987e090a6640c7fd3f5ee535",
+    "manifest.json": "e3d83fe9f8d5d7fc041d032e3c198730360c842ddf8845ee43630a850d392ef1"
+  },
+  "runtime_results_preserved_sha256": "a770f30a8c502bab0f36bd561fa6d3d9b859521367dc22a32528da8c114c223e",
+  "runtime_capture_regenerated": false,
+  "original_files_unchanged": true,
+  "safe_workspace_relative_paths": true,
+  "no_model_calls": true,
+  "no_ecom_actions": true,
+  "excluded": [
+    "__pycache__",
+    "*.pyc",
+    "*.zip",
+    "publication/submission/post-publication names",
+    "SHA256SUMS",
+    "archive-manifest.json",
+    "archive-verification.json"
+  ]
+}

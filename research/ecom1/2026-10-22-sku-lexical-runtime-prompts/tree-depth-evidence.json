@@ -1,0 +1,687 @@
+{
+  "contract_file": "proto/bitgn/vm/ecom/ecom.proto",
+  "contract_sha256": "a09c007281062d927f003372d0b5e8654c22b91744fe2781c4ef6fc1c8404e9c",
+  "contract": "Maximum traversal level from root, matching tree -L. Zero means unlimited recursion.",
+  "archived_response_file": "2026-10-22-inventory-review/record-t091-part0.json",
+  "archived_response_sha256": "f24199674571cb7fdd09b0d97d097c3c8171a39c84b76f4cf8dcea836f3f6a09",
+  "root_response_event": 12117,
+  "root_max_depth": 2,
+  "cut_directory_paths": [
+    "/docs/payments",
+    "/proc/carts",
+    "/proc/payment-ledger",
+    "/proc/products",
+    "/proc/returns",
+    "/proc/staff",
+    "/proc/stores"
+  ],
+  "proc_response_event": 12137,
+  "proc_max_depth": 4,
+  "request_limitations": "Archive contains RPC responses only; source explicitly calls root / level2 and /proc level0. Contract establishes requested depth semantics; request arguments are not claimed archived.",
+  "correction": "Initial capture Host ignored level, leaking synthetic SKU file names into root bootstrap. Regenerated all68 captures with depth cutoff; prior capture was not sent to a model.",
+  "fixture_checks": {
+    "U1_missing_head": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "U2_null": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "U2_empty": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "U3_explicit_positive": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "U4_supplied_synonym": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "N1_explicit_negative": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "N2_negative_unknown": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "N3_exact_exclusion": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "N4_negative_geometry": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "E1_exact_identifier": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "E2_exact_conflict": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "E3_exact_unknown": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "E4_unique_property": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 11
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 5,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "F1_multiple_families": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 10
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "F2_truncated_relevant_family": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 10
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 42
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 42
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 36,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "F3_lexical_distractor": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 10
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 14
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 14
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 8,
+        "all_fixture_product_files_visible": true
+      }
+    ],
+    "F4_false_missing_true": [
+      {
+        "root": "/",
+        "level": 1,
+        "max_depth": 1,
+        "nodes": 4
+      },
+      {
+        "root": "/",
+        "level": 2,
+        "max_depth": 2,
+        "nodes": 8
+      },
+      {
+        "root": "/",
+        "level": 3,
+        "max_depth": 3,
+        "nodes": 9
+      },
+      {
+        "root": "/",
+        "level": 4,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/",
+        "level": 0,
+        "max_depth": 4,
+        "nodes": 12
+      },
+      {
+        "root": "/proc",
+        "level": 0,
+        "max_depth": 3,
+        "nodes": 6,
+        "all_fixture_product_files_visible": true
+      }
+    ]
+  }
+}
