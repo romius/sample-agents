@@ -1,0 +1,114 @@
+{
+  "rows": [
+    {
+      "name": "unrelated_clarification",
+      "record": {
+        "response": {
+          "choices": [
+            {
+              "message": {
+                "content": "{\"tool\": \"report_completion\", \"message\": \"Which delivery date would you like?\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+              },
+              "finish_reason": "stop"
+            }
+          ]
+        }
+      },
+      "scorer": {
+        "case": "archived_standard_head",
+        "kind": "unresolved",
+        "false_ok": false,
+        "wrong_sku_unique": false,
+        "excess_clarification": false,
+        "correct_final": true,
+        "exact_sku_and_ref": null,
+        "candidate_skus_in_message": null,
+        "finish_reason": "stop",
+        "usage": null,
+        "action": {
+          "tool": "report_completion",
+          "message": "Which delivery date would you like?",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "grounding_refs": []
+        },
+        "status": "final"
+      }
+    },
+    {
+      "name": "missing_read_path",
+      "record": {
+        "response": {
+          "choices": [
+            {
+              "message": {
+                "content": "{\"tool\": \"read\"}"
+              },
+              "finish_reason": "stop"
+            }
+          ]
+        }
+      },
+      "scorer": {
+        "case": "archived_standard_head",
+        "kind": "unresolved",
+        "false_ok": false,
+        "wrong_sku_unique": false,
+        "excess_clarification": false,
+        "correct_final": null,
+        "exact_sku_and_ref": null,
+        "candidate_skus_in_message": null,
+        "finish_reason": "stop",
+        "usage": null,
+        "action": {
+          "tool": "read"
+        },
+        "status": "deferred_lookup"
+      }
+    },
+    {
+      "name": "unrelated_lookup",
+      "record": {
+        "response": {
+          "choices": [
+            {
+              "message": {
+                "content": "{\"tool\": \"read\", \"path\": \"/docs/refunds.md\"}"
+              },
+              "finish_reason": "stop"
+            }
+          ]
+        }
+      },
+      "scorer": {
+        "case": "archived_standard_head",
+        "kind": "unresolved",
+        "false_ok": false,
+        "wrong_sku_unique": false,
+        "excess_clarification": false,
+        "correct_final": null,
+        "exact_sku_and_ref": null,
+        "candidate_skus_in_message": null,
+        "finish_reason": "stop",
+        "usage": null,
+        "action": {
+          "tool": "read",
+          "path": "/docs/refunds.md"
+        },
+        "status": "deferred_lookup"
+      }
+    },
+    {
+      "name": "empty_choices",
+      "record": {
+        "response": {
+          "choices": []
+        }
+      },
+      "scorer": {
+        "raised": "IndexError",
+        "detail": "list index out of range"
+      }
+    }
+  ],
+  "interpretation": "PLAN d5832 explicitly declares outcome-only standard-head assessment. First case confirms that boundary, not a contradiction of its stated metric. Do not call that semantic correctness. Missing path is invalid schema; irrelevant lookup is not necessarily progress; empty choices needs malformed/error handling. Keep frozen counts and separately review every raw action against original preregistration. No live outputs inspected."
+}
