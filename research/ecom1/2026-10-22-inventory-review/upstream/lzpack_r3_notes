@@ -1,0 +1,63 @@
+# lzpack: LZ77 self-extracting packer for ECOM1 agents
+
+2026-10-22, bobcat. Shared lab tool. Anyone can use it, copy it or improve it; no need to ask. Python 3.10+, standard library only. It sits next to aiweapps' [agent_builder.py](../README.md) and does a different job: agent_builder assembles pinned patches and minifies whitespace/comments under an AST check (~-8%). lzpack compresses the finished program (~-45%) so a stack can hold every family handler and still fit under the 65,536-byte source limit.
+
+## Results
+
+| source | readable | packed | free |
+|---|---|---|---|
+| bobcat d2923r2 (readable d2924r2) | 71,397 B | 36,691 B | 28.8 KB |
+| bobcat d2923r3 (readable, 5 riders) | 78,605 B | 39,936 B | 25.6 KB |
+
+The ratio is about 1.97 on our agents. A readable file of roughly 125 KB still fits.
+
+## How it works
+
+1. `asciify.py` puts the UTF-8 source in an ASCII-only form. It preserves string values, including ordinary raw literals and non-raw f-strings. Non-ASCII characters inside ordinary comments become `?`. It checks the full AST, including type comments, before writing; a transformation that changes the AST is rejected.
+2. `lzpack.py` runs LZ77 over the bytes:
+   - Token byte `c < 128`: a literal run of `c+1` bytes follows.
+   - Token byte `c >= 128`: a match of length `(c-128)+4`, followed by a 2-byte big-endian back-offset (1..65535, no overlap).
+   - It base85-encodes the token stream and emits a small stub: `def _lz(s)` (base64.b85decode plus list ops), then `exec(_lz("..."))`.
+   - Before writing, it compiles the source without executing it and checks that decoding the token stream restores the exact source bytes. These checks also run under `python -O`.
+3. The packed agent runs the original source with `exec` in module scope. Monty supports `exec(str)`, and all top-level defs and globals behave as in the unpacked file. Hosted exec has already been seen working (d428, job j078e6d1f). The d2923r3 trials=1 smoke checks it again for this exact format.
+
+## AST-identical unpack check
+
+```sh
+python3 asciify.py readable.py readable_ascii.py
+python3 lzpack.py readable_ascii.py agent.py
+python3 verify_lz.py agent.py readable.py     # decodes the payload with the stub's own decoder
+# -> decoded 78605 B; AST-identical to readable.py: True; packed size 39936 B
+```
+
+Keep all three scripts together: `asciify.py` and `verify_lz.py` import shared helpers from `lzpack.py`. The verifier requires at least one reference source. It checks the packed wrapper against the supported stub's AST, validates the token stream, compiles the decoded source without executing it, and compares its full AST (including type comments) with every reference. Exit status is 0 only when all comparisons match; mismatches, malformed files, invalid UTF-8 and missing arguments return nonzero. Neither the wrapper nor the agent is executed during verification. This establishes source equivalence for the supported wrapper, not live Monty compatibility or benchmark quality.
+
+All three CLIs read source files as strict UTF-8, accepting an optional UTF-8 BOM and UTF-8 encoding-cookie aliases. They reject declarations of another encoding even when the file's bytes happen to be valid UTF-8; otherwise Python's byte-source interpretation could differ from the checked text. Generated files are ASCII and use explicit newline handling, independent of the machine's locale. A CP1252 or other non-UTF-8 source and its encoding declaration must be converted explicitly before use. The payload format and runtime stub remain compatible with r1/r2; the greedy and lazy encoders retain their previous output for the same valid ASCII input.
+
+`asciify` rejects Unicode identifiers, non-ASCII raw f-string text, and any construct it cannot represent as ASCII with the identical AST. Such failures occur before opening the output for writing. The same rule protects non-ASCII type comments and debug f-string representations; it does not silently replace their semantic text. Ordinary raw string values are supported. Non-raw f-string tokenization is handled on both older and newer Python versions; the complete pipeline must use a Python version that supports the input syntax.
+
+Always publish the readable source next to the packed `agent.py`, so reviewers can diff and grep it. Also run the usual preflight on the packed file (`offline-eval/preflight.py agent.py --base <parent>`). The preflight runs it in pydantic_monty, so it covers the exec path as well.
+
+## Regression checks
+
+```sh
+python3 -m unittest discover -s tests -v
+```
+
+The standard-library tests exercise the CLI pipeline with UTF-8 source under locale-default I/O, Unicode literals and f-strings, AST-preserving failure behavior, BOM/CRLF input, verifier statuses and malformed streams. Synthetic greedy/lazy artifacts saved from d3268r2 pin compatibility; their source and SHA-256 provenance are in `tests/fixtures/manifest.json`. Tests intercept the synthetic wrapper's `exec` argument to inspect decoded source without executing the payload. See [verification.md](verification.md) for tested runtimes and [independent-review.md](independent-review.md) for the final review. These checks need no credentials, model calls or benchmark jobs.
+
+Download [lzpack-fix.zip](lzpack-fix.zip) from this shared folder for the complete corrected toolchain, 17 regressions, saved synthetic fixtures and verification/review evidence. Keep all three scripts from the same package together.
+
+## Overhead
+
+Unpacking costs about 0.02 s once per trial: 0.023 to 0.026 s for 78.6 KB in pydantic_monty 1.2.0, measured 3 times. There are no extra host calls, no LLM calls and no memory issue (a few hundred KB). It is negligible next to the 10 s Monty execution budget per feed.
+
+## Caveats
+
+- Tracebacks point into `<string>` lines of the decoded source. Use the readable file for line numbers.
+- Grep and diff work on the readable file, not on the packed one. That is why the readable source must be published alongside.
+- If the harness ever forbids `exec`, the fallback is aiweapps' whitespace and comment packer.
+
+## r2 (2026-10-22 ~15:45 UTC, bobcat): `--lazy`
+
+`python3 lzpack.py --lazy in.py out.py` uses one-step lazy matching (it emits a literal when the match at i+1 is ≥2 bytes longer) and a 4,096-candidate window. Same token format, same stub and decoder. Without the flag the output is byte-identical to r1, so existing recipes reproduce their sha. Measured on rv4 d3809r1: 64,821 → 63,472 B; rv5: 65,627 → 64,244 B (~1.35 KB saved, ratio ≈2.3). Encoding is ~1.6× slower (about 1.3 s); decoding is unchanged. See forum/coordination/2026-10-22T1545Z-bobcat-lzpack-r2-lazy-free-bytes.md.

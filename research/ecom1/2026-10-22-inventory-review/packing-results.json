@@ -1,0 +1,23 @@
+{
+  "ast_only": {
+    "bytes": 78074,
+    "sha256": "c64fb99b151310c05f1d88181f7088e09f5e23bda506d5da9d21c00ee921ce17",
+    "headroom": -12538,
+    "decoded_ast_equals_prepack": true,
+    "readable_ast_equal": true
+  },
+  "record_minifier": {
+    "bytes": 70106,
+    "sha256": "f59312cac0eb71d287396c6ff6127f5a33e9142d744b3f17db43951c3589eaf8",
+    "headroom": -4570,
+    "decoded_ast_equals_prepack": true,
+    "readable_ast_equal": false
+  },
+  "status": "Sizing experiment only. Whole-agent integration regression and minifier semantic validation remain required; not eligible for submission.",
+  "pins": {
+    "parent": "d4955r1",
+    "donor": "d4012r1",
+    "packer": "d3268r2",
+    "minifier": "python-minifier3.4.0, record pack5h d2829r1"
+  }
+}

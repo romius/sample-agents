@@ -1,0 +1,38 @@
+{
+  "code": 0,
+  "data": {
+    "displayed_bytes": 1797,
+    "files": {
+      "lzpack_r3": {
+        "blob": "e795d2803b7814e57132f926f130d7d429c6308b7e7447d742ba86a950b59cb2",
+        "id": "d3268",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "tools/lzpack/lzpack.py",
+        "revision": 3,
+        "size": 5045,
+        "text": true,
+        "workspace": "w1"
+      },
+      "lzpack_r3_notes": {
+        "blob": "c30387d34d856f55f98a3cea4fd16e1a30612575ac8b1ec2d6ff47b71ed93478",
+        "id": "d3267",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "tools/lzpack/README.md",
+        "revision": 3,
+        "size": 6662,
+        "text": true,
+        "workspace": "w1"
+      }
+    },
+    "next_offset": null,
+    "next_seq": 22,
+    "output_bytes": 1797,
+    "output_truncated": false,
+    "sdk_calls": 3,
+    "seq": 21,
+    "session": "s6520",
+    "step": null
+  },
+  "notices": [],
+  "output": "{'benchmark': 'bitgn/ecom1-prod', 'name': 'Brain ayona zlib-packed exact d3200r2 smoke5 (runner zlib/exec check)', 'source': {'document': 'd4799', 'revision': 1, 'sha256': '86f915cd799ba344877382513e88897cb33908fc587210582b3e17e238ef66d2', 'sdk_version': '0.3.7'}, 'selected_trials': 5, 'run_id': 'run-22rHa162tGSgA49fSuKLXepjS', 'total_trials': 100, 'state': 'completed', 'model_calls': 0, 'model_cost_usd': 0.0, 'reported_cost_usd': '0', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 0, 'completion_tokens': 0, 'total_tokens': 0, 'completed_trials': 5, 'failed_trials': 5, 'cancelled_trials': 0, 'run_state': 'RUN_STATE_EVALUATED', 'run_score': 0, 'run_score_available': True, 'unselected_trials': 95, 'skipped_trials': 0, 'score_note': 'Full-run score includes trials forced closed at zero. Compare selected task grades separately.', 'error': None, 'finished_at': '2026-10-22T19:00:37.857983+00:00'}\n{'trial_id': 'vm2-M6y6QpR3MgLA6hjZSzUeCqnLP9J', 'state': 'failed', 'trace_scope': 'trial-1', 'grade': {'score': 0, 'available': True, 'detail': \"['no answer provided']\", 'error': None}, 'started_at': '2026-10-22T19:00:35.262694+00:00', 'usage': {'model_calls': 0, 'model_cost_usd': 0.0, 'reported_cost_usd': '0', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 0, 'completion_tokens': 0, 'total_tokens': 0}, 'task_id': 't001', 'error': 'Traceback (most recent call last):\\n  File \"<python-input-0>\", line 2, in <module>\\n    import zlib,base64\\nModuleNotFoundError: No module named \\'zlib\\'', 'output_bytes': 0, 'ecom_calls': 0, 'finished_at': '2026-10-22T19:00:35.323191+00:00', 'trace': {'scope': 'trial-1', 'blob': '407fa553efaf5562068c0419e2c61406ea757a58310bec590c607405540758d0', 'bytes': 2115, 'sealed': True}}\n"
+}

@@ -1,0 +1,28 @@
+{
+  "counterexample": {
+    "old_match": 4,
+    "longest_match": 14
+  },
+  "roundtrip_samples": 66,
+  "modes": 2,
+  "stub_unchanged": true,
+  "sources": {
+    "d4955": {
+      "old_bytes": 63582,
+      "new_bytes": 62999,
+      "saved_bytes": 583,
+      "sha256": "d2cc717041f4a98c06b1e612aaece622cc1ce4c593c06a7aec0d110f580f3d3a",
+      "native_decoded_bytes_equal": true,
+      "readable_ast_equal": true
+    },
+    "d4702": {
+      "old_bytes": 63209,
+      "new_bytes": 62626,
+      "saved_bytes": 583,
+      "sha256": "b00dfff041ab1f1d357a2617da347cbf53ddf2dddb320b9c1210cc65f45c7bd7",
+      "native_decoded_bytes_equal": true,
+      "readable_ast_equal": true
+    }
+  },
+  "limits": "Encoder-only component, no submission or replacement of pending sources. Native exact decoder bytes checked; full-agent control flow does not change. Longest-match correction need not minimize globally packed size for every input."
+}

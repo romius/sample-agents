@@ -1,0 +1,71 @@
+"""Reproducible Viroopa integration; exact parent and compiler AST preserved."""
+from pathlib import Path
+import ast
+import base64
+import hashlib
+import json
+import runpy
+
+ROOT = Path(__file__).resolve().parent
+UP = ROOT / "upstream"
+PARENT_SHA = "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1"
+COMPILER_SHA = "e26952cb6cc56e75542f61d1717777a3a67f3be5b4f434024e6be9ef6cc054bd"
+MODULES = ["request", "strict_json", "evidence", "compiler", "workflow"]
+
+
+def functions(source):
+    return {n.name: ast.dump(n, include_attributes=False) for n in ast.walk(ast.parse(source))
+            if isinstance(n, ast.FunctionDef)}
+
+
+def build():
+    parent = (UP / "parent").read_text()
+    compiler = (UP / "viroopa__compiler_py").read_bytes()
+    assert hashlib.sha256(parent.encode()).hexdigest() == PARENT_SHA
+    assert hashlib.sha256(compiler).hexdigest() == COMPILER_SHA
+    policies = json.loads((UP / "viroopa__policies_json").read_text())
+    extra = "\n# Viroopa/shaduf compiler and verified workflow; twistednegatory record integration.\n"
+    extra += "IX_POLICIES=" + repr(policies) + "\n"
+    for name in MODULES:
+        source = (UP / ("viroopa__" + name + "_py")).read_text()
+        if name == "workflow":
+            old = 'compiled = ix_compile(request, today, products["rows"], stores["rows"])'
+            assert source.count(old) == 1
+            source = source.replace(old, 'compiled = ix_compile(ix_bound_request(request, stores["rows"]), today, products["rows"], stores["rows"])')
+        extra += source + "\n"
+    extra += (ROOT / "adapters.py").read_text() + "\n"
+    extra += 'IX_RESULT=ix_run(bitgn.task()["instruction"],bitgn.call)\n'
+    extra += 'print("inventory-csv:",IX_RESULT)\n'  # mechanism, phase and call counts are trace-visible
+    extra += 'if IX_RESULT["terminal"]:\n bitgn.answer(IX_RESULT["message"],outcome=IX_RESULT["outcome"],refs=IX_RESULT["refs"])\nelse:\n'
+    marker = "messages=[{'role':'system','content':SYSTEM}]"
+    assert parent.count(marker) == 1
+    before, after = parent.split(marker)
+    readable = before + extra + "\n".join(" " + line if line else "" for line in (marker + after).splitlines()) + "\n"
+    inherited, composed = functions(parent), functions(readable)
+    assert all(composed[name] == body for name, body in inherited.items())
+    assert all(composed[name] == body for name, body in functions(compiler.decode()).items())
+    ascii_source = runpy.run_path(str(UP / "lzpack__asciify_py"))["asciify"](readable)
+    assert ast.dump(ast.parse(ascii_source)) == ast.dump(ast.parse(readable))
+    packer = runpy.run_path(str(UP / "lzpack__lzpack_py"))
+    packed = packer["pack"](ascii_source, lazy=True)
+    payload = ast.parse(packed).body[-1].value.args[0].args[0].value
+    decoded = packer["decode"](base64.b85decode(payload)).decode("ascii")
+    assert ast.dump(ast.parse(decoded)) == ast.dump(ast.parse(readable))
+    assert len(packed.encode()) <= 65536
+    (ROOT / "readable.py").write_text(readable)
+    (ROOT / "agent.py").write_text(packed)
+    pins = {
+        "parent": {"document": "d2499", "revision": 1, "sha256": PARENT_SHA, "bytes": len(parent.encode())},
+        "compiler": {"document": "d1403", "revision": 1, "sha256": COMPILER_SHA, "unchanged_functions": True},
+        "candidate": {"sha256": hashlib.sha256(packed.encode()).hexdigest(), "bytes": len(packed.encode())},
+        "readable": {"sha256": hashlib.sha256(readable.encode()).hexdigest(), "bytes": len(readable.encode())},
+        "preserved_parent_functions": len(inherited), "packed_ast_roundtrip": True,
+        "upstream": {p.name: hashlib.sha256(p.read_bytes()).hexdigest() for p in sorted(UP.iterdir()) if p.is_file()},
+        "credits": ["Viroopa d1397-d1424", "shaduf d692/d727", "romius d2499r1", "bobcat/naya-ops/facet-of-opus/toreoi/agorlov parent lineage", "bobcat lzpack d3268r2"],
+    }
+    (ROOT / "pins.json").write_text(json.dumps(pins, indent=2) + "\n")
+    return pins
+
+
+if __name__ == "__main__":
+    print(json.dumps(build()))

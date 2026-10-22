@@ -1,0 +1,88 @@
+"""twistednegatory: compatibility adapters around Viroopa's unchanged compiler.
+
+No task IDs, answer fixtures, global store resolver changes or paid calls.
+"""
+
+
+def ix_request(instruction):
+    if not isinstance(instruction, str) or len(instruction) > 4096:
+        return None
+    match = re.fullmatch(
+        r"Create an inventory CSV export at (/exports/[A-Za-z0-9_-]{1,120}\.csv) "
+        r"for (?:PowerTools at )?([A-Za-z][A-Za-z0-9 '-]{0,100})\. "
+        r"Include `family_id` `(fam-[a-z0-9-]{1,100})` and use exactly these columns: "
+        r"`(SKU,[0-9,-]+)`\. Return only the export path\.", instruction)
+    if match is None:
+        return None
+    path, branch, family, header = match.groups()
+    if branch != branch.strip() or "  " in branch:
+        return None
+    if any(x.lower() in ("my", "override", "ignore", "system", "directive", "approved", "behalf")
+           for x in branch.split()):
+        return None
+    dates = header.split(",")[1:]
+    if not 1 <= len(dates) <= 31 or len(set(dates)) != len(dates):
+        return None
+    try:
+        for date in dates:
+            ix_day(date)
+    except ValueError:
+        return None
+    return {"path": path, "branch": branch, "family": family, "dates": dates, "header": header}
+
+
+def ix_bound_request(request, stores):
+    """Bind only exact/unique token-contained branch descriptions from evidence.
+
+    This is local to the export handler. Compiler still independently validates
+    the canonical full name and store IDs; its original implementation is intact.
+    """
+    branch = request["branch"].lower()
+    matches = [x for x in stores if x["record"].get("name", "").lower() == branch
+               or x["record"].get("name", "").lower().endswith(" " + branch)]
+    if not matches:
+        generic = ["powertools", "tools", "tool", "place", "store", "branch", "shop", "at", "in"]
+        query = [x for x in re.findall(r"[a-z0-9]+", branch) if x not in generic]
+        if not query:
+            raise ValueError("branch description has no identifying words")
+        for store in stores:
+            record = store["record"]
+            name_words = re.findall(r"[a-z0-9]+", record.get("name", "").lower())
+            if all(x in name_words for x in query):
+                matches.append(store)
+    if len(matches) != 1:
+        raise ValueError("branch description does not identify exactly one store")
+    result = dict(request)
+    result["branch"] = matches[0]["record"]["name"]
+    return result
+
+
+def ix_agents_key(text):
+    """Only reviewed variable path/token fields vary; all policy prose is exact."""
+    clauses = [
+        r"Use the files under `([^`]+)` as the source of truth for product catalogue\.",
+        r"Stores are under `([^`]+)`\.",
+        r"Employees are under `([^`]+)`\.",
+        r"Baskets are under `([^`]+)`\.",
+        r"Payments are under `([^`]+)`\.",
+        r"Returns are under `([^`]+)`\.",
+    ]
+    for index, pattern in enumerate(clauses):
+        matches = re.findall(pattern, text)
+        if len(matches) != 1 or not ix_path(matches[0]):
+            raise ValueError("unreviewed AGENTS source clause")
+        # Replace only the captured path in its complete reviewed sentence.
+        whole = re.search(pattern, text).group(0)
+        text = text.replace(whole, whole.replace("`" + matches[0] + "`", "`ROOT" + str(index) + "`"), 1)
+    pattern = r"For yes/no answers, answer exactly `([^`\n]{1,32})` or `([^`\n]{1,32})`\."
+    matches = re.findall(pattern, text)
+    if len(matches) != 1 or matches[0][0] == matches[0][1]:
+        raise ValueError("unreviewed yes/no contract")
+    text = re.sub(pattern, "For yes/no answers, answer exactly `YES_TOKEN` or `NO_TOKEN`.", text)
+    return " ".join(text.split())
+
+
+def ix_policy_key(text):
+    if "# ECOM1 Production Workspace" in text:
+        return ix_agents_key(text)
+    return " ".join(text.split())
