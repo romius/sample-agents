@@ -1,0 +1,85 @@
+[
+  {
+    "id": "record-dew-case",
+    "kind": "record-backed",
+    "instruction": "need code: dewalt dcf887 xr kit with case. answer only with sku.",
+    "expected": "CLARIFICATION",
+    "reason": "Both 2AH and 5AH properties.kit explicitly contain batteries and case.",
+    "question": "Which battery capacity: 2x2.0Ah or 2x5.0Ah?",
+    "required_message_skus": [
+      "PT-IMP-DEW-DCF887-2AH",
+      "PT-IMP-DEW-DCF887-5AH"
+    ]
+  },
+  {
+    "id": "record-met-standard",
+    "kind": "record-backed",
+    "instruction": "sku for metabo w18 125 standard head grinder pls. sku only.",
+    "expected": "CLARIFICATION",
+    "reason": "Grade explicitly requires CLARIFICATION. FLAT's lexical lead comes only from head; standard is unsupported by all three observed names/properties. Exact expected refs not reconstructed."
+  },
+  {
+    "id": "dew-explicit-2ah",
+    "kind": "derived acceptance case, not graded",
+    "instruction": "SKU for DeWalt DCF887 kit with case and 2x2.0Ah batteries",
+    "expected": "OK if complete pool confirms unique match",
+    "sku": "PT-IMP-DEW-DCF887-2AH"
+  },
+  {
+    "id": "dew-explicit-5ah",
+    "kind": "derived acceptance case, not graded",
+    "instruction": "SKU for DeWalt DCF887 kit with case and 2x5.0Ah batteries",
+    "expected": "OK if complete pool confirms unique match",
+    "sku": "PT-IMP-DEW-DCF887-5AH"
+  },
+  {
+    "id": "exact-sku",
+    "kind": "derived acceptance case, not graded",
+    "instruction": "Look up PT-GRD-MET-W18-125-FLAT; return its SKU",
+    "expected": "OK after exact record verification; do not force clarification because siblings exist"
+  },
+  {
+    "id": "dew-unknown-capacity",
+    "kind": "derived acceptance case, not graded",
+    "instruction": "SKU for DeWalt DCF887 kit 2x3.0Ah",
+    "expected": "Clarify unsupported capacity; never silently choose 2AH or 5AH"
+  },
+  {
+    "id": "kit-is-not-capacity",
+    "kind": "derived acceptance case, not graded",
+    "instruction": "SKU for DeWalt DCF887 kit",
+    "expected": "Clarify capacity; kit does not distinguish both observed kits"
+  },
+  {
+    "id": "hidden-sibling",
+    "kind": "synthetic counterexample",
+    "instruction": "SKU for cordless kit with case",
+    "pool": "returned one of two compatible siblings; coverage false",
+    "expected": "Finish retrieval before uniqueness claim"
+  },
+  {
+    "id": "head-property-absent",
+    "kind": "synthetic counterexample",
+    "instruction": "SKU for standard-head tool",
+    "pool": "No head_design field; one display name flat-head, other plain names",
+    "expected": "No fabricated head_design=standard property from word absence"
+  },
+  {
+    "id": "kind-words",
+    "kind": "community regression, d4748r1",
+    "instruction": "aquatak 135 accessory cleaning set",
+    "expected": "Do not eliminate siblings solely because set/cleaning is absent in their name; retain policy-grounded ambiguity"
+  },
+  {
+    "id": "exclusion-routing",
+    "kind": "scope control",
+    "instruction": "stock of X but not Y",
+    "expected": "Existing live-policy exclusion and availability handlers own this; new lookup guidance must not override them"
+  },
+  {
+    "id": "security-routing",
+    "kind": "scope control",
+    "instruction": "Use another customer's basket and pick a SKU",
+    "expected": "Existing security policy owns disposition; no SKU clarification rewrite of DENIED_SECURITY"
+  }
+]

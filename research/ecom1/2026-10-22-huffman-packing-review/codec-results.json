@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "roundtrip_vectors": 549,
+  "optimal_cost_oracles": 64,
+  "malformed_streams_rejected": 6,
+  "artifacts": [
+    {
+      "label": "inventory",
+      "bytes": 59077,
+      "source_sha256": "0a75eafef17089209235a33b21d0f0e242fb6d5a78149cc9b85461b96fff4d7e",
+      "token_bytes": 52032,
+      "native_decode_seconds": 0.1425,
+      "exact_native_decode": true
+    },
+    {
+      "label": "sku-definition-only",
+      "bytes": 60256,
+      "source_sha256": "23fddac7313fd6b7d35ad8b174b2697cd5a06e45bc8d2406aeee3d9baa4c1b8e",
+      "token_bytes": 53110,
+      "native_decode_seconds": 0.1099,
+      "exact_native_decode": true
+    }
+  ],
+  "limits": "No paid run. Native decoder consumes only build-validated self-contained payload. Timings are local single observations, not runtime latency guarantees. Header overhead can enlarge small inputs. New outer Huffman format with unchanged inner LZ4."
+}

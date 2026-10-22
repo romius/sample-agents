@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "seed": 2026102203,
+  "initial_compatibility_finding": "Parent's native test found int.from_bytes unsupported in Monty; reviewed version uses manual four-byte arithmetic. No submitted artifact changed.",
+  "codec": {
+    "roundtrip_vectors": 569,
+    "exhaustive_ternary_strings": 9841,
+    "brute_force_tree_optimality_cases": 256,
+    "max_generated_code_width": 19,
+    "uint32_size_guard": "rejects 2**32 before iteration",
+    "empty_stream": "260-byte header, zero count, zero code lengths, no payload",
+    "single_symbol": "one-bit zero code; all 256 symbols and all padding residues tested"
+  },
+  "malformed_inputs": [
+    {
+      "case": "extra_byte",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "returned_token_count": 1,
+        "returned_tokens": [
+          65
+        ]
+      }
+    },
+    {
+      "case": "nonzero_padding",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "returned_token_count": 1,
+        "returned_tokens": [
+          65
+        ]
+      }
+    },
+    {
+      "case": "truncated_payload",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "returned_token_count": 14,
+        "returned_tokens": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      }
+    },
+    {
+      "case": "oversubscribed_codebook",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "returned_token_count": 1,
+        "returned_tokens": [
+          0
+        ]
+      }
+    },
+    {
+      "case": "unknown_code",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "returned_token_count": 0,
+        "returned_tokens": []
+      }
+    },
+    {
+      "case": "short_header",
+      "strict_decoders_reject": true,
+      "runtime_behavior": {
+        "exception": "IndexError"
+      }
+    }
+  ],
+  "native": {
+    "exact_token_vector_comparisons": 7,
+    "includes_empty_single_symbol_uint32_count_and_depth19": true
+  },
+  "artifacts": [
+    {
+      "artifact": "inventory-packed.py",
+      "sha256": "0a75eafef17089209235a33b21d0f0e242fb6d5a78149cc9b85461b96fff4d7e",
+      "bytes": 59077,
+      "expected_prepack_sha256": "597e2791292cf23b58d5eeba88e0878f34725c3c86d95ee9605995a189dd7259",
+      "token_count": 52032,
+      "code_length_counts": {
+        "4": 1,
+        "5": 4,
+        "6": 12,
+        "7": 29,
+        "8": 49,
+        "9": 56,
+        "10": 95,
+        "11": 10
+      },
+      "independent_exact_roundtrip": true,
+      "unchanged_lz_loop_ast": true
+    },
+    {
+      "artifact": "sku-definition-only-packed.py",
+      "sha256": "23fddac7313fd6b7d35ad8b174b2697cd5a06e45bc8d2406aeee3d9baa4c1b8e",
+      "bytes": 60256,
+      "expected_prepack_sha256": "89a5781e0b1754093b8118498c6d1cd6ebe5f4c05d308d5bf962b7d0158d0961",
+      "token_count": 53110,
+      "code_length_counts": {
+        "4": 1,
+        "5": 4,
+        "6": 12,
+        "7": 27,
+        "8": 55,
+        "9": 53,
+        "10": 92,
+        "11": 12
+      },
+      "independent_exact_roundtrip": true,
+      "unchanged_lz_loop_ast": true
+    }
+  ],
+  "input_sha256": {
+    "pack.py": "4b54f5e0163499a458e29b82817301cda58cdc76b49b622794936ef8b9d6e10f",
+    "inventory-packed.py": "0a75eafef17089209235a33b21d0f0e242fb6d5a78149cc9b85461b96fff4d7e",
+    "sku-definition-only-packed.py": "23fddac7313fd6b7d35ad8b174b2697cd5a06e45bc8d2406aeee3d9baa4c1b8e"
+  },
+  "scope": "Exact generated payloads decode safely in tested runtime. Runtime is intentionally permissive, not a validator for untrusted or corrupted Huffman streams. Strict build decoder plus exact original-byte equality is required. No paid run or whole-agent behavior claim."
+}

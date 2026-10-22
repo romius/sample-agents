@@ -1,0 +1,50 @@
+{
+  "record": {
+    "parser": null,
+    "employee_request_eligible": true,
+    "cpython_native_equal": true
+  },
+  "queued_inventory": {
+    "parser": [
+      [
+        1,
+        26990,
+        "PT-DRL-BOS-GSR55-5AH"
+      ],
+      [
+        5,
+        23990,
+        "PT-WASH-BO5-UA135-CAR"
+      ],
+      [
+        2,
+        38990,
+        "PT-MOW-STI-RMA235-AK30"
+      ],
+      [
+        12,
+        24990,
+        "PT-SAW-MAK-DHS680-BLADE"
+      ]
+    ],
+    "employee_request_eligible": true,
+    "cpython_native_equal": true
+  },
+  "exact_existing_fixture": true,
+  "receipt_sha256": "fb1a7aaac8872d800a48e08045ac82bc3fe97f3c96049cdc05e632f2096cff98",
+  "subtotal_cents": 524800,
+  "source_job": "j110adb6ab262405f85363cc00efee623",
+  "source_event": 5955,
+  "identity": "user: emp-0099\nroles: RoleEmployee, RoleCustomerService, RoleDiscountRequester\n",
+  "instruction": "Can I buy the same basket as in that receipt (see last ocr upload) today from the same store? Yes/no question",
+  "existing_test_path": "../2026-10-22-record-integration/test_combined.py",
+  "read_paths_in_failed_trace": [
+    "/AGENTS.MD",
+    "/docs/security.md",
+    "/docs/checkout.md",
+    "/docs/availability-checks.md",
+    "/uploads/HqrVHWdV_receipt_ocr.txt"
+  ],
+  "conclusion": "Queued original-first S-for-5 recovery already fixes the exact parser blocker. Do not duplicate an employee handler: record eligibility already accepts this runtime employee and exact feasibility wording.",
+  "limits": "This does not prove a successful full availability answer. Failed trace contains no catalogue/store Reads; unavailable values cannot be supplied from another generated world. Native parser result is not a hidden-grade recomputation. Employee feasibility is read-only under observed availability policy, not checkout authorization."
+}

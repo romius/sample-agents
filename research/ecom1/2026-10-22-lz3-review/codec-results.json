@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "oracle_inputs": 4255,
+  "roundtrip_vectors": 44,
+  "checked_references": 141,
+  "length3_references": 2774,
+  "maximum_distance": 65535,
+  "malformed_streams_rejected": 5,
+  "artifacts": [
+    {
+      "name": "inventory",
+      "bytes": 65030,
+      "sha256": "0a2a6bb3b48c4c191c51bedba1cd40f096c5f6e3a1657b22c4ba6adb9b454070",
+      "exact_native_decode": true
+    },
+    {
+      "name": "sku-definition-only",
+      "bytes": 66352,
+      "sha256": "3da807417cf3828daf59801a6987b6f49c8f69fc2faf0b78c893fdc91cc98168",
+      "exact_native_decode": true
+    }
+  ],
+  "limits": "Build-time window-bounded shortest-byte parse. New decoder format; do not use LZ4 runtime on LZ3 streams. Runtime stub trusts build-validated payload. No model/evaluation claim."
+}

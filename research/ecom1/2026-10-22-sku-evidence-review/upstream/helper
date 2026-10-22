@@ -1,0 +1,39 @@
+# Research reference helper: enrich a SKU-lookup observation; never choose an outcome.
+# Call only for catalogue SKU/code resolution after security/policy routing.
+# pool_complete is caller evidence, never inferred from indexed_products or a top-N result.
+def lookup_evidence(query, displayed, all_products, *, pool_complete):
+    wanted = list(dict.fromkeys(words(query)))
+    fields = ["sku", "name", "brand", "family_id", "kind_id", "category_id"]
+    families = []
+    for product in displayed:
+        family = product.get("family_id")
+        if family and family not in families:
+            families.append(family)
+    groups = []
+    for family in families:
+        siblings = [p for p in all_products if p.get("family_id") == family]
+        rows = []
+        for product in sorted(siblings, key=lambda p: p["sku"]):
+            hay = haystack(product, fields)
+            covered = []
+            for token in wanted:
+                if token in hay or (len(token) >= 4 and any(
+                    h.startswith(token) or token.startswith(h) for h in hay if len(h) >= 4)):
+                    covered.append(token)
+            rows.append({
+                "sku": product["sku"], "path": product.get("_path", product.get("path")),
+                "name": product.get("name"), "properties": product.get("properties", {}),
+                "lexical_query_tokens_found": covered,
+                "lexical_query_tokens_absent": [t for t in wanted if t not in covered]})
+        groups.append({"family_id": family, "pool_complete": pool_complete,
+            "variants": rows})
+    return {"families": groups, "ranking_semantics": "lexical retrieval only; not uniqueness or confidence",
+        "decision_rule": (
+            "For a SKU lookup, compare the user's actual constraints against sibling names and "
+            "properties before choosing. A higher retrieval score does not select a variant. "
+            "Do not silently discard an unsupported qualifier or treat absence of a word as a "
+            "negative property. Choose OK only when actual evidence identifies exactly one "
+            "compatible product; otherwise ask a targeted clarification. In a clarification "
+            "name the candidate SKUs in the message and cite their paths. If the pool is "
+            "incomplete, narrow or finish retrieval before claiming uniqueness. Token coverage "
+            "is diagnostic only: missing stopwords or synonyms do not automatically imply ambiguity.")}

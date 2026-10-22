@@ -1,0 +1,40 @@
+# Concrete SKU fix: separate lexical retrieval from proof that only one variant fits
+
+2026-10-22, codex-sol-61. Research handoff, not a promoted candidate. Requested by the user after the current90.12601 loss-priority audit. Base remains d3200r2 / readable d3201r2 / installed d298r17, SHA1e6a0ae3505593c380fbc1d3010295cef58e2b2a7a8aaf0cfe6a47da8591a86f.
+
+## New evidence from the actual current-record world
+
+Frozen final model requests3116(t021) and5648(t041) from completed j110adb6ab262405f85363cc00efee623 contain the precise catalogue observations the model saw. [Raw requests](../experiments/2026-10-22-codex-sol-61-sku-clarification-contract/last-model-requests.json); settled grades/start/answers are linked in d4746.
+
+1. DeWalt DCF887: 2AH and5AH names and properties.kit BOTH say batteries and case; scores10/10; BODY score6. The user's kit-with-case request leaves battery capacity unspecified. Clarification is supported by these actual records. The grade only complained about missing2AH SKU text. Repair the clarification message by naming candidate SKUs, not by converting it to OK or preferring2AH. TRAIN-1 H1d R2 already covers that output-text mechanism; credit thingy and prior community work.
+2. Metabo W18/125: FLAT scores10;4AH andBODY score8. The record's exact words/haystack/best_matches functions replay these values on the frozen views. Token head matches flat-head, while standard matches none of the three. Counterfactual retrieval with only head removed gives8/8/8. The additive ranker counts words independently and does not bind standard to head. This proves a retrieval mechanism, not the model's internal causal reason. The actual model chose FLAT/OK; the settled grader explicitly requires CLARIFICATION.
+
+This is stronger than a generic warning about fuzzy ranking: it identifies the exact extra token and exact current-record variants. Earlier [grok-bot review d2468r1](../experiments/2026-10-22-grok-bot-review-world-index-matching/README.md) already identified lexical/negation weaknesses on synthetic worlds; this contribution grounds a concrete current failure and a narrower observation repair.
+
+## Concrete correction to hand to the builder
+
+At the catalogue observation boundary, supply a same-family comparison, not a winner inferred from retrieval score. For a SKU/code request:
+
+- score means lexical retrieval only. A strict score lead is not proof of a unique variant.
+- Compare original user constraints with actual sibling names and properties. A qualifier absent from all records remains unresolved; never silently discard it. Word absence does not establish a negative property. Generic packaging/kind words do not eliminate siblings unless actual attributes justify it.
+- OK only after evidence identifies one compatible product. An exact verified SKU remains a valid direct answer even when siblings exist. If several compatible variants remain, ask about their distinguishing attribute; put their SKU codes in message and paths in refs.
+- Incomplete top-N/index evidence cannot establish uniqueness. Continue narrow retrieval or keep uncertainty; do not set pool_complete from indexed_products alone.
+- Preserve security, exclusion, stock/yes-no and mutation policy routing. This is a catalogue-resolution correction, not an outcome rewrite for every task mentioning SKU.
+
+Ready research helper: [lookup_evidence.py](../experiments/2026-10-22-codex-sol-61-sku-clarification-contract/lookup_evidence.py), d4922r1. It computes per-token support and groups visible families with their sibling records from a supplied current-world product pool. Add its result as a catalogue observation field (e.g. sku_lookup_evidence), preserving the original matches/ranking. Pass explicit collector completeness; captured top8 snapshots in this experiment correctly use false. The helper changes no answers, invents no head-design field, and does not implement an intent parser. A shipping port needs context-size limits with an explicit truncation flag and verified index coverage; keep this reference helper out of agent.py until that bounded port is reviewed. The decision_rule field contains the concrete model instruction to port.
+
+Minimal target outcome: on the frozen Metabo request, stop treating head's lexical hit as a unique standard-head product. Ask which compatible configuration the user needs. Do not hard-code Metabo, family names, task numbers, standard/head word tables or the graded SKU. The names here are evidence, never branch conditions.
+
+## Checks and limits
+
+[Results](../experiments/2026-10-22-codex-sol-61-sku-clarification-contract/results.json): two exact top3 retrieval replays; the head-removal counterfactual; eight order/SKU-renaming/arbitrary-score perturbations including a sibling outside the displayed prefix; missing-attribute and empty-observation controls pass in native Brain Python. Source functions copied exactly from d3201r2 (words,haystack,best_matches). [Reproduce in Brain](../experiments/2026-10-22-codex-sol-61-sku-clarification-contract/reproduce_in_brain.py). These check evidence construction, not changed LLM answers.
+
+[12 acceptance cases](../experiments/2026-10-22-codex-sol-61-sku-clarification-contract/acceptance-cases.json) distinguish record-backed facts, derived ungraded requests, community regressions and synthetic controls. They are a review/evaluation contract, not12 measured successes. Complete-pool uniqueness and exact Metabo gold refs remain unproven from top8 views.
+
+A loose name-token refilter is specifically NOT recommended: bobcat d4748r1 measured0 gains with2 certain/1 likely losses; china-brother shelved it in d4765r1. This proposal preserves clarification on unresolved variants instead of reviving that elimination heuristic.
+
+## Next bounded step / ownership
+
+Asks: @inara or @bobcat review the observation-only port on the current train; @china-brother review the constraint/ambiguity contract; @agorlov-digital use the two frozen final model requests for a paired prompt replay if the local harness supports it. These are requests, not accepted claims. Use the same frozen request and model/settings for parent versus amended observation. Preserve exact raw outputs, usage and per-case outcomes; include exact-SKU and genuine single-match controls to catch over-clarification. Check compatible SKU/clarification work already queued before a new full100. One passing sample is not a measured whole-run gain.
+
+TRAIN-1 d4658r2 at inspection is SHA8d0b8ff96bfdb04a804952427209aa4af2b83f035e78ecd124697d05b46e77d8. This research does not edit it or others' candidates, schedule/cancel evaluations or claim a score increase. Incremental inference calls0, inference costUSD0. The contribution is raw current-world evidence, replayed rank mechanics, a concrete observation correction and an actionable implementation/evaluation handoff.
