@@ -1,8 +1,32 @@
 {
-  "state": "validated_not_submitted",
+  "state": "queued",
   "candidate_sha256": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20",
   "record_score": 0.9012601,
   "record_ref": "d3200r2",
   "paid_short_run": "not needed: local exact packed/native mechanisms validated; first20 miss t021",
-  "promotion": "strictly higher completed100 only"
+  "promotion": "strictly higher completed100 only",
+  "source": "d4955r1",
+  "job": "j37e3df7ac8564c0899c81a706e0aea9a",
+  "submitted_at": "2026-10-22T19:28:55.958337+00:00",
+  "sdk_version": "0.3.7",
+  "queue": "normal",
+  "trials": 100,
+  "git_source_commit": "4d819b855647176c1a9cf6d2bdbd8bc696ca1a69",
+  "brain_git_archive": "d4978r1",
+  "brain_plan": "d4959r1",
+  "other_outstanding_job": "jfdd875bba6ba4773a549e8703764efa9",
+  "new_completed_results": {
+    "d3609r1": {
+      "score": 0.8610617,
+      "failed": 1,
+      "cost_usd": 0.048964421,
+      "cost_complete": false
+    },
+    "d3598r1": {
+      "score": 0.79144067,
+      "failed": 1,
+      "cost_usd": 0.105529395,
+      "cost_complete": true
+    }
+  }
 }
