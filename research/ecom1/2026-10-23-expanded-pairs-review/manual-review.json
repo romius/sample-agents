@@ -1,0 +1,1380 @@
+[
+  {
+    "record": 1,
+    "case": "drill__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: bosch professional gsr 18v-55 drill but not PT-DRL-BOS-GSR55-5AH. answer only with sku.",
+    "response_sha256": "b48167eebf9393d5e8c3c6b75bc1890cea38833b4cf664ae1598a5a98523e92e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Searched catalogue for Bosch Professional GSR 18V-55 drill, excluded PT-DRL-BOS-GSR55-5AH"
+      ],
+      "message": "Multiple matching SKUs found. Please specify which you need: PT-DRL-BOS-GSR55-2AH (drill kit 2x2.0Ah) or PT-DRL-BOS-GSR55-BODY (drill body only).",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies two eligible variants with supported kit/body descriptions; excluded identifier absent.",
+    "trace_job": "initial",
+    "trace_event": 7
+  },
+  {
+    "record": 2,
+    "case": "drill__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: bosch professional gsr 18v-55 drill but not PT-DRL-BOS-GSR55-5AH. answer only with sku.",
+    "response_sha256": "b5b15bb4ca7ac8d3ecb2d73f4714522d8c9368f56a648bb8e3048461567063b3",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for Bosch Professional GSR 18V-55 drill variants excluding PT-DRL-BOS-GSR55-5AH"
+      ],
+      "message": "Multiple matching products found. Which one do you want? Options: PT-DRL-BOS-GSR55-2AH (Bosch Professional GSR 18V-55 drill kit 2x2.0Ah), PT-DRL-BOS-GSR55-BODY (Bosch Professional GSR 18V-55 cordless drill body).",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies eligible variants; descriptions supported and excluded identifier absent.",
+    "trace_job": "initial",
+    "trace_event": 9
+  },
+  {
+    "record": 3,
+    "case": "drill__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: bosch professional gsr 18v-55 drill kit with 2x2.0Ah batteries and charger. answer only with sku.",
+    "response_sha256": "76ffe15c80c071e6d6c4e01cec3ac5032fb319b6fbe1caa9133e24d2ff78cae7",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "found SKU"
+      ],
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 11
+  },
+  {
+    "record": 4,
+    "case": "drill__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: bosch professional gsr 18v-55 drill kit with 2x2.0Ah batteries and charger. answer only with sku.",
+    "response_sha256": "4c7d15ffa91794e93a53802b9e43088621694589cd1a9515364042fdf33cf566",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 22
+  },
+  {
+    "record": 5,
+    "case": "drill__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH. answer only with sku.",
+    "response_sha256": "a7bd8a3eef978f21a14ae84c1b1fe3272f004a5838bb832cd3eba28e9adeed52",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 24
+  },
+  {
+    "record": 6,
+    "case": "drill__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH. answer only with sku.",
+    "response_sha256": "def09943a91fa61544e886c71fa15b7011c2b47fb84982e36cd53bdaa3d585c3",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Returned requested SKU"
+      ],
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 26
+  },
+  {
+    "record": 7,
+    "case": "drill__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH waterproof. answer only with sku.",
+    "response_sha256": "a0a55568893b2eacb5dafecdf24fcaeb644b2f120b9f93a6c628bc09a9eafa5c",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-DRL-BOS-GSR55-2AH, PT-DRL-BOS-GSR55-5AH, PT-DRL-BOS-GSR55-BODY",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Drops waterproof entirely and treats exact SKU plus unknown attribute as broad variant ambiguity. Lists other kits without preserving requested attribute.",
+    "trace_job": "initial",
+    "trace_event": 28
+  },
+  {
+    "record": 8,
+    "case": "drill__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH waterproof. answer only with sku.",
+    "response_sha256": "a301d7bf1433c4906bbe7a50fa13982e98e777c65225bd76fef0de883546a599",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU PT-DRL-BOS-GSR55-2AH"
+      ],
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "initial",
+    "trace_event": 30
+  },
+  {
+    "record": 9,
+    "case": "drill__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH kit with 2x5.0Ah batteries and charger. answer only with sku.",
+    "response_sha256": "0771fe81abcac1458e43b65c50aac3cc98d3317985139f1244ac282ce2e10e87",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for requested SKU"
+      ],
+      "message": "Multiple products match the description. PT-DRL-BOS-GSR55-2AH is a kit with 2x2.0Ah batteries, while PT-DRL-BOS-GSR55-5AH is a kit with 2x5.0Ah batteries. Which SKU do you need?",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Retains named 2AH kit versus requested 5AH kit and asks which SKU; descriptions supported by kit fields.",
+    "trace_job": "initial",
+    "trace_event": 32
+  },
+  {
+    "record": 10,
+    "case": "drill__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-DRL-BOS-GSR55-2AH kit with 2x5.0Ah batteries and charger. answer only with sku.",
+    "response_sha256": "9b3dd630f9fc48c04a42a1b116ed675c2c12e7a5c4eafbea92595a96271fd55e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Identified ambiguous request"
+      ],
+      "message": "Multiple matching products found. PT-DRL-BOS-GSR55-2AH (kit with 2x2.0Ah batteries) and PT-DRL-BOS-GSR55-5AH (kit with 2x5.0Ah batteries). Which SKU do you need?",
+      "grounding_refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Retains both kit variants and properties in clarification. No semantic change established over parent.",
+    "trace_job": "initial",
+    "trace_event": 34
+  },
+  {
+    "record": 11,
+    "case": "sander__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: einhell te-rs 18 li sander but not PT-SND-EIN-TERS18-40. answer only with sku.",
+    "response_sha256": "84bd51ef24ebcda31a970ad6e7c72ac8974ba79883451bf74bd249d26019f00c",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple matching SKUs found for \"Einhell TE-RS 18 Li sander\" excluding PT-SND-EIN-TERS18-40. Please specify which SKU you need.",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarification label improves; quotes excluded SKU in negative clause despite no-quote policy. Refs contain eligible variants only.",
+    "trace_job": "initial",
+    "trace_event": 36
+  },
+  {
+    "record": 12,
+    "case": "sander__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: einhell te-rs 18 li sander but not PT-SND-EIN-TERS18-40. answer only with sku.",
+    "response_sha256": "2cbe4d6079461d8cae3435102505f1caa8ba6c453e144357b435af7a56f6a001",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for Einhell TE‑RS 18 Li sander, excluded PT‑SND‑EIN‑TERS18‑40"
+      ],
+      "message": "PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-BODY",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "OUTCOME_OK enumerates two eligible SKUs. Ambiguity remains; disposition violates unique-only policy, but no excluded item is offered.",
+    "trace_job": "initial",
+    "trace_event": 38
+  },
+  {
+    "record": 13,
+    "case": "sander__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: einhell te-rs 18 li sander starter kit with 2.5Ah battery and charger. answer only with sku.",
+    "response_sha256": "0bf9b76476e3a90df44b942363425a58786ebe82154d2dbc000f026e5936339e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product"
+      ],
+      "message": "PT-SND-EIN-TERS18-25",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 40
+  },
+  {
+    "record": 14,
+    "case": "sander__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: einhell te-rs 18 li sander starter kit with 2.5Ah battery and charger. answer only with sku.",
+    "response_sha256": "2c8bd8931779965bcd5a6a53893e5a7230b4c373609ffaa7a1dd109bd11ec279",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SND-EIN-TERS18-25",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 42
+  },
+  {
+    "record": 15,
+    "case": "sander__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-SND-EIN-TERS18-25. answer only with sku.",
+    "response_sha256": "2c8bd8931779965bcd5a6a53893e5a7230b4c373609ffaa7a1dd109bd11ec279",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SND-EIN-TERS18-25",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 47
+  },
+  {
+    "record": 16,
+    "case": "sander__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-SND-EIN-TERS18-25. answer only with sku.",
+    "response_sha256": "2c8bd8931779965bcd5a6a53893e5a7230b4c373609ffaa7a1dd109bd11ec279",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SND-EIN-TERS18-25",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "initial",
+    "trace_event": 49
+  },
+  {
+    "record": 17,
+    "case": "sander__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-SND-EIN-TERS18-25 waterproof. answer only with sku.",
+    "response_sha256": "2c8bd8931779965bcd5a6a53893e5a7230b4c373609ffaa7a1dd109bd11ec279",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SND-EIN-TERS18-25",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "initial",
+    "trace_event": 51
+  },
+  {
+    "record": 18,
+    "case": "sander__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-SND-EIN-TERS18-25 waterproof. answer only with sku.",
+    "response_sha256": "cbe595554cb095086f0076d972af02b5e4f3f602cd59f98b3b02eaf83433462b",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalogue lookup"
+      ],
+      "message": "Multiple products match the SKU pattern but none specify a waterproof feature. Please clarify which product you need (e.g., PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-40, PT-SND-EIN-TERS18-BODY, etc.).",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Preserves that no record specifies waterproof, without claiming physically nonwaterproof. Broadens candidate refs to unrelated Bosch family, with duplicated CASE ref. Pair spans the two jobs.",
+    "trace_job": "continuation",
+    "trace_event": 7
+  },
+  {
+    "record": 19,
+    "case": "sander__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-SND-EIN-TERS18-25 kit with 4.0Ah battery and 50 discs. answer only with sku.",
+    "response_sha256": "66b7a855b7a7887c4c31071167d8d8378ec05b4ef989952333e6ad74816429c6",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-SND-EIN-TERS18-25 (starter kit, 2.5Ah battery) and PT-SND-EIN-TERS18-40 (workshop kit, 4.0Ah battery and 50 discs).",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Retains 2.5Ah versus 4Ah/50-disc distinctions and asks which SKU. Supported fields; parent already preserved conflict.",
+    "trace_job": "continuation",
+    "trace_event": 12
+  },
+  {
+    "record": 20,
+    "case": "sander__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-SND-EIN-TERS18-25 kit with 4.0Ah battery and 50 discs. answer only with sku.",
+    "response_sha256": "ff484872d0991c2c961ba76c1a57a7d608c39a1a61d37266a199c25878ff8e61",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Which product do you need? The description matches PT‑SND‑EIN‑TERS18‑40 (kit with 4.0Ah battery and 50 discs), but you referenced PT‑SND‑EIN‑TERS18‑25 (starter kit with 2.5Ah battery). Please confirm the correct SKU.",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Explicitly contrasts referenced 2.5Ah kit and described 4Ah/50-disc kit; asks which identity governs.",
+    "trace_job": "continuation",
+    "trace_event": 14
+  },
+  {
+    "record": 21,
+    "case": "saw__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: dewalt dwe575k circular saw but not PT-SAW-DEW-DWE575K-FINE. answer only with sku.",
+    "response_sha256": "80f1a6e2a619ff7a4bc4289c6ffe9119a4e1d751aed0fed585f044150bedd2b4",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request. Which one do you need?",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies ambiguity; two eligible refs, no excluded identifier.",
+    "trace_job": "continuation",
+    "trace_event": 16
+  },
+  {
+    "record": 22,
+    "case": "saw__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: dewalt dwe575k circular saw but not PT-SAW-DEW-DWE575K-FINE. answer only with sku.",
+    "response_sha256": "29ab63aa2d4e9f63f6af79d3fc0ee2cb5ed7be1f0b7bf85fceaaea0fb2c095e3",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request (excluding the fine‑cut set). Which one do you need?",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies ambiguity; eligible refs. Mentions excluded fine-cut variant descriptively, without identifier; distinguish from measured identifier-quote criterion.",
+    "trace_job": "continuation",
+    "trace_event": 18
+  },
+  {
+    "record": 23,
+    "case": "saw__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: dewalt dwe575k circular saw site bundle with case and rip fence. answer only with sku.",
+    "response_sha256": "917d484773cb997f150573465c80327bb17de00aa26a2cebdf1b86f0bba63151",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 20
+  },
+  {
+    "record": 24,
+    "case": "saw__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: dewalt dwe575k circular saw site bundle with case and rip fence. answer only with sku.",
+    "response_sha256": "bcbe6bb9291e140b2eb13f23d4fd35a1a0031a55579a5146a6179a7f1f849318",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 22
+  },
+  {
+    "record": 25,
+    "case": "saw__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE. answer only with sku.",
+    "response_sha256": "917d484773cb997f150573465c80327bb17de00aa26a2cebdf1b86f0bba63151",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 24
+  },
+  {
+    "record": 26,
+    "case": "saw__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE. answer only with sku.",
+    "response_sha256": "917d484773cb997f150573465c80327bb17de00aa26a2cebdf1b86f0bba63151",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 26
+  },
+  {
+    "record": 27,
+    "case": "saw__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE waterproof. answer only with sku.",
+    "response_sha256": "a10f745e32958804ebcf1aeadc21db755141533cbfd47b164584465c89f29fc9",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKUs"
+      ],
+      "message": "Multiple products match the description. Which variant do you need? Candidates: PT-SAW-DEW-DWE575K-BASE, PT-SAW-DEW-DWE575K-FINE, PT-SAW-DEW-DWE575K-SITE (and other Makita models).",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Drops waterproof entirely; adds other Makita models in prose. Refs stay DeWalt, so foreign-ref metric alone misses the broadened candidate mention.",
+    "trace_job": "continuation",
+    "trace_event": 28
+  },
+  {
+    "record": 28,
+    "case": "saw__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE waterproof. answer only with sku.",
+    "response_sha256": "bcbe6bb9291e140b2eb13f23d4fd35a1a0031a55579a5146a6179a7f1f849318",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "continuation",
+    "trace_event": 30
+  },
+  {
+    "record": 29,
+    "case": "saw__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE cordless. answer only with sku.",
+    "response_sha256": "917d484773cb997f150573465c80327bb17de00aa26a2cebdf1b86f0bba63151",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently ignores cordless request; source power_source is corded.",
+    "trace_job": "continuation",
+    "trace_event": 35
+  },
+  {
+    "record": 30,
+    "case": "saw__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-SAW-DEW-DWE575K-SITE cordless. answer only with sku.",
+    "response_sha256": "705db4096d110106b4db0da20fdc239888c5b0d264d4535d9de25c59434abdcb",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple products match the description. Please clarify which product you need (e.g., DeWalt PT‑SAW‑DEW‑DWE575K‑BASE, PT‑SAW‑DEW‑DWE575K‑FINE, PT‑SAW‑DEW‑DWE575K‑SITE, or Makita PT‑SAW‑MAK‑DHS680‑3AH, PT‑SAW‑MAK‑DHS680‑5AH, PT‑SAW‑MAK‑DHS680‑BLADE, PT‑SAW‑MAK‑DHS680‑BODY, PT‑SAW‑MAK‑DHS680‑RAIL).",
+      "grounding_refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Changes to clarification but never mentions cordless versus corded conflict. Lists corded DeWalt and other Makita candidates together without explaining identity/property tradeoff. No semantic repair established.",
+    "trace_job": "continuation",
+    "trace_event": 37
+  },
+  {
+    "record": 31,
+    "case": "hedge__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: stihl hsa 50 hedge trimmer but not PT-HDG-STI-HSA50-AK20. answer only with sku.",
+    "response_sha256": "cbfc9e1fa323250fa3e9cbd6ba36e6240ce142bdf4f23ddf2ed050dd0c46d779",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "identified matching SKUs"
+      ],
+      "message": "Multiple Stihl HSA 50 hedge trimmer SKUs match the request (excluding PT-HDG-STI-HSA50-AK20). Please specify which one you need.",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies but quotes excluded AK20 SKU in negative clause; refs correctly exclude it.",
+    "trace_job": "continuation",
+    "trace_event": 39
+  },
+  {
+    "record": 32,
+    "case": "hedge__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: stihl hsa 50 hedge trimmer but not PT-HDG-STI-HSA50-AK20. answer only with sku.",
+    "response_sha256": "9797ff9420ade26577bf1ce3686048444531b31a9ac5591aa42a473c57a81ecd",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for Stihl HSA 50 hedge trimmer, excluded AK20 SKU"
+      ],
+      "message": "Multiple matching SKUs found: PT-HDG-STI-HSA50-AK10 (set AK 10) and PT-HDG-STI-HSA50-BODY (body only). Which one do you need?",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Supported AK10/body alternatives; eligible refs and no excluded identifier.",
+    "trace_job": "continuation",
+    "trace_event": 41
+  },
+  {
+    "record": 33,
+    "case": "hedge__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: stihl hsa 50 hedge trimmer set with AK 10 battery and charger. answer only with sku.",
+    "response_sha256": "98e1d8e7338da2c4505aaef337ca5aaa0e011134c60b79b7035469ec3eb7c9d7",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 43
+  },
+  {
+    "record": 34,
+    "case": "hedge__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: stihl hsa 50 hedge trimmer set with AK 10 battery and charger. answer only with sku.",
+    "response_sha256": "b0dde6aa5acf8ba277cb364b589c34b7bafca4c16343c1524c615724baa826a7",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog query"
+      ],
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 45
+  },
+  {
+    "record": 35,
+    "case": "hedge__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10. answer only with sku.",
+    "response_sha256": "0f9043c7ddda062425dbd2276e43dea6f7b0a89005d60fa8a4c86ff5c3697a2e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 50
+  },
+  {
+    "record": 36,
+    "case": "hedge__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10. answer only with sku.",
+    "response_sha256": "f93807e15e31eebdcb4bffef503da4f0c9a51a22b6d6b27ffb92eb324ae51b14",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU in catalog"
+      ],
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 52
+  },
+  {
+    "record": 37,
+    "case": "hedge__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10 waterproof. answer only with sku.",
+    "response_sha256": "0f9043c7ddda062425dbd2276e43dea6f7b0a89005d60fa8a4c86ff5c3697a2e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "continuation",
+    "trace_event": 54
+  },
+  {
+    "record": 38,
+    "case": "hedge__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10 waterproof. answer only with sku.",
+    "response_sha256": "f5b74fd72ff0f086b500819977557fe913e217bdab62eb6999761ca3117ffa4d",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU PT-HDG-STI-HSA50-AK10 and evaluated waterproof qualifier"
+      ],
+      "message": "Multiple products match the request. Which one did you mean? Candidates: PT-HDG-STI-HSA50-AK10, PT-HDG-STI-HSA50-AK20, PT-HDG-STI-HSA50-BODY, PT-HDG-BOS-UHC18-50-25, PT-HDG-BOS-UHC18-50-40, PT-HDG-BOS-UHC18-50-BODY, PT-MOW-STI-RMA235-AK20",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Drops waterproof entirely; expands candidates to Bosch trimmers and a Stihl mower, violating requested exact identity.",
+    "trace_job": "continuation",
+    "trace_event": 56
+  },
+  {
+    "record": 39,
+    "case": "hedge__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10 set with AK 20 battery and charger. answer only with sku.",
+    "response_sha256": "3da453d065eb5b14357721b42de88e1a9d63b7605b7d0e6f73d40b1b7ed03654",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple products match your description. Do you want the SKU for the AK 10 set (PT-HDG-STI-HSA50-AK10) or the AK 20 set (PT-HDG-STI-HSA50-AK20)?",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Retains AK10 versus AK20 choice and asks which SKU. Parent already did this.",
+    "trace_job": "continuation",
+    "trace_event": 58
+  },
+  {
+    "record": 40,
+    "case": "hedge__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-HDG-STI-HSA50-AK10 set with AK 20 battery and charger. answer only with sku.",
+    "response_sha256": "a1fd9f40d41b1c97ec7693e103dad65a29b70a6c82fd5fc452bc9ddf03226bd0",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for matching products"
+      ],
+      "message": "The request matches multiple products: PT-HDG-STI-HSA50-AK10 (kit includes AK 10 battery and charger) and PT-HDG-STI-HSA50-AK20 (kit includes AK 20 battery and charger). Which SKU do you need?",
+      "grounding_refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Retains AK10 versus requested AK20 kit choice with supported fields.",
+    "trace_job": "continuation",
+    "trace_event": 60
+  },
+  {
+    "record": 41,
+    "case": "compressor__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: einhell te-ac 270/50 compressor but not PT-CMP-EIN-TEAC270-50KIT. answer only with sku.",
+    "response_sha256": "2da17c00a2fae6d9edf47a49a8c5b7dfda176ef23b30535c544ca3cc8352332e",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up catalogue for Einhell TE-AC 270/50 compressor"
+      ],
+      "message": "Multiple matching compressors found. Which one do you need? Options: PT-CMP-EIN-TEAC270-50 (Einhell TE-AC 270/50 compressor) or PT-CMP-EIN-TEAC270-50S (Einhell TE-AC 270/50 Silent Plus compressor).",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies base and Silent Plus options with supported names and eligible refs.",
+    "trace_job": "continuation",
+    "trace_event": 62
+  },
+  {
+    "record": 42,
+    "case": "compressor__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: einhell te-ac 270/50 compressor but not PT-CMP-EIN-TEAC270-50KIT. answer only with sku.",
+    "response_sha256": "858f2a5128cb033c91535030744f40d9a58f0ce5b8ddf2088852de0eab475306",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple matching Einhell TE‑AC 270/50 compressors found; please specify which variant you need (e.g., standard or Silent Plus).",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clarifies base/Silent Plus variants; standard is a loose descriptor, not evidence of an extra source attribute. Eligible refs, excluded identifier absent.",
+    "trace_job": "continuation",
+    "trace_event": 64
+  },
+  {
+    "record": 43,
+    "case": "compressor__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: einhell te-ac 270/50 compressor with noise level 88 dB. answer only with sku.",
+    "response_sha256": "6c77abc8f9f701eace5424eccd0d39691bc4948ec351d3ea7c168268b8a8aaeb",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product"
+      ],
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 66
+  },
+  {
+    "record": 44,
+    "case": "compressor__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: einhell te-ac 270/50 compressor with noise level 88 dB. answer only with sku.",
+    "response_sha256": "9aa12aa7912abb20261e9f3b5c415f3135fdbc9484716c2c11a49795b89e1510",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up catalogue for Einhell TE-AC 270/50 compressor with 88 dB"
+      ],
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 68
+  },
+  {
+    "record": 45,
+    "case": "compressor__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S. answer only with sku.",
+    "response_sha256": "7ad8d9922ab1a322b674c2626245d5d7c3b594c3d5c7c9686dc3e28b40214e37",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 70
+  },
+  {
+    "record": 46,
+    "case": "compressor__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S. answer only with sku.",
+    "response_sha256": "7ad8d9922ab1a322b674c2626245d5d7c3b594c3d5c7c9686dc3e28b40214e37",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 72
+  },
+  {
+    "record": 47,
+    "case": "compressor__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S waterproof. answer only with sku.",
+    "response_sha256": "3751e080a87498592b5de932d7f755d8b5cd1b49a706e15f248a98cd6f5dc8b8",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "Multiple products match the request, but none are marked as waterproof. The SKU PT-CMP-EIN-TEAC270-50S exists (see /proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json) but does not have a waterproof property. Please confirm if this is the product you need or provide additional details.",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Preserves missing waterproof metadata and named SKU; does not assert physical nonwaterproofness. Clarification asks confirmation/details. Generic multiple-products wording remains imprecise.",
+    "trace_job": "continuation",
+    "trace_event": 77
+  },
+  {
+    "record": 48,
+    "case": "compressor__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S waterproof. answer only with sku.",
+    "response_sha256": "7ad8d9922ab1a322b674c2626245d5d7c3b594c3d5c7c9686dc3e28b40214e37",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "continuation",
+    "trace_event": 79
+  },
+  {
+    "record": 49,
+    "case": "compressor__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S with noise level 96 dB. answer only with sku.",
+    "response_sha256": "7c3878b4162f65a9ee954f8fc504824913058af1129c145a4277e13847cdf26c",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for product matching code PT-CMP-EIN-TEAC270-50S and noise level 96 dB"
+      ],
+      "message": "Multiple products match the criteria. PT-CMP-EIN-TEAC270-50 (noise 96 dB) and PT-CMP-EIN-TEAC270-50KIT (noise 96 dB) are candidates, while PT-CMP-EIN-TEAC270-50S has noise 88 dB. Which SKU do you need?",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "States exact S variant has 88dB while base/KIT have requested 96dB; cites all three and asks which SKU.",
+    "trace_job": "continuation",
+    "trace_event": 81
+  },
+  {
+    "record": 50,
+    "case": "compressor__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-CMP-EIN-TEAC270-50S with noise level 96 dB. answer only with sku.",
+    "response_sha256": "ef494b2acb0c785e80ad0766af2a626dfcd7d5cde0aca90a859d623a150fb538",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Queried catalogue for PT-CMP-EIN-TEAC270-50S with noise level 96 dB"
+      ],
+      "message": "Multiple products match the noise level 96 dB, but PT-CMP-EIN-TEAC270-50S has noise 88 dB. Which SKU do you want – PT-CMP-EIN-TEAC270-50 or PT-CMP-EIN-TEAC270-50KIT?",
+      "grounding_refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Preserves 88dB versus96dB conflict but omits requested S grounding ref and offers only base/KIT choices. Citation regression and narrower clarification than parent; values themselves supported.",
+    "trace_job": "continuation",
+    "trace_event": 83
+  },
+  {
+    "record": 51,
+    "case": "glasses__exclude_ambiguous",
+    "arm": "treatment",
+    "kind": "clarify",
+    "instruction": "need code: 3m securefit 400 safety glasses but not PT-SAFE-3M-SF400-AMBER. answer only with sku.",
+    "response_sha256": "5b50a00b618c3901210c222c48541d62c78c9014d7f14c05c41078b583979216",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple matching 3M SecureFit 400 safety glasses found. Please specify which variant you need (e.g., clear, 10-pack, gasket, reader, smoke). Candidates (excluding PT-SAFE-3M-SF400-AMBER): PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Quotes excluded AMBER SKU with ASCII hyphens in negative clause. Alternatives and refs are eligible.",
+    "trace_job": "continuation",
+    "trace_event": 85
+  },
+  {
+    "record": 52,
+    "case": "glasses__exclude_ambiguous",
+    "arm": "parent",
+    "kind": "clarify",
+    "instruction": "need code: 3m securefit 400 safety glasses but not PT-SAFE-3M-SF400-AMBER. answer only with sku.",
+    "response_sha256": "d7c5c95eae5a1fc1cd9b83e88a866bad242944c6a68dd4cd228b3e0423e34e7f",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "catalog lookup"
+      ],
+      "message": "Multiple 3M SecureFit 400 safety glasses match your request (excluding PT‑SAFE‑3M‑SF400‑AMBER). Which SKU do you need? Options: PT‑SAFE‑3M‑SF400‑CLEAR, PT‑SAFE‑3M‑SF400‑10PK, PT‑SAFE‑3M‑SF400‑GASKET, PT‑SAFE‑3M‑SF400‑READER, PT‑SAFE‑3M‑SF400‑SMOKE.",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Quotes excluded AMBER SKU using U+2011 hyphens in negative clause. ASCII-only scorer misses this. Alternatives and refs are eligible.",
+    "trace_job": "continuation",
+    "trace_event": 87
+  },
+  {
+    "record": 53,
+    "case": "glasses__unique_property",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: 3m securefit 400 safety glasses clear 10-pack. answer only with sku.",
+    "response_sha256": "ad3927dc013ea7d00f477eb539639df650c04bb11f65c2eef11d38d03788b656",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Provided SKU"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 89
+  },
+  {
+    "record": 54,
+    "case": "glasses__unique_property",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: 3m securefit 400 safety glasses clear 10-pack. answer only with sku.",
+    "response_sha256": "c7a207010440f9c53cafc5d9148970b75a9647fbe93b5e7543347a55d603dfc1",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up product SKU"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 91
+  },
+  {
+    "record": 55,
+    "case": "glasses__exact_sku",
+    "arm": "treatment",
+    "kind": "unique",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK. answer only with sku.",
+    "response_sha256": "cf6f0b80aad279ed6e605641924c31163593ad2b4fb978b1c896ddc5f2d98b1f",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU in catalog"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 93
+  },
+  {
+    "record": 56,
+    "case": "glasses__exact_sku",
+    "arm": "parent",
+    "kind": "unique",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK. answer only with sku.",
+    "response_sha256": "db1a63fa7b93701ca98242ab7161a5bdb8644ab28d217a6da4553969c1b48557",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Provided requested SKU"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Exact expected SKU and source reference; no excess clarification. This positive control passes in both arms.",
+    "trace_job": "continuation",
+    "trace_event": 95
+  },
+  {
+    "record": 57,
+    "case": "glasses__unknown_property",
+    "arm": "parent",
+    "kind": "unknown",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK waterproof. answer only with sku.",
+    "response_sha256": "1a4c1470b4171c21943201a4f7b5785128a5cb25775f13b53c3aed0b09d6b325",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive named-SKU answer silently accepts unsupported waterproof qualifier; source has no waterproof evidence. No affirmative descriptive waterproof sentence is fabricated, but the requested requirement remains unresolved.",
+    "trace_job": "continuation",
+    "trace_event": 97
+  },
+  {
+    "record": 58,
+    "case": "glasses__unknown_property",
+    "arm": "treatment",
+    "kind": "unknown",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK waterproof. answer only with sku.",
+    "response_sha256": "f390538e8e4cb420355faa570294fdb05a49af338b7900a9fa626e1df1dff630",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "asked for clarification"
+      ],
+      "message": "Multiple products match the description. Which one did you mean? Candidates: PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-AMBER, PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE, PT-SAFE-UVEX-PHEOS-CLEAR, PT-SAFE-UVEX-PHEOS-HELMET",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Drops waterproof entirely and expands exact-SKU request to family and Uvex alternatives.",
+    "trace_job": "continuation",
+    "trace_event": 99
+  },
+  {
+    "record": 59,
+    "case": "glasses__conflicting_sku",
+    "arm": "treatment",
+    "kind": "conflict",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK single pair in a one-piece pack. answer only with sku.",
+    "response_sha256": "c477f2b1063b490e7ef12ed45399b806d245b77a38c2abc6131f10209270b134",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "looked up SKU"
+      ],
+      "message": "The SKU PT‑SAFE‑3M‑SF400‑10PK is a 10‑pack (pack_count 10), not a single‑pair, one‑piece pack. Did you mean the 10‑pack or a single‑pair product such as PT‑SAFE‑3M‑SF400‑CLEAR? Please clarify which product you need.",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION"
+    },
+    "note": "Clear semantic improvement: explains named SKU pack_count10 versus single pair, asks which requirement governs, and cites exact and alternative records.",
+    "trace_job": "continuation",
+    "trace_event": 101
+  },
+  {
+    "record": 60,
+    "case": "glasses__conflicting_sku",
+    "arm": "parent",
+    "kind": "conflict",
+    "instruction": "need code: PT-SAFE-3M-SF400-10PK single pair in a one-piece pack. answer only with sku.",
+    "response_sha256": "ad3927dc013ea7d00f477eb539639df650c04bb11f65c2eef11d38d03788b656",
+    "full_action": {
+      "tool": "report_completion",
+      "completed_steps_laconic": [
+        "Provided SKU"
+      ],
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "grounding_refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK"
+    },
+    "note": "Definitive 10-pack SKU answer ignores requested single-pair/one-piece pack.",
+    "trace_job": "continuation",
+    "trace_event": 103
+  }
+]

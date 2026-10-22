@@ -1,0 +1,3207 @@
+{
+  "scope": "Human review of all60 final messages and catalogue refs, not hidden reasoning. Missing qualifier/incorrect eligibility is separate from invented name/property. No aggregate semantic accuracy claim.",
+  "arms": {
+    "parent": {
+      "reviewed_final_messages": 30,
+      "existing_catalog_refs_only": true,
+      "unknown_attribute_mentioned_as_unverified": 0,
+      "unknown_attribute_dropped": 6,
+      "conflict_attribute_retained": 4,
+      "conflict_attribute_dropped": 2,
+      "cross_family_candidate_offer_answers": 0,
+      "unexplained_identity_scope_widening_answers": 0,
+      "new_explicitly_invented_technical_values_found": 0
+    },
+    "treatment": {
+      "reviewed_final_messages": 30,
+      "existing_catalog_refs_only": true,
+      "unknown_attribute_mentioned_as_unverified": 2,
+      "unknown_attribute_dropped": 4,
+      "conflict_attribute_retained": 5,
+      "conflict_attribute_dropped": 1,
+      "cross_family_candidate_offer_answers": 5,
+      "unexplained_identity_scope_widening_answers": 6,
+      "new_explicitly_invented_technical_values_found": 0
+    }
+  },
+  "rows": [
+    {
+      "ordinal": 1,
+      "case": "drill__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 7,
+      "message": "Multiple matching SKUs found. Please specify which you need: PT-DRL-BOS-GSR55-2AH (drill kit 2x2.0Ah) or PT-DRL-BOS-GSR55-BODY (drill body only).",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate."
+      ]
+    },
+    {
+      "ordinal": 2,
+      "case": "drill__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 9,
+      "message": "Multiple matching products found. Which one do you want? Options: PT-DRL-BOS-GSR55-2AH (Bosch Professional GSR 18V-55 drill kit 2x2.0Ah), PT-DRL-BOS-GSR55-BODY (Bosch Professional GSR 18V-55 cordless drill body).",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate."
+      ]
+    },
+    {
+      "ordinal": 3,
+      "case": "drill__unique_property",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 11,
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "battery_platform": "Bosch Professional 18V",
+          "brushless": true,
+          "chuck_mm": 13,
+          "kit": "2x2.0Ah batteries and charger",
+          "max_torque_nm": 55,
+          "power_source": "cordless",
+          "speed_count": 2,
+          "voltage_v": 18
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 4,
+      "case": "drill__unique_property",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 22,
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "battery_platform": "Bosch Professional 18V",
+          "brushless": true,
+          "chuck_mm": 13,
+          "kit": "2x2.0Ah batteries and charger",
+          "max_torque_nm": 55,
+          "power_source": "cordless",
+          "speed_count": 2,
+          "voltage_v": 18
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 5,
+      "case": "drill__exact_sku",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 24,
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "battery_platform": "Bosch Professional 18V",
+          "brushless": true,
+          "chuck_mm": 13,
+          "kit": "2x2.0Ah batteries and charger",
+          "max_torque_nm": 55,
+          "power_source": "cordless",
+          "speed_count": 2,
+          "voltage_v": 18
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 6,
+      "case": "drill__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 26,
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "battery_platform": "Bosch Professional 18V",
+          "brushless": true,
+          "chuck_mm": 13,
+          "kit": "2x2.0Ah batteries and charger",
+          "max_torque_nm": 55,
+          "power_source": "cordless",
+          "speed_count": 2,
+          "voltage_v": 18
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 7,
+      "case": "drill__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 28,
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-DRL-BOS-GSR55-2AH, PT-DRL-BOS-GSR55-5AH, PT-DRL-BOS-GSR55-BODY",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Generic which-SKU clarification omits waterproof; raw CLAR label is not semantic acceptance."
+      ]
+    },
+    {
+      "ordinal": 8,
+      "case": "drill__unknown_property",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 30,
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 9,
+      "case": "drill__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 32,
+      "message": "Multiple products match the description. PT-DRL-BOS-GSR55-2AH is a kit with 2x2.0Ah batteries, while PT-DRL-BOS-GSR55-5AH is a kit with 2x5.0Ah batteries. Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 10,
+      "case": "drill__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 34,
+      "message": "Multiple matching products found. PT-DRL-BOS-GSR55-2AH (kit with 2x2.0Ah batteries) and PT-DRL-BOS-GSR55-5AH (kit with 2x5.0Ah batteries). Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x2.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x2.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json": {
+          "name": "Bosch Professional GSR 18V-55 drill kit 2x5.0Ah",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "2x5.0Ah batteries and charger",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        },
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json": {
+          "name": "Bosch Professional GSR 18V-55 cordless drill body",
+          "properties": {
+            "battery_platform": "Bosch Professional 18V",
+            "brushless": true,
+            "chuck_mm": 13,
+            "kit": "body only",
+            "max_torque_nm": 55,
+            "power_source": "cordless",
+            "speed_count": 2,
+            "voltage_v": 18
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 11,
+      "case": "sander__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 36,
+      "message": "Multiple matching SKUs found for \"Einhell TE-RS 18 Li sander\" excluding PT-SND-EIN-TERS18-40. Please specify which SKU you need.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Acknowledges excluded SKU in text; violates frozen strict no-quote-Y text criterion, but does not offer it as eligible. Unicode hyphens normalized for mention detection."
+      ]
+    },
+    {
+      "ordinal": 12,
+      "case": "sander__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 38,
+      "message": "PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-BODY",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Returns two SKUs with OK; this is an enumeration/disposition error, not a false unique selection."
+      ]
+    },
+    {
+      "ordinal": 13,
+      "case": "sander__unique_property",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 40,
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "dust_extraction": "dust box",
+          "kit": "2.5Ah battery and charger",
+          "pad_mm": 125,
+          "power_source": "cordless",
+          "sander_type": "random orbit",
+          "speed_control": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 14,
+      "case": "sander__unique_property",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 42,
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "dust_extraction": "dust box",
+          "kit": "2.5Ah battery and charger",
+          "pad_mm": 125,
+          "power_source": "cordless",
+          "sander_type": "random orbit",
+          "speed_control": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 15,
+      "case": "sander__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 47,
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "dust_extraction": "dust box",
+          "kit": "2.5Ah battery and charger",
+          "pad_mm": 125,
+          "power_source": "cordless",
+          "sander_type": "random orbit",
+          "speed_control": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 16,
+      "case": "sander__exact_sku",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 49,
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "dust_extraction": "dust box",
+          "kit": "2.5Ah battery and charger",
+          "pad_mm": 125,
+          "power_source": "cordless",
+          "sander_type": "random orbit",
+          "speed_control": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 17,
+      "case": "sander__unknown_property",
+      "arm": "parent",
+      "trace_job": "j7edfd43910a7441995278f36018c1440",
+      "trace_seq": 51,
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 18,
+      "case": "sander__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 7,
+      "message": "Multiple products match the SKU pattern but none specify a waterproof feature. Please clarify which product you need (e.g., PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-40, PT-SND-EIN-TERS18-BODY, etc.).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 1,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": true,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Mentions waterproof evidentiary gap; qualifier retention improves. This alone is not full task resolution.",
+        "Exact Einhell SKU request widens to other Einhell kits and Bosch GEX125 refs; Bosch CASE ref duplicated. Names are real, eligibility for the named identity is unsupported."
+      ]
+    },
+    {
+      "ordinal": 19,
+      "case": "sander__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 12,
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-SND-EIN-TERS18-25 (starter kit, 2.5Ah battery) and PT-SND-EIN-TERS18-40 (workshop kit, 4.0Ah battery and 50 discs).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 20,
+      "case": "sander__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 14,
+      "message": "Which product do you need? The description matches PT\u2011SND\u2011EIN\u2011TERS18\u201140 (kit with 4.0Ah battery and 50 discs), but you referenced PT\u2011SND\u2011EIN\u2011TERS18\u201125 (starter kit with 2.5Ah battery). Please confirm the correct SKU.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json": {
+          "name": "Einhell TE-RS 18 Li sander starter kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "2.5Ah battery and charger",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json": {
+          "name": "Einhell TE-RS 18 Li sander workshop kit",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "4.0Ah battery and 50 discs",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json": {
+          "name": "Einhell TE-RS 18 Li random orbit sander body",
+          "properties": {
+            "dust_extraction": "dust box",
+            "kit": "body only",
+            "pad_mm": 125,
+            "power_source": "cordless",
+            "sander_type": "random orbit",
+            "speed_control": true
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 21,
+      "case": "saw__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 16,
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request. Which one do you need?",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate."
+      ]
+    },
+    {
+      "ordinal": 22,
+      "case": "saw__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 18,
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request (excluding the fine\u2011cut set). Which one do you need?",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Acknowledges excluded fine-cut set by descriptive name, no excluded SKU/ref."
+      ]
+    },
+    {
+      "ordinal": 23,
+      "case": "saw__unique_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 20,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "battery_platform": "corded",
+          "blade_mm": 190,
+          "cut_depth_90_mm": 67,
+          "kit": "case and rip fence",
+          "power_source": "corded",
+          "rail_compatible": false,
+          "voltage_v": 230
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 24,
+      "case": "saw__unique_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 22,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "battery_platform": "corded",
+          "blade_mm": 190,
+          "cut_depth_90_mm": 67,
+          "kit": "case and rip fence",
+          "power_source": "corded",
+          "rail_compatible": false,
+          "voltage_v": 230
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 25,
+      "case": "saw__exact_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 24,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "battery_platform": "corded",
+          "blade_mm": 190,
+          "cut_depth_90_mm": 67,
+          "kit": "case and rip fence",
+          "power_source": "corded",
+          "rail_compatible": false,
+          "voltage_v": 230
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 26,
+      "case": "saw__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 26,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "battery_platform": "corded",
+          "blade_mm": 190,
+          "cut_depth_90_mm": 67,
+          "kit": "case and rip fence",
+          "power_source": "corded",
+          "rail_compatible": false,
+          "voltage_v": 230
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 27,
+      "case": "saw__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 28,
+      "message": "Multiple products match the description. Which variant do you need? Candidates: PT-SAW-DEW-DWE575K-BASE, PT-SAW-DEW-DWE575K-FINE, PT-SAW-DEW-DWE575K-SITE (and other Makita models).",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": true,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Generic which-SKU clarification omits waterproof; raw CLAR label is not semantic acceptance.",
+        "Offers other Makita models in text while original identity is exact DeWalt SKU; no waterproof qualification."
+      ]
+    },
+    {
+      "ordinal": 28,
+      "case": "saw__unknown_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 30,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 29,
+      "case": "saw__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 35,
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Named DeWalt record explicitly has power_source=corded while request requires cordless.",
+        "Definitive named-SKU OK ignores explicit contradiction."
+      ]
+    },
+    {
+      "ordinal": 30,
+      "case": "saw__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 37,
+      "message": "Multiple products match the description. Please clarify which product you need (e.g., DeWalt PT\u2011SAW\u2011DEW\u2011DWE575K\u2011BASE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011FINE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011SITE, or Makita PT\u2011SAW\u2011MAK\u2011DHS680\u20113AH, PT\u2011SAW\u2011MAK\u2011DHS680\u20115AH, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BLADE, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BODY, PT\u2011SAW\u2011MAK\u2011DHS680\u2011RAIL).",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json": {
+          "name": "DeWalt DWE575K compact circular saw",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json": {
+          "name": "DeWalt DWE575K circular saw fine-cut set",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and fine blade",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        },
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json": {
+          "name": "DeWalt DWE575K circular saw site bundle",
+          "properties": {
+            "battery_platform": "corded",
+            "blade_mm": 190,
+            "cut_depth_90_mm": 67,
+            "kit": "case and rip fence",
+            "power_source": "corded",
+            "rail_compatible": false,
+            "voltage_v": 230
+          }
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": true,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Named DeWalt record explicitly has power_source=corded while request requires cordless.",
+        "CLAR offers corded DeWalt plus cordless Makita without retaining cordless or explaining identity-versus-power conflict. Names are authentic; claim that candidates match the full description is unsupported/contradicted."
+      ]
+    },
+    {
+      "ordinal": 31,
+      "case": "hedge__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 39,
+      "message": "Multiple Stihl HSA 50 hedge trimmer SKUs match the request (excluding PT-HDG-STI-HSA50-AK20). Please specify which one you need.",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Acknowledges excluded SKU in text; violates frozen strict no-quote-Y text criterion, but does not offer it as eligible. Unicode hyphens normalized for mention detection."
+      ]
+    },
+    {
+      "ordinal": 32,
+      "case": "hedge__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 41,
+      "message": "Multiple matching SKUs found: PT-HDG-STI-HSA50-AK10 (set AK 10) and PT-HDG-STI-HSA50-BODY (body only). Which one do you need?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate."
+      ]
+    },
+    {
+      "ordinal": 33,
+      "case": "hedge__unique_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 43,
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "battery_platform": "Stihl AK",
+          "blade_cm": 50,
+          "kit": "AK 10 battery and charger",
+          "power_source": "cordless",
+          "tooth_spacing_mm": 30,
+          "weight_kg": "2.9"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 34,
+      "case": "hedge__unique_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 45,
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "battery_platform": "Stihl AK",
+          "blade_cm": 50,
+          "kit": "AK 10 battery and charger",
+          "power_source": "cordless",
+          "tooth_spacing_mm": 30,
+          "weight_kg": "2.9"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 35,
+      "case": "hedge__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 50,
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "battery_platform": "Stihl AK",
+          "blade_cm": 50,
+          "kit": "AK 10 battery and charger",
+          "power_source": "cordless",
+          "tooth_spacing_mm": 30,
+          "weight_kg": "2.9"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 36,
+      "case": "hedge__exact_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 52,
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "battery_platform": "Stihl AK",
+          "blade_cm": 50,
+          "kit": "AK 10 battery and charger",
+          "power_source": "cordless",
+          "tooth_spacing_mm": 30,
+          "weight_kg": "2.9"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 37,
+      "case": "hedge__unknown_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 54,
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 38,
+      "case": "hedge__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 56,
+      "message": "Multiple products match the request. Which one did you mean? Candidates: PT-HDG-STI-HSA50-AK10, PT-HDG-STI-HSA50-AK20, PT-HDG-STI-HSA50-BODY, PT-HDG-BOS-UHC18-50-25, PT-HDG-BOS-UHC18-50-40, PT-HDG-BOS-UHC18-50-BODY, PT-MOW-STI-RMA235-AK20",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": true,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Generic which-SKU clarification omits waterproof; raw CLAR label is not semantic acceptance.",
+        "Exact Stihl hedge-trimmer SKU request widens to Bosch hedge trimmers and a Stihl lawn mower. These are real records, not matches for the fixed identity."
+      ]
+    },
+    {
+      "ordinal": 39,
+      "case": "hedge__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 58,
+      "message": "Multiple products match your description. Do you want the SKU for the AK 10 set (PT-HDG-STI-HSA50-AK10) or the AK 20 set (PT-HDG-STI-HSA50-AK20)?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 40,
+      "case": "hedge__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 60,
+      "message": "The request matches multiple products: PT-HDG-STI-HSA50-AK10 (kit includes AK 10 battery and charger) and PT-HDG-STI-HSA50-AK20 (kit includes AK 20 battery and charger). Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 10 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json": {
+          "name": "Stihl HSA 50 hedge trimmer set AK 20",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "AK 20 battery and charger",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        },
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json": {
+          "name": "Stihl HSA 50 hedge trimmer body",
+          "properties": {
+            "battery_platform": "Stihl AK",
+            "blade_cm": 50,
+            "kit": "body only",
+            "power_source": "cordless",
+            "tooth_spacing_mm": 30,
+            "weight_kg": "2.9"
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 41,
+      "case": "compressor__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 62,
+      "message": "Multiple matching compressors found. Which one do you need? Options: PT-CMP-EIN-TEAC270-50 (Einhell TE-AC 270/50 compressor) or PT-CMP-EIN-TEAC270-50S (Einhell TE-AC 270/50 Silent Plus compressor).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate."
+      ]
+    },
+    {
+      "ordinal": 42,
+      "case": "compressor__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 64,
+      "message": "Multiple matching Einhell TE\u2011AC 270/50 compressors found; please specify which variant you need (e.g., standard or Silent\u202fPlus).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Standard is shorthand for the base listing, not an evidenced additional technical property; Silent Plus is the actual other name."
+      ]
+    },
+    {
+      "ordinal": 43,
+      "case": "compressor__unique_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 66,
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "intake_l_min": 270,
+          "max_bar": 10,
+          "noise_db": 88,
+          "oil_free": false,
+          "tank_l": 50,
+          "wheels": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 44,
+      "case": "compressor__unique_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 68,
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "intake_l_min": 270,
+          "max_bar": 10,
+          "noise_db": 88,
+          "oil_free": false,
+          "tank_l": 50,
+          "wheels": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 45,
+      "case": "compressor__exact_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 70,
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "intake_l_min": 270,
+          "max_bar": 10,
+          "noise_db": 88,
+          "oil_free": false,
+          "tank_l": 50,
+          "wheels": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 46,
+      "case": "compressor__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 72,
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "intake_l_min": 270,
+          "max_bar": 10,
+          "noise_db": 88,
+          "oil_free": false,
+          "tank_l": 50,
+          "wheels": true
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 47,
+      "case": "compressor__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 77,
+      "message": "Multiple products match the request, but none are marked as waterproof. The SKU PT-CMP-EIN-TEAC270-50S exists (see /proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json) but does not have a waterproof property. Please confirm if this is the product you need or provide additional details.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Mentions waterproof evidentiary gap; qualifier retention improves. This alone is not full task resolution.",
+        "Keeps named SKU and evidentiary caveat. Does not have a waterproof property is ambiguous wording: only field absence is known, not a physical non-waterproof rating. Count as wording risk, not a proven negative-attribute fabrication."
+      ]
+    },
+    {
+      "ordinal": 48,
+      "case": "compressor__unknown_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 79,
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 49,
+      "case": "compressor__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 81,
+      "message": "Multiple products match the criteria. PT-CMP-EIN-TEAC270-50 (noise 96\u202fdB) and PT-CMP-EIN-TEAC270-50KIT (noise 96\u202fdB) are candidates, while PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 50,
+      "case": "compressor__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 83,
+      "message": "Multiple products match the noise level 96\u202fdB, but PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you want \u2013 PT-CMP-EIN-TEAC270-50 or PT-CMP-EIN-TEAC270-50KIT?",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json": {
+          "name": "Einhell TE-AC 270/50 compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json": {
+          "name": "Einhell TE-AC 270/50 workshop compressor kit",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 96,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        },
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json": {
+          "name": "Einhell TE-AC 270/50 Silent Plus compressor",
+          "properties": {
+            "intake_l_min": 270,
+            "max_bar": 10,
+            "noise_db": 88,
+            "oil_free": false,
+            "tank_l": 50,
+            "wheels": true
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 51,
+      "case": "glasses__exclude_ambiguous",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 85,
+      "message": "Multiple matching 3M SecureFit 400 safety glasses found. Please specify which variant you need (e.g., clear, 10-pack, gasket, reader, smoke). Candidates (excluding PT-SAFE-3M-SF400-AMBER): PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Acknowledges excluded SKU in text; violates frozen strict no-quote-Y text criterion, but does not offer it as eligible. Unicode hyphens normalized for mention detection."
+      ]
+    },
+    {
+      "ordinal": 52,
+      "case": "glasses__exclude_ambiguous",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 87,
+      "message": "Multiple 3M SecureFit 400 safety glasses match your request (excluding PT\u2011SAFE\u20113M\u2011SF400\u2011AMBER). Which SKU do you need? Options: PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR, PT\u2011SAFE\u20113M\u2011SF400\u201110PK, PT\u2011SAFE\u20113M\u2011SF400\u2011GASKET, PT\u2011SAFE\u20113M\u2011SF400\u2011READER, PT\u2011SAFE\u20113M\u2011SF400\u2011SMOKE.",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "All eligible remaining family candidates are cited; excluded SKU is not offered/cited as a candidate.",
+        "Acknowledges excluded SKU in text; violates frozen strict no-quote-Y text criterion, but does not offer it as eligible. Unicode hyphens normalized for mention detection."
+      ]
+    },
+    {
+      "ordinal": 53,
+      "case": "glasses__unique_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 89,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "adjustable": false,
+          "anti_fog": true,
+          "certification": "EN166",
+          "lens_style": "clear bulk pack",
+          "pack_count": 10,
+          "protection_type": "eye",
+          "size": "universal"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 54,
+      "case": "glasses__unique_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 91,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "adjustable": false,
+          "anti_fog": true,
+          "certification": "EN166",
+          "lens_style": "clear bulk pack",
+          "pack_count": 10,
+          "protection_type": "eye",
+          "size": "universal"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 55,
+      "case": "glasses__exact_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 93,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "adjustable": false,
+          "anti_fog": true,
+          "certification": "EN166",
+          "lens_style": "clear bulk pack",
+          "pack_count": 10,
+          "protection_type": "eye",
+          "size": "universal"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 56,
+      "case": "glasses__exact_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 95,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "adjustable": false,
+          "anti_fog": true,
+          "certification": "EN166",
+          "lens_style": "clear bulk pack",
+          "pack_count": 10,
+          "protection_type": "eye",
+          "size": "universal"
+        }
+      },
+      "requested_qualifier_retained": null,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Correct exact SKU/ref. For property control, supplied field uniquely identifies this family variant; no unnecessary question."
+      ]
+    },
+    {
+      "ordinal": 57,
+      "case": "glasses__unknown_property",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 97,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Exact SKU identity is real, but naked OK silently drops the requested waterproof attribute. Absence of the field is not a physical negative."
+      ]
+    },
+    {
+      "ordinal": 58,
+      "case": "glasses__unknown_property",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 99,
+      "message": "Multiple products match the description. Which one did you mean? Candidates: PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-AMBER, PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE, PT-SAFE-UVEX-PHEOS-CLEAR, PT-SAFE-UVEX-PHEOS-HELMET",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          },
+          "waterproof_field": "absent"
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          },
+          "waterproof_field": "absent"
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": true,
+      "identity_scope_widened_without_explanation": true,
+      "notes": [
+        "Generic which-SKU clarification omits waterproof; raw CLAR label is not semantic acceptance.",
+        "Exact 3M 10-pack SKU request widens to other 3M variants and Uvex products while dropping waterproof."
+      ]
+    },
+    {
+      "ordinal": 59,
+      "case": "glasses__conflicting_sku",
+      "arm": "treatment",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 101,
+      "message": "The SKU PT\u2011SAFE\u20113M\u2011SF400\u201110PK is a 10\u2011pack (pack_count\u202f10), not a single\u2011pair, one\u2011piece pack. Did you mean the 10\u2011pack or a single\u2011pair product such as PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR? Please clarify which product you need.",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json"
+      ],
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        }
+      },
+      "requested_qualifier_retained": true,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Question contrasts actual conflicting capacity/kit/noise/pack values; both identity and property alternatives remain visible. Technical descriptions are supported."
+      ]
+    },
+    {
+      "ordinal": 60,
+      "case": "glasses__conflicting_sku",
+      "arm": "parent",
+      "trace_job": "j9b8c85def8734dff9af15bcfd48ad4cc",
+      "trace_seq": 103,
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "outcome": "OUTCOME_OK",
+      "all_catalog_refs_exist": true,
+      "duplicate_catalog_refs": 0,
+      "literal_name_and_technical_property_claims_supported": true,
+      "source_fields": {
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json": {
+          "name": "3M SecureFit 400 clear safety glasses 10-pack",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear bulk pack",
+            "pack_count": 10,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json": {
+          "name": "3M SecureFit 400 amber safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "amber",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json": {
+          "name": "3M SecureFit 400 clear safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json": {
+          "name": "3M SecureFit 400 clear safety glasses with foam gasket",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear gasket",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal with foam gasket"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json": {
+          "name": "3M SecureFit 400 clear reader safety glasses +1.5",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "clear reader",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "reader +1.5"
+          }
+        },
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json": {
+          "name": "3M SecureFit 400 smoke safety glasses",
+          "properties": {
+            "adjustable": false,
+            "anti_fog": true,
+            "certification": "EN166",
+            "lens_style": "smoke",
+            "pack_count": 1,
+            "protection_type": "eye",
+            "size": "universal"
+          }
+        }
+      },
+      "requested_qualifier_retained": false,
+      "cross_family_candidate_offer": false,
+      "identity_scope_widened_without_explanation": false,
+      "notes": [
+        "Returns 10-pack SKU despite requested single-pair one-piece pack; properties.pack_count=10 explicitly conflicts with 1."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "planned_questions": 30,
+  "families": 6,
+  "unique_generations": 60,
+  "logical_calls": 60,
+  "physical_attempts": 68,
+  "settled": 60,
+  "zero_cost_429_rejections": 8,
+  "reported_cost_usd": "0.016397218",
+  "prompt_tokens": 330674,
+  "completion_tokens": 24484,
+  "total_tokens": 355158,
+  "cost_complete": true,
+  "all_generation_ids_match_billing": true,
+  "all_finish_reasons": {
+    "stop": 60
+  },
+  "arms": {
+    "parent": {
+      "generations": 30,
+      "cost_usd": "0.007225291",
+      "prompt_tokens": 140483,
+      "completion_tokens": 11926
+    },
+    "treatment": {
+      "generations": 30,
+      "cost_usd": "0.009171927",
+      "prompt_tokens": 190191,
+      "completion_tokens": 12558
+    }
+  },
+  "all_physical_requests_exactly_equal_frozen_plan": true
+}

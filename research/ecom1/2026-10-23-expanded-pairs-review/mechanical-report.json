@@ -1,0 +1,2162 @@
+{
+  "arms": {
+    "parent": {
+      "planned": 30,
+      "groups": {
+        "clarify": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_NONE_CLARIFICATION": 5,
+            "OUTCOME_OK": 1
+          }
+        },
+        "unique": {
+          "planned": 12,
+          "statuses": {
+            "final": 12
+          },
+          "outcomes": {
+            "OUTCOME_OK": 12
+          }
+        },
+        "unknown": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_OK": 6
+          }
+        },
+        "conflict": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_NONE_CLARIFICATION": 4,
+            "OUTCOME_OK": 2
+          }
+        }
+      },
+      "excess_clarification": 0,
+      "false_definitive_ok": 9,
+      "false_single_sku_ok": 8,
+      "multiple_skus_ok": 1,
+      "correct_unique_sku_ref": 12,
+      "wrong_unique_identity": 0,
+      "excluded_quoted_or_cited": 0,
+      "out_of_family_ref_answers": 0
+    },
+    "treatment": {
+      "planned": 30,
+      "groups": {
+        "clarify": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_NONE_CLARIFICATION": 6
+          }
+        },
+        "unique": {
+          "planned": 12,
+          "statuses": {
+            "final": 12
+          },
+          "outcomes": {
+            "OUTCOME_OK": 12
+          }
+        },
+        "unknown": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_NONE_CLARIFICATION": 6
+          }
+        },
+        "conflict": {
+          "planned": 6,
+          "statuses": {
+            "final": 6
+          },
+          "outcomes": {
+            "OUTCOME_NONE_CLARIFICATION": 6
+          }
+        }
+      },
+      "excess_clarification": 0,
+      "false_definitive_ok": 0,
+      "false_single_sku_ok": 0,
+      "multiple_skus_ok": 0,
+      "correct_unique_sku_ref": 12,
+      "wrong_unique_identity": 0,
+      "excluded_quoted_or_cited": 3,
+      "out_of_family_ref_answers": 4
+    }
+  },
+  "rows": [
+    {
+      "case": "drill__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Searched catalogue for Bosch Professional GSR 18V-55 drill, excluded PT-DRL-BOS-GSR55-5AH"
+        ],
+        "message": "Multiple matching SKUs found. Please specify which you need: PT-DRL-BOS-GSR55-2AH (drill kit 2x2.0Ah) or PT-DRL-BOS-GSR55-BODY (drill body only).",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching SKUs found. Please specify which you need: PT-DRL-BOS-GSR55-2AH (drill kit 2x2.0Ah) or PT-DRL-BOS-GSR55-BODY (drill body only).",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for Bosch Professional GSR 18V-55 drill variants excluding PT-DRL-BOS-GSR55-5AH"
+        ],
+        "message": "Multiple matching products found. Which one do you want? Options: PT-DRL-BOS-GSR55-2AH (Bosch Professional GSR 18V-55 drill kit 2x2.0Ah), PT-DRL-BOS-GSR55-BODY (Bosch Professional GSR 18V-55 cordless drill body).",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching products found. Which one do you want? Options: PT-DRL-BOS-GSR55-2AH (Bosch Professional GSR 18V-55 drill kit 2x2.0Ah), PT-DRL-BOS-GSR55-BODY (Bosch Professional GSR 18V-55 cordless drill body).",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "found SKU"
+        ],
+        "message": "PT-DRL-BOS-GSR55-2AH",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-DRL-BOS-GSR55-2AH",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-DRL-BOS-GSR55-2AH",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Returned requested SKU"
+        ],
+        "message": "PT-DRL-BOS-GSR55-2AH",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-DRL-BOS-GSR55-2AH, PT-DRL-BOS-GSR55-5AH, PT-DRL-BOS-GSR55-BODY",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-DRL-BOS-GSR55-2AH, PT-DRL-BOS-GSR55-5AH, PT-DRL-BOS-GSR55-BODY",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU PT-DRL-BOS-GSR55-2AH"
+        ],
+        "message": "PT-DRL-BOS-GSR55-2AH",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-DRL-BOS-GSR55-2AH",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for requested SKU"
+        ],
+        "message": "Multiple products match the description. PT-DRL-BOS-GSR55-2AH is a kit with 2x2.0Ah batteries, while PT-DRL-BOS-GSR55-5AH is a kit with 2x5.0Ah batteries. Which SKU do you need?",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. PT-DRL-BOS-GSR55-2AH is a kit with 2x2.0Ah batteries, while PT-DRL-BOS-GSR55-5AH is a kit with 2x5.0Ah batteries. Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "drill__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Identified ambiguous request"
+        ],
+        "message": "Multiple matching products found. PT-DRL-BOS-GSR55-2AH (kit with 2x2.0Ah batteries) and PT-DRL-BOS-GSR55-5AH (kit with 2x5.0Ah batteries). Which SKU do you need?",
+        "grounding_refs": [
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+          "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching products found. PT-DRL-BOS-GSR55-2AH (kit with 2x2.0Ah batteries) and PT-DRL-BOS-GSR55-5AH (kit with 2x5.0Ah batteries). Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple matching SKUs found for \"Einhell TE-RS 18 Li sander\" excluding PT-SND-EIN-TERS18-40. Please specify which SKU you need.",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching SKUs found for \"Einhell TE-RS 18 Li sander\" excluding PT-SND-EIN-TERS18-40. Please specify which SKU you need.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": true,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for Einhell TE\u2011RS\u202f18\u202fLi sander, excluded PT\u2011SND\u2011EIN\u2011TERS18\u201140"
+        ],
+        "message": "PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-BODY",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-BODY",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": true,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product"
+        ],
+        "message": "PT-SND-EIN-TERS18-25",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SND-EIN-TERS18-25",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SND-EIN-TERS18-25",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SND-EIN-TERS18-25",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SND-EIN-TERS18-25",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SND-EIN-TERS18-25",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalogue lookup"
+        ],
+        "message": "Multiple products match the SKU pattern but none specify a waterproof feature. Please clarify which product you need (e.g., PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-40, PT-SND-EIN-TERS18-BODY, etc.).",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json",
+          "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+          "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+          "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+          "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the SKU pattern but none specify a waterproof feature. Please clarify which product you need (e.g., PT-SND-EIN-TERS18-25, PT-SND-EIN-TERS18-40, PT-SND-EIN-TERS18-BODY, etc.).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+      ],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-SND-EIN-TERS18-25 (starter kit, 2.5Ah battery) and PT-SND-EIN-TERS18-40 (workshop kit, 4.0Ah battery and 50 discs).",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. Which SKU do you need? Candidates: PT-SND-EIN-TERS18-25 (starter kit, 2.5Ah battery) and PT-SND-EIN-TERS18-40 (workshop kit, 4.0Ah battery and 50 discs).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "sander__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Which product do you need? The description matches PT\u2011SND\u2011EIN\u2011TERS18\u201140 (kit with 4.0Ah battery and 50 discs), but you referenced PT\u2011SND\u2011EIN\u2011TERS18\u201125 (starter kit with 2.5Ah battery). Please confirm the correct SKU.",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Which product do you need? The description matches PT\u2011SND\u2011EIN\u2011TERS18\u201140 (kit with 4.0Ah battery and 50 discs), but you referenced PT\u2011SND\u2011EIN\u2011TERS18\u201125 (starter kit with 2.5Ah battery). Please confirm the correct SKU.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple DeWalt DWE575K circular saw SKUs match your request. Which one do you need?",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request. Which one do you need?",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple DeWalt DWE575K circular saw SKUs match your request (excluding the fine\u2011cut set). Which one do you need?",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple DeWalt DWE575K circular saw SKUs match your request (excluding the fine\u2011cut set). Which one do you need?",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKUs"
+        ],
+        "message": "Multiple products match the description. Which variant do you need? Candidates: PT-SAW-DEW-DWE575K-BASE, PT-SAW-DEW-DWE575K-FINE, PT-SAW-DEW-DWE575K-SITE (and other Makita models).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. Which variant do you need? Candidates: PT-SAW-DEW-DWE575K-BASE, PT-SAW-DEW-DWE575K-FINE, PT-SAW-DEW-DWE575K-SITE (and other Makita models).",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SAW-DEW-DWE575K-SITE",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAW-DEW-DWE575K-SITE",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "saw__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple products match the description. Please clarify which product you need (e.g., DeWalt PT\u2011SAW\u2011DEW\u2011DWE575K\u2011BASE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011FINE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011SITE, or Makita PT\u2011SAW\u2011MAK\u2011DHS680\u20113AH, PT\u2011SAW\u2011MAK\u2011DHS680\u20115AH, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BLADE, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BODY, PT\u2011SAW\u2011MAK\u2011DHS680\u2011RAIL).",
+        "grounding_refs": [
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+          "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. Please clarify which product you need (e.g., DeWalt PT\u2011SAW\u2011DEW\u2011DWE575K\u2011BASE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011FINE, PT\u2011SAW\u2011DEW\u2011DWE575K\u2011SITE, or Makita PT\u2011SAW\u2011MAK\u2011DHS680\u20113AH, PT\u2011SAW\u2011MAK\u2011DHS680\u20115AH, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BLADE, PT\u2011SAW\u2011MAK\u2011DHS680\u2011BODY, PT\u2011SAW\u2011MAK\u2011DHS680\u2011RAIL).",
+      "refs": [
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+      ],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "identified matching SKUs"
+        ],
+        "message": "Multiple Stihl HSA 50 hedge trimmer SKUs match the request (excluding PT-HDG-STI-HSA50-AK20). Please specify which one you need.",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple Stihl HSA 50 hedge trimmer SKUs match the request (excluding PT-HDG-STI-HSA50-AK20). Please specify which one you need.",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": true,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for Stihl HSA 50 hedge trimmer, excluded AK20 SKU"
+        ],
+        "message": "Multiple matching SKUs found: PT-HDG-STI-HSA50-AK10 (set AK 10) and PT-HDG-STI-HSA50-BODY (body only). Which one do you need?",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching SKUs found: PT-HDG-STI-HSA50-AK10 (set AK 10) and PT-HDG-STI-HSA50-BODY (body only). Which one do you need?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-HDG-STI-HSA50-AK10",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog query"
+        ],
+        "message": "PT-HDG-STI-HSA50-AK10",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-HDG-STI-HSA50-AK10",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU in catalog"
+        ],
+        "message": "PT-HDG-STI-HSA50-AK10",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-HDG-STI-HSA50-AK10",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-HDG-STI-HSA50-AK10",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU PT-HDG-STI-HSA50-AK10 and evaluated waterproof qualifier"
+        ],
+        "message": "Multiple products match the request. Which one did you mean? Candidates: PT-HDG-STI-HSA50-AK10, PT-HDG-STI-HSA50-AK20, PT-HDG-STI-HSA50-BODY, PT-HDG-BOS-UHC18-50-25, PT-HDG-BOS-UHC18-50-40, PT-HDG-BOS-UHC18-50-BODY, PT-MOW-STI-RMA235-AK20",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json",
+          "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+          "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+          "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+          "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the request. Which one did you mean? Candidates: PT-HDG-STI-HSA50-AK10, PT-HDG-STI-HSA50-AK20, PT-HDG-STI-HSA50-BODY, PT-HDG-BOS-UHC18-50-25, PT-HDG-BOS-UHC18-50-40, PT-HDG-BOS-UHC18-50-BODY, PT-MOW-STI-RMA235-AK20",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+      ],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple products match your description. Do you want the SKU for the AK 10 set (PT-HDG-STI-HSA50-AK10) or the AK 20 set (PT-HDG-STI-HSA50-AK20)?",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match your description. Do you want the SKU for the AK 10 set (PT-HDG-STI-HSA50-AK10) or the AK 20 set (PT-HDG-STI-HSA50-AK20)?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "hedge__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for matching products"
+        ],
+        "message": "The request matches multiple products: PT-HDG-STI-HSA50-AK10 (kit includes AK 10 battery and charger) and PT-HDG-STI-HSA50-AK20 (kit includes AK 20 battery and charger). Which SKU do you need?",
+        "grounding_refs": [
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "The request matches multiple products: PT-HDG-STI-HSA50-AK10 (kit includes AK 10 battery and charger) and PT-HDG-STI-HSA50-AK20 (kit includes AK 20 battery and charger). Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up catalogue for Einhell TE-AC 270/50 compressor"
+        ],
+        "message": "Multiple matching compressors found. Which one do you need? Options: PT-CMP-EIN-TEAC270-50 (Einhell TE-AC 270/50 compressor) or PT-CMP-EIN-TEAC270-50S (Einhell TE-AC 270/50 Silent Plus compressor).",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching compressors found. Which one do you need? Options: PT-CMP-EIN-TEAC270-50 (Einhell TE-AC 270/50 compressor) or PT-CMP-EIN-TEAC270-50S (Einhell TE-AC 270/50 Silent Plus compressor).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple matching Einhell TE\u2011AC 270/50 compressors found; please specify which variant you need (e.g., standard or Silent\u202fPlus).",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching Einhell TE\u2011AC 270/50 compressors found; please specify which variant you need (e.g., standard or Silent\u202fPlus).",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product"
+        ],
+        "message": "PT-CMP-EIN-TEAC270-50S",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up catalogue for Einhell TE-AC 270/50 compressor with 88 dB"
+        ],
+        "message": "PT-CMP-EIN-TEAC270-50S",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-CMP-EIN-TEAC270-50S",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-CMP-EIN-TEAC270-50S",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "Multiple products match the request, but none are marked as waterproof. The SKU PT-CMP-EIN-TEAC270-50S exists (see /proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json) but does not have a waterproof property. Please confirm if this is the product you need or provide additional details.",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the request, but none are marked as waterproof. The SKU PT-CMP-EIN-TEAC270-50S exists (see /proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json) but does not have a waterproof property. Please confirm if this is the product you need or provide additional details.",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-CMP-EIN-TEAC270-50S",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-CMP-EIN-TEAC270-50S",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for product matching code PT-CMP-EIN-TEAC270-50S and noise level 96 dB"
+        ],
+        "message": "Multiple products match the criteria. PT-CMP-EIN-TEAC270-50 (noise 96\u202fdB) and PT-CMP-EIN-TEAC270-50KIT (noise 96\u202fdB) are candidates, while PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you need?",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json",
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the criteria. PT-CMP-EIN-TEAC270-50 (noise 96\u202fdB) and PT-CMP-EIN-TEAC270-50KIT (noise 96\u202fdB) are candidates, while PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you need?",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "compressor__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Queried catalogue for PT-CMP-EIN-TEAC270-50S with noise level 96\u202fdB"
+        ],
+        "message": "Multiple products match the noise level 96\u202fdB, but PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you want \u2013 PT-CMP-EIN-TEAC270-50 or PT-CMP-EIN-TEAC270-50KIT?",
+        "grounding_refs": [
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+          "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the noise level 96\u202fdB, but PT-CMP-EIN-TEAC270-50S has noise 88\u202fdB. Which SKU do you want \u2013 PT-CMP-EIN-TEAC270-50 or PT-CMP-EIN-TEAC270-50KIT?",
+      "refs": [
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__exclude_ambiguous",
+      "arm": "treatment",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple matching 3M SecureFit 400 safety glasses found. Please specify which variant you need (e.g., clear, 10-pack, gasket, reader, smoke). Candidates (excluding PT-SAFE-3M-SF400-AMBER): PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple matching 3M SecureFit 400 safety glasses found. Please specify which variant you need (e.g., clear, 10-pack, gasket, reader, smoke). Candidates (excluding PT-SAFE-3M-SF400-AMBER): PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": true,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__exclude_ambiguous",
+      "arm": "parent",
+      "kind": "clarify",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "catalog lookup"
+        ],
+        "message": "Multiple 3M SecureFit 400 safety glasses match your request (excluding PT\u2011SAFE\u20113M\u2011SF400\u2011AMBER). Which SKU do you need? Options: PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR, PT\u2011SAFE\u20113M\u2011SF400\u201110PK, PT\u2011SAFE\u20113M\u2011SF400\u2011GASKET, PT\u2011SAFE\u20113M\u2011SF400\u2011READER, PT\u2011SAFE\u20113M\u2011SF400\u2011SMOKE.",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple 3M SecureFit 400 safety glasses match your request (excluding PT\u2011SAFE\u20113M\u2011SF400\u2011AMBER). Which SKU do you need? Options: PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR, PT\u2011SAFE\u20113M\u2011SF400\u201110PK, PT\u2011SAFE\u20113M\u2011SF400\u2011GASKET, PT\u2011SAFE\u20113M\u2011SF400\u2011READER, PT\u2011SAFE\u20113M\u2011SF400\u2011SMOKE.",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__unique_property",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Provided SKU"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__unique_property",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up product SKU"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__exact_sku",
+      "arm": "treatment",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU in catalog"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__exact_sku",
+      "arm": "parent",
+      "kind": "unique",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Provided requested SKU"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": true,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__unknown_property",
+      "arm": "parent",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__unknown_property",
+      "arm": "treatment",
+      "kind": "unknown",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "asked for clarification"
+        ],
+        "message": "Multiple products match the description. Which one did you mean? Candidates: PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-AMBER, PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE, PT-SAFE-UVEX-PHEOS-CLEAR, PT-SAFE-UVEX-PHEOS-HELMET",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json",
+          "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+          "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "Multiple products match the description. Which one did you mean? Candidates: PT-SAFE-3M-SF400-10PK, PT-SAFE-3M-SF400-AMBER, PT-SAFE-3M-SF400-CLEAR, PT-SAFE-3M-SF400-GASKET, PT-SAFE-3M-SF400-READER, PT-SAFE-3M-SF400-SMOKE, PT-SAFE-UVEX-PHEOS-CLEAR, PT-SAFE-UVEX-PHEOS-HELMET",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      ],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__conflicting_sku",
+      "arm": "treatment",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "looked up SKU"
+        ],
+        "message": "The SKU PT\u2011SAFE\u20113M\u2011SF400\u201110PK is a 10\u2011pack (pack_count\u202f10), not a single\u2011pair, one\u2011piece pack. Did you mean the 10\u2011pack or a single\u2011pair product such as PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR? Please clarify which product you need.",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json"
+        ],
+        "outcome": "OUTCOME_NONE_CLARIFICATION"
+      },
+      "outcome": "OUTCOME_NONE_CLARIFICATION",
+      "message": "The SKU PT\u2011SAFE\u20113M\u2011SF400\u201110PK is a 10\u2011pack (pack_count\u202f10), not a single\u2011pair, one\u2011piece pack. Did you mean the 10\u2011pack or a single\u2011pair product such as PT\u2011SAFE\u20113M\u2011SF400\u2011CLEAR? Please clarify which product you need.",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": false,
+      "false_single_sku_ok": false,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    },
+    {
+      "case": "glasses__conflicting_sku",
+      "arm": "parent",
+      "kind": "conflict",
+      "status": "final",
+      "finish_reason": "stop",
+      "action": {
+        "tool": "report_completion",
+        "completed_steps_laconic": [
+          "Provided SKU"
+        ],
+        "message": "PT-SAFE-3M-SF400-10PK",
+        "grounding_refs": [
+          "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+        ],
+        "outcome": "OUTCOME_OK"
+      },
+      "outcome": "OUTCOME_OK",
+      "message": "PT-SAFE-3M-SF400-10PK",
+      "refs": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      ],
+      "excess_clarification": false,
+      "false_definitive_ok": true,
+      "false_single_sku_ok": true,
+      "multiple_skus_ok": false,
+      "correct_unique_sku_ref": false,
+      "wrong_unique_identity": false,
+      "excluded_quoted_or_cited": false,
+      "out_of_family_catalog_refs": [],
+      "missing_eligible_refs": []
+    }
+  ],
+  "warning": "No semantic success aggregate. Read manual description audit; CLAR does not establish truthful descriptions or retained qualifiers."
+}
