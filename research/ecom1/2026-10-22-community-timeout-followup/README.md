@@ -1,0 +1,11 @@
+# Fresh community failures against our existing guards
+
+At21:13UTC record d3200r2 remains0.9012601; all three own full100s remainqueued, with no cancellations or new full100. One-time inventory third slot was consumed. Next regular refresh about21:33UTC. Authoritative snapshot is monitor.json; local agent/BASELINE.md already matches.
+
+Shaduf d3723r1 completed100 at20:53:33UTC, score0.7804706, five failed executions,344 model calls,$0.060748165 reported with four unknown-cost calls (incomplete accounting). It is not a new record. SDK0.3.6 and generated task inputs differ from our pending experiments; no causal aggregate comparison is made.
+
+Four failures (t036,t056,t080,t089) contain actual inference TimeoutError strings with outcome/cost unconfirmed. t059 instead issued Exec /bin/grep -rl inventory_specialist /proc/staff; trace7170/7171 records precise runtime-tool-not-found404. Exact summaries/events are preserved in observations.json. We inspected all five failure summaries and the full missing-executable request/error, not all100 complete traces for this community run. Our two earlier100-task runs were already fully audited in the record-integration archive.
+
+verify.py applies these actual exception messages to the immutable d5204r1 readable guard functions. Missing Exec maps to narrow lookup recovery, whereas malformed404/path404/500 do not. All four timeout strings permit exactly three identical inference attempts; simulated permanent failure raises afterthree. Native Monty1.2.0 checks both mechanisms at10sec/1000 suspensions. No ECOM mutation is repeated. These tests establish reachability/guard coverage only: they do not show that a provider retry succeeds, unknown costs disappear, the later task completes or these changes cause a score improvement. No guard changes are needed from this evidence. Preserve narrow Exec404 and bounded inference retry in future integration; keep Delete404 separate.
+
+Reproduce with Python3.14.3 and pydantic-monty1.2.0: UV_CACHE_DIR=/tmp/ecom1-uv-cache uv run --python 3.14 --no-project --offline --with pydantic-monty==1.2.0 python verify.py. Exact dependency is ../2026-10-22-inventory-integration/readable.py, SHA aef93a8c2b25feeb097e70a063d5ffff6c15f52622a3e4e058859901b0a921e1, Gitcedfcd64, Brain archive d5211r1. No new live evaluation or source modification in this followup.

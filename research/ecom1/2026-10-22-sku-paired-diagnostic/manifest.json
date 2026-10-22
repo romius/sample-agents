@@ -1,0 +1,20 @@
+{
+  "purpose": "16-call paired next-action diagnostic; not a task-solving agent, full100, score or promotion candidate",
+  "candidate_sha256": "b2243fac0096044b1350f55f2955b26ac444094b6c765a399a462c55ddc8b3dd",
+  "packed_bytes": 18592,
+  "packed_sha256": "7901ca19bdd8ec9204199a870738836e8625e2a940f582a0e165e2e989341ddc",
+  "readable_sha256": "0d5d10221dd51c2d08fd520d1e9c780c8e83fcb896686d78b7c6960772f2c269",
+  "fixtures_sha256": "14a83867320e78183134af77809d30e69751afa141bfff7edb5f3d4169800b6a",
+  "model": "openai/gpt-oss-120b",
+  "provider": "deepinfra/bf16 pinned by SDK0.3.7",
+  "trials": 1,
+  "queue": "short",
+  "logical_model_calls": 16,
+  "repeats": 2,
+  "limitations": [
+    "Next action only: no subsequent model-requested tools executed.",
+    "Two repeats are not independent tasks or a full outcome estimate.",
+    "SDK may automatically retry eligible 429s; no custom retry.",
+    "Grade of carrier trial is irrelevant and must never be used for a record."
+  ]
+}

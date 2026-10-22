@@ -1,0 +1,19 @@
+{
+  "verified_baseline": "d3200r2",
+  "source_parent": "d5204r1 (pending, not a record)",
+  "hypothesis": "Original-request sibling evidence helps SKU resolution without choosing a product or rewriting outcomes.",
+  "changed_existing_functions": [
+    "world_tool"
+  ],
+  "new_functions": [
+    "sku_lookup_description",
+    "bounded_lookup_evidence"
+  ],
+  "bytes": 60802,
+  "headroom": 4734,
+  "source_sha256": "b2243fac0096044b1350f55f2955b26ac444094b6c765a399a462c55ddc8b3dd",
+  "readable_sha256": "e46d7d860a1b4c6dc1f7a876a2ee56ecde2df8bffdac041bc8562e71572e503e",
+  "prepack_sha256": "3dd849c7bf531d42fff6157967af293220d12e40d4f2a231a85509a509b9a9b0",
+  "status": "Not submitted; validation results are stored in separate JSON files",
+  "limits": "No measured LLM outcome improvement. Source parent has independent ungraded changes. Scope rejects unsupported syntax and known action verbs; not a complete semantic intent classifier or authorization boundary."
+}

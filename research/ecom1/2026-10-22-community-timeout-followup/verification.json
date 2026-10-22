@@ -1,0 +1,77 @@
+{
+  "status": "passed",
+  "observed_missing_exec_action": {
+    "tool": "exec",
+    "path": "/bin/grep",
+    "args": [
+      "-rl",
+      "inventory_specialist",
+      "/proc/staff"
+    ],
+    "stdin": ""
+  },
+  "guard_response": {
+    "lookup_error": {
+      "status": 404,
+      "code": "not_found",
+      "detail": {
+        "code": "not_found",
+        "message": "runtime tool not found: not found"
+      }
+    },
+    "unavailable_tool": "/bin/grep",
+    "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+  },
+  "inference_cases": [
+    {
+      "task": "t036",
+      "permanent": false,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t036",
+      "permanent": true,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t056",
+      "permanent": false,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t056",
+      "permanent": true,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t080",
+      "permanent": false,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t080",
+      "permanent": true,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t089",
+      "permanent": false,
+      "attempts": 3,
+      "identical_inference_requests": true
+    },
+    {
+      "task": "t089",
+      "permanent": true,
+      "attempts": 3,
+      "identical_inference_requests": true
+    }
+  ],
+  "native": true,
+  "limitations": "Concrete observed errors accepted by existing queued guards. Inference replay is simulated; no claim provider will succeed on retry, missing costs recovered, later task completes, or code caused any score difference."
+}

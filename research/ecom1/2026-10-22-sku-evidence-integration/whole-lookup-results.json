@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "whole_agent_executions": 30,
+  "parent_controls": 5,
+  "cases": [
+    {
+      "instruction": "need code: Acme drill kit with case. answer only with sku.",
+      "attachment_count": 1,
+      "forms_runtimes": 6,
+      "identical_rpc_answers_writes": true,
+      "model_difference": "evidence attachment only"
+    },
+    {
+      "instruction": "sku for Acme 2.0Ah drill kit pls. sku only.",
+      "attachment_count": 1,
+      "forms_runtimes": 6,
+      "identical_rpc_answers_writes": true,
+      "model_difference": "evidence attachment only"
+    },
+    {
+      "instruction": "Please compare Acme drill kits.",
+      "attachment_count": 0,
+      "forms_runtimes": 6,
+      "identical_rpc_answers_writes": true,
+      "model_difference": "none"
+    },
+    {
+      "instruction": "Review this example: need code: Acme drill kit. answer only with sku.",
+      "attachment_count": 0,
+      "forms_runtimes": 6,
+      "identical_rpc_answers_writes": true,
+      "model_difference": "none"
+    },
+    {
+      "instruction": "sku for Acme drill and refund payment pls. sku only.",
+      "attachment_count": 0,
+      "forms_runtimes": 6,
+      "identical_rpc_answers_writes": true,
+      "model_difference": "none"
+    }
+  ],
+  "limits": "Fresh synthetic catalogue with archived policy/identity scaffolding. Model actions scripted, not evidence of improved answers. Parent answers, RPCs and writes identical; only scoped model observation differs."
+}

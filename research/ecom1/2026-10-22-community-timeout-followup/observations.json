@@ -1,0 +1,205 @@
+{
+  "summary": {
+    "source": {
+      "document": "d3723",
+      "revision": 1,
+      "sha256": "e6875f2f53b3efed24aac59e3c62818fd09b7bd84286ec02dad62925ca47a680",
+      "sdk_version": "0.3.6"
+    },
+    "state": "completed",
+    "completed_trials": 100,
+    "failed_trials": 5,
+    "run_score": 0.7804706,
+    "model_calls": 344,
+    "reported_cost_usd": "0.060748165",
+    "cost_complete": false,
+    "unknown_cost_calls": 4,
+    "finished_at": "2026-10-22T20:53:33.588087+00:00"
+  },
+  "failures": [
+    {
+      "trial_id": "vm2-M6yD4Uay1B4oV46oCUUnP64VMCf",
+      "state": "failed",
+      "trace_scope": "trial-36",
+      "grade": {
+        "score": 0,
+        "available": true,
+        "detail": "['no answer provided']",
+        "error": null
+      },
+      "started_at": "2026-10-22T20:07:25.430995+00:00",
+      "usage": {
+        "model_calls": 12,
+        "model_cost_usd": 0.004344933,
+        "reported_cost_usd": "0.004344933",
+        "unknown_cost_calls": 1,
+        "pending_calls": 0,
+        "cost_complete": false,
+        "prompt_tokens": 65769,
+        "completion_tokens": 11244,
+        "total_tokens": 77013
+      },
+      "task_id": "t036",
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 1707, in <module>\n    print(\"Forced report failed\",str(exc))\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "output_bytes": 607,
+      "ecom_calls": 134,
+      "finished_at": "2026-10-22T20:13:07.431192+00:00",
+      "trace": {
+        "scope": "trial-36",
+        "blob": "51f691d7ba2d26946ffe12950137c9ef479ea40f0713a3dbd7c6a3b6b24e7920",
+        "bytes": 644996,
+        "sealed": true
+      }
+    },
+    {
+      "trial_id": "vm2-M6yD4Uay1B4oV46oCUUnP64VMD1",
+      "state": "failed",
+      "trace_scope": "trial-56",
+      "grade": {
+        "score": 0,
+        "available": true,
+        "detail": "['no answer provided']",
+        "error": null
+      },
+      "started_at": "2026-10-22T20:18:20.813205+00:00",
+      "usage": {
+        "model_calls": 9,
+        "model_cost_usd": 0.00230147,
+        "reported_cost_usd": "0.002301470",
+        "unknown_cost_calls": 1,
+        "pending_calls": 0,
+        "cost_complete": false,
+        "prompt_tokens": 46470,
+        "completion_tokens": 3424,
+        "total_tokens": 49894
+      },
+      "task_id": "t056",
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 1632, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=completion_budget,\n         reasoning={\"effort\":\"medium\"},temperature=0)\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "output_bytes": 574,
+      "ecom_calls": 12,
+      "finished_at": "2026-10-22T20:20:43.973725+00:00",
+      "trace": {
+        "scope": "trial-56",
+        "blob": "0aabb9456392a00aa0c410c2d7bd3186a69628946fb0eb17f48e7c209aca5eb5",
+        "bytes": 295490,
+        "sealed": true
+      }
+    },
+    {
+      "trial_id": "vm2-M6yD4Uay1B4oV46oCUUnP64VMD4",
+      "state": "failed",
+      "trace_scope": "trial-59",
+      "grade": {
+        "score": 0,
+        "available": true,
+        "detail": "['no answer provided']",
+        "error": null
+      },
+      "started_at": "2026-10-22T20:20:52.990441+00:00",
+      "usage": {
+        "model_calls": 4,
+        "model_cost_usd": 0.000746214,
+        "reported_cost_usd": "0.000746214",
+        "unknown_cost_calls": 0,
+        "pending_calls": 0,
+        "cost_complete": true,
+        "prompt_tokens": 16552,
+        "completion_tokens": 787,
+        "total_tokens": 17339
+      },
+      "task_id": "t059",
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 1682, in <module>\n    if result is None:\nRuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "output_bytes": 343,
+      "ecom_calls": 9,
+      "finished_at": "2026-10-22T20:21:19.809478+00:00",
+      "trace": {
+        "scope": "trial-59",
+        "blob": "1cfd284ddd2b4541bbf0000f91b8b5282e1631492d4ee6cde9146f84554e3755",
+        "bytes": 109605,
+        "sealed": true
+      }
+    },
+    {
+      "trial_id": "vm2-M6yD4Uay1B4oV46oCUUnP64VMDR",
+      "state": "failed",
+      "trace_scope": "trial-80",
+      "grade": {
+        "score": 0,
+        "available": true,
+        "detail": "['no answer provided']",
+        "error": null
+      },
+      "started_at": "2026-10-22T20:33:42.875727+00:00",
+      "usage": {
+        "model_calls": 7,
+        "model_cost_usd": 0.001471721,
+        "reported_cost_usd": "0.001471721",
+        "unknown_cost_calls": 1,
+        "pending_calls": 0,
+        "cost_complete": false,
+        "prompt_tokens": 25023,
+        "completion_tokens": 3211,
+        "total_tokens": 28234
+      },
+      "task_id": "t080",
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 1632, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=completion_budget,\n         reasoning={\"effort\":\"medium\"},temperature=0)\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "output_bytes": 372,
+      "ecom_calls": 131,
+      "finished_at": "2026-10-22T20:36:25.217334+00:00",
+      "trace": {
+        "scope": "trial-80",
+        "blob": "362c36fe2f68caa2c6c5400ef42df84b0a46cf6759b59e1471a4572f820fd02e",
+        "bytes": 457301,
+        "sealed": true
+      }
+    },
+    {
+      "trial_id": "vm2-M6yD4Uay1B4oV46oCUUnP64VMDa",
+      "state": "failed",
+      "trace_scope": "trial-89",
+      "grade": {
+        "score": 0,
+        "available": true,
+        "detail": "['no answer provided']",
+        "error": null
+      },
+      "started_at": "2026-10-22T20:45:31.798738+00:00",
+      "usage": {
+        "model_calls": 9,
+        "model_cost_usd": 0.002019058,
+        "reported_cost_usd": "0.002019058",
+        "unknown_cost_calls": 1,
+        "pending_calls": 0,
+        "cost_complete": false,
+        "prompt_tokens": 37514,
+        "completion_tokens": 3712,
+        "total_tokens": 41226
+      },
+      "task_id": "t089",
+      "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 1632, in <module>\n    response=bitgn.llm(MODEL,messages,max_completion_tokens=completion_budget,\n         reasoning={\"effort\":\"medium\"},temperature=0)\nRuntimeError: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "output_bytes": 487,
+      "ecom_calls": 12,
+      "finished_at": "2026-10-22T20:49:04.064167+00:00",
+      "trace": {
+        "scope": "trial-89",
+        "blob": "194c03b0430a678a85fd75a5b3c63b40a41a68d38c94d49085cd91c75060f6c3",
+        "bytes": 264573,
+        "sealed": true
+      }
+    }
+  ],
+  "exec_request": {
+    "seq": 7170,
+    "text": "{\"seq\":7170,\"time\":\"2026-10-22T20:21:19.750539+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6yD4Uay1B4oV46oCUUnP64VMD4\",\"arguments\":{\"path\":\"/bin/grep\",\"args\":[\"-rl\",\"inventory_specialist\",\"/proc/staff\"],\"stdin\":\"\"}}}\n",
+    "bytes": 242,
+    "next_offset": 242,
+    "more": false
+  },
+  "exec_error": {
+    "seq": 7171,
+    "text": "{\"seq\":7171,\"time\":\"2026-10-22T20:21:19.798840+00:00\",\"kind\":\"rpc_error\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6yD4Uay1B4oV46oCUUnP64VMD4\",\"arguments\":{\"path\":\"/bin/grep\",\"args\":[\"-rl\",\"inventory_specialist\",\"/proc/staff\"],\"stdin\":\"\"},\"error\":\"RuntimeError: BitGN HTTP 404: {\\\"code\\\":\\\"not_found\\\",\\\"message\\\":\\\"runtime tool not found: not found\\\"}\",\"outcome_unconfirmed\":true}}\n",
+    "bytes": 382,
+    "next_offset": 382,
+    "more": false
+  }
+}

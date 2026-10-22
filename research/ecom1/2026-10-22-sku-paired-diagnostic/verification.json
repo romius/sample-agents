@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "executions": [
+    {
+      "form": "readable.py",
+      "native": false,
+      "simulated_provider_error": false,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "readable.py",
+      "native": false,
+      "simulated_provider_error": true,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "readable.py",
+      "native": true,
+      "simulated_provider_error": false,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "readable.py",
+      "native": true,
+      "simulated_provider_error": true,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "agent.py",
+      "native": false,
+      "simulated_provider_error": false,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "agent.py",
+      "native": false,
+      "simulated_provider_error": true,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "agent.py",
+      "native": true,
+      "simulated_provider_error": false,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    },
+    {
+      "form": "agent.py",
+      "native": true,
+      "simulated_provider_error": true,
+      "logical_calls": 16,
+      "raw_result_records": 16
+    }
+  ],
+  "notes": "Only host_llm/usage/answer exposed. Exact ordered paired requests verified; no ECOM RPCs or real model calls. Native limits10sec/1000 suspensions."
+}

@@ -1,0 +1,764 @@
+{
+  "status": "passed",
+  "archived_requests_checked": 200,
+  "scope_matches": [
+    {
+      "run": "old",
+      "trial": "t001",
+      "description": "dewalt dcf887 xr kit with case"
+    },
+    {
+      "run": "new",
+      "trial": "t001",
+      "description": "ak20 stihl rma 235 mower kit"
+    },
+    {
+      "run": "old",
+      "trial": "t021",
+      "description": "2x2ah dewalt dcf887 kit"
+    },
+    {
+      "run": "new",
+      "trial": "t021",
+      "description": "makita dhs680 body saw without batteries, not the guide rail bundle"
+    },
+    {
+      "run": "old",
+      "trial": "t041",
+      "description": "Laminate-blade Makita DHS680 LXT body bundle"
+    },
+    {
+      "run": "new",
+      "trial": "t041",
+      "description": "makita dhs680 body level saw, no batteries"
+    },
+    {
+      "run": "old",
+      "trial": "t061",
+      "description": "2x4ah metabo w18 125 grinder kit"
+    },
+    {
+      "run": "new",
+      "trial": "t061",
+      "description": "workshop kit einhell 270/50 compressor"
+    }
+  ],
+  "positive_syntax_cases": 4,
+  "negative_scope_cases": 16,
+  "native_catalog_cases": 35,
+  "worlds": [
+    {
+      "trial": "t021",
+      "model_query": "dewalt dcf887 xr",
+      "request_description": "dewalt dcf887 xr kit with case",
+      "original_fields_unchanged": true,
+      "observation": {
+        "matches": [
+          {
+            "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+            "sku": "PT-IMP-DEW-DCF887-2AH",
+            "name": "DeWalt DCF887 XR impact driver kit 2x2.0Ah",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dcf887-xr",
+            "kind_id": "kind-impact-drivers",
+            "category_id": "cat-power-tools",
+            "price_cents": 23990,
+            "properties": {
+              "battery_platform": "DeWalt XR 18V",
+              "brushless": true,
+              "drive_size": "1/4 inch hex",
+              "impact_rate_ipm": 3800,
+              "kit": "2x2.0Ah batteries and case",
+              "max_torque_nm": 205,
+              "power_source": "cordless",
+              "voltage_v": 18
+            },
+            "score": 6
+          },
+          {
+            "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+            "sku": "PT-IMP-DEW-DCF887-5AH",
+            "name": "DeWalt DCF887 XR impact driver kit 2x5.0Ah",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dcf887-xr",
+            "kind_id": "kind-impact-drivers",
+            "category_id": "cat-power-tools",
+            "price_cents": 31990,
+            "properties": {
+              "battery_platform": "DeWalt XR 18V",
+              "brushless": true,
+              "drive_size": "1/4 inch hex",
+              "impact_rate_ipm": 3800,
+              "kit": "2x5.0Ah batteries and case",
+              "max_torque_nm": 205,
+              "power_source": "cordless",
+              "voltage_v": 18
+            },
+            "score": 6
+          },
+          {
+            "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-BODY.json",
+            "sku": "PT-IMP-DEW-DCF887-BODY",
+            "name": "DeWalt DCF887 XR impact driver body",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dcf887-xr",
+            "kind_id": "kind-impact-drivers",
+            "category_id": "cat-power-tools",
+            "price_cents": 13990,
+            "properties": {
+              "battery_platform": "DeWalt XR 18V",
+              "brushless": true,
+              "drive_size": "1/4 inch hex",
+              "impact_rate_ipm": 3800,
+              "kit": "body only",
+              "max_torque_nm": 205,
+              "power_source": "cordless",
+              "voltage_v": 18
+            },
+            "score": 6
+          },
+          {
+            "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+            "sku": "PT-SAW-DEW-DWE575K-BASE",
+            "name": "DeWalt DWE575K compact circular saw",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dwe575k",
+            "kind_id": "kind-circular-saws",
+            "category_id": "cat-workshop-site",
+            "price_cents": 17990,
+            "properties": {
+              "battery_platform": "corded",
+              "blade_mm": 190,
+              "cut_depth_90_mm": 67,
+              "kit": "case",
+              "power_source": "corded",
+              "rail_compatible": false,
+              "voltage_v": 230
+            },
+            "score": 2
+          },
+          {
+            "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+            "sku": "PT-SAW-DEW-DWE575K-FINE",
+            "name": "DeWalt DWE575K circular saw fine-cut set",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dwe575k",
+            "kind_id": "kind-circular-saws",
+            "category_id": "cat-workshop-site",
+            "price_cents": 19990,
+            "properties": {
+              "battery_platform": "corded",
+              "blade_mm": 190,
+              "cut_depth_90_mm": 67,
+              "kit": "case and fine blade",
+              "power_source": "corded",
+              "rail_compatible": false,
+              "voltage_v": 230
+            },
+            "score": 2
+          },
+          {
+            "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+            "sku": "PT-SAW-DEW-DWE575K-SITE",
+            "name": "DeWalt DWE575K circular saw site bundle",
+            "brand": "DeWalt",
+            "family_id": "fam-dewalt-dwe575k",
+            "kind_id": "kind-circular-saws",
+            "category_id": "cat-workshop-site",
+            "price_cents": 22990,
+            "properties": {
+              "battery_platform": "corded",
+              "blade_mm": 190,
+              "cut_depth_90_mm": 67,
+              "kit": "case and rip fence",
+              "power_source": "corded",
+              "rail_compatible": false,
+              "voltage_v": 230
+            },
+            "score": 2
+          }
+        ],
+        "indexed_products": 101,
+        "note": "Read or cite the exact paths. Several close matches may mean the request is ambiguous.",
+        "sku_lookup_evidence": {
+          "request_description": "dewalt dcf887 xr kit with case",
+          "query_source": "original SKU-only request",
+          "pool_complete": false,
+          "completeness_reason": "Parent index coverage is unverified.",
+          "eligible_indexed_siblings": 6,
+          "invalid_indexed_records": 0,
+          "returned_siblings": 6,
+          "evidence_truncated": false,
+          "siblings": [
+            {
+              "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+              "sku": "PT-IMP-DEW-DCF887-2AH",
+              "name": "DeWalt DCF887 XR impact driver kit 2x2.0Ah",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dcf887-xr",
+              "kind_id": "kind-impact-drivers",
+              "category_id": "cat-power-tools",
+              "price_cents": 23990,
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "brushless": true,
+                "drive_size": "1/4 inch hex",
+                "impact_rate_ipm": 3800,
+                "kit": "2x2.0Ah batteries and case",
+                "max_torque_nm": 205,
+                "power_source": "cordless",
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "dcf887",
+                "xr",
+                "kit",
+                "case"
+              ],
+              "lexical_query_tokens_absent": [
+                "with"
+              ]
+            },
+            {
+              "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+              "sku": "PT-IMP-DEW-DCF887-5AH",
+              "name": "DeWalt DCF887 XR impact driver kit 2x5.0Ah",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dcf887-xr",
+              "kind_id": "kind-impact-drivers",
+              "category_id": "cat-power-tools",
+              "price_cents": 31990,
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "brushless": true,
+                "drive_size": "1/4 inch hex",
+                "impact_rate_ipm": 3800,
+                "kit": "2x5.0Ah batteries and case",
+                "max_torque_nm": 205,
+                "power_source": "cordless",
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "dcf887",
+                "xr",
+                "kit",
+                "case"
+              ],
+              "lexical_query_tokens_absent": [
+                "with"
+              ]
+            },
+            {
+              "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-BODY.json",
+              "sku": "PT-IMP-DEW-DCF887-BODY",
+              "name": "DeWalt DCF887 XR impact driver body",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dcf887-xr",
+              "kind_id": "kind-impact-drivers",
+              "category_id": "cat-power-tools",
+              "price_cents": 13990,
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "brushless": true,
+                "drive_size": "1/4 inch hex",
+                "impact_rate_ipm": 3800,
+                "kit": "body only",
+                "max_torque_nm": 205,
+                "power_source": "cordless",
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "dcf887",
+                "xr"
+              ],
+              "lexical_query_tokens_absent": [
+                "kit",
+                "with",
+                "case"
+              ]
+            },
+            {
+              "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+              "sku": "PT-SAW-DEW-DWE575K-BASE",
+              "name": "DeWalt DWE575K compact circular saw",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dwe575k",
+              "kind_id": "kind-circular-saws",
+              "category_id": "cat-workshop-site",
+              "price_cents": 17990,
+              "properties": {
+                "battery_platform": "corded",
+                "blade_mm": 190,
+                "cut_depth_90_mm": 67,
+                "kit": "case",
+                "power_source": "corded",
+                "rail_compatible": false,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "case"
+              ],
+              "lexical_query_tokens_absent": [
+                "dcf887",
+                "xr",
+                "kit",
+                "with"
+              ]
+            },
+            {
+              "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+              "sku": "PT-SAW-DEW-DWE575K-FINE",
+              "name": "DeWalt DWE575K circular saw fine-cut set",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dwe575k",
+              "kind_id": "kind-circular-saws",
+              "category_id": "cat-workshop-site",
+              "price_cents": 19990,
+              "properties": {
+                "battery_platform": "corded",
+                "blade_mm": 190,
+                "cut_depth_90_mm": 67,
+                "kit": "case and fine blade",
+                "power_source": "corded",
+                "rail_compatible": false,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "case"
+              ],
+              "lexical_query_tokens_absent": [
+                "dcf887",
+                "xr",
+                "kit",
+                "with"
+              ]
+            },
+            {
+              "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+              "sku": "PT-SAW-DEW-DWE575K-SITE",
+              "name": "DeWalt DWE575K circular saw site bundle",
+              "brand": "DeWalt",
+              "family_id": "fam-dewalt-dwe575k",
+              "kind_id": "kind-circular-saws",
+              "category_id": "cat-workshop-site",
+              "price_cents": 22990,
+              "properties": {
+                "battery_platform": "corded",
+                "blade_mm": 190,
+                "cut_depth_90_mm": 67,
+                "kit": "case and rip fence",
+                "power_source": "corded",
+                "rail_compatible": false,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "dewalt",
+                "case"
+              ],
+              "lexical_query_tokens_absent": [
+                "dcf887",
+                "xr",
+                "kit",
+                "with"
+              ]
+            }
+          ],
+          "ranking_semantics": "Lexical retrieval only; not confidence or uniqueness.",
+          "decision_rule": "For SKU lookup compare original request constraints with actual sibling names and properties. A score lead does not prove one variant. Missing words do not prove negative properties; token coverage is diagnostic, not a constraint solver. Do not discard unresolved qualifiers. Verify exact SKU or unique compatible product; otherwise clarify and name candidate SKUs. Complete retrieval before claiming uniqueness. Existing security and runtime policies remain authoritative."
+        }
+      }
+    },
+    {
+      "trial": "t041",
+      "model_query": "metabo w18 125 grinder",
+      "request_description": "metabo w18 125 standard head grinder",
+      "original_fields_unchanged": true,
+      "observation": {
+        "matches": [
+          {
+            "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "name": "Metabo W 18 LTX 125 angle grinder kit 2x4.0Ah",
+            "brand": "Metabo",
+            "family_id": "fam-metabo-w-18-ltx-125",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 29990,
+            "properties": {
+              "battery_platform": "Metabo CAS 18V",
+              "disc_mm": 125,
+              "motor_power_w": 0,
+              "power_source": "cordless",
+              "restart_protection": true,
+              "speed_rpm": 8000,
+              "voltage_v": 18
+            },
+            "score": 8
+          },
+          {
+            "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+            "sku": "PT-GRD-MET-W18-125-BODY",
+            "name": "Metabo W 18 LTX 125 angle grinder body",
+            "brand": "Metabo",
+            "family_id": "fam-metabo-w-18-ltx-125",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 14990,
+            "properties": {
+              "battery_platform": "Metabo CAS 18V",
+              "disc_mm": 125,
+              "motor_power_w": 0,
+              "power_source": "cordless",
+              "restart_protection": true,
+              "speed_rpm": 8000,
+              "voltage_v": 18
+            },
+            "score": 8
+          },
+          {
+            "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+            "sku": "PT-GRD-MET-W18-125-FLAT",
+            "name": "Metabo W 18 LTX 125 flat-head grinder body",
+            "brand": "Metabo",
+            "family_id": "fam-metabo-w-18-ltx-125",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 19990,
+            "properties": {
+              "battery_platform": "Metabo CAS 18V",
+              "disc_mm": 125,
+              "motor_power_w": 0,
+              "power_source": "cordless",
+              "restart_protection": true,
+              "speed_rpm": 8000,
+              "voltage_v": 18
+            },
+            "score": 8
+          },
+          {
+            "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-125.json",
+            "sku": "PT-GRD-BOS-GWS1400-125",
+            "name": "Bosch Professional GWS 1400 angle grinder 125 mm",
+            "brand": "Bosch Professional",
+            "family_id": "fam-bosch-gws-1400",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 9990,
+            "properties": {
+              "battery_platform": "corded",
+              "disc_mm": 125,
+              "motor_power_w": 1400,
+              "power_source": "corded",
+              "restart_protection": true,
+              "speed_rpm": 11000,
+              "voltage_v": 230
+            },
+            "score": 4
+          },
+          {
+            "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+            "sku": "PT-GRD-BOS-GWS1400-CASE",
+            "name": "Bosch Professional GWS 1400 angle grinder case set",
+            "brand": "Bosch Professional",
+            "family_id": "fam-bosch-gws-1400",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 14990,
+            "properties": {
+              "battery_platform": "corded",
+              "disc_mm": 125,
+              "motor_power_w": 1400,
+              "power_source": "corded",
+              "restart_protection": true,
+              "speed_rpm": 11000,
+              "voltage_v": 230
+            },
+            "score": 4
+          },
+          {
+            "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json",
+            "sku": "PT-GRD-BOS-GWS1400-150",
+            "name": "Bosch Professional GWS 1400 angle grinder 150 mm",
+            "brand": "Bosch Professional",
+            "family_id": "fam-bosch-gws-1400",
+            "kind_id": "kind-angle-grinders",
+            "category_id": "cat-power-tools",
+            "price_cents": 11990,
+            "properties": {
+              "battery_platform": "corded",
+              "disc_mm": 150,
+              "motor_power_w": 1400,
+              "power_source": "corded",
+              "restart_protection": true,
+              "speed_rpm": 9300,
+              "voltage_v": 230
+            },
+            "score": 2
+          },
+          {
+            "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+            "sku": "PT-SND-BOS-GEX125-BOX",
+            "name": "Bosch Professional GEX 125-1 AE sander box",
+            "brand": "Bosch Professional",
+            "family_id": "fam-bosch-gex-125-1-ae",
+            "kind_id": "kind-random-orbit-sanders",
+            "category_id": "cat-workshop-site",
+            "price_cents": 9990,
+            "properties": {
+              "dust_extraction": "microfilter box",
+              "kit": "box",
+              "pad_mm": 125,
+              "power_source": "corded",
+              "sander_type": "random orbit",
+              "speed_control": true
+            },
+            "score": 2
+          },
+          {
+            "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+            "sku": "PT-SND-BOS-GEX125-CASE",
+            "name": "Bosch Professional GEX 125-1 AE sander case set",
+            "brand": "Bosch Professional",
+            "family_id": "fam-bosch-gex-125-1-ae",
+            "kind_id": "kind-random-orbit-sanders",
+            "category_id": "cat-workshop-site",
+            "price_cents": 11990,
+            "properties": {
+              "dust_extraction": "microfilter box",
+              "kit": "case and 25 discs",
+              "pad_mm": 125,
+              "power_source": "corded",
+              "sander_type": "random orbit",
+              "speed_control": true
+            },
+            "score": 2
+          }
+        ],
+        "indexed_products": 101,
+        "note": "Read or cite the exact paths. Several close matches may mean the request is ambiguous.",
+        "sku_lookup_evidence": {
+          "request_description": "metabo w18 125 standard head grinder",
+          "query_source": "original SKU-only request",
+          "pool_complete": false,
+          "completeness_reason": "Parent index coverage is unverified.",
+          "eligible_indexed_siblings": 9,
+          "invalid_indexed_records": 0,
+          "returned_siblings": 7,
+          "evidence_truncated": true,
+          "siblings": [
+            {
+              "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+              "sku": "PT-GRD-MET-W18-125-4AH",
+              "name": "Metabo W 18 LTX 125 angle grinder kit 2x4.0Ah",
+              "brand": "Metabo",
+              "family_id": "fam-metabo-w-18-ltx-125",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 29990,
+              "properties": {
+                "battery_platform": "Metabo CAS 18V",
+                "disc_mm": 125,
+                "motor_power_w": 0,
+                "power_source": "cordless",
+                "restart_protection": true,
+                "speed_rpm": 8000,
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "metabo",
+                "w18",
+                "125",
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "standard",
+                "head"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+              "sku": "PT-GRD-MET-W18-125-BODY",
+              "name": "Metabo W 18 LTX 125 angle grinder body",
+              "brand": "Metabo",
+              "family_id": "fam-metabo-w-18-ltx-125",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 14990,
+              "properties": {
+                "battery_platform": "Metabo CAS 18V",
+                "disc_mm": 125,
+                "motor_power_w": 0,
+                "power_source": "cordless",
+                "restart_protection": true,
+                "speed_rpm": 8000,
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "metabo",
+                "w18",
+                "125",
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "standard",
+                "head"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+              "sku": "PT-GRD-MET-W18-125-FLAT",
+              "name": "Metabo W 18 LTX 125 flat-head grinder body",
+              "brand": "Metabo",
+              "family_id": "fam-metabo-w-18-ltx-125",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 19990,
+              "properties": {
+                "battery_platform": "Metabo CAS 18V",
+                "disc_mm": 125,
+                "motor_power_w": 0,
+                "power_source": "cordless",
+                "restart_protection": true,
+                "speed_rpm": 8000,
+                "voltage_v": 18
+              },
+              "lexical_query_tokens_found": [
+                "metabo",
+                "w18",
+                "125",
+                "head",
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "standard"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-125.json",
+              "sku": "PT-GRD-BOS-GWS1400-125",
+              "name": "Bosch Professional GWS 1400 angle grinder 125 mm",
+              "brand": "Bosch Professional",
+              "family_id": "fam-bosch-gws-1400",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 9990,
+              "properties": {
+                "battery_platform": "corded",
+                "disc_mm": 125,
+                "motor_power_w": 1400,
+                "power_source": "corded",
+                "restart_protection": true,
+                "speed_rpm": 11000,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "125",
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "metabo",
+                "w18",
+                "standard",
+                "head"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json",
+              "sku": "PT-GRD-BOS-GWS1400-150",
+              "name": "Bosch Professional GWS 1400 angle grinder 150 mm",
+              "brand": "Bosch Professional",
+              "family_id": "fam-bosch-gws-1400",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 11990,
+              "properties": {
+                "battery_platform": "corded",
+                "disc_mm": 150,
+                "motor_power_w": 1400,
+                "power_source": "corded",
+                "restart_protection": true,
+                "speed_rpm": 9300,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "metabo",
+                "w18",
+                "125",
+                "standard",
+                "head"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+              "sku": "PT-GRD-BOS-GWS1400-CASE",
+              "name": "Bosch Professional GWS 1400 angle grinder case set",
+              "brand": "Bosch Professional",
+              "family_id": "fam-bosch-gws-1400",
+              "kind_id": "kind-angle-grinders",
+              "category_id": "cat-power-tools",
+              "price_cents": 14990,
+              "properties": {
+                "battery_platform": "corded",
+                "disc_mm": 125,
+                "motor_power_w": 1400,
+                "power_source": "corded",
+                "restart_protection": true,
+                "speed_rpm": 11000,
+                "voltage_v": 230
+              },
+              "lexical_query_tokens_found": [
+                "125",
+                "grinder"
+              ],
+              "lexical_query_tokens_absent": [
+                "metabo",
+                "w18",
+                "standard",
+                "head"
+              ]
+            },
+            {
+              "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+              "sku": "PT-SND-BOS-GEX125-BOX",
+              "name": "Bosch Professional GEX 125-1 AE sander box",
+              "brand": "Bosch Professional",
+              "family_id": "fam-bosch-gex-125-1-ae",
+              "kind_id": "kind-random-orbit-sanders",
+              "category_id": "cat-workshop-site",
+              "price_cents": 9990,
+              "properties": {
+                "dust_extraction": "microfilter box",
+                "kit": "box",
+                "pad_mm": 125,
+                "power_source": "corded",
+                "sander_type": "random orbit",
+                "speed_control": true
+              },
+              "lexical_query_tokens_found": [
+                "125"
+              ],
+              "lexical_query_tokens_absent": [
+                "metabo",
+                "w18",
+                "standard",
+                "head",
+                "grinder"
+              ]
+            }
+          ],
+          "ranking_semantics": "Lexical retrieval only; not confidence or uniqueness.",
+          "decision_rule": "For SKU lookup compare original request constraints with actual sibling names and properties. A score lead does not prove one variant. Missing words do not prove negative properties; token coverage is diagnostic, not a constraint solver. Do not discard unresolved qualifiers. Verify exact SKU or unique compatible product; otherwise clarify and name candidate SKUs. Complete retrieval before claiming uniqueness. Existing security and runtime policies remain authoritative."
+        }
+      }
+    }
+  ],
+  "limits": "Original catalog result fields unchanged. Actual archived catalogues with deliberately changed search queries; no model outcome or full-world grade claim. Unsupported formats preserve parent behavior."
+}
