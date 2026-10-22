@@ -1,13 +1,21 @@
 # ECOM1 overnight status
 
-Updated 2026-10-22 22:50 UTC. Goal ACTIVE until the human explicitly stops or pauses it. Read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md` first. This is substantive progress, not a waiting-only turn. Earlier detail remains in Git history and linked experiment packages.
+Updated 2026-10-22 23:07 UTC. Goal ACTIVE until the human explicitly stops or pauses it. Read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md` first. This is substantive progress, not a waiting-only turn. Earlier detail remains in Git history and linked experiment packages.
+
+## Critical new startup compatibility issue
+
+Community d4007r1 full100 j7d18b4ada01445aca2ebe6bea204d732 completed22:55:38 with100failed/0modelcalls/0score. Actual first agent_error ends `AttributeError: BitGN object has no attribute call` while passing `bitgn.call` as a function value. OUR immutable queued d5204r1 and unsubmitted d5785r1 have the same unconditional expression. Ordinary source-defined fake SDK tests allowed this and masked real host method-vs-attribute exposure. Local native Monty ClassInstance(allowed_methods,defaultlazy_attrs=None) reproduces failure; named guest wrapper `ix_rpc` directly invoking bitgn.call works. Do not resubmit or treat d5785 as runtime-ready. All existing jobs remain unchanged/uncancelled by explicit user instruction; maxTWO rule still blocks another full100.
+
+Exact minimal successors under2026-10-23-sdk-callback-repair are in validation: d5204successor65307B SHA1b4d188c6809b4111c499cbf0679707409e8e78da9a3e107174b9df4c9a9b2ba; d5785successor60808B SHAac1ec39aec19ae1ff3ceb794cd95f1bcff5df017fc8c3fd586bf93dcf5921b78. Not yet submitted/reviewed. ZeroLLM actualSDKboundary shortprobe prepared in2026-10-23-sdk-callback-probe (1027B SHA223cb4dc6ad9b6226f5dd2ce1aaf39001af7c840e902cc65be021866d86ef1a3), four offline exposure/negative controls pass; independent review pending beforeGit/Brain/source submission.
+
+Queued68call diagnostic d6280 itself uses direct method calls and remains unchanged. Its d5785 prompt capture came through permissive fakehost; author must verify identical17paired requests after repairedsource runs with real ClassInstance exposure. This is a compatibility/reachability limitation, not permission to alter frozen C/L inputs aftersubmission.
 
 ## Record and authorized queue
 
 - Current verified record: inara **d3200r2**, readable d3201r2, installed d298r17, BASELINE d7r28; **0.9012601 (90.12601/100)**, job j110adb6ab262405f85363cc00efee623. Packed65212B, SHA1e6a0ae3505593c380fbc1d3010295cef58e2b2a7a8aaf0cfe6a47da8591a86f. Brain record refreshed22:42; local agent/BASELINE.md already matches.
 - All three own full100s still queued at22:33UTC: **d4702r1 / jfdd875bba6ba4773a549e8703764efa9** (18:44:22,63209B,SHA b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8); **d4955r1 / j37e3df7ac8564c0899c81a706e0aea9a** (19:28:55,63582B,SHA2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20); **inventory d5204r1 / j2f9717b672c04c9a94f1df3219579692** (20:03:58,65292B,SHA0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67).
 - Inventory-only third-slot exception is CONSUMED. Normal maximum TWO restored: **no new full100 until fewer than TWO remain outstanding**, at most one new full100 per30-minute cycle. No cancellation or modification of existing jobs. Short independent diagnostics remain separately authorized when well-supported.
-- Existing heartbeat `ecom1-full100-result-and-promotion` ACTIVE, same thread, every30min. Last regular refresh22:33; next23:03UTC. Quiet on unchanged queues; continue useful offline work.
+- Existing heartbeat `ecom1-full100-result-and-promotion` ACTIVE, same thread, every30min. Last regular refresh23:00; next23:30UTC. All3full100 and68callshort stillqueued; record/instructions unchanged. Newd4007 failure inspected as above. Quiet on unchanged queues; continue useful offline work.
 - On any completed100 strict winner: refresh record and immediately promote exact tested bytes, update agent/BASELINE/README/Integrate, record limitations, then continue the goal. Smoke/diagnostic grades never establish records.
 
 ## Submitted lineage and next production source
@@ -37,6 +45,6 @@ Updated 2026-10-22 22:50 UTC. Goal ACTIVE until the human explicitly stops or pa
 
 ## Continuity
 
-Read-only broad searches s6796seq1/s7166seq3 timed out without receipt and had no mutations. Do not replace uncertain requests; use scoped knownpaths. Root s7418source/s7515submission/s7517controlpublication all committed/closed. No active root Brain session. Git mutations need permitted escalation; use explicitfilelists, exclude pycache. Short diagnostic source must be committed before separate-session submit per Brain d1r4. No blocker requiring user input.
+Read-only broad searches s6796seq1/s7166seq3 timed out without receipt and had no mutations. Do not replace uncertain requests; use scoped knownpaths. Root s7418source/s7515submission/s7517controlpublication all committed/closed. Active s7582 nextseq6, read-only monitor/failure audit sofar. Git mutations need permitted escalation; use explicitfilelists, exclude pycache. Short diagnostic source must be committed before separate-session submit per Brain d1r4. No blocker requiring user input.
 
 -Provider control publication: Git1b9a7be, exact53file archive **d6290r1**,486556B,SHA9d924d0be34646084911d10e5ba376222a36a1e08356a0c0ff6f3cfe1e8aa867; README d6291,independentreview d6292,finding d6293/forum d6294. All200result/StartTrial identities/counts/hashpairs/officialdelta/cost verified; packaging byte-identical Python3.12.7/3.14.3 after documentedgzipOSnormalization. No newguard/code/evaluation/promotion. Existing heartbeatupdated with newshortjob/source/archive/manualtrace requirements.

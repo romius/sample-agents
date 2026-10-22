@@ -1,0 +1,49 @@
+{
+  "source_bytes": 1027,
+  "source_sha256": "223cb4dc6ad9b6226f5dd2ce1aaf39001af7c840e902cc65be021866d86ef1a3",
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "executions": [
+    {
+      "host": "ordinary Python object",
+      "value_access": "allowed",
+      "calls": 2,
+      "answers": 1
+    },
+    {
+      "host": "native ClassInstance",
+      "mismatch": false,
+      "call_allowed": true,
+      "calls": 2,
+      "answers": 1,
+      "stdout": "SDK_CALLBACK_PROBE {\"purpose\": \"SDK callback boundary probe; carrier task not attempted\", \"method_value_access\": \"raised\", \"method_value_error\": \"'BitGN' object has no attribute 'call'\", \"direct_call\": \"returned identity stdout\", \"named_callback\": \"returned identical identity stdout\"}\n",
+      "error": null
+    },
+    {
+      "host": "native ClassInstance",
+      "mismatch": true,
+      "call_allowed": true,
+      "calls": 2,
+      "answers": 0,
+      "stdout": "",
+      "error": "AssertionError: assert 'user: other\\n' == 'user: clerk\\n'"
+    },
+    {
+      "host": "native ClassInstance",
+      "mismatch": false,
+      "call_allowed": false,
+      "calls": 0,
+      "answers": 0,
+      "stdout": "",
+      "error": "AttributeError: 'BitGN' object has no attribute 'call'"
+    }
+  ],
+  "real_sdk_calls": 0,
+  "model_calls": 0,
+  "limitation": "Public ClassInstance configuration reproduces observed boundary; actual Brain BitGN behavior is separately probed only after authorized submission."
+}
