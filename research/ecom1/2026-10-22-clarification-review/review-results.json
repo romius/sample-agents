@@ -1,0 +1,47 @@
+{
+  "source_job": "j110adb6ab262405f85363cc00efee623",
+  "source_revision": "d3200r2",
+  "task021_candidates": [
+    {
+      "sku": "PT-IMP-DEW-DCF887-2AH",
+      "kit": "2x2.0Ah batteries and case"
+    },
+    {
+      "sku": "PT-IMP-DEW-DCF887-5AH",
+      "kit": "2x5.0Ah batteries and case"
+    }
+  ],
+  "task021_decision": "Preserve clarification and display both cited SKUs. No unique kit is established.",
+  "task041_predicate_counterexample": {
+    "request": "sku for metabo w18 125 standard head grinder pls. sku only.",
+    "survivors": [
+      "Metabo W 18 LTX 125 angle grinder kit 2x4.0Ah PT-GRD-MET-W18-125-4AH",
+      "Metabo W 18 LTX 125 angle grinder body PT-GRD-MET-W18-125-BODY",
+      "Metabo W 18 LTX 125 flat-head grinder body PT-GRD-MET-W18-125-FLAT"
+    ],
+    "actual": [
+      "decisive",
+      "Metabo W 18 LTX 125 flat-head grinder body PT-GRD-MET-W18-125-FLAT",
+      2
+    ]
+  },
+  "task041_decision": "Do not convert clarification to flat-head OK. Existing record OK was itself graded wrong; standard head remains unresolved.",
+  "contradictory_qualifier_order_results": [
+    [
+      "decisive",
+      "Acme drill red",
+      1
+    ],
+    [
+      "decisive",
+      "Acme drill blue",
+      1
+    ]
+  ],
+  "incomplete_single_survivor": [
+    "single",
+    "Acme drill red",
+    0
+  ],
+  "boundary": "Do not integrate the CLAR-to-OK predicate. No live grade recomputed; exact source data and settled grades retained."
+}

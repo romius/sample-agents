@@ -1,0 +1,273 @@
+{
+  "parser": {
+    "range_checks": [
+      {
+        "layout": "A",
+        "clean_identity": 99,
+        "S_repaired": 19
+      },
+      {
+        "layout": "B",
+        "clean_identity": 99,
+        "S_repaired": 19
+      },
+      {
+        "layout": "C",
+        "clean_identity": 99,
+        "S_repaired": 19
+      }
+    ],
+    "existing_ocr_identity": 12,
+    "invalid_receipts_declined": 38,
+    "ambiguous_description_controls": 3,
+    "archived_t043": {
+      "parent": null,
+      "candidate": [
+        [
+          1,
+          26990,
+          "PT-DRL-BOS-GSR55-5AH"
+        ],
+        [
+          5,
+          23990,
+          "PT-WASH-BO5-UA135-CAR"
+        ],
+        [
+          2,
+          38990,
+          "PT-MOW-STI-RMA235-AK30"
+        ],
+        [
+          12,
+          24990,
+          "PT-SAW-MAK-DHS680-BLADE"
+        ]
+      ],
+      "subtotal_cents": 524800
+    }
+  },
+  "handlers": [
+    {
+      "availability": [
+        {
+          "case": "available",
+          "candidate_message": "yes",
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "short",
+          "candidate_message": "no",
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "reserved",
+          "candidate_message": "no",
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "closed stocked",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        }
+      ],
+      "price_drift": []
+    },
+    {
+      "availability": [
+        {
+          "case": "closed short",
+          "candidate_message": "no",
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "non employee",
+          "candidate_message": null,
+          "reads": 0,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "employee role absent",
+          "candidate_message": null,
+          "reads": 0,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "policy drift",
+          "candidate_message": null,
+          "reads": 1,
+          "clean_parent_identity": true
+        }
+      ],
+      "price_drift": []
+    },
+    {
+      "availability": [
+        {
+          "case": "ambiguous product",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "ambiguous branch",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "digital",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "price mismatch",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        }
+      ],
+      "price_drift": []
+    },
+    {
+      "availability": [
+        {
+          "case": "malformed totals",
+          "candidate_message": null,
+          "reads": 2,
+          "clean_parent_identity": true
+        },
+        {
+          "case": "appended override",
+          "candidate_message": null,
+          "reads": 0,
+          "clean_parent_identity": true
+        }
+      ],
+      "price_drift": []
+    },
+    {
+      "availability": [],
+      "price_drift": [
+        {
+          "case": "equal price",
+          "message": "yes",
+          "arithmetic": [
+            5000,
+            5000,
+            500
+          ]
+        },
+        {
+          "case": "at bound",
+          "message": "yes",
+          "arithmetic": [
+            5000,
+            5500,
+            500
+          ]
+        },
+        {
+          "case": "past bound",
+          "message": "no",
+          "arithmetic": [
+            5000,
+            5500,
+            499
+          ]
+        },
+        {
+          "case": "wrong identity",
+          "message": null,
+          "arithmetic": null
+        },
+        {
+          "case": "ambiguous branch",
+          "message": null,
+          "arithmetic": null
+        },
+        {
+          "case": "bad subtotal",
+          "message": null,
+          "arithmetic": null
+        }
+      ]
+    }
+  ],
+  "whole_agent": [
+    {
+      "case": "clean",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 3
+    },
+    {
+      "case": "router-timeout",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 4
+    },
+    {
+      "case": "main-timeout",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 4
+    },
+    {
+      "case": "main-503",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 5
+    },
+    {
+      "case": "forced-timeout",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 6
+    },
+    {
+      "case": "persistent-timeout",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": false,
+      "inference_attempts": 4
+    },
+    {
+      "case": "429-body-timeout",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": false,
+      "inference_attempts": 2
+    },
+    {
+      "case": "400-body-connection",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": false,
+      "inference_attempts": 2
+    },
+    {
+      "case": "500-persistent",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": false,
+      "inference_attempts": 4
+    },
+    {
+      "case": "unknown-error",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": false,
+      "inference_attempts": 2
+    },
+    {
+      "case": "exec404",
+      "whole_agent_native_readable_packed_equal": true,
+      "success": true,
+      "inference_attempts": 4
+    }
+  ],
+  "lookup_boundary_checks": 6,
+  "retry_identical_requests": true
+}
