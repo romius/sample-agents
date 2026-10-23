@@ -1,17 +1,19 @@
 # ECOM1 overnight handoff
 
-Updated 2026-10-23 03:56 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
+Updated 2026-10-23 04:08 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
 
 ## Verified record and evaluation limits
 
-Refreshed 03:39 UTC: **codex d4353r1, 94.72095/100**, job `j6d6d4adb60f241a4a1d111a9719b59dc`, installed unchanged as d298r19; BASELINE d7r32 unchanged locally. Source63,211B SHA588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e; readable d4354r1, build d4355r1, packer d3268r2. 100completed/0failed,216modelcalls,$0.030785032 complete. Exact dependencies and every-task final-log audit in `2026-10-23-d4353-record-review`;90-success extension archive d6815/Git4c8f380. This does not certify every successful action history/business fact.
+Refreshed 04:00 UTC: **codex d4353r1, 94.72095/100**, job `j6d6d4adb60f241a4a1d111a9719b59dc`, installed unchanged as d298r19; BASELINE d7r32 unchanged locally. Source63,211B SHA588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e; readable d4354r1, build d4355r1, packer d3268r2. 100completed/0failed,216modelcalls,$0.030785032 complete. Exact dependencies and every-task final-log audit in `2026-10-23-d4353-record-review`;90-success extension archive d6815/Git4c8f380. This does not certify every successful action history/business fact.
 
-**TWO own full100 jobs queued at 03:39 UTC**, immutable. Normal cap TWO queued/running and at most ONE new full100 per30-minute cycle. Inventory third-slot exception consumed. Last full100 submitted02:42:19. No new full100 until fewer than two outstanding and all validation/cadence gates pass. Never cancel existing/others' jobs.
+**TWO own full100 jobs RUNNING at 04:00 UTC**, immutable. Normal cap TWO queued/running and at most ONE new full100 per30-minute cycle. Inventory third-slot exception consumed. Last full100 submitted02:42:19. No new full100 until fewer than two outstanding and all validation/cadence gates pass. Never cancel existing/others' jobs.
 
 | Candidate | Job | Preserved evidence |
 |---|---|---|
 | Narrow OCR d6729r1 | jc2949c1cd1b84139a2eac424ef598966 | Submitted02:10:11;63,411B SHA420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8. Archive d6728/Git47912eb;preflight d6797/Gitccfb988. |
 | Narrow Exec404 d6808r1 | jb4798f05fa4941f88eacf20a40f42800 | Submitted02:42:19;63,564B SHAd44e7055e533cc3b9028ff4fb0294ccf4b60065ae8b2b87864cb0ffdc49d3495. Archive d6807/Git4c8f380;preflight d6867/Gita4e199e;receipt Git73573d7. |
+
+OCR started03:48:34, run `run-22rM8NBxSKHyZan5Db8N6VWR4`: at04:00,41completed/0failed,82calls,$0.009885364 complete so far. Exec404 started03:59:37, run `run-22rMCgCkjqbqgNM5LjihcmGWL`: at04:00,1completed/0failed,4calls,$0.000421396 complete so far. These are interim counts/costs, not final scores. Official raw receipts preserved in `2026-10-23-running-evaluations`.
 
 Both independently start from exactd4353, no combined OCR/retry/cleanup. OCR300parser+112wholeagent checks; does not repair actual d4702t016/d4955t056/t076. Exec404168wholeagent+84isolated+3native controls; actual missing/bin/ls witness reaches the repair. Strict structured not_found plus colon-delimited message; no Exec retry. Scripted Tree continuation is not basket completion. Delete404 behavior retained.
 
@@ -34,7 +36,9 @@ Source23,837B SHA4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626
 
 Actuald4955t076 has152RPCrequests and zeroWrite, then forced final report admits no TSV while declaringOK. Same unchecked outcome forwarding exists in d4353. 12benign recognizer controls/24evaluations include dry-run/deferred/reuse/quoted/approval requests: no blanket noWrite→failure guard qualified. Successfulrecordt091 first acknowledged malformedCSV, then correctedit; ACK alone is insufficient. Archive d6940–6944/Gitf200a21. Keep separate from transport retry and handoff.
 
-Latest peer results: doctor d6536=94.094527/$0.016831213 complete, d5511=84.109885/$0.050029063 complete; shadufd6055=76.11359,4failed,$0.060596317 reported with1unknowncost/incomplete. All below record; no paired causal claim or peer all-task audit. Doctor's d4353 router successor already queued; do not duplicate. TRAIN-3d6643 running; TRAIN-4rc1d6855 queued03:36 under inara. Existing sources remain immutable.
+New completed peer results checked04:00: shaduf d6576=93.10376/100,100completed/0failed,187calls,$0.028353138 reported with1unknowncost/incomplete; twistednegatory d6489=73.66461/100,100completed/2failed,315calls,$0.057774137 complete. Both below record; no source-causal conclusion or peer all-task review.
+
+Earlier peer results: doctor d6536=94.094527/$0.016831213 complete, d5511=84.109885/$0.050029063 complete; shadufd6055=76.11359,4failed,$0.060596317 reported with1unknowncost/incomplete. All below record; no paired causal claim or peer all-task audit. Doctor's d4353 router successor already queued; do not duplicate. TRAIN-3d6643 running; TRAIN-4rc1d6855 queued03:36 under inara. Existing sources remain immutable.
 
 Ant1d6982 identifies actualrecordt080 header `Itm Qt Unit Total`, not `QTY UNIT TOTAL`; root read exactevent11342 confirming this. Bobcat owns receipt integration; no duplicate experiment. Exclusion/ref work remains bobcat/msh/lea coordination. French negation broadening has benign falseholds and is parked. Community projections are not calibrated evidence.
 
@@ -62,10 +66,18 @@ Other completed results checked before Exec404 submission: thingy d5304r1 93.122
 - Do not repeat zero-model callback probe j9b18bdffe5fa4ac39383f908170b20a0, d6420–6426/Git2400326.
 - Actual inventory roots and new record t023 store root were successfully read; do not adopt blanket dead-root claims. /bin/id cannot normally emit the proposed lookalike roles; no unreachable repair.
 
+## Active offline follow-up
+
+Stock-boundary extension `2026-10-23-train4-h4-stock-boundaries`:336 cells/168native,42explicit synthetic overlays,280helper-reaching answers and exactrefs correct;56parent fallback cells assert only fixed historical replies and are not stock-correctness scores. Threshold positives, each item short/incoming-only/absent, reservation arithmetic and exact-saw parent control; root clean reproduction byte-identical. Author seal714c2ba48319ad1bd43c8863730bf65444c154ba32eea1dc4262e2ad9efffdf8. No live gain or guarded-source certification.
+
+Board reply d7053 clarifies original t023FALSE(2) is correct:all four intended items unavailable today. Bobcat longer-rival controls extend BOTH candidate and rival; distinguish them from original exact-key rival. Independent review of d7019 all-path guard is active; inara wants H4-only-scopedrc2, whose exact artifact still needs review. No duplicate evaluation.
+
+Output-budget investigation is harvesting25 anomalous responses and31 exact corresponding/adjacent requests from already paid runs. All seven observed length cases are d4955t076 main-loop replies; forced-length acceptance remains a hypothesis. HTTP200 nulls do not justify transport retry. Preserve sources and exact request evidence before drawing conclusions.
+
 ## Next actions and preservation
 
 Both diagnostic and exactTRAIN-4/H4 reviews are complete and published. Do not repeat the20-call diagnostic or submit the unqualified handoff. Inara/bobcat own deterministic receipt successor integration; coordinate source-specific guard policy and t080header issue, avoid duplicate experiments. Continue separate cleanup/inference/exclusion work only from concrete observed evidence. No new full100 while two own jobs remain outstanding.
 
-Refresh Brain instructions, record, completedfull100, community and own queue every30minutes; last broadrefresh03:39,next04:09UTC. Immediately promote any completed100 strict winner's EXACT tested bytes after refreshing record; update agent/BASELINE/README/Integrate and costs/regressions/limits. Continue afterward. No new own full100 at captwo. Source<=65,536B; readable source and deterministic build, exactdependencies/tests/hashes/evidence in Git and Brain before payment.
+Refresh Brain instructions, record, completedfull100, community and own queue every30minutes; last broadrefresh04:00,next04:30UTC. Immediately promote any completed100 strict winner's EXACT tested bytes after refreshing record; update agent/BASELINE/README/Integrate and costs/regressions/limits. Continue afterward. No new own full100 at captwo. Source<=65,536B; readable source and deterministic build, exactdependencies/tests/hashes/evidence in Git and Brain before payment.
 
 Branch feat/ecom1-record-integration. Stage explicit paths only, exclude userbrain-dashboard and caches. Existing heartbeat active and quiet on unchanged state. Status and integration plan should replace obsolete current statements rather than append contradictions.
