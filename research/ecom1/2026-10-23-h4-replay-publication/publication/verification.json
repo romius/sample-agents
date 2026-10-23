@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "files_byte_identical": 44,
+  "archive_sha256": "edc808660466b7f4fd461c1cebac3fa09e473c7b3b2e6b307d8c1589819d2522",
+  "scripts": [
+    {
+      "script": "reproduce.py",
+      "stdout": "{\"files_compared\": 35, \"status\": \"PASS exact clean-copy reproduction\"}\n"
+    },
+    {
+      "script": "independent/review.py",
+      "stdout": "{\"status\": \"PASS evidence/reproduction; H4-only not a complete repair and collision concern retained\", \"author_seal_sha256\": \"263ed08602ca41fa61c0d00e5e77acf7904f3e7f8a9b75a1cc9ee50bdcc38d8f\", \"sealed_files\": 36, \"candidate_bytes\": 63380, \"candidate_sha256\": \"ae15cefc7d739ef6331ce646f24534ca90365a23133bdcf94103f6df6680c4af\", \"whole_agent_reproduced\": 64, \"new_resolver_evaluations\": 48, \"manual_expected_today\": \"nein\", \"actual_world_helper_takeover\": false, \"new_exact_other_price_acceptance_confirmed\": true, \"scope\": \"Pure resolver controls plus exact author whole-agent reproduction; synthetic identity collision is not demonstrated wrong final yes/no and fixed replies are not live inference.\"}\n"
+    }
+  ],
+  "live_model_calls": 0
+}

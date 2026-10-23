@@ -1,0 +1,19 @@
+{
+  "status": "PASS exact clean-copy reproduction",
+  "files_compared": 35,
+  "scripts": [
+    {
+      "script": "build.py",
+      "stdout": "{\"packed_bytes\": 63380, \"sha256\": \"ae15cefc7d739ef6331ce646f24534ca90365a23133bdcf94103f6df6680c4af\"}\n"
+    },
+    {
+      "script": "replay.py",
+      "stdout": "{\"executions\": 64, \"summary\": [{\"case\": \"actual_t023\", \"parent_calls\": 2, \"H4_calls\": 2, \"H4_outcome\": \"OUTCOME_OK\", \"H4_message\": \"FALSE(2)\"}, {\"case\": \"actual_t063\", \"parent_calls\": 2, \"H4_calls\": 2, \"H4_outcome\": \"OUTCOME_DENIED_SECURITY\", \"H4_message\": \"The current identity is not a customer, so you cannot purchase a basket.\"}, {\"case\": \"isolate_saw\", \"parent_calls\": 2, \"H4_calls\": 1, \"H4_outcome\": \"OUTCOME_OK\", \"H4_message\": \"nein\"}, {\"case\": \"nontruncated\", \"parent_calls\": 2, \"H4_calls\": 2, \"H4_outcome\": \"OUTCOME_DENIED_SECURITY\", \"H4_message\": \"The current identity is not a customer, so you cannot purchase a basket.\"}, {\"case\": \"ambiguous_same_price\", \"parent_calls\": 2, \"H4_calls\": 2, \"H4_outcome\": \"OUTCOME_DENIED_SECURITY\", \"H4_message\": \"The current identity is not a customer, so you cannot purchase a basket.\"}, {\"case\": \"exact_other_price\", \"parent_calls\": 2, \"H4_calls\": 1, \"H4_outcome\": \"OUTCOME_OK\", \"H4_message\": \"nein\"}, {\"case\": \"benign_exact\", \"parent_calls\": 1, \"H4_calls\": 1, \"H4_outcome\": \"OUTCOME_OK\", \"H4_message\": \"nein\"}, {\"case\": \"benign_note\", \"parent_calls\": 2, \"H4_calls\": 2, \"H4_outcome\": \"OUTCOME_DENIED_SECURITY\", \"H4_message\": \"The current identity is not a customer, so you cannot purchase a basket.\"}]}\n"
+    },
+    {
+      "script": "analyze.py",
+      "stdout": "{\"actual_counts\": [[\"t023\", 2, 2], [\"t063\", 2, 3]], \"function_cases_per_arm\": 14, \"native_CPython_parity\": true, \"manual_expected_today\": \"nein\", \"H4_only_complete_repair\": false}\n"
+    }
+  ],
+  "live_calls": 0
+}

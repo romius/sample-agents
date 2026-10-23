@@ -1,0 +1,22 @@
+--- exact-d4353r1
++++ d4353-H4-only
+@@ -2119,6 +2119,10 @@
+   original = _receipt_original_items(text)
+   return original if original is not None else _receipt_original_items(text, True)
+ 
++def rcp_drop1(a, b):
++  return len(a) == len(b) + 1 and any(a[:i] + a[i + 1:] == b for i in range(len(a)))
++
++
+ def rcp_product(fragment, cents):
+   key = ocr_key(fragment).rstrip(".")
+   cut = fragment.endswith((".", "-"))
+@@ -2129,6 +2133,8 @@
+       continue
+     if sku == key or (cut and len(key) >= 8 and sku.startswith(key)) or (len(key) >= 10 and len(sku) - len(key) <= 2 and sku.endswith(key)):
+       hits.append(product)
++  if not hits and cut and len(key) >= 10:
++    hits = [p for p in WORLD["products"] if p.get("price_cents") == cents and rcp_drop1(ocr_key(p.get("sku", ""))[:len(key) + 1], key)]
+   return hits[0] if len(hits) == 1 else None
+ 
+ 

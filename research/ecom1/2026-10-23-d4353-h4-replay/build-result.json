@@ -1,0 +1,30 @@
+{
+  "status": "offline adapted H4 only, not evaluated",
+  "parent": "d4353r1",
+  "parent_rebuild_exact": true,
+  "parent_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+  "community_source": "d6929r1 record_h4.diff; context adapted because parent has no X10/fuzzy fallback",
+  "AST_changes": [
+    "new rcp_drop1",
+    "rcp_product fallback before original unique return"
+  ],
+  "packed_bytes": 63380,
+  "files": {
+    "readable.py": {
+      "bytes": 153939,
+      "sha256": "372066d6390cea9807c61ed2471ddf58daa1465149ce608b2b434b1c11ee0008"
+    },
+    "decoded.py": {
+      "bytes": 146467,
+      "sha256": "f9352063f38e02eb831eb1a984ba9b4ef125e6ebbeb69e5daf2e201faa65a831"
+    },
+    "agent.py": {
+      "bytes": 63380,
+      "sha256": "ae15cefc7d739ef6331ce646f24534ca90365a23133bdcf94103f6df6680c4af"
+    },
+    "candidate.diff": {
+      "bytes": 852,
+      "sha256": "8d72c81b6f3d51bbe70d0b25325d032e0533eff1d8703435e17fbf7212e03e9b"
+    }
+  }
+}

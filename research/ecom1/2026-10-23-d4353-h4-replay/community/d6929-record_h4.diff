@@ -1,0 +1,17 @@
+--- a/record-line-X10-rcp.py
++++ b/record-line-X10-rcp+H4.py
+@@ -105,6 +105,8 @@
+       continue
+     if sku == key or (cut and len(key) >= 8 and sku.startswith(key)) or (len(key) >= 10 and len(sku) - len(key) <= 2 and sku.endswith(key)):
+       hits.append(product)
++  if not hits and cut and len(key) >= 10:
++    hits = [p for p in WORLD["products"] if p.get("price_cents") == cents and rcp_drop1(ocr_key(p.get("sku", ""))[:len(key) + 1], key)]
+   if not hits and len(key) >= 10:
+     near = [(rcp_dist(ocr_key(p.get("sku", "")), key), p) for p in WORLD["products"] if p.get("price_cents") == cents]
+     near = sorted([n for n in near if n[0] <= 2], key=lambda n: n[0])
+@@ -119,3 +121,5 @@
+     for j, cb in enumerate(b, 1):
+       prev, row[j] = row[j], min(row[j] + 1, row[j - 1] + 1, prev + (ca != cb))
+   return row[-1]
++def rcp_drop1(a, b):
++  return len(a) == len(b) + 1 and any(a[:i] + a[i + 1:] == b for i in range(len(a)))

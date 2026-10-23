@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "missing_only_harvest": true,
+  "downloaded_events": 244,
+  "downloaded_bytes": 487516,
+  "complete_traces": [
+    {
+      "task_id": "t023",
+      "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4a",
+      "trace_bytes": 316926,
+      "trace_sha256": "b7e29ddc981553c85dd0ebbdb4e6b29cd5cd7dc6bcf30d745cac4191363e6beb",
+      "events": 275,
+      "reused_events": 152,
+      "new_events": 123,
+      "rpc_pairs": 135,
+      "unique_read_files": 127,
+      "read_calls": 127,
+      "tree_calls": 2,
+      "uploads": [
+        "/uploads/hrNh9v44_receipt_ocr.txt"
+      ],
+      "event_kinds": {
+        "rpc_request": 135,
+        "rpc_response": 135,
+        "llm_request": 2,
+        "llm_response": 2,
+        "agent_finished": 1
+      }
+    },
+    {
+      "task_id": "t063",
+      "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5G",
+      "trace_bytes": 314103,
+      "trace_sha256": "1df90b49c9fe780b1887da1ac6531d0ea3a286b8ab3ecc0b8b48bdf61de453d4",
+      "events": 275,
+      "reused_events": 154,
+      "new_events": 121,
+      "rpc_pairs": 135,
+      "unique_read_files": 127,
+      "read_calls": 127,
+      "tree_calls": 2,
+      "uploads": [
+        "/uploads/AztYLH6h_receipt_ocr.txt"
+      ],
+      "event_kinds": {
+        "rpc_request": 135,
+        "rpc_response": 135,
+        "llm_request": 2,
+        "llm_response": 2,
+        "agent_finished": 1
+      }
+    }
+  ],
+  "scope": "Archived read observations only; not a snapshot of unread world nodes or a new model/task evaluation."
+}
