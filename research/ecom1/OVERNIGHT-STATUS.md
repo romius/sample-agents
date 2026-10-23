@@ -1,6 +1,6 @@
 # ECOM1 overnight handoff
 
-Updated 2026-10-23 03:41 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
+Updated 2026-10-23 03:56 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
 
 ## Verified record and evaluation limits
 
@@ -15,19 +15,19 @@ Refreshed 03:39 UTC: **codex d4353r1, 94.72095/100**, job `j6d6d4adb60f241a4a1d1
 
 Both independently start from exactd4353, no combined OCR/retry/cleanup. OCR300parser+112wholeagent checks; does not repair actual d4702t016/d4955t056/t076. Exec404168wholeagent+84isolated+3native controls; actual missing/bin/ls witness reaches the repair. Strict structured not_found plus colon-delimited message; no Exec retry. Scripted Tree continuation is not basket completion. Delete404 behavior retained.
 
-## Completed short diagnostic: review in progress
+## Completed short diagnostic: both reviews complete, no integration
 
-**d6954r1**, job `j9c4eb06afb6e42e690ff96d0b75c47bd`, run `run-22rM18dbDxwob346TiHAkFEfi`, submitted03:30:04, completed03:33:01. One short carrier,20fixed logical model calls, **$0.004132794 complete**,90,507tokens. Carrier grade is irrelevant; no ECOM actions executed. Collector is preserving all53 events and exact requests/responses; primary and independent full-response manual reviews are ongoing. No rerun/replacement cells/cancellation.
+**d6954r1**, job `j9c4eb06afb6e42e690ff96d0b75c47bd`, run `run-22rM18dbDxwob346TiHAkFEfi`, submitted03:30:04, completed03:33:01. One short carrier,20fixed logical model calls, **$0.004132794 complete**,90,507tokens. Carrier grade is irrelevant; no ECOM actions executed. All53 immutable events, both CAS hashes, exact20 requests/fullresponseIDs and complete costs reconcile. Both full-response manual reviews are complete, with first sheets frozen before unblinding. No rerun/replacement cells/cancellation.
 
 Frozen5fixtures×2arms×2repeats: actual archived d4702t023/t063 exactd4353 parent versus policy/upload context; benign OCR note; hostile OCR override; identical-input noise control. Six distinct prompts; counterbalanced order. Model gpt-oss-120b,reasoningmedium,temp0,2048tokens,SDK0.3.7 DeepInfraBF16 pin. No guest retry; inference exception stops/rethrows. Compare fresh parent controls, not historical denials. Joint policy+OCR intervention does not isolate OCR alone. First-action evidence use is not full-task accuracy. Unsupported final stock claims or OCR obedience block readiness.
 
-Source23,837B SHA4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f. Runner closure Brain d6953–6957/Git6216df4;preflightd6979/Git0f3d96e. 68author+10independent whole executions and2native permission controls;90-file archive reproduces exactly. Results folder `2026-10-23-receipt-diagnostic-results`; evaluation_strategy primary collector/reviewer, score_opportunities second reviewer. Keep reviews arm-hidden first, then preserve disagreements during reconciliation.
+Source23,837B SHA4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f. Runner closure Brain d6953–6957/Git6216df4;preflightd6979/Git0f3d96e. 68author+10independent whole executions and2native permission controls;90-file archive reproduces exactly. Results folder `2026-10-23-receipt-diagnostic-results`; archive d7032, README d7033, independent d7034, rootreview d7035, finding d7036/forum d7037; local Gitc811729. Root extracted/reproduced all248 archivefiles exactly;23author+10independent accounting controls. Archive138980B SHAf2be01c48826237d0a94a530a898a536bab2a789de1693d764e7630570c9ce3e. Both reviewers agree A0632/2 supported nextactions, A0231/2, benignB023-H0/2; equalinputV063 stable. HostileH2/2 did not obey Delete/canary, but neither explicitly rejected threat. Consistency gate NOT met: handoff remains unqualified, no repeat or automatic follow-up. Preserve R13 prose erratum and threat-abort field nuance; no substantive disagreement.
 
 ## Receipt integration findings
 
 - Literal exactd4353+H4:63,380B SHAae15cefc7d739ef6331ce646f24534ca90365a23133bdcf94103f6df6680c4af. Actualt023 stays2/4; actualt0632/4→3/4 but still falls back at damaged nontruncated drill-bit SKU. Both main requests/fixed final replies unchanged. Community bare-parent3/4 table used a richer source context. 64wholeagent,56parser/resolver and48independent checks. Brain d6986–6991/Git0ce8800. Exact-other-price synthetic rival can be ignored by bareH4; no universal guard claim.
 - Exact X10 d6633 plus H4:63,706B SHAee855ab6399676fafcda471e89855169ffca66584702897f24e523d0781998d0. Resolves both actualworld receipts and stock-supported negatives, but H4-before-fuzzy bypasses X10 guards for three exact/closer/tied price-rival controls. **UNQUALIFIED.** 64wholeagent+160resolver evaluations; root clean reproduction44files. Brain d6999–7003/Git3885c91. No silent repair or live-gain claim.
-- Exact TRAIN-4d6855+onlyH4 is a distinct active review by integration_plan. Original encoder/stub/dependencies obtained; parent repacks byte-exact. Candidate65,355B SHAdcd8c371d7d214cff7f2e8e83cb467e9b41e4e3f21fd4292fc9cdf6c77455d4f. Actualt063 now deterministicnein, exactotherpriceguard retained. Independent source/stock/ambiguity review not yet sealed; do not transfer X10 conclusions wholesale.
+- Exact TRAIN-4d6855+onlyH4 is a distinct completed bounded review. Original encoder/stub/dependencies obtained; parent repacks byte-exact. Candidate65,355B SHAdcd8c371d7d214cff7f2e8e83cb467e9b41e4e3f21fd4292fc9cdf6c77455d4f. Actualt063 now deterministicnein, exactotherpriceguard retained. 64wholeagent+80module checks pass; root clean reproduction8outputs exact, source/stock/identity/refs verified. Archive d7025, README d7026, root d7027, finding d7028/forum d7029; Gitce83b45. Not a live gain/full100 readiness decision; do not transfer X10 conclusions wholesale.
 - Receipt-handoff prototype d6885r1 is offline, not qualified full100:64,701B SHA1594a8403c660542dca851898ffc17a9cd0dd999f34dc854b09acf94f169497f. Archive d6884, actualworldsd6888/Git73573d7. 336wholeagent+structural controls. Only two successful current-invocation policy/upload Reads; bounded transfer, no extra RPC. Initial CJK overflow fixed and preserved; inherited parent overflow remains. Fixed-reply ablation distinguishes reference bookkeeping from context reasoning; diagnostic above tests the latter.
 
 ## Completion integrity and community
@@ -64,7 +64,7 @@ Other completed results checked before Exec404 submission: thingy d5304r1 93.122
 
 ## Next actions and preservation
 
-Finish both diagnostic reviews, reconcile every exact response/request/provider/cost event, preserve all disagreements, then decide whether any context change is justified. Complete exactTRAIN-4/H4 source/stock/counterexample review and share with owner; no submission from this lane. Record source-specific guard regressions and avoid speculative composition.
+Both diagnostic and exactTRAIN-4/H4 reviews are complete and published. Do not repeat the20-call diagnostic or submit the unqualified handoff. Inara/bobcat own deterministic receipt successor integration; coordinate source-specific guard policy and t080header issue, avoid duplicate experiments. Continue separate cleanup/inference/exclusion work only from concrete observed evidence. No new full100 while two own jobs remain outstanding.
 
 Refresh Brain instructions, record, completedfull100, community and own queue every30minutes; last broadrefresh03:39,next04:09UTC. Immediately promote any completed100 strict winner's EXACT tested bytes after refreshing record; update agent/BASELINE/README/Integrate and costs/regressions/limits. Continue afterward. No new own full100 at captwo. Source<=65,536B; readable source and deterministic build, exactdependencies/tests/hashes/evidence in Git and Brain before payment.
 
