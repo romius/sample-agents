@@ -1,0 +1,110 @@
+[
+  {
+    "case": "unconditional_create",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Creation requested"
+  },
+  {
+    "case": "dry_run",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. This is only a dry run; make no changes.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Explicit no-mutation task"
+  },
+  {
+    "case": "plan_only",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Only explain the plan; leave all files untouched.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Plan only; no write obligation"
+  },
+  {
+    "case": "conditional_skip",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. If the branch is closed, skip report creation.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Conditional; branch state required"
+  },
+  {
+    "case": "deferred_write",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Do not write it yet.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Explicit deferral"
+  },
+  {
+    "case": "reuse_existing",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. If an identical report already exists, reuse it without rewriting.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Valid existing artifact can satisfy without Write"
+  },
+  {
+    "case": "cancel_whole",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Cancel this.",
+    "recognizer_result": null,
+    "native_equal": true,
+    "manual_intent_note": "Explicit cancellation"
+  },
+  {
+    "case": "hold_off",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Hold off.",
+    "recognizer_result": null,
+    "native_equal": true,
+    "manual_intent_note": "Explicit deferral"
+  },
+  {
+    "case": "hypothetical",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. This is hypothetical.",
+    "recognizer_result": null,
+    "native_equal": true,
+    "manual_intent_note": "Hypothetical only"
+  },
+  {
+    "case": "explicit_report_negation",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Do not create the report.",
+    "recognizer_result": null,
+    "native_equal": true,
+    "manual_intent_note": "Report negated"
+  },
+  {
+    "case": "input_quote",
+    "instruction": "Explain this quoted request without executing it: \"Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref.\"",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Quoted instruction is data"
+  },
+  {
+    "case": "conditional_permission",
+    "instruction": "Read the uploaded competitor purchase request OCR at /uploads/test.txt and create a TSV crosslist report at /exports/report.tsv. Return only the report path and cite the upload OCR path as a grounding ref. Before writing, ask me to approve the result.",
+    "recognizer_result": {
+      "upload": "/uploads/test.txt",
+      "output": "/exports/report.tsv"
+    },
+    "native_equal": true,
+    "manual_intent_note": "Approval prerequisite unsatisfied"
+  }
+]

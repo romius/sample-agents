@@ -1,0 +1,124 @@
+{
+  "status": "PASS",
+  "failure_job": "j37e3df7ac8564c0899c81a706e0aea9a",
+  "failure_source_blob": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20",
+  "failure_task": "t076",
+  "failure_trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5h",
+  "instruction": "Read the uploaded competitor purchase request OCR at /uploads/PEfkdA5b_competitor_purchase_request_ocr.txt and create a TSV crosslist report at /exports/crosslist-efYpgjYy.tsv. Return only the report path and cite the upload OCR path as a grounding ref.",
+  "complete_index_events": 367,
+  "selected_bodies": 234,
+  "every_rpc_request_present": 152,
+  "rpc_methods": {
+    "StartTrial": 1,
+    "Tree": 4,
+    "Read": 135,
+    "Exec": 2,
+    "Search": 7,
+    "List": 1,
+    "Answer": 1,
+    "EndTrial": 1
+  },
+  "no_write_requests": true,
+  "forced_request_seq": 9571,
+  "forced_last_message": {
+    "role": "user",
+    "content": "Stop working now. Reply with report_completion only: the best supported answer, the matching outcome and the exact refs you read."
+  },
+  "forced_response_seq": 9572,
+  "actual_answer_seq": 9573,
+  "actual_answer": {
+    "message": "Report generation was not performed as instructed to stop. No TSV file was created.",
+    "outcome": "OUTCOME_OK",
+    "refs": [
+      "/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt",
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json",
+      "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+      "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+      "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+      "/proc/locations/Salzburg/store-salzburg-nord.json",
+      "/docs/security.md",
+      "/docs/purchase-request-crosslist.md"
+    ]
+  },
+  "official_grade": {
+    "score": 0,
+    "available": true,
+    "detail": "['expected only file changes [/exports/crosslist-efypgjyy.tsv], got []']",
+    "error": null
+  },
+  "truncated_unexecuted_write_response": 9560,
+  "source_proof": {
+    "d4955": {
+      "dispatch": {
+        "line": 709,
+        "sha256": "e63c19c67281210248553dbbe77ef0c0d8241d02c55965f57da549212dd26dcd"
+      },
+      "crosslist_request": {
+        "line": 1687,
+        "sha256": "fe6797f18b027cb5f91fefd90bc75d7506df48ec222cdadb4de07925269a3dac"
+      },
+      "crosslist_path": {
+        "line": 1680,
+        "sha256": "38e5738ebe68c6fff3e9d1bfbf9e080e2b959784f3bc5d643edb3c00e1ce3730"
+      },
+      "crosslist_export": {
+        "line": 1993,
+        "sha256": "63d50d64cd2c0881892ac36b4ef6e2c403c9f57cebef60357315b65c7d4d2055"
+      }
+    },
+    "d4353": {
+      "dispatch": {
+        "line": 683,
+        "sha256": "e820e2adb19dcf174fe2e64db69c320c760eb5753802113ef10f0557023b61cd"
+      },
+      "crosslist_request": {
+        "line": 1646,
+        "sha256": "fe6797f18b027cb5f91fefd90bc75d7506df48ec222cdadb4de07925269a3dac"
+      },
+      "crosslist_path": {
+        "line": 1639,
+        "sha256": "38e5738ebe68c6fff3e9d1bfbf9e080e2b959784f3bc5d643edb3c00e1ce3730"
+      },
+      "crosslist_export": {
+        "line": 1952,
+        "sha256": "63d50d64cd2c0881892ac36b4ef6e2c403c9f57cebef60357315b65c7d4d2055"
+      }
+    }
+  },
+  "dispatch_only_difference": "d4955 adds clarification_skus message formatter; both forward original outcome unchanged",
+  "scope_recognizer_identical": true,
+  "counterexample_evaluations": 24,
+  "success_export": {
+    "task": "t091",
+    "trial_id": "vm2-M6ykbxLGHERnvngxssk2od9S6Mx",
+    "instruction": "Create an inventory CSV export at /exports/inventory-family-iN91eppP.csv for PowerTools at Eggenberg. Include `family_id` `fam-makita-dhs680-lxt` and use exactly these columns: `SKU,2026-02-24,2026-02-25,2026-02-26,2026-02-27,2026-02-28,2026-03-01`. Return only the export path.",
+    "official_score": 1,
+    "write_request_sequences": [
+      12708,
+      12712
+    ],
+    "write_ack_sequences": [
+      12709,
+      12713
+    ],
+    "answer_seq": 12716,
+    "first_row_field_counts": [
+      7,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "corrected_row_field_counts": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "note": "First acknowledged Write had wrong field count; ACK confirms a write, not report correctness."
+  },
+  "scope": "Complete compact failure index and all RPC requests; selected event bodies, not reconstructed full trace CAS. Successful export is a different task/world, not a paired causal comparison."
+}
