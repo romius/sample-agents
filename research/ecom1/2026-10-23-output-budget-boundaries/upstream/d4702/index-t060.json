@@ -1,0 +1,352 @@
+[
+  {
+    "items": [
+      {
+        "seq": 8525,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 0,
+            "bytes": 210
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8526,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 210,
+            "bytes": 571
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 46
+        }
+      },
+      {
+        "seq": 8527,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 781,
+            "bytes": 181
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8528,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 962,
+            "bytes": 3149
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 40
+        }
+      },
+      {
+        "seq": 8529,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 4111,
+            "bytes": 180
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8530,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 4291,
+            "bytes": 2021
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 55
+        }
+      },
+      {
+        "seq": 8531,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 6312,
+            "bytes": 179
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8532,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 6491,
+            "bytes": 202
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 8533,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 6693,
+            "bytes": 177
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8534,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 6870,
+            "bytes": 273
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 8535,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 7143,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8536,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 7330,
+            "bytes": 5441
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 40
+        }
+      },
+      {
+        "seq": 8537,
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 12771,
+            "bytes": 3476
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 141,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 8538,
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 16247,
+            "bytes": 1625
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 141,
+          "model": "openai/gpt-oss-120b",
+          "ms": 1710
+        }
+      },
+      {
+        "seq": 8539,
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 17872,
+            "bytes": 14176
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 142,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 8540,
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 32048,
+            "bytes": 2288
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 142,
+          "model": "openai/gpt-oss-120b",
+          "ms": 4540
+        }
+      },
+      {
+        "seq": 8541,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 34336,
+            "bytes": 191
+          },
+          "method": "List",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8542,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 34527,
+            "bytes": 1540
+          },
+          "method": "List",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 52
+        }
+      },
+      {
+        "seq": 8543,
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 36067,
+            "bytes": 15952
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 143,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 8544,
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 52019,
+            "bytes": 7738
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "call": 143,
+          "model": "openai/gpt-oss-120b",
+          "ms": 21335
+        }
+      },
+      {
+        "seq": 8545,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 59757,
+            "bytes": 265
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8546,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 60022,
+            "bytes": 171
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 46
+        }
+      },
+      {
+        "seq": 8547,
+        "kind": "agent_finished",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 60193,
+            "bytes": 1521
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "task_id": "t060",
+          "state": "answered"
+        }
+      },
+      {
+        "seq": 8548,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 61714,
+            "bytes": 208
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D"
+        }
+      },
+      {
+        "seq": 8549,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-60",
+            "offset": 61922,
+            "bytes": 243
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D",
+          "ms": 54
+        }
+      }
+    ],
+    "more": false,
+    "next_after": 8549
+  }
+]

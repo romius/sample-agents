@@ -1,0 +1,216 @@
+[
+  {
+    "source": "d4702",
+    "task": "t016",
+    "job": "jfdd875bba6ba4773a549e8703764efa9",
+    "anomalies": 3,
+    "main_iterations": 6,
+    "final_phase": "forced",
+    "final_request_event": 2647,
+    "final_model_response": {
+      "seq": 2648,
+      "kind": "llm_response",
+      "call": 42,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"read\",\"path\":\"/proc/locations/Vienna/store-vie-meidling.json\"}"
+    },
+    "final_Answer": {
+      "seq": 2649,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 2651,
+    "stdout": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"read\", \"path\": \"/uploads/GeqVzurw_competitor_purchase_request_ocr.txt\"}\nStep 2 {\"tool\": \"list\", \"path\": \"/proc/locations\"}\nStep 3 {\"tool\": \"list\", \"path\": \"/proc/locations/Vienna\"}\nInvalid step 4 Return one JSON action object\nInvalid step 5 Return one JSON action object\n{'job': {'model_calls': 42, 'model_cost_usd': 0.00571363, 'reported_cost_usd': '0.005713630', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 125720, 'completion_tokens': 6247, 'total_tokens': 131967}, 'workshop': {'model_calls': 70937, 'model_cost_usd': 113.875495866, 'reported_cost_usd': '113.875495866', 'unknown_cost_calls': 40, 'pending_calls': 11, 'cost_complete': False, 'prompt_tokens': 325571611, 'completion_tokens': 20511309, 'total_tokens': 346082920}}\n",
+    "all_indexed_RPCs_present": true
+  },
+  {
+    "source": "d4702",
+    "task": "t043",
+    "job": "jfdd875bba6ba4773a549e8703764efa9",
+    "anomalies": 2,
+    "main_iterations": 8,
+    "final_phase": "main",
+    "final_request_event": 6376,
+    "final_model_response": {
+      "seq": 6377,
+      "kind": "llm_response",
+      "call": 110,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Read receipt OCR, read store inventory, compared quantities\"],\"message\":\"<NO>\",\"grounding_refs\":[\"/uploads/ccVybYAU_receipt_ocr.txt\",\"/proc/locations/Innsbruck/store-innsbruck-mitte.json\"],\"outcome\":\"OUTCOME_OK\"}"
+    },
+    "final_Answer": {
+      "seq": 6624,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "<NO>",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/ccVybYAU_receipt_ocr.txt",
+          "/proc/locations/Innsbruck/store-innsbruck-mitte.json",
+          "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json",
+          "/proc/catalog/Karcher/PT-WASH-KAR-K4-PC.json",
+          "/docs/security.md",
+          "/docs/availability-checks.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 6626,
+    "stdout": "Routed policy docs [\"/docs/availability-checks.md\"]\nreceipt-availability: receipt lines not resolved, falling back\nStep 1 {\"tool\": \"read\", \"path\": \"/uploads/ccVybYAU_receipt_ocr.txt\"}\nInvalid step 2 Return one JSON action object\nInvalid step 3 Return one JSON action object\nStep 4 {\"tool\": \"list\", \"path\": \"/proc/locations\"}\nStep 5 {\"tool\": \"list\", \"path\": \"/proc/locations/Innsbruck\"}\nStep 6 {\"tool\": \"list\", \"path\": \"/proc/catalog\"}\nStep 7 {\"tool\": \"read\", \"path\": \"/proc/locations/Innsbruck/store-innsbruck-mitte.json\"}\nStep 8 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [\"Read receipt OCR, read store inventory, compared quantities\"], \"message\": \"<NO>\", \"grounding_refs\": [\"/uploads/ccVybYAU_receipt_ocr.txt\", \"/proc/locations/Innsbruck/store-innsbruck-mitte.json\"], \"outcome\": \"OUTCOME_OK\"}\nFinal answer [\"<NO>\", [\"/uploads/ccVybYAU_receipt_ocr.txt\", \"/proc/locations/Innsbruck/store-innsbruck-mitte.json\", \"/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json\", \"/proc/catalog/Karcher/PT-WASH-KAR-K4-PC.json\", \"/docs/security.md\", \"/docs/availability-checks.md\"]]\n{'job': {'model_calls': 110, 'model_cost_usd': 0.015050673, 'reported_cost_usd': '0.015050673', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 311699, 'completion_tokens': 20693, 'total_tokens': 332392}, 'workshop': {'model_calls': 71287, 'model_cost_usd': 113.914563299, 'reported_cost_usd': '113.914563299', 'unknown_cost_calls': 40, 'pending_calls': 10, 'cost_complete': False, 'prompt_tokens': 326363620, 'completion_tokens': 20568739, 'total_tokens': 346932359}}\n",
+    "all_indexed_RPCs_present": true
+  },
+  {
+    "source": "d4702",
+    "task": "t074",
+    "job": "jfdd875bba6ba4773a549e8703764efa9",
+    "anomalies": 4,
+    "main_iterations": 5,
+    "final_phase": "forced",
+    "final_request_event": 11143,
+    "final_model_response": {
+      "seq": 11144,
+      "kind": "llm_response",
+      "call": 183,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"search\",\"pattern\":\"Donaustadt\",\"root\":\"/proc/stores\",\"limit\":20}"
+    },
+    "final_Answer": {
+      "seq": 11145,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/availability-checks.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 11147,
+    "stdout": "Routed policy docs [\"/docs/availability-checks.md\"]\nInvalid step 1 Return one JSON action object\nStep 2 {\"tool\": \"stores\", \"query\": \"PowerTools\"}\nInvalid step 3 Return one JSON action object\nInvalid step 4 Return one JSON action object\n{'job': {'model_calls': 183, 'model_cost_usd': 0.02459743, 'reported_cost_usd': '0.024597430', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 515200, 'completion_tokens': 32559, 'total_tokens': 547759}, 'workshop': {'model_calls': 71494, 'model_cost_usd': 113.942819619, 'reported_cost_usd': '113.942819619', 'unknown_cost_calls': 40, 'pending_calls': 9, 'cost_complete': False, 'prompt_tokens': 326958090, 'completion_tokens': 20605568, 'total_tokens': 347563658}}\n",
+    "all_indexed_RPCs_present": true
+  },
+  {
+    "source": "d4955",
+    "task": "t043",
+    "job": "j37e3df7ac8564c0899c81a706e0aea9a",
+    "anomalies": 1,
+    "main_iterations": 9,
+    "final_phase": "main",
+    "final_request_event": 5648,
+    "final_model_response": {
+      "seq": 5649,
+      "kind": "llm_response",
+      "call": 107,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Checked stock for basket items\"],\"message\":\"<NO>\",\"grounding_refs\":[\"/uploads/2dnWxGZL_receipt_ocr.txt\",\"/proc/locations/Vienna/store-vie-favoriten.json\"],\"outcome\":\"OUTCOME_OK\"}"
+    },
+    "final_Answer": {
+      "seq": 5650,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "<NO>",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/2dnWxGZL_receipt_ocr.txt",
+          "/proc/locations/Vienna/store-vie-favoriten.json",
+          "/proc/catalog/Karcher/PT-WASH-KAR-K4-PREMIUM.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+          "/docs/security.md",
+          "/docs/availability-checks.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 5652,
+    "stdout": "Routed policy docs [\"/docs/availability-checks.md\"]\nreceipt-availability: receipt lines not resolved, falling back\nStep 1 {\"tool\": \"read\", \"path\": \"/uploads/2dnWxGZL_receipt_ocr.txt\"}\nStep 2 {\"tool\": \"find\", \"name\": \"Favoritenstasse\", \"root\": \"/proc/locations\", \"kind\": \"all\", \"limit\": 20}\nStep 3 {\"tool\": \"search\", \"pattern\": \"Favoritenstasse\", \"root\": \"/proc/locations\", \"limit\": 20}\nInvalid step 4 Return one JSON action object\nStep 5 {\"tool\": \"list\", \"path\": \"/proc/locations\"}\nStep 6 {\"tool\": \"list\", \"path\": \"/proc/locations/Vienna\"}\nStep 7 {\"tool\": \"stock\", \"store\": \"/proc/locations/Vienna/store-vie-favoriten.json\", \"skus\": [\"PT-WASH-KAR-K4-PREMIUM\", \"PT-MOW-EI-GECM36-2X4\", \"PT-SAW-MAK-DHS680-BLADE\"]}\nInvalid step 8 Return one JSON action object\nStep 9 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [\"Checked stock for basket items\"], \"message\": \"<NO>\", \"grounding_refs\": [\"/uploads/2dnWxGZL_receipt_ocr.txt\", \"/proc/locations/Vienna/store-vie-favoriten.json\"], \"outcome\": \"OUTCOME_OK\"}\nFinal answer [\"<NO>\", [\"/uploads/2dnWxGZL_receipt_ocr.txt\", \"/proc/locations/Vienna/store-vie-favoriten.json\", \"/proc/catalog/Karcher/PT-WASH-KAR-K4-PREMIUM.json\", \"/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json\", \"/docs/security.md\", \"/docs/availability-checks.md\"]]\n{'job': {'model_calls': 107, 'model_cost_usd': 0.017146186, 'reported_cost_usd': '0.017146186', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 326078, 'completion_tokens': 29890, 'total_tokens': 355968}, 'workshop': {'model_calls': 72086, 'model_cost_usd': 114.034453074, 'reported_cost_usd': '114.034453074', 'unknown_cost_calls': 41, 'pending_calls': 8, 'cost_complete': False, 'prompt_tokens': 328755065, 'completion_tokens': 20753482, 'total_tokens': 349508547}}\n",
+    "all_indexed_RPCs_present": true
+  },
+  {
+    "source": "d4955",
+    "task": "t056",
+    "job": "j37e3df7ac8564c0899c81a706e0aea9a",
+    "anomalies": 5,
+    "main_iterations": 7,
+    "final_phase": "forced",
+    "final_request_event": 6989,
+    "final_model_response": {
+      "seq": 6990,
+      "kind": "llm_response",
+      "call": 140,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Read OCR file\",\"Identified target branch\"],\"message\":\"Cannot generate crosslist report without matching catalogue products; further catalogue lookup required.\",\"grounding_refs\":[\"/uploads/fSKLqSzY_competitor_purchase_request_ocr.txt\",\"/proc/locations/Graz/store-graz-puntigam.json\"],\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}"
+    },
+    "final_Answer": {
+      "seq": 6991,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "Cannot generate crosslist report without matching catalogue products; further catalogue lookup required.",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/uploads/fSKLqSzY_competitor_purchase_request_ocr.txt",
+          "/proc/locations/Graz/store-graz-puntigam.json",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 6993,
+    "stdout": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"read\", \"path\": \"/uploads/fSKLqSzY_competitor_purchase_request_ocr.txt\"}\nInvalid step 2 Return one JSON action object\nInvalid step 3 Return one JSON action object\nStep 4 {\"tool\": \"stores\", \"query\": \"PowerTools Graz Puntigam\"}\nInvalid step 5 Return one JSON action object\nInvalid step 6 Return one JSON action object\nFinal answer [\"Cannot generate crosslist report without matching catalogue products; further catalogue lookup required.\", [\"/uploads/fSKLqSzY_competitor_purchase_request_ocr.txt\", \"/proc/locations/Graz/store-graz-puntigam.json\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'job': {'model_calls': 140, 'model_cost_usd': 0.022180932, 'reported_cost_usd': '0.022180932', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 437176, 'completion_tokens': 35326, 'total_tokens': 472502}, 'workshop': {'model_calls': 72166, 'model_cost_usd': 114.046908916, 'reported_cost_usd': '114.046908916', 'unknown_cost_calls': 41, 'pending_calls': 8, 'cost_complete': False, 'prompt_tokens': 329012131, 'completion_tokens': 20770802, 'total_tokens': 349782933}}\n",
+    "all_indexed_RPCs_present": true
+  },
+  {
+    "source": "d4955",
+    "task": "t076",
+    "job": "j37e3df7ac8564c0899c81a706e0aea9a",
+    "anomalies": 10,
+    "main_iterations": 29,
+    "final_phase": "forced",
+    "final_request_event": 9571,
+    "final_model_response": {
+      "seq": 9572,
+      "kind": "llm_response",
+      "call": 206,
+      "finish_reason": "stop",
+      "content": "{\"tool\":\"report_completion\",\"completed_steps_laconic\":[\"Read OCR file\",\"Read Bosch CYL-9 long drill bit set catalogue entry\",\"Read Makita DHS680 kit catalogue entry\",\"Read Einhell TE‑RS 18 Li sander starter kit catalogue entry\",\"Read Bosch UniversalHedgeCut 4.0Ah catalogue entry\",\"Read target branch inventory\"],\"message\":\"Report generation was not performed as instructed to stop. No TSV file was created.\",\"grounding_refs\":[\"/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt\",\"/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json\",\"/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json\",\"/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json\",\"/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json\",\"/proc/locations/Salzburg/store-salzburg-nord.json\"],\"outcome\":\"OUTCOME_OK\"}"
+    },
+    "final_Answer": {
+      "seq": 9573,
+      "kind": "rpc_request",
+      "method": "Answer",
+      "arguments": {
+        "message": "Report generation was not performed as instructed to stop. No TSV file was created.",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt",
+          "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json",
+          "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+          "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+          "/proc/locations/Salzburg/store-salzburg-nord.json",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    },
+    "mutation_RPCs": [],
+    "stdout_event": 9575,
+    "stdout": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined Unrecognised line inside a requested row\nStep 1 {\"tool\": \"read\", \"path\": \"/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt\"}\nStep 2 {\"tool\": \"tree\", \"root\": \"/proc/catalog\", \"level\": 2}\nInvalid step 3 Return one JSON action object\nStep 4 {\"tool\": \"read\", \"path\": \"/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json\"}\nStep 5 {\"tool\": \"tree\", \"root\": \"/proc/locations\", \"level\": 2}\nStep 6 {\"tool\": \"read\", \"path\": \"/proc/locations/Salzburg/store-salzburg-nord.json\"}\nInvalid step 7 Return one JSON action object\nInvalid step 8 Return one JSON action object\nStep 9 {\"tool\": \"catalog\", \"query\": \"Bosch CYL-9\"}\nStep 10 {\"tool\": \"search\", \"pattern\": \"DHS680\", \"root\": \"/proc/catalog\", \"limit\": 20}\nStep 11 {\"tool\": \"read\", \"path\": \"/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json\"}\nStep 12 {\"tool\": \"search\", \"pattern\": \"Einhell TE-\", \"root\": \"/proc/catalog\", \"limit\": 20}\nStep 14 {\"tool\": \"read\", \"path\": \"/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json\"}\nStep 15 {\"tool\": \"search\", \"pattern\": \"UniversalHedgeCut\", \"root\": \"/proc/catalog\", \"limit\": 20}\nStep 16 {\"tool\": \"read\", \"path\": \"/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json\"}\nStep 17 {\"tool\": \"list\", \"path\": \"/proc/catalog/Bosch Professional\"}\nStep 20 {\"tool\": \"read\", \"path\": \"/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json\"}\nStep 21 {\"tool\": \"read\", \"path\": \"/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt\"}\nStep 22 {\"tool\": \"search\", \"pattern\": \"PT-SAW-MAK-DHS680-3AH\", \"root\": \"/proc/locations\", \"limit\": 20}\nStep 23 {\"tool\": \"search\", \"pattern\": \"PT-SAW-MAK-DHS680-3AH\", \"root\": \"/proc/locations/Salzburg\", \"limit\": 20}\nStep 24 {\"tool\": \"search\", \"pattern\": \"PT-SAW-MAK-DHS680-3AH\", \"root\": \"/proc/locations/Salzburg\", \"limit\": 20}\nStep 26 {\"tool\": \"search\", \"pattern\": \"PT-SAW-MAK-DHS680-3AH\", \"root\": \"/proc/locations/Salzburg\", \"limit\": 20}\nFinal answer [\"Report generation was not performed as instructed to stop. No TSV file was created.\", [\"/uploads/PEfkdA5b_competitor_purchase_request_ocr.txt\", \"/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json\", \"/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json\", \"/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json\", \"/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json\", \"/proc/locations/Salzburg/store-salzburg-nord.json\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'job': {'model_calls': 206, 'model_cost_usd': 0.043665286, 'reported_cost_usd': '0.043665286', 'unknown_cost_calls': 0, 'pending_calls': 0, 'cost_complete': True, 'prompt_tokens': 859238, 'completion_tokens': 69844, 'total_tokens': 929082}, 'workshop': {'model_calls': 72474, 'model_cost_usd': 114.107676998, 'reported_cost_usd': '114.107676998', 'unknown_cost_calls': 41, 'pending_calls': 9, 'cost_complete': False, 'prompt_tokens': 330237327, 'completion_tokens': 20861601, 'total_tokens': 351098928}}\n",
+    "all_indexed_RPCs_present": true
+  }
+]

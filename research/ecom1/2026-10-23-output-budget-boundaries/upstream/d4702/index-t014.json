@@ -1,0 +1,402 @@
+[
+  {
+    "items": [
+      {
+        "seq": 2559,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 0,
+            "bytes": 210
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2560,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 210,
+            "bytes": 472
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 2561,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 682,
+            "bytes": 181
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2562,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 863,
+            "bytes": 3128
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 45
+        }
+      },
+      {
+        "seq": 2563,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 3991,
+            "bytes": 180
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2564,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 4171,
+            "bytes": 2021
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 2565,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6192,
+            "bytes": 179
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2566,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6371,
+            "bytes": 202
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 2567,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6573,
+            "bytes": 177
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2568,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6750,
+            "bytes": 211
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 2569,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6961,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2570,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 7148,
+            "bytes": 5441
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 40
+        }
+      },
+      {
+        "seq": 2571,
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 12589,
+            "bytes": 3376
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "call": 33,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 2572,
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 15965,
+            "bytes": 1440
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "call": 33,
+          "model": "openai/gpt-oss-120b",
+          "ms": 2986
+        }
+      },
+      {
+        "seq": 2573,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 17405,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2574,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 17592,
+            "bytes": 1581
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 44
+        }
+      },
+      {
+        "seq": 2575,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 19173,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2576,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 19360,
+            "bytes": 1581
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 2577,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 20941,
+            "bytes": 209
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2578,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 21150,
+            "bytes": 496
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 2579,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 21646,
+            "bytes": 210
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2580,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 21856,
+            "bytes": 3229
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 2581,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 25085,
+            "bytes": 207
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2582,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 25292,
+            "bytes": 4566
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 46
+        }
+      },
+      {
+        "seq": 2583,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 29858,
+            "bytes": 1790
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2584,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 31648,
+            "bytes": 171
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 43
+        }
+      },
+      {
+        "seq": 2585,
+        "kind": "agent_finished",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 31819,
+            "bytes": 1160
+          },
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "task_id": "t014",
+          "state": "answered"
+        }
+      },
+      {
+        "seq": 2586,
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 32979,
+            "bytes": 208
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R"
+        }
+      },
+      {
+        "seq": 2587,
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 33187,
+            "bytes": 243
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4R",
+          "ms": 54
+        }
+      }
+    ],
+    "more": false,
+    "next_after": 2587
+  }
+]

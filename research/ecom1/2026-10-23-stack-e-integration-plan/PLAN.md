@@ -1,4 +1,4 @@
-# Current integration plan — d4353r1 (updated 03:56 UTC)
+# Current integration plan — d4353r1 (updated 04:14 UTC)
 
 This section supersedes the historical STACK E plan below. Start from the verified record **d4353r1: 94.72095/100**, 63,211 bytes, installed unchanged as d298r19. SHA256 `588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e`. Readable d4354r1, build d4355r1, packer d3268r2. Exact dependency closure and every-task final-log audit are preserved locally and in Brain.
 
@@ -18,9 +18,11 @@ This section supersedes the historical STACK E plan below. Start from the verifi
 
 Every task of d4702 and d4955 is reviewed, including successes. d4702 scores 87.08894; d4955 scores 87.107223. Their instructions/worlds differ from the record, so score deltas are not causal. d4955 archive d6878/review d6880/finding d6895/Git3d143df shows the clarification addition never visibly activates in delivered answers. The receipt-header success uses different upload/products and does not isolate the change. d5204's all100 failures are audited in d6833/review d6835/finding d6837.
 
-**TWO own queued full100 jobs**, OCR and Exec404, verified03:39UTC. Last submission02:42:19; next broadrefresh04:09UTC. Submit no full100 while two outstanding; captwo and at mostone new per30-minute cycle. Inventory third-slot consumed. Never cancel/modify submittedjobs. Preserve exactsources/dependencies/builds/tests/hashes/evidence in Git and Brain before payment. Promote any completed100 strictwinner exactbytes immediately after recordrefresh, then continue.
+**TWO own running full100 jobs**, OCR and Exec404, verified04:00UTC. Last submission02:42:19; next broadrefresh04:30UTC. Dedicated immutable task collection subsequently captured73 completed OCR tasks and21 Exec404 tasks, zero execution failures; grades remain pending. These snapshots are not final scores. Submit no full100 while two outstanding; captwo and at mostone new per30-minute cycle. Inventory third-slot consumed. Never cancel/modify submittedjobs. Preserve exactsources/dependencies/builds/tests/hashes/evidence in Git and Brain before payment. Promote any completed100 strictwinner exactbytes immediately after recordrefresh, then continue.
 
 Receipt matching decisions are source-specific. Exact bare d4353+H4 fails both actualfallbacks (d6986–6991/Git0ce8800). X10+H4 completes both archivedchecks but bypasses three closer/tiedprice-rival guards: UNQUALIFIED (d6999–7003/Git3885c91). ExactTRAIN-4d6855+H4 has a different early exactpriceguard and passed separate64wholeagent+80module checks and root reproduction (d7025–7029/Gitce83b45); do not transfer X10 conclusions wholesale. Actual negative answer-token equality is insufficient to prove SKU identity.
+
+New bounded evidence: stock thresholds and independent single-line short/incoming/absent controls pass336wholeagent cells (280helper-reaching,56fixedfallbacks notstockscored), archive d7057–7061/Git534c8d6. Exactall-path guard d7019 reproduces target vetoes but changes inherited full-drop1 acceptance; source packs65511B/25headroom, no source selection. The H4-only-scopedrc2 requires its own exact artifact review. Own-basket-field work already belongs to crown; closed grafragov candidate d6661 fails native globals() and three policy/path/truncation boundaries (d6668), so no duplicate or adoption.
 
 Community03:39: TRAIN-3rc7 running and TRAIN-4rc1d6855 queued underownerinara; do notduplicate. Doctor's router successor onrecord alreadyqueued. Ant1d6982 identifies actualt080 QT header, confirmed againstevent11342; bobcatownsreceiptintegration. Exclusion/reference work remains coordinated withbobcat/msh/lea. BroadFrenchnegationfalseholds and projectedwinnings remain unqualified.
 ---
