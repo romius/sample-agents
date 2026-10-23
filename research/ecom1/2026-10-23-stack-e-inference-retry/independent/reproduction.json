@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "scope": "Offline exact isolated rebuild/native tests; no network/model/SDK backend executed",
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "dependencies_verified": 14,
+  "input_sha256": {
+    "test_helper_whole.py": "183df9d6ade6af5031d525b6fa19af6a4c8d22fb4818548016b6269dd321590d",
+    "build.py": "409a8101150fc76cd4a10ce606d1ada9fd0f341cabd544b0a7e5ce8b7fc4563f",
+    "DEPENDENCIES.json": "70971a0483789d45aba660aadaa4bb00210528395ce99fa040f1f86c2ce42581",
+    "parent-build.py": "4ccc07ae000e50ed07f22afcb37e3431be60be14c61c10a6accebec0b8df6cf7",
+    "test-results.json": "a9a38154021fc566591eeb57c9602ed23351cb34e57a73f136b4bdebf307e28c",
+    "requirements.txt": "fa3fb8709e018fdaa4abbf9d167e4beb5845f19cd2fde5150d74d85a9d7ac44f",
+    "test_guest.py": "58d84589b034a16beb735465e5521ca227ed82c72f450b3d80fdd9aed30e72e9",
+    "guest_retry.py": "266b571f4f8cf752b0d9c3b892c3c5141cefc983e09a7b23cba8d1c3774ddfa9",
+    "parent.py": "56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c",
+    "parent-readable.py": "d6ae7201e116520be92f1e81f83a15644a167eb4003c32c0026f905d27d884eb",
+    "README.md": "af84148f3342feaf1359707be0b412b859bf70d49032319f84f451e3b966d1b6",
+    "helper-whole-fixture.json": "9357840e60d2d1222c0930c6bf22f768a36553ea9ff0c2f9dc7d91fc0b4fba8c",
+    "VALIDATION.json": "acb5506a66e69603ba83e78e7e6e6941cbfa8970856193229b6856d53620bad6",
+    "agent.py": "f97714ccf8ab8de4acab2b21e5545b40be589fb90711aae1948888a60b54df60",
+    "manifest.json": "01cefd11caae64c366987cd75fd0b61ef57a73bf9ac8d95e26c1aa80b54de131",
+    "candidate.diff": "057699df774d80788c7cdb02ff2381446f3d4a39bb31b7a1f392611403a7c069",
+    "readable.py": "9a9df7b0f8a708a5d6482cb3770a10322e77a52d60d7011641875ce5ade4a0f1",
+    "fake-requests.json": "e3c919258830199a4a9e377ab328c23bb126b3e17b5a79c3cdd9d98f9c248079",
+    "helper-whole-results.json": "7748b2429093f445649d5d2ed817f74f37f3178f51d65470f77570557f283cdf",
+    "SHA256SUMS": "c33ca9387be7ec2cf0d9fc4d400ba8e747396e33c0ec7a7746967d0fb106815c",
+    "test_native.py": "b61123a839a2ed7f51063b74bf70ef8d83c0a80215e4e14c43f4102d8a372407",
+    "guest-owned/test-results.json": "9b9e86b4dd2bbb7efe1925da6ee73fb05eeb60897936c8c6910f4c2314a1e6c0",
+    "guest-owned/agent.py": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d",
+    "guest-owned/manifest.json": "5b7ba1d198c2d050b19386ba7c535a448e974122719b542e19e231e31b0d969a",
+    "guest-owned/candidate.diff": "80615ecd2dfb74567ea297233612906b3c69a4bd14fc032c2bf0b91197d390c4",
+    "guest-owned/readable.py": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21",
+    "guest-owned/fake-requests.json": "f33692765f439105519b3efa3f6c50b2e2883d8e12929e955be592aa7477c458",
+    "runtime/class_instance.py": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6",
+    "initial-keyword-candidate/build.py": "f5b877974b45042596da19ec6196ffb4ad4190165e5dab6655a078d7f9f438a6",
+    "initial-keyword-candidate/test-results.json": "93738eac671fa16264d7b65b88881148441faab430be599501a4879e770a3599",
+    "initial-keyword-candidate/agent.py": "22e5574a248844521e3da3fff68142a0525480bf43aea036970fb1c8d5de6dfc",
+    "initial-keyword-candidate/manifest.json": "4d9daadd8b4444d4cda36b0b6b267d60fbf6b990e241a99a92517c837850c23e",
+    "initial-keyword-candidate/candidate.diff": "1e4d1d1de8e985549be7d8023a8c8217e73f0e9e41f6adedfcaf757f28ddd153",
+    "initial-keyword-candidate/readable.py": "591c05d994c412e92ad169e07e4a6d46910f41d2dfe5a49eca0d71c1f9af9b04",
+    "initial-keyword-candidate/test_native.py": "6e7e8d73a2135dd49220a0d0b6ea07cd4e065f8d51823c735be796cda8eb9cbc"
+  },
+  "build_files_byte_identical": [
+    "parent.py",
+    "parent-readable.py",
+    "parent-build.py",
+    "readable.py",
+    "agent.py",
+    "candidate.diff",
+    "manifest.json",
+    "guest-owned/readable.py",
+    "guest-owned/agent.py",
+    "guest-owned/candidate.diff",
+    "guest-owned/manifest.json"
+  ],
+  "test_reports_byte_identical": [
+    "test-results.json",
+    "fake-requests.json",
+    "guest-owned/test-results.json",
+    "guest-owned/fake-requests.json",
+    "helper-whole-results.json",
+    "helper-whole-fixture.json"
+  ],
+  "steps": [
+    {
+      "script": "build.py",
+      "returncode": 0,
+      "stdout": "{\"parent\": \"d3909r1\", \"scope\": \"SDK-only retry owner; no new guest transient retry; cancellation propagation; suppress forced inference after main inference error\", \"no_exec404_change\": true, \"no_action_dispatch_change\": true, \"headroom\": 2429, \"packed_readable_equal\": true, \"files\": {\"parent.py\": {\"bytes\": 62475, \"sha256\": \"56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c\"}, \"parent-readable.py\": {\"bytes\": 145858, \"sha256\": \"d6ae7201e116520be92f1e81f83a15644a167eb4003c32c0026f905d27d884eb\"}, \"parent-build.py\": {\"bytes\": 4948, \"sha256\": \"4ccc07ae000e50ed07f22afcb37e3431be60be14c61c10a6accebec0b8df6cf7\"}, \"readable.py\": {\"bytes\": 147140, \"sha256\": \"9a9df7b0f8a708a5d6482cb3770a10322e77a52d60d7011641875ce5ade4a0f1\"}, \"agent.py\": {\"bytes\": 63107, \"sha256\": \"f97714ccf8ab8de4acab2b21e5545b40be589fb90711aae1948888a60b54df60\"}, \"candidate.diff\": {\"bytes\": 4331, \"sha256\": \"057699df774d80788c7cdb02ff2381446f3d4a39bb31b7a1f392611403a7c069\"}}}\n{\"parent\": \"d3909r1\", \"scope\": \"Single guest inference retry owner, maximum3 recognized transient attempts; SDK-only429; not yet evaluated\", \"no_exec404_change\": true, \"no_action_dispatch_change\": true, \"headroom\": 2022, \"packed_readable_equal\": true, \"files\": {\"readable.py\": {\"bytes\": 148314, \"sha256\": \"1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21\"}, \"agent.py\": {\"bytes\": 63514, \"sha256\": \"513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d\"}, \"candidate.diff\": {\"bytes\": 6761, \"sha256\": \"80615ecd2dfb74567ea297233612906b3c69a4bd14fc032c2bf0b91197d390c4\"}}}\n",
+      "stderr": ""
+    },
+    {
+      "script": "test_native.py",
+      "returncode": 0,
+      "stdout": "{\"status\": \"offline native controls passed\", \"exact_whole_agent_executions\": 84, \"scenarios\": 21, \"important_counterexamples\": [\"503 that succeeds on a second guest invocation loses recovery\", \"initial keyword cancellation detector falsely aborted negated wording; final explicit-form detector preserves this fallback\"]}\n",
+      "stderr": ""
+    },
+    {
+      "script": "test_guest.py",
+      "returncode": 0,
+      "stdout": "{\"status\": \"passed\", \"whole_agent_executions\": 86, \"scenarios\": 43, \"real_model_calls\": 0, \"mutation_retry\": false}\n",
+      "stderr": ""
+    },
+    {
+      "script": "test_helper_whole.py",
+      "returncode": 0,
+      "stdout": "PASS24 exact whole-agent helper executions; no replaced source functions.\n",
+      "stderr": ""
+    }
+  ],
+  "function_ast_changes": {
+    "readable.py": {
+      "added": [
+        "inference_cancelled"
+      ],
+      "changed": [
+        "i2c_dispatch",
+        "i2c_llm_narrow",
+        "route_policy_docs"
+      ],
+      "dispatch_and_recoverable_lookup_unchanged": true
+    },
+    "guest-owned/readable.py": {
+      "added": [
+        "inference_call",
+        "inference_cancelled",
+        "inference_retryable"
+      ],
+      "changed": [
+        "i2c_dispatch",
+        "i2c_llm_narrow",
+        "route_policy_docs"
+      ],
+      "dispatch_and_recoverable_lookup_unchanged": true
+    }
+  },
+  "temporary_copy": "/var/folders/px/h2tbfkd177v7w8r4xg5h7ycw0000gn/T/ecom1-retry-independent-t93zfaxw/ecom1/2026-10-23-stack-e-inference-retry"
+}

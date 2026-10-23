@@ -1,0 +1,53 @@
+{
+  "status": "passed isolated deterministic archive reproduction",
+  "files": 58,
+  "archive_bytes": 838254,
+  "archive_sha256": "1a2c70e90ac89adbe54f7ba1c03e350e51d67d5b2837fbb3f2025f624153c8f2",
+  "uncompressed_bytes": 9773288,
+  "environment": {
+    "python": "3.14.3",
+    "monty": "1.2.0",
+    "zlib_build": "1.2.12",
+    "zlib_runtime": "1.2.12"
+  },
+  "dependency_pins": 14,
+  "sources": {
+    "SDK-only": {
+      "bytes": 63107,
+      "sha256": "f97714ccf8ab8de4acab2b21e5545b40be589fb90711aae1948888a60b54df60"
+    },
+    "bounded_guest": {
+      "bytes": 63514,
+      "sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    }
+  },
+  "original_seal_sha256": "c33ca9387be7ec2cf0d9fc4d400ba8e747396e33c0ec7a7746967d0fb106815c",
+  "independent_review_sha256": "5cc1063f8b5ddcf0942b5fca88c76efe25cae26afd7b874b9b65fc45065d7c44",
+  "source_build_byte_identical": true,
+  "helper24_reproduced": true,
+  "independent_classifier18_reproduced": true,
+  "full194_suite_repeated_for_packaging": false,
+  "all_archived_reports_unchanged": true,
+  "extracted_builder_identical": true,
+  "deterministic_double_write": true,
+  "no_paid_calls": true,
+  "no_Brain_writes": true,
+  "no_live_agent_edit": true,
+  "OCR_integration": false,
+  "steps": [
+    {
+      "script": "build.py",
+      "returncode": 0
+    },
+    {
+      "script": "test_helper_whole.py",
+      "returncode": 0
+    },
+    {
+      "script": "independent/check-classifier.py",
+      "returncode": 0
+    }
+  ],
+  "scope": "Mechanism comparison only; independent review is not a score claim or automatic candidate preference",
+  "preserved_forced_branch_wording": "Parent can report30-step limit after3malformed main replies and forced inference failure"
+}

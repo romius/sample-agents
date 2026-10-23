@@ -1,0 +1,94 @@
+--- d3909r1/readable.py
++++ sdk-owner/readable.py
+@@ -59,6 +59,8 @@
+   "report_completion": ["message", "outcome"],
+   "catalog": ["query"], "stores": ["query"], "stock": ["store", "skus"],
+ }
++def inference_cancelled(exc):
++ return re.search(r"(?i)\b(?:cancelled|canceled|cancellation)\b", str(exc)) is not None
+ def normalize_action(function):
+  if not isinstance(function, dict):
+   raise ValueError("Return one JSON action object")
+@@ -386,6 +388,8 @@
+    + "\n\nPolicy documents:\n" + "\n".join(candidates) + "\n\nUser request:\n" + instruction},
+  ], max_completion_tokens=1024, reasoning={"effort": "low"}, temperature=0)
+  except Exception as exc:
++  if inference_cancelled(exc):
++   raise
+   print("llm-guard: router", str(exc)[:200])
+   return []
+  choice = response["choices"][0]
+@@ -2665,7 +2669,9 @@
+              "price_max_eur (number or null). Do not invent a model the request does not contain."},
+             {"role": "user", "content": ins}], max_completion_tokens=200, temperature=0)
+         body = ((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
+-    except Exception:
++    except Exception as exc:
++        if inference_cancelled(exc):
++            raise
+         return None
+     a, b = body.find("{"), body.rfind("}")
+     if a < 0 or b <= a:
+@@ -3334,6 +3340,8 @@
+         try:
+             r = fn(ins)
+         except Exception as exc:
++            if inference_cancelled(exc):
++                raise
+             print("i2c:", name, "error, falling back:", str(exc)[:160])
+             r = None
+         if r is not None:
+@@ -3377,6 +3385,7 @@
+ messages.append({"role": "user", "content": INSTRUCTION})
+ bootstrap_count = len(messages)
+ answered = False
++inference_failed = False
+ invalid_steps = 0
+ yes_no_asked = False
+ clar_asked = False
+@@ -3431,6 +3440,8 @@
+  try:
+   i2c_res = i2c_dispatch(INSTRUCTION)
+  except Exception as exc:
++  if inference_cancelled(exc):
++   raise
+   print("i2c: dispatch failed, falling back", str(exc)[:200])
+   i2c_res = None
+  if i2c_res is not None:
+@@ -3482,11 +3493,11 @@
+   response = bitgn.llm(MODEL, messages, max_completion_tokens=2048,
+        reasoning={"effort": "medium"}, temperature=0)
+  except Exception as exc:
++  if inference_cancelled(exc):
++   raise
+   print("llm-guard:", str(exc)[:200])
+-  invalid_steps += 1
+-  if invalid_steps >= 3:
+-   break
+-  continue
++  inference_failed = True
++  break
+  choice = response["choices"][0]
+  content = choice["message"].get("content") or ""
+  if choice.get("finish_reason") == "length":
+@@ -3539,7 +3550,7 @@
+   answered = True
+   break
+  messages.append({"role": "user", "content": observation(function, result)})
+-if not answered:
++if not answered and not inference_failed:
+  messages.append({"role": "user", "content": "Stop working now. Reply with report_completion only: "
+           "the best supported answer, the matching outcome and the exact refs you read."})
+  try:
+@@ -3550,8 +3561,10 @@
+    dispatch(function)
+    answered = True
+  except (ValueError, KeyError, IndexError, TypeError, RuntimeError) as exc:
++  if inference_cancelled(exc):
++   raise
+   print("Forced report failed", str(exc))
+ if not answered:
+- bitgn.answer("The sample reached its 30-step limit without completing the task.",
++ bitgn.answer("Inference failed; no further model request was issued." if inference_failed else "The sample reached its 30-step limit without completing the task.",
+         outcome="OUTCOME_ERR_INTERNAL", refs=merged_refs([], "", "OUTCOME_ERR_INTERNAL"))
+ print(bitgn.usage())

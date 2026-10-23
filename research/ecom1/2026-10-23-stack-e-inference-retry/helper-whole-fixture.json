@@ -1,0 +1,25 @@
+{
+  "instruction": "SKU only for mystery model QZX777.",
+  "policy_path": "/docs/catalogue-lookup.md",
+  "policy": "Products live in `/proc/catalog`. Answer the SKU only when exactly one product matches. Cite the candidate and all mentioned SKUs. Otherwise clarify.",
+  "router_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "content": "{\"docs\":[]}"
+        }
+      }
+    ]
+  },
+  "helper_success_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "content": "{}"
+        }
+      }
+    ]
+  }
+}

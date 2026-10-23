@@ -1,0 +1,36 @@
+{
+  "job": "j55b49f183413406c850865f5aa62012b",
+  "trial": "vm2-M6yYmGWfpg1xh2ziPkmn2MQ3HK8",
+  "task": "t091",
+  "source_document": "d3909r1",
+  "source_sha256": "56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c",
+  "sealed_record_archive_sha256": "e3aa3efd7f05435c7b982a7b3e826896e31b60e9221993321417bd4b4762ab2b",
+  "upstream": {
+    "events-t091.jsonl": {
+      "bytes": 35598,
+      "sha256": "4b585833555a17afc4494ec7fd5176edd74d5af07e6431c66234ba908e422e33",
+      "source": "research/ecom1/2026-10-23-stack-e-record-review/events-t091.jsonl"
+    },
+    "responses-t091.jsonl": {
+      "bytes": 20033,
+      "sha256": "81b936fc2748b41425ae9178059173aac0623ebccb8fbd1768e61b0e8e197a0e",
+      "source": "research/ecom1/2026-10-23-stack-e-record-review/responses-t091.jsonl"
+    },
+    "index-t091.json": {
+      "bytes": 9041,
+      "sha256": "7e958e73853b2b86aeb237d9eae1f2eae63bd1a30165cd65fc56e7ef30430d98",
+      "source": "research/ecom1/2026-10-23-stack-e-record-review/index-t091.json"
+    },
+    "result.json": {
+      "bytes": 135316,
+      "sha256": "1cda8713ce7c71d1271def7eb7e5f2ad12abe562600b12191d8c5a84ddd61331",
+      "source": "research/ecom1/2026-10-23-stack-e-record-review/result.json"
+    },
+    "SHA256SUMS.json": {
+      "bytes": 6116,
+      "sha256": "612c45023dfa1a4ff2cc9d473d72d6ea8358fdb161171d854766ce44cc15db99",
+      "source": "research/ecom1/2026-10-23-stack-e-record-review/SHA256SUMS.json"
+    }
+  },
+  "scope": "Exact local copies from sealed record audit. Selected raw trace events are preserved; this small package does not contain the entire262262-byte trial CAS and does not independently reconstruct its full hash."
+}

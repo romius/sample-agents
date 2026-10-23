@@ -1,13 +1,16 @@
 # Current baseline
 
-**94.11366/100 — agorlov-digital STACK E (bobcat d3756r1 i2c14+receipt v2+two-match on d2499r1 + inara crosslist_parse_ocr), DeepInfra BF16.** Promoted by pikollab after completion on 2026-10-22 at 23:05:11 UTC (official job timestamp), after completed full100 `j55b49f183413406c850865f5aa62012b` / run `run-22rJvTYhHxkZtLth5uMrp4GTs` exceeded inara d3200r2's 90.12601 record by **3.98765 points** (0.9411366 vs 0.9012601). 0 execution failures. Source pinned: `experiments/2026-10-22T1545Z-agorlov-stack-e/agent.py` (`d3909r1`, sha `56bab73502edc2fe4b6ef3d36a2e0250e6ef38601ff70ec03051d5debc4e080c`), installed unchanged to `agent/agent.py`.
+**94.72095/100 — codex d4353r1: receipt + i2c stock-cleanup composed on inara d3200r2, DeepInfra BF16.** Promoted by inara (TRAIN integrator) on behalf of the delivering agent codex, on 2026-10-23 at 00:27 UTC per AGENTS.md. Completed full100 `j6d6d4adb60f241a4a1d111a9719b59dc` / run `run-22rKXhw13zNBkMA12Uxzn6cFf` (finished 00:21:45 UTC) exceeded agorlov-digital STACK E's 94.11366 record by **0.60729 points** (0.9472095 vs 0.9411366). 100 completed / 0 failed, 216 model calls, $0.030785032 (cost complete), 679,006 tokens, SDK 0.3.7. Source pinned: `experiments/2026-10-22-codex-receipt-i2c-integration/agent.py` (`d4353r1`, 63,211 B, sha `588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e`, equal to the job's source_blob), installed unchanged to `agent/agent.py`. [Experiment README d4401](../experiments/2026-10-22-codex-receipt-i2c-integration/README.md).
+
+Losses in this run: dispatch partials t004/t014/t024/t044/t064 (≈0.82 each); t034 0.6; zeros t001 t023 t054 t080. Two completed d3551r1 runs scored 82.097507 and 86.05286 (jobs jae03bfa7efb24487b5b8429a1f042839 and j7696039d92744275a2e9ecbc7a1bb9aa). That observed spread does not by itself estimate noise for d4353 or establish whether its margin over STACK E is causal; generated worlds, execution failures and provider behavior must be compared. Promotion follows the any-full100-above-record rule; the two lines (d3200r2 + receipt/i2c, and STACK E on d2499r1) should both be treated as live bases.
 
 | Score | Source | Delivered by | Evidence |
 |---|---|---|---|
+| 94.72095 | codex d4353r1 (on inara d3200r2) | codex (delivering job owner); promoted by inara | Job j6d6d4adb..., run-22rKXhw13zNBkMA12Uxzn6cFf, DeepInfra BF16 |
 | 94.11366 | STACK E d3909r1 | agorlov-digital (delivering job owner) | Job j55b49f18..., run-22rJvTYhHxkZtLth5uMrp4GTs, DeepInfra BF16 |
 | 90.12601 | inara d3200r2 | inara | previous record |
 
-Zeros in the winning run: 5 (trial details in job result). Reported model cost: $0.029698853, with 2 unknown-cost calls; cost accounting is incomplete. Metadata checked against the official result and installed bytes by mark-codex. Prior record provenance preserved below.
+Current d4353 winning run: 4 zero grades, 5 dispatch partials and one 0.6 exact-answer partial; 0 execution failures. Reported model cost is $0.030785032, with 0 unknown-cost calls and complete accounting. Romius verified these fields against the official result and confirmed installed d298r19 bytes equal d4353r1 on 2026-10-23 at 01:15 UTC. The earlier 5-zero / $0.029698853 / 2-unknown-cost paragraph described STACK E and is superseded. Prior record provenance is preserved below.
 
 
 ## Historical d105 revision provenance

@@ -1,0 +1,124 @@
+{
+  "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21",
+  "cpython_native_parity": true,
+  "synthetic_control_count": 10,
+  "actual_timeout_receipts": [
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t003.json",
+      "source_sha256": "bb0bf1220b0e54dc91b75dd1ef9295dcd5c4692a2468858f4b38493bed8a336d",
+      "event_seq": 580,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t045.json",
+      "source_sha256": "9015d465311d23a466e2215c49809116f2ca529f9d38a4aaa39fb71676872a69",
+      "event_seq": 5866,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t056.json",
+      "source_sha256": "188ab77e1d28dda99ff52afb7554487ef652ffd9a0604aba2f4b15d0dafc9558",
+      "event_seq": 7176,
+      "error": "TimeoutError: The read operation timed out"
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t059.json",
+      "source_sha256": "9845fc853c13e33190e03208b46b0d623482a9105170002f17e682584f1b7c23",
+      "event_seq": 7308,
+      "error": "TimeoutError: The read operation timed out"
+    }
+  ],
+  "observations": [
+    {
+      "error": "OpenRouter HTTP 503: [broken",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: [{\"id\":\"gen-synthetic\",\"choices\":[],\"usage\":{}}]",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request was not cancelled; upstream unavailable\"}}",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: OpenRouter HTTP 503: {\"error\":{\"message\":\"Request cancelled\"}}",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelledness is invalid\"}}",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "HTTP 503: {\"choices\":null}",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 503: {\"error\":{\"message\":null}}",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "HTTP 429: {\"error\":{\"message\":\"request cancelled\"}}",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 400: {\"error\":{\"message\":\"invalid cancellation_policy\"}}",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "TimeoutError: request was not cancelled",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+      "cancelled": false,
+      "retryable": true
+    }
+  ],
+  "scope": "Fresh syntax controls only; no claim these synthetic envelopes occurred at provider boundary."
+}

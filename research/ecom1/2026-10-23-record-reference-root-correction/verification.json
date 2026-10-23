@@ -1,0 +1,123 @@
+{
+  "status": "passed",
+  "job": "j55b49f183413406c850865f5aa62012b",
+  "trial": "vm2-M6yYmGWfpg1xh2ziPkmn2MQ3HK8",
+  "task": "t091",
+  "source_document": "d3909r1",
+  "full_trace_receipt": {
+    "scope": "trial-91",
+    "blob": "c255d0832cfe5c902396cb004dc2efe855aeeab88f69418d91aaf6d19e0d5c19",
+    "bytes": 262262,
+    "sealed": true
+  },
+  "full_trace_cas_reconstructed_here": false,
+  "indexed_events": 267,
+  "all_indexed_rpc_requests_preserved": 132,
+  "answer_seq": 12182,
+  "answer_refs": [
+    "/exports/inventory-family-eqMvAeV3.csv",
+    "/proc/stores/store-linz-hafen.json",
+    "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-CAR.json",
+    "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-HOME.json",
+    "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PC.json",
+    "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PIPE.json",
+    "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PREMIUM.json",
+    "/docs/security.md",
+    "/docs/availability-checks.md"
+  ],
+  "successfully_read_source_refs": [
+    {
+      "path": "/proc/stores/store-linz-hafen.json",
+      "request_seq": 11956,
+      "response_seq": 11957,
+      "content_sha256": "4b5ab949347aa12ff38c33d3744b8dac86bec548f7c4a9f82b4f059869ba903b",
+      "request_event_sha256": "10743787c7e6bc6851af435742bc1c2695ca953881d57f8b69c560ee9db9a376",
+      "response_event_sha256": "9be3aa5e6207846f5dddd2a928f75769f534e4eea9615ae78b44b60e43cd5cd3",
+      "read_succeeded": true
+    },
+    {
+      "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-CAR.json",
+      "request_seq": 12038,
+      "response_seq": 12039,
+      "content_sha256": "56e3441b326c93f3c958f785db0db03ac30a18dee95d98fa65343ee0619a69e9",
+      "request_event_sha256": "9dd19ceeebc62fe232693635529a2157ef69b17d92f610414981c2bb79bf2485",
+      "response_event_sha256": "ba3c70d73b3a47210305a47f152e494113d2b7cae2f00fea6ea7edab344032c5",
+      "read_succeeded": true
+    },
+    {
+      "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-HOME.json",
+      "request_seq": 12040,
+      "response_seq": 12041,
+      "content_sha256": "af570779e2f6a65003a9d0ecfced4713e29ef63b1017a1a0c42adc000ee427ac",
+      "request_event_sha256": "552a2fb4b1494a6a8ed14615af57d4bef19492198e8b97ad35bac865a4cd0c3f",
+      "response_event_sha256": "885b48a44091faca5599f328ee0cc3baf0217cf9ca986a03b4b3c95834a24f64",
+      "read_succeeded": true
+    },
+    {
+      "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PC.json",
+      "request_seq": 12042,
+      "response_seq": 12043,
+      "content_sha256": "e83edbea94e3d4bbaf4d0b00715ce442737c7421b66e77ae052c038d6eca25a7",
+      "request_event_sha256": "52d4697dca757920d43cc966436e94cca94d7ebb128093ec4adcfeccd94ce4cc",
+      "response_event_sha256": "b5d43a7249781eb25e5b4c1debe8a0a90a3aa4fa90f867814c731d5003cbd5ca",
+      "read_succeeded": true
+    },
+    {
+      "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PIPE.json",
+      "request_seq": 12044,
+      "response_seq": 12045,
+      "content_sha256": "0fe00a838d52daa10a726bd36d99bcad32b5f918ea1b28e8089dbcb89a1cffea",
+      "request_event_sha256": "9f1983e4b095c5134e454aa35abdb83de19917a20a2da848e0f9f40eedeaa4c1",
+      "response_event_sha256": "d04a56b24e038d9fd7cdacbdb004fcc262ffb870dc09c5d08de7829db0430a47",
+      "read_succeeded": true
+    },
+    {
+      "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PREMIUM.json",
+      "request_seq": 12046,
+      "response_seq": 12047,
+      "content_sha256": "83514a1738dc449121ae84cd54e034b80197e480480649bf1c93a8c24f331807",
+      "request_event_sha256": "9a13698352dfd5ca3186adf760dcc52fc458fc7aa2638bd951372b71f249ae24",
+      "response_event_sha256": "e3660fe5b9ccdbde270515b1f35848830f05704348785ebb98d79cdc1ba8fdf2",
+      "read_succeeded": true
+    },
+    {
+      "path": "/docs/security.md",
+      "request_seq": 11930,
+      "response_seq": 11931,
+      "content_sha256": "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4",
+      "request_event_sha256": "96c3a8768e164df682e735e23dbf2241751aee6c0ba33dc58dca91aabd460485",
+      "response_event_sha256": "ceef507866040403037f76b685f5189e1dade0e579de4fcdeb4d986b75ab0cd0",
+      "read_succeeded": true
+    },
+    {
+      "path": "/docs/availability-checks.md",
+      "request_seq": 11934,
+      "response_seq": 11935,
+      "content_sha256": "64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080",
+      "request_event_sha256": "cc995ef58195403a5eccf1fdcc8ed6cd8977e6694de8bb26b5422054fc6def73",
+      "response_event_sha256": "cba17a71ac3e17bcaab4d4557d13d1f8cc52f513026ae94272e51d580a6ca53a",
+      "read_succeeded": true
+    }
+  ],
+  "source_refs_count": 8,
+  "output_ref_was_written": true,
+  "output_ref_was_read": false,
+  "world_agents_policy_seq": 11925,
+  "policy_names_actual_roots": true,
+  "grade": {
+    "score": 0,
+    "available": true,
+    "detail": "['answer contains too many invalid references']",
+    "error": null
+  },
+  "conclusion": "This world successfully resolves the cited /proc/products and /proc/stores paths. A static root-name blacklist misclassifies these concrete records as nonexistent.",
+  "not_established": [
+    "why the grader rejected this answer",
+    "whether each successfully Read source reference is grader-accepted",
+    "whether an output readback would change the grade",
+    "whether these roots exist in other worlds",
+    "whether /proc/returns exists in this world"
+  ],
+  "model_calls": 0,
+  "ecom_calls": 0
+}

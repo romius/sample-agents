@@ -1,0 +1,6939 @@
+{
+  "status": "passed",
+  "whole_agent_executions": 86,
+  "scenarios": 43,
+  "isolated_nested_helper_controls": [
+    {
+      "error": "HTTP 503 unavailable",
+      "guest_calls": 3,
+      "raised": null
+    },
+    {
+      "error": "HTTP 400 invalid connection parameter",
+      "guest_calls": 1,
+      "raised": null
+    },
+    {
+      "error": "Cancelled: connection closed",
+      "guest_calls": 1,
+      "raised": "RuntimeError: Cancelled: connection closed"
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: Request cancelled",
+      "guest_calls": 1,
+      "raised": "RuntimeError: Inference outcome/cost unconfirmed: TimeoutError: Request cancelled"
+    }
+  ],
+  "actual_timeout_events": [
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t003.json",
+      "seq": 580,
+      "call": 14,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified_in_agent_error": true
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t045.json",
+      "seq": 5866,
+      "call": 170,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified_in_agent_error": true
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t056.json",
+      "seq": 7176,
+      "call": 209,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified_in_agent_error": true
+    },
+    {
+      "source": "2026-10-22-provider-control-review/new-failure-t059.json",
+      "seq": 7308,
+      "call": 217,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified_in_agent_error": true
+    }
+  ],
+  "native_classifier_cases": [
+    {
+      "error": "HTTP 400 connection timeout unavailable",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 429: rejected",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 401 unauthorized",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 500 internal error",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 503 unavailable",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "HTTP 503 request cancelled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "Cancelled: connection closed",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "HTTP 503 request was not cancelled; unavailable",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "HTTP 400 invalid cancellation_policy",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "TimeoutError: request was not cancelled",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: TimeoutError: Request cancelled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"choices\":[]}",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"usage\":{}}",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"id\":\"\"}",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {broken",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"upstream unavailable\"}}",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "temporary connection timeout unavailable",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "request canceled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "Cancellation requested",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "Sandbox job cancelled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "ConnectionError: unknown connection failure",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "OpenRouter HTTP 503: request cancelled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "Inference outcome/cost unconfirmed: OpenRouter HTTP 503: request cancelled",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+      "cancelled": true,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request was not cancelled; upstream unavailable\"}}",
+      "cancelled": false,
+      "retryable": true
+    },
+    {
+      "error": "OpenRouter HTTP 503: [broken",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: [{\"id\":\"gen-synthetic\",\"choices\":[],\"usage\":{}}]",
+      "cancelled": false,
+      "retryable": false
+    },
+    {
+      "error": "OpenRouter HTTP 503: []",
+      "cancelled": false,
+      "retryable": false
+    }
+  ],
+  "controls": "Public method-only native Monty; fake inference only; SDK429 behavior declared simulation",
+  "real_model_calls": 0,
+  "mutation_retry": false,
+  "lookup_recovery_identical": true,
+  "results": [
+    {
+      "case": "healthy",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "recoverable_503_on_second_guest_request",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "persistent_503",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "terminal_400_connection_word",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 400 connection parameter invalid\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "unknown_error",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database is locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "uncertain_timeout",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "sdk429_exhausted",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 6,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 429: rate limited\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "router400_falls_back_distinct_prompt",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 400 invalid parameter\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "router_benign_cancel_option_name",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 400 invalid cancellation_policy parameter\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "router_negated_cancel_false_positive",
+      "llm_stages": {
+        "router": 3,
+        "main": 1
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 503 request was not cancelled; upstream unavailable\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "main_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "main_cancel_connection",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled: connection closed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "main_cancel503",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: HTTP 503 request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "router_cancel",
+      "llm_stages": {
+        "router": 1
+      },
+      "guest_llm_calls": 1,
+      "simulated_provider_attempts": 1,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "malformed_then_valid",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nStep 2 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "length_then_valid",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "747e7cc7b60cc78803763495785d859c657639f2800d92fbfb8c5c993a6d59d6",
+        "8a9ea698f399451879fb12f70721a37cbc4c3f51f3c47a764c399589eb1527c9"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 3 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "malformed_forced",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "length_forced",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "747e7cc7b60cc78803763495785d859c657639f2800d92fbfb8c5c993a6d59d6",
+        "8a9ea698f399451879fb12f70721a37cbc4c3f51f3c47a764c399589eb1527c9",
+        "ab8c882108532522bfe7512b6c91396457a7276dbe501bb9dd8ef813efe82c7b"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "write_then_main_error",
+      "llm_stages": {
+        "router": 1,
+        "main": 4
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SCRIPTED local artifact\"}\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "write_mutation_error_no_retry",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 503: write result unconfirmed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SCRIPTED local artifact\"}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "timeout_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "connection_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "502_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "504_third_attempt_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "sdk429_internal_recovery",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "503_then400_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 400 malformed request\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "timeout_then_unknown_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database connection locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "503_generation_evidence",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 503: {\"id\":\"gen-test\",\"choices\":[],\"usage\":{}}\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "503_malformed_json",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 503: {broken\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "unknown_connection_word",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database connection locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "wrapped_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Inference outcome/cost unconfirmed: TimeoutError: Request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "sdk429_then503_mixed_budget",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 16,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "delete404_not_retried",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/offline-only"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Delete",
+          {
+            "path": "/tmp/offline-only"
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"delete failed\"}",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"delete\", \"path\": \"/tmp/offline-only\"}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "exec500_not_retried",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/offline-only",
+            "args": [
+              "mutate"
+            ]
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Exec",
+          {
+            "path": "/bin/offline-only",
+            "args": [
+              "mutate"
+            ]
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 503: result unconfirmed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"exec\", \"path\": \"/bin/offline-only\", \"args\": [\"mutate\"]}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "openrouter503_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: OpenRouter HTTP 503: request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "unconfirmed_openrouter503_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Inference outcome/cost unconfirmed: OpenRouter HTTP 503: request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "openrouter503_json_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced503_recovers",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 2
+      },
+      "guest_llm_calls": 6,
+      "simulated_provider_attempts": 6,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced_timeout_exhausts",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 3
+      },
+      "guest_llm_calls": 7,
+      "simulated_provider_attempts": 7,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced429_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 9,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed OpenRouter HTTP 429: rate limited\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced400_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed HTTP 400 connection parameter\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "forced_unknown_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed database is locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "readable",
+      "source_sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21"
+    },
+    {
+      "case": "healthy",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "recoverable_503_on_second_guest_request",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "persistent_503",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "terminal_400_connection_word",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 400 connection parameter invalid\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "unknown_error",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database is locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "uncertain_timeout",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "sdk429_exhausted",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 6,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 429: rate limited\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "router400_falls_back_distinct_prompt",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 400 invalid parameter\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "router_benign_cancel_option_name",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 400 invalid cancellation_policy parameter\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "router_negated_cancel_false_positive",
+      "llm_stages": {
+        "router": 3,
+        "main": 1
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "3bfc9f1d4c896932cdc72e4bf1c7fbd69afceb73e321e3b3844e3ef22414ff07"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "llm-guard: router HTTP 503 request was not cancelled; upstream unavailable\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "main_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "main_cancel_connection",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled: connection closed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "main_cancel503",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: HTTP 503 request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "router_cancel",
+      "llm_stages": {
+        "router": 1
+      },
+      "guest_llm_calls": 1,
+      "simulated_provider_attempts": 1,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Cancelled by user",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "malformed_then_valid",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nStep 2 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "length_then_valid",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "747e7cc7b60cc78803763495785d859c657639f2800d92fbfb8c5c993a6d59d6",
+        "8a9ea698f399451879fb12f70721a37cbc4c3f51f3c47a764c399589eb1527c9"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 3 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "malformed_forced",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "length_forced",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "747e7cc7b60cc78803763495785d859c657639f2800d92fbfb8c5c993a6d59d6",
+        "8a9ea698f399451879fb12f70721a37cbc4c3f51f3c47a764c399589eb1527c9",
+        "ab8c882108532522bfe7512b6c91396457a7276dbe501bb9dd8ef813efe82c7b"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "write_then_main_error",
+      "llm_stages": {
+        "router": 1,
+        "main": 4
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b",
+        "4d49d54f70c000d3928b35b23530f4dfb8dcee77f6246bbc69ea1ba8cbdacc4b"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SCRIPTED local artifact\"}\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "write_mutation_error_no_retry",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SCRIPTED local artifact"
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 503: write result unconfirmed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SCRIPTED local artifact\"}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "timeout_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "connection_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "502_then_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "504_third_attempt_success",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "sdk429_internal_recovery",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 4,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"report_completion\", \"message\": \"SCRIPTED terminal response\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "503_then400_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 400 malformed request\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "timeout_then_unknown_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 2
+      },
+      "guest_llm_calls": 3,
+      "simulated_provider_attempts": 3,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database connection locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "503_generation_evidence",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 503: {\"id\":\"gen-test\",\"choices\":[],\"usage\":{}}\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "503_malformed_json",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: OpenRouter HTTP 503: {broken\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "unknown_connection_word",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: database connection locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "wrapped_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Inference outcome/cost unconfirmed: TimeoutError: Request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "sdk429_then503_mixed_budget",
+      "llm_stages": {
+        "router": 1,
+        "main": 3
+      },
+      "guest_llm_calls": 4,
+      "simulated_provider_attempts": 16,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "Inference failed; no further model request was issued.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nllm-guard: HTTP 503 unavailable\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "delete404_not_retried",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/offline-only"
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Delete",
+          {
+            "path": "/tmp/offline-only"
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"delete failed\"}",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"delete\", \"path\": \"/tmp/offline-only\"}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "exec500_not_retried",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/offline-only",
+            "args": [
+              "mutate"
+            ]
+          }
+        ]
+      ],
+      "mutations": [
+        [
+          "Exec",
+          {
+            "path": "/bin/offline-only",
+            "args": [
+              "mutate"
+            ]
+          }
+        ]
+      ],
+      "answers": [],
+      "raised": "RuntimeError: BitGN HTTP 503: result unconfirmed",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nStep 1 {\"tool\": \"exec\", \"path\": \"/bin/offline-only\", \"args\": [\"mutate\"]}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "openrouter503_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: OpenRouter HTTP 503: request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "unconfirmed_openrouter503_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: Inference outcome/cost unconfirmed: OpenRouter HTTP 503: request cancelled",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "openrouter503_json_cancel",
+      "llm_stages": {
+        "router": 1,
+        "main": 1
+      },
+      "guest_llm_calls": 2,
+      "simulated_provider_attempts": 2,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [],
+      "raised": "RuntimeError: OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced503_recovers",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 2
+      },
+      "guest_llm_calls": 6,
+      "simulated_provider_attempts": 6,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "SCRIPTED terminal response",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nFinal answer [\"SCRIPTED terminal response\", [\"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced_timeout_exhausts",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 3
+      },
+      "guest_llm_calls": 7,
+      "simulated_provider_attempts": 7,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced429_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 9,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed OpenRouter HTTP 429: rate limited\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced400_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed HTTP 400 connection parameter\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    },
+    {
+      "case": "forced_unknown_terminal",
+      "llm_stages": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "guest_llm_calls": 5,
+      "simulated_provider_attempts": 5,
+      "request_hashes": [
+        "39d761eb7446a4295e0eff9bd1620486a4726c6dd0fe731a7e03d32d615114ee",
+        "0908d345950f832309cc8cdb28fed88f7d5ea55fd852baee9c737bbe31016920",
+        "efc89e31093b052c8b90fcb96beadeca681e7cab705c4edc57705b8f6d41e361",
+        "624ff102fb5550cccfad178fbdd7bad48a26ff877589623419fcc0dbdd984530",
+        "be5b508a5e8ff453ad42d489d4b2e6509ae3cfa8a5d32fa028fe83afdd73d3df"
+      ],
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "mutations": [],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "raised": null,
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nInvalid step 1 Return one JSON action object\nInvalid step 2 Return one JSON action object\nForced report failed database is locked\n{'offline': True, 'model_calls': 0}\n",
+      "form": "packed",
+      "source_sha256": "513cbdd7b856ebd21149b9d91c58220031668a174fbab0ea1f0c1ddd0952a20d"
+    }
+  ]
+}
