@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "dependency_pins": 14,
+  "exact_request_files": 10,
+  "planned_ordinals": 20,
+  "counterexamples": [
+    {
+      "case": "model drift",
+      "rejected": true
+    },
+    {
+      "case": "provider override",
+      "rejected": true
+    },
+    {
+      "case": "temperature drift",
+      "rejected": true
+    },
+    {
+      "case": "completion cap drift",
+      "rejected": true
+    },
+    {
+      "case": "missing cell",
+      "rejected": true
+    },
+    {
+      "case": "duplicate ordinal",
+      "rejected": true
+    },
+    {
+      "case": "unbalanced repeat",
+      "rejected": true
+    },
+    {
+      "case": "wrong pair order",
+      "rejected": true
+    },
+    {
+      "case": "message drift changes exact request hash",
+      "rejected": true
+    }
+  ],
+  "model_calls_made": 0,
+  "semantic_scorer": false
+}

@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "archive_sha256": "f54a2fbf6e7c30a7822ba24ba283f489644bb2c217ba1b7ca843e2f3ebc92626",
+  "files_byte_identical": 90,
+  "scripts": [
+    {
+      "script": "diagnostic-plan/reproduce.py",
+      "stdout": "{\"status\": \"PASS\", \"scripts\": [{\"script\": \"prepare.py\", \"stdout\": \"{\\\"offline_executions\\\": 8, \\\"planned_calls\\\": 20, \\\"model_calls_made\\\": 0}\\n\"}, {\"script\": \"verify.py\", \"stdout\": \"{\\\"status\\\": \\\"PASS\\\", \\\"dependency_pins\\\": 14, \\\"exact_request_files\\\": 10, \\\"planned_ordinals\\\": 20, \\\"model_calls_made\\\": 0, \\\"semantic_scorer\\\": false}\\n\"}], \"own_files_compared\": 22, \"dependency_files\": 14, \"model_calls_made\": 0}\n"
+    },
+    {
+      "script": "diagnostic-runner/reproduce.py",
+      "stdout": "{\"status\": \"PASS isolated offline reproduction\", \"files_compared\": 40, \"scripts\": [{\"script\": \"build.py\", \"stdout\": \"{\\\"packed_bytes\\\": 23837, \\\"packed_sha256\\\": \\\"4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f\\\", \\\"planned_calls\\\": 20}\\n\"}, {\"script\": \"test_runner.py\", \"stdout\": \"{\\\"status\\\": \\\"PASS offline only\\\", \\\"executions\\\": 68, \\\"max_observed_stdout_bytes\\\": 17292, \\\"real_model_calls\\\": 0}\\n\"}], \"tamper_controls\": [{\"case\": \"request content drift\", \"build_rejected_before_packing\": true}, {\"case\": \"plan order drift\", \"build_rejected_before_packing\": true}], \"real_model_calls\": 0}\n"
+    },
+    {
+      "script": "diagnostic-review/review_plan.py",
+      "stdout": "{\n  \"status\": \"frozen plan structural and causal-scope review passed; no model-result claim\",\n  \"plan_seal_sha256\": \"df20578d1daa74a886ea00d87603d3d06d2ff641aa3bfe9ab13a3f5ded0d25c0\",\n  \"sealed_files\": 23,\n  \"dependency_files\": 14,\n  \"exact_logical_cells\": 20,\n  \"unique_request_hashes\": 6,\n  \"captured_native_executions_checked\": 8,\n  \"native_executions_rerun_here\": 0,\n  \"manual_rubric_not_auto_scored\": true,\n  \"provider_wire_unverified\": true,\n  \"ordered_plan_preserved\": true,\n  \"model_calls\": 0,\n  \"mutation_of_frozen_plan\": false\n}\n"
+    },
+    {
+      "script": "diagnostic-review/review_runner.py",
+      "stdout": "{\n  \"status\": \"PASS independent offline runner review\",\n  \"runner_seal_sha256\": \"31a2cafdeeddca4b5ce28f24f5c3f7e4bc3f44d875d1a3f308ec4c83d937f857\",\n  \"plan_seal_sha256\": \"df20578d1daa74a886ea00d87603d3d06d2ff641aa3bfe9ab13a3f5ded0d25c0\",\n  \"packed_sha256\": \"4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f\",\n  \"packed_bytes\": 23837,\n  \"sealed_files_checked\": 41,\n  \"isolated_build_all_outputs_byte_identical\": true,\n  \"decoded_equals_readable\": true,\n  \"exact_original_request_order\": true,\n  \"direct_methods_only\": [\n    \"llm\",\n    \"answer\"\n  ],\n  \"independent_executions\": 10,\n  \"CPython_native_parity\": true,\n  \"limits\": {\n    \"max_feed_duration_secs\": 10,\n    \"max_turn_duration_secs\": 10,\n    \"max_suspensions\": 1000\n  },\n  \"python\": \"3.14.3\",\n  \"monty\": \"1.2.0\",\n  \"frozen_inputs_unchanged\": true,\n  \"model_calls\": 0,\n  \"no_submission\": true,\n  \"not_a_platform_cancellation_or_raw_wire_probe\": true\n}\n"
+    }
+  ],
+  "live_model_calls": 0
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "scripts": [
+    {
+      "script": "prepare.py",
+      "stdout": "{\"offline_executions\": 8, \"planned_calls\": 20, \"model_calls_made\": 0}\n"
+    },
+    {
+      "script": "verify.py",
+      "stdout": "{\"status\": \"PASS\", \"dependency_pins\": 14, \"exact_request_files\": 10, \"planned_ordinals\": 20, \"model_calls_made\": 0, \"semantic_scorer\": false}\n"
+    }
+  ],
+  "own_files_compared": 22,
+  "dependency_files": 14,
+  "model_calls_made": 0
+}

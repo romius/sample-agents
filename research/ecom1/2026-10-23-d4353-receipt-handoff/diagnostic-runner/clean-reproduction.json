@@ -1,0 +1,25 @@
+{
+  "status": "PASS isolated offline reproduction",
+  "files_compared": 40,
+  "scripts": [
+    {
+      "script": "build.py",
+      "stdout": "{\"packed_bytes\": 23837, \"packed_sha256\": \"4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f\", \"planned_calls\": 20}\n"
+    },
+    {
+      "script": "test_runner.py",
+      "stdout": "{\"status\": \"PASS offline only\", \"executions\": 68, \"max_observed_stdout_bytes\": 17292, \"real_model_calls\": 0}\n"
+    }
+  ],
+  "tamper_controls": [
+    {
+      "case": "request content drift",
+      "build_rejected_before_packing": true
+    },
+    {
+      "case": "plan order drift",
+      "build_rejected_before_packing": true
+    }
+  ],
+  "real_model_calls": 0
+}
