@@ -1,0 +1,5598 @@
+{
+  "readable/main_clarification_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_clarification_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_readonly_OK_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_readonly_OK_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_readonly_OK_fenced_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_readonly_OK_fenced_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_partial_report_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_partial_report_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_null_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_null_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_nonreport_read_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_nonreport_read_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_report_prefix_truncated_tail_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_write_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_write_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_delete_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_delete_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_exec_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/main_exec_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_clarification_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_clarification_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_readonly_OK_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_readonly_OK_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_readonly_OK_fenced_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_readonly_OK_fenced_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_partial_report_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_partial_report_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_null_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_null_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_nonreport_read_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_nonreport_read_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_report_prefix_truncated_tail_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_write_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_write_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_delete_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_delete_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_exec_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "readable/forced_exec_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_clarification_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_clarification_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_readonly_OK_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_readonly_OK_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_readonly_OK_fenced_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_readonly_OK_fenced_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_partial_report_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_partial_report_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_null_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_null_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_nonreport_read_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_nonreport_read_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_report_prefix_truncated_tail_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_write_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_write_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_delete_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_delete_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_exec_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/main_exec_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_clarification_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_clarification_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_readonly_OK_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_readonly_OK_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_readonly_OK_fenced_stop": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_readonly_OK_fenced_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_partial_report_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_partial_report_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_null_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_null_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_nonreport_read_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_nonreport_read_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_report_prefix_truncated_tail_length": [
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"docs\": []}"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_write_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_write_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_delete_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_delete_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_exec_stop": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    }
+  ],
+  "packed/forced_exec_length": [
+    {
+      "id": "gen-1792709145-AvhnPTLQuoxjKsiG2Pne",
+      "object": "chat.completion",
+      "created": 1792709145,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"docs\": [\"/docs/purchase-request-crosslist.md\"]}",
+            "refusal": null,
+            "reasoning": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to map to policy. This is about purchase request crosslist. Likely /docs/purchase-request-crosslist.md. So return that doc.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 749,
+        "completion_tokens": 55,
+        "total_tokens": 804,
+        "cost": 3.7063e-05,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 3.7063e-05,
+          "upstream_inference_prompt_cost": 2.7713e-05,
+          "upstream_inference_completions_cost": 9.35e-06
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 33,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "not JSON"
+          }
+        }
+      ]
+    },
+    {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    }
+  ]
+}

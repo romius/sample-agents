@@ -1,0 +1,1009 @@
+{
+  "status": "PASS synthetic syntax controls only",
+  "parser_evaluations": 69,
+  "strict_evaluations": 69,
+  "whole_agent_executions": 0,
+  "real_inference_calls": 0,
+  "cases": [
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      },
+      "case": "read",
+      "input": "{\"tool\":\"read\",\"path\":\"/AGENTS.MD\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      },
+      "case": "report",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"not yet complete\",\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      },
+      "case": "false_completion",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"export written\",\"outcome\":\"OUTCOME_OK\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      },
+      "case": "write",
+      "input": "{\"tool\":\"write\",\"path\":\"/exports/test.tsv\",\"content\":\"invented\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "missing_path",
+      "input": "{\"tool\":\"read\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "unknown",
+      "input": "{\"tool\":\"shell\",\"path\":\"/bin/sh\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "extra_field",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"extra\":1}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "boolean_integer",
+      "input": "{\"tool\":\"tree\",\"level\":true}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "nonstring_refs",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"OUTCOME_OK\",\"grounding_refs\":[1]}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "fence",
+      "input": "```json\n{\"tool\":\"read\",\"path\":\"/x\"}\n```",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "wrapper",
+      "input": "{\"function\":{\"tool\":\"read\",\"path\":\"/x\"}}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "search",
+          "pattern": "x",
+          "root": "/proc"
+        }
+      },
+      "case": "search_alias",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/proc\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "search_conflict",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/a\",\"root\":\"/b\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "find",
+          "name": "x",
+          "kind": "files"
+        }
+      },
+      "case": "find_alias",
+      "input": "{\"tool\":\"find\",\"name\":\"x\",\"kind\":\"file\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_second",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":\"delete\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_partial",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/y"
+        }
+      },
+      "case": "duplicate_key",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "null_final",
+      "input": null,
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "empty",
+      "input": "",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "prose",
+      "input": "I will read a file.",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "incomplete",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "array",
+      "input": "[{\"tool\":\"read\",\"path\":\"/x\"}]",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "bad_outcome",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"SUCCESS\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      },
+      "case": "read",
+      "input": "{\"tool\":\"read\",\"path\":\"/AGENTS.MD\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      },
+      "case": "report",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"not yet complete\",\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      },
+      "case": "false_completion",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"export written\",\"outcome\":\"OUTCOME_OK\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      },
+      "case": "write",
+      "input": "{\"tool\":\"write\",\"path\":\"/exports/test.tsv\",\"content\":\"invented\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "missing_path",
+      "input": "{\"tool\":\"read\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "unknown",
+      "input": "{\"tool\":\"shell\",\"path\":\"/bin/sh\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "extra_field",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"extra\":1}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "boolean_integer",
+      "input": "{\"tool\":\"tree\",\"level\":true}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "nonstring_refs",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"OUTCOME_OK\",\"grounding_refs\":[1]}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "fence",
+      "input": "```json\n{\"tool\":\"read\",\"path\":\"/x\"}\n```",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "wrapper",
+      "input": "{\"function\":{\"tool\":\"read\",\"path\":\"/x\"}}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "search",
+          "pattern": "x",
+          "root": "/proc"
+        }
+      },
+      "case": "search_alias",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/proc\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "search_conflict",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/a\",\"root\":\"/b\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "find",
+          "name": "x",
+          "kind": "files"
+        }
+      },
+      "case": "find_alias",
+      "input": "{\"tool\":\"find\",\"name\":\"x\",\"kind\":\"file\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_second",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":\"delete\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_partial",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/y"
+        }
+      },
+      "case": "duplicate_key",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "null_final",
+      "input": null,
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "empty",
+      "input": "",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "prose",
+      "input": "I will read a file.",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "incomplete",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "array",
+      "input": "[{\"tool\":\"read\",\"path\":\"/x\"}]",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "bad_outcome",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"SUCCESS\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      },
+      "case": "read",
+      "input": "{\"tool\":\"read\",\"path\":\"/AGENTS.MD\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/AGENTS.MD"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      },
+      "case": "report",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"not yet complete\",\"outcome\":\"OUTCOME_NONE_CLARIFICATION\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "not yet complete",
+          "outcome": "OUTCOME_NONE_CLARIFICATION"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      },
+      "case": "false_completion",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"export written\",\"outcome\":\"OUTCOME_OK\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "report_completion",
+          "message": "export written",
+          "outcome": "OUTCOME_OK"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      },
+      "case": "write",
+      "input": "{\"tool\":\"write\",\"path\":\"/exports/test.tsv\",\"content\":\"invented\"}",
+      "strict": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "write",
+          "path": "/exports/test.tsv",
+          "content": "invented"
+        }
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "missing_path",
+      "input": "{\"tool\":\"read\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "unknown",
+      "input": "{\"tool\":\"shell\",\"path\":\"/bin/sh\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "extra_field",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"extra\":1}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "boolean_integer",
+      "input": "{\"tool\":\"tree\",\"level\":true}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "nonstring_refs",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"OUTCOME_OK\",\"grounding_refs\":[1]}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "fence",
+      "input": "```json\n{\"tool\":\"read\",\"path\":\"/x\"}\n```",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "wrapper",
+      "input": "{\"function\":{\"tool\":\"read\",\"path\":\"/x\"}}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "search",
+          "pattern": "x",
+          "root": "/proc"
+        }
+      },
+      "case": "search_alias",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/proc\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "search_conflict",
+      "input": "{\"tool\":\"search\",\"pattern\":\"x\",\"path\":\"/a\",\"root\":\"/b\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "find",
+          "name": "x",
+          "kind": "files"
+        }
+      },
+      "case": "find_alias",
+      "input": "{\"tool\":\"find\",\"name\":\"x\",\"kind\":\"file\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_second",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":\"delete\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/x"
+        }
+      },
+      "case": "trailing_partial",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"}{\"tool\":",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": true,
+        "normalized_action": {
+          "tool": "read",
+          "path": "/y"
+        }
+      },
+      "case": "duplicate_key",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\",\"path\":\"/y\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "null_final",
+      "input": null,
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "empty",
+      "input": "",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "prose",
+      "input": "I will read a file.",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "incomplete",
+      "input": "{\"tool\":\"read\",\"path\":\"/x\"",
+      "strict": {
+        "accepted": false,
+        "error_type": "JSONDecodeError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "array",
+      "input": "[{\"tool\":\"read\",\"path\":\"/x\"}]",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    },
+    {
+      "source": {
+        "accepted": false,
+        "error_type": "ValueError"
+      },
+      "case": "bad_outcome",
+      "input": "{\"tool\":\"report_completion\",\"message\":\"x\",\"outcome\":\"SUCCESS\"}",
+      "strict": {
+        "accepted": false,
+        "error_type": "ValueError"
+      }
+    }
+  ],
+  "phase_controls": [
+    {
+      "finish_reason": "stop",
+      "source_parser_accepted": true,
+      "main_would_reach_dispatch": true
+    },
+    {
+      "finish_reason": "length",
+      "source_parser_accepted": true,
+      "main_would_reach_dispatch": false
+    }
+  ],
+  "semantic_adjudication": "Manual only; false_completion and invented Write intentionally pass both syntactic checks."
+}

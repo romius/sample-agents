@@ -1,0 +1,18 @@
+{
+  "python": "3.14.3",
+  "pydantic_monty": "1.2.0",
+  "public_class_instance_source_exact": true,
+  "class_instance_sha256": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6",
+  "allowed_methods": [
+    "task",
+    "call",
+    "answer",
+    "llm",
+    "usage"
+  ],
+  "lazy_attrs": "None (default)",
+  "max_feed_duration_secs": 10,
+  "max_turn_duration_secs": 10,
+  "max_suspensions": 1000,
+  "inference": "fake host only; no provider request or SDK billing semantics exercised"
+}

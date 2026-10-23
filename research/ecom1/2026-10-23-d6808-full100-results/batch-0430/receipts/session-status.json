@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s8320",
+    "seq": 6,
+    "source": "print(brain.status())"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 447,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 7,
+      "output_bytes": 447,
+      "output_truncated": false,
+      "sdk_calls": 1,
+      "seq": 6,
+      "session": "s8320",
+      "step": null
+    },
+    "notices": [],
+    "output": "{'session': 's8320', 'task': 'Read-only 04:30 UTC scheduled snapshot and immutable sealed-task evidence continuation for d6808r1 full100 jb4798f05fa4941f88eacf20a40f42800. No submit, cancel, source edits, publication or paid inference.', 'state': 'open', 'visited': ['w1'], 'documents': [], 'artifact_changes': [], 'slides': [], 'sandbox_jobs': [], 'sandbox_cancellations': [], 'workspaces': [], 'conflicts': [], 'undo_steps': 0, 'receipt': None}\n"
+  }
+}

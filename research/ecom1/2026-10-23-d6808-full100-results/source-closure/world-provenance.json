@@ -1,0 +1,1107 @@
+{
+  "job": "jd8713c77f6ab4a0e9f67bcd614d8d2e9",
+  "task_id": "t079",
+  "trial_id": "vm2-M6xEUVY5beJJgp3UfkqdSuq1zaJ",
+  "trace_bytes": 370247,
+  "trace_sha256": "1bcbf63ed2febf0911a728234f9862c9c221ea7bb324fc4a3906ec7d1e63c356",
+  "events": 274,
+  "read_files": 125,
+  "rpc_responses": 131,
+  "lineage": [
+    {
+      "request_seq": 10340,
+      "response_seq": 10341,
+      "method": "StartTrial",
+      "arguments": {
+        "trialId": "vm2-M6xEUVY5beJJgp3UfkqdSuq1zaJ"
+      }
+    },
+    {
+      "request_seq": 10342,
+      "response_seq": 10343,
+      "method": "Tree",
+      "arguments": {
+        "root": "/",
+        "level": 2
+      }
+    },
+    {
+      "request_seq": 10344,
+      "response_seq": 10345,
+      "method": "Read",
+      "arguments": {
+        "path": "/AGENTS.MD"
+      }
+    },
+    {
+      "request_seq": 10346,
+      "response_seq": 10347,
+      "method": "Exec",
+      "arguments": {
+        "path": "/bin/date"
+      }
+    },
+    {
+      "request_seq": 10348,
+      "response_seq": 10349,
+      "method": "Exec",
+      "arguments": {
+        "path": "/bin/id"
+      }
+    },
+    {
+      "request_seq": 10350,
+      "response_seq": 10351,
+      "method": "Read",
+      "arguments": {
+        "path": "/docs/security.md"
+      }
+    },
+    {
+      "request_seq": 10354,
+      "response_seq": 10355,
+      "method": "Read",
+      "arguments": {
+        "path": "/docs/checkout.md"
+      }
+    },
+    {
+      "request_seq": 10358,
+      "response_seq": 10359,
+      "method": "Tree",
+      "arguments": {
+        "root": "/proc",
+        "level": 0
+      }
+    },
+    {
+      "request_seq": 10360,
+      "response_seq": 10361,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/baskets/basket-0001.json"
+      }
+    },
+    {
+      "request_seq": 10362,
+      "response_seq": 10363,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/1100/store-vie-favoriten.json"
+      }
+    },
+    {
+      "request_seq": 10364,
+      "response_seq": 10365,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/1120/store-vie-meidling.json"
+      }
+    },
+    {
+      "request_seq": 10366,
+      "response_seq": 10367,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/1130/store-vie-hietzing.json"
+      }
+    },
+    {
+      "request_seq": 10368,
+      "response_seq": 10369,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/1220/store-vie-donaustadt.json"
+      }
+    },
+    {
+      "request_seq": 10370,
+      "response_seq": 10371,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/4020/store-linz-hafen.json"
+      }
+    },
+    {
+      "request_seq": 10372,
+      "response_seq": 10373,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/4030/store-linz-kleinmuenchen.json"
+      }
+    },
+    {
+      "request_seq": 10374,
+      "response_seq": 10375,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/4040/store-linz-urfahr.json"
+      }
+    },
+    {
+      "request_seq": 10376,
+      "response_seq": 10377,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/5020/store-salzburg-alpenstrasse.json"
+      }
+    },
+    {
+      "request_seq": 10378,
+      "response_seq": 10379,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/5020/store-salzburg-maxglan.json"
+      }
+    },
+    {
+      "request_seq": 10380,
+      "response_seq": 10381,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/5020/store-salzburg-nord.json"
+      }
+    },
+    {
+      "request_seq": 10382,
+      "response_seq": 10383,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/6020/store-innsbruck-mitte.json"
+      }
+    },
+    {
+      "request_seq": 10384,
+      "response_seq": 10385,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/6020/store-innsbruck-ost.json"
+      }
+    },
+    {
+      "request_seq": 10386,
+      "response_seq": 10387,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/6020/store-innsbruck-west.json"
+      }
+    },
+    {
+      "request_seq": 10388,
+      "response_seq": 10389,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/8020/store-graz-center.json"
+      }
+    },
+    {
+      "request_seq": 10390,
+      "response_seq": 10391,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/8020/store-graz-eggenberg.json"
+      }
+    },
+    {
+      "request_seq": 10392,
+      "response_seq": 10393,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/8041/store-graz-liebenau.json"
+      }
+    },
+    {
+      "request_seq": 10394,
+      "response_seq": 10395,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/branches/8055/store-graz-puntigam.json"
+      }
+    },
+    {
+      "request_seq": 10396,
+      "response_seq": 10397,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/employees/emp-0001.json"
+      }
+    },
+    {
+      "request_seq": 10398,
+      "response_seq": 10399,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/payment-ledger/cust-0101/pay-0001.json"
+      }
+    },
+    {
+      "request_seq": 10400,
+      "response_seq": 10401,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-calculator-templates/PT-DIG-TPL-COMPRESSOR-SIZING.json"
+      }
+    },
+    {
+      "request_seq": 10402,
+      "response_seq": 10403,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-calculator-templates/PT-DIG-TPL-DECKING-CALC.json"
+      }
+    },
+    {
+      "request_seq": 10404,
+      "response_seq": 10405,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-calculator-templates/PT-DIG-TPL-SEALANT-COVERAGE.json"
+      }
+    },
+    {
+      "request_seq": 10406,
+      "response_seq": 10407,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-design-video-bundles/PT-DIG-VIDEO-GARAGE-STORAGE.json"
+      }
+    },
+    {
+      "request_seq": 10408,
+      "response_seq": 10409,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-design-video-bundles/PT-DIG-VIDEO-OUTDOOR-SHED.json"
+      }
+    },
+    {
+      "request_seq": 10410,
+      "response_seq": 10411,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-design-video-bundles/PT-DIG-VIDEO-SMALL-WORKSHOP.json"
+      }
+    },
+    {
+      "request_seq": 10412,
+      "response_seq": 10413,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-digital-guides/PT-DIG-GUIDE-ANCHORS.json"
+      }
+    },
+    {
+      "request_seq": 10414,
+      "response_seq": 10415,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-digital-guides/PT-DIG-GUIDE-DRILL-BITS.json"
+      }
+    },
+    {
+      "request_seq": 10416,
+      "response_seq": 10417,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-digital-guides/PT-DIG-GUIDE-SAW-BLADES.json"
+      }
+    },
+    {
+      "request_seq": 10418,
+      "response_seq": 10419,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-online-courses/PT-DIG-COURSE-DRILL-BASICS.json"
+      }
+    },
+    {
+      "request_seq": 10420,
+      "response_seq": 10421,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-online-courses/PT-DIG-COURSE-GRINDER-SAFETY.json"
+      }
+    },
+    {
+      "request_seq": 10422,
+      "response_seq": 10423,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-online-courses/PT-DIG-COURSE-SAW-STRAIGHT-CUTS.json"
+      }
+    },
+    {
+      "request_seq": 10424,
+      "response_seq": 10425,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-project-plan-packs/PT-DIG-PLAN-DECK-REPAIR.json"
+      }
+    },
+    {
+      "request_seq": 10426,
+      "response_seq": 10427,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-project-plan-packs/PT-DIG-PLAN-GARDEN-SHED.json"
+      }
+    },
+    {
+      "request_seq": 10428,
+      "response_seq": 10429,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-digital-learning-plans/kind-project-plan-packs/PT-DIG-PLAN-WORKBENCH.json"
+      }
+    },
+    {
+      "request_seq": 10430,
+      "response_seq": 10431,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-BOS-UHC18-50-25.json"
+      }
+    },
+    {
+      "request_seq": 10432,
+      "response_seq": 10433,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-BOS-UHC18-50-40.json"
+      }
+    },
+    {
+      "request_seq": 10434,
+      "response_seq": 10435,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-BOS-UHC18-50-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10436,
+      "response_seq": 10437,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-STI-HSA50-AK10.json"
+      }
+    },
+    {
+      "request_seq": 10438,
+      "response_seq": 10439,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-STI-HSA50-AK20.json"
+      }
+    },
+    {
+      "request_seq": 10440,
+      "response_seq": 10441,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-hedge-trimmers/PT-HDG-STI-HSA50-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10442,
+      "response_seq": 10443,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-EIN-GECM36-2X4.json"
+      }
+    },
+    {
+      "request_seq": 10444,
+      "response_seq": 10445,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-EIN-GECM36-2X5.json"
+      }
+    },
+    {
+      "request_seq": 10446,
+      "response_seq": 10447,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-EIN-GECM36-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10448,
+      "response_seq": 10449,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-STI-RMA235-AK20.json"
+      }
+    },
+    {
+      "request_seq": 10450,
+      "response_seq": 10451,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-STI-RMA235-AK30.json"
+      }
+    },
+    {
+      "request_seq": 10452,
+      "response_seq": 10453,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-lawn-mowers/PT-MOW-STI-RMA235-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10454,
+      "response_seq": 10455,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-BOS-UA135-CAR.json"
+      }
+    },
+    {
+      "request_seq": 10456,
+      "response_seq": 10457,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-BOS-UA135-PATIO.json"
+      }
+    },
+    {
+      "request_seq": 10458,
+      "response_seq": 10459,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-BOS-UA135.json"
+      }
+    },
+    {
+      "request_seq": 10460,
+      "response_seq": 10461,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-CAR.json"
+      }
+    },
+    {
+      "request_seq": 10462,
+      "response_seq": 10463,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-HOME.json"
+      }
+    },
+    {
+      "request_seq": 10464,
+      "response_seq": 10465,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PC.json"
+      }
+    },
+    {
+      "request_seq": 10466,
+      "response_seq": 10467,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PIPE.json"
+      }
+    },
+    {
+      "request_seq": 10468,
+      "response_seq": 10469,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-garden-outdoor/kind-pressure-washers/PT-WASH-KAR-K4-PREMIUM.json"
+      }
+    },
+    {
+      "request_seq": 10470,
+      "response_seq": 10471,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-13.json"
+      }
+    },
+    {
+      "request_seq": 10472,
+      "response_seq": 10473,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-19.json"
+      }
+    },
+    {
+      "request_seq": 10474,
+      "response_seq": 10475,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-25.json"
+      }
+    },
+    {
+      "request_seq": 10476,
+      "response_seq": 10477,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-41.json"
+      }
+    },
+    {
+      "request_seq": 10478,
+      "response_seq": 10479,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-COBALT.json"
+      }
+    },
+    {
+      "request_seq": 10480,
+      "response_seq": 10481,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-ALP-HSS-REDUCED.json"
+      }
+    },
+    {
+      "request_seq": 10482,
+      "response_seq": 10483,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-10.json"
+      }
+    },
+    {
+      "request_seq": 10484,
+      "response_seq": 10485,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-12.json"
+      }
+    },
+    {
+      "request_seq": 10486,
+      "response_seq": 10487,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-15.json"
+      }
+    },
+    {
+      "request_seq": 10488,
+      "response_seq": 10489,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-4.json"
+      }
+    },
+    {
+      "request_seq": 10490,
+      "response_seq": 10491,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-5LONG.json"
+      }
+    },
+    {
+      "request_seq": 10492,
+      "response_seq": 10493,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-7.json"
+      }
+    },
+    {
+      "request_seq": 10494,
+      "response_seq": 10495,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-drill-bit-sets/PT-BIT-BOS-CYL9-8.json"
+      }
+    },
+    {
+      "request_seq": 10496,
+      "response_seq": 10497,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-10PK.json"
+      }
+    },
+    {
+      "request_seq": 10498,
+      "response_seq": 10499,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-AMBER.json"
+      }
+    },
+    {
+      "request_seq": 10500,
+      "response_seq": 10501,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-CLEAR.json"
+      }
+    },
+    {
+      "request_seq": 10502,
+      "response_seq": 10503,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-GASKET.json"
+      }
+    },
+    {
+      "request_seq": 10504,
+      "response_seq": 10505,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-READER.json"
+      }
+    },
+    {
+      "request_seq": 10506,
+      "response_seq": 10507,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-3M-SF400-SMOKE.json"
+      }
+    },
+    {
+      "request_seq": 10508,
+      "response_seq": 10509,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-UVEX-PHEOS-CLEAR.json"
+      }
+    },
+    {
+      "request_seq": 10510,
+      "response_seq": 10511,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      }
+    },
+    {
+      "request_seq": 10512,
+      "response_seq": 10513,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-safety-gear/PT-SAFE-UVEX-PHEOS-RESP.json"
+      }
+    },
+    {
+      "request_seq": 10514,
+      "response_seq": 10515,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-BOS-EXPWOOD-160.json"
+      }
+    },
+    {
+      "request_seq": 10516,
+      "response_seq": 10517,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-BOS-EXPWOOD-190.json"
+      }
+    },
+    {
+      "request_seq": 10518,
+      "response_seq": 10519,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-BOS-EXPWOOD-216.json"
+      }
+    },
+    {
+      "request_seq": 10520,
+      "response_seq": 10521,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-MAK-SPEC-165.json"
+      }
+    },
+    {
+      "request_seq": 10522,
+      "response_seq": 10523,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-MAK-SPEC-190.json"
+      }
+    },
+    {
+      "request_seq": 10524,
+      "response_seq": 10525,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-hardware-consumables/kind-saw-blade-sets/PT-BLA-MAK-SPEC-METAL.json"
+      }
+    },
+    {
+      "request_seq": 10526,
+      "response_seq": 10527,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-BOS-GWS1400-125.json"
+      }
+    },
+    {
+      "request_seq": 10528,
+      "response_seq": 10529,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-BOS-GWS1400-150.json"
+      }
+    },
+    {
+      "request_seq": 10530,
+      "response_seq": 10531,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-BOS-GWS1400-CASE.json"
+      }
+    },
+    {
+      "request_seq": 10532,
+      "response_seq": 10533,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-MET-W18-125-4AH.json"
+      }
+    },
+    {
+      "request_seq": 10534,
+      "response_seq": 10535,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-MET-W18-125-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10536,
+      "response_seq": 10537,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-angle-grinders/PT-GRD-MET-W18-125-FLAT.json"
+      }
+    },
+    {
+      "request_seq": 10538,
+      "response_seq": 10539,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-BOS-GSR55-2AH.json"
+      }
+    },
+    {
+      "request_seq": 10540,
+      "response_seq": 10541,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-BOS-GSR55-5AH.json"
+      }
+    },
+    {
+      "request_seq": 10542,
+      "response_seq": 10543,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-BOS-GSR55-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10544,
+      "response_seq": 10545,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-MAK-DDF485-3AH.json"
+      }
+    },
+    {
+      "request_seq": 10546,
+      "response_seq": 10547,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-MAK-DDF485-5AH.json"
+      }
+    },
+    {
+      "request_seq": 10548,
+      "response_seq": 10549,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-cordless-drills/PT-DRL-MAK-DDF485-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10550,
+      "response_seq": 10551,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-DEW-DCF887-2AH.json"
+      }
+    },
+    {
+      "request_seq": 10552,
+      "response_seq": 10553,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-DEW-DCF887-5AH.json"
+      }
+    },
+    {
+      "request_seq": 10554,
+      "response_seq": 10555,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-DEW-DCF887-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10556,
+      "response_seq": 10557,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-MIL-M18FID3-2AH.json"
+      }
+    },
+    {
+      "request_seq": 10558,
+      "response_seq": 10559,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-MIL-M18FID3-5AH.json"
+      }
+    },
+    {
+      "request_seq": 10560,
+      "response_seq": 10561,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-power-tools/kind-impact-drivers/PT-IMP-MIL-M18FID3-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10562,
+      "response_seq": 10563,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-DEW-DWE575K-BASE.json"
+      }
+    },
+    {
+      "request_seq": 10564,
+      "response_seq": 10565,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-DEW-DWE575K-FINE.json"
+      }
+    },
+    {
+      "request_seq": 10566,
+      "response_seq": 10567,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-DEW-DWE575K-SITE.json"
+      }
+    },
+    {
+      "request_seq": 10568,
+      "response_seq": 10569,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-MAK-DHS680-3AH.json"
+      }
+    },
+    {
+      "request_seq": 10570,
+      "response_seq": 10571,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-MAK-DHS680-5AH.json"
+      }
+    },
+    {
+      "request_seq": 10572,
+      "response_seq": 10573,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-MAK-DHS680-BLADE.json"
+      }
+    },
+    {
+      "request_seq": 10574,
+      "response_seq": 10575,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-MAK-DHS680-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10576,
+      "response_seq": 10577,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-circular-saws/PT-SAW-MAK-DHS680-RAIL.json"
+      }
+    },
+    {
+      "request_seq": 10578,
+      "response_seq": 10579,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-AIR-CA240-24.json"
+      }
+    },
+    {
+      "request_seq": 10580,
+      "response_seq": 10581,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-AIR-CA240-6.json"
+      }
+    },
+    {
+      "request_seq": 10582,
+      "response_seq": 10583,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-AIR-CA240-SET.json"
+      }
+    },
+    {
+      "request_seq": 10584,
+      "response_seq": 10585,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-EIN-TEAC270-50.json"
+      }
+    },
+    {
+      "request_seq": 10586,
+      "response_seq": 10587,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-EIN-TEAC270-50KIT.json"
+      }
+    },
+    {
+      "request_seq": 10588,
+      "response_seq": 10589,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-compressors/PT-CMP-EIN-TEAC270-50S.json"
+      }
+    },
+    {
+      "request_seq": 10590,
+      "response_seq": 10591,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-BOS-GEX125-BOX.json"
+      }
+    },
+    {
+      "request_seq": 10592,
+      "response_seq": 10593,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-BOS-GEX125-CASE.json"
+      }
+    },
+    {
+      "request_seq": 10594,
+      "response_seq": 10595,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-BOS-GEX125-DUST.json"
+      }
+    },
+    {
+      "request_seq": 10596,
+      "response_seq": 10597,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-EIN-TERS18-25.json"
+      }
+    },
+    {
+      "request_seq": 10598,
+      "response_seq": 10599,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-EIN-TERS18-40.json"
+      }
+    },
+    {
+      "request_seq": 10600,
+      "response_seq": 10601,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/products/cat-workshop-site/kind-random-orbit-sanders/PT-SND-EIN-TERS18-BODY.json"
+      }
+    },
+    {
+      "request_seq": 10602,
+      "response_seq": 10603,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/return-workflows/cust-0101/return-0001.json"
+      }
+    },
+    {
+      "request_seq": 10612,
+      "response_seq": 10613,
+      "method": "EndTrial",
+      "arguments": {
+        "trialId": "vm2-M6xEUVY5beJJgp3UfkqdSuq1zaJ"
+      }
+    }
+  ],
+  "derived_trees": [
+    {
+      "root": "/proc/baskets",
+      "level": 3,
+      "actual_depth": 1,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    },
+    {
+      "root": "/proc/branches",
+      "level": 3,
+      "actual_depth": 2,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    },
+    {
+      "root": "/proc/employees",
+      "level": 3,
+      "actual_depth": 1,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    },
+    {
+      "root": "/proc/payment-ledger",
+      "level": 3,
+      "actual_depth": 2,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    },
+    {
+      "root": "/proc/products",
+      "level": 3,
+      "actual_depth": 3,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    },
+    {
+      "root": "/proc/return-workflows",
+      "level": 3,
+      "actual_depth": 2,
+      "source_response_seq": 10359,
+      "method": "Exact existing child subtree of complete archived /proc Tree; no relabeling."
+    }
+  ],
+  "models": "Archived router +3 actual response bodies; current source requests differ from archived requests; continuation is explicitly scripted."
+}

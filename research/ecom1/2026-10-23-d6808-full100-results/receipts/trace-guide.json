@@ -1,0 +1,17 @@
+{
+  "code": 0,
+  "data": {
+    "displayed_bytes": 1660,
+    "files": {},
+    "next_offset": null,
+    "next_seq": 4,
+    "output_bytes": 1660,
+    "output_truncated": false,
+    "sdk_calls": 2,
+    "seq": 3,
+    "session": "s8291",
+    "step": null
+  },
+  "notices": [],
+  "output": "onse bodies remain in per-trial files/CAS. Optional trial matches trial_id or task_id within this job. Returns items, more and next_after. Use trace_event for a body. No automatic replay of interrupted jobs.\nbrain.sandbox.trace_event(job, seq, offset=0, limit=12000) -> dict\n\nRead one full trace event as bounded UTF-8 JSON text from its live file or immutable CAS trace. Returns text, bytes, next_offset and more. Follow byte offsets, limit 4–16000. Includes payloads/output without flooding a trace listing.\n\n{'items': [{'seq': 4, 'time': '2026-10-23T03:59:37.657337+00:00', 'kind': 'rpc_request', 'data': {'trace': {'scope': 'trial-1', 'offset': 0, 'bytes': 207}, 'method': 'StartTrial', 'trial_id': 'vm2-M6zKB5yJLavQzeAeBDvVSxz3K9i'}}, {'seq': 5, 'time': '2026-10-23T03:59:37.701810+00:00', 'kind': 'rpc_response', 'data': {'trace': {'scope': 'trial-1', 'offset': 207, 'bytes': 483}, 'method': 'StartTrial', 'trial_id': 'vm2-M6zKB5yJLavQzeAeBDvVSxz3K9i', 'ms': 40}}, {'seq': 6, 'time': '2026-10-23T03:59:37.786299+00:00', 'kind': 'rpc_request', 'data': {'trace': {'scope': 'trial-1', 'offset': 690, 'bytes': 178}, 'method': 'Tree', 'trial_id': 'vm2-M6zKB5yJLavQzeAeBDvVSxz3K9i'}}, {'seq': 7, 'time': '2026-10-23T03:59:37.831888+00:00', 'kind': 'rpc_response', 'data': {'trace': {'scope': 'trial-1', 'offset': 868, 'bytes': 3043}, 'method': 'Tree', 'trial_id': 'vm2-M6zKB5yJLavQzeAeBDvVSxz3K9i', 'ms': 42}}, {'seq': 8, 'time': '2026-10-23T03:59:37.836906+00:00', 'kind': 'rpc_request', 'data': {'trace': {'scope': 'trial-1', 'offset': 3911, 'bytes': 177}, 'method': 'Read', 'trial_id': 'vm2-M6zKB5yJLavQzeAeBDvVSxz3K9i'}}], 'more': True, 'next_after': 8}\n"
+}

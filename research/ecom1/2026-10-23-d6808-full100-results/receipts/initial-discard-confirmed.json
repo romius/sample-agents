@@ -1,0 +1,30 @@
+{
+  "request": {
+    "session": "s8291",
+    "seq": 72,
+    "source": "# brain.status at seq71 verified zero documents, artifacts, jobs, cancellations or undo steps.\n# Close only this empty read-only session as required by the Brain SDK lifecycle.\nbrain.discard()"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 0,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 73,
+      "output_bytes": 0,
+      "output_truncated": false,
+      "receipt": {
+        "author": "romius",
+        "session": "s8291",
+        "status": "discarded",
+        "time": "2026-10-23T04:22:53.460017+00:00"
+      },
+      "sdk_calls": 1,
+      "seq": 72,
+      "session": "s8291",
+      "step": null
+    },
+    "notices": [],
+    "output": "Discarded s8291. No pending changes were published. Session closed."
+  }
+}

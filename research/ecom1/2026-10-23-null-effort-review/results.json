@@ -1,0 +1,204 @@
+{
+  "status": "PASS independent mechanical checks",
+  "request_checks": [
+    {
+      "fixture": "A016",
+      "trigger_seq": 2642,
+      "request_seq": 2643,
+      "messages_equal": true,
+      "single_effort_change": true,
+      "prior_request_bytes": 19994
+    },
+    {
+      "fixture": "A074",
+      "trigger_seq": 10888,
+      "request_seq": 10889,
+      "messages_equal": true,
+      "single_effort_change": true,
+      "prior_request_bytes": 15251
+    },
+    {
+      "fixture": "B056",
+      "trigger_seq": 6732,
+      "request_seq": 6733,
+      "messages_equal": true,
+      "single_effort_change": true,
+      "prior_request_bytes": 18351
+    },
+    {
+      "fixture": "B076",
+      "trigger_seq": 9256,
+      "request_seq": 9257,
+      "messages_equal": true,
+      "single_effort_change": true,
+      "prior_request_bytes": 39568
+    }
+  ],
+  "executions": 16,
+  "native_executions": 8,
+  "rows": [
+    {
+      "form": "readable",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 17418,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "CPython",
+      "shape": "nonobject",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 5978,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 7,
+      "calls": 7,
+      "answers": 0,
+      "stdout_bytes": 6000,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 19,
+      "calls": 19,
+      "answers": 0,
+      "stdout_bytes": 16355,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 17418,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "native",
+      "shape": "nonobject",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 5978,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 7,
+      "calls": 7,
+      "answers": 0,
+      "stdout_bytes": 6000,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "readable",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 19,
+      "calls": 19,
+      "answers": 0,
+      "stdout_bytes": 16355,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 17418,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "CPython",
+      "shape": "nonobject",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 5978,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 7,
+      "calls": 7,
+      "answers": 0,
+      "stdout_bytes": 6000,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "CPython",
+      "shape": "unicode",
+      "fail_at": 19,
+      "calls": 19,
+      "answers": 0,
+      "stdout_bytes": 16355,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 17418,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "native",
+      "shape": "nonobject",
+      "fail_at": 0,
+      "calls": 20,
+      "answers": 1,
+      "stdout_bytes": 5978,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 7,
+      "calls": 7,
+      "answers": 0,
+      "stdout_bytes": 6000,
+      "raw_body_emitted": false
+    },
+    {
+      "form": "agent",
+      "engine": "native",
+      "shape": "unicode",
+      "fail_at": 19,
+      "calls": 19,
+      "answers": 0,
+      "stdout_bytes": 16355,
+      "raw_body_emitted": false
+    }
+  ],
+  "max_stdout_bytes": 17418,
+  "paid_calls": 0,
+  "semantic_outcomes_tested": false
+}

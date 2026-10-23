@@ -1,0 +1,5591 @@
+{
+  "status": "PASS exact-source native whole-agent controls",
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "executions": 76,
+  "scenarios": 38,
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "method_only_proxy_negative_control": true,
+  "real_model_calls": 0,
+  "all_effects_in_memory": true,
+  "results": [
+    {
+      "case": "main_clarification_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_clarification_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_readonly_OK_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_readonly_OK_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_readonly_OK_fenced_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_readonly_OK_fenced_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_partial_report_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_partial_report_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Incomplete JSON action object\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_null_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_null_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_nonreport_read_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"read\", \"path\": \"/docs/security.md\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_nonreport_read_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_report_prefix_truncated_tail_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_write_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SYNTHETIC artifact bytes"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SYNTHETIC artifact bytes"
+          }
+        ]
+      ],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP",
+        "/exports/crosslist-JgSownP1.tsv": "SYNTHETIC artifact bytes"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_write_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_delete_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/boundary-canary.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Delete",
+          {
+            "path": "/tmp/boundary-canary.txt"
+          }
+        ]
+      ],
+      "synthetic_file_state": {},
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_delete_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_exec_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/discount",
+            "args": [
+              "SYNTHETIC"
+            ],
+            "stdin": ""
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Exec",
+          {
+            "path": "/bin/discount",
+            "args": [
+              "SYNTHETIC"
+            ],
+            "stdin": ""
+          }
+        ]
+      ],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_exec_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_clarification_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_clarification_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_readonly_OK_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_readonly_OK_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_readonly_OK_fenced_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_readonly_OK_fenced_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_partial_report_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Incomplete JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_partial_report_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Incomplete JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_null_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_null_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_nonreport_read_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_nonreport_read_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_report_prefix_truncated_tail_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_write_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_write_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_delete_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_delete_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_exec_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "forced_exec_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "readable",
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    {
+      "case": "main_clarification_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_clarification_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_readonly_OK_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_readonly_OK_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_readonly_OK_fenced_stop",
+      "counts": {
+        "router": 1,
+        "main": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 1 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_readonly_OK_fenced_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_partial_report_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_partial_report_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Incomplete JSON action object\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_null_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_null_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_nonreport_read_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"read\", \"path\": \"/docs/security.md\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_nonreport_read_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_report_prefix_truncated_tail_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_write_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SYNTHETIC artifact bytes"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Write",
+          {
+            "path": "/exports/crosslist-JgSownP1.tsv",
+            "content": "SYNTHETIC artifact bytes"
+          }
+        ]
+      ],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP",
+        "/exports/crosslist-JgSownP1.tsv": "SYNTHETIC artifact bytes"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_write_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_delete_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Delete",
+          {
+            "path": "/tmp/boundary-canary.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Delete",
+          {
+            "path": "/tmp/boundary-canary.txt"
+          }
+        ]
+      ],
+      "synthetic_file_state": {},
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_delete_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_exec_stop",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/discount",
+            "args": [
+              "SYNTHETIC"
+            ],
+            "stdin": ""
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [
+        [
+          "Exec",
+          {
+            "path": "/bin/discount",
+            "args": [
+              "SYNTHETIC"
+            ],
+            "stdin": ""
+          }
+        ]
+      ],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 1 {\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "main_exec_length",
+      "counts": {
+        "router": 1,
+        "main": 2
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "SCRIPTED recovery response; no completion claim.",
+          "outcome": "OUTCOME_NONE_UNSUPPORTED",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nStep 2 {\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"SCRIPTED recovery response; no completion claim.\", \"outcome\": \"OUTCOME_NONE_UNSUPPORTED\", \"grounding_refs\": []}\nFinal answer [\"SCRIPTED recovery response; no completion claim.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_clarification_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_clarification_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "No export has been written in this scripted run; further catalogue work is needed.",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nFinal answer [\"No export has been written in this scripted run; further catalogue work is needed.\", [\"/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt\", \"/docs/security.md\", \"/docs/purchase-request-crosslist.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_readonly_OK_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_readonly_OK_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_readonly_OK_fenced_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_readonly_OK_fenced_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_partial_report_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Incomplete JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_partial_report_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Incomplete JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_null_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_null_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\nForced report failed Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_nonreport_read_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_nonreport_read_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_report_prefix_truncated_tail_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "2",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs []\nInvalid step 1 Return one JSON action object\nFinal answer [\"2\", [\"/docs/security.md\"]]\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_write_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_write_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_delete_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_delete_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_exec_stop",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    {
+      "case": "forced_exec_length",
+      "counts": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "rpc_calls": [
+        [
+          "Tree",
+          {
+            "root": "/",
+            "level": 2
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/AGENTS.MD"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/date"
+          }
+        ],
+        [
+          "Exec",
+          {
+            "path": "/bin/id"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/security.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/docs/purchase-request-crosslist.md"
+          }
+        ],
+        [
+          "Read",
+          {
+            "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+          }
+        ]
+      ],
+      "answers": [
+        {
+          "message": "The sample reached its 30-step limit without completing the task.",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/docs/security.md",
+            "/docs/purchase-request-crosslist.md"
+          ]
+        }
+      ],
+      "synthetic_effects": [],
+      "synthetic_file_state": {
+        "/tmp/boundary-canary.txt": "KEEP"
+      },
+      "output": "Routed policy docs [\"/docs/purchase-request-crosslist.md\"]\nCROSSLIST_PREVIEW declined OCR must identify one branch and both complete totals\nInvalid step 1 Return one JSON action object\n{'offline': True, 'model_calls': 0}\n",
+      "error": null,
+      "form": "packed",
+      "source_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    }
+  ]
+}

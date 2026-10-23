@@ -1,0 +1,4273 @@
+{
+  "job": {
+    "id": "jc2949c1cd1b84139a2eac424ef598966",
+    "workspace": "w1",
+    "document": "d6729",
+    "revision": 1,
+    "path": "experiments/2026-10-23-romius-d4353-ocr-repair/agent.py",
+    "source_blob": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+    "trial_count": 100,
+    "sdk_version": "0.3.7",
+    "author": "romius",
+    "session": "s8112",
+    "state": "completed",
+    "created_at": "2026-10-23T02:10:11.620961+00:00",
+    "started_at": "2026-10-23T03:48:34.430207+00:00",
+    "finished_at": "2026-10-23T04:19:11.310299+00:00",
+    "run_id": "run-22rM8NBxSKHyZan5Db8N6VWR4",
+    "error": null,
+    "summary_blob": "04a36328f2120f91b3bf0419d874bac348e10c89a68ea5f40d9cfc603f16513f",
+    "cancellation": null,
+    "name": "romius exact d4353 + narrow ASCII scanline OCR repair; reviewed full100",
+    "queue": "normal",
+    "result_available": true
+  },
+  "result": {
+    "benchmark": "bitgn/ecom1-prod",
+    "name": "Brain romius exact d4353 + narrow ASCII scanline OCR repair; reviewed full100",
+    "source": {
+      "document": "d6729",
+      "revision": 1,
+      "sha256": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+      "sdk_version": "0.3.7"
+    },
+    "trials": [
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znp",
+        "state": "answered",
+        "trace_scope": "trial-1",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['expected outcome OUTCOME_NONE_CLARIFICATION, got OUTCOME_OK']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:48:35.948245+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000427101,
+          "reported_cost_usd": "0.000427101",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8543,
+          "completion_tokens": 653,
+          "total_tokens": 9196
+        },
+        "task_id": "t001",
+        "output_bytes": 1033,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:49:12.140473+00:00",
+        "trace": {
+          "scope": "trial-1",
+          "blob": "8cf02e2bc66296dd48d2394fe86b86065b7fa20fbc844abdc0592e4c2484dcec",
+          "bytes": 332236,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znq",
+        "state": "answered",
+        "trace_scope": "trial-2",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:49:12.411070+00:00",
+        "usage": {
+          "model_calls": 7,
+          "model_cost_usd": 0.001442883,
+          "reported_cost_usd": "0.001442883",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 28999,
+          "completion_tokens": 2176,
+          "total_tokens": 31175
+        },
+        "task_id": "t002",
+        "output_bytes": 1443,
+        "ecom_calls": 254,
+        "finished_at": "2026-10-23T03:50:42.348112+00:00",
+        "trace": {
+          "scope": "trial-2",
+          "blob": "5cf66932450ffb2f0433dc3aa5b999987ca9a939ff382b81d377da38855d726b",
+          "bytes": 673814,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znr",
+        "state": "answered",
+        "trace_scope": "trial-3",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:50:42.441781+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.00003956,
+          "reported_cost_usd": "0.00003956",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 720,
+          "completion_tokens": 76,
+          "total_tokens": 796
+        },
+        "task_id": "t003",
+        "output_bytes": 622,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T03:50:53.872043+00:00",
+        "trace": {
+          "scope": "trial-3",
+          "blob": "012c08068f7ab28fe90ac1c97c0f41a9fa7037a191cf4b0170ae7f4c0730dad5",
+          "bytes": 297834,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zns",
+        "state": "answered",
+        "trace_scope": "trial-4",
+        "grade": {
+          "score": 0.83333325,
+          "available": true,
+          "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 509.12 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.5', 'dispatch costs/penalties avg EUR 44.94 transport; EUR 6.77 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 457.40; max EUR 464.13; efficiency 83.3%']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:50:53.957297+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033713,
+          "reported_cost_usd": "0.000033713",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 709,
+          "completion_tokens": 44,
+          "total_tokens": 753
+        },
+        "task_id": "t004",
+        "output_bytes": 586,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T03:50:58.556280+00:00",
+        "trace": {
+          "scope": "trial-4",
+          "blob": "26555f56ecea4cb63bf964164a5943f91e53a259ce09435aeaac7be644fec8cb",
+          "bytes": 32649,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znt",
+        "state": "answered",
+        "trace_scope": "trial-5",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:50:58.633394+00:00",
+        "usage": {
+          "model_calls": 9,
+          "model_cost_usd": 0.002077569,
+          "reported_cost_usd": "0.002077569",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 32617,
+          "completion_tokens": 5122,
+          "total_tokens": 37739
+        },
+        "task_id": "t005",
+        "output_bytes": 1545,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T03:53:07.144554+00:00",
+        "trace": {
+          "scope": "trial-5",
+          "blob": "0d19c4e3058a1f80447dea33fb4b36ea71381ea098872f8b277af4e76487b0cd",
+          "bytes": 481245,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znu",
+        "state": "answered",
+        "trace_scope": "trial-6",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:53:07.271972+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036411,
+          "reported_cost_usd": "0.000036411",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 713,
+          "completion_tokens": 59,
+          "total_tokens": 772
+        },
+        "task_id": "t006",
+        "output_bytes": 629,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:53:19.595175+00:00",
+        "trace": {
+          "scope": "trial-6",
+          "blob": "dab7bfb24ed27c648c329836e3ad7681c2cc3d2dc8bfd925ac6d7c36e024dbf6",
+          "bytes": 291609,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znv",
+        "state": "answered",
+        "trace_scope": "trial-7",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:53:19.680214+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000425185,
+          "reported_cost_usd": "0.000425185",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8505,
+          "completion_tokens": 650,
+          "total_tokens": 9155
+        },
+        "task_id": "t007",
+        "output_bytes": 982,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:53:51.382227+00:00",
+        "trace": {
+          "scope": "trial-7",
+          "blob": "4a65f2425fad9beba950430a77a89a6265192864c99ea0bef1a7af54ff96732b",
+          "bytes": 332358,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znw",
+        "state": "answered",
+        "trace_scope": "trial-8",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:53:51.473386+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000300096,
+          "reported_cost_usd": "0.000300096",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 6668,
+          "completion_tokens": 314,
+          "total_tokens": 6982
+        },
+        "task_id": "t008",
+        "output_bytes": 1046,
+        "ecom_calls": 8,
+        "finished_at": "2026-10-23T03:54:02.377391+00:00",
+        "trace": {
+          "scope": "trial-8",
+          "blob": "d75f369a3bd35d233853b6f3b0e4562d4dd3b976a21c83fb89460e168bfb8670",
+          "bytes": 66219,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znx",
+        "state": "answered",
+        "trace_scope": "trial-9",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:02.478942+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.0000329,
+          "reported_cost_usd": "0.0000329",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 710,
+          "completion_tokens": 39,
+          "total_tokens": 749
+        },
+        "task_id": "t009",
+        "output_bytes": 765,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T03:54:16.278655+00:00",
+        "trace": {
+          "scope": "trial-9",
+          "blob": "aba060fe9a826d69652dab90bfc8f1b4ce9ef0c576d1897c21253d8ca72d7cc2",
+          "bytes": 298181,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zny",
+        "state": "answered",
+        "trace_scope": "trial-10",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:17.201262+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000194145,
+          "reported_cost_usd": "0.000194145",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4365,
+          "completion_tokens": 192,
+          "total_tokens": 4557
+        },
+        "task_id": "t010",
+        "output_bytes": 956,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:54:26.223077+00:00",
+        "trace": {
+          "scope": "trial-10",
+          "blob": "303729abd57e28a7954b2ce5c8916d9725be8358d1ae46dd62bbe4702004144c",
+          "bytes": 41661,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znz",
+        "state": "answered",
+        "trace_scope": "trial-11",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:26.843183+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035516,
+          "reported_cost_usd": "0.000035516",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 698,
+          "completion_tokens": 57,
+          "total_tokens": 755
+        },
+        "task_id": "t011",
+        "output_bytes": 792,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T03:54:31.347683+00:00",
+        "trace": {
+          "scope": "trial-11",
+          "blob": "fcd431365dce45ee1c606b1c95362a133892c9909d4263692141321d40ca72a8",
+          "bytes": 29390,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo1",
+        "state": "answered",
+        "trace_scope": "trial-12",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:31.429976+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.00022424,
+          "reported_cost_usd": "0.000224240",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4820,
+          "completion_tokens": 270,
+          "total_tokens": 5090
+        },
+        "task_id": "t012",
+        "output_bytes": 939,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:54:39.992840+00:00",
+        "trace": {
+          "scope": "trial-12",
+          "blob": "c16d5914edf624e1984a459e9ff29c1718aacfde37a03e6faa6101faca4626f6",
+          "bytes": 47460,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo2",
+        "state": "answered",
+        "trace_scope": "trial-13",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:40.087741+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000226889,
+          "reported_cost_usd": "0.000226889",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4377,
+          "completion_tokens": 382,
+          "total_tokens": 4759
+        },
+        "task_id": "t013",
+        "output_bytes": 1224,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:54:51.376699+00:00",
+        "trace": {
+          "scope": "trial-13",
+          "blob": "c24d28f9f5197115bb4248c9c7e01c82d18af81fa9220b8ba32a082e9d94fbae",
+          "bytes": 43779,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo3",
+        "state": "answered",
+        "trace_scope": "trial-14",
+        "grade": {
+          "score": 0.81062204,
+          "available": true,
+          "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 375.21 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.4', 'dispatch costs/penalties avg EUR 59.42 transport; EUR 7.04 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 308.74; max EUR 318.17; efficiency 81.1%']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:52.289953+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032634,
+          "reported_cost_usd": "0.000032634",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 712,
+          "completion_tokens": 37,
+          "total_tokens": 749
+        },
+        "task_id": "t014",
+        "output_bytes": 589,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T03:54:56.971349+00:00",
+        "trace": {
+          "scope": "trial-14",
+          "blob": "fc1778eab081a9c32aec9f211fbe52c4ed6f8e192a073f476031b03b72a3f03e",
+          "bytes": 33661,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo4",
+        "state": "answered",
+        "trace_scope": "trial-15",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "['answer amount matched', 'archive fraud refs recovered ~100% EUR from fraud amount, and also marked a few payments as false positives.']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:54:57.056204+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000051117,
+          "reported_cost_usd": "0.000051117",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 821,
+          "completion_tokens": 122,
+          "total_tokens": 943
+        },
+        "task_id": "t015",
+        "output_bytes": 576,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:55:01.641974+00:00",
+        "trace": {
+          "scope": "trial-15",
+          "blob": "6ffeee7bb45eba451cdcb8dc0e4fbbd15052162659637b2ed70dc5296d4b7d1e",
+          "bytes": 35729,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo5",
+        "state": "answered",
+        "trace_scope": "trial-16",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:01.733334+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000039081,
+          "reported_cost_usd": "0.000039081",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 753,
+          "completion_tokens": 66,
+          "total_tokens": 819
+        },
+        "task_id": "t016",
+        "output_bytes": 591,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:55:12.902125+00:00",
+        "trace": {
+          "scope": "trial-16",
+          "blob": "dbffb6c60509c67879b960a49ff4f0da27ae1f5aa91cda232c0012275c4422ba",
+          "bytes": 259779,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo6",
+        "state": "answered",
+        "trace_scope": "trial-17",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:13.616407+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034955,
+          "reported_cost_usd": "0.000034955",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 715,
+          "completion_tokens": 50,
+          "total_tokens": 765
+        },
+        "task_id": "t017",
+        "output_bytes": 787,
+        "ecom_calls": 26,
+        "finished_at": "2026-10-23T03:55:19.383551+00:00",
+        "trace": {
+          "scope": "trial-17",
+          "blob": "011aaedd69b0cd37e7156569d1be4512488c7cacdf658c302ff2ccfc94287e71",
+          "bytes": 137026,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo7",
+        "state": "answered",
+        "trace_scope": "trial-18",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:19.487487+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032634,
+          "reported_cost_usd": "0.000032634",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 712,
+          "completion_tokens": 37,
+          "total_tokens": 749
+        },
+        "task_id": "t018",
+        "output_bytes": 791,
+        "ecom_calls": 17,
+        "finished_at": "2026-10-23T03:55:23.692018+00:00",
+        "trace": {
+          "scope": "trial-18",
+          "blob": "0e818f400530bd5ba41b50b891cd7025d0c1be6d3c1ac2e83be1df4834d554ad",
+          "bytes": 129718,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo8",
+        "state": "answered",
+        "trace_scope": "trial-19",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:23.780018+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000196873,
+          "reported_cost_usd": "0.000196873",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3869,
+          "completion_tokens": 316,
+          "total_tokens": 4185
+        },
+        "task_id": "t019",
+        "output_bytes": 1088,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:55:34.072378+00:00",
+        "trace": {
+          "scope": "trial-19",
+          "blob": "65bc03a718331b66e388aaff73dc36b0f9b70fd42282035ed4ae61f13288cd4d",
+          "bytes": 38557,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo9",
+        "state": "answered",
+        "trace_scope": "trial-20",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:34.167898+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.00017655,
+          "reported_cost_usd": "0.000176550",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3770,
+          "completion_tokens": 218,
+          "total_tokens": 3988
+        },
+        "task_id": "t020",
+        "output_bytes": 769,
+        "ecom_calls": 6,
+        "finished_at": "2026-10-23T03:55:42.156201+00:00",
+        "trace": {
+          "scope": "trial-20",
+          "blob": "f5f4db167f3b4d41e3f83e9a5fdf9e6d8e9ffe8931f08c634d5b2816c4d4a850",
+          "bytes": 35542,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoA",
+        "state": "answered",
+        "trace_scope": "trial-21",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:55:42.236181+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000394783,
+          "reported_cost_usd": "0.000394783",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8639,
+          "completion_tokens": 442,
+          "total_tokens": 9081
+        },
+        "task_id": "t021",
+        "output_bytes": 992,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:56:02.104174+00:00",
+        "trace": {
+          "scope": "trial-21",
+          "blob": "b7b97dea58c9706cc70348ad7cc4ca98286f3b320e61bdd5fac54b8ecce8552b",
+          "bytes": 328681,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoB",
+        "state": "answered",
+        "trace_scope": "trial-22",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:56:02.199721+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033537,
+          "reported_cost_usd": "0.000033537",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 741,
+          "completion_tokens": 36,
+          "total_tokens": 777
+        },
+        "task_id": "t022",
+        "output_bytes": 628,
+        "ecom_calls": 129,
+        "finished_at": "2026-10-23T03:56:12.002024+00:00",
+        "trace": {
+          "scope": "trial-22",
+          "blob": "9346d7b0425f901aa2f11e96ade415064cec4318d52bd9264d3b479fd8194282",
+          "bytes": 254197,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoC",
+        "state": "answered",
+        "trace_scope": "trial-23",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:56:12.090428+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000040174,
+          "reported_cost_usd": "0.000040174",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 732,
+          "completion_tokens": 77,
+          "total_tokens": 809
+        },
+        "task_id": "t023",
+        "output_bytes": 636,
+        "ecom_calls": 132,
+        "finished_at": "2026-10-23T03:56:24.790971+00:00",
+        "trace": {
+          "scope": "trial-23",
+          "blob": "3cb9387b779328f77d95e0e303521a12c368186c64d7ac1699bd85f8e5d2c70b",
+          "bytes": 294325,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoD",
+        "state": "answered",
+        "trace_scope": "trial-24",
+        "grade": {
+          "score": 0.8295452,
+          "available": true,
+          "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 585.47 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.5', 'dispatch costs/penalties avg EUR 40.53 transport; EUR 6.23 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 538.71; max EUR 547.37; efficiency 83.0%']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:56:24.881782+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036167,
+          "reported_cost_usd": "0.000036167",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 711,
+          "completion_tokens": 58,
+          "total_tokens": 769
+        },
+        "task_id": "t024",
+        "output_bytes": 589,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T03:56:30.453070+00:00",
+        "trace": {
+          "scope": "trial-24",
+          "blob": "594bc49a20856b7cee563714e6f58740f2ac7279f37282820540d5f0332417e9",
+          "bytes": 33579,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoE",
+        "state": "answered",
+        "trace_scope": "trial-25",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json /proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json /proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json /proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json /proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json /proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json], extra []']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:56:30.540700+00:00",
+        "usage": {
+          "model_calls": 4,
+          "model_cost_usd": 0.000702437,
+          "reported_cost_usd": "0.000702437",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 14381,
+          "completion_tokens": 1002,
+          "total_tokens": 15383
+        },
+        "task_id": "t025",
+        "output_bytes": 1018,
+        "ecom_calls": 9,
+        "finished_at": "2026-10-23T03:56:58.563303+00:00",
+        "trace": {
+          "scope": "trial-25",
+          "blob": "019b95f7f0e869f2a3c9aee31ab2513c1745e6d865e349a3ecc6b2bf2e3114fd",
+          "bytes": 97668,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoF",
+        "state": "answered",
+        "trace_scope": "trial-26",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:56:59.186284+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000042923,
+          "reported_cost_usd": "0.000042923",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 719,
+          "completion_tokens": 96,
+          "total_tokens": 815
+        },
+        "task_id": "t026",
+        "output_bytes": 635,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:57:12.001376+00:00",
+        "trace": {
+          "scope": "trial-26",
+          "blob": "84dd857a18347aef3cdc670067777245ea7482980a3d75c6e3edbd12290d6c09",
+          "bytes": 290001,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoG",
+        "state": "answered",
+        "trace_scope": "trial-27",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:57:12.097016+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.0004233,
+          "reported_cost_usd": "0.000423300",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8500,
+          "completion_tokens": 640,
+          "total_tokens": 9140
+        },
+        "task_id": "t027",
+        "output_bytes": 999,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:57:39.546166+00:00",
+        "trace": {
+          "scope": "trial-27",
+          "blob": "1b05384fc04e738cb95006f3491ac4896d9d210c0d1af22e3c4e0cf96c9914ff",
+          "bytes": 330339,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoH",
+        "state": "answered",
+        "trace_scope": "trial-28",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:57:39.966401+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000234927,
+          "reported_cost_usd": "0.000234927",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 5141,
+          "completion_tokens": 263,
+          "total_tokens": 5404
+        },
+        "task_id": "t028",
+        "output_bytes": 858,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:57:49.180124+00:00",
+        "trace": {
+          "scope": "trial-28",
+          "blob": "fedba04b43ff666a887f3b831779dc5cdb16dd5e9098b8e48cfb9c0b260a59a9",
+          "bytes": 49711,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoJ",
+        "state": "answered",
+        "trace_scope": "trial-29",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:57:49.269787+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033358,
+          "reported_cost_usd": "0.000033358",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 704,
+          "completion_tokens": 43,
+          "total_tokens": 747
+        },
+        "task_id": "t029",
+        "output_bytes": 759,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T03:58:01.558220+00:00",
+        "trace": {
+          "scope": "trial-29",
+          "blob": "f07b8524b1deb0288f4d8c1d377cf9dea96500f60c4f31f8cbc058d43511ec1f",
+          "bytes": 296294,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoK",
+        "state": "answered",
+        "trace_scope": "trial-30",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:01.659765+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000193191,
+          "reported_cost_usd": "0.000193191",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4353,
+          "completion_tokens": 189,
+          "total_tokens": 4542
+        },
+        "task_id": "t030",
+        "output_bytes": 950,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:58:09.624199+00:00",
+        "trace": {
+          "scope": "trial-30",
+          "blob": "3fb1051a1124bb9933b7a7d061422e8d096745ce68cd52de969546ab3d749e27",
+          "bytes": 41595,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoL",
+        "state": "answered",
+        "trace_scope": "trial-31",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:09.706915+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032648,
+          "reported_cost_usd": "0.000032648",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 694,
+          "completion_tokens": 41,
+          "total_tokens": 735
+        },
+        "task_id": "t031",
+        "output_bytes": 793,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T03:58:13.865475+00:00",
+        "trace": {
+          "scope": "trial-31",
+          "blob": "fc2b9ecb725df7b04cc73310d7c03df3999807e4e51c12848e5918de67be18e3",
+          "bytes": 29162,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoM",
+        "state": "answered",
+        "trace_scope": "trial-32",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:13.949950+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000226908,
+          "reported_cost_usd": "0.000226908",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4814,
+          "completion_tokens": 287,
+          "total_tokens": 5101
+        },
+        "task_id": "t032",
+        "output_bytes": 1108,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:58:24.126001+00:00",
+        "trace": {
+          "scope": "trial-32",
+          "blob": "b19e172081d34e3c9eb8983bfd9ff5445cc9ddadcd28c102db284ef8202f2bf6",
+          "bytes": 47696,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoN",
+        "state": "answered",
+        "trace_scope": "trial-33",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:24.212803+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000205683,
+          "reported_cost_usd": "0.000205683",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4369,
+          "completion_tokens": 259,
+          "total_tokens": 4628
+        },
+        "task_id": "t033",
+        "output_bytes": 1145,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:58:33.294692+00:00",
+        "trace": {
+          "scope": "trial-33",
+          "blob": "59b9965a71753d64075bdbf905c018301d2d2719412a4b2021d082246f796c62",
+          "bytes": 42514,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoP",
+        "state": "answered",
+        "trace_scope": "trial-34",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:33.378703+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000411022,
+          "reported_cost_usd": "0.000411022",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 7116,
+          "completion_tokens": 869,
+          "total_tokens": 7985
+        },
+        "task_id": "t034",
+        "output_bytes": 919,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:58:53.757666+00:00",
+        "trace": {
+          "scope": "trial-34",
+          "blob": "ebed61a6ddd80d73898995d0ba7e8972127b36f16d01b7ad6389e80a2544ee0a",
+          "bytes": 58185,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoQ",
+        "state": "answered",
+        "trace_scope": "trial-35",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "['answer amount matched', 'archive fraud refs recovered ~100% EUR from fraud amount, and also marked a few payments as false positives.']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:58:53.841779+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000046475,
+          "reported_cost_usd": "0.000046475",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 815,
+          "completion_tokens": 96,
+          "total_tokens": 911
+        },
+        "task_id": "t035",
+        "output_bytes": 576,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:59:01.263393+00:00",
+        "trace": {
+          "scope": "trial-35",
+          "blob": "ee11363f6293351576960967672cde4de68d93d91af80d0bef40c18126feed5a",
+          "bytes": 49684,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoR",
+        "state": "answered",
+        "trace_scope": "trial-36",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:01.361588+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000041084,
+          "reported_cost_usd": "0.000041084",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 752,
+          "completion_tokens": 78,
+          "total_tokens": 830
+        },
+        "task_id": "t036",
+        "output_bytes": 591,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:59:12.652728+00:00",
+        "trace": {
+          "scope": "trial-36",
+          "blob": "3d904168e82c1b8dfdd5dd2136a1d8c565df23355c07d1ac3b09ec64513d2239",
+          "bytes": 258802,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoS",
+        "state": "answered",
+        "trace_scope": "trial-37",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:13.186107+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000037286,
+          "reported_cost_usd": "0.000037286",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 778,
+          "completion_tokens": 50,
+          "total_tokens": 828
+        },
+        "task_id": "t037",
+        "output_bytes": 565,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T03:59:17.610671+00:00",
+        "trace": {
+          "scope": "trial-37",
+          "blob": "6606f074bfa1476b426f2958ae297d0498e23b3a724d53edee65cf0c0ddd6272",
+          "bytes": 22491,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoT",
+        "state": "answered",
+        "trace_scope": "trial-38",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:17.693835+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.00003409,
+          "reported_cost_usd": "0.00003409",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 710,
+          "completion_tokens": 46,
+          "total_tokens": 756
+        },
+        "task_id": "t038",
+        "output_bytes": 710,
+        "ecom_calls": 35,
+        "finished_at": "2026-10-23T03:59:22.607624+00:00",
+        "trace": {
+          "scope": "trial-38",
+          "blob": "536d4e42c606687d1eec064baa8ee6d8c5b3902173187605ca674c89174ee2b3",
+          "bytes": 140393,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoU",
+        "state": "answered",
+        "trace_scope": "trial-39",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:22.696629+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000038585,
+          "reported_cost_usd": "0.000038585",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 735,
+          "completion_tokens": 67,
+          "total_tokens": 802
+        },
+        "task_id": "t039",
+        "output_bytes": 554,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T03:59:27.921647+00:00",
+        "trace": {
+          "scope": "trial-39",
+          "blob": "b1f8a1dfce1c48760803a0063908463cfd5dc5444c4f0b6a2b632e612fdaf2f9",
+          "bytes": 24788,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoV",
+        "state": "answered",
+        "trace_scope": "trial-40",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:28.002307+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000185186,
+          "reported_cost_usd": "0.000185186",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3838,
+          "completion_tokens": 254,
+          "total_tokens": 4092
+        },
+        "task_id": "t040",
+        "output_bytes": 955,
+        "ecom_calls": 6,
+        "finished_at": "2026-10-23T03:59:36.332385+00:00",
+        "trace": {
+          "scope": "trial-40",
+          "blob": "8e5027df2aeca3f89c80b13a691b70de5208e59cdefe3eb85f2423608a5dafc7",
+          "bytes": 36950,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoW",
+        "state": "answered",
+        "trace_scope": "trial-41",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:36.417723+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000398159,
+          "reported_cost_usd": "0.000398159",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8597,
+          "completion_tokens": 471,
+          "total_tokens": 9068
+        },
+        "task_id": "t041",
+        "output_bytes": 1028,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T03:59:58.219469+00:00",
+        "trace": {
+          "scope": "trial-41",
+          "blob": "05dd1f64d6f7b77ad5fe48167b67a4b680a27ffc4a635083f0b2b01b4ffbe3ae",
+          "bytes": 327907,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoX",
+        "state": "answered",
+        "trace_scope": "trial-42",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [], extra [/proc/catalog/Aircraft/PT-CMP-AIR-CA240-SET.json]']",
+          "error": null
+        },
+        "started_at": "2026-10-23T03:59:58.308952+00:00",
+        "usage": {
+          "model_calls": 7,
+          "model_cost_usd": 0.001378462,
+          "reported_cost_usd": "0.001378462",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 31076,
+          "completion_tokens": 1345,
+          "total_tokens": 32421
+        },
+        "task_id": "t042",
+        "output_bytes": 1735,
+        "ecom_calls": 253,
+        "finished_at": "2026-10-23T04:00:51.084631+00:00",
+        "trace": {
+          "scope": "trial-42",
+          "blob": "f13b625d64234cb853e4e74488b0fd4adc70ebcbf8cd5bf8a771988ceacc0942",
+          "bytes": 665705,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoY",
+        "state": "answered",
+        "trace_scope": "trial-43",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:00:51.605312+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000037609,
+          "reported_cost_usd": "0.000037609",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 727,
+          "completion_tokens": 63,
+          "total_tokens": 790
+        },
+        "task_id": "t043",
+        "output_bytes": 660,
+        "ecom_calls": 132,
+        "finished_at": "2026-10-23T04:01:05.169924+00:00",
+        "trace": {
+          "scope": "trial-43",
+          "blob": "528a6f2e815eb5bcb43d71cc92ed718abc1e9bc6b4700cdfdac7e86f434f10bd",
+          "bytes": 293251,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoZ",
+        "state": "answered",
+        "trace_scope": "trial-44",
+        "grade": {
+          "score": 0.8295452,
+          "available": true,
+          "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 585.47 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.5', 'dispatch costs/penalties avg EUR 40.53 transport; EUR 6.23 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 538.71; max EUR 547.37; efficiency 83.0%']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:01:05.599460+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036167,
+          "reported_cost_usd": "0.000036167",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 711,
+          "completion_tokens": 58,
+          "total_tokens": 769
+        },
+        "task_id": "t044",
+        "output_bytes": 588,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:01:12.736263+00:00",
+        "trace": {
+          "scope": "trial-44",
+          "blob": "26ccbbe436418b6f1bb5bbb0fe3fb2a8810c984447639d0abd1dd74cb58dc3ea",
+          "bytes": 33578,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoa",
+        "state": "answered",
+        "trace_scope": "trial-45",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:01:12.825410+00:00",
+        "usage": {
+          "model_calls": 8,
+          "model_cost_usd": 0.001910857,
+          "reported_cost_usd": "0.001910857",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 39561,
+          "completion_tokens": 2630,
+          "total_tokens": 42191
+        },
+        "task_id": "t045",
+        "output_bytes": 1731,
+        "ecom_calls": 12,
+        "finished_at": "2026-10-23T04:02:29.232017+00:00",
+        "trace": {
+          "scope": "trial-45",
+          "blob": "123fb7d7c9a799ae816cfef26a35d0911da00da6d8349e93f7e80d87dcf2ef63",
+          "bytes": 221758,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zob",
+        "state": "answered",
+        "trace_scope": "trial-46",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:02:33.085026+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034711,
+          "reported_cost_usd": "0.000034711",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 713,
+          "completion_tokens": 49,
+          "total_tokens": 762
+        },
+        "task_id": "t046",
+        "output_bytes": 632,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:02:48.898428+00:00",
+        "trace": {
+          "scope": "trial-46",
+          "blob": "c0d96971019e97941ed89d6f5ae917e0b93266a01c15f66dcd6cd01b23fd632d",
+          "bytes": 288322,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoc",
+        "state": "answered",
+        "trace_scope": "trial-47",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [], extra [/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json /proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json /proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-216.json]']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:02:49.312976+00:00",
+        "usage": {
+          "model_calls": 4,
+          "model_cost_usd": 0.000428569,
+          "reported_cost_usd": "0.000428569",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8647,
+          "completion_tokens": 639,
+          "total_tokens": 9286
+        },
+        "task_id": "t047",
+        "output_bytes": 1283,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:03:23.808079+00:00",
+        "trace": {
+          "scope": "trial-47",
+          "blob": "1a4cef5c6100e8e4e6bb00764f0e4e8c5a5537ec742f0ab4174ec49e46ef55bc",
+          "bytes": 345910,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zod",
+        "state": "answered",
+        "trace_scope": "trial-48",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['Answer should be \"2002-04-03\"']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:03:23.892712+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000285569,
+          "reported_cost_usd": "0.000285569",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 5917,
+          "completion_tokens": 392,
+          "total_tokens": 6309
+        },
+        "task_id": "t048",
+        "output_bytes": 855,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:03:40.636328+00:00",
+        "trace": {
+          "scope": "trial-48",
+          "blob": "9231afd97a28ce0edf71c52f38292b5391f3caf961e7c60b5718e7288a0fd591",
+          "bytes": 61512,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoe",
+        "state": "answered",
+        "trace_scope": "trial-49",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:03:41.549774+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033077,
+          "reported_cost_usd": "0.000033077",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 701,
+          "completion_tokens": 42,
+          "total_tokens": 743
+        },
+        "task_id": "t049",
+        "output_bytes": 768,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T04:03:54.831229+00:00",
+        "trace": {
+          "scope": "trial-49",
+          "blob": "c4d176166e279f71f1a0d1f224bcd45a366aff71bfb9ba6361e7fefb5748add5",
+          "bytes": 295028,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zof",
+        "state": "answered",
+        "trace_scope": "trial-50",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:03:54.922535+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033225,
+          "reported_cost_usd": "0.000033225",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 705,
+          "completion_tokens": 42,
+          "total_tokens": 747
+        },
+        "task_id": "t050",
+        "output_bytes": 729,
+        "ecom_calls": 132,
+        "finished_at": "2026-10-23T04:04:13.676941+00:00",
+        "trace": {
+          "scope": "trial-50",
+          "blob": "47c7abec3f0f96111acaedcc045879984ea41e302aaf5158fc614b003ea4745d",
+          "bytes": 294542,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zog",
+        "state": "answered",
+        "trace_scope": "trial-51",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:04:13.778444+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032271,
+          "reported_cost_usd": "0.000032271",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 693,
+          "completion_tokens": 39,
+          "total_tokens": 732
+        },
+        "task_id": "t051",
+        "output_bytes": 793,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T04:04:17.636703+00:00",
+        "trace": {
+          "scope": "trial-51",
+          "blob": "f2128db159a3e7415e08edf901e4b3b0f2982e5dfecf0c7d119fe9e3feb28886",
+          "bytes": 29184,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoh",
+        "state": "answered",
+        "trace_scope": "trial-52",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:04:17.734414+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000525232,
+          "reported_cost_usd": "0.000525232",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 11696,
+          "completion_tokens": 544,
+          "total_tokens": 12240
+        },
+        "task_id": "t052",
+        "output_bytes": 1101,
+        "ecom_calls": 8,
+        "finished_at": "2026-10-23T04:04:38.039545+00:00",
+        "trace": {
+          "scope": "trial-52",
+          "blob": "32451df0a4d5b8bbbbd471e33a59d2e86c0e8bf93c0972db1ca940dd740809a8",
+          "bytes": 85773,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoi",
+        "state": "answered",
+        "trace_scope": "trial-53",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:04:38.130313+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000206481,
+          "reported_cost_usd": "0.000206481",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4363,
+          "completion_tokens": 265,
+          "total_tokens": 4628
+        },
+        "task_id": "t053",
+        "output_bytes": 1195,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:04:49.684210+00:00",
+        "trace": {
+          "scope": "trial-53",
+          "blob": "586bb439f2e3893240082d3f2ee23c8b22e7ec3a0a27f0a6a7bac94ebd788e79",
+          "bytes": 42627,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoj",
+        "state": "answered",
+        "trace_scope": "trial-54",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:04:49.774519+00:00",
+        "usage": {
+          "model_calls": 4,
+          "model_cost_usd": 0.000726187,
+          "reported_cost_usd": "0.000726187",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 17991,
+          "completion_tokens": 356,
+          "total_tokens": 18347
+        },
+        "task_id": "t054",
+        "output_bytes": 990,
+        "ecom_calls": 9,
+        "finished_at": "2026-10-23T04:05:08.576947+00:00",
+        "trace": {
+          "scope": "trial-54",
+          "blob": "916eb0e190acc1500d0217b13ccb91353d6410c28290d1786b419134cfa66265",
+          "bytes": 115104,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zok",
+        "state": "answered",
+        "trace_scope": "trial-55",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "['answer amount matched', 'archive fraud refs recovered ~100% EUR from fraud amount, and also marked a few payments as false positives.']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:05:08.676200+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000047207,
+          "reported_cost_usd": "0.000047207",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 821,
+          "completion_tokens": 99,
+          "total_tokens": 920
+        },
+        "task_id": "t055",
+        "output_bytes": 576,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:05:15.709152+00:00",
+        "trace": {
+          "scope": "trial-55",
+          "blob": "e093c4580b8c7a5408fa6b5be862ed6aa80d11a5b199a7ed09de66144c8bffd6",
+          "bytes": 33647,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zom",
+        "state": "answered",
+        "trace_scope": "trial-56",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:05:16.232993+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000039177,
+          "reported_cost_usd": "0.000039177",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 751,
+          "completion_tokens": 67,
+          "total_tokens": 818
+        },
+        "task_id": "t056",
+        "output_bytes": 593,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:05:39.292229+00:00",
+        "trace": {
+          "scope": "trial-56",
+          "blob": "9672a80ee865724c83257b4cac10ebcd22d537cc0ef7b8fd08e4985e18d3e311",
+          "bytes": 260185,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zon",
+        "state": "answered",
+        "trace_scope": "trial-57",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:05:40.214603+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.00003341,
+          "reported_cost_usd": "0.00003341",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 710,
+          "completion_tokens": 42,
+          "total_tokens": 752
+        },
+        "task_id": "t057",
+        "output_bytes": 772,
+        "ecom_calls": 25,
+        "finished_at": "2026-10-23T04:05:44.657975+00:00",
+        "trace": {
+          "scope": "trial-57",
+          "blob": "3735507dbc951775676029f4862780baceb389d472b0c09808f89e5e7dddae80",
+          "bytes": 129611,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoo",
+        "state": "answered",
+        "trace_scope": "trial-58",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:05:44.746622+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034319,
+          "reported_cost_usd": "0.000034319",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 707,
+          "completion_tokens": 48,
+          "total_tokens": 755
+        },
+        "task_id": "t058",
+        "output_bytes": 715,
+        "ecom_calls": 33,
+        "finished_at": "2026-10-23T04:05:51.241203+00:00",
+        "trace": {
+          "scope": "trial-58",
+          "blob": "a79fd685332d0baa75f004e2a419dbc0aa75a31fb739b2b0a78dce2b4e5760f8",
+          "bytes": 136515,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zop",
+        "state": "answered",
+        "trace_scope": "trial-59",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:05:51.332406+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033381,
+          "reported_cost_usd": "0.000033381",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 723,
+          "completion_tokens": 39,
+          "total_tokens": 762
+        },
+        "task_id": "t059",
+        "output_bytes": 1168,
+        "ecom_calls": 128,
+        "finished_at": "2026-10-23T04:06:06.519438+00:00",
+        "trace": {
+          "scope": "trial-59",
+          "blob": "d430f223d443907572365d95c04d37afaf1ba01e799b79a3c6781393a439954c",
+          "bytes": 132948,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoq",
+        "state": "answered",
+        "trace_scope": "trial-60",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:06:06.947622+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000038459,
+          "reported_cost_usd": "0.000038459",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 727,
+          "completion_tokens": 68,
+          "total_tokens": 795
+        },
+        "task_id": "t060",
+        "output_bytes": 556,
+        "ecom_calls": 15,
+        "finished_at": "2026-10-23T04:06:21.981732+00:00",
+        "trace": {
+          "scope": "trial-60",
+          "blob": "9378bca0947c977d15d095bfd13138b0595fbeb2e21e705a0562ebad1ad11ac9",
+          "bytes": 24797,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zor",
+        "state": "answered",
+        "trace_scope": "trial-61",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:06:24.237284+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000382355,
+          "reported_cost_usd": "0.000382355",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8565,
+          "completion_tokens": 385,
+          "total_tokens": 8950
+        },
+        "task_id": "t061",
+        "output_bytes": 1004,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:06:54.113951+00:00",
+        "trace": {
+          "scope": "trial-61",
+          "blob": "756e737b0f101b551957167922006747df020364bb22689022052bcaa9e843c4",
+          "bytes": 326065,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zos",
+        "state": "answered",
+        "trace_scope": "trial-62",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:06:55.058432+00:00",
+        "usage": {
+          "model_calls": 5,
+          "model_cost_usd": 0.000860272,
+          "reported_cost_usd": "0.000860272",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 18656,
+          "completion_tokens": 1000,
+          "total_tokens": 19656
+        },
+        "task_id": "t062",
+        "output_bytes": 1312,
+        "ecom_calls": 253,
+        "finished_at": "2026-10-23T04:07:51.200328+00:00",
+        "trace": {
+          "scope": "trial-62",
+          "blob": "7516cc9bbf96e5ef31947e16da366a32077381e03d2441fcb2babe2e84bc6491",
+          "bytes": 609114,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zot",
+        "state": "answered",
+        "trace_scope": "trial-63",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:07:51.309582+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036249,
+          "reported_cost_usd": "0.000036249",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 727,
+          "completion_tokens": 55,
+          "total_tokens": 782
+        },
+        "task_id": "t063",
+        "output_bytes": 627,
+        "ecom_calls": 132,
+        "finished_at": "2026-10-23T04:08:05.841607+00:00",
+        "trace": {
+          "scope": "trial-63",
+          "blob": "222713f6d2ebf71a65aa1c3edaffb6b975ae88883f5c66a46dc0f49bf2f57256",
+          "bytes": 291416,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zou",
+        "state": "answered",
+        "trace_scope": "trial-64",
+        "grade": {
+          "score": 0.83333325,
+          "available": true,
+          "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 509.12 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.5', 'dispatch costs/penalties avg EUR 44.94 transport; EUR 6.77 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 457.40; max EUR 464.13; efficiency 83.3%']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:08:05.942039+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034563,
+          "reported_cost_usd": "0.000034563",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 709,
+          "completion_tokens": 49,
+          "total_tokens": 758
+        },
+        "task_id": "t064",
+        "output_bytes": 590,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:08:12.378592+00:00",
+        "trace": {
+          "scope": "trial-64",
+          "blob": "22afab67276c16f66538e6a96f03836d509b003d2f9845e2baf7342473575884",
+          "bytes": 32736,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zov",
+        "state": "answered",
+        "trace_scope": "trial-65",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:08:12.474678+00:00",
+        "usage": {
+          "model_calls": 7,
+          "model_cost_usd": 0.001108155,
+          "reported_cost_usd": "0.001108155",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 25475,
+          "completion_tokens": 974,
+          "total_tokens": 26449
+        },
+        "task_id": "t065",
+        "output_bytes": 1566,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T04:08:51.969204+00:00",
+        "trace": {
+          "scope": "trial-65",
+          "blob": "324c9c90212b610b19ceee37c940a60953b4c18d1f2b6d5e8d37d9fb833c60fd",
+          "bytes": 417934,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zow",
+        "state": "answered",
+        "trace_scope": "trial-66",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:08:52.071337+00:00",
+        "usage": {
+          "model_calls": 4,
+          "model_cost_usd": 0.000586462,
+          "reported_cost_usd": "0.000586462",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 13236,
+          "completion_tokens": 569,
+          "total_tokens": 13805
+        },
+        "task_id": "t066",
+        "output_bytes": 1322,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:09:19.397082+00:00",
+        "trace": {
+          "scope": "trial-66",
+          "blob": "c28974ee72058f1aeee8e73a9f9a131e386764fb573912f8a55280cb2418f6a3",
+          "bytes": 347764,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zox",
+        "state": "answered",
+        "trace_scope": "trial-67",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:09:19.920814+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000392494,
+          "reported_cost_usd": "0.000392494",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8522,
+          "completion_tokens": 454,
+          "total_tokens": 8976
+        },
+        "task_id": "t067",
+        "output_bytes": 997,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:09:45.198518+00:00",
+        "trace": {
+          "scope": "trial-67",
+          "blob": "a31aa3a0dccd5e1d8e9abcebbc531d8f24600b531a87ccb0b0aba2058ac843b4",
+          "bytes": 326867,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoy",
+        "state": "answered",
+        "trace_scope": "trial-68",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:09:45.398481+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000331631,
+          "reported_cost_usd": "0.000331631",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 7263,
+          "completion_tokens": 370,
+          "total_tokens": 7633
+        },
+        "task_id": "t068",
+        "output_bytes": 915,
+        "ecom_calls": 8,
+        "finished_at": "2026-10-23T04:10:01.597445+00:00",
+        "trace": {
+          "scope": "trial-68",
+          "blob": "f72d441a8e305700bec89eddafee5a60b62c763881025e4a1ee085ad37f39213",
+          "bytes": 74834,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoz",
+        "state": "answered",
+        "trace_scope": "trial-69",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:01.689863+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000033136,
+          "reported_cost_usd": "0.000033136",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 698,
+          "completion_tokens": 43,
+          "total_tokens": 741
+        },
+        "task_id": "t069",
+        "output_bytes": 769,
+        "ecom_calls": 133,
+        "finished_at": "2026-10-23T04:10:15.689522+00:00",
+        "trace": {
+          "scope": "trial-69",
+          "blob": "a602326fb1160d66ac7144c6c7a4734919cebcacddc7ac459fd66d7baafae69c",
+          "bytes": 293797,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp1",
+        "state": "answered",
+        "trace_scope": "trial-70",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:15.790888+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034038,
+          "reported_cost_usd": "0.000034038",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 704,
+          "completion_tokens": 47,
+          "total_tokens": 751
+        },
+        "task_id": "t070",
+        "output_bytes": 630,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:10:19.979063+00:00",
+        "trace": {
+          "scope": "trial-70",
+          "blob": "85f13ebe82e7ed425b4f667265e7614bf86fed217bcf9bb44d7860282cddea70",
+          "bytes": 27483,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp2",
+        "state": "answered",
+        "trace_scope": "trial-71",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:20.110002+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032404,
+          "reported_cost_usd": "0.000032404",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 692,
+          "completion_tokens": 40,
+          "total_tokens": 732
+        },
+        "task_id": "t071",
+        "output_bytes": 794,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T04:10:24.930968+00:00",
+        "trace": {
+          "scope": "trial-71",
+          "blob": "e0c09ee712238da0fe22b9aa2ce38348b0863f56fd58621b33842ad22cccabfb",
+          "bytes": 29174,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp3",
+        "state": "answered",
+        "trace_scope": "trial-72",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:25.027376+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000225008,
+          "reported_cost_usd": "0.000225008",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4804,
+          "completion_tokens": 278,
+          "total_tokens": 5082
+        },
+        "task_id": "t072",
+        "output_bytes": 1116,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:10:44.962803+00:00",
+        "trace": {
+          "scope": "trial-72",
+          "blob": "d0be42a1f3f591a1445a5c56a52503717d63f24407bdeea7d38bb863a4ff319c",
+          "bytes": 47640,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp4",
+        "state": "answered",
+        "trace_scope": "trial-73",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:45.495012+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000211263,
+          "reported_cost_usd": "0.000211263",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4359,
+          "completion_tokens": 294,
+          "total_tokens": 4653
+        },
+        "task_id": "t073",
+        "output_bytes": 999,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:10:58.562662+00:00",
+        "trace": {
+          "scope": "trial-73",
+          "blob": "b31be4341e221c623b87c65ebef243c8c4d4e0e34885cb25cfd39a6a321da174",
+          "bytes": 42632,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp5",
+        "state": "answered",
+        "trace_scope": "trial-74",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:10:58.659084+00:00",
+        "usage": {
+          "model_calls": 10,
+          "model_cost_usd": 0.00283538,
+          "reported_cost_usd": "0.002835380",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 64810,
+          "completion_tokens": 2573,
+          "total_tokens": 67383
+        },
+        "task_id": "t074",
+        "output_bytes": 2021,
+        "ecom_calls": 136,
+        "finished_at": "2026-10-23T04:12:33.021223+00:00",
+        "trace": {
+          "scope": "trial-74",
+          "blob": "8b992e1d5d7795aa87f0f6b8c38a21fcc1ebd7dee4821b57abfff928d635af4a",
+          "bytes": 601530,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp6",
+        "state": "answered",
+        "trace_scope": "trial-75",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "['answer amount matched', 'archive fraud refs recovered ~100% EUR from fraud amount, and also marked a few payments as false positives.']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:12:33.119823+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000041996,
+          "reported_cost_usd": "0.000041996",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 818,
+          "completion_tokens": 69,
+          "total_tokens": 887
+        },
+        "task_id": "t075",
+        "output_bytes": 576,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:12:37.733431+00:00",
+        "trace": {
+          "scope": "trial-75",
+          "blob": "0dc79664f2f0dde2841575dd5c96d12f28966bf1b21daa4057cca0a4bc0c96a1",
+          "bytes": 34239,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp7",
+        "state": "answered",
+        "trace_scope": "trial-76",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:12:38.009694+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.00004938,
+          "reported_cost_usd": "0.00004938",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 820,
+          "completion_tokens": 112,
+          "total_tokens": 932
+        },
+        "task_id": "t076",
+        "output_bytes": 586,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:12:43.256719+00:00",
+        "trace": {
+          "scope": "trial-76",
+          "blob": "794b72717d09f5255d4c65be56a382cf0a8d0ceee2d357b87280c17ce3ff31e1",
+          "bytes": 23232,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp8",
+        "state": "answered",
+        "trace_scope": "trial-77",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:12:43.355545+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000032656,
+          "reported_cost_usd": "0.000032656",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 708,
+          "completion_tokens": 38,
+          "total_tokens": 746
+        },
+        "task_id": "t077",
+        "output_bytes": 753,
+        "ecom_calls": 26,
+        "finished_at": "2026-10-23T04:12:50.152153+00:00",
+        "trace": {
+          "scope": "trial-77",
+          "blob": "efca055343785c3477298fd2153a288002fc25db0bc53286a2b6e6872559db69",
+          "bytes": 126956,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp9",
+        "state": "answered",
+        "trace_scope": "trial-78",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:12:50.253353+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000031902,
+          "reported_cost_usd": "0.000031902",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 706,
+          "completion_tokens": 34,
+          "total_tokens": 740
+        },
+        "task_id": "t078",
+        "output_bytes": 756,
+        "ecom_calls": 19,
+        "finished_at": "2026-10-23T04:12:56.056463+00:00",
+        "trace": {
+          "scope": "trial-78",
+          "blob": "8d899c161820fa5f3cd9e5b2cabfa37971feab463c5fb7b4cd921d54bd10344e",
+          "bytes": 121634,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpA",
+        "state": "answered",
+        "trace_scope": "trial-79",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:12:56.155423+00:00",
+        "usage": {
+          "model_calls": 10,
+          "model_cost_usd": 0.00270261,
+          "reported_cost_usd": "0.002702610",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 58860,
+          "completion_tokens": 3087,
+          "total_tokens": 61947
+        },
+        "task_id": "t079",
+        "output_bytes": 2072,
+        "ecom_calls": 135,
+        "finished_at": "2026-10-23T04:14:32.254737+00:00",
+        "trace": {
+          "scope": "trial-79",
+          "blob": "e372269a19e767593d38a304c707124cb206463fd3dc429df8253231a499220c",
+          "bytes": 557801,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpB",
+        "state": "answered",
+        "trace_scope": "trial-80",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:14:34.658737+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000048136,
+          "reported_cost_usd": "0.000048136",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 768,
+          "completion_tokens": 116,
+          "total_tokens": 884
+        },
+        "task_id": "t080",
+        "output_bytes": 632,
+        "ecom_calls": 134,
+        "finished_at": "2026-10-23T04:14:48.952302+00:00",
+        "trace": {
+          "scope": "trial-80",
+          "blob": "37070b93e594dff2f5ea2e159c0137e3f6bc2ab3349d4c2b0d90f823bcef5862",
+          "bytes": 304715,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpC",
+        "state": "answered",
+        "trace_scope": "trial-81",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:14:49.054593+00:00",
+        "usage": {
+          "model_calls": 5,
+          "model_cost_usd": 0.000963106,
+          "reported_cost_usd": "0.000963106",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 23218,
+          "completion_tokens": 612,
+          "total_tokens": 23830
+        },
+        "task_id": "t081",
+        "output_bytes": 1176,
+        "ecom_calls": 10,
+        "finished_at": "2026-10-23T04:15:10.947480+00:00",
+        "trace": {
+          "scope": "trial-81",
+          "blob": "30f99bc1939e735de900741c1bd5dad2d31bce06b7fea1ea1d3098e600085ef3",
+          "bytes": 139237,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpD",
+        "state": "answered",
+        "trace_scope": "trial-82",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:12.075399+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000201345,
+          "reported_cost_usd": "0.000201345",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3875,
+          "completion_tokens": 341,
+          "total_tokens": 4216
+        },
+        "task_id": "t082",
+        "output_bytes": 1018,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:15:25.472325+00:00",
+        "trace": {
+          "scope": "trial-82",
+          "blob": "71975e472010e2997b9bd45d1b2c6e553f843c1af1736e270038b198705fb9e7",
+          "bytes": 38664,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpE",
+        "state": "answered",
+        "trace_scope": "trial-83",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:25.575690+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000037084,
+          "reported_cost_usd": "0.000037084",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 722,
+          "completion_tokens": 61,
+          "total_tokens": 783
+        },
+        "task_id": "t083",
+        "output_bytes": 600,
+        "ecom_calls": 49,
+        "finished_at": "2026-10-23T04:15:33.193086+00:00",
+        "trace": {
+          "scope": "trial-83",
+          "blob": "f69ce23845fa299d8c158ff0be0f76b99f0a38389f140c66d847335f758e1f95",
+          "bytes": 122219,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpF",
+        "state": "answered",
+        "trace_scope": "trial-84",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:33.283406+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035761,
+          "reported_cost_usd": "0.000035761",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 723,
+          "completion_tokens": 53,
+          "total_tokens": 776
+        },
+        "task_id": "t084",
+        "output_bytes": 550,
+        "ecom_calls": 10,
+        "finished_at": "2026-10-23T04:15:40.085610+00:00",
+        "trace": {
+          "scope": "trial-84",
+          "blob": "52019d731624c97e2146bf5bb5c231091be5232f8ed93a24866564ea3fb0860d",
+          "bytes": 70996,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpG",
+        "state": "answered",
+        "trace_scope": "trial-85",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:42.160460+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036774,
+          "reported_cost_usd": "0.000036774",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 732,
+          "completion_tokens": 57,
+          "total_tokens": 789
+        },
+        "task_id": "t085",
+        "output_bytes": 550,
+        "ecom_calls": 10,
+        "finished_at": "2026-10-23T04:15:49.224777+00:00",
+        "trace": {
+          "scope": "trial-85",
+          "blob": "6dc4402b97d75482b933699c8d56baa32bcb188ce590c830c055c18958817e42",
+          "bytes": 71606,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpH",
+        "state": "answered",
+        "trace_scope": "trial-86",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:49.318359+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036589,
+          "reported_cost_usd": "0.000036589",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 727,
+          "completion_tokens": 57,
+          "total_tokens": 784
+        },
+        "task_id": "t086",
+        "output_bytes": 548,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:15:54.054557+00:00",
+        "trace": {
+          "scope": "trial-86",
+          "blob": "ec38e7db346248321c1ace6147e36c4105658f614b57d20ca31d7dc532dd3710",
+          "bytes": 77636,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpJ",
+        "state": "answered",
+        "trace_scope": "trial-87",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:15:54.874759+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000037897,
+          "reported_cost_usd": "0.000037897",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 721,
+          "completion_tokens": 66,
+          "total_tokens": 787
+        },
+        "task_id": "t087",
+        "output_bytes": 572,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T04:16:00.448896+00:00",
+        "trace": {
+          "scope": "trial-87",
+          "blob": "44f3d2549d9dadf2ff1048475d47c1063924176a7d535d77a9ce0055dd93e670",
+          "bytes": 80964,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpK",
+        "state": "answered",
+        "trace_scope": "trial-88",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:16:00.551988+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000209933,
+          "reported_cost_usd": "0.000209933",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 4369,
+          "completion_tokens": 284,
+          "total_tokens": 4653
+        },
+        "task_id": "t088",
+        "output_bytes": 1048,
+        "ecom_calls": 7,
+        "finished_at": "2026-10-23T04:16:11.145804+00:00",
+        "trace": {
+          "scope": "trial-88",
+          "blob": "1658f91236872393fa76326ac3eb3c7fc0a97154383ae04f584ff63607e8d771",
+          "bytes": 42771,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpL",
+        "state": "answered",
+        "trace_scope": "trial-89",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:16:11.892451+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000034039,
+          "reported_cost_usd": "0.000034039",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 727,
+          "completion_tokens": 42,
+          "total_tokens": 769
+        },
+        "task_id": "t089",
+        "output_bytes": 696,
+        "ecom_calls": 146,
+        "finished_at": "2026-10-23T04:16:28.825763+00:00",
+        "trace": {
+          "scope": "trial-89",
+          "blob": "5942a0c1dfa974984d1eeb2b56e6df573db39f516945a6b70b06502bd23c6631",
+          "bytes": 236780,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpM",
+        "state": "answered",
+        "trace_scope": "trial-90",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:16:28.932894+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000378304,
+          "reported_cost_usd": "0.000378304",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 8552,
+          "completion_tokens": 364,
+          "total_tokens": 8916
+        },
+        "task_id": "t090",
+        "output_bytes": 992,
+        "ecom_calls": 130,
+        "finished_at": "2026-10-23T04:17:02.360143+00:00",
+        "trace": {
+          "scope": "trial-90",
+          "blob": "d75760801d45010e8379da39196c9540b8d344dac97441e39358f2b5c88169e3",
+          "bytes": 328156,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpN",
+        "state": "answered",
+        "trace_scope": "trial-91",
+        "grade": {
+          "score": 0,
+          "available": true,
+          "detail": "['expected outcome OUTCOME_OK, got OUTCOME_NONE_UNSUPPORTED']",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:17:02.810425+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000248822,
+          "reported_cost_usd": "0.000248822",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3936,
+          "completion_tokens": 607,
+          "total_tokens": 4543
+        },
+        "task_id": "t091",
+        "output_bytes": 830,
+        "ecom_calls": 6,
+        "finished_at": "2026-10-23T04:17:20.980467+00:00",
+        "trace": {
+          "scope": "trial-91",
+          "blob": "5d4d283c5c26a44d893958e4801c9bab094ac730a6a15dd023c6b998f2e2cc4d",
+          "bytes": 40144,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpP",
+        "state": "answered",
+        "trace_scope": "trial-92",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:17:21.070801+00:00",
+        "usage": {
+          "model_calls": 2,
+          "model_cost_usd": 0.000195813,
+          "reported_cost_usd": "0.000195813",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 3799,
+          "completion_tokens": 325,
+          "total_tokens": 4124
+        },
+        "task_id": "t092",
+        "output_bytes": 929,
+        "ecom_calls": 6,
+        "finished_at": "2026-10-23T04:17:31.815114+00:00",
+        "trace": {
+          "scope": "trial-92",
+          "blob": "639033441018b7cf19ae9aacec999ac544c24b848412ec85eb40d303ee8283cc",
+          "bytes": 37348,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpQ",
+        "state": "answered",
+        "trace_scope": "trial-93",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:17:31.925855+00:00",
+        "usage": {
+          "model_calls": 3,
+          "model_cost_usd": 0.000323364,
+          "reported_cost_usd": "0.000323364",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 7012,
+          "completion_tokens": 376,
+          "total_tokens": 7388
+        },
+        "task_id": "t093",
+        "output_bytes": 905,
+        "ecom_calls": 129,
+        "finished_at": "2026-10-23T04:18:01.870235+00:00",
+        "trace": {
+          "scope": "trial-93",
+          "blob": "a86c396bba7d6dc0e6adbe7b59e5233d97fe344614680b9cf3e2628820a751e5",
+          "bytes": 324961,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpR",
+        "state": "answered",
+        "trace_scope": "trial-94",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:02.607921+00:00",
+        "usage": {
+          "model_calls": 5,
+          "model_cost_usd": 0.000724989,
+          "reported_cost_usd": "0.000724989",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 16617,
+          "completion_tokens": 648,
+          "total_tokens": 17265
+        },
+        "task_id": "t094",
+        "output_bytes": 1313,
+        "ecom_calls": 10,
+        "finished_at": "2026-10-23T04:18:26.923115+00:00",
+        "trace": {
+          "scope": "trial-94",
+          "blob": "ecbc529c6a41c047a5ca041acf99c600aeecfa7b8f353425e2154a3f317f9852",
+          "bytes": 102116,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpS",
+        "state": "answered",
+        "trace_scope": "trial-95",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:27.022546+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035901,
+          "reported_cost_usd": "0.000035901",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 713,
+          "completion_tokens": 56,
+          "total_tokens": 769
+        },
+        "task_id": "t095",
+        "output_bytes": 632,
+        "ecom_calls": 14,
+        "finished_at": "2026-10-23T04:18:33.912734+00:00",
+        "trace": {
+          "scope": "trial-95",
+          "blob": "d3ae50c97ac08eb1081d24f7e9546979389d0c1ce46f94ef9b5ea99bacf1ae9c",
+          "bytes": 78407,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpT",
+        "state": "answered",
+        "trace_scope": "trial-96",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:35.680838+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036788,
+          "reported_cost_usd": "0.000036788",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 714,
+          "completion_tokens": 61,
+          "total_tokens": 775
+        },
+        "task_id": "t096",
+        "output_bytes": 631,
+        "ecom_calls": 13,
+        "finished_at": "2026-10-23T04:18:40.066551+00:00",
+        "trace": {
+          "scope": "trial-96",
+          "blob": "2318275c03d3e8d9184e9589aa70a66625a859171d61ad31eab85ec67d1b0888",
+          "bytes": 74630,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpU",
+        "state": "answered",
+        "trace_scope": "trial-97",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:41.004703+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035672,
+          "reported_cost_usd": "0.000035672",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 716,
+          "completion_tokens": 54,
+          "total_tokens": 770
+        },
+        "task_id": "t097",
+        "output_bytes": 547,
+        "ecom_calls": 12,
+        "finished_at": "2026-10-23T04:18:45.283471+00:00",
+        "trace": {
+          "scope": "trial-97",
+          "blob": "e66b2510e9fad99a98e0b9f9cb43d8665ca7e2875e1320680d62e077a3a6105b",
+          "bytes": 71490,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpV",
+        "state": "answered",
+        "trace_scope": "trial-98",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:46.949728+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035051,
+          "reported_cost_usd": "0.000035051",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 713,
+          "completion_tokens": 51,
+          "total_tokens": 764
+        },
+        "task_id": "t098",
+        "output_bytes": 547,
+        "ecom_calls": 10,
+        "finished_at": "2026-10-23T04:18:51.090985+00:00",
+        "trace": {
+          "scope": "trial-98",
+          "blob": "0fcf6d2b59697e6e6cdbe4150a74928f74bba1e4eb0256bd1fdc25b1b9c33c5c",
+          "bytes": 73214,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpW",
+        "state": "answered",
+        "trace_scope": "trial-99",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:53.393300+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000035894,
+          "reported_cost_usd": "0.000035894",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 722,
+          "completion_tokens": 54,
+          "total_tokens": 776
+        },
+        "task_id": "t099",
+        "output_bytes": 547,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:18:58.463577+00:00",
+        "trace": {
+          "scope": "trial-99",
+          "blob": "e102acf731d12858a4243622be734d6f0b3402e3a3c18f4b72f05138b4cba60c",
+          "bytes": 77510,
+          "sealed": true
+        }
+      },
+      {
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpX",
+        "state": "answered",
+        "trace_scope": "trial-100",
+        "grade": {
+          "score": 1,
+          "available": true,
+          "detail": "[]",
+          "error": null
+        },
+        "started_at": "2026-10-23T04:18:58.566296+00:00",
+        "usage": {
+          "model_calls": 1,
+          "model_cost_usd": 0.000036145,
+          "reported_cost_usd": "0.000036145",
+          "unknown_cost_calls": 0,
+          "pending_calls": 0,
+          "cost_complete": true,
+          "prompt_tokens": 715,
+          "completion_tokens": 57,
+          "total_tokens": 772
+        },
+        "task_id": "t100",
+        "output_bytes": 548,
+        "ecom_calls": 11,
+        "finished_at": "2026-10-23T04:19:05.261063+00:00",
+        "trace": {
+          "scope": "trial-100",
+          "blob": "96654fcb89124e1da2883f91c0095151218a9e15d22ca8111077a25303d74fdd",
+          "bytes": 76405,
+          "sealed": true
+        }
+      }
+    ],
+    "selected_trials": 100,
+    "run_id": "run-22rM8NBxSKHyZan5Db8N6VWR4",
+    "total_trials": 100,
+    "trial_ids": [
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znp",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znq",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znr",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zns",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znt",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znu",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znv",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znw",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znx",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zny",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Znz",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo1",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo2",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo3",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo4",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo5",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo6",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo7",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo8",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zo9",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoA",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoB",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoC",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoD",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoE",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoF",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoG",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoH",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoJ",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoK",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoL",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoM",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoN",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoP",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoQ",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoR",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoS",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoT",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoU",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoV",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoW",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoX",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoY",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZoZ",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoa",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zob",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoc",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zod",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoe",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zof",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zog",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoh",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoi",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoj",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zok",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zom",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zon",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoo",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zop",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoq",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zor",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zos",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zot",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zou",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zov",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zow",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zox",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoy",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zoz",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp1",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp2",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp3",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp4",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp5",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp6",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp7",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp8",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27Zp9",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpA",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpB",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpC",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpD",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpE",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpF",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpG",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpH",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpJ",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpK",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpL",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpM",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpN",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpP",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpQ",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpR",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpS",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpT",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpU",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpV",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpW",
+      "vm2-M6zHj7JzJPeTotpp3y27UY27ZpX"
+    ],
+    "state": "completed",
+    "model_calls": 217,
+    "model_cost_usd": 0.029435706,
+    "reported_cost_usd": "0.029435706",
+    "unknown_cost_calls": 0,
+    "pending_calls": 0,
+    "cost_complete": true,
+    "prompt_tokens": 621498,
+    "completion_tokens": 37884,
+    "total_tokens": 659382,
+    "traces": [
+      {
+        "scope": "run",
+        "trial_id": null,
+        "task_id": null,
+        "blob": "f853d6b11dd449d1661032e02bd27a6b4b55e7562adfa64fd2f7ff1196d07ed2",
+        "bytes": 20975,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-1",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znp",
+        "task_id": "t001",
+        "blob": "8cf02e2bc66296dd48d2394fe86b86065b7fa20fbc844abdc0592e4c2484dcec",
+        "bytes": 332236,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-10",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zny",
+        "task_id": "t010",
+        "blob": "303729abd57e28a7954b2ce5c8916d9725be8358d1ae46dd62bbe4702004144c",
+        "bytes": 41661,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-100",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpX",
+        "task_id": "t100",
+        "blob": "96654fcb89124e1da2883f91c0095151218a9e15d22ca8111077a25303d74fdd",
+        "bytes": 76405,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-11",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znz",
+        "task_id": "t011",
+        "blob": "fcd431365dce45ee1c606b1c95362a133892c9909d4263692141321d40ca72a8",
+        "bytes": 29390,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-12",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo1",
+        "task_id": "t012",
+        "blob": "c16d5914edf624e1984a459e9ff29c1718aacfde37a03e6faa6101faca4626f6",
+        "bytes": 47460,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-13",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo2",
+        "task_id": "t013",
+        "blob": "c24d28f9f5197115bb4248c9c7e01c82d18af81fa9220b8ba32a082e9d94fbae",
+        "bytes": 43779,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-14",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo3",
+        "task_id": "t014",
+        "blob": "fc1778eab081a9c32aec9f211fbe52c4ed6f8e192a073f476031b03b72a3f03e",
+        "bytes": 33661,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-15",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo4",
+        "task_id": "t015",
+        "blob": "6ffeee7bb45eba451cdcb8dc0e4fbbd15052162659637b2ed70dc5296d4b7d1e",
+        "bytes": 35729,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-16",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo5",
+        "task_id": "t016",
+        "blob": "dbffb6c60509c67879b960a49ff4f0da27ae1f5aa91cda232c0012275c4422ba",
+        "bytes": 259779,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-17",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo6",
+        "task_id": "t017",
+        "blob": "011aaedd69b0cd37e7156569d1be4512488c7cacdf658c302ff2ccfc94287e71",
+        "bytes": 137026,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-18",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo7",
+        "task_id": "t018",
+        "blob": "0e818f400530bd5ba41b50b891cd7025d0c1be6d3c1ac2e83be1df4834d554ad",
+        "bytes": 129718,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-19",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo8",
+        "task_id": "t019",
+        "blob": "65bc03a718331b66e388aaff73dc36b0f9b70fd42282035ed4ae61f13288cd4d",
+        "bytes": 38557,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-2",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znq",
+        "task_id": "t002",
+        "blob": "5cf66932450ffb2f0433dc3aa5b999987ca9a939ff382b81d377da38855d726b",
+        "bytes": 673814,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-20",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zo9",
+        "task_id": "t020",
+        "blob": "f5f4db167f3b4d41e3f83e9a5fdf9e6d8e9ffe8931f08c634d5b2816c4d4a850",
+        "bytes": 35542,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-21",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoA",
+        "task_id": "t021",
+        "blob": "b7b97dea58c9706cc70348ad7cc4ca98286f3b320e61bdd5fac54b8ecce8552b",
+        "bytes": 328681,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-22",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoB",
+        "task_id": "t022",
+        "blob": "9346d7b0425f901aa2f11e96ade415064cec4318d52bd9264d3b479fd8194282",
+        "bytes": 254197,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-23",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoC",
+        "task_id": "t023",
+        "blob": "3cb9387b779328f77d95e0e303521a12c368186c64d7ac1699bd85f8e5d2c70b",
+        "bytes": 294325,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-24",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoD",
+        "task_id": "t024",
+        "blob": "594bc49a20856b7cee563714e6f58740f2ac7279f37282820540d5f0332417e9",
+        "bytes": 33579,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-25",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoE",
+        "task_id": "t025",
+        "blob": "019b95f7f0e869f2a3c9aee31ab2513c1745e6d865e349a3ecc6b2bf2e3114fd",
+        "bytes": 97668,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-26",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoF",
+        "task_id": "t026",
+        "blob": "84dd857a18347aef3cdc670067777245ea7482980a3d75c6e3edbd12290d6c09",
+        "bytes": 290001,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-27",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoG",
+        "task_id": "t027",
+        "blob": "1b05384fc04e738cb95006f3491ac4896d9d210c0d1af22e3c4e0cf96c9914ff",
+        "bytes": 330339,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-28",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoH",
+        "task_id": "t028",
+        "blob": "fedba04b43ff666a887f3b831779dc5cdb16dd5e9098b8e48cfb9c0b260a59a9",
+        "bytes": 49711,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-29",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoJ",
+        "task_id": "t029",
+        "blob": "f07b8524b1deb0288f4d8c1d377cf9dea96500f60c4f31f8cbc058d43511ec1f",
+        "bytes": 296294,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-3",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znr",
+        "task_id": "t003",
+        "blob": "012c08068f7ab28fe90ac1c97c0f41a9fa7037a191cf4b0170ae7f4c0730dad5",
+        "bytes": 297834,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-30",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoK",
+        "task_id": "t030",
+        "blob": "3fb1051a1124bb9933b7a7d061422e8d096745ce68cd52de969546ab3d749e27",
+        "bytes": 41595,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-31",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoL",
+        "task_id": "t031",
+        "blob": "fc2b9ecb725df7b04cc73310d7c03df3999807e4e51c12848e5918de67be18e3",
+        "bytes": 29162,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-32",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoM",
+        "task_id": "t032",
+        "blob": "b19e172081d34e3c9eb8983bfd9ff5445cc9ddadcd28c102db284ef8202f2bf6",
+        "bytes": 47696,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-33",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoN",
+        "task_id": "t033",
+        "blob": "59b9965a71753d64075bdbf905c018301d2d2719412a4b2021d082246f796c62",
+        "bytes": 42514,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-34",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoP",
+        "task_id": "t034",
+        "blob": "ebed61a6ddd80d73898995d0ba7e8972127b36f16d01b7ad6389e80a2544ee0a",
+        "bytes": 58185,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-35",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoQ",
+        "task_id": "t035",
+        "blob": "ee11363f6293351576960967672cde4de68d93d91af80d0bef40c18126feed5a",
+        "bytes": 49684,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-36",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoR",
+        "task_id": "t036",
+        "blob": "3d904168e82c1b8dfdd5dd2136a1d8c565df23355c07d1ac3b09ec64513d2239",
+        "bytes": 258802,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-37",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoS",
+        "task_id": "t037",
+        "blob": "6606f074bfa1476b426f2958ae297d0498e23b3a724d53edee65cf0c0ddd6272",
+        "bytes": 22491,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-38",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoT",
+        "task_id": "t038",
+        "blob": "536d4e42c606687d1eec064baa8ee6d8c5b3902173187605ca674c89174ee2b3",
+        "bytes": 140393,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-39",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoU",
+        "task_id": "t039",
+        "blob": "b1f8a1dfce1c48760803a0063908463cfd5dc5444c4f0b6a2b632e612fdaf2f9",
+        "bytes": 24788,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-4",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zns",
+        "task_id": "t004",
+        "blob": "26555f56ecea4cb63bf964164a5943f91e53a259ce09435aeaac7be644fec8cb",
+        "bytes": 32649,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-40",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoV",
+        "task_id": "t040",
+        "blob": "8e5027df2aeca3f89c80b13a691b70de5208e59cdefe3eb85f2423608a5dafc7",
+        "bytes": 36950,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-41",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoW",
+        "task_id": "t041",
+        "blob": "05dd1f64d6f7b77ad5fe48167b67a4b680a27ffc4a635083f0b2b01b4ffbe3ae",
+        "bytes": 327907,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-42",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoX",
+        "task_id": "t042",
+        "blob": "f13b625d64234cb853e4e74488b0fd4adc70ebcbf8cd5bf8a771988ceacc0942",
+        "bytes": 665705,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-43",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoY",
+        "task_id": "t043",
+        "blob": "528a6f2e815eb5bcb43d71cc92ed718abc1e9bc6b4700cdfdac7e86f434f10bd",
+        "bytes": 293251,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-44",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZoZ",
+        "task_id": "t044",
+        "blob": "26ccbbe436418b6f1bb5bbb0fe3fb2a8810c984447639d0abd1dd74cb58dc3ea",
+        "bytes": 33578,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-45",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoa",
+        "task_id": "t045",
+        "blob": "123fb7d7c9a799ae816cfef26a35d0911da00da6d8349e93f7e80d87dcf2ef63",
+        "bytes": 221758,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-46",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zob",
+        "task_id": "t046",
+        "blob": "c0d96971019e97941ed89d6f5ae917e0b93266a01c15f66dcd6cd01b23fd632d",
+        "bytes": 288322,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-47",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoc",
+        "task_id": "t047",
+        "blob": "1a4cef5c6100e8e4e6bb00764f0e4e8c5a5537ec742f0ab4174ec49e46ef55bc",
+        "bytes": 345910,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-48",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zod",
+        "task_id": "t048",
+        "blob": "9231afd97a28ce0edf71c52f38292b5391f3caf961e7c60b5718e7288a0fd591",
+        "bytes": 61512,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-49",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoe",
+        "task_id": "t049",
+        "blob": "c4d176166e279f71f1a0d1f224bcd45a366aff71bfb9ba6361e7fefb5748add5",
+        "bytes": 295028,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-5",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znt",
+        "task_id": "t005",
+        "blob": "0d19c4e3058a1f80447dea33fb4b36ea71381ea098872f8b277af4e76487b0cd",
+        "bytes": 481245,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-50",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zof",
+        "task_id": "t050",
+        "blob": "47c7abec3f0f96111acaedcc045879984ea41e302aaf5158fc614b003ea4745d",
+        "bytes": 294542,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-51",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zog",
+        "task_id": "t051",
+        "blob": "f2128db159a3e7415e08edf901e4b3b0f2982e5dfecf0c7d119fe9e3feb28886",
+        "bytes": 29184,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-52",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoh",
+        "task_id": "t052",
+        "blob": "32451df0a4d5b8bbbbd471e33a59d2e86c0e8bf93c0972db1ca940dd740809a8",
+        "bytes": 85773,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-53",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoi",
+        "task_id": "t053",
+        "blob": "586bb439f2e3893240082d3f2ee23c8b22e7ec3a0a27f0a6a7bac94ebd788e79",
+        "bytes": 42627,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-54",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoj",
+        "task_id": "t054",
+        "blob": "916eb0e190acc1500d0217b13ccb91353d6410c28290d1786b419134cfa66265",
+        "bytes": 115104,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-55",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zok",
+        "task_id": "t055",
+        "blob": "e093c4580b8c7a5408fa6b5be862ed6aa80d11a5b199a7ed09de66144c8bffd6",
+        "bytes": 33647,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-56",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zom",
+        "task_id": "t056",
+        "blob": "9672a80ee865724c83257b4cac10ebcd22d537cc0ef7b8fd08e4985e18d3e311",
+        "bytes": 260185,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-57",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zon",
+        "task_id": "t057",
+        "blob": "3735507dbc951775676029f4862780baceb389d472b0c09808f89e5e7dddae80",
+        "bytes": 129611,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-58",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoo",
+        "task_id": "t058",
+        "blob": "a79fd685332d0baa75f004e2a419dbc0aa75a31fb739b2b0a78dce2b4e5760f8",
+        "bytes": 136515,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-59",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zop",
+        "task_id": "t059",
+        "blob": "d430f223d443907572365d95c04d37afaf1ba01e799b79a3c6781393a439954c",
+        "bytes": 132948,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-6",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znu",
+        "task_id": "t006",
+        "blob": "dab7bfb24ed27c648c329836e3ad7681c2cc3d2dc8bfd925ac6d7c36e024dbf6",
+        "bytes": 291609,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-60",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoq",
+        "task_id": "t060",
+        "blob": "9378bca0947c977d15d095bfd13138b0595fbeb2e21e705a0562ebad1ad11ac9",
+        "bytes": 24797,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-61",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zor",
+        "task_id": "t061",
+        "blob": "756e737b0f101b551957167922006747df020364bb22689022052bcaa9e843c4",
+        "bytes": 326065,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-62",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zos",
+        "task_id": "t062",
+        "blob": "7516cc9bbf96e5ef31947e16da366a32077381e03d2441fcb2babe2e84bc6491",
+        "bytes": 609114,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-63",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zot",
+        "task_id": "t063",
+        "blob": "222713f6d2ebf71a65aa1c3edaffb6b975ae88883f5c66a46dc0f49bf2f57256",
+        "bytes": 291416,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-64",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zou",
+        "task_id": "t064",
+        "blob": "22afab67276c16f66538e6a96f03836d509b003d2f9845e2baf7342473575884",
+        "bytes": 32736,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-65",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zov",
+        "task_id": "t065",
+        "blob": "324c9c90212b610b19ceee37c940a60953b4c18d1f2b6d5e8d37d9fb833c60fd",
+        "bytes": 417934,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-66",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zow",
+        "task_id": "t066",
+        "blob": "c28974ee72058f1aeee8e73a9f9a131e386764fb573912f8a55280cb2418f6a3",
+        "bytes": 347764,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-67",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zox",
+        "task_id": "t067",
+        "blob": "a31aa3a0dccd5e1d8e9abcebbc531d8f24600b531a87ccb0b0aba2058ac843b4",
+        "bytes": 326867,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-68",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoy",
+        "task_id": "t068",
+        "blob": "f72d441a8e305700bec89eddafee5a60b62c763881025e4a1ee085ad37f39213",
+        "bytes": 74834,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-69",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zoz",
+        "task_id": "t069",
+        "blob": "a602326fb1160d66ac7144c6c7a4734919cebcacddc7ac459fd66d7baafae69c",
+        "bytes": 293797,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-7",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znv",
+        "task_id": "t007",
+        "blob": "4a65f2425fad9beba950430a77a89a6265192864c99ea0bef1a7af54ff96732b",
+        "bytes": 332358,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-70",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp1",
+        "task_id": "t070",
+        "blob": "85f13ebe82e7ed425b4f667265e7614bf86fed217bcf9bb44d7860282cddea70",
+        "bytes": 27483,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-71",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp2",
+        "task_id": "t071",
+        "blob": "e0c09ee712238da0fe22b9aa2ce38348b0863f56fd58621b33842ad22cccabfb",
+        "bytes": 29174,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-72",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp3",
+        "task_id": "t072",
+        "blob": "d0be42a1f3f591a1445a5c56a52503717d63f24407bdeea7d38bb863a4ff319c",
+        "bytes": 47640,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-73",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp4",
+        "task_id": "t073",
+        "blob": "b31be4341e221c623b87c65ebef243c8c4d4e0e34885cb25cfd39a6a321da174",
+        "bytes": 42632,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-74",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp5",
+        "task_id": "t074",
+        "blob": "8b992e1d5d7795aa87f0f6b8c38a21fcc1ebd7dee4821b57abfff928d635af4a",
+        "bytes": 601530,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-75",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp6",
+        "task_id": "t075",
+        "blob": "0dc79664f2f0dde2841575dd5c96d12f28966bf1b21daa4057cca0a4bc0c96a1",
+        "bytes": 34239,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-76",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp7",
+        "task_id": "t076",
+        "blob": "794b72717d09f5255d4c65be56a382cf0a8d0ceee2d357b87280c17ce3ff31e1",
+        "bytes": 23232,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-77",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp8",
+        "task_id": "t077",
+        "blob": "efca055343785c3477298fd2153a288002fc25db0bc53286a2b6e6872559db69",
+        "bytes": 126956,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-78",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Zp9",
+        "task_id": "t078",
+        "blob": "8d899c161820fa5f3cd9e5b2cabfa37971feab463c5fb7b4cd921d54bd10344e",
+        "bytes": 121634,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-79",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpA",
+        "task_id": "t079",
+        "blob": "e372269a19e767593d38a304c707124cb206463fd3dc429df8253231a499220c",
+        "bytes": 557801,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-8",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znw",
+        "task_id": "t008",
+        "blob": "d75f369a3bd35d233853b6f3b0e4562d4dd3b976a21c83fb89460e168bfb8670",
+        "bytes": 66219,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-80",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpB",
+        "task_id": "t080",
+        "blob": "37070b93e594dff2f5ea2e159c0137e3f6bc2ab3349d4c2b0d90f823bcef5862",
+        "bytes": 304715,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-81",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpC",
+        "task_id": "t081",
+        "blob": "30f99bc1939e735de900741c1bd5dad2d31bce06b7fea1ea1d3098e600085ef3",
+        "bytes": 139237,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-82",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpD",
+        "task_id": "t082",
+        "blob": "71975e472010e2997b9bd45d1b2c6e553f843c1af1736e270038b198705fb9e7",
+        "bytes": 38664,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-83",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpE",
+        "task_id": "t083",
+        "blob": "f69ce23845fa299d8c158ff0be0f76b99f0a38389f140c66d847335f758e1f95",
+        "bytes": 122219,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-84",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpF",
+        "task_id": "t084",
+        "blob": "52019d731624c97e2146bf5bb5c231091be5232f8ed93a24866564ea3fb0860d",
+        "bytes": 70996,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-85",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpG",
+        "task_id": "t085",
+        "blob": "6dc4402b97d75482b933699c8d56baa32bcb188ce590c830c055c18958817e42",
+        "bytes": 71606,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-86",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpH",
+        "task_id": "t086",
+        "blob": "ec38e7db346248321c1ace6147e36c4105658f614b57d20ca31d7dc532dd3710",
+        "bytes": 77636,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-87",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpJ",
+        "task_id": "t087",
+        "blob": "44f3d2549d9dadf2ff1048475d47c1063924176a7d535d77a9ce0055dd93e670",
+        "bytes": 80964,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-88",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpK",
+        "task_id": "t088",
+        "blob": "1658f91236872393fa76326ac3eb3c7fc0a97154383ae04f584ff63607e8d771",
+        "bytes": 42771,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-89",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpL",
+        "task_id": "t089",
+        "blob": "5942a0c1dfa974984d1eeb2b56e6df573db39f516945a6b70b06502bd23c6631",
+        "bytes": 236780,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-9",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27Znx",
+        "task_id": "t009",
+        "blob": "aba060fe9a826d69652dab90bfc8f1b4ce9ef0c576d1897c21253d8ca72d7cc2",
+        "bytes": 298181,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-90",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpM",
+        "task_id": "t090",
+        "blob": "d75760801d45010e8379da39196c9540b8d344dac97441e39358f2b5c88169e3",
+        "bytes": 328156,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-91",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpN",
+        "task_id": "t091",
+        "blob": "5d4d283c5c26a44d893958e4801c9bab094ac730a6a15dd023c6b998f2e2cc4d",
+        "bytes": 40144,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-92",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpP",
+        "task_id": "t092",
+        "blob": "639033441018b7cf19ae9aacec999ac544c24b848412ec85eb40d303ee8283cc",
+        "bytes": 37348,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-93",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpQ",
+        "task_id": "t093",
+        "blob": "a86c396bba7d6dc0e6adbe7b59e5233d97fe344614680b9cf3e2628820a751e5",
+        "bytes": 324961,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-94",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpR",
+        "task_id": "t094",
+        "blob": "ecbc529c6a41c047a5ca041acf99c600aeecfa7b8f353425e2154a3f317f9852",
+        "bytes": 102116,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-95",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpS",
+        "task_id": "t095",
+        "blob": "d3ae50c97ac08eb1081d24f7e9546979389d0c1ce46f94ef9b5ea99bacf1ae9c",
+        "bytes": 78407,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-96",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpT",
+        "task_id": "t096",
+        "blob": "2318275c03d3e8d9184e9589aa70a66625a859171d61ad31eab85ec67d1b0888",
+        "bytes": 74630,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-97",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpU",
+        "task_id": "t097",
+        "blob": "e66b2510e9fad99a98e0b9f9cb43d8665ca7e2875e1320680d62e077a3a6105b",
+        "bytes": 71490,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-98",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpV",
+        "task_id": "t098",
+        "blob": "0fcf6d2b59697e6e6cdbe4150a74928f74bba1e4eb0256bd1fdc25b1b9c33c5c",
+        "bytes": 73214,
+        "sealed": 1
+      },
+      {
+        "scope": "trial-99",
+        "trial_id": "vm2-M6zHj7JzJPeTotpp3y27UY27ZpW",
+        "task_id": "t099",
+        "blob": "e102acf731d12858a4243622be734d6f0b3402e3a3c18f4b72f05138b4cba60c",
+        "bytes": 77510,
+        "sealed": 1
+      }
+    ],
+    "completed_trials": 100,
+    "failed_trials": 0,
+    "cancelled_trials": 0,
+    "run_state": "RUN_STATE_EVALUATED",
+    "run_score": 0.9313638,
+    "run_score_available": true,
+    "unselected_trials": 0,
+    "skipped_trials": 0,
+    "score_note": "Full-run score includes trials forced closed at zero. Compare selected task grades separately.",
+    "error": null,
+    "finished_at": "2026-10-23T04:19:11.310299+00:00"
+  }
+}

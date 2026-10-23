@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s8291",
+    "seq": 4,
+    "source": "import json\nout=[]\nfor task in [\"t001\",\"t002\",\"t003\",\"t004\",\"t005\"]:\n page=brain.sandbox.trace(\"jb4798f05fa4941f88eacf20a40f42800\",trial=task,limit=200)\n chosen=[];count=0\n while True:\n  count+=len(page[\"items\"])\n  chosen += [e for e in page[\"items\"] if e[\"kind\"]==\"agent_finished\" or e[\"data\"].get(\"method\") in [\"StartTrial\",\"Answer\",\"EndTrial\"]]\n  if not page[\"more\"]: break\n  page=brain.sandbox.trace(\"jb4798f05fa4941f88eacf20a40f42800\",trial=task,after=page[\"next_after\"],limit=200)\n out.append({\"task_id\":task,\"indexed_event_count\":count,\"selected_index\":chosen})\nprint(json.dumps(out))"
+  },
+  "response": {
+    "code": 2,
+    "data": {
+      "displayed_bytes": 0,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 5,
+      "output_bytes": 0,
+      "output_truncated": false,
+      "sdk_calls": 1,
+      "seq": 4,
+      "session": "s8291",
+      "step": null
+    },
+    "notices": [],
+    "output": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 4, in <module>\n    page=brain.sandbox.trace(\"jb4798f05fa4941f88eacf20a40f42800\",trial=task,limit=200)\n         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\nValueError: limit must be an integer from 1 to 100.\nThis run made no changes. Earlier draft steps are intact.\nCurrent next_seq: 5."
+  }
+}

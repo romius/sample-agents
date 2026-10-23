@@ -1,0 +1,65 @@
+{
+  "job": {
+    "id": "jd8713c77f6ab4a0e9f67bcd614d8d2e9",
+    "workspace": "w1",
+    "document": "d2499",
+    "revision": 1,
+    "path": "experiments/2026-10-22T0851Z-romius-existence-3ds-integration/agent.py",
+    "source_blob": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+    "trial_count": 100,
+    "sdk_version": "0.3.6",
+    "author": "romius",
+    "session": "s3226",
+    "state": "completed",
+    "created_at": "2026-10-22T08:56:42.440184+00:00",
+    "started_at": "2026-10-22T12:40:11.360930+00:00",
+    "finished_at": "2026-10-22T12:56:18.237599+00:00",
+    "run_id": "run-22rF1LE4MzDb7NdkS8z8vcLjX",
+    "error": null,
+    "summary_blob": "c62aa8b8483b9ee1508cb432ee5b7579177b2f8686815ecd6985d63ca8170e5b",
+    "cancellation": null,
+    "name": "romius d1857 + existence + 3DS integration full100",
+    "queue": "normal",
+    "result_available": true
+  },
+  "source": {
+    "document": "d2499",
+    "revision": 1,
+    "sha256": "ced402b531e213bef9959b6956006a8d967c0998eb7e31f0e34901f26b0eb3c1",
+    "sdk_version": "0.3.6"
+  },
+  "trial": {
+    "trial_id": "vm2-M6xEUVY5beJJgp3UfkqdSuq1zaJ",
+    "state": "failed",
+    "trace_scope": "trial-79",
+    "grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['no answer provided']",
+      "error": null
+    },
+    "started_at": "2026-10-22T12:53:20.050324+00:00",
+    "usage": {
+      "model_calls": 4,
+      "model_cost_usd": 0.0067499,
+      "reported_cost_usd": "0.00674990",
+      "unknown_cost_calls": 0,
+      "pending_calls": 0,
+      "cost_complete": true,
+      "prompt_tokens": 15109,
+      "completion_tokens": 1949,
+      "total_tokens": 17058
+    },
+    "task_id": "t079",
+    "error": "Traceback (most recent call last):\n  File \"<python-input-0>\", line 961, in <module>\n    if result is None:raise\nRuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+    "output_bytes": 246,
+    "ecom_calls": 130,
+    "finished_at": "2026-10-22T12:53:31.905591+00:00",
+    "trace": {
+      "scope": "trial-79",
+      "blob": "1bcbf63ed2febf0911a728234f9862c9c221ea7bb324fc4a3906ec7d1e63c356",
+      "bytes": 370247,
+      "sealed": true
+    }
+  }
+}

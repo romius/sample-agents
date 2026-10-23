@@ -1,0 +1,610 @@
+[
+  {
+    "name": "main_clarification_stop",
+    "stage": "main",
+    "payload_name": "clarification_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_clarification_length",
+    "stage": "main",
+    "payload_name": "clarification_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_readonly_OK_stop",
+    "stage": "main",
+    "payload_name": "readonly_OK_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "main_readonly_OK_length",
+    "stage": "main",
+    "payload_name": "readonly_OK_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "main_readonly_OK_fenced_stop",
+    "stage": "main",
+    "payload_name": "readonly_OK_fenced_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "main_readonly_OK_fenced_length",
+    "stage": "main",
+    "payload_name": "readonly_OK_fenced_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "main_partial_report_length",
+    "stage": "main",
+    "payload_name": "partial_report_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_partial_report_stop",
+    "stage": "main",
+    "payload_name": "partial_report_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_null_stop",
+    "stage": "main",
+    "payload_name": "null_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_null_length",
+    "stage": "main",
+    "payload_name": "null_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_nonreport_read_stop",
+    "stage": "main",
+    "payload_name": "nonreport_read_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_nonreport_read_length",
+    "stage": "main",
+    "payload_name": "nonreport_read_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_report_prefix_truncated_tail_length",
+    "stage": "main",
+    "payload_name": "report_prefix_truncated_tail_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "main_write_stop",
+    "stage": "main",
+    "payload_name": "write_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_write_length",
+    "stage": "main",
+    "payload_name": "write_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_delete_stop",
+    "stage": "main",
+    "payload_name": "delete_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_delete_length",
+    "stage": "main",
+    "payload_name": "delete_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_exec_stop",
+    "stage": "main",
+    "payload_name": "exec_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "main_exec_length",
+    "stage": "main",
+    "payload_name": "exec_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_clarification_stop",
+    "stage": "forced",
+    "payload_name": "clarification_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_clarification_length",
+    "stage": "forced",
+    "payload_name": "clarification_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"No export has been written in this scripted run; further catalogue work is needed.\", \"outcome\": \"OUTCOME_NONE_CLARIFICATION\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_readonly_OK_stop",
+    "stage": "forced",
+    "payload_name": "readonly_OK_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "forced_readonly_OK_length",
+    "stage": "forced",
+    "payload_name": "readonly_OK_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "forced_readonly_OK_fenced_stop",
+    "stage": "forced",
+    "payload_name": "readonly_OK_fenced_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "forced_readonly_OK_fenced_length",
+    "stage": "forced",
+    "payload_name": "readonly_OK_fenced_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "```json\n{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}\n```"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "forced_partial_report_length",
+    "stage": "forced",
+    "payload_name": "partial_report_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_partial_report_stop",
+    "stage": "forced",
+    "payload_name": "partial_report_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"report_completion\",\"message\":\"unfinished"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_null_stop",
+    "stage": "forced",
+    "payload_name": "null_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_null_length",
+    "stage": "forced",
+    "payload_name": "null_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": null
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_nonreport_read_stop",
+    "stage": "forced",
+    "payload_name": "nonreport_read_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_nonreport_read_length",
+    "stage": "forced",
+    "payload_name": "nonreport_read_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\":\"read\",\"path\":\"/docs/security.md\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_report_prefix_truncated_tail_length",
+    "stage": "forced",
+    "payload_name": "report_prefix_truncated_tail_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"report_completion\", \"completed_steps_laconic\": [], \"message\": \"2\", \"outcome\": \"OUTCOME_OK\", \"grounding_refs\": []}{\"tool\":\"report_completion\",\"message\":\"Actually"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": true
+  },
+  {
+    "name": "forced_write_stop",
+    "stage": "forced",
+    "payload_name": "write_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_write_length",
+    "stage": "forced",
+    "payload_name": "write_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"write\", \"path\": \"/exports/crosslist-JgSownP1.tsv\", \"content\": \"SYNTHETIC artifact bytes\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_delete_stop",
+    "stage": "forced",
+    "payload_name": "delete_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_delete_length",
+    "stage": "forced",
+    "payload_name": "delete_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"delete\", \"path\": \"/tmp/boundary-canary.txt\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_exec_stop",
+    "stage": "forced",
+    "payload_name": "exec_stop",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "stop",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  },
+  {
+    "name": "forced_exec_length",
+    "stage": "forced",
+    "payload_name": "exec_length",
+    "response": {
+      "choices": [
+        {
+          "finish_reason": "length",
+          "message": {
+            "content": "{\"tool\": \"exec\", \"path\": \"/bin/discount\", \"args\": [\"SYNTHETIC\"], \"stdin\": \"\"}"
+          }
+        }
+      ]
+    },
+    "arithmetic_overlay": false
+  }
+]

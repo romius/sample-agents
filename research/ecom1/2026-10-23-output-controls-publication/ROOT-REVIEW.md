@@ -1,0 +1,5 @@
+# Independent root review — 2026-10-23 04:34 UTC
+
+Read the complete test host, assertions, policy comparison code, README and 19-row decision table. Independently ran pinned Python3.14.3/Monty1.2.0 reproduce.py: PASS, all eight generated files byte-identical, 76 native whole-agent controls, no real inference or source edits. Source comparison and controls retain main length-mutation rejection and forced report-only dispatch. Plain whole-text JSON validation would also drop supported fences. The policy matrix is a fixed-payload syntactic comparison, not execution of alternate candidate policies or a semantic grade.
+
+The author seal is d021063b7af8a770fc6b1fdc749d8944423fc722cb7f8fd1e52ed5ac63fcad74. Fixture is d3909 t076 plus declared arithmetic overlays, not d4955 t076 or the paid d4353 world. All effects are in memory. No observed forced-length live incident. The correct decision is to retain phase-specific dispatch; no shared acceptance repair is justified. This does not repair false completion reporting.

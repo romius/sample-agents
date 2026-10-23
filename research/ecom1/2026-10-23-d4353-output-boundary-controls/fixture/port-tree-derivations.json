@@ -1,0 +1,42 @@
+[
+  {
+    "request": [
+      "Tree",
+      {
+        "root": "/proc/catalog",
+        "level": 3
+      }
+    ],
+    "actual_archived_subtree_maximum_depth": 2,
+    "source_request": [
+      "Tree",
+      {
+        "root": "/proc",
+        "level": 0
+      }
+    ],
+    "source_response_seq": 10110,
+    "method": "Exact archived child subtree; deepest descendant within requested limit. No nodes invented, removed or relabeled.",
+    "sha256": "91c92f9485f8464298aa86ff9991988f7cd40133a192aa282af9b6d023541f5a"
+  },
+  {
+    "request": [
+      "Tree",
+      {
+        "root": "/proc/locations",
+        "level": 3
+      }
+    ],
+    "actual_archived_subtree_maximum_depth": 2,
+    "source_request": [
+      "Tree",
+      {
+        "root": "/proc",
+        "level": 0
+      }
+    ],
+    "source_response_seq": 10110,
+    "method": "Exact archived child subtree; deepest descendant within requested limit. No nodes invented, removed or relabeled.",
+    "sha256": "7a6c08aa54a34d8c0a21ea6d49de6b99e345b4722b7d838450803372ff8346a6"
+  }
+]

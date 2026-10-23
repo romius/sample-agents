@@ -1,0 +1,68 @@
+{
+  "scope": "Isolated local copied evidence; no network or evaluation calls. Existing candidate tests not rerun.",
+  "python": "Python 3.12.7",
+  "checks": [
+    {
+      "file": "completed-initial-evidence.json",
+      "sha256": "4681bca46d50e09ec14f557ce353edc148bf737cf68fbb1bf3b917988746ca5c",
+      "exact": true
+    },
+    {
+      "file": "verification-initial.json",
+      "sha256": "c1f09ded9240b7451298155674f022241a4b47fb6a80554e4ea32c72786cde2d",
+      "exact": true
+    },
+    {
+      "file": "t007-events.ndjson",
+      "sha256": "92de231b2f2dccf5ae138ff76365a9fa191bb7afd252ebb9d1cc7dc1617c6469",
+      "exact": true
+    },
+    {
+      "file": "t012-events.ndjson",
+      "sha256": "aaece6f0961fdbd981bd1a7e95180dab02105a01533ccfc384d80fecf5561619",
+      "exact": true
+    },
+    {
+      "file": "t020-events.ndjson",
+      "sha256": "c3c7eead7ecd22dd18a43d29c5049858e5db1318e531590749b39c39d1c9a4c8",
+      "exact": true
+    },
+    {
+      "file": "reassembly-verification.json",
+      "sha256": "3dd862a35f5e3fea6d700df4353fe168e6625ad4ce82c403cbf12116a5329f1e",
+      "exact": true
+    },
+    {
+      "file": "completed-initial-review.json",
+      "sha256": "60c0c1dadf11741fe77efbb723b621fcb567f797430f39497d8afef04495a56e",
+      "exact": true
+    },
+    {
+      "file": "completed-initial-review.md",
+      "sha256": "79b4f00ba1f6466bc6fd5e18db188a4762e4bab4aa58f76a8304ceb834b75939",
+      "exact": true
+    },
+    {
+      "file": "initial-anomaly-evidence.json",
+      "sha256": "768dd72b1aac1173b53d42d36f05d9530b448d60b175bdac9cf315627a6f08b9",
+      "exact": true
+    }
+  ],
+  "commands": {
+    "verify_initial.py": {
+      "returncode": 0,
+      "stdout": "{\"completed_sealed_tasks\": 21, \"exact_events\": 147, \"all_stdout_bytes_match\": true, \"instruction_identities_match\": true, \"full_trace_CAS_reassembled\": false, \"grades_pending\": true, \"source_sha256\": \"d44e7055e533cc3b9028ff4fb0294ccf4b60065ae8b2b87864cb0ffdc49d3495\", \"reported_trial_model_calls\": 58, \"agent_finished_model_calls\": 0, \"warning\": \"agent_finished usage is a zero placeholder, not paid accounting. Job summary is a partial snapshot; no score or loss classification yet.\"}\n",
+      "stderr": ""
+    },
+    "reassemble.py": {
+      "returncode": 0,
+      "stdout": "[{\"task_id\": \"t007\", \"complete_events\": 67, \"bytes\": 366220, \"sha256\": \"92de231b2f2dccf5ae138ff76365a9fa191bb7afd252ebb9d1cc7dc1617c6469\", \"official_CAS_match\": true}, {\"task_id\": \"t012\", \"complete_events\": 23, \"bytes\": 48351, \"sha256\": \"aaece6f0961fdbd981bd1a7e95180dab02105a01533ccfc384d80fecf5561619\", \"official_CAS_match\": true}, {\"task_id\": \"t020\", \"complete_events\": 23, \"bytes\": 53584, \"sha256\": \"c3c7eead7ecd22dd18a43d29c5049858e5db1318e531590749b39c39d1c9a4c8\", \"official_CAS_match\": true}]\n",
+      "stderr": ""
+    },
+    "review_initial.py": {
+      "returncode": 0,
+      "stdout": "21 manual rows; three full-trace anomaly analyses; pending grades.\n",
+      "stderr": ""
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s8290",
+    "seq": 2,
+    "source": "print(brain.help('sandbox.result'))\nprint(brain.help('sandbox.trace'))\nprint(brain.help('sandbox.trace_event'))"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 934,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 3,
+      "output_bytes": 934,
+      "output_truncated": false,
+      "sdk_calls": 3,
+      "seq": 2,
+      "session": "s8290",
+      "step": null
+    },
+    "notices": [],
+    "output": "brain.sandbox.result(job) -> dict\n\nLive run summary: completed/selected counts, task/trial IDs, per-trial state, usage and sealed CAS trace references. Grades become available after SubmitRun. Full-run scores include forced-closed trials at zero. Detailed output is in trace files. The final summary is also in CAS.\nbrain.sandbox.trace(job, after=0, limit=20, trial=None) -> dict\n\nCompact ordered event index; request/response bodies remain in per-trial files/CAS. Optional trial matches trial_id or task_id within this job. Returns items, more and next_after. Use trace_event for a body. No automatic replay of interrupted jobs.\nbrain.sandbox.trace_event(job, seq, offset=0, limit=12000) -> dict\n\nRead one full trace event as bounded UTF-8 JSON text from its live file or immutable CAS trace. Returns text, bytes, next_offset and more. Follow byte offsets, limit 4–16000. Includes payloads/output without flooding a trace listing.\n"
+  }
+}

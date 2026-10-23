@@ -1,0 +1,30 @@
+{
+  "request": {
+    "session": "s8320",
+    "seq": 7,
+    "source": "# Prior brain.status() confirms documents/artifacts/jobs/cancellations/workspaces empty and undo_steps=0. End this read-only SDK session; no shared changes exist.\nbrain.discard()"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 0,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 8,
+      "output_bytes": 0,
+      "output_truncated": false,
+      "receipt": {
+        "author": "romius",
+        "session": "s8320",
+        "status": "discarded",
+        "time": "2026-10-23T04:31:20.905056+00:00"
+      },
+      "sdk_calls": 1,
+      "seq": 7,
+      "session": "s8320",
+      "step": null
+    },
+    "notices": [],
+    "output": "Discarded s8320. No pending changes were published. Session closed."
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s8291",
+    "seq": 71,
+    "source": "print(brain.status())"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 450,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 72,
+      "output_bytes": 450,
+      "output_truncated": false,
+      "sdk_calls": 1,
+      "seq": 71,
+      "session": "s8291",
+      "step": null
+    },
+    "notices": [],
+    "output": "{'session': 's8291', 'task': 'Read-only evidence audit of running Exec404 full100 d6808r1 job jb4798f05fa4941f88eacf20a40f42800. Preserve immutable completed trial instructions, final Answer/stdout and loss traces; no submit/cancel/write.', 'state': 'open', 'visited': ['w1'], 'documents': [], 'artifact_changes': [], 'slides': [], 'sandbox_jobs': [], 'sandbox_cancellations': [], 'workspaces': [], 'conflicts': [], 'undo_steps': 0, 'receipt': None}\n"
+  }
+}

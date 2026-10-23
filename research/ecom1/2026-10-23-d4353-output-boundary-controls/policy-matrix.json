@@ -1,0 +1,1056 @@
+{
+  "scope": "Fixed payload acceptance comparison, not candidate execution or semantic score. Existing parse_step accepts first complete JSON prefix. Whole-report exception is a hypothetical policy, not an implementation recommendation.",
+  "rows": [
+    {
+      "case": "main_clarification_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "No export has been written in this scripted run; further catalogue work is needed.",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_clarification_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_readonly_OK_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_readonly_OK_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_readonly_OK_fenced_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_readonly_OK_fenced_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_partial_report_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "main_partial_report_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "main_null_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "main_null_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "main_nonreport_read_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_nonreport_read_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_report_prefix_truncated_tail_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_write_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 1,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_write_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_delete_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 1,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_delete_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_exec_stop",
+      "stage": "main",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 1,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "main_exec_length",
+      "stage": "main",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "SCRIPTED recovery response; no completion claim.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 2
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_clarification_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "No export has been written in this scripted run; further catalogue work is needed.",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_clarification_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "No export has been written in this scripted run; further catalogue work is needed.",
+        "outcome": "OUTCOME_NONE_CLARIFICATION",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_readonly_OK_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_readonly_OK_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": true,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": true,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_readonly_OK_fenced_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": true,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_readonly_OK_fenced_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_partial_report_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "forced_partial_report_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "forced_null_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "forced_null_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": false
+      }
+    },
+    {
+      "case": "forced_nonreport_read_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_nonreport_read_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_report_prefix_truncated_tail_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": false,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": true,
+      "observed_answer": {
+        "message": "2",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/docs/security.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": true,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_write_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_write_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_delete_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_delete_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_exec_stop",
+      "stage": "forced",
+      "finish_reason": "stop",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    },
+    {
+      "case": "forced_exec_length",
+      "stage": "forced",
+      "finish_reason": "length",
+      "whole_text_json": true,
+      "exact_whole_report": false,
+      "observed_injected_payload_accepted": false,
+      "observed_answer": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "observed_inference_calls": {
+        "router": 1,
+        "main": 3,
+        "forced": 1
+      },
+      "observed_mutation_dispatches": 0,
+      "counterfactual_acceptance_only": {
+        "reject_all_length_keep_phase_filter": false,
+        "drop_finish_guard_keep_phase_filter": false,
+        "exact_whole_report_exception_keep_main_stop_actions": false,
+        "unsafe_uniform_dispatch_any_parseable_action": true
+      }
+    }
+  ]
+}

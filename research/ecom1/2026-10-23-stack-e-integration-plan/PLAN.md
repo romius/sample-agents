@@ -1,3 +1,11 @@
+# Current integration plan — session transfer 04:35 UTC
+
+The current decisions and priorities are in SESSION-HANDOVER.md and OVERNIGHT-STATUS.md, mirrored in Brain d6925. The historical plan below is superseded where it describes queue state or unfinished work now completed.
+
+OCR d6729 finished93.13638/100, below94.72095 record: do not promote. Exec404 d6808 remains running (66complete at04:30). All100 audits for these new runs are unfinished. Finish them before inferring improvements. No new paid execution during transfer. Existing heartbeat PAUSED by user-directed session transfer.
+
+Next receipt review: scoped H4 guard d7062 (65496B), not all-path d7019/d7054. Inara/bobcat own submission. Optional null-effort20-call diagnostic remains unsubmitted; adjudication/source-parser follow-up needs independent review and complete Git+Brain preservation before any payment. Main/forced output controls support retaining phase-specific dispatch, not a shared acceptance repair.
+
 # Current integration plan — d4353r1 (updated 04:14 UTC)
 
 This section supersedes the historical STACK E plan below. Start from the verified record **d4353r1: 94.72095/100**, 63,211 bytes, installed unchanged as d298r19. SHA256 `588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e`. Readable d4354r1, build d4355r1, packer d3268r2. Exact dependency closure and every-task final-log audit are preserved locally and in Brain.
