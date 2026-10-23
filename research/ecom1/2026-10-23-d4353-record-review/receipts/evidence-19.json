@@ -1,0 +1,77 @@
+[
+  {
+    "target": {
+      "task": "t080",
+      "seq": 11340,
+      "bytes": 1473,
+      "offset": 0
+    },
+    "receipt": {
+      "seq": 11340,
+      "text": "{\"seq\":11340,\"time\":\"2026-10-23T00:14:13.365184+00:00\",\"kind\":\"rpc_response\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Mm\",\"response\":{\"path\":\"/docs/availability-checks.md\",\"contentType\":\"text/markdown\",\"content\":\"# Availability Checks\\n\\n\\n\\nUse only branch inventory rows when answering branch availability, inventory,\\nor stock-count questions.\\n\\nSame-day availability is `max(on_hand - reserved, 0)`.\\n\\nIf a SKU is absent from a branch inventory record, treat that SKU as `0`\\nsame-day availability at that branch.\\n\\nIncoming stock counts only when the user asks to include incoming stock. When\\nthe user gives a due-within window, include only incoming rows with\\n`arrival_in_days` inside that window.\\n\\nAvailability checks are read-only unless the user asks for an export file. Do\\nnot mutate catalogue, store, or inventory records.\\n\\n## Inventory Exports\\n\\nWhen exporting inventory for a product family, include every product whose\\nproduct JSON has the requested `family_id`, even if that SKU is absent from the\\nbranch inventory.\\n\\nSort export rows alphabetically by SKU.\\n\\nFor today's date column, write same-day availability. For each future date\\ncolumn, write the incoming quantity arriving exactly on that date. Use `0` when\\nthere is no branch inventory row or no incoming quantity for that date.\\n\\nExport writes are report files only.\\n\",\"sha256\":\"64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080\"},\"ms\":39}}\n",
+      "bytes": 1473,
+      "next_offset": 1473,
+      "more": false
+    }
+  },
+  {
+    "target": {
+      "task": "t080",
+      "seq": 11342,
+      "bytes": 1424,
+      "offset": 0
+    },
+    "receipt": {
+      "seq": 11342,
+      "text": "{\"seq\":11342,\"time\":\"2026-10-23T00:14:13.411691+00:00\",\"kind\":\"rpc_response\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Mm\",\"response\":{\"path\":\"/storage/85Ge6bBh/receipt_ocr.txt\",\"contentType\":\"text/plain\",\"content\":\"PowerTools Salzburg Nord\\nSalzburg branch\\nSCANNED\\nMuenchner Bundesstrasse 112\\n====-=== =.===-=_=:=========:===-==== _======\\nCUST0MER RECEIPT\\n-----------.----- ----------------------------\\nReceipt PT-MdC52Jaa Terminal POS-dzF\\nDate 2025-I0-28 Time 13:21\\nCashier Store Desk\\n--------------------------:-----------------\\nItm Qt Unit Total\\n- - - - - - - - - - - - - - - - - - - - -\\n.............\\nBosch Professional Bosc 1 149.90 149.90\\nSKU PT-GRD-BO5-GWS1400-CASE\\nBosch Professional Bosc 1 269.9O 269.90\\nSKU PT-DRL-BOS-GSR55-SAH\\nh Professional GSR 18V-55 drill k.\\nEinhell Einhell TE-AC 2 2 279.56 S59.12\\nSKU PT-CMP-E1N-TEAC270-50S\\nBosch Professional osc 1 34.90 34.90\\nSKU PT-BIT-BOS-CYL9-5LONG\\nh CYL-9 MultiConstructin long dr.\\n...............\\n- - - - - - - - - - - - - - - - - - - - - - - -\\nSubtotal ex VAT EUR 1013.82\\nVAT 20% EUR 202.76\\n::===.===================== ====:=============\\nTOTAL EUR 1216.58\\nCard **** **** **** 8830\\n- _ - - - - - - - - - - - - - - - - - - - - -\\n.....   .....  scanned custoer copy\\n .  .  .  barcode: ::||..:|||:||:||: ||...: ||||| :::.:||\\n\",\"sha256\":\"ffbc0be4e5db40105f880b630c4f67054f6f3213de47c0f77892bacef39144ce\"},\"ms\":38}}\n",
+      "bytes": 1424,
+      "next_offset": 1424,
+      "more": false
+    }
+  },
+  {
+    "target": {
+      "task": "t080",
+      "seq": 11346,
+      "bytes": 1424,
+      "offset": 0
+    },
+    "receipt": {
+      "seq": 11346,
+      "text": "{\"seq\":11346,\"time\":\"2026-10-23T00:14:19.444007+00:00\",\"kind\":\"rpc_response\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Mm\",\"response\":{\"path\":\"/storage/85Ge6bBh/receipt_ocr.txt\",\"contentType\":\"text/plain\",\"content\":\"PowerTools Salzburg Nord\\nSalzburg branch\\nSCANNED\\nMuenchner Bundesstrasse 112\\n====-=== =.===-=_=:=========:===-==== _======\\nCUST0MER RECEIPT\\n-----------.----- ----------------------------\\nReceipt PT-MdC52Jaa Terminal POS-dzF\\nDate 2025-I0-28 Time 13:21\\nCashier Store Desk\\n--------------------------:-----------------\\nItm Qt Unit Total\\n- - - - - - - - - - - - - - - - - - - - -\\n.............\\nBosch Professional Bosc 1 149.90 149.90\\nSKU PT-GRD-BO5-GWS1400-CASE\\nBosch Professional Bosc 1 269.9O 269.90\\nSKU PT-DRL-BOS-GSR55-SAH\\nh Professional GSR 18V-55 drill k.\\nEinhell Einhell TE-AC 2 2 279.56 S59.12\\nSKU PT-CMP-E1N-TEAC270-50S\\nBosch Professional osc 1 34.90 34.90\\nSKU PT-BIT-BOS-CYL9-5LONG\\nh CYL-9 MultiConstructin long dr.\\n...............\\n- - - - - - - - - - - - - - - - - - - - - - - -\\nSubtotal ex VAT EUR 1013.82\\nVAT 20% EUR 202.76\\n::===.===================== ====:=============\\nTOTAL EUR 1216.58\\nCard **** **** **** 8830\\n- _ - - - - - - - - - - - - - - - - - - - - -\\n.....   .....  scanned custoer copy\\n .  .  .  barcode: ::||..:|||:||:||: ||...: ||||| :::.:||\\n\",\"sha256\":\"ffbc0be4e5db40105f880b630c4f67054f6f3213de47c0f77892bacef39144ce\"},\"ms\":44}}\n",
+      "bytes": 1424,
+      "next_offset": 1424,
+      "more": false
+    }
+  },
+  {
+    "target": {
+      "task": "t080",
+      "seq": 11398,
+      "bytes": 1019,
+      "offset": 0
+    },
+    "receipt": {
+      "seq": 11398,
+      "text": "{\"seq\":11398,\"time\":\"2026-10-23T00:14:36.108100+00:00\",\"kind\":\"rpc_response\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Mm\",\"response\":{\"path\":\"/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json\",\"contentType\":\"application/json\",\"content\":\"{\\n  \\\"id\\\": 71,\\n  \\\"sku\\\": \\\"PT-BIT-BOS-CYL9-12\\\",\\n  \\\"name\\\": \\\"Bosch CYL-9 MultiConstruction drill bit set 12-piece\\\",\\n  \\\"brand\\\": \\\"Bosch Professional\\\",\\n  \\\"category_id\\\": \\\"cat-hardware-consumables\\\",\\n  \\\"kind_id\\\": \\\"kind-drill-bit-sets\\\",\\n  \\\"family_id\\\": \\\"fam-bosch-cyl-9-multiconstruction\\\",\\n  \\\"price_cents\\\": 3490,\\n  \\\"fulfillment_type\\\": 1,\\n  \\\"return_policy\\\": 1,\\n  \\\"properties\\\": {\\n    \\\"case_type\\\": \\\"robust case\\\",\\n    \\\"cobalt\\\": false,\\n    \\\"diameter_range_mm\\\": \\\"3-12\\\",\\n    \\\"length_class\\\": \\\"standard\\\",\\n    \\\"material_target\\\": \\\"multi-material\\\",\\n    \\\"piece_count\\\": 12,\\n    \\\"shank_type\\\": \\\"cylindrical\\\"\\n  }\\n}\",\"sha256\":\"4e4331754a3cab5fc609920508ea1fa4815df1d1476dc00826f69af2f7a3499b\"},\"ms\":44}}\n",
+      "bytes": 1019,
+      "next_offset": 1019,
+      "more": false
+    }
+  },
+  {
+    "target": {
+      "task": "t080",
+      "seq": 11404,
+      "bytes": 1029,
+      "offset": 0
+    },
+    "receipt": {
+      "seq": 11404,
+      "text": "{\"seq\":11404,\"time\":\"2026-10-23T00:14:36.265843+00:00\",\"kind\":\"rpc_response\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Mm\",\"response\":{\"path\":\"/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json\",\"contentType\":\"application/json\",\"content\":\"{\\n  \\\"id\\\": 69,\\n  \\\"sku\\\": \\\"PT-BIT-BOS-CYL9-5LONG\\\",\\n  \\\"name\\\": \\\"Bosch CYL-9 MultiConstruction long drill bit set 5-piece\\\",\\n  \\\"brand\\\": \\\"Bosch Professional\\\",\\n  \\\"category_id\\\": \\\"cat-hardware-consumables\\\",\\n  \\\"kind_id\\\": \\\"kind-drill-bit-sets\\\",\\n  \\\"family_id\\\": \\\"fam-bosch-cyl-9-multiconstruction\\\",\\n  \\\"price_cents\\\": 3490,\\n  \\\"fulfillment_type\\\": 1,\\n  \\\"return_policy\\\": 1,\\n  \\\"properties\\\": {\\n    \\\"case_type\\\": \\\"plastic cassette\\\",\\n    \\\"cobalt\\\": false,\\n    \\\"diameter_range_mm\\\": \\\"5-10\\\",\\n    \\\"length_class\\\": \\\"long\\\",\\n    \\\"material_target\\\": \\\"multi-material\\\",\\n    \\\"piece_count\\\": 5,\\n    \\\"shank_type\\\": \\\"cylindrical\\\"\\n  }\\n}\",\"sha256\":\"ff8fc75866957d92f8b3a45925d775767ca4ceac237bc5920c7aba744fd84e90\"},\"ms\":40}}\n",
+      "bytes": 1029,
+      "next_offset": 1029,
+      "more": false
+    }
+  }
+]

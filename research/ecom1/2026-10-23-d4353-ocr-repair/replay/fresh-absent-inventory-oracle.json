@@ -1,0 +1,61 @@
+{
+  "provenance": "Synthetic new two-row purchase request using different actual archived catalogue families and branch stock. Not an actual user/provider request.",
+  "manual_rows": [
+    [
+      1,
+      "NEW-SAND",
+      2,
+      "PT-SND-BOS-GEX125-DUST",
+      {
+        "pad_mm": 125,
+        "power_source": "corded",
+        "speed_control": true
+      }
+    ],
+    [
+      2,
+      "NEW-HEDGE",
+      3,
+      "PT-HDG-STI-HSA50-AK20",
+      {
+        "blade_cm": 50,
+        "power_source": "cordless",
+        "weight_kg": "2.9"
+      }
+    ]
+  ],
+  "expected_rows": [
+    [
+      1,
+      "NEW-SAND",
+      "Bosch Professional GEX 125-1 AE dust-control bundle",
+      2,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-SND-BOS-GEX125-DUST",
+      "Bosch Professional GEX 125-1 AE dust-control bundle",
+      0,
+      0,
+      2,
+      "exact property match; branch has insufficient same-day stock"
+    ],
+    [
+      2,
+      "NEW-HEDGE",
+      "Stihl HSA 50 hedge trimmer set AK 20",
+      3,
+      "store-graz-center",
+      "true",
+      "exact",
+      "PT-HDG-STI-HSA50-AK20",
+      "Stihl HSA 50 hedge trimmer set AK 20",
+      0,
+      0,
+      3,
+      "exact property match; branch has insufficient same-day stock"
+    ]
+  ],
+  "ocr_sha256": "411dfc911e9c1d198c4535188f7bc78745545d03b033fa87dccfe1738fa4073d",
+  "tsv_sha256": "95211c95e6e02d74a62f27a2bfb885fe7ce57ab6123099406fe3d92bd401953a"
+}

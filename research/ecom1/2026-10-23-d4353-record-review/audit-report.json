@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "source": {
+    "document": "d4353",
+    "revision": 1,
+    "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+    "sdk_version": "0.3.7"
+  },
+  "official_run_score": 0.9472095,
+  "computed_mean": 0.9472094583999998,
+  "selected_trials": 100,
+  "completed_trials": 100,
+  "execution_failures": 0,
+  "fully_credited": 90,
+  "zero_tasks": [
+    "t001",
+    "t023",
+    "t054",
+    "t080"
+  ],
+  "partial_tasks": [
+    "t004",
+    "t014",
+    "t024",
+    "t034",
+    "t044",
+    "t064"
+  ],
+  "all100_instruction_identity_joins": true,
+  "complete_loss_indexes": {
+    "t001": 271,
+    "t004": 29,
+    "t014": 29,
+    "t023": 285,
+    "t024": 29,
+    "t034": 25,
+    "t044": 29,
+    "t054": 27,
+    "t064": 29,
+    "t080": 305
+  },
+  "selected_event_identity_size_joins": 354,
+  "read_content_hashes_verified": 31,
+  "source_dependency_export_hashes_verified": true,
+  "isolated_exact_rebuild": true,
+  "comparison_with_previous_record": {
+    "parent_source": "d3909r1",
+    "official_score_delta_points": 0.6072900000000048,
+    "instruction_differences": [
+      "t001",
+      "t002",
+      "t004",
+      "t005",
+      "t006",
+      "t007",
+      "t008",
+      "t009",
+      "t010",
+      "t011",
+      "t012",
+      "t013",
+      "t015",
+      "t016",
+      "t017",
+      "t018",
+      "t019",
+      "t020",
+      "t021",
+      "t022",
+      "t023",
+      "t024",
+      "t025",
+      "t026",
+      "t027",
+      "t028",
+      "t029",
+      "t032",
+      "t033",
+      "t034",
+      "t035",
+      "t036",
+      "t037",
+      "t038",
+      "t039",
+      "t040",
+      "t041",
+      "t042",
+      "t043",
+      "t044",
+      "t045",
+      "t046",
+      "t047",
+      "t048",
+      "t049",
+      "t050",
+      "t051",
+      "t052",
+      "t053",
+      "t054",
+      "t055",
+      "t056",
+      "t057",
+      "t058",
+      "t059",
+      "t060",
+      "t061",
+      "t062",
+      "t065",
+      "t066",
+      "t067",
+      "t068",
+      "t069",
+      "t070",
+      "t072",
+      "t073",
+      "t074",
+      "t075",
+      "t076",
+      "t077",
+      "t078",
+      "t079",
+      "t080",
+      "t082",
+      "t083",
+      "t084",
+      "t085",
+      "t087",
+      "t088",
+      "t089",
+      "t090",
+      "t091",
+      "t092",
+      "t093",
+      "t094",
+      "t095",
+      "t096",
+      "t097",
+      "t098",
+      "t099",
+      "t100"
+    ],
+    "same_instruction_count": 9,
+    "no_causal_attribution": true
+  },
+  "source_overlap": {
+    "crosslist_parse_ocr": {
+      "ast_equal": true,
+      "source_equal": true,
+      "new_source_sha256": "d8f7f536de5cd6416098d84a2eb362414f51510b008904144a26a7325d2545e8"
+    },
+    "i2c_cleanup": {
+      "ast_equal": true,
+      "source_equal": true,
+      "new_source_sha256": "4014f607a53cdf63eed3cd8838b33b535764a088f7bd74afe1c5c73688896b13"
+    },
+    "route_policy_docs": {
+      "ast_equal": false,
+      "source_equal": false,
+      "new_source_sha256": "95c1ab753e0410416945bff252f5b176da1a7a8e29e5ec34282e24ef475ae33b"
+    },
+    "i2c_llm_narrow": {
+      "ast_equal": true,
+      "source_equal": false,
+      "new_source_sha256": "cad326d1a16f990d6047f98e93f360a001e4aa92780f09499fe05d0e3fa82f31"
+    },
+    "i2c_dispatch": {
+      "ast_equal": true,
+      "source_equal": true,
+      "new_source_sha256": "789068bc77bbd8dd5e2235f88262a6b17055db68eebe923135c27a65ac46a2d8"
+    },
+    "dispatch": {
+      "ast_equal": false,
+      "source_equal": false,
+      "new_source_sha256": "e820e2adb19dcf174fe2e64db69c320c760eb5753802113ef10f0557023b61cd"
+    },
+    "recoverable_lookup_error": {
+      "ast_equal": false,
+      "source_equal": false,
+      "new_source_sha256": "1b8148c953672f09f1fd3a9ab9e162b65153a1e4171d00cccae496f1282f5292"
+    }
+  },
+  "t023_independent_inventory_check": {
+    "store_path": "/proc/stores/store-linz-kleinmuenchen.json",
+    "same_day": {
+      "PT-MOW-STI-RMA235-AK30": 2,
+      "PT-WASH-BOS-UA135": 9
+    },
+    "receipt_quantities": {
+      "PT-MOW-STI-RMA235-AK30": 4,
+      "PT-WASH-BOS-UA135": 14
+    },
+    "both_short": true,
+    "note": "Correct NO truth value does not validate malformed OCR SKU lookup or missing product references."
+  },
+  "t080_independent_arithmetic": {
+    "product_sequence": [
+      "PT-GRD-BOS-GWS1400-CASE",
+      "PT-DRL-BOS-GSR55-5AH",
+      "PT-CMP-EIN-TEAC270-50S",
+      "PT-BIT-BOS-CYL9-5LONG"
+    ],
+    "quantities": [
+      1,
+      1,
+      2,
+      1
+    ],
+    "current_subtotal_cents": 101450,
+    "old_receipt_subtotal_cents": 101382,
+    "difference_cents": 68,
+    "requested_limit_cents": 200,
+    "within_requested_limit": true,
+    "note": "Manual receipt/product calculation; official grade detail identifies missing/extraneous product references first."
+  },
+  "limitations": [
+    "The official result API receipt is preserved; the full summary CAS bytes were not reconstructed.",
+    "All ten loss indexes are complete; selected full events only, not all whole trial traces.",
+    "Same instruction is not proof of identical underlying world.",
+    "Existing source overlap is static evidence, not new-parent whole-agent integration validation."
+  ]
+}

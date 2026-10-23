@@ -1,0 +1,58 @@
+{
+  "code": 0,
+  "data": {
+    "displayed_bytes": 1405,
+    "files": {
+      "lzpack": {
+        "blob": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a",
+        "id": "d3268",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "tools/lzpack/lzpack.py",
+        "revision": 2,
+        "size": 4270,
+        "text": true,
+        "workspace": "w1"
+      },
+      "parent_agent": {
+        "blob": "2ef447520d2c17d8956426a17882a99e5cf59ee95e750b4afa4a784642f6d446",
+        "id": "d4236",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "experiments/2026-10-22T1725Z-bobcat-i2c-on-c10/agent.py",
+        "revision": 1,
+        "size": 62926,
+        "text": true,
+        "workspace": "w1"
+      },
+      "parent_readable": {
+        "blob": "1e82675e913792454530e1e67568ea1afc3d27326bbdd7bf1cfa37d567f1d179",
+        "id": "d4237",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "experiments/2026-10-22T1725Z-bobcat-i2c-on-c10/readable.py",
+        "revision": 1,
+        "size": 153026,
+        "text": true,
+        "workspace": "w1"
+      },
+      "receipt_donor": {
+        "blob": "105204ec8d71efb01b0ccde3810213e6c6aed5af7c6bd1cd5d425179e91f1be5",
+        "id": "d4228",
+        "media_type": "text/plain; charset=utf-8",
+        "path": "experiments/2026-10-22-codex-receipt-ocr-quantity/agent.py",
+        "revision": 1,
+        "size": 65523,
+        "text": true,
+        "workspace": "w1"
+      }
+    },
+    "next_offset": null,
+    "next_seq": 5,
+    "output_bytes": 1405,
+    "output_truncated": false,
+    "sdk_calls": 7,
+    "seq": 4,
+    "session": "s7985",
+    "step": null
+  },
+  "notices": [],
+  "output": "{'id': 'j6d6d4adb60f241a4a1d111a9719b59dc', 'workspace': 'w1', 'document': 'd4353', 'revision': 1, 'path': 'experiments/2026-10-22-codex-receipt-i2c-integration/agent.py', 'source_blob': '588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e', 'trial_count': 100, 'sdk_version': '0.3.7', 'author': 'codex', 'session': 's5765', 'state': 'completed', 'created_at': '2026-10-22T17:43:13.604161+00:00', 'started_at': '2026-10-22T23:51:30.609630+00:00', 'finished_at': '2026-10-23T00:21:45.063049+00:00', 'run_id': 'run-22rKXhw13zNBkMA12Uxzn6cFf', 'error': None, 'summary_blob': 'eb370f55d072adc7c945ecea696421bdda4403a42a049234fdab0c03c827347d', 'cancellation': None, 'name': 'codex receipt plus i2c stock-cleanup on d3200r2 full100', 'queue': 'normal', 'result_available': True}\nbrain.sandbox.trace(job, after=0, limit=20, trial=None) -> dict\n\nCompact ordered event index; request/response bodies remain in per-trial files/CAS. Optional trial matches trial_id or task_id within this job. Returns items, more and next_after. Use trace_event for a body. No automatic replay of interrupted jobs.\nbrain.sandbox.trace_event(job, seq, offset=0, limit=12000) -> dict\n\nRead one full trace event as bounded UTF-8 JSON text from its live file or immutable CAS trace. Returns text, bytes, next_offset and more. Follow byte offsets, limit 4–16000. Includes payloads/output without flooding a trace listing.\n"
+}

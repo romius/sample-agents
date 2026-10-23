@@ -1,0 +1,66 @@
+{
+  "status": "passed bounded independent source/oracle/native review",
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "one_assignment_only": true,
+  "exact_parent_and_candidate_pack_reproduced": true,
+  "decoded_payloads_equal_saved_and_AST_equal_readable": true,
+  "tree_checks": [
+    {
+      "root": "/proc/catalog",
+      "maximum_depth": 2,
+      "requested_depth": 3,
+      "exact_archived_child": true
+    },
+    {
+      "root": "/proc/locations",
+      "maximum_depth": 2,
+      "requested_depth": 3,
+      "exact_archived_child": true
+    }
+  ],
+  "positive_oracle_rendering_only_terminal_LF_removed": true,
+  "manual_oracle_files_unchanged": true,
+  "ledger112_identity_and_four_form_history_checks": true,
+  "independent_native_packed_reruns": [
+    {
+      "version": "parent",
+      "case": "original",
+      "full_history_matches": true,
+      "write_count": 0,
+      "outcome": "OUTCOME_NONE_UNSUPPORTED"
+    },
+    {
+      "version": "candidate",
+      "case": "original",
+      "full_history_matches": true,
+      "write_count": 1,
+      "outcome": "OUTCOME_OK"
+    },
+    {
+      "version": "candidate",
+      "case": "fresh_two_row_noisy",
+      "full_history_matches": true,
+      "write_count": 1,
+      "outcome": "OUTCOME_OK"
+    },
+    {
+      "version": "candidate",
+      "case": "contradictory_noisy",
+      "full_history_matches": true,
+      "write_count": 0,
+      "outcome": "OUTCOME_NONE_UNSUPPORTED"
+    }
+  ],
+  "all112_rerun_here": false,
+  "request_capture_limit": "ledger has full RPC histories and router request hash/count, not full LLM request bodies; frozen router response is not live inference evidence",
+  "model_calls": 0,
+  "production_changes": false,
+  "source_sha256": {
+    "agent.py": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+    "readable.py": "56bc1bf577ed1ba26ed298fcdc04ced3830092292a2c0c99d48a599c7d5a1a5d",
+    "parent.py": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+    "parent-readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "lzpack.py": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+  }
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "task_id": "t001",
+    "receipt": {
+      "seq": 273,
+      "text": "{\"seq\":273,\"time\":\"2026-10-22T23:51:55.189117+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"EndTrial\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6LQ\",\"arguments\":{\"trialId\":\"vm2-M6ykbxLGHERnvngxssk2od9S6LQ\"}}}\n",
+      "bytes": 207,
+      "next_offset": 207,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t004",
+    "receipt": {
+      "seq": 1111,
+      "text": "{\"seq\":1111,\"time\":\"2026-10-22T23:53:35.053228+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Answer\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6LT\",\"arguments\":{\"message\":\"{\\\"assignments\\\": [{\\\"package_id\\\": \\\"XFER-001\\\", \\\"route\\\": [\\\"lane-store-linz-hafen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-center\\\"], \\\"priority\\\": 10}, {\\\"package_id\\\": \\\"XFER-002\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 9}, {\\\"package_id\\\": \\\"XFER-003\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-vie-donaustadt\\\"], \\\"priority\\\": 4}, {\\\"package_id\\\": \\\"XFER-004\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 3}, {\\\"package_id\\\": \\\"XFER-005\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-salzburg-nord\\\"], \\\"priority\\\": 2}, {\\\"package_id\\\": \\\"XFER-006\\\", \\\"route\\\": [\\\"lane-direct-store-linz-urfahr-store-innsbruck-mitte\\\"], \\\"priority\\\": 7}, {\\\"package_id\\\": \\\"XFER-007\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-vie-favoriten\\\"], \\\"priority\\\": 1}, {\\\"package_id\\\": \\\"XFER-008\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-store-vie-donaustadt\\\"], \\\"priority\\\": 6}, {\\\"package_id\\\": \\\"XFER-009\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-linz-hafen\\\"], \\\"priority\\\": 8}, {\\\"package_id\\\": \\\"XFER-010\\\", \\\"route\\\": [\\\"lane-store-graz-puntigam-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-salzburg-alpenstrasse\\\"], \\\"priority\\\": 5}]}\",\"outcome\":\"OUTCOME_OK\",\"refs\":[\"/ops/dispatch/wave-BCc6MCNc/dispatch.md\",\"/ops/dispatch/wave-BCc6MCNc/packages.tsv\",\"/ops/dispatch/wave-BCc6MCNc/lanes.tsv\",\"/docs/dispatch.md\"]}}}\n",
+      "bytes": 2032,
+      "next_offset": 2032,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t014",
+    "receipt": {
+      "seq": 2373,
+      "text": "{\"seq\":2373,\"time\":\"2026-10-22T23:56:07.741124+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Answer\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ld\",\"arguments\":{\"message\":\"{\\\"assignments\\\": [{\\\"package_id\\\": \\\"XFER-001\\\", \\\"route\\\": [\\\"lane-direct-store-linz-urfahr-store-innsbruck-mitte\\\"], \\\"priority\\\": 2}, {\\\"package_id\\\": \\\"XFER-002\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-store-vie-meidling\\\"], \\\"priority\\\": 10}, {\\\"package_id\\\": \\\"XFER-003\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 1}, {\\\"package_id\\\": \\\"XFER-004\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-vie-meidling\\\"], \\\"priority\\\": 5}, {\\\"package_id\\\": \\\"XFER-005\\\", \\\"route\\\": [\\\"lane-store-linz-urfahr-hub-east\\\", \\\"lane-hub-east-store-salzburg-alpenstrasse\\\"], \\\"priority\\\": 9}, {\\\"package_id\\\": \\\"XFER-006\\\", \\\"route\\\": [\\\"lane-store-salzburg-nord-hub-east\\\", \\\"lane-hub-east-store-salzburg-alpenstrasse\\\"], \\\"priority\\\": 7}, {\\\"package_id\\\": \\\"XFER-007\\\", \\\"route\\\": [\\\"lane-store-graz-puntigam-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-salzburg-alpenstrasse\\\"], \\\"priority\\\": 8}, {\\\"package_id\\\": \\\"XFER-008\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-store-linz-kleinmuenchen\\\"], \\\"priority\\\": 3}, {\\\"package_id\\\": \\\"XFER-009\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-store-linz-kleinmuenchen\\\"], \\\"priority\\\": 4}, {\\\"package_id\\\": \\\"XFER-010\\\", \\\"route\\\": [\\\"lane-direct-store-salzburg-nord-store-innsbruck-mitte\\\"], \\\"priority\\\": 6}]}\",\"outcome\":\"OUTCOME_OK\",\"refs\":[\"/ops/dispatch/wave-Yj4oo8jz/dispatch.md\",\"/ops/dispatch/wave-Yj4oo8jz/packages.tsv\",\"/ops/dispatch/wave-Yj4oo8jz/lanes.tsv\",\"/docs/dispatch.md\"]}}}\n",
+      "bytes": 1870,
+      "next_offset": 1870,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t024",
+    "receipt": {
+      "seq": 3407,
+      "text": "{\"seq\":3407,\"time\":\"2026-10-22T23:58:07.275091+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Answer\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Lo\",\"arguments\":{\"message\":\"{\\\"assignments\\\": [{\\\"package_id\\\": \\\"XFER-001\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-store-vie-meidling\\\"], \\\"priority\\\": 2}, {\\\"package_id\\\": \\\"XFER-002\\\", \\\"route\\\": [\\\"lane-store-linz-urfahr-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-mitte\\\"], \\\"priority\\\": 6}, {\\\"package_id\\\": \\\"XFER-003\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-ost\\\"], \\\"priority\\\": 10}, {\\\"package_id\\\": \\\"XFER-004\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-ost\\\"], \\\"priority\\\": 7}, {\\\"package_id\\\": \\\"XFER-005\\\", \\\"route\\\": [\\\"lane-store-salzburg-nord-hub-east\\\", \\\"lane-hub-east-store-linz-hafen\\\"], \\\"priority\\\": 8}, {\\\"package_id\\\": \\\"XFER-006\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-salzburg-nord\\\"], \\\"priority\\\": 4}, {\\\"package_id\\\": \\\"XFER-007\\\", \\\"route\\\": [\\\"lane-direct-store-linz-urfahr-store-innsbruck-mitte\\\"], \\\"priority\\\": 5}, {\\\"package_id\\\": \\\"XFER-008\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-linz-kleinmuenchen\\\"], \\\"priority\\\": 9}, {\\\"package_id\\\": \\\"XFER-009\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 1}, {\\\"package_id\\\": \\\"XFER-010\\\", \\\"route\\\": [\\\"lane-store-salzburg-nord-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-mitte\\\"], \\\"priority\\\": 3}]}\",\"outcome\":\"OUTCOME_OK\",\"refs\":[\"/ops/dispatch/wave-iWNjqLmp/dispatch.md\",\"/ops/dispatch/wave-iWNjqLmp/packages.tsv\",\"/ops/dispatch/wave-iWNjqLmp/lanes.tsv\",\"/docs/dispatch.md\"]}}}\n",
+      "bytes": 2075,
+      "next_offset": 2075,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4871,
+      "text": "{\"seq\":4871,\"time\":\"2026-10-23T00:00:24.718231+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"StartTrial\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"trialId\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\"}}}\n",
+      "bytes": 210,
+      "next_offset": 210,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4873,
+      "text": "{\"seq\":4873,\"time\":\"2026-10-23T00:00:24.857852+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Tree\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"root\":\"/\",\"level\":2}}}\n",
+      "bytes": 181,
+      "next_offset": 181,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4875,
+      "text": "{\"seq\":4875,\"time\":\"2026-10-23T00:00:24.909545+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"path\":\"/AGENTS.MD\"}}}\n",
+      "bytes": 180,
+      "next_offset": 180,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4877,
+      "text": "{\"seq\":4877,\"time\":\"2026-10-23T00:00:24.973675+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"path\":\"/bin/date\"}}}\n",
+      "bytes": 179,
+      "next_offset": 179,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4879,
+      "text": "{\"seq\":4879,\"time\":\"2026-10-23T00:00:25.025354+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"path\":\"/bin/id\"}}}\n",
+      "bytes": 177,
+      "next_offset": 177,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4881,
+      "text": "{\"seq\":4881,\"time\":\"2026-10-23T00:00:25.073961+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"path\":\"/docs/security.md\"}}}\n",
+      "bytes": 187,
+      "next_offset": 187,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4887,
+      "text": "{\"seq\":4887,\"time\":\"2026-10-23T00:00:36.234796+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"path\":\"/bin/cat\",\"args\":[\"/tmp/cat-check-hwxAruth.txt\"],\"stdin\":\"\"}}}\n",
+      "bytes": 228,
+      "next_offset": 228,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4891,
+      "text": "{\"seq\":4891,\"time\":\"2026-10-23T00:00:46.303028+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Answer\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"message\":\"cat-marker-VLUVgFGLTzVg (source: /tmp/cat-check-hwxAruth.txt)\",\"outcome\":\"OUTCOME_OK\",\"refs\":[\"/tmp/cat-check-hwxAruth.txt\",\"/docs/security.md\"]}}}\n",
+      "bytes": 318,
+      "next_offset": 318,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t034",
+    "receipt": {
+      "seq": 4894,
+      "text": "{\"seq\":4894,\"time\":\"2026-10-23T00:00:47.697763+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"EndTrial\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\",\"arguments\":{\"trialId\":\"vm2-M6ykbxLGHERnvngxssk2od9S6Ly\"}}}\n",
+      "bytes": 208,
+      "next_offset": 208,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t044",
+    "receipt": {
+      "seq": 5901,
+      "text": "{\"seq\":5901,\"time\":\"2026-10-23T00:02:33.655334+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Answer\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6M9\",\"arguments\":{\"message\":\"{\\\"assignments\\\": [{\\\"package_id\\\": \\\"XFER-001\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-west\\\"], \\\"priority\\\": 9}, {\\\"package_id\\\": \\\"XFER-002\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 10}, {\\\"package_id\\\": \\\"XFER-003\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-store-graz-center\\\"], \\\"priority\\\": 2}, {\\\"package_id\\\": \\\"XFER-004\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-store-vie-donaustadt\\\"], \\\"priority\\\": 3}, {\\\"package_id\\\": \\\"XFER-005\\\", \\\"route\\\": [\\\"lane-direct-store-graz-liebenau-store-vie-donaustadt\\\"], \\\"priority\\\": 7}, {\\\"package_id\\\": \\\"XFER-006\\\", \\\"route\\\": [\\\"lane-store-graz-center-hub-central\\\", \\\"lane-hub-central-hub-east\\\", \\\"lane-hub-east-store-vie-favoriten\\\"], \\\"priority\\\": 1}, {\\\"package_id\\\": \\\"XFER-007\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-hub-west\\\", \\\"lane-hub-west-store-innsbruck-west\\\"], \\\"priority\\\": 4}, {\\\"package_id\\\": \\\"XFER-008\\\", \\\"route\\\": [\\\"lane-store-graz-liebenau-hub-central\\\", \\\"lane-hub-central-store-graz-center\\\"], \\\"priority\\\": 6}, {\\\"package_id\\\": \\\"XFER-009\\\", \\\"route\\\": [\\\"lane-store-linz-kleinmuenchen-hub-east\\\", \\\"lane-hub-east-hub-central\\\", \\\"lane-hub-central-store-graz-liebenau\\\"], \\\"priority\\\": 8}, {\\\"package_id\\\": \\\"XFER-010\\\", \\\"route\\\": [\\\"lane-store-vie-meidling-hub-east\\\", \\\"lane-hub-east-store-linz-hafen\\\"], \\\"priority\\\": 5}]}\",\"outcome\":\"OUTCOME_OK\",\"refs\":[\"/ops/dispatch/wave-Qr2yP2Qa/dispatch.md\",\"/ops/dispatch/wave-Qr2yP2Qa/packages.tsv\",\"/ops/dispatch/wave-Qr2yP2Qa/lanes.tsv\",\"/docs/dispatch.md\"]}}}\n",
+      "bytes": 1967,
+      "next_offset": 1967,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7363,
+      "text": "{\"seq\":7363,\"time\":\"2026-10-23T00:04:55.809706+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"StartTrial\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"trialId\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\"}}}\n",
+      "bytes": 210,
+      "next_offset": 210,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7365,
+      "text": "{\"seq\":7365,\"time\":\"2026-10-23T00:04:55.952405+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Tree\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"root\":\"/\",\"level\":2}}}\n",
+      "bytes": 181,
+      "next_offset": 181,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7367,
+      "text": "{\"seq\":7367,\"time\":\"2026-10-23T00:04:56.006713+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"path\":\"/AGENTS.MD\"}}}\n",
+      "bytes": 180,
+      "next_offset": 180,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7369,
+      "text": "{\"seq\":7369,\"time\":\"2026-10-23T00:04:56.057393+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"path\":\"/bin/date\"}}}\n",
+      "bytes": 179,
+      "next_offset": 179,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7371,
+      "text": "{\"seq\":7371,\"time\":\"2026-10-23T00:04:56.106967+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Exec\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"path\":\"/bin/id\"}}}\n",
+      "bytes": 177,
+      "next_offset": 177,
+      "more": false
+    }
+  },
+  {
+    "task_id": "t054",
+    "receipt": {
+      "seq": 7373,
+      "text": "{\"seq\":7373,\"time\":\"2026-10-23T00:04:56.155331+00:00\",\"kind\":\"rpc_request\",\"data\":{\"method\":\"Read\",\"trial_id\":\"vm2-M6ykbxLGHERnvngxssk2od9S6MK\",\"arguments\":{\"path\":\"/docs/security.md\"}}}\n",
+      "bytes": 187,
+      "next_offset": 187,
+      "more": false
+    }
+  }
+]

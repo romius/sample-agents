@@ -1,0 +1,90 @@
+{
+  "status": "PASS",
+  "scope": "Exact source/build and clean-directory reproduction; final archive not yet reviewed",
+  "tested_files": {
+    "parent.py": {
+      "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+      "bytes": 63211
+    },
+    "parent-readable.py": {
+      "sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+      "bytes": 153653
+    },
+    "parent-decoded.py": {
+      "sha256": "48e517632e1b193dd83a379ea8f79aca74af9ca90f59f0a3def0d728208d1d1a",
+      "bytes": 146181
+    },
+    "lzpack.py": {
+      "sha256": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a",
+      "bytes": 4270
+    },
+    "build.py": {
+      "sha256": "a3e8f0a863ef274f36514842a26a0e369295bee44a9944ece5efb71438b7d952",
+      "bytes": 2583
+    },
+    "readable.py": {
+      "sha256": "56bc1bf577ed1ba26ed298fcdc04ced3830092292a2c0c99d48a599c7d5a1a5d",
+      "bytes": 153883
+    },
+    "portable.py": {
+      "sha256": "e6ebaf91d8d65215698b0715cd5cf4e80853f9c1f029bba99a4b7286a736d098",
+      "bytes": 146411
+    },
+    "agent.py": {
+      "sha256": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+      "bytes": 63411
+    },
+    "manifest.json": {
+      "sha256": "aceb9cb70f88c1e284b8c38e89a6ec1aa817ae94d7184a6689b87188e205c79b",
+      "bytes": 1415
+    },
+    "reproduce.py": {
+      "sha256": "f1fc3598bd579b2329814c82e6958773bc64f878ae1803ea8563f22fdf809aa2",
+      "bytes": 488
+    },
+    "parser-results.json": {
+      "sha256": "5744fd5e7bcf33512b6e9a6c764a26a08386a55330e540a5cc9d491fbf1065f1",
+      "bytes": 47238
+    },
+    "independent-extra-results.json": {
+      "sha256": "f070cda33251c1906de28a312c0859b80c1d8474e313251b71cd6e67d4da2c6e",
+      "bytes": 24140
+    },
+    "replay/replay-results.json": {
+      "sha256": "aafb73eec93af44f047dee867fa5949aedbf4e66495275f2775f6ed2a539c085",
+      "bytes": 1071880
+    },
+    "replay/port-tree-derivations.json": {
+      "sha256": "d3752f869ee2c81a13bf6420d9235c9c63b1ade5a11c511d41c85532c55104d3",
+      "bytes": 1033
+    },
+    "replay/prepare_archived.py": {
+      "sha256": "5378a6c2c34e772f94d91eb96dbc29be6ef11fab3b1d94bb05fab2cf8c63ca94",
+      "bytes": 8506
+    },
+    "replay/prepare_port.py": {
+      "sha256": "f0ec8b8cda8526d19183c1b646a5aa62025c9058d46e11c20a1e9e2334e55764",
+      "bytes": 1415
+    },
+    "replay/replay.py": {
+      "sha256": "d8808bcaa2e8cec29d8efb99799d37ed5eac9f89ed0b038f7f8cb51d982625c1",
+      "bytes": 7152
+    }
+  },
+  "python_versions": [
+    "3.14.3",
+    "3.12.7 build only"
+  ],
+  "native_monty": "1.2.0",
+  "exact_parent_packing_reproduced": true,
+  "single_assignment_ast_change": true,
+  "normalizer_equals_previous_independently_reviewed_ascii_pattern": true,
+  "parser_evaluations": 300,
+  "whole_agent_executions": 112,
+  "generated_artifacts_byte_identical": true,
+  "common_files_compared": 46,
+  "identical_common_files": 45,
+  "only_concurrent_difference": "README wording corrected from all requests to actual logged RPCs/router hash/counts; inspected",
+  "paid_calls": 0,
+  "archive_verification": "pending archive creation"
+}

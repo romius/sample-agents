@@ -1,0 +1,1526 @@
+{
+  "job": "j55b49f183413406c850865f5aa62012b",
+  "trial_id": "vm2-M6yYmGWfpg1xh2ziPkmn2MQ3HJs",
+  "trace_blob": "dcd9333354fb1c5c72b39dc2e6c24dc5ffacbb2d70004ec9c384f26540b118fc",
+  "all_rpc_responses": 135,
+  "rpc_response_bytes": 259432,
+  "distinct_read_files": 126,
+  "lineage": [
+    {
+      "request_seq": 10079,
+      "response_seq": 10080,
+      "method": "StartTrial",
+      "arguments": {
+        "trialId": "vm2-M6yYmGWfpg1xh2ziPkmn2MQ3HJs"
+      },
+      "raw_response_sha256": "59e37204d93b19392883c6b1633f295ad5ef85525a3166cfa4866a1c1732f77c",
+      "raw_bytes": 650
+    },
+    {
+      "request_seq": 10081,
+      "response_seq": 10082,
+      "method": "Tree",
+      "arguments": {
+        "root": "/",
+        "level": 2
+      },
+      "raw_response_sha256": "6d48618d694ec47dd3821df4e0c6ae3086d9c841d97af8d5516abefa56e39e96",
+      "raw_bytes": 3194
+    },
+    {
+      "request_seq": 10083,
+      "response_seq": 10084,
+      "method": "Read",
+      "arguments": {
+        "path": "/AGENTS.MD"
+      },
+      "raw_response_sha256": "5eb95453fc95336f79e4db5c33f0059d35cdbb26506d8a74e2cd8857b531ca8b",
+      "raw_bytes": 2010
+    },
+    {
+      "request_seq": 10085,
+      "response_seq": 10086,
+      "method": "Exec",
+      "arguments": {
+        "path": "/bin/date"
+      },
+      "raw_response_sha256": "1db50f41126459fc25b41c98b994b7a7a835894d1d4d41e5dba07ebc93e2a4ec",
+      "raw_bytes": 203
+    },
+    {
+      "request_seq": 10087,
+      "response_seq": 10088,
+      "method": "Exec",
+      "arguments": {
+        "path": "/bin/id"
+      },
+      "raw_response_sha256": "ced5e3468ff53d64ce12edb2180ef27353b6186fcec8e0d519329d2973fb487b",
+      "raw_bytes": 258
+    },
+    {
+      "request_seq": 10089,
+      "response_seq": 10090,
+      "method": "Read",
+      "arguments": {
+        "path": "/docs/security.md"
+      },
+      "raw_response_sha256": "fc6f59138c47dd138a2969b34df3937ee1d99847e3633f79b2395a008090b3e9",
+      "raw_bytes": 5442
+    },
+    {
+      "request_seq": 10093,
+      "response_seq": 10094,
+      "method": "Read",
+      "arguments": {
+        "path": "/docs/purchase-request-crosslist.md"
+      },
+      "raw_response_sha256": "ac72faa5686891c563d94266660f606b78e7dc3f9df0941fdff67de1b435ddb0",
+      "raw_bytes": 1969
+    },
+    {
+      "request_seq": 10095,
+      "response_seq": 10096,
+      "method": "Read",
+      "arguments": {
+        "path": "/docs/purchase-request-crosslist.md"
+      },
+      "raw_response_sha256": "6245c578e0b40389de9343ba8511b7da8a148ecf6c76278cd015dab5cd1b2049",
+      "raw_bytes": 1969
+    },
+    {
+      "request_seq": 10097,
+      "response_seq": 10098,
+      "method": "Read",
+      "arguments": {
+        "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+      },
+      "raw_response_sha256": "05c204f6d977a23b4d32d3cbb4176bf4b3ee6394aa048382137eb6b12f25c843",
+      "raw_bytes": 1966
+    },
+    {
+      "request_seq": 10101,
+      "response_seq": 10102,
+      "method": "Read",
+      "arguments": {
+        "path": "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt"
+      },
+      "raw_response_sha256": "45ec2b014d5aa5f0887d06e16f486e8ca1db6f5618aaabef03f3e4d77ea41a69",
+      "raw_bytes": 1966
+    },
+    {
+      "request_seq": 10109,
+      "response_seq": 10110,
+      "method": "Tree",
+      "arguments": {
+        "root": "/proc",
+        "level": 0
+      },
+      "raw_response_sha256": "30d48ee55cacec054f6b680f1a1fc53acf28441f78b22c3672f4533c1f288084",
+      "raw_bytes": 44915
+    },
+    {
+      "request_seq": 10111,
+      "response_seq": 10112,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/carts/cust-0001/basket-0001.json"
+      },
+      "raw_response_sha256": "f0d28aa546f53f788981ac6a8acae6739adad70263841e5e486be3cbef69ecc7",
+      "raw_bytes": 620
+    },
+    {
+      "request_seq": 10113,
+      "response_seq": 10114,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json"
+      },
+      "raw_response_sha256": "ec1d777a107e6f57a98b3eec281a2977e8b70c0624eb6ed8c3e387bdab996092",
+      "raw_bytes": 944
+    },
+    {
+      "request_seq": 10115,
+      "response_seq": 10116,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json"
+      },
+      "raw_response_sha256": "376c725a540a2770859446e2d05091b7733a414a000c48b237eebba45469fcfa",
+      "raw_bytes": 927
+    },
+    {
+      "request_seq": 10117,
+      "response_seq": 10118,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json"
+      },
+      "raw_response_sha256": "4f10036db417c5b8f93b8d2ea8a6bda775478fbf79d8f6b5b4d789b500e62967",
+      "raw_bytes": 926
+    },
+    {
+      "request_seq": 10119,
+      "response_seq": 10120,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json"
+      },
+      "raw_response_sha256": "68666dd8b7f0a8b98d90542868208a2b82140a1a671d2c22ccf1db5c4e99fbf3",
+      "raw_bytes": 970
+    },
+    {
+      "request_seq": 10121,
+      "response_seq": 10122,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json"
+      },
+      "raw_response_sha256": "108e19e27ff9a21d521ec1fe4f650996b0d55dbb59e94653ce2d20dab05662ae",
+      "raw_bytes": 950
+    },
+    {
+      "request_seq": 10123,
+      "response_seq": 10124,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json"
+      },
+      "raw_response_sha256": "530a2a076138cbd727c4fb61852d616b179f9b31ad87b88855f000d7a1ce943e",
+      "raw_bytes": 927
+    },
+    {
+      "request_seq": 10125,
+      "response_seq": 10126,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-24.json"
+      },
+      "raw_response_sha256": "4d7fe3c9645ebf6bf5c1ee1d0684a80743fbb0c3fb66bb22fad5dde35912070d",
+      "raw_bytes": 868
+    },
+    {
+      "request_seq": 10127,
+      "response_seq": 10128,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-6.json"
+      },
+      "raw_response_sha256": "ce0e679f3456e6f373342074bfa6212547c2483d681d144435515474a54e074b",
+      "raw_bytes": 865
+    },
+    {
+      "request_seq": 10129,
+      "response_seq": 10130,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-SET.json"
+      },
+      "raw_response_sha256": "92628eb43b58b4946b63424fbbd79147a77778dacd71d5b6b73ba65524ca1afd",
+      "raw_bytes": 884
+    },
+    {
+      "request_seq": 10131,
+      "response_seq": 10132,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-13.json"
+      },
+      "raw_response_sha256": "d2497b3cd52ff305af12c16ca32b69cfe901156b1008515156be9e94a23d226b",
+      "raw_bytes": 921
+    },
+    {
+      "request_seq": 10133,
+      "response_seq": 10134,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-19.json"
+      },
+      "raw_response_sha256": "ca410db50717e1b8c9576fb130a8141a45b3ac34326ae648c91e485b5d01f27c",
+      "raw_bytes": 916
+    },
+    {
+      "request_seq": 10135,
+      "response_seq": 10136,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-25.json"
+      },
+      "raw_response_sha256": "a3aec08c0d0886fc4b3ef178fd7f8b48f5b36528103ab37f2264d114d2465d79",
+      "raw_bytes": 916
+    },
+    {
+      "request_seq": 10137,
+      "response_seq": 10138,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-41.json"
+      },
+      "raw_response_sha256": "fb331ad4baf422c122008e2a3f406451f53d3857d8e53c1996701ac22aecdd76",
+      "raw_bytes": 924
+    },
+    {
+      "request_seq": 10139,
+      "response_seq": 10140,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-COBALT.json"
+      },
+      "raw_response_sha256": "f124375c96238117727596420c7100b17005bd0dac75df9bc9ee5b906c0cd3d4",
+      "raw_bytes": 940
+    },
+    {
+      "request_seq": 10141,
+      "response_seq": 10142,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-REDUCED.json"
+      },
+      "raw_response_sha256": "784846ac1d9f02e31a225eda495322928972dcae708ae09c22acd69e12e3243f",
+      "raw_bytes": 947
+    },
+    {
+      "request_seq": 10143,
+      "response_seq": 10144,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json"
+      },
+      "raw_response_sha256": "95ace3767a6a7fca5caf83535f690edbdac9117b7b8f98e01fba5e5bc49995cf",
+      "raw_bytes": 992
+    },
+    {
+      "request_seq": 10145,
+      "response_seq": 10146,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json"
+      },
+      "raw_response_sha256": "340605c286108a02f9273b9bb3a31ccc5e07cad9f3883fe077e845ccbcf13e21",
+      "raw_bytes": 992
+    },
+    {
+      "request_seq": 10147,
+      "response_seq": 10148,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json"
+      },
+      "raw_response_sha256": "70df0496826ac1230f19a2a3b2c6774ff11b43e87d3b695db093e9eb4b86aab3",
+      "raw_bytes": 989
+    },
+    {
+      "request_seq": 10149,
+      "response_seq": 10150,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135-CAR.json"
+      },
+      "raw_response_sha256": "fba756626a5774ab26d5028a253b8ab10a9af215ba0410278edc55d9803e58dc",
+      "raw_bytes": 954
+    },
+    {
+      "request_seq": 10151,
+      "response_seq": 10152,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135-PATIO.json"
+      },
+      "raw_response_sha256": "465bc14d0e7360b76a6ca43409930cc7c9a0863d6bb16d89e6b457e9babf6b73",
+      "raw_bytes": 951
+    },
+    {
+      "request_seq": 10153,
+      "response_seq": 10154,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135.json"
+      },
+      "raw_response_sha256": "6511fdeee856bd8a6e64cc3101f4c65c88f8bc3564ec4d812c4d1d315272435c",
+      "raw_bytes": 945
+    },
+    {
+      "request_seq": 10155,
+      "response_seq": 10156,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-10.json"
+      },
+      "raw_response_sha256": "239494e65805971929a1b783e6fd8177afa26fd6700c3bc2c9a1d060c0abc2b3",
+      "raw_bytes": 1024
+    },
+    {
+      "request_seq": 10157,
+      "response_seq": 10158,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json"
+      },
+      "raw_response_sha256": "d9c149ad00d81203e09f68fade474d5b2575c33e62c0df67ec2d7557b27b57a6",
+      "raw_bytes": 1019
+    },
+    {
+      "request_seq": 10159,
+      "response_seq": 10160,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-15.json"
+      },
+      "raw_response_sha256": "21b58532691c42bb5909cb1d5c2ed36d05c551f24eb36be48cac84dc5666bce0",
+      "raw_bytes": 1024
+    },
+    {
+      "request_seq": 10161,
+      "response_seq": 10162,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-4.json"
+      },
+      "raw_response_sha256": "77a6ef3d0e27fb82081096f75848c1b7988485ef7ba5d38627de00052eb85b72",
+      "raw_bytes": 1029
+    },
+    {
+      "request_seq": 10163,
+      "response_seq": 10164,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json"
+      },
+      "raw_response_sha256": "9f2b0848c2a90f8caff426e1df322e471d330dcd57a2e27da87667b0185dd7a6",
+      "raw_bytes": 1029
+    },
+    {
+      "request_seq": 10165,
+      "response_seq": 10166,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-7.json"
+      },
+      "raw_response_sha256": "f63b21f3d848e78c6b21793f4b0254f80b5e9208492f876609f488c5caabe94b",
+      "raw_bytes": 1020
+    },
+    {
+      "request_seq": 10167,
+      "response_seq": 10168,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-8.json"
+      },
+      "raw_response_sha256": "bd71e2805fe4fd1f2c2f34c034200153090730e26adf74710c7d316152bee7cb",
+      "raw_bytes": 1020
+    },
+    {
+      "request_seq": 10169,
+      "response_seq": 10170,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json"
+      },
+      "raw_response_sha256": "a849dd8911daee375cf9c19d329b97491c8cb3b3d34cadc2696073e9e50b16d0",
+      "raw_bytes": 940
+    },
+    {
+      "request_seq": 10171,
+      "response_seq": 10172,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json"
+      },
+      "raw_response_sha256": "b1f1f79710a2fa78a16788c6d58d886c347169cf6b4d2762cbdfecdd364c5390",
+      "raw_bytes": 940
+    },
+    {
+      "request_seq": 10173,
+      "response_seq": 10174,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-216.json"
+      },
+      "raw_response_sha256": "ff5ca51e4d24247288376ea8126cf441d405f595197f8952684725282780a536",
+      "raw_bytes": 946
+    },
+    {
+      "request_seq": 10175,
+      "response_seq": 10176,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json"
+      },
+      "raw_response_sha256": "d2ed61f755be61432ddac9f295ff464170af591a03e68e36d11db415fab461b0",
+      "raw_bytes": 1018
+    },
+    {
+      "request_seq": 10177,
+      "response_seq": 10178,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json"
+      },
+      "raw_response_sha256": "5777f26ed5325ac8901f9620421330f8f2ea36e671c13cdd2523a7fc48a6a796",
+      "raw_bytes": 1018
+    },
+    {
+      "request_seq": 10179,
+      "response_seq": 10180,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json"
+      },
+      "raw_response_sha256": "f0b0750a316def4c543ce302ebe0b7fb055fff8b8954a30a735cb03f5a8bfca5",
+      "raw_bytes": 1002
+    },
+    {
+      "request_seq": 10181,
+      "response_seq": 10182,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-125.json"
+      },
+      "raw_response_sha256": "61173a1c8d9b7aa915231660928ac9479f9951e39a2b1dbba5fc9e0bce981ffc",
+      "raw_bytes": 967
+    },
+    {
+      "request_seq": 10183,
+      "response_seq": 10184,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json"
+      },
+      "raw_response_sha256": "ab98e81016643155ab917adbe44fce9e4bbb2f790d90d8f8b11f368ec86aade8",
+      "raw_bytes": 967
+    },
+    {
+      "request_seq": 10185,
+      "response_seq": 10186,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json"
+      },
+      "raw_response_sha256": "d31ea2d6b1921d207c69f79b03127d77769da1df5eb2986cc8bb7165cbc1e792",
+      "raw_bytes": 972
+    },
+    {
+      "request_seq": 10187,
+      "response_seq": 10188,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json"
+      },
+      "raw_response_sha256": "6970a570d1b1adad7ae9ed8bcfe72ecf38570efe0dff8655fc0167691b654234",
+      "raw_bytes": 954
+    },
+    {
+      "request_seq": 10189,
+      "response_seq": 10190,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json"
+      },
+      "raw_response_sha256": "ef7df542a99a03298ea42a31bde7a9afee36579aeb01ed374527f8641186188c",
+      "raw_bytes": 976
+    },
+    {
+      "request_seq": 10191,
+      "response_seq": 10192,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json"
+      },
+      "raw_response_sha256": "5f71d616afa663dc38cf74c1bc75598be7014c72cf6b4f8de34c314a66b86026",
+      "raw_bytes": 987
+    },
+    {
+      "request_seq": 10193,
+      "response_seq": 10194,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json"
+      },
+      "raw_response_sha256": "0f9d26319f18d2898080ed41612a4d0658794c534cee4513c6c7470ea32893be",
+      "raw_bytes": 1002
+    },
+    {
+      "request_seq": 10195,
+      "response_seq": 10196,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json"
+      },
+      "raw_response_sha256": "34a3ee84533a643f33d7b917490f33b2dfa74a6284d66067c53d7424c915a32b",
+      "raw_bytes": 1002
+    },
+    {
+      "request_seq": 10197,
+      "response_seq": 10198,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-BODY.json"
+      },
+      "raw_response_sha256": "295382f1ec34878da14b144338d6d2c4a46a7f42298055cc28c064c841612648",
+      "raw_bytes": 980
+    },
+    {
+      "request_seq": 10199,
+      "response_seq": 10200,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json"
+      },
+      "raw_response_sha256": "90173f800f3eee9f99b89b1e3d5f5a8d39edfd2de8cd5da040c31b21ad91caa1",
+      "raw_bytes": 930
+    },
+    {
+      "request_seq": 10201,
+      "response_seq": 10202,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json"
+      },
+      "raw_response_sha256": "4d28aae615a3413c16eae1371d5c3b230ab68c919f66792da274603518d5079f",
+      "raw_bytes": 950
+    },
+    {
+      "request_seq": 10203,
+      "response_seq": 10204,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json"
+      },
+      "raw_response_sha256": "617e2754f3ba68fff1c6748361528c9291d1452f52a8b979fe4986f0e9bc4af9",
+      "raw_bytes": 948
+    },
+    {
+      "request_seq": 10205,
+      "response_seq": 10206,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json"
+      },
+      "raw_response_sha256": "5bc55b38b74e76989dc858b190a0e582332a0e84044a8633aa5cc6b9ccb1bdbe",
+      "raw_bytes": 861
+    },
+    {
+      "request_seq": 10207,
+      "response_seq": 10208,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json"
+      },
+      "raw_response_sha256": "2ba07535d69ac67d1393cbfe220d7c7f1ada935be9b9ff6e4ce4f60d41649ea1",
+      "raw_bytes": 880
+    },
+    {
+      "request_seq": 10209,
+      "response_seq": 10210,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json"
+      },
+      "raw_response_sha256": "8715fc52dbab9a412d5424ab0737640a8c194674390043e8abce1654bbe6e7a1",
+      "raw_bytes": 875
+    },
+    {
+      "request_seq": 10211,
+      "response_seq": 10212,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-2X4.json"
+      },
+      "raw_response_sha256": "cf9a7094cf0d96958967713a13aa83e57f30ec432d1c6d62f177a236e64faa90",
+      "raw_bytes": 938
+    },
+    {
+      "request_seq": 10213,
+      "response_seq": 10214,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-2X5.json"
+      },
+      "raw_response_sha256": "ddbbc8a3a27aef085010b5c83d47673048e19648febd72fc7f7c7094bce5fca4",
+      "raw_bytes": 938
+    },
+    {
+      "request_seq": 10215,
+      "response_seq": 10216,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-BODY.json"
+      },
+      "raw_response_sha256": "46682ab314dc0924c20c7351a128df35b22e39ee727d4554091dd8d79222e74d",
+      "raw_bytes": 933
+    },
+    {
+      "request_seq": 10217,
+      "response_seq": 10218,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json"
+      },
+      "raw_response_sha256": "b868f534b2422000e2fc058f404a089df02e87b4392a6a5f317a42c4fd91c32e",
+      "raw_bytes": 945
+    },
+    {
+      "request_seq": 10219,
+      "response_seq": 10220,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json"
+      },
+      "raw_response_sha256": "193d014fec5e0c9dbb08163a781718429993876441408782e007ae00cb1a070f",
+      "raw_bytes": 947
+    },
+    {
+      "request_seq": 10221,
+      "response_seq": 10222,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json"
+      },
+      "raw_response_sha256": "85844f9234835b2d5e3517f1f2740daa917d6b3d4d032cb4cab9c8f89c1fa833",
+      "raw_bytes": 938
+    },
+    {
+      "request_seq": 10223,
+      "response_seq": 10224,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Karcher/PT-WASH-KAR-K4-CAR.json"
+      },
+      "raw_response_sha256": "317e29e67247fa24ad2ad99640d77602d67b13a7284146ac30ba45eef8b96dd5",
+      "raw_bytes": 955
+    },
+    {
+      "request_seq": 10225,
+      "response_seq": 10226,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Karcher/PT-WASH-KAR-K4-HOME.json"
+      },
+      "raw_response_sha256": "ca6bea45ba82189280a2da64958c29c1d881ea19102bbdb16ba47fc500066b96",
+      "raw_bytes": 962
+    },
+    {
+      "request_seq": 10227,
+      "response_seq": 10228,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Karcher/PT-WASH-KAR-K4-PC.json"
+      },
+      "raw_response_sha256": "fb2bcbe8bc5b4d7e45922f9cd16b4599385f18ab02863ecbe396fadff00082c6",
+      "raw_bytes": 944
+    },
+    {
+      "request_seq": 10229,
+      "response_seq": 10230,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Karcher/PT-WASH-KAR-K4-PIPE.json"
+      },
+      "raw_response_sha256": "c83cbd9dbe23d81b2efe122b0d1fcb7a1eb6f68579253bea0d0c6c2b1efc1314",
+      "raw_bytes": 964
+    },
+    {
+      "request_seq": 10231,
+      "response_seq": 10232,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Karcher/PT-WASH-KAR-K4-PREMIUM.json"
+      },
+      "raw_response_sha256": "40d16082f3ff5a9d0b612c186eb2a9fe91d3f989b2452ba893cd9db865ed8dcf",
+      "raw_bytes": 969
+    },
+    {
+      "request_seq": 10233,
+      "response_seq": 10234,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-BLA-MAK-SPEC-165.json"
+      },
+      "raw_response_sha256": "eb5817dafa423935fbd7d3aaf9eff6b73508d1dee02c3cc4f127679757a80c26",
+      "raw_bytes": 920
+    },
+    {
+      "request_seq": 10235,
+      "response_seq": 10236,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-BLA-MAK-SPEC-190.json"
+      },
+      "raw_response_sha256": "dcc48db1797125f4ab945c8ec2c251c593738d2f0ba7102978e24aa7fbc93a66",
+      "raw_bytes": 920
+    },
+    {
+      "request_seq": 10237,
+      "response_seq": 10238,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-BLA-MAK-SPEC-METAL.json"
+      },
+      "raw_response_sha256": "487f8c1de068e33c4ece985fe942a821f19d53f97ca4b69b9116e2407988387f",
+      "raw_bytes": 927
+    },
+    {
+      "request_seq": 10239,
+      "response_seq": 10240,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-DRL-MAK-DDF485-3AH.json"
+      },
+      "raw_response_sha256": "80cbd7ef0d04a953c83e2606efbeee23fc37a8b10d86e474310ff8759100c02e",
+      "raw_bytes": 977
+    },
+    {
+      "request_seq": 10241,
+      "response_seq": 10242,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-DRL-MAK-DDF485-5AH.json"
+      },
+      "raw_response_sha256": "3fbfd173ae9b1d48037f71c86a1907333322e2ca264b8a81a4dd361139bc3b06",
+      "raw_bytes": 977
+    },
+    {
+      "request_seq": 10243,
+      "response_seq": 10244,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-DRL-MAK-DDF485-BODY.json"
+      },
+      "raw_response_sha256": "e0d24ec992071803f0de79a2196b1b9141790387bf06741006cb08be0dee2d19",
+      "raw_bytes": 961
+    },
+    {
+      "request_seq": 10245,
+      "response_seq": 10246,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json"
+      },
+      "raw_response_sha256": "86ccd1272bb4fcbecebf0856a42c6876be99046dff580304429e8d62520f6b6f",
+      "raw_bytes": 969
+    },
+    {
+      "request_seq": 10247,
+      "response_seq": 10248,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+      },
+      "raw_response_sha256": "1112065f0f74c51a9835d9db61bd9ceb8bc0d4d94ff3b34fb8d5928f54da7159",
+      "raw_bytes": 969
+    },
+    {
+      "request_seq": 10249,
+      "response_seq": 10250,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json"
+      },
+      "raw_response_sha256": "a001a306d3597eb1996f5d794e527781b4b106df47c1037871a19b51e803bf17",
+      "raw_bytes": 982
+    },
+    {
+      "request_seq": 10251,
+      "response_seq": 10252,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json"
+      },
+      "raw_response_sha256": "d327c898c76d331ea282bf65d0e52e2d3efca58598a5ed460dc4f246ffbc3651",
+      "raw_bytes": 944
+    },
+    {
+      "request_seq": 10253,
+      "response_seq": 10254,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json"
+      },
+      "raw_response_sha256": "515f142d88694959e4b20c00553c31f5b6680bc61266a7d9561f4f3f9599a948",
+      "raw_bytes": 973
+    },
+    {
+      "request_seq": 10255,
+      "response_seq": 10256,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+      },
+      "raw_response_sha256": "d5480ba1be19304d7c8ba6e758e27ad9a7ab0fbefb2f82c55c34fdeeed2d5814",
+      "raw_bytes": 951
+    },
+    {
+      "request_seq": 10257,
+      "response_seq": 10258,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json"
+      },
+      "raw_response_sha256": "6720e4df9d7f09e231be6b9f622ef08151ec0075ef64f2cddf01ee8a7380ba06",
+      "raw_bytes": 946
+    },
+    {
+      "request_seq": 10259,
+      "response_seq": 10260,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json"
+      },
+      "raw_response_sha256": "5e4dc0b928de0019292104ee4d40737c7348740c7678dd82085a609386f3b356",
+      "raw_bytes": 950
+    },
+    {
+      "request_seq": 10261,
+      "response_seq": 10262,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-2AH.json"
+      },
+      "raw_response_sha256": "f98466cb2faef01a7c5c3e0515a760f6ef930aa52c894ed2499836100725402a",
+      "raw_bytes": 1020
+    },
+    {
+      "request_seq": 10263,
+      "response_seq": 10264,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-5AH.json"
+      },
+      "raw_response_sha256": "40f2f78dc698e2d04b9ebe1a71886113f5fbd74657e975cec37308ecc84bcd0a",
+      "raw_bytes": 1020
+    },
+    {
+      "request_seq": 10265,
+      "response_seq": 10266,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-BODY.json"
+      },
+      "raw_response_sha256": "251fc20ba42087e4f623ad1f8ce84ac5eaf38361e1b4ba4cfe7892495888c523",
+      "raw_bytes": 998
+    },
+    {
+      "request_seq": 10267,
+      "response_seq": 10268,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-DRILL-BASICS.json"
+      },
+      "raw_response_sha256": "7b403c26eb2b75f366ab141f180ece49a8b3017d7431fbf905fbf5b91dffbe50",
+      "raw_bytes": 1024
+    },
+    {
+      "request_seq": 10269,
+      "response_seq": 10270,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-GRINDER-SAFETY.json"
+      },
+      "raw_response_sha256": "8e08c924e770b6081b025b2b4b7eeebbd4823d8dd827d6054f3454183282e411",
+      "raw_bytes": 1032
+    },
+    {
+      "request_seq": 10271,
+      "response_seq": 10272,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-SAW-STRAIGHT-CUTS.json"
+      },
+      "raw_response_sha256": "22a5c3b90ea402c18763611eb1ba3ed83a056f4a776608e06b1b6d51e7b377c1",
+      "raw_bytes": 1042
+    },
+    {
+      "request_seq": 10273,
+      "response_seq": 10274,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-GARAGE-STORAGE.json"
+      },
+      "raw_response_sha256": "fd004916d0e7bf7f4586c0373cd54a1d24e32c4fc79aec8605ba2440582ab4e8",
+      "raw_bytes": 1076
+    },
+    {
+      "request_seq": 10275,
+      "response_seq": 10276,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-OUTDOOR-SHED.json"
+      },
+      "raw_response_sha256": "705b443fd51e4d9a0dd4f33d10433c9bf8fca59268db592f32a4f5ce2e1af52b",
+      "raw_bytes": 1072
+    },
+    {
+      "request_seq": 10277,
+      "response_seq": 10278,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-SMALL-WORKSHOP.json"
+      },
+      "raw_response_sha256": "c0574f5b22ffe7c5539595ed79658695387b8f1f0a63b09bbe1be70b32041ce0",
+      "raw_bytes": 1083
+    },
+    {
+      "request_seq": 10279,
+      "response_seq": 10280,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-ANCHORS.json"
+      },
+      "raw_response_sha256": "573b2e4d008873197867c1e86c928304e7eae779fd555c264f34b62c4f5e721e",
+      "raw_bytes": 1039
+    },
+    {
+      "request_seq": 10281,
+      "response_seq": 10282,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-DRILL-BITS.json"
+      },
+      "raw_response_sha256": "73ccd408d9ef9c1049c592f680fd72928f05cff7c9adb253d8b80d23563f7b6a",
+      "raw_bytes": 1033
+    },
+    {
+      "request_seq": 10283,
+      "response_seq": 10284,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-SAW-BLADES.json"
+      },
+      "raw_response_sha256": "a3d1bfe8fe4b7cc8f4283546e17639bc4425c7ef4bef904f625e677bcf3a4dec",
+      "raw_bytes": 1026
+    },
+    {
+      "request_seq": 10285,
+      "response_seq": 10286,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-DECK-REPAIR.json"
+      },
+      "raw_response_sha256": "9ac67b7e32ee6248a07c1c8f6ac0d2bd8ff90064ad73e2a52a28a332ea366c34",
+      "raw_bytes": 1016
+    },
+    {
+      "request_seq": 10287,
+      "response_seq": 10288,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-GARDEN-SHED.json"
+      },
+      "raw_response_sha256": "3975b742c5fe06241099712a552192b7799a7aacb834969b129a22bac3019bca",
+      "raw_bytes": 1019
+    },
+    {
+      "request_seq": 10289,
+      "response_seq": 10290,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-WORKBENCH.json"
+      },
+      "raw_response_sha256": "39f9adb0d13cbe8e0254bb712a378a3f036fb4db625548ab8ecab7ca2d11bac2",
+      "raw_bytes": 1020
+    },
+    {
+      "request_seq": 10291,
+      "response_seq": 10292,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Templates/PT-DIG-TPL-COMPRESSOR-SIZING.json"
+      },
+      "raw_response_sha256": "84499f5fa9ef914cbba0ff35cea542bf9c83ce599c6a3d23cda1b4e1581a5c81",
+      "raw_bytes": 1051
+    },
+    {
+      "request_seq": 10293,
+      "response_seq": 10294,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Templates/PT-DIG-TPL-DECKING-CALC.json"
+      },
+      "raw_response_sha256": "63af8dbfd41a68a2b311bc5cf42f51f2f45302ea85b6c02875c6437cc2b67290",
+      "raw_bytes": 1042
+    },
+    {
+      "request_seq": 10295,
+      "response_seq": 10296,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/PowerTools Templates/PT-DIG-TPL-SEALANT-COVERAGE.json"
+      },
+      "raw_response_sha256": "330e8ab54c42af51b986a08338a8f2fc3f6bd25d37804ec55029cbe4321766ff",
+      "raw_bytes": 1066
+    },
+    {
+      "request_seq": 10297,
+      "response_seq": 10298,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+      },
+      "raw_response_sha256": "50ba9bdebcfb35130eba25e63aa6064ce6461c8383289ead8db9d1d881be57e6",
+      "raw_bytes": 921
+    },
+    {
+      "request_seq": 10299,
+      "response_seq": 10300,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json"
+      },
+      "raw_response_sha256": "43ef01103e9031a9a7d31bc72d228d233e63f5a10de993acda278bb7d84f1bc8",
+      "raw_bytes": 921
+    },
+    {
+      "request_seq": 10301,
+      "response_seq": 10302,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json"
+      },
+      "raw_response_sha256": "39df1b87d75db7fb6cfa318ce713c126805252d1a554578b7506792e90cf3ac4",
+      "raw_bytes": 900
+    },
+    {
+      "request_seq": 10303,
+      "response_seq": 10304,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json"
+      },
+      "raw_response_sha256": "670702fe636f0fd0a6d46f0aaa4b68fdef5e75753ccb3b00e8f16fb18dac9073",
+      "raw_bytes": 906
+    },
+    {
+      "request_seq": 10305,
+      "response_seq": 10306,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json"
+      },
+      "raw_response_sha256": "6164cf6150337886873237acc679312d864cf6389b022c1a9872b591d22da6b9",
+      "raw_bytes": 906
+    },
+    {
+      "request_seq": 10307,
+      "response_seq": 10308,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-BODY.json"
+      },
+      "raw_response_sha256": "f6b60f6b9354cb33166371ff9acd605233573f30a913272e31b894373689b792",
+      "raw_bytes": 910
+    },
+    {
+      "request_seq": 10309,
+      "response_seq": 10310,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json"
+      },
+      "raw_response_sha256": "bc8096fcfd0f8cf10a3f56d9d53b11be3a89aa024d8666a17d381c4edae7783e",
+      "raw_bytes": 889
+    },
+    {
+      "request_seq": 10311,
+      "response_seq": 10312,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json"
+      },
+      "raw_response_sha256": "5c1f37996fa97f146c92f5480b5fb753f7279b7bc0593ad1ea8aead87ad07649",
+      "raw_bytes": 894
+    },
+    {
+      "request_seq": 10313,
+      "response_seq": 10314,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-RESP.json"
+      },
+      "raw_response_sha256": "0f0ef78815eb8331caad1a3c555909924791fcb61ee565b6811f91736f91913f",
+      "raw_bytes": 922
+    },
+    {
+      "request_seq": 10315,
+      "response_seq": 10316,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Graz/store-graz-center.json"
+      },
+      "raw_response_sha256": "32f6f70c468bad8b225d6a58a2a0473d957d2eccb478f458e137455c78b5ba13",
+      "raw_bytes": 5666
+    },
+    {
+      "request_seq": 10317,
+      "response_seq": 10318,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Graz/store-graz-eggenberg.json"
+      },
+      "raw_response_sha256": "ef0e4b60642dbb84a741967814e886e9f9457d434e4f9873342a1b6212cbb98d",
+      "raw_bytes": 5471
+    },
+    {
+      "request_seq": 10319,
+      "response_seq": 10320,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Graz/store-graz-liebenau.json"
+      },
+      "raw_response_sha256": "3fa2896f4f31cebc26728fe6a6629533cc9140171b7f210a2255d6e0f8a4f3a6",
+      "raw_bytes": 5569
+    },
+    {
+      "request_seq": 10321,
+      "response_seq": 10322,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Graz/store-graz-puntigam.json"
+      },
+      "raw_response_sha256": "d47d61895c27854eaece5694953cefd91fe91fff88140b9f07f89250d575d038",
+      "raw_bytes": 5473
+    },
+    {
+      "request_seq": 10323,
+      "response_seq": 10324,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Innsbruck/store-innsbruck-mitte.json"
+      },
+      "raw_response_sha256": "0418d4a1739cc3bb066bdb1099e66cce5bf6c40abf14bfcafb5cf182a0dd88ec",
+      "raw_bytes": 5474
+    },
+    {
+      "request_seq": 10325,
+      "response_seq": 10326,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Innsbruck/store-innsbruck-ost.json"
+      },
+      "raw_response_sha256": "7ce448d8dbf12b0f1c5880b892d8b037900cf59ae06d491949c1fe16cffc2247",
+      "raw_bytes": 5486
+    },
+    {
+      "request_seq": 10327,
+      "response_seq": 10328,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Innsbruck/store-innsbruck-west.json"
+      },
+      "raw_response_sha256": "08e014819b5285437a41cd4472c4d604ed9eac278692b0f91635ac8d5c27adb1",
+      "raw_bytes": 5568
+    },
+    {
+      "request_seq": 10329,
+      "response_seq": 10330,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Linz/store-linz-hafen.json"
+      },
+      "raw_response_sha256": "046733d687d3a4f8e9c427f2e441f9697002add6c8de945a8b57e12e80c95403",
+      "raw_bytes": 5555
+    },
+    {
+      "request_seq": 10331,
+      "response_seq": 10332,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Linz/store-linz-kleinmuenchen.json"
+      },
+      "raw_response_sha256": "663268207b03052b47755d3991cf6a6550608eacec30e419c2c7ad443dfb0305",
+      "raw_bytes": 5478
+    },
+    {
+      "request_seq": 10333,
+      "response_seq": 10334,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Linz/store-linz-urfahr.json"
+      },
+      "raw_response_sha256": "9629f21276a6959a08a3309fe40aa8a5aec74fd904684eee9198a9a223514d51",
+      "raw_bytes": 5455
+    },
+    {
+      "request_seq": 10335,
+      "response_seq": 10336,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Salzburg/store-salzburg-alpenstrasse.json"
+      },
+      "raw_response_sha256": "d3197fecdff0094bbeb379aaa96e0b3e5b0411f92847522c070b6d7629c6304e",
+      "raw_bytes": 5496
+    },
+    {
+      "request_seq": 10337,
+      "response_seq": 10338,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Salzburg/store-salzburg-maxglan.json"
+      },
+      "raw_response_sha256": "5632632817a38935e6148b1371970675d267bf4aabc4b66c44d69bbacd5ce867",
+      "raw_bytes": 5496
+    },
+    {
+      "request_seq": 10339,
+      "response_seq": 10340,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Salzburg/store-salzburg-nord.json"
+      },
+      "raw_response_sha256": "d0a98660a50ddf14942a7944e233cfb27ace07ca3b11262847ba141a7f80188d",
+      "raw_bytes": 5689
+    },
+    {
+      "request_seq": 10341,
+      "response_seq": 10342,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Vienna/store-vie-donaustadt.json"
+      },
+      "raw_response_sha256": "e76bcfe072f29b9becdd4b68bb6483d5dd75959136e4d9d8fadbedf0b07df4ed",
+      "raw_bytes": 5570
+    },
+    {
+      "request_seq": 10343,
+      "response_seq": 10344,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Vienna/store-vie-favoriten.json"
+      },
+      "raw_response_sha256": "4fd346aa01fbb9da2f4b54000266d98a4f05ed1a04b828020ae7496605bbd914",
+      "raw_bytes": 5472
+    },
+    {
+      "request_seq": 10345,
+      "response_seq": 10346,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Vienna/store-vie-hietzing.json"
+      },
+      "raw_response_sha256": "dc25277006014e018895d3d0f60096702352ba0883b88f2154915b0c323bdfc6",
+      "raw_bytes": 5476
+    },
+    {
+      "request_seq": 10347,
+      "response_seq": 10348,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/locations/Vienna/store-vie-meidling.json"
+      },
+      "raw_response_sha256": "a2ec2bf59c223ab0ea036fab774be775a3af7ebda185357f95e2e1fb048fe7c0",
+      "raw_bytes": 5579
+    },
+    {
+      "request_seq": 10349,
+      "response_seq": 10350,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/payments/pay-0001.json"
+      },
+      "raw_response_sha256": "a5736edc1a8982820e7ce6cef36a561a50e69584e79e57796bafd60eb8933d5a",
+      "raw_bytes": 1058
+    },
+    {
+      "request_seq": 10351,
+      "response_seq": 10352,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/returns/return-0001.json"
+      },
+      "raw_response_sha256": "fe0b0295ec3c7872803aa631ab104308ccb40ca25488d58bf3f3fe75141d6f81",
+      "raw_bytes": 576
+    },
+    {
+      "request_seq": 10353,
+      "response_seq": 10354,
+      "method": "Read",
+      "arguments": {
+        "path": "/proc/staff/store-graz-center/emp-0030.json"
+      },
+      "raw_response_sha256": "f74a70d78ca57aaf8419d15724fc6fc78cfce1ae43574b999f3a9c3fa59579ab",
+      "raw_bytes": 672
+    },
+    {
+      "request_seq": 10389,
+      "response_seq": 10390,
+      "method": "Answer",
+      "arguments": {
+        "message": "The sample reached its 30-step limit without completing the task.",
+        "outcome": "OUTCOME_ERR_INTERNAL",
+        "refs": [
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      },
+      "raw_response_sha256": "40d04b849c1b2de1b9292ae0d247bf043e702c3b5aea981a13b0f9cb0df1dfd7",
+      "raw_bytes": 172
+    },
+    {
+      "request_seq": 10392,
+      "response_seq": 10393,
+      "method": "EndTrial",
+      "arguments": {
+        "trialId": "vm2-M6yYmGWfpg1xh2ziPkmn2MQ3HJs"
+      },
+      "raw_response_sha256": "2a5fb6506ee9e13f676e26eea832ff13ff85cdc5503301988706e86e616cc4cf",
+      "raw_bytes": 244
+    }
+  ],
+  "derived_trees": [
+    {
+      "derived_request": [
+        "Tree",
+        {
+          "root": "/proc/catalog",
+          "level": 0
+        }
+      ],
+      "source_response_seq": 10110,
+      "source_request": {
+        "root": "/proc",
+        "level": 0
+      },
+      "method": "Select exact child subtree by directory name; preserve all node fields and descendants. No entries added.",
+      "leaves": 101,
+      "all_leaves_have_actual_read_responses": true,
+      "paths": [
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-10PK.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-CLEAR.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-GASKET.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-READER.json",
+        "/proc/catalog/3M/PT-SAFE-3M-SF400-SMOKE.json",
+        "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-24.json",
+        "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-6.json",
+        "/proc/catalog/Aircraft/PT-CMP-AIR-CA240-SET.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-13.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-19.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-25.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-41.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-COBALT.json",
+        "/proc/catalog/Alpen/PT-BIT-ALP-HSS-REDUCED.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-25.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-40.json",
+        "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+        "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135-CAR.json",
+        "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135-PATIO.json",
+        "/proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-10.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-15.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-4.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-7.json",
+        "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-8.json",
+        "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json",
+        "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+        "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-216.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-2AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json",
+        "/proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-BODY.json",
+        "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-125.json",
+        "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json",
+        "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-BOX.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json",
+        "/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-DUST.json",
+        "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-2AH.json",
+        "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-5AH.json",
+        "/proc/catalog/DeWalt/PT-IMP-DEW-DCF887-BODY.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-FINE.json",
+        "/proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-SITE.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json",
+        "/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50S.json",
+        "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-2X4.json",
+        "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-2X5.json",
+        "/proc/catalog/Einhell/PT-MOW-EIN-GECM36-BODY.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-40.json",
+        "/proc/catalog/Einhell/PT-SND-EIN-TERS18-BODY.json",
+        "/proc/catalog/Karcher/PT-WASH-KAR-K4-CAR.json",
+        "/proc/catalog/Karcher/PT-WASH-KAR-K4-HOME.json",
+        "/proc/catalog/Karcher/PT-WASH-KAR-K4-PC.json",
+        "/proc/catalog/Karcher/PT-WASH-KAR-K4-PIPE.json",
+        "/proc/catalog/Karcher/PT-WASH-KAR-K4-PREMIUM.json",
+        "/proc/catalog/Makita/PT-BLA-MAK-SPEC-165.json",
+        "/proc/catalog/Makita/PT-BLA-MAK-SPEC-190.json",
+        "/proc/catalog/Makita/PT-BLA-MAK-SPEC-METAL.json",
+        "/proc/catalog/Makita/PT-DRL-MAK-DDF485-3AH.json",
+        "/proc/catalog/Makita/PT-DRL-MAK-DDF485-5AH.json",
+        "/proc/catalog/Makita/PT-DRL-MAK-DDF485-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-3AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BLADE.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-BODY.json",
+        "/proc/catalog/Makita/PT-SAW-MAK-DHS680-RAIL.json",
+        "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+        "/proc/catalog/Metabo/PT-GRD-MET-W18-125-BODY.json",
+        "/proc/catalog/Metabo/PT-GRD-MET-W18-125-FLAT.json",
+        "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-2AH.json",
+        "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-5AH.json",
+        "/proc/catalog/Milwaukee/PT-IMP-MIL-M18FID3-BODY.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-DRILL-BASICS.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-GRINDER-SAFETY.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-COURSE-SAW-STRAIGHT-CUTS.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-GARAGE-STORAGE.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-OUTDOOR-SHED.json",
+        "/proc/catalog/PowerTools Academy/PT-DIG-VIDEO-SMALL-WORKSHOP.json",
+        "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-ANCHORS.json",
+        "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-DRILL-BITS.json",
+        "/proc/catalog/PowerTools Guides/PT-DIG-GUIDE-SAW-BLADES.json",
+        "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-DECK-REPAIR.json",
+        "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-GARDEN-SHED.json",
+        "/proc/catalog/PowerTools Plans/PT-DIG-PLAN-WORKBENCH.json",
+        "/proc/catalog/PowerTools Templates/PT-DIG-TPL-COMPRESSOR-SIZING.json",
+        "/proc/catalog/PowerTools Templates/PT-DIG-TPL-DECKING-CALC.json",
+        "/proc/catalog/PowerTools Templates/PT-DIG-TPL-SEALANT-COVERAGE.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK20.json",
+        "/proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK20.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json",
+        "/proc/catalog/Stihl/PT-MOW-STI-RMA235-BODY.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-CLEAR.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-HELMET.json",
+        "/proc/catalog/Uvex/PT-SAFE-UVEX-PHEOS-RESP.json"
+      ]
+    },
+    {
+      "derived_request": [
+        "Tree",
+        {
+          "root": "/proc/locations",
+          "level": 0
+        }
+      ],
+      "source_response_seq": 10110,
+      "source_request": {
+        "root": "/proc",
+        "level": 0
+      },
+      "method": "Select exact child subtree by directory name; preserve all node fields and descendants. No entries added.",
+      "leaves": 17,
+      "all_leaves_have_actual_read_responses": true,
+      "paths": [
+        "/proc/locations/Graz/store-graz-center.json",
+        "/proc/locations/Graz/store-graz-eggenberg.json",
+        "/proc/locations/Graz/store-graz-liebenau.json",
+        "/proc/locations/Graz/store-graz-puntigam.json",
+        "/proc/locations/Innsbruck/store-innsbruck-mitte.json",
+        "/proc/locations/Innsbruck/store-innsbruck-ost.json",
+        "/proc/locations/Innsbruck/store-innsbruck-west.json",
+        "/proc/locations/Linz/store-linz-hafen.json",
+        "/proc/locations/Linz/store-linz-kleinmuenchen.json",
+        "/proc/locations/Linz/store-linz-urfahr.json",
+        "/proc/locations/Salzburg/store-salzburg-alpenstrasse.json",
+        "/proc/locations/Salzburg/store-salzburg-maxglan.json",
+        "/proc/locations/Salzburg/store-salzburg-nord.json",
+        "/proc/locations/Vienna/store-vie-donaustadt.json",
+        "/proc/locations/Vienna/store-vie-favoriten.json",
+        "/proc/locations/Vienna/store-vie-hietzing.json",
+        "/proc/locations/Vienna/store-vie-meidling.json"
+      ]
+    }
+  ],
+  "limit": "Complete archived Tree response and corresponding leaf Reads demonstrate covered catalogue/store leaves; no independent current-server completeness promise is inferred."
+}
