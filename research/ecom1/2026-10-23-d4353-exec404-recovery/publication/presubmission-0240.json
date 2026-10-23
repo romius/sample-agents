@@ -1,0 +1,76 @@
+{
+  "prepared_at": "2026-10-23T02:40:00Z",
+  "earliest_submit_after": "2026-10-23T02:40:12Z",
+  "candidate": "d6808r1",
+  "source_sha256": "d44e7055e533cc3b9028ff4fb0294ccf4b60065ae8b2b87864cb0ffdc49d3495",
+  "bytes": 63564,
+  "headroom": 1972,
+  "parent": "d4353r1",
+  "record_score": 0.9472095,
+  "baseline_doc": "d7r32",
+  "installed": "d298r19",
+  "hypothesis": "Recover only structured runtime missing-executable Exec404 as a tool-availability observation; suppress automatic --help on the missing executable. Permit normal continuation instead of no-answer execution failure. No automatic retry, provider change, OCR patch, cleanup patch or inference patch.",
+  "reachable_evidence": "Complete actual old2 t079 trace 274 events, SHA1bcbf63ed2febf0911a728234f9862c9c221ea7bb324fc4a3906ec7d1e63c356. Original /bin/ls failed; exact d4353 reproduces that boundary.",
+  "limits": "Offline continuation uses archived responses plus scripted Tree and internal-error answer, not successful basket completion or live model proof. No current live score gain. Different generated full100 worlds/providers prevent causal attribution by task ID.",
+  "validation": {
+    "original_sealed_files_reverified": 94,
+    "whole_agent_executions": 168,
+    "native_whole_agent": 84,
+    "isolated_boundary_checks": 84,
+    "native_error_representation_probes": 3,
+    "independent_clean_reproduction_outputs": 13,
+    "source_AST_readable_packed_equal": true,
+    "exact_parent_repack": true,
+    "method_value_or_alias_AST_sites": 0,
+    "remote_export_matches_preserved_local": true,
+    "baseline_exact_installed_equal": true
+  },
+  "preservation": {
+    "git": "4c8f380",
+    "archive": "d6807",
+    "source": "d6808r1",
+    "readme": "d6809",
+    "independent_review": "d6810",
+    "archive_sha256": "d3f1437fac4338cadd36453e17124f92d721bb512dc31b0043585634bd5c1658"
+  },
+  "queue": {
+    "own_outstanding_before": 1,
+    "existing": "jc2949c1cd1b84139a2eac424ef598966",
+    "existing_state": "queued",
+    "after_proposed": 2,
+    "normal_limit": 2,
+    "third_exception": "consumed",
+    "last_full100_submit": "2026-10-23T02:10:11.547403Z",
+    "one_new_per_cycle": true
+  },
+  "community": {
+    "reviewed": [
+      "d6792",
+      "d6825",
+      "d6806",
+      "d6847",
+      "d6848"
+    ],
+    "takeaways": [
+      "Peer callback-census independently finds d6729 clean; our d6808 exact AST also has no method-value references.",
+      "d4955 first positive same-ID claims are not causal; all100 audit tracks actual differing inputs and source-boundary attribution.",
+      "Do not duplicate bobcat/msh exclusions or rc7 composition."
+    ]
+  },
+  "new_completed_full100": {
+    "d4007r1": {
+      "score": 0,
+      "failures": 100,
+      "calls": 0,
+      "cost_complete": true
+    },
+    "d5304r1": {
+      "score": 0.9312297,
+      "failures": 0,
+      "calls": 217,
+      "cost": "0.031031678",
+      "cost_complete": true
+    }
+  },
+  "authorization": "Existing overnight evaluation authorization; no cancellations, no source edits, no duplicate source experiment, distinct independently validated recovery hypothesis. Refresh before commit; promote exact tested bytes only on completed100 strict win."
+}
