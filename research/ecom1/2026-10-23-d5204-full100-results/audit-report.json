@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "job": "j2f9717b672c04c9a94f1df3219579692",
+  "source": "d5204r1",
+  "source_bytes": 65292,
+  "source_sha256": "0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67",
+  "exact_build_reproduced": true,
+  "run_id": "run-22rLKF8bmYV6huGenJqrnWgj8",
+  "finished_at": "2026-10-23T01:48:29.320245+00:00",
+  "official_score": 0,
+  "completed_trials": 100,
+  "failed_trials": 100,
+  "every_full_trace_CAS_verified": true,
+  "complete_trial_traces": 100,
+  "trace_bytes": 13422710,
+  "events_checked": 600,
+  "each_event_shape": [
+    "rpc_request",
+    "rpc_response",
+    "agent_error",
+    "agent_finished",
+    "rpc_request",
+    "rpc_response"
+  ],
+  "instructions_preserved": 100,
+  "full_error_hash_counts": {
+    "6b23be01946b50e35cbe3da550e70a0505181e6197b3a53986e23b31f1896e6f": 100
+  },
+  "terminal_error_counts": {
+    "AttributeError: 'BitGN' object has no attribute 'call'": 100
+  },
+  "failures_before_ix_run_body": 100,
+  "ecom_actions": 0,
+  "model_calls": 0,
+  "reported_cost_usd": "0",
+  "cost_complete": true,
+  "stdout_bytes": 0,
+  "successful_EndTrial_responses": 100,
+  "summary_errors_truncated_to_chars": 2000,
+  "business_correctness_evaluated": false,
+  "no_new_probe_or_model_calls": true
+}
