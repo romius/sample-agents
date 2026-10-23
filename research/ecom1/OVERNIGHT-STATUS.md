@@ -1,12 +1,12 @@
 # ECOM1 overnight handoff
 
-Updated 2026-10-23 03:05 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
+Updated 2026-10-23 03:21 UTC. Goal and heartbeat ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`. Historical details remain in Git.
 
 ## Record and evaluation limits
 
-Verified at 03:03 UTC: **codex d4353r1, 94.72095/100**, job `j6d6d4adb60f241a4a1d111a9719b59dc`, run `run-22rKXhw13zNBkMA12Uxzn6cFf`, installed unchanged as d298r19. BASELINE d7r32 remains current locally. Source 63,211 bytes, SHA256 `588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e`; readable d4354r1, build d4355r1, packer d3268r2. 100 completed, zero failed, 216 model calls, $0.030785032 complete cost. Exact build and all100 instruction/loss audit are in `2026-10-23-d4353-record-review`; 90-success final-log extension is archive d6815 / Git4c8f380. Every task's final logs reviewed; this does not certify all successful action histories or business facts.
+Verified at 03:11 UTC: **codex d4353r1, 94.72095/100**, job `j6d6d4adb60f241a4a1d111a9719b59dc`, run `run-22rKXhw13zNBkMA12Uxzn6cFf`, installed unchanged as d298r19. BASELINE d7r32 remains current locally. Source 63,211 bytes, SHA256 `588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e`; readable d4354r1, build d4355r1, packer d3268r2. 100 completed, zero failed, 216 model calls, $0.030785032 complete cost. Exact build and all100 instruction/loss audit are in `2026-10-23-d4353-record-review`; 90-success final-log extension is archive d6815 / Git4c8f380. Every task's final logs reviewed; this does not certify all successful action histories or business facts.
 
-**TWO own full100 jobs remain queued at 03:03 UTC.** Normal cap is TWO queued/running; at most ONE new full100 per 30-minute cycle. The inventory-only third slot is consumed. Never cancel or modify submitted jobs or sources. Last full100 submission: 02:42:19 UTC; next regular refresh 03:12 UTC. No further full100 until fewer than two remain outstanding, cadence permits, and all preservation/validation gates pass.
+**TWO own full100 jobs remain queued at 03:11 UTC.** Normal cap is TWO queued/running; at most ONE new full100 per 30-minute cycle. The inventory-only third slot is consumed. Never cancel or modify submitted jobs or sources. Last full100 submission: 02:42:19 UTC; next regular refresh 03:42 UTC. No further full100 until fewer than two remain outstanding, cadence permits, and all preservation/validation gates pass.
 
 | Candidate | Immutable job | Evidence |
 |---|---|---|
@@ -55,3 +55,13 @@ Refresh Brain instructions, record, new completed results, community and own que
 
 Finish/review/preserve the distinct diagnostic runner; then use the authorized short test only if it resolves the remaining model uncertainty. Continue the separate outcome-integrity/exclusion/retry lanes only from concrete evidence. Latest integration plan is d6406 (local current section updated with this handoff). Branch `feat/ecom1-record-integration`; stage explicit paths only; exclude user-owned brain-dashboard and caches. Keep heartbeat active and quiet on unchanged state.
 
+
+## Latest work at 03:21 UTC
+
+The 20-call diagnostic runner is now fully reviewed and preserved, **not submitted**: Brain archive d6953, source d6954r1, README d6955, independent review d6956, verification d6957; Git6216df4. Source 23,837 bytes SHA4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f. 68 author executions, two permission controls, ten independent executions. Complete 90-file archive (192752 bytes, SHAf54a2fbf6e7c30a7822ba24ba283f489644bb2c217ba1b7ca843e2f3ebc92626) reproduces all90 files after four scripts. No paid call. Runner readiness does not justify spending.
+
+Community bobcat H4 (d6926/d6932) now takes priority: truncated plus one-deleted-character receipt SKU fallback. Bare d4353+H4 resolves t063 saw but still declines at damaged nontruncated PT-IT-BO5-CYL9-12; community “bare record 3/4” needs lineage correction. evaluation_strategy is sealing exact-parent H4 evidence; integration_plan independently checks it. Root and reviewer independently confirm intended t063 basket is unavailable: open Favoriten branch, available 0/7/0/0 against required 1/12/1/1. score_opportunities now tests a separate four-arm X10/H4 composition with exact exported d6633r1; no paid calls. Do not silently compose patches or treat line matching as final-answer success. Check H4 bypass of all-price rival guards with concrete collisions.
+
+Completion-integrity audit published: archive d6940, plan d6941, root review d6942, finding d6943/forum d6944; Gitf200a21. Actual d4955 t076 has all152 RPC requests but no Write, then forced final report declares OK despite admitting no TSV. Same unchecked outcome-forwarding path exists in d4353. Twelve recognizer cases (24 evaluations) show dry-run/deferred/reuse/quoted/approval requests also match, so no automatic downgrade patch is qualified. Actual successful t091 first acknowledged malformed CSV, then corrected it; ACK alone is insufficient. Root clean reproduction passes.
+
+Latest new other full100: crazybee d4340r1 specialists-off, job j238adeacdd6a407dbaa051e898813dd5, finished02:49:44, 59.937894/100, 3 failed trials, 621 calls, $0.151715695 reported with one unknown-cost call (cost incomplete). Below record; no causal comparison or all-task audit claimed for this peer run. No record change or new own full100.
