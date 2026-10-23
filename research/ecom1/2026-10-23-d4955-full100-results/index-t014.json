@@ -1,0 +1,431 @@
+[
+  {
+    "items": [
+      {
+        "seq": 1845,
+        "time": "2026-10-23T01:06:02.029012+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 0,
+            "bytes": 210
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1846,
+        "time": "2026-10-23T01:06:02.085181+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 210,
+            "bytes": 472
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 51
+        }
+      },
+      {
+        "seq": 1847,
+        "time": "2026-10-23T01:06:02.175409+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 682,
+            "bytes": 181
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1848,
+        "time": "2026-10-23T01:06:02.218523+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 863,
+            "bytes": 3141
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 39
+        }
+      },
+      {
+        "seq": 1849,
+        "time": "2026-10-23T01:06:02.222603+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 4004,
+            "bytes": 180
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1850,
+        "time": "2026-10-23T01:06:02.268843+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 4184,
+            "bytes": 2021
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 43
+        }
+      },
+      {
+        "seq": 1851,
+        "time": "2026-10-23T01:06:02.273820+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6205,
+            "bytes": 179
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1852,
+        "time": "2026-10-23T01:06:02.324545+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6384,
+            "bytes": 202
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 43
+        }
+      },
+      {
+        "seq": 1853,
+        "time": "2026-10-23T01:06:02.328744+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6586,
+            "bytes": 177
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1854,
+        "time": "2026-10-23T01:06:02.382005+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6763,
+            "bytes": 211
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 45
+        }
+      },
+      {
+        "seq": 1855,
+        "time": "2026-10-23T01:06:02.387720+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 6974,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1856,
+        "time": "2026-10-23T01:06:02.442501+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 7161,
+            "bytes": 5441
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 49
+        }
+      },
+      {
+        "seq": 1857,
+        "time": "2026-10-23T01:06:02.457115+00:00",
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 12602,
+            "bytes": 3376
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "call": 35,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 1858,
+        "time": "2026-10-23T01:06:03.516316+00:00",
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 15978,
+            "bytes": 1248
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "call": 35,
+          "model": "openai/gpt-oss-120b",
+          "ms": 1056
+        }
+      },
+      {
+        "seq": 1859,
+        "time": "2026-10-23T01:06:03.523340+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 17226,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1860,
+        "time": "2026-10-23T01:06:03.568584+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 17413,
+            "bytes": 1581
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 1861,
+        "time": "2026-10-23T01:06:03.588145+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 18994,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1862,
+        "time": "2026-10-23T01:06:03.641575+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 19181,
+            "bytes": 1581
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 47
+        }
+      },
+      {
+        "seq": 1863,
+        "time": "2026-10-23T01:06:03.650790+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 20762,
+            "bytes": 209
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1864,
+        "time": "2026-10-23T01:06:03.707477+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 20971,
+            "bytes": 496
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 50
+        }
+      },
+      {
+        "seq": 1865,
+        "time": "2026-10-23T01:06:03.711217+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 21467,
+            "bytes": 210
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1866,
+        "time": "2026-10-23T01:06:03.759469+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 21677,
+            "bytes": 3246
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 45
+        }
+      },
+      {
+        "seq": 1867,
+        "time": "2026-10-23T01:06:03.766028+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 24923,
+            "bytes": 207
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1868,
+        "time": "2026-10-23T01:06:03.812169+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 25130,
+            "bytes": 4889
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 1869,
+        "time": "2026-10-23T01:06:04.792697+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 30019,
+            "bytes": 2032
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1870,
+        "time": "2026-10-23T01:06:04.838773+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 32051,
+            "bytes": 171
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 1871,
+        "time": "2026-10-23T01:06:06.288481+00:00",
+        "kind": "agent_finished",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 32222,
+            "bytes": 1162
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "task_id": "t014",
+          "state": "answered"
+        }
+      },
+      {
+        "seq": 1872,
+        "time": "2026-10-23T01:06:06.826182+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 33384,
+            "bytes": 208
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d"
+        }
+      },
+      {
+        "seq": 1873,
+        "time": "2026-10-23T01:06:06.892020+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-14",
+            "offset": 33592,
+            "bytes": 243
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En4d",
+          "ms": 61
+        }
+      }
+    ],
+    "more": false,
+    "next_after": 1873
+  }
+]

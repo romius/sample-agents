@@ -1,0 +1,493 @@
+[
+  {
+    "items": [
+      {
+        "seq": 7636,
+        "time": "2026-10-23T01:23:04.499671+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 0,
+            "bytes": 210
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7637,
+        "time": "2026-10-23T01:23:04.545118+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 210,
+            "bytes": 505
+          },
+          "method": "StartTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 7638,
+        "time": "2026-10-23T01:23:04.645703+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 715,
+            "bytes": 181
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7639,
+        "time": "2026-10-23T01:23:04.693363+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 896,
+            "bytes": 3173
+          },
+          "method": "Tree",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 7640,
+        "time": "2026-10-23T01:23:04.698804+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 4069,
+            "bytes": 180
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7641,
+        "time": "2026-10-23T01:23:04.744990+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 4249,
+            "bytes": 2009
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 7642,
+        "time": "2026-10-23T01:23:04.750638+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 6258,
+            "bytes": 179
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7643,
+        "time": "2026-10-23T01:23:04.798016+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 6437,
+            "bytes": 202
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 44
+        }
+      },
+      {
+        "seq": 7644,
+        "time": "2026-10-23T01:23:04.803856+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 6639,
+            "bytes": 177
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7645,
+        "time": "2026-10-23T01:23:04.850928+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 6816,
+            "bytes": 257
+          },
+          "method": "Exec",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 43
+        }
+      },
+      {
+        "seq": 7646,
+        "time": "2026-10-23T01:23:04.859293+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 7073,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7647,
+        "time": "2026-10-23T01:23:04.908613+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 7260,
+            "bytes": 5441
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 44
+        }
+      },
+      {
+        "seq": 7648,
+        "time": "2026-10-23T01:23:04.915940+00:00",
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 12701,
+            "bytes": 3398
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 149,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 7649,
+        "time": "2026-10-23T01:23:06.720258+00:00",
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 16099,
+            "bytes": 1470
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 149,
+          "model": "openai/gpt-oss-120b",
+          "ms": 1801
+        }
+      },
+      {
+        "seq": 7650,
+        "time": "2026-10-23T01:23:06.727359+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 17569,
+            "bytes": 187
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7651,
+        "time": "2026-10-23T01:23:06.774260+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 17756,
+            "bytes": 2959
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 41
+        }
+      },
+      {
+        "seq": 7652,
+        "time": "2026-10-23T01:23:06.785300+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 20715,
+            "bytes": 198
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7653,
+        "time": "2026-10-23T01:23:06.831347+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 20913,
+            "bytes": 1472
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 7654,
+        "time": "2026-10-23T01:23:06.839267+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 22385,
+            "bytes": 178
+          },
+          "method": "List",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7655,
+        "time": "2026-10-23T01:23:06.881760+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 22563,
+            "bytes": 328
+          },
+          "method": "List",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 39
+        }
+      },
+      {
+        "seq": 7656,
+        "time": "2026-10-23T01:23:06.886159+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 22891,
+            "bytes": 203
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7657,
+        "time": "2026-10-23T01:23:06.926999+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 23094,
+            "bytes": 1427
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 38
+        }
+      },
+      {
+        "seq": 7658,
+        "time": "2026-10-23T01:23:06.944558+00:00",
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 24521,
+            "bytes": 16841
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 150,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 7659,
+        "time": "2026-10-23T01:23:18.744400+00:00",
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 41362,
+            "bytes": 3157
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 150,
+          "model": "openai/gpt-oss-120b",
+          "ms": 11794
+        }
+      },
+      {
+        "seq": 7660,
+        "time": "2026-10-23T01:23:19.384294+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 44519,
+            "bytes": 203
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7661,
+        "time": "2026-10-23T01:23:19.428256+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 44722,
+            "bytes": 1427
+          },
+          "method": "Read",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 40
+        }
+      },
+      {
+        "seq": 7662,
+        "time": "2026-10-23T01:23:19.436671+00:00",
+        "kind": "llm_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 46149,
+            "bytes": 18144
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 151,
+          "model": "openai/gpt-oss-120b"
+        }
+      },
+      {
+        "seq": 7663,
+        "time": "2026-10-23T01:23:23.531252+00:00",
+        "kind": "llm_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 64293,
+            "bytes": 2210
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "call": 151,
+          "model": "openai/gpt-oss-120b",
+          "ms": 4090
+        }
+      },
+      {
+        "seq": 7664,
+        "time": "2026-10-23T01:23:23.539881+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 66503,
+            "bytes": 274
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7665,
+        "time": "2026-10-23T01:23:23.590777+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 66777,
+            "bytes": 171
+          },
+          "method": "Answer",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 42
+        }
+      },
+      {
+        "seq": 7666,
+        "time": "2026-10-23T01:23:24.992665+00:00",
+        "kind": "agent_finished",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 66948,
+            "bytes": 1602
+          },
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "task_id": "t063",
+          "state": "answered"
+        }
+      },
+      {
+        "seq": 7667,
+        "time": "2026-10-23T01:23:26.327611+00:00",
+        "kind": "rpc_request",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 68550,
+            "bytes": 208
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U"
+        }
+      },
+      {
+        "seq": 7668,
+        "time": "2026-10-23T01:23:26.387158+00:00",
+        "kind": "rpc_response",
+        "data": {
+          "trace": {
+            "scope": "trial-63",
+            "offset": 68758,
+            "bytes": 243
+          },
+          "method": "EndTrial",
+          "trial_id": "vm2-M6yugRXQkifsTgiPR6hqLt5En5U",
+          "ms": 55
+        }
+      }
+    ],
+    "more": false,
+    "next_after": 7668
+  }
+]

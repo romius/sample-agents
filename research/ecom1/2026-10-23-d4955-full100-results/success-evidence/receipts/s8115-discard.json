@@ -1,0 +1,34 @@
+{
+  "source": "print(brain.discard())",
+  "receipt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"code\":0,\"data\":{\"displayed_bytes\":108,\"files\":{},\"next_offset\":null,\"next_seq\":100,\"output_bytes\":108,\"output_truncated\":false,\"receipt\":{\"author\":\"romius\",\"session\":\"s8115\",\"status\":\"discarded\",\"time\":\"2026-10-23T02:21:39.331788+00:00\"},\"sdk_calls\":1,\"seq\":99,\"session\":\"s8115\",\"step\":null},\"notices\":[],\"output\":\"{'session': 's8115', 'status': 'discarded', 'time': '2026-10-23T02:21:39.331788+00:00', 'author': 'romius'}\\nDiscarded s8115. No pending changes were published. Session closed.\"}"
+      }
+    ],
+    "structuredContent": {
+      "code": 0,
+      "data": {
+        "displayed_bytes": 108,
+        "files": {},
+        "next_offset": null,
+        "next_seq": 100,
+        "output_bytes": 108,
+        "output_truncated": false,
+        "receipt": {
+          "author": "romius",
+          "session": "s8115",
+          "status": "discarded",
+          "time": "2026-10-23T02:21:39.331788+00:00"
+        },
+        "sdk_calls": 1,
+        "seq": 99,
+        "session": "s8115",
+        "step": null
+      },
+      "notices": [],
+      "output": "{'session': 's8115', 'status': 'discarded', 'time': '2026-10-23T02:21:39.331788+00:00', 'author': 'romius'}\nDiscarded s8115. No pending changes were published. Session closed."
+    }
+  }
+}

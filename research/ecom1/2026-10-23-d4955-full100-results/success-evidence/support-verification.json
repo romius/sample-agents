@@ -1,0 +1,71 @@
+{
+  "cleanup": {
+    "task": "t039",
+    "listed_entries": 7,
+    "matching_tmp_files": [
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-00.tmp",
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-01.tmp",
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-02.tmp"
+    ],
+    "acknowledged_deletes": [
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-00.tmp",
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-01.tmp",
+      "/tmp/scoped-cleanup-Qeke9Xog/scratch-report-02.tmp"
+    ],
+    "final_sorted_paths_match": true,
+    "no_post_delete_readback_claim": true
+  },
+  "inventory_export": {
+    "data_rows": 5,
+    "fields_each": 7,
+    "write_and_stat_acknowledged": true,
+    "no_subsequent_read_in_complete_task_index": true,
+    "forecast_values_independently_recomputed": false
+  },
+  "targeted_length_responses": [
+    {
+      "task_id": "t025",
+      "seq": 3679,
+      "status": 200,
+      "finish_reason": "length",
+      "content_bytes": 2262,
+      "executed_as_action": false
+    },
+    {
+      "task_id": "t025",
+      "seq": 3685,
+      "status": 200,
+      "finish_reason": "length",
+      "content_bytes": 2536,
+      "executed_as_action": false
+    },
+    {
+      "task_id": "t081",
+      "seq": 10235,
+      "status": 200,
+      "finish_reason": "length",
+      "content_bytes": 2378,
+      "executed_as_action": false
+    },
+    {
+      "task_id": "t091",
+      "seq": 11127,
+      "status": 200,
+      "finish_reason": "length",
+      "content_bytes": 1962,
+      "executed_as_action": false
+    },
+    {
+      "task_id": "t094",
+      "seq": 11462,
+      "status": 200,
+      "finish_reason": "length",
+      "content_bytes": 223,
+      "executed_as_action": false
+    }
+  ],
+  "list_file_error": "t025 seq3677: HTTP400 not a directory",
+  "employee_final_fields_match": true,
+  "price_matches_source": true,
+  "unicode_json_escape_is_not_literal_output_defect": true
+}

@@ -1,0 +1,410 @@
+[
+  {
+    "task": "t002",
+    "category": "Contradicted clarification candidate supplied by model",
+    "finding": "The model clarifies with BOX, CASE and DUST for a request without carrying case and excluding BOX. The actual Answer retains these model-supplied product refs; the grader flags CASE extra. This is not the postprocessor adding the explicitly excluded BOX. The display helper does not change the message; ASCII SKU strings already occur in cited paths.",
+    "uncertainty": "The exact policy and three product Read records support candidate review; the grader exception for excluded BOX must not be generalized to permitting contradictory CASE. This is a single observed ambiguity case, not proof a global negative-word filter is safe.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [], extra [/proc/catalog/Bosch Professional/PT-SND-BOS-GEX125-CASE.json]']",
+      "error": null
+    },
+    "answer_seq": 787,
+    "agent_finished_seq": 789,
+    "model_response_seqs": [
+      288,
+      536,
+      784,
+      786
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t004",
+    "category": "Dispatch efficiency partial credit",
+    "finding": "The deterministic dispatch planner delivers a plan and the grader reports all ten packages delivered, no missed packages and no invalid-operation penalty, but gain below the maximum. Exact policies, wave/lanes/packages inputs and Answer are retained.",
+    "uncertainty": "The submitted source still uses the inherited deterministic planner. This is an efficiency loss, not execution failure. Equal task IDs or wording across runs do not establish equal worlds; observed Read-content and action equality are checked separately where claimed.",
+    "official_grade": {
+      "score": 0.8300712,
+      "available": true,
+      "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 542.01 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.1', 'dispatch costs/penalties avg EUR 44.19 transport; EUR 1.62 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 496.19; max EUR 500.53; efficiency 83.0%']",
+      "error": null
+    },
+    "answer_seq": 1089,
+    "agent_finished_seq": 1091,
+    "model_response_seqs": [
+      1078
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t005",
+    "category": "Missing catalogue provenance in inventory count",
+    "finding": "The model reads the Graz center store and searches repeatedly for requested SKU strings, then returns count : 0 with only the store and policy refs. No catalogue Read is performed. Independent calculation from the exact store inventory confirms count 0. The grader flags all six required product refs missing.",
+    "uncertainty": "The official detail reports grounding loss and the numeric count is independently checked from the actual store values. Adding unverified paths without reading products is not a justified repair.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/Alpen/PT-BIT-ALP-HSS-COBALT.json /proc/catalog/Bosch Home and Garden/PT-WASH-BOS-UA135-CAR.json /proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json /proc/catalog/DeWalt/PT-SAW-DEW-DWE575K-BASE.json /proc/catalog/Einhell/PT-MOW-EIN-GECM36-BODY.json /proc/catalog/Karcher/PT-WASH-KAR-K4-PREMIUM.json], extra []']",
+      "error": null
+    },
+    "answer_seq": 1148,
+    "agent_finished_seq": 1150,
+    "model_response_seqs": [
+      1107,
+      1111,
+      1115,
+      1119,
+      1123,
+      1127,
+      1131,
+      1135,
+      1139,
+      1143,
+      1147
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t014",
+    "category": "Dispatch efficiency partial credit",
+    "finding": "The deterministic dispatch planner delivers a plan and the grader reports all ten packages delivered, no missed packages and no invalid-operation penalty, but gain below the maximum. Exact policies, wave/lanes/packages inputs and Answer are retained.",
+    "uncertainty": "The submitted source still uses the inherited deterministic planner. This is an efficiency loss, not execution failure. Equal task IDs or wording across runs do not establish equal worlds; observed Read-content and action equality are checked separately where claimed.",
+    "official_grade": {
+      "score": 0.8300712,
+      "available": true,
+      "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 542.01 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.1', 'dispatch costs/penalties avg EUR 44.19 transport; EUR 1.62 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 496.19; max EUR 500.53; efficiency 83.0%']",
+      "error": null
+    },
+    "answer_seq": 1869,
+    "agent_finished_seq": 1871,
+    "model_response_seqs": [
+      1858
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t022",
+    "category": "Postprocessor adds explicitly excluded SKU",
+    "finding": "The final model completion cites Silent Plus and the store. Actual Answer adds the explicitly excluded TEAC270-50KIT product through inherited reference assembly; the grader flags exactly that extra product. A prior natural-language completion was reformatted into TRUE(1) before Answer.",
+    "uncertainty": "This establishes a model-output versus delivered-reference delta on this world. It does not justify removing all excluded-product references across policies: some policy variants explicitly require them.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [], extra [/proc/catalog/Einhell/PT-CMP-EIN-TEAC270-50KIT.json]']",
+      "error": null
+    },
+    "answer_seq": 3099,
+    "agent_finished_seq": 3101,
+    "model_response_seqs": [
+      2596,
+      2844,
+      3092,
+      3094,
+      3096,
+      3098
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t024",
+    "category": "Dispatch efficiency partial credit",
+    "finding": "The deterministic dispatch planner delivers a plan and the grader reports all ten packages delivered, no missed packages and no invalid-operation penalty, but gain below the maximum. Exact policies, wave/lanes/packages inputs and Answer are retained.",
+    "uncertainty": "The submitted source still uses the inherited deterministic planner. This is an efficiency loss, not execution failure. Equal task IDs or wording across runs do not establish equal worlds; observed Read-content and action equality are checked separately where claimed.",
+    "official_grade": {
+      "score": 0.8300712,
+      "available": true,
+      "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 542.01 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.1', 'dispatch costs/penalties avg EUR 44.19 transport; EUR 1.62 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 496.19; max EUR 500.53; efficiency 83.0%']",
+      "error": null
+    },
+    "answer_seq": 3401,
+    "agent_finished_seq": 3403,
+    "model_response_seqs": [
+      3390
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t041",
+    "category": "Unsupported unique SKU selection",
+    "finding": "For Milwaukee FID3 not the compact pack set, the model returns M18FID3-BODY with OUTCOME_OK after one catalogue query. The official oracle requires clarification. The new display helper cannot activate on an OK outcome.",
+    "uncertainty": "The family product records and exact final request are retained to inspect unresolved alternatives. This is separate from display completeness and does not establish a universal rule for every negative qualifier.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected outcome OUTCOME_NONE_CLARIFICATION, got OUTCOME_OK']",
+      "error": null
+    },
+    "answer_seq": 5086,
+    "agent_finished_seq": 5088,
+    "model_response_seqs": [
+      4833,
+      4837,
+      5085
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t043",
+    "category": "OCR-corrupted SKU reaches stock lookup and misses provenance",
+    "finding": "The receipt helper declines unresolved lines. The model re-reads the OCR, then asks stock for PT-MOW-EI-GECM36-2X4 (missing N), alongside two valid products. Final <NO> receives refs for the two recognized products but lacks the actual Einhell mower; the grader flags that missing ref. A null response and a bare <NO> response are recovered.",
+    "uncertainty": "The upload and relevant product/store facts are retained. Transferring OCR context alone would not fix a case that already re-reads it. No claim is made that the final basket calculation or a new SKU correction is proven correct.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/Einhell/PT-MOW-EIN-GECM36-2X4.json], extra []']",
+      "error": null
+    },
+    "answer_seq": 5650,
+    "agent_finished_seq": 5652,
+    "model_response_seqs": [
+      5369,
+      5377,
+      5381,
+      5385,
+      5389,
+      5391,
+      5395,
+      5399,
+      5647,
+      5649
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t044",
+    "category": "Dispatch efficiency partial credit",
+    "finding": "The deterministic dispatch planner delivers a plan and the grader reports all ten packages delivered, no missed packages and no invalid-operation penalty, but gain below the maximum. Exact policies, wave/lanes/packages inputs and Answer are retained.",
+    "uncertainty": "The submitted source still uses the inherited deterministic planner. This is an efficiency loss, not execution failure. Equal task IDs or wording across runs do not establish equal worlds; observed Read-content and action equality are checked separately where claimed.",
+    "official_grade": {
+      "score": 0.8233437,
+      "available": true,
+      "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 361.79 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.6', 'dispatch costs/penalties avg EUR 45.47 transport; EUR 12.19 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 304.13; max EUR 319.16; efficiency 82.3%']",
+      "error": null
+    },
+    "answer_seq": 5679,
+    "agent_finished_seq": 5681,
+    "model_response_seqs": [
+      5668
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t047",
+    "category": "Catalogue-count family interpretation differs from oracle",
+    "finding": "The model counts only the small-workshop video as a match, excludes it above the price limit, and answers 0; the grader expects 1. All three observed video records share family_id fam-powertools-academy-workshop-design; garage costs 3990 cents, small workshop 4490 and shed 4990. Its reasoning excludes garage and shed by layout semantics despite the unspecified layout, missing the sole observed family member below 4024 cents.",
+    "uncertainty": "Relevant catalogue records and exact final request are retained. The oracle count is consistent with a broader design-video family interpretation, but the hidden matching rule is not observed and a general broadening patch is not established.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['Answer should be \"1\"']",
+      "error": null
+    },
+    "answer_seq": 6238,
+    "agent_finished_seq": 6240,
+    "model_response_seqs": [
+      5985,
+      5989,
+      6237
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t056",
+    "category": "OCR parser decline followed by malformed model replies",
+    "finding": "The deterministic crosslist parser declines missing complete branch/totals. The model reads the upload, identifies the store, encounters five null-content HTTP200 responses, and finally clarifies that further catalogue lookup is required. No Write occurs; the oracle expects OK.",
+    "uncertainty": "Actual OCR bytes are retained for separate parser-only coverage checks. Null responses include response-shape behavior, not proof of retryable transport failure. A parser fix would not automatically establish correct crosslist output or hidden grading.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected outcome OUTCOME_OK, got OUTCOME_NONE_CLARIFICATION']",
+      "error": null
+    },
+    "answer_seq": 6991,
+    "agent_finished_seq": 6993,
+    "model_response_seqs": [
+      6720,
+      6728,
+      6732,
+      6734,
+      6736,
+      6984,
+      6986,
+      6988,
+      6990
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t060",
+    "category": "Model confuses one-action protocol with inability to perform multiple deletions",
+    "finding": "After List, the model reports unsupported because multiple deletions cannot fit a single action. The complete RPC index contains no Delete. The deterministic cleanup entry is disabled in this source lineage.",
+    "uncertainty": "This observed model refusal is distinct from uncertainty after a real Delete error. Re-enabling an old cleanup implementation wholesale would reintroduce its known partial-mutation reporting problem; the separate reviewed d4353 uncertainty patch has its own scope.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected outcome OUTCOME_OK, got OUTCOME_NONE_UNSUPPORTED']",
+      "error": null
+    },
+    "answer_seq": 7345,
+    "agent_finished_seq": 7347,
+    "model_response_seqs": [
+      7338,
+      7340,
+      7344
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t063",
+    "category": "Read-only receipt availability misclassified as customer-only checkout",
+    "finding": "The receipt helper declines unresolved lines. The router selected checkout, and the main model explicitly re-reads the OCR before answering nein with DENIED_SECURITY on employee identity. The oracle expects OK.",
+    "uncertainty": "Unlike d4702 first-main-request missing-upload cases, this actual d4955 model saw the upload through a later Read. Thus context transfer alone is not a demonstrated fix. Policy routing and security/availability semantics remain distinct mechanisms; worlds are not presumed identical.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected outcome OUTCOME_OK, got OUTCOME_DENIED_SECURITY']",
+      "error": null
+    },
+    "answer_seq": 7664,
+    "agent_finished_seq": 7666,
+    "model_response_seqs": [
+      7649,
+      7659,
+      7663
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t064",
+    "category": "Dispatch efficiency partial credit",
+    "finding": "The deterministic dispatch planner delivers a plan and the grader reports all ten packages delivered, no missed packages and no invalid-operation penalty, but gain below the maximum. Exact policies, wave/lanes/packages inputs and Answer are retained.",
+    "uncertainty": "The submitted source still uses the inherited deterministic planner. This is an efficiency loss, not execution failure. Equal task IDs or wording across runs do not establish equal worlds; observed Read-content and action equality are checked separately where claimed.",
+    "official_grade": {
+      "score": 0.7936623,
+      "available": true,
+      "detail": "['dispatch packages delivered avg 10.0 of 10', 'dispatch money made avg EUR 424.51 delivered margin', 'dispatch packages missed avg 0.0; late avg 0.5', 'dispatch costs/penalties avg EUR 55.59 transport; EUR 9.21 late; EUR 0.00 missed; EUR 0.00 invalid', 'dispatch resulting gain avg EUR 359.71; max EUR 368.92; efficiency 79.4%']",
+      "error": null
+    },
+    "answer_seq": 7693,
+    "agent_finished_seq": 7695,
+    "model_response_seqs": [
+      7682
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t065",
+    "category": "Missing catalogue provenance in inventory count",
+    "finding": "The model reads Innsbruck West inventory and returns <COUNT:1> with only store and policy refs. No catalogue Read occurs. Independent calculation from the exact store inventory confirms count 1, while all six requested catalogue refs are missing according to the grader.",
+    "uncertainty": "Actual store and policy records are retained for arithmetic checks. Provenance should come from actual product evidence, not invented product paths; no automatic score gain is claimed.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/3M/PT-SAFE-3M-SF400-AMBER.json /proc/catalog/Alpen/PT-BIT-ALP-HSS-25.json /proc/catalog/Bosch Professional/PT-DRL-BOS-GSR55-5AH.json /proc/catalog/Einhell/PT-MOW-EIN-GECM36-BODY.json /proc/catalog/Stihl/PT-HDG-STI-HSA50-BODY.json /proc/catalog/Stihl/PT-MOW-STI-RMA235-BODY.json], extra []']",
+      "error": null
+    },
+    "answer_seq": 7728,
+    "agent_finished_seq": 7730,
+    "model_response_seqs": [
+      7711,
+      7715,
+      7719,
+      7723,
+      7727
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t076",
+    "category": "Crosslist decline, response truncation, and false completion status",
+    "finding": "The parser declines an unrecognized row line. Thirty-one model calls produce repeated malformed/length-truncated responses and searches. A truncated write action is never executed; the complete index contains no Write. Forced final completion explicitly says no TSV was created yet returns OUTCOME_OK, which Answer delivers. This task used $0.017732644 of the run total.",
+    "uncertainty": "The no-Write fact and OK/no-file contradiction are directly observed. Parser coverage, token budget/format handling and completion integrity are separate issues. A future artifact-completion check must preserve genuine read-only OK tasks and must not treat every OK as requiring mutation.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected only file changes [/exports/crosslist-efypgjyy.tsv], got []']",
+      "error": null
+    },
+    "answer_seq": 9573,
+    "agent_finished_seq": 9575,
+    "model_response_seqs": [
+      9224,
+      9232,
+      9236,
+      9240,
+      9242,
+      9246,
+      9250,
+      9254,
+      9256,
+      9258,
+      9506,
+      9510,
+      9514,
+      9518,
+      9520,
+      9524,
+      9528,
+      9532,
+      9536,
+      9538,
+      9540,
+      9544,
+      9548,
+      9552,
+      9556,
+      9560,
+      9562,
+      9566,
+      9568,
+      9570,
+      9572
+    ],
+    "mutation_request_seqs": [],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  },
+  {
+    "task": "t079",
+    "category": "Latest basket asserted without comparing active basket contents",
+    "finding": "The model lists the customer basket directory, reads only basket-0002, appends one DHS680-3AH line there, and claims it is the latest. The Write is acknowledged; the grader expected basket-0001 to change. Listing exposes names/paths/types, not creation timestamps.",
+    "uncertainty": "The unmodified basket-0001 content was never read and is absent from this trace; its timestamp is not independently reconstructed. The record proves insufficient observed comparison and the wrong changed path, not a full hidden-world timestamp oracle.",
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected only file changes [/proc/carts/cust-0001/basket-0001.json], got [/proc/carts/cust-0001/basket-0002.json]']",
+      "error": null
+    },
+    "answer_seq": 9932,
+    "agent_finished_seq": 9934,
+    "model_response_seqs": [
+      9663,
+      9667,
+      9915,
+      9919,
+      9923,
+      9927,
+      9931
+    ],
+    "mutation_request_seqs": [
+      9928
+    ],
+    "basis": "Manually inspected actual instruction, official grade, every model response/action and final stdout; Read evidence scoped by additional-harvest-plan.json."
+  }
+]

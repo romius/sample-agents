@@ -1,0 +1,106 @@
+{
+  "tasks": [
+    "t004",
+    "t014",
+    "t024"
+  ],
+  "instruction_bytes_equal": true,
+  "comparisons": {
+    "reads": true,
+    "rpc": true,
+    "model_requests": true
+  },
+  "observed_read_path_hashes": {
+    "t004": [
+      [
+        "/AGENTS.MD",
+        "3e0c2560ea17522f91a6793ad9513b868332ab8fcb12b2181fbd558add193004"
+      ],
+      [
+        "/docs/security.md",
+        "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/dispatch.md",
+        "1ef95c01013b9c73c65739a192bdc057d005ab8d101d4997a30fb1046484f559"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/packages.tsv",
+        "6185e177d49ee6015eb6e3c5ffaf71dcf55c8b3ff877b5ba594e8e5d2a662272"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/lanes.tsv",
+        "7d22161ecbc56800128542dd5b7c00a334cff02c0a2990713998899c8357d211"
+      ]
+    ],
+    "t014": [
+      [
+        "/AGENTS.MD",
+        "3e0c2560ea17522f91a6793ad9513b868332ab8fcb12b2181fbd558add193004"
+      ],
+      [
+        "/docs/security.md",
+        "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/dispatch.md",
+        "1ef95c01013b9c73c65739a192bdc057d005ab8d101d4997a30fb1046484f559"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/packages.tsv",
+        "6185e177d49ee6015eb6e3c5ffaf71dcf55c8b3ff877b5ba594e8e5d2a662272"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/lanes.tsv",
+        "7d22161ecbc56800128542dd5b7c00a334cff02c0a2990713998899c8357d211"
+      ]
+    ],
+    "t024": [
+      [
+        "/AGENTS.MD",
+        "3e0c2560ea17522f91a6793ad9513b868332ab8fcb12b2181fbd558add193004"
+      ],
+      [
+        "/docs/security.md",
+        "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/docs/dispatch.md",
+        "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/dispatch.md",
+        "1ef95c01013b9c73c65739a192bdc057d005ab8d101d4997a30fb1046484f559"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/packages.tsv",
+        "6185e177d49ee6015eb6e3c5ffaf71dcf55c8b3ff877b5ba594e8e5d2a662272"
+      ],
+      [
+        "/ops/dispatch/wave-BCc6MCNc/lanes.tsv",
+        "7d22161ecbc56800128542dd5b7c00a334cff02c0a2990713998899c8357d211"
+      ]
+    ]
+  },
+  "scope": "Within this run only; equality covers listed observed Read bytes, all nonlifecycle RPC arguments/responses and exact model requests. No unobserved-world or cross-source causal claim."
+}

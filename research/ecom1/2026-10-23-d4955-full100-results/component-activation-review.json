@@ -1,0 +1,52 @@
+{
+  "clarification_display": {
+    "changed_delivery_marker": " Candidates: ",
+    "all100_delivered_marker_occurrences": [],
+    "clarification_outcome_tasks": [
+      "t001",
+      "t002",
+      "t011",
+      "t031",
+      "t051",
+      "t056",
+      "t071"
+    ],
+    "inference": "Exact helper can change text only by appending this marker. No delivered answer contains it, so no delivered display addition is evidenced in this run. Function may still be called and return unchanged.",
+    "t021": {
+      "instruction": "sku for case + compact dewalt dwe575k corded saw pls. sku only.",
+      "outcome": "OUTCOME_OK",
+      "answer_event": {
+        "seq": 2578,
+        "path": "success-evidence/events/t021-2578.ndjson",
+        "sha256": "a0fd5d2cfe66fcf78481f8090d56ff5bec7f312f6c9bc7b4d3ab11900bab944b",
+        "receipts": [
+          "receipts/s8115-017.json"
+        ]
+      },
+      "ineligible_for_display_change": true
+    }
+  },
+  "receipt_header": {
+    "t023": {
+      "actual_answer": {
+        "message": "FALSE(2)",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/BaHDB8FE_receipt_ocr.txt",
+          "/proc/stores/store-linz-hafen.json",
+          "/proc/catalog/Bosch Home and Garden/PT-HDG-BOS-UHC18-50-BODY.json",
+          "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+          "/docs/security.md",
+          "/docs/availability-checks.md"
+        ]
+      },
+      "observed_handler_stdout": [
+        "Routed policy docs [\"/docs/checkout.md\"]",
+        "receipt-availability: FALSE(2) ['PT-HDG-BOS-UHC18-50-BODY']"
+      ]
+    },
+    "activation_not_isolated": true,
+    "reason": "Success stdout establishes the receipt handler returned an answer, not whether the new damaged-header alternative was necessary. This audit does not have the t023 upload body or an exact same-world parent replay. Different upload paths/products from the d4702 t023 are already evident."
+  },
+  "comparison": "95 instructions differ from d4353 and93 differ from d4702. Even identical wording does not establish equal worlds. No task-ordinal success difference is attributed causally to either new component."
+}

@@ -1,0 +1,126 @@
+[
+  {
+    "task": "t005",
+    "read_seq": 1121,
+    "path": "/proc/locations/Graz/store-graz-center.json",
+    "sha256": "c3f03e4fdfa5311f590fc35b614ddf8fc9b4a29a3bc13ef7a6b2d4a246f7d8d4",
+    "threshold": 3,
+    "rows": [
+      {
+        "sku": "PT-GRD-BOS-GWS1400-CASE",
+        "observed_row": {
+          "sku": "PT-GRD-BOS-GWS1400-CASE",
+          "on_hand": 0,
+          "reserved": 0,
+          "incoming": [
+            {
+              "quantity": 3,
+              "arrival_in_days": 6
+            }
+          ]
+        },
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-SAW-DEW-DWE575K-BASE",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-WASH-BOS-UA135-CAR",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-WASH-KAR-K4-PREMIUM",
+        "observed_row": {
+          "sku": "PT-WASH-KAR-K4-PREMIUM",
+          "on_hand": 14,
+          "reserved": 0
+        },
+        "same_day": 14,
+        "matches": false
+      },
+      {
+        "sku": "PT-BIT-ALP-HSS-COBALT",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-MOW-EIN-GECM36-BODY",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      }
+    ],
+    "recomputed_count": 0,
+    "missing_catalogue_reads": true,
+    "scope": "Arithmetic checked on actual store records; missing product rows count zero. No product path is inferred or fetched."
+  },
+  {
+    "task": "t065",
+    "read_seq": 7725,
+    "path": "/proc/locations/Innsbruck/store-innsbruck-west.json",
+    "sha256": "5c41f2809248d7b52d04f162555be98929798f30ac6c113952ebf12931795fd4",
+    "threshold": 2,
+    "rows": [
+      {
+        "sku": "PT-MOW-EIN-GECM36-BODY",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-SAFE-3M-SF400-AMBER",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-MOW-STI-RMA235-BODY",
+        "observed_row": {
+          "sku": "PT-MOW-STI-RMA235-BODY",
+          "on_hand": 0,
+          "reserved": 0,
+          "incoming": [
+            {
+              "quantity": 6,
+              "arrival_in_days": 6
+            }
+          ]
+        },
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-BIT-ALP-HSS-25",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      },
+      {
+        "sku": "PT-DRL-BOS-GSR55-5AH",
+        "observed_row": {
+          "sku": "PT-DRL-BOS-GSR55-5AH",
+          "on_hand": 2,
+          "reserved": 2
+        },
+        "same_day": 0,
+        "matches": true
+      },
+      {
+        "sku": "PT-HDG-STI-HSA50-BODY",
+        "observed_row": null,
+        "same_day": 0,
+        "matches": false
+      }
+    ],
+    "recomputed_count": 1,
+    "missing_catalogue_reads": true,
+    "scope": "Arithmetic checked on actual store records; missing product rows count zero. No product path is inferred or fetched."
+  }
+]

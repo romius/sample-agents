@@ -1,0 +1,52 @@
+{
+  "scope": "12 actual parser executions: three exact sources \u00d7 two actual uploads \u00d7 CPython/native. No repairs, counterfactual edited input, whole-agent replay, hidden grading or score claim.",
+  "source_pins": "comparison/ocr-source-pins.json",
+  "actual_upload_hashes": {
+    "t056": "c6685468ab4ce904299f431730b0d11d473cde62976b9a422216eebf1a6866a7",
+    "t076": "1fe3a13cb9d8aa2ccbba527136ef9d9c61071ef23bacea0f34f1f6699a2bab7e"
+  },
+  "results": {
+    "d4353": {
+      "source_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+      "results": [
+        {
+          "task": "t056",
+          "error": "OCR must identify one branch and both complete totals"
+        },
+        {
+          "task": "t076",
+          "error": "Unrecognised line inside a requested row"
+        }
+      ],
+      "native_cpython_equal": true
+    },
+    "d4955": {
+      "source_sha256": "e0825037ed9c8993df78ee122e084e34a35507ddab7559dc0cc575358b0b1e44",
+      "results": [
+        {
+          "task": "t056",
+          "error": "OCR must identify one branch and both complete totals"
+        },
+        {
+          "task": "t076",
+          "error": "Unrecognised line inside a requested row"
+        }
+      ],
+      "native_cpython_equal": true
+    },
+    "published_d6729_hash_scanline": {
+      "source_sha256": "56bc1bf577ed1ba26ed298fcdc04ced3830092292a2c0c99d48a599c7d5a1a5d",
+      "results": [
+        {
+          "task": "t056",
+          "error": "OCR must identify one branch and both complete totals"
+        },
+        {
+          "task": "t076",
+          "error": "Unrecognised line inside a requested row"
+        }
+      ],
+      "native_cpython_equal": true
+    }
+  }
+}

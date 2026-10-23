@@ -1,0 +1,19 @@
+{
+  "verified_baseline": "d3200r2 / 0.9012601",
+  "integration_parent": "d4702r1 (pending full100)",
+  "header_parent": "d4848r1 (offline)",
+  "header_parent_sha256": "1d8bc31179aff6845244cf366ddfcaec119cc964e57f90dd799529f37e1ebaf3",
+  "candidate_sha256": "2f145f03558a944c30398ec59aabb92ea7d891e05889b1a8f348d07d11cbfb20",
+  "bytes": 63582,
+  "headroom": 1954,
+  "changed_nodes_vs_header_parent": [
+    "clarification_skus (new)",
+    "dispatch"
+  ],
+  "hypothesis": "Preserve ambiguous outcomes while displaying the actual already-cited candidate SKU values; recover damaged receipt quantity headers.",
+  "readable_packed_ast_equal": true,
+  "dependencies": {
+    "lzpack": "d3268r2",
+    "rider_design_credit": "thingy H1d R2, d4485r1; adapted to actual product records"
+  }
+}

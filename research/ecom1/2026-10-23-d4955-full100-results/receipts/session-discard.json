@@ -1,0 +1,30 @@
+{
+  "request": {
+    "session": "s8113",
+    "seq": 358,
+    "source": "print(brain.discard())"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 108,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 359,
+      "output_bytes": 108,
+      "output_truncated": false,
+      "receipt": {
+        "author": "romius",
+        "session": "s8113",
+        "status": "discarded",
+        "time": "2026-10-23T02:32:57.858233+00:00"
+      },
+      "sdk_calls": 1,
+      "seq": 358,
+      "session": "s8113",
+      "step": null
+    },
+    "notices": [],
+    "output": "{'session': 's8113', 'status': 'discarded', 'time': '2026-10-23T02:32:57.858233+00:00', 'author': 'romius'}\nDiscarded s8113. No pending changes were published. Session closed."
+  }
+}

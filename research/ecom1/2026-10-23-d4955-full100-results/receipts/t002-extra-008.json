@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s8113",
+    "seq": 254,
+    "source": "import json\nprint(json.dumps([brain.sandbox.trace_event('j37e3df7ac8564c0899c81a706e0aea9a',785,offset=20000,limit=1839)],separators=(',',':')))"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 2283,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 255,
+      "output_bytes": 2283,
+      "output_truncated": false,
+      "sdk_calls": 1,
+      "seq": 254,
+      "session": "s8113",
+      "step": null
+    },
+    "notices": [],
+    "output": "[{\"seq\":785,\"text\":\"\\\\n{\\\\\\\"matches\\\\\\\": [{\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Graz/store-graz-puntigam.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-graz-puntigam\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Graz Puntigam\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Graz\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"8055\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Triester Strasse 391\\\\\\\", \\\\\\\"is_open\\\\\\\": true, \\\\\\\"score\\\\\\\": 6}, {\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Graz/store-graz-center.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-graz-center\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Graz Center\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Graz\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"8020\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Annenstrasse 24\\\\\\\", \\\\\\\"is_open\\\\\\\": true, \\\\\\\"score\\\\\\\": 4}, {\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Graz/store-graz-eggenberg.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-graz-eggenberg\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Graz Eggenberg\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Graz\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"8020\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Eggenberger Allee 38\\\\\\\", \\\\\\\"is_open\\\\\\\": false, \\\\\\\"score\\\\\\\": 4}, {\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Graz/store-graz-liebenau.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-graz-liebenau\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Graz Liebenau\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Graz\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"8041\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Liebenauer Hauptstrasse 123\\\\\\\", \\\\\\\"is_open\\\\\\\": true, \\\\\\\"score\\\\\\\": 4}, {\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Innsbruck/store-innsbruck-mitte.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-innsbruck-mitte\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Innsbruck Mitte\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Innsbruck\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"6020\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Museumstrasse 18\\\\\\\", \\\\\\\"is_open\\\\\\\": true, \\\\\\\"score\\\\\\\": 2}, {\\\\\\\"path\\\\\\\": \\\\\\\"/proc/locations/Innsbruck/store-innsbruck-ost.json\\\\\\\", \\\\\\\"id\\\\\\\": \\\\\\\"store-innsbruck-ost\\\\\\\", \\\\\\\"name\\\\\\\": \\\\\\\"PowerTools Innsbruck Ost\\\\\\\", \\\\\\\"city\\\\\\\": \\\\\\\"Innsbruck\\\\\\\", \\\\\\\"postal_code\\\\\\\": \\\\\\\"6020\\\\\\\", \\\\\\\"address_line_1\\\\\\\": \\\\\\\"Amraser-See-Strasse 56\\\\\\\", \\\\\\\"is_open\\\\\\\": true, \\\\\\\"score\\\\\\\": 2}], \\\\\\\"indexed_stores\\\\\\\": 17}\\\"}],\\\"reasoning\\\":{\\\"effort\\\":\\\"medium\\\"},\\\"temperature\\\":0,\\\"max_tokens\\\":2048,\\\"stream\\\":false,\\\"provider\\\":{\\\"only\\\":[\\\"deepinfra/bf16\\\"],\\\"quantizations\\\":[\\\"bf16\\\"],\\\"allow_fallbacks\\\":false,\\\"require_parameters\\\":true}}}}\\n\",\"bytes\":21839,\"next_offset\":21839,\"more\":false}]\n"
+  }
+}
