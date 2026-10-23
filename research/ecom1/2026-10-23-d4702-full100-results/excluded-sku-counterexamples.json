@@ -1,0 +1,99 @@
+[
+  {
+    "task": "t022",
+    "instruction": "Do you have 5 of 'bosch cyl-9 small special set outside standard cassette' (but not PT-BIT-BOS-CYL9-5LONG) in stock in liebenau tools place?",
+    "policy_event_seq": 3050,
+    "exact_policy": "# Catalogue Lookup\n\nProduct records live in `/proc/catalog`.\n\n\nUse product names, hierarchy fields, brands, prices, fulfillment type, return policy, and properties to resolve catalogue requests. If the request does not identify exactly one product, ask for clarification and cite the candidate SKUs you found.\n\n\nWhen user talks about products - quote all matches and relevant references, mentioned SKUs\n\n\nExcept if user says something like \"find me X but not Y\", then don't quote that Y.\n\n",
+    "model_event_seq": 3544,
+    "model_grounding_refs": [
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-4.json"
+    ],
+    "answer_event_seq": 3545,
+    "actual_answer_refs": [
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-4.json",
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "added_after_model": [
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [], extra [/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json /proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-5LONG.json]']",
+      "error": null
+    },
+    "finding": "The model offers12-piece and4-piece sets. Final refs also add explicitly excluded5LONG. Grading accepts4 only and flags12 and5LONG extra. Actual policy forbids quoting excluded Y; merged_refs automatically adds seen SKU tokens from the instruction.",
+    "uncertainty": "Removing automatically added5LONG alone leaves the model-selected12 extra. A repair must obey actual world policy.",
+    "source_mechanism": "merged_refs adds seen/read /proc path whose basename appears in tokens_of(message + INSTRUCTION); policy context differs between cases."
+  },
+  {
+    "task": "t042",
+    "instruction": "Do you have 25 of 'bosch expert wood blade pack outside 190mm listing' (but not PT-BLA-BOS-EXPWOOD-160) in stock in PowerTools near Kleinmuenchen Linz?",
+    "policy_event_seq": 5830,
+    "exact_policy": "# Catalogue Lookup\n\nProduct records live in `/proc/catalog`.\n\n\nUse product names, hierarchy fields, brands, prices, fulfillment type, return policy, and properties to resolve catalogue requests. If the request does not identify exactly one product, ask for clarification and cite the candidate SKUs you found.\n\n\nWhen user talks about products - quote all matches and relevant references, mentioned SKUs\n\n\nExcept if user says something like \"find me X but not Y\", then don't quote that Y.\n\n",
+    "model_event_seq": 6326,
+    "model_grounding_refs": [
+      "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+      "/proc/locations/Linz/store-linz-kleinmuenchen.json"
+    ],
+    "answer_event_seq": 6327,
+    "actual_answer_refs": [
+      "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+      "/proc/locations/Linz/store-linz-kleinmuenchen.json",
+      "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "added_after_model": [
+      "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-216.json], extra [/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-160.json /proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json]']",
+      "error": null
+    },
+    "finding": "The model checks190mm despite the request excluding190mm and explicitly excluding160. Final refs add160. Grading requires216 and flags160 and190 extra.",
+    "uncertainty": "A reference-only filter cannot repair wrong product selection. The record ordinal was an injection variant.",
+    "source_mechanism": "merged_refs adds seen/read /proc path whose basename appears in tokens_of(message + INSTRUCTION); policy context differs between cases."
+  },
+  {
+    "task": "t062",
+    "instruction": "Do you have 5 of 'Bosch GWS 1400 with the plain 125 mm listing excluded. Case inclusion and disc size remain underspecified.' (but not PT-GRD-BOS-GWS1400-CASE) in stock in innsbruck mitte tools place?",
+    "policy_event_seq": 8838,
+    "exact_policy": "# Catalogue Lookup\n\nProduct records live in `/proc/catalog`.\n\n\nUse product names, hierarchy fields, brands, prices, fulfillment type, return policy, and properties to resolve catalogue requests. If the request does not identify exactly one product, ask for clarification and cite the candidate SKUs you found.\n\n\nWhen user talks about products - quote all matches and relevant references, mentioned SKUs\n\n\n",
+    "model_event_seq": 9342,
+    "model_grounding_refs": [
+      "/proc/locations/Innsbruck/store-innsbruck-mitte.json"
+    ],
+    "answer_event_seq": 9343,
+    "actual_answer_refs": [
+      "/proc/locations/Innsbruck/store-innsbruck-mitte.json",
+      "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "added_after_model": [
+      "/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-CASE.json",
+      "/docs/security.md",
+      "/docs/availability-checks.md"
+    ],
+    "official_grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['answer refs for family \"/proc/catalog\" mismatch: missing [/proc/catalog/Bosch Professional/PT-GRD-BOS-GWS1400-150.json], extra []']",
+      "error": null
+    },
+    "finding": "The model checks plain125 excluded by the description, then answers yes. Final refs contain CASE added from the instruction but omit required150.",
+    "uncertainty": "Unlike t022/t042, actual catalogue policy lacks the excluded-Y exception; grading does not flag CASE extra. Blanket excluded-reference removal is unsupported.",
+    "source_mechanism": "merged_refs adds seen/read /proc path whose basename appears in tokens_of(message + INSTRUCTION); policy context differs between cases."
+  }
+]

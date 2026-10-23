@@ -1,0 +1,28 @@
+{
+  "source": "import json\nprint(json.dumps({'task_id':'t001','supplemental_events':[brain.sandbox.trace_event('jfdd875bba6ba4773a549e8703764efa9',s,limit=6000) for s in [271]]}))",
+  "receipt": {
+    "content": [
+      {
+        "type": "text",
+        "text": "{\"code\":0,\"data\":{\"displayed_bytes\":315,\"files\":{},\"next_offset\":null,\"next_seq\":92,\"output_bytes\":315,\"output_truncated\":false,\"sdk_calls\":1,\"seq\":91,\"session\":\"s8029\",\"step\":null},\"notices\":[],\"output\":\"{\\\"task_id\\\": \\\"t001\\\", \\\"supplemental_events\\\": [{\\\"seq\\\": 271, \\\"text\\\": \\\"{\\\\\\\"seq\\\\\\\":271,\\\\\\\"time\\\\\\\":\\\\\\\"2026-10-23T00:31:01.544422+00:00\\\\\\\",\\\\\\\"kind\\\\\\\":\\\\\\\"rpc_response\\\\\\\",\\\\\\\"data\\\\\\\":{\\\\\\\"method\\\\\\\":\\\\\\\"Answer\\\\\\\",\\\\\\\"trial_id\\\\\\\":\\\\\\\"vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4C\\\\\\\",\\\\\\\"response\\\\\\\":{},\\\\\\\"ms\\\\\\\":42}}\\\\n\\\", \\\"bytes\\\": 170, \\\"next_offset\\\": 170, \\\"more\\\": false}]}\\n\"}"
+      }
+    ],
+    "structuredContent": {
+      "code": 0,
+      "data": {
+        "displayed_bytes": 315,
+        "files": {},
+        "next_offset": null,
+        "next_seq": 92,
+        "output_bytes": 315,
+        "output_truncated": false,
+        "sdk_calls": 1,
+        "seq": 91,
+        "session": "s8029",
+        "step": null
+      },
+      "notices": [],
+      "output": "{\"task_id\": \"t001\", \"supplemental_events\": [{\"seq\": 271, \"text\": \"{\\\"seq\\\":271,\\\"time\\\":\\\"2026-10-23T00:31:01.544422+00:00\\\",\\\"kind\\\":\\\"rpc_response\\\",\\\"data\\\":{\\\"method\\\":\\\"Answer\\\",\\\"trial_id\\\":\\\"vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4C\\\",\\\"response\\\":{},\\\"ms\\\":42}}\\n\", \"bytes\": 170, \"next_offset\": 170, \"more\": false}]}\n"
+    }
+  }
+}

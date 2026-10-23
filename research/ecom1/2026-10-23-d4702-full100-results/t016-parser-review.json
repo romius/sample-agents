@@ -1,0 +1,315 @@
+{
+  "scope": "Parser-only boundary; no whole-agent success, score or matching-world claim. Exact tilde removal is a counterfactual diagnostic, NOT a proposed source patch.",
+  "current_candidate_packed_sha256": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+  "source_hashes": {
+    "d4702": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d",
+    "d4353": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "current_hash_scanline_candidate": "56bc1bf577ed1ba26ed298fcdc04ced3830092292a2c0c99d48a599c7d5a1a5d"
+  },
+  "ocr_sha256": "50296b921e09ba7340b743ce4cd991d6f41e9cab90d4daa88348805a8bdb7e7d",
+  "runtimes": [
+    "CPython",
+    "native Monty1.2.0"
+  ],
+  "results": {
+    "d4702": [
+      {
+        "case": "actual_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "counterfactual_only_remove_exact_tilde_prefix",
+        "error": "Unrecognised line inside a requested row"
+      },
+      {
+        "case": "counterfactual_remove_exact_tilde_prefix_and_exact_footer",
+        "parsed": {
+          "branch": "PowerTools Vienna Meidling",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 4,
+              "competitor_code": "CMP-BI6AZG",
+              "description": "Makita Specialized saw blade set 165 mm",
+              "properties": {
+                "blade_diameter_mm": "165",
+                "bore_mm": "20",
+                "carbide": "true",
+                "material_target": "wood and laminate"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 5,
+              "competitor_code": "CMP-IODBJZ",
+              "description": "Einhell TE-AC 270/50 workshop compressor kit",
+              "properties": {
+                "intake_l_min": "240",
+                "max_bar": "10",
+                "noise_db": "96",
+                "oil_free": "false",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 9,
+              "competitor_code": "CMP-D3HAWM",
+              "description": "Makita DHS680 LXT circular saw kit 2x3.0Ah",
+              "properties": {
+                "battery_platform": "Makita LXT 18V",
+                "cut_depth_90_mm": "57",
+                "kit": "2x3.0Ah batteries and charger",
+                "rail_compatible": "true"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 8,
+              "competitor_code": "CMP-ABCNP5",
+              "description": "Bosch CYL-9 MultiConstruction drill bit set 12-piece",
+              "properties": {
+                "case_type": "robust case",
+                "cobalt": "false",
+                "diameter_range_mm": "3-12",
+                "length_class": "STANDARD",
+                "piece_count": "12"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 2,
+              "competitor_code": "CMP-3WCRRB",
+              "description": "DeWalt DCF887 XR impact driver body",
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "impact_rate_ipm": "3800",
+                "kit": "body only",
+                "power_source": "cordless",
+                "voltage_v": "18"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "unknown_prose_in_same_position",
+        "error": "Malformed specification"
+      },
+      {
+        "case": "duplicate_clean_lines_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "conflicting_clean_units_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "unicode_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    ],
+    "d4353": [
+      {
+        "case": "actual_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "counterfactual_only_remove_exact_tilde_prefix",
+        "error": "Unrecognised line inside a requested row"
+      },
+      {
+        "case": "counterfactual_remove_exact_tilde_prefix_and_exact_footer",
+        "parsed": {
+          "branch": "PowerTools Vienna Meidling",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 4,
+              "competitor_code": "CMP-BI6AZG",
+              "description": "Makita Specialized saw blade set 165 mm",
+              "properties": {
+                "blade_diameter_mm": "165",
+                "bore_mm": "20",
+                "carbide": "true",
+                "material_target": "wood and laminate"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 5,
+              "competitor_code": "CMP-IODBJZ",
+              "description": "Einhell TE-AC 270/50 workshop compressor kit",
+              "properties": {
+                "intake_l_min": "240",
+                "max_bar": "10",
+                "noise_db": "96",
+                "oil_free": "false",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 9,
+              "competitor_code": "CMP-D3HAWM",
+              "description": "Makita DHS680 LXT circular saw kit 2x3.0Ah",
+              "properties": {
+                "battery_platform": "Makita LXT 18V",
+                "cut_depth_90_mm": "57",
+                "kit": "2x3.0Ah batteries and charger",
+                "rail_compatible": "true"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 8,
+              "competitor_code": "CMP-ABCNP5",
+              "description": "Bosch CYL-9 MultiConstruction drill bit set 12-piece",
+              "properties": {
+                "case_type": "robust case",
+                "cobalt": "false",
+                "diameter_range_mm": "3-12",
+                "length_class": "STANDARD",
+                "piece_count": "12"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 2,
+              "competitor_code": "CMP-3WCRRB",
+              "description": "DeWalt DCF887 XR impact driver body",
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "impact_rate_ipm": "3800",
+                "kit": "body only",
+                "power_source": "cordless",
+                "voltage_v": "18"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "unknown_prose_in_same_position",
+        "error": "Malformed specification"
+      },
+      {
+        "case": "duplicate_clean_lines_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "conflicting_clean_units_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "unicode_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    ],
+    "current_hash_scanline_candidate": [
+      {
+        "case": "actual_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "counterfactual_only_remove_exact_tilde_prefix",
+        "error": "Unrecognised line inside a requested row"
+      },
+      {
+        "case": "counterfactual_remove_exact_tilde_prefix_and_exact_footer",
+        "parsed": {
+          "branch": "PowerTools Vienna Meidling",
+          "lines": [
+            {
+              "line_no": 1,
+              "requested_qty": 4,
+              "competitor_code": "CMP-BI6AZG",
+              "description": "Makita Specialized saw blade set 165 mm",
+              "properties": {
+                "blade_diameter_mm": "165",
+                "bore_mm": "20",
+                "carbide": "true",
+                "material_target": "wood and laminate"
+              }
+            },
+            {
+              "line_no": 2,
+              "requested_qty": 5,
+              "competitor_code": "CMP-IODBJZ",
+              "description": "Einhell TE-AC 270/50 workshop compressor kit",
+              "properties": {
+                "intake_l_min": "240",
+                "max_bar": "10",
+                "noise_db": "96",
+                "oil_free": "false",
+                "wheels": "true"
+              }
+            },
+            {
+              "line_no": 3,
+              "requested_qty": 9,
+              "competitor_code": "CMP-D3HAWM",
+              "description": "Makita DHS680 LXT circular saw kit 2x3.0Ah",
+              "properties": {
+                "battery_platform": "Makita LXT 18V",
+                "cut_depth_90_mm": "57",
+                "kit": "2x3.0Ah batteries and charger",
+                "rail_compatible": "true"
+              }
+            },
+            {
+              "line_no": 4,
+              "requested_qty": 8,
+              "competitor_code": "CMP-ABCNP5",
+              "description": "Bosch CYL-9 MultiConstruction drill bit set 12-piece",
+              "properties": {
+                "case_type": "robust case",
+                "cobalt": "false",
+                "diameter_range_mm": "3-12",
+                "length_class": "STANDARD",
+                "piece_count": "12"
+              }
+            },
+            {
+              "line_no": 5,
+              "requested_qty": 2,
+              "competitor_code": "CMP-3WCRRB",
+              "description": "DeWalt DCF887 XR impact driver body",
+              "properties": {
+                "battery_platform": "DeWalt XR 18V",
+                "impact_rate_ipm": "3800",
+                "kit": "body only",
+                "power_source": "cordless",
+                "voltage_v": "18"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "case": "unknown_prose_in_same_position",
+        "error": "Malformed specification"
+      },
+      {
+        "case": "duplicate_clean_lines_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "conflicting_clean_units_total",
+        "error": "OCR must identify one branch and both complete totals"
+      },
+      {
+        "case": "unicode_tilde_prefix",
+        "error": "OCR must identify one branch and both complete totals"
+      }
+    ]
+  },
+  "candidate_addresses_actual_t016": false,
+  "stagewise_findings": {
+    "first_blocker": "Exact double-tilde requested-lines prefix, outside current hash-scanline scope",
+    "second_blocker": "x x x ////  =========:===============-========:=================.=======:====.===",
+    "second_error": "Unrecognised line inside a requested row",
+    "counterfactual_only": "Deleting these two exact observed layout strings parses five rows/28units; no broad filtering rule, accepted patch, product-match or whole-agent success is established.",
+    "unknown_prose_control": "Replacing footer with a meaningful customer note without a recognized note prefix still rejects. Broadly discarding unknown lines could erase substantive requirements."
+  }
+}

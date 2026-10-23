@@ -1,0 +1,15 @@
+# Evidence-led next experiments
+
+These are bounded hypotheses, not score promises or approved combined changes. Keep the current d4353 record as parent. The d4702 score is lower and the evaluation is mostly unpaired.
+
+1. **Retain the existing deterministic cleanup route.** d4702 removed it. Two actual failures show an omitted deletion with a false completion claim and an unsupported refusal before deletion. The separate `2026-10-23-d4702-cleanup-replay` matched-world native replay isolates the route. Do not treat this as authorization for broader deletion behavior or retries of mutations.
+
+2. **Separate final-content recovery from transport recovery.** The17 loss traces contain65 HTTP200 responses and nine null final contents; t016 and t074 exhaust invalid-reply handling and then receive non-completion actions in the forced-report branch. This is a loss-selected sample, not an estimate of the full-run null-content rate. An experiment should require a short final action, bound repeated malformed output, preserve action idempotency and report the actual failure accurately. Never execute action-shaped reasoning text. The independently evidenced timeout work remains a separate experiment.
+
+3. **Repair catalogue qualification and references under the actual policy.** t022/t042 contain a concrete postprocessing bug: final references add an excluded SKU absent from model refs despite an explicit policy exception. t062 is a contrary policy control: its policy lacks that exception and grading does not flag the excluded mentioned SKU. A blanket filter is not supported. Qualification errors remain even after fixing reference expansion, so measure the two mechanisms separately with visible candidate evidence. Keep t047 unresolved until its exact semantic target is explained.
+
+4. **Preserve receipt evidence through deterministic fallback.** t023/t063 read the actual upload but decline corrupted product tokens; fallback then reasons about customer identity instead of read-only availability. t043 resolves only part of the required product evidence. Test exact corrupted inputs, candidate ambiguity, unknown properties and safe denial controls without guessing missing data. The current hash-scanline crosslist repair remains separate: actual t016 needs at least two distinct layout issues resolved before any whole-agent success can be claimed.
+
+5. **Treat dispatch as optimization work.** All five waves delivered all10 packages with no invalid or missed packages. One exact shared-world control has identical parent/candidate answer and score. Improvements require actual wave-level comparisons; retries or reference changes do not explain these partials.
+
+Every experiment should first replay the exact archived trigger and meaningful negative controls, then build the exact packed candidate under65536 bytes. Full100 promotion requires a completed official result exceeding the current verified record and a per-task regression review. Changed world variants prevent causal claims from ordinal deltas alone. No new evaluation is submitted by this audit.

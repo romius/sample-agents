@@ -1,0 +1,51 @@
+{
+  "status": "Complete bounded all100 review; no promotion or new evaluation",
+  "job_id": "jfdd875bba6ba4773a549e8703764efa9",
+  "source": "d4702r1",
+  "score_per100": 87.08894,
+  "comparison_record_source": "d4353r1",
+  "comparison_score_per100": 94.72095,
+  "task_rows": 100,
+  "actual_instructions": 100,
+  "final_answers": 100,
+  "complete_agent_finished_stdout": 100,
+  "official_grade1": 83,
+  "official_zeros": 12,
+  "official_dispatch_partials": 5,
+  "actual_outcome_counts": {
+    "OUTCOME_OK": 57,
+    "OUTCOME_DENIED_SECURITY": 20,
+    "OUTCOME_NONE_CLARIFICATION": 8,
+    "OUTCOME_ERR_INTERNAL": 2,
+    "OUTCOME_NONE_UNSUPPORTED": 13
+  },
+  "complete_loss_indexes": 17,
+  "complete_loss_scope_CAS_matches": 8,
+  "selected_loss_scopes": 9,
+  "retained_loss_events": 2000,
+  "success_retained_events": 271,
+  "success_sealed_files_verified": 372,
+  "all100_model_calls": 244,
+  "all100_tokens": 771806,
+  "all100_cost_usd": 0.034498464,
+  "cost_complete": true,
+  "loss_only_model_responses": 65,
+  "loss_only_null_final_contents": 9,
+  "instructions_different_from_record": 92,
+  "shared_observed_dispatch_input_action_control": "t024",
+  "source_rebuild_exact": true,
+  "brain_sessions": [
+    "s7984 discarded",
+    "s8029 discarded"
+  ],
+  "paid_calls_in_audit": 0,
+  "production_changes": false,
+  "brain_publication": false,
+  "scope_limits": [
+    "Every task reviewed against exact instruction, final Answer and full stdout; not universal independent action/business-fact certification.",
+    "Only eight loss trial scopes and one comparison scope have independently matched full CAS; successful tail indexes and nine loss selections do not.",
+    "Score difference is mostly unpaired; no aggregate causal source-effect estimate.",
+    "Current narrow OCR candidate does not cover actual t016; full world unavailable, parser-only falsification retained.",
+    "t047 semantic count target remains unresolved."
+  ]
+}

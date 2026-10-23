@@ -1,0 +1,218 @@
+[
+  {
+    "task": "t004",
+    "category": "Dispatch partial",
+    "finding": "The deterministic planner returned all 10 assignments. Official average gain EUR308.74 versus maximum318.17; no invalid or missed packages and0.4 late.",
+    "seq": [
+      1080,
+      1091,
+      1093
+    ],
+    "uncertainty": "Score normalization is grader-defined, not simply gain divided by maximum."
+  },
+  {
+    "task": "t014",
+    "category": "Dispatch partial",
+    "finding": "All 10 packages assigned; average gain359.71/max368.92, no invalid or missed packages,0.5 late.",
+    "seq": [
+      2572,
+      2583,
+      2585
+    ],
+    "uncertainty": "Different wave than the record ordinal; no source-regression claim."
+  },
+  {
+    "task": "t016",
+    "category": "OCR parser decline and empty final content",
+    "finding": "The tilde-prefixed total is rejected. Three HTTP200/stop replies have content=null. The forced report returns a read action, followed by ERR_INTERNAL.",
+    "seq": [
+      2628,
+      2642,
+      2644,
+      2646,
+      2648,
+      2649,
+      2651
+    ],
+    "uncertainty": "Current hash-scanline candidate does not cover this case. Removing only the tilde prefix exposes a noisy-footer blocker. Sparse observed world lacks catalogue/store Read responses; parser counterfactuals are not whole-agent success."
+  },
+  {
+    "task": "t022",
+    "category": "Qualifier selection and policy-sensitive reference expansion",
+    "finding": "The model offers12-piece and4-piece sets. Final refs also add explicitly excluded5LONG. Grading accepts4 only and flags12 and5LONG extra. Actual policy forbids quoting excluded Y; merged_refs automatically adds seen SKU tokens from the instruction.",
+    "seq": [
+      3050,
+      3100,
+      3104,
+      3106,
+      3544,
+      3545
+    ],
+    "uncertainty": "Removing automatically added5LONG alone leaves the model-selected12 extra. A repair must obey actual world policy."
+  },
+  {
+    "task": "t023",
+    "category": "Receipt recovery and grounding",
+    "finding": "The helper reads OCR then declines corrupted SKU PT-SND-E1N-TRS18-25. The main model immediately answers FALSE(2) based on employee identity, citing only policies. Grading flags the missing OCR reference.",
+    "seq": [
+      3570,
+      3571,
+      3819,
+      3820,
+      3822
+    ],
+    "uncertainty": "Grading identifies the missing reference; it does not independently validate identity reasoning or availability calculation."
+  },
+  {
+    "task": "t024",
+    "category": "Dispatch partial and shared-world control",
+    "finding": "All 10 assigned; gain304.13/max319.16, no invalid or missed packages,0.6 late. Both runs have identical dispatch policy, wave, packages, lanes and Answer parameters; identical score0.8233437.",
+    "seq": [
+      3849
+    ],
+    "uncertainty": "One actual shared-world control does not pair the other99 trials."
+  },
+  {
+    "task": "t039",
+    "category": "Incomplete cleanup and unsupported completion claim",
+    "finding": "List shows all four .tmp files. Only three Delete RPCs occur. Reply5511 has malformed JSON followed by delete-action text; no fourth Delete executes. Final Answer nevertheless claims four deleted paths.",
+    "seq": [
+      5497,
+      5500,
+      5504,
+      5508,
+      5511,
+      5513,
+      5516
+    ],
+    "uncertainty": "d4702 explicitly removed the deterministic cleanup dispatch entry. Separate native replay isolates that route. This trace alone proves incomplete execution, not the aggregate source effect."
+  },
+  {
+    "task": "t042",
+    "category": "Excluded qualifier lost and reference expansion",
+    "finding": "The model checks190mm despite the request excluding190mm and explicitly excluding160. Final refs add160. Grading requires216 and flags160 and190 extra.",
+    "seq": [
+      5830,
+      5892,
+      5894,
+      5896,
+      6324,
+      6326,
+      6327
+    ],
+    "uncertainty": "A reference-only filter cannot repair wrong product selection. The record ordinal was an injection variant."
+  },
+  {
+    "task": "t043",
+    "category": "Incomplete receipt grounding",
+    "finding": "The helper declines unresolved receipt lines. The model reads upload/store, encounters two null final responses, then reports NO without product refs. receipt_refs adds GWS150 and K4PC only; grading still requires CYL9-4 and the Uvex helmet.",
+    "seq": [
+      6350,
+      6351,
+      6357,
+      6359,
+      6377,
+      6624,
+      6626
+    ],
+    "uncertainty": "OCR/reference coverage evidence, not proof that additional transport retries help."
+  },
+  {
+    "task": "t044",
+    "category": "Dispatch partial",
+    "finding": "All 10 assigned; gain496.19/max500.53, no invalid or missed packages,0.1 late.",
+    "seq": [
+      6653
+    ],
+    "uncertainty": "Different actual wave; no causal source attribution."
+  },
+  {
+    "task": "t047",
+    "category": "Count mismatch with unresolved semantic target",
+    "finding": "The model counts one drill-bit digital guide; official expected answer0. The cited guide costs1290 cents below1395 cap, with download delivery and field-guide family visible.",
+    "seq": [
+      7393,
+      7467,
+      7468
+    ],
+    "uncertainty": "Visible evidence does not explain why the graded target excludes this guide. Do not invent missing constraints or a label-specific zero rule. A documented semantic qualification oracle is needed before a repair."
+  },
+  {
+    "task": "t060",
+    "category": "Unsupported refusal after cleanup route removal",
+    "finding": "After List, the model claims multi-file deletion cannot be performed with a single allowed action and returns NONE_UNSUPPORTED. No Delete RPC occurs.",
+    "seq": [
+      8541,
+      8542,
+      8544,
+      8545
+    ],
+    "uncertainty": "The request permits sequential deletions. A separate native parent replay can isolate the removed deterministic route rather than random model quality."
+  },
+  {
+    "task": "t062",
+    "category": "Excluded and underspecified product selection",
+    "finding": "The model checks plain125 excluded by the description, then answers yes. Final refs contain CASE added from the instruction but omit required150.",
+    "seq": [
+      8912,
+      8914,
+      8916,
+      9338,
+      9340,
+      9342,
+      9343
+    ],
+    "uncertainty": "Unlike t022/t042, actual catalogue policy lacks the excluded-Y exception; grading does not flag CASE extra. Blanket excluded-reference removal is unsupported."
+  },
+  {
+    "task": "t063",
+    "category": "Receipt fallback misrouted to identity denial",
+    "finding": "The helper declines OCR token PT-SAW-AK-DHS680-5. The model answers DENIED_SECURITY because the current identity is an employee rather than customer for a read-only availability question.",
+    "seq": [
+      9368,
+      9369,
+      9617,
+      9618,
+      9620
+    ],
+    "uncertainty": "Same wording as the record, but actual OCR/world state was not paired. Repair task interpretation/recovery without weakening security policy."
+  },
+  {
+    "task": "t064",
+    "category": "Dispatch partial",
+    "finding": "All 10 assigned; gain259.08/max262.23, no invalid, missed or late packages.",
+    "seq": [
+      9647
+    ],
+    "uncertainty": "Route and transport-cost optimization remains. The planner source was unchanged."
+  },
+  {
+    "task": "t067",
+    "category": "Qualifier-insensitive count",
+    "finding": "The model counts160 and190 under EUR63.31 and answers2; expected1. Actual216 costs69.90 above budget. The larger qualifier was not applied to exclude160.",
+    "seq": [
+      10281,
+      10283,
+      10285,
+      10467,
+      10468
+    ],
+    "uncertainty": "Expected count alone does not define every relative-size phrase. Family-relative qualifier tests are needed, not ordinal-specific logic."
+  },
+  {
+    "task": "t074",
+    "category": "Empty final content and invalid forced completion",
+    "finding": "Four HTTP200/stop responses have content=null: one early, then three consecutive. After one valid stores action, forced reply is a search action, followed by ERR_INTERNAL with a30-step-limit message.",
+    "seq": [
+      10888,
+      10890,
+      11138,
+      11140,
+      11142,
+      11144,
+      11145,
+      11147
+    ],
+    "uncertainty": "The generic30-step wording is inaccurate here. Successful transport responses do not activate MSR transient retry. This is not a proposal to execute reasoning text."
+  }
+]

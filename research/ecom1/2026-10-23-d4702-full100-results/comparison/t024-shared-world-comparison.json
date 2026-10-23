@@ -1,0 +1,45 @@
+{
+  "scope": "One dispatch control with identical actual instruction, every observed RPC request/response and model request; not an assertion about unobserved files or an aggregate causal estimate. Transport trial/run IDs and timestamps are excluded from comparison.",
+  "record_trial_trace": {
+    "scope": "trial-24",
+    "blob": "200387a959e68856d2d86c1b55c373fc481f0243fde7d177f5679e90ef136b3d",
+    "bytes": 33372,
+    "sealed": true
+  },
+  "same_ordinal": "t024",
+  "same_instruction": true,
+  "exact_equal_dispatch_inputs": {
+    "/docs/dispatch.md": "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c",
+    "/ops/dispatch/wave-iWNjqLmp/dispatch.md": "69b172ec6024873c6513b6f4b9a218a308c146d2a7daf522e826bedd944325b8",
+    "/ops/dispatch/wave-iWNjqLmp/packages.tsv": "2034d9daf538e1bfe5795858aabf0bad3307d0d197a7d922f6eb018d0149e19c",
+    "/ops/dispatch/wave-iWNjqLmp/lanes.tsv": "8b175fa34be988c1b0d6854ef10da661e6c7dadd675f36a9bb199831439e34ce"
+  },
+  "all_six_read_content_hashes": {
+    "/AGENTS.MD": "4207e1dc51aee589d17aad3ba6ac5139a745df9e97537734de1b64d89b84dade",
+    "/docs/security.md": "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4",
+    "/docs/dispatch.md": "721ed4506208401d7a28a01c0ed858bff503b048da326d314d0eeffb6d02635c",
+    "/ops/dispatch/wave-iWNjqLmp/dispatch.md": "69b172ec6024873c6513b6f4b9a218a308c146d2a7daf522e826bedd944325b8",
+    "/ops/dispatch/wave-iWNjqLmp/packages.tsv": "2034d9daf538e1bfe5795858aabf0bad3307d0d197a7d922f6eb018d0149e19c",
+    "/ops/dispatch/wave-iWNjqLmp/lanes.tsv": "8b175fa34be988c1b0d6854ef10da661e6c7dadd675f36a9bb199831439e34ce"
+  },
+  "instruction_sha256": "c9868320b9a1ccfe40094745c791c28beeff64665fc56b47f48fa7f11c6b2bb5",
+  "all_observed_rpc_actions_exact_equal": true,
+  "rpc_actions_compared": 11,
+  "all_observed_rpc_responses_exact_equal": true,
+  "rpc_responses_compared": 11,
+  "rpc_comparison_excludes": [
+    "StartTrial/EndTrial request/response identity wrappers; actual instruction compared separately"
+  ],
+  "includes": [
+    "Tree root listing",
+    "AGENTS/security/dispatch policy Read contents",
+    "wave description/packages/lanes Read contents",
+    "Exec date and identity stdout",
+    "Answer parameters and acknowledgement"
+  ],
+  "model_request_parameters_and_messages_exact_equal": true,
+  "model_requests_compared": 1,
+  "exact_answer_equal": true,
+  "record_score": 0.8233437,
+  "own_score": 0.8233437
+}

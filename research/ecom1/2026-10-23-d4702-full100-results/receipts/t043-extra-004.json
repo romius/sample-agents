@@ -1,0 +1,24 @@
+{
+  "request": {
+    "session": "s7984",
+    "seq": 200,
+    "source": "import json\nprint(json.dumps([brain.sandbox.trace_event('jfdd875bba6ba4773a549e8703764efa9',6376,offset=24000,limit=1571)],separators=(',',':')))"
+  },
+  "response": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 1931,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 201,
+      "output_bytes": 1931,
+      "output_truncated": false,
+      "sdk_calls": 1,
+      "seq": 200,
+      "session": "s7984",
+      "step": null
+    },
+    "notices": [],
+    "output": "[{\"seq\":6376,\"text\":\"     \\\\\\\"quantity\\\\\\\": 7,\\\\n          \\\\\\\"arrival_in_days\\\\\\\": 14\\\\n        }\\\\n      ]\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-BIT-BOS-CYL9-10\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 0,\\\\n      \\\\\\\"reserved\\\\\\\": 0\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-BIT-BOS-CYL9-15\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 4,\\\\n      \\\\\\\"reserved\\\\\\\": 1\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-BIT-BOS-CYL9-4\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 8,\\\\n      \\\\\\\"reserved\\\\\\\": 1\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-3M-SF400-SMOKE\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 4,\\\\n      \\\\\\\"reserved\\\\\\\": 3\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-3M-SF400-10PK\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 3,\\\\n      \\\\\\\"reserved\\\\\\\": 3\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-3M-SF400-AMBER\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 0,\\\\n      \\\\\\\"reserved\\\\\\\": 0,\\\\n      \\\\\\\"incoming\\\\\\\": [\\\\n        {\\\\n          \\\\\\\"quantity\\\\\\\": 3,\\\\n          \\\\\\\"arrival_in_days\\\\\\\": 3\\\\n        }\\\\n      ]\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-3M-SF400-READER\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 0,\\\\n      \\\\\\\"reserved\\\\\\\": 0,\\\\n      \\\\\\\"incoming\\\\\\\": [\\\\n        {\\\\n          \\\\\\\"quantity\\\\\\\": 7,\\\\n          \\\\\\\"arrival_in_days\\\\\\\": 4\\\\n        }\\\\n      ]\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-3M-SF400-GASKET\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 0,\\\\n      \\\\\\\"reserved\\\\\\\": 0\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-UVEX-PHEOS-CLEAR\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 13,\\\\n      \\\\\\\"reserved\\\\\\\": 1\\\\n    },\\\\n    {\\\\n      \\\\\\\"sku\\\\\\\": \\\\\\\"PT-SAFE-UVEX-PHEOS-HELMET\\\\\\\",\\\\n      \\\\\\\"on_hand\\\\\\\": 7,\\\\n      \\\\\\\"reserved\\\\\\\": 0\\\\n    }\\\\n  ]\\\\n}\\\"}],\\\"reasoning\\\":{\\\"effort\\\":\\\"medium\\\"},\\\"temperature\\\":0,\\\"max_tokens\\\":2048,\\\"stream\\\":false,\\\"provider\\\":{\\\"only\\\":[\\\"deepinfra/bf16\\\"],\\\"quantizations\\\":[\\\"bf16\\\"],\\\"allow_fallbacks\\\":false,\\\"require_parameters\\\":true}}}}\\n\",\"bytes\":25571,\"next_offset\":25571,\"more\":false}]\n"
+  }
+}

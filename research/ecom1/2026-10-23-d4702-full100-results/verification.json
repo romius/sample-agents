@@ -1,0 +1,211 @@
+{
+  "job": "jfdd875bba6ba4773a549e8703764efa9",
+  "official_score": 0.8708894,
+  "all100_instructions_and_grades_checked": true,
+  "all100_final_answers_and_stdout_checked": true,
+  "successful_task_review_rows": 83,
+  "success_subfolder_sealed_files_verified": 372,
+  "model_calls": 244,
+  "total_tokens": 771806,
+  "cost_usd": 0.034498464,
+  "cost_complete": true,
+  "loss_responses": 65,
+  "loss_response_statuses": [
+    200
+  ],
+  "null_final_responses": [
+    {
+      "task": "t016",
+      "seq": 2642
+    },
+    {
+      "task": "t016",
+      "seq": 2644
+    },
+    {
+      "task": "t016",
+      "seq": 2646
+    },
+    {
+      "task": "t043",
+      "seq": 6357
+    },
+    {
+      "task": "t043",
+      "seq": 6359
+    },
+    {
+      "task": "t074",
+      "seq": 10888
+    },
+    {
+      "task": "t074",
+      "seq": 11138
+    },
+    {
+      "task": "t074",
+      "seq": 11140
+    },
+    {
+      "task": "t074",
+      "seq": 11142
+    }
+  ],
+  "loss_response_provider": "DeepInfra",
+  "loss_response_costs_match_settled_trial_totals": true,
+  "read_content_hashes_checked": 115,
+  "no_transport_error_or_retry_events_in_complete_loss_indexes": true,
+  "scope": [
+    {
+      "task": "t004",
+      "indexed_events": 29,
+      "retained_events": 29,
+      "official_scope_bytes": 33655,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t014",
+      "indexed_events": 29,
+      "retained_events": 29,
+      "official_scope_bytes": 33430,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t016",
+      "indexed_events": 45,
+      "retained_events": 45,
+      "official_scope_bytes": 180075,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t022",
+      "indexed_events": 517,
+      "retained_events": 277,
+      "official_scope_bytes": 596953,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t023",
+      "indexed_events": 275,
+      "retained_events": 152,
+      "official_scope_bytes": 316926,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t024",
+      "indexed_events": 29,
+      "retained_events": 29,
+      "official_scope_bytes": 33372,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t039",
+      "indexed_events": 41,
+      "retained_events": 41,
+      "official_scope_bytes": 145117,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t042",
+      "indexed_events": 519,
+      "retained_events": 274,
+      "official_scope_bytes": 612369,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t043",
+      "indexed_events": 297,
+      "retained_events": 164,
+      "official_scope_bytes": 472656,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t044",
+      "indexed_events": 29,
+      "retained_events": 29,
+      "official_scope_bytes": 33837,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t047",
+      "indexed_events": 271,
+      "retained_events": 148,
+      "official_scope_bytes": 330336,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t060",
+      "indexed_events": 25,
+      "retained_events": 25,
+      "official_scope_bytes": 62165,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t062",
+      "indexed_events": 527,
+      "retained_events": 278,
+      "official_scope_bytes": 657970,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t063",
+      "indexed_events": 275,
+      "retained_events": 154,
+      "official_scope_bytes": 314103,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t064",
+      "indexed_events": 29,
+      "retained_events": 29,
+      "official_scope_bytes": 33717,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t067",
+      "indexed_events": 271,
+      "retained_events": 148,
+      "official_scope_bytes": 329791,
+      "all_requests_and_model_responses_retained": true
+    },
+    {
+      "task": "t074",
+      "indexed_events": 279,
+      "retained_events": 149,
+      "official_scope_bytes": 404820,
+      "all_requests_and_model_responses_retained": true
+    }
+  ],
+  "source_rebuild_exact": true,
+  "source_build_manifest": {
+    "parent": "d4353r1/d4354r1 on d3200r2",
+    "retry_donor": "d4445r1 MSR exact AST",
+    "recovery_donor": "d3513r1 explicit missing Exec branch only",
+    "sources": {
+      "parent_agent.py": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+      "parent_readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+      "retry_donor.py": "5c9fd63873d8c709ed6e74fbc7a444a3bbeeeb76ccb448e4b6360652c4f955b8",
+      "lzpack.py": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+    },
+    "agent_sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8",
+    "bytes": 63209,
+    "changed_parent_nodes": [
+      "route_policy_docs",
+      "recoverable_lookup_error",
+      "observation",
+      "i2c_llm_narrow",
+      "Assign",
+      "For",
+      "If"
+    ],
+    "all_other_parent_nodes_preserved": true,
+    "four_llm_sites_wrapped": true,
+    "delete_404_preserved": true
+  },
+  "limits": [
+    "All100 have actual instructions, final Answer and complete stdout review; successes are not independent full action/business-fact audits.",
+    "Nine loss scopes retain selected events; only eight complete trial scopes are compared to official CAS hashes.",
+    "No causal score claim from task ordinal; most actual instructions differ.",
+    "No model calls, new evaluations, source edits or Brain publication in this audit."
+  ]
+}
