@@ -1,0 +1,8 @@
+# Every d5204 trial failed before the inventory handler ran
+
+Official job j2f9717b672c04c9a94f1df3219579692 / d5204r1 completed 2026-10-23 01:48:29 UTC: 0/100, 100 execution failures, zero model calls, $0 complete accounting. No promotion. All 100 complete trial traces (13,422,710 bytes;600 events) individually match official sealed CAS hashes. Every full agent_error has the same verified terminal AttributeError at decoded line2094/readable3914: evaluating bitgn.call as a first-class argument before ix_run is invoked. Each full instruction/error/empty stdout/EndTrial is retained. This is an actual startup failure, not evidence against the inventory algorithm's business correctness.
+
+Exact submitted65292B SHA0cb742d544039b1d9dc4a862021ee1bfe3967c2ced8082756525e075b6c1ca67 reproduces with archived parent/donor/packer/dependencies. Independent clean reproduction regenerates205 outputs byte-identically and verifies all274 original sealed files. Local Git b7d3544. Complete lossless xz archive [d6833](d6833),292292B SHA14b61a076c9f6324a8848c426977062fdb2759d8b67a54925504c1db49120f2b; [README](d6834), [root review](d6835), [archive manifest](d6836).
+
+The earlier zero-model SDK boundary probe already established direct/named callbacks work while method-value access fails; it was not repeated. Its sealed evidence is included. Existing reviewed callback successors are mechanism repairs, not a live-tested next baseline; original run handlers never executed. No provider diagnostic, paid evaluation, cancellation or production source modification here. Continue from verified d4353 rather than promote wholesale historical inventory branch. Current OCR job jc2949c1cd1b84139a2eac424ef598966 remains immutable; no additional full100 this cycle.
+

@@ -1,6 +1,6 @@
 # ECOM1 overnight handoff
 
-Updated 2026-10-23 02:16 UTC. Goal ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`.
+Updated 2026-10-23 02:33 UTC. Goal ACTIVE until explicit human stop/pause. First read `/Users/Roman_Sinyakov/.codex/attachments/0b95b164-3841-4ecc-8a62-431ed9a1aaf0/goal-objective.md`.
 
 ## Current record and queue
 
@@ -12,7 +12,7 @@ Latest eligibility refresh/submission02:10 UTC; next02:40 UTC. No further full10
 |---|---|---|
 | d4702r1 | jfdd875bba6ba4773a549e8703764efa9 | Completed01:00:39;87.08894/100;100completed/0executionfailures;$0.034498464complete. No promotion. |
 | d4955r1 | j37e3df7ac8564c0899c81a706e0aea9a | Completed01:48:01;87.107223/100;100completed0executionfailures;267calls,$0.054029475complete. No promotion; every-task audit ongoing. |
-| inventoryd5204r1 | j2f9717b672c04c9a94f1df3219579692 | Completed01:48:29;0/100;100executionfailures;0models/$0complete. Every-failure audit checking startup mechanism. |
+| inventoryd5204r1 | j2f9717b672c04c9a94f1df3219579692 | Completed01:48:29;0/100;100executionfailures;0models/$0complete. Every-failure audit complete; all100 sealed traces independently verify identical startup failure before handler execution; archive6833/finding6837. |
 | OCRd6729r1 | jc2949c1cd1b84139a2eac424ef598966 | Submitted02:10:11; one full100 queued. Exact reviewed63411B source, immutable. |
 
 ONE outstanding. This cycle’s one full100 allowance is consumed; no further submission before02:40 even though one queue slot remains. d4702 is a DIRECT successor of d4353, but92/100 instructions differ. Observed−7.63201points is not a paired causal estimate. Matching instruction text still does not prove matching worlds.
@@ -43,7 +43,9 @@ Current-record all90 success final-log review COMPLETE: `2026-10-23-d4353-succes
 
 Fallback evidence plan published archive6817/PLAN6818,Git4c8f380: planonly, no sourcepatch. Narrow perinvocation actualselectedupload/policy handoff, context/provenanceeffects separated, exactbytecaps and duplicate/conflicting source controls. Fullactualt023/t063 worlds need harvesting before whole-agent replay claims. Do not appendallcaches or duplicate alreadyvisible t043 evidence.
 
-Agents now audit newlycompleted runs: evaluation_strategy owns2026-10-23-d4955-full100-results all100instructions/17losses; score_opportunities owns its83success final-log review; integration_plan owns2026-10-23-d5204-full100-results every startup failure. Root handles publication/monitoring and future bounded evidence-transfer implementation. No human blocker. Combined reviewed recovery/currentrecord finding6820/forum6821, committed02:15:18. No more evaluations thiscycle.
+d5204 every-failure audit COMPLETE and independently reproduced: archive6833/README6834/review6835/finding6837/forum6838, Gitb7d3544. All100 sealed traces/600events,13,422,710B, exact65292B source rebuild; identical method-value AttributeError before ix_run,0models/$0complete. No business quality inference. Archive xz292292B SHA14b61a076c9f6324a8848c426977062fdb2759d8b67a54925504c1db49120f2b.
+
+Agents now audit newlycompleted d4955: evaluation_strategy owns all100instructions/17losses; its83success final-log review is complete and root publication waits for integrated seal. integration_plan now harvests complete actuald4702t023/t063 receipt worlds. score_opportunities independently reviews the new unqualified receipt-handoff prototype. Root handles publication/monitoring and future bounded evidence-transfer implementation. No human blocker. Combined reviewed recovery/currentrecord finding6820/forum6821, committed02:15:18. No more evaluations thiscycle.
 
 ## Completed diagnostics: do not repeat
 
@@ -60,3 +62,9 @@ Root correction archive6680/README6681/verify6682/forum6685/Git509e7a0: actual o
 Bobcat/msh outside-X rider is d6506r2, notes6589r2/6583. Their exclusions lane already owns deterministic count/stock scope. Review reports some unsupported exclusions still possible; do not infer causal regression freedom from differently generated short19 tasks. Their observed same-source score spread is not a calibrated noise estimate.
 
 Maintain exact tested-byte promotion for any completed100 strict winner after refreshing current record; update agent/BASELINE/README/Integrate per Brain rules and continue. Keep goal and heartbeat active. Branchfeat/ecom1-record-integration; stage explicit paths only, exclude user-owned brain-dashboard and __pycache__. Existing status/history remains in Git. Automation remains active, current record/one outstanding OCR job. Other completed full100 d4658r2 at01:22 scored91.12906,$0.029463733 with1unknowncost; ayona d5054r1 at01:49 scored79.762495,16executionfailures,$0.025610667complete. No record change. Broad Brain search timed out at4seconds during02:10refresh; known relevantd6589r2 notes rechecked instead. No speculative peer claims adopted.
+
+## Offline prototype after02:30
+
+`2026-10-23-d4353-receipt-handoff` is NOT evaluation qualified. Exactd4353 prototype64701B SHA1594a8403c660542dca851898ffc17a9cd0dd999f34dc854b09acf94f169497f; separate from submittedOCR. Per-invocation two successful Reads only; bounded observations/descriptors, no cache scan. Initial independent review found a real new request-cap regression: protected prefix plus2200CJK Read yielded66961messagebytes vs parent57447. Initial source/review preserved. Revision adds exact-range discard under pressure before normal/forced model calls, leaves parent trimming unchanged.23native+23CPython structural cases pass; revised independent review/full archived-world replay and SDK-envelope evidence still required. No live score claim; generic ref addition is separately confounded and must not be called reasoning success.
+
+New d4955 audit evidence changes future work: t063 model explicitly rereads identical actualOCR then wrongly denies employee availability; missing handoff alone cannot fix it. t043 corrupted SKU lookup misses actual mower. t005/t065 delivered counts match observed store arithmetic but omit six product references each. t076 has31calls/~33%cost, no Write RPC, final says no TSV created but declaresOK; distinct future outcome-integrity work, not retry/handoff success. Full audit still in progress.
