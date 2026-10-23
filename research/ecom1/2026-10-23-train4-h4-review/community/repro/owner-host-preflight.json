@@ -1,0 +1,82 @@
+[
+  {
+    "version": "parent",
+    "case": "clean",
+    "error": null,
+    "unmatched": [],
+    "calls": 129,
+    "writes": 1,
+    "answers": [
+      {
+        "message": "/exports/crosslist-JgSownP1.tsv",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    ],
+    "llms": 1
+  },
+  {
+    "version": "parent",
+    "case": "noisy",
+    "error": null,
+    "unmatched": [],
+    "calls": 8,
+    "writes": 0,
+    "answers": [
+      {
+        "message": "OFFLINE FALLBACK: deterministic handler declined.",
+        "outcome": "OUTCOME_NONE_UNSUPPORTED",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    ],
+    "llms": 2
+  },
+  {
+    "version": "owner_recipe",
+    "case": "clean",
+    "error": null,
+    "unmatched": [],
+    "calls": 129,
+    "writes": 1,
+    "answers": [
+      {
+        "message": "/exports/crosslist-JgSownP1.tsv",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    ],
+    "llms": 1
+  },
+  {
+    "version": "owner_recipe",
+    "case": "noisy",
+    "error": null,
+    "unmatched": [],
+    "calls": 129,
+    "writes": 1,
+    "answers": [
+      {
+        "message": "/exports/crosslist-JgSownP1.tsv",
+        "outcome": "OUTCOME_OK",
+        "refs": [
+          "/uploads/5qt53BQ6_competitor_purchase_request_ocr.txt",
+          "/docs/security.md",
+          "/docs/purchase-request-crosslist.md"
+        ]
+      }
+    ],
+    "llms": 1
+  }
+]

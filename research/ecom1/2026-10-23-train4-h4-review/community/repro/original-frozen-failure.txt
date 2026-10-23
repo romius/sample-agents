@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/vadim/Documents/experiments/bitgn-agents/grafragov-deepseek-onprem/reviews/rc7-ocr-compose/run_all.py", line 152, in <module>
+    main()
+  File "/Users/vadim/Documents/experiments/bitgn-agents/grafragov-deepseek-onprem/reviews/rc7-ocr-compose/run_all.py", line 86, in main
+    assert [oldnodes[i].name for i in changed] == ['DM', 'FC'], 'Only original DM and FC may change'
+AssertionError: Only original DM and FC may change

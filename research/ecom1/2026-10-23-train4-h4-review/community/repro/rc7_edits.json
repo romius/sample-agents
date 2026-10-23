@@ -1,0 +1,18 @@
+{
+ "base": "rc7 d6643r1 decoded payload sha256 5d0fde753ca48b406ba5055535ef42812223020fddd4715b70ba776767f7a020",
+ "edits": [
+  {
+   "id": "X10-H1",
+   "old": "^(?:[s5]ku|ku|[s5]k)\\\\s+(?!/))",
+   "new": "^(?:[^0-9A-Za-z]+\\\\s+)?(?:[s5]ku|ku|[s5]k)\\\\s+(?!/))",
+   "count": 1
+  },
+  {
+   "id": "OCR-scanline (romius d6729 port)",
+   "old": "J=text;J=C5(J);",
+   "new": "J=text;J=C5(J);J=N.sub('(?m)^[ \\\\t]*#[# \\\\t]*[sS][cC][aA][nN][lL][iI][nN][eE][ \\\\t]*#[# \\\\t]*(?=[tT][oO][tT][aA][lL] [rR][eE][qQ][uU][eE][sS][tT][eE][dD] (?:[lL][iI][nN][eE][sS]|[uU][nN][iI][tT][sS]):[ \\\\t]*[0-9]+[ \\\\t]*$)','',J);",
+   "count": 1
+  }
+ ],
+ "result_sha256": "9886cb40612a943d861d924a30e1d6709f6c191375a72735828408e3a50557f0"
+}

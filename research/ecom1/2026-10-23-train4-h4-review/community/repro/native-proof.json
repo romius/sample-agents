@@ -1,0 +1,53 @@
+{
+  "candidate": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 3322,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 4,
+      "output_bytes": 3322,
+      "output_truncated": false,
+      "sdk_calls": 2,
+      "seq": 3,
+      "session": "s8145",
+      "step": null
+    },
+    "notices": [],
+    "output": "{\"source\": \"d6855 draft exact packed rc7 two-owner recipe\", \"scope\": \"actual pre-loop module initialization and 7 component calls, not complete native agent loop\", \"rows\": [{\"name\": \"archived\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"parsed\", \"value\": {\"branch\": \"PowerTools Graz Center\", \"lines\": [{\"line_no\": 1, \"requested_qty\": 9, \"competitor_code\": \"CMP-E2YTNR\", \"description\": \"Einhell TE-AC 270/50 Silent Plus compressor\", \"properties\": {\"noise_db\": \"88\", \"oil_free\": \"false\", \"tank_l\": \"50\"}}, {\"line_no\": 2, \"requested_qty\": 8, \"competitor_code\": \"CMP-4ZDNFH\", \"description\": \"Karcher K4 Power Control Car and Home set\", \"properties\": {\"accessory_set\": \"CAR AND HOME KIT\", \"detergent_system\": \"PLUG and clean\", \"flow_l_h\": \"410\", \"pump_material\": \"aluminium\"}}, {\"line_no\": 3, \"requested_qty\": 6, \"competitor_code\": \"CMP-JWCCAD\", \"description\": \"3M SecureFit 400 clear safety glasses with foam gasket\", \"properties\": {\"adjustable\": \"false\", \"certification\": \"EN166\", \"pack_count\": \"1\"}}, {\"line_no\": 4, \"requested_qty\": 4, \"competitor_code\": \"CMP-32UKXC\", \"description\": \"Aircraft Compact-Air 240/24 compressor accessory set\", \"properties\": {\"intake_l_min\": \"240\", \"noise_db\": \"97\", \"wheels\": \"true\"}}, {\"line_no\": 5, \"requested_qty\": 9, \"competitor_code\": \"CMP-HKAPN2\", \"description\": \"UVEX PHEOS HELMET VISOR kit\", \"properties\": {\"pack_count\": \"1\", \"protection_type\": \"face\", \"size\": \"helmet mounted\"}}]}}}, {\"name\": \"clean\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"parsed\", \"value\": {\"branch\": \"PowerTools Graz Center\", \"lines\": [{\"line_no\": 1, \"requested_qty\": 9, \"competitor_code\": \"CMP-E2YTNR\", \"description\": \"Einhell TE-AC 270/50 Silent Plus compressor\", \"properties\": {\"noise_db\": \"88\", \"oil_free\": \"false\", \"tank_l\": \"50\"}}, {\"line_no\": 2, \"requested_qty\": 8, \"competitor_code\": \"CMP-4ZDNFH\", \"description\": \"Karcher K4 Power Control Car and Home set\", \"properties\": {\"accessory_set\": \"CAR AND HOME KIT\", \"detergent_system\": \"PLUG and clean\", \"flow_l_h\": \"410\", \"pump_material\": \"aluminium\"}}, {\"line_no\": 3, \"requested_qty\": 6, \"competitor_code\": \"CMP-JWCCAD\", \"description\": \"3M SecureFit 400 clear safety glasses with foam gasket\", \"properties\": {\"adjustable\": \"false\", \"certification\": \"EN166\", \"pack_count\": \"1\"}}, {\"line_no\": 4, \"requested_qty\": 4, \"competitor_code\": \"CMP-32UKXC\", \"description\": \"Aircraft Compact-Air 240/24 compressor accessory set\", \"properties\": {\"intake_l_min\": \"240\", \"noise_db\": \"97\", \"wheels\": \"true\"}}, {\"line_no\": 5, \"requested_qty\": 9, \"competitor_code\": \"CMP-HKAPN2\", \"description\": \"UVEX PHEOS HELMET VISOR kit\", \"properties\": {\"pack_count\": \"1\", \"protection_type\": \"face\", \"size\": \"helmet mounted\"}}]}}}, {\"name\": \"duplicate-noisy\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"declined\", \"error\": \"OCR must identify one branch and both complete totals\"}}, {\"name\": \"wrong-total\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"declined\", \"error\": \"OCR row or quantity total mismatch\"}}, {\"name\": \"archived-t023\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": [[4, 38990, \"PT-MOW-STI-MA235-AK30\"], [14, 17990, \"PT-WASH-OS-UAI35\"]]}, {\"name\": \"clean\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": [[4, 38990, \"PT-MOW-STI-MA235-AK30\"], [14, 17990, \"PT-WASH-OS-UAI35\"]]}, {\"name\": \"bad-subtotal\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": null}]}\n"
+  },
+  "parent": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 2152,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 5,
+      "output_bytes": 2152,
+      "output_truncated": false,
+      "sdk_calls": 2,
+      "seq": 4,
+      "session": "s8145",
+      "step": null
+    },
+    "notices": [],
+    "output": "{\"source\": \"d6643r1 exact packed parent\", \"scope\": \"actual pre-loop module initialization and 7 component calls, not complete native agent loop\", \"rows\": [{\"name\": \"archived\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"declined\", \"error\": \"OCR must identify one branch and both complete totals\"}}, {\"name\": \"clean\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"parsed\", \"value\": {\"branch\": \"PowerTools Graz Center\", \"lines\": [{\"line_no\": 1, \"requested_qty\": 9, \"competitor_code\": \"CMP-E2YTNR\", \"description\": \"Einhell TE-AC 270/50 Silent Plus compressor\", \"properties\": {\"noise_db\": \"88\", \"oil_free\": \"false\", \"tank_l\": \"50\"}}, {\"line_no\": 2, \"requested_qty\": 8, \"competitor_code\": \"CMP-4ZDNFH\", \"description\": \"Karcher K4 Power Control Car and Home set\", \"properties\": {\"accessory_set\": \"CAR AND HOME KIT\", \"detergent_system\": \"PLUG and clean\", \"flow_l_h\": \"410\", \"pump_material\": \"aluminium\"}}, {\"line_no\": 3, \"requested_qty\": 6, \"competitor_code\": \"CMP-JWCCAD\", \"description\": \"3M SecureFit 400 clear safety glasses with foam gasket\", \"properties\": {\"adjustable\": \"false\", \"certification\": \"EN166\", \"pack_count\": \"1\"}}, {\"line_no\": 4, \"requested_qty\": 4, \"competitor_code\": \"CMP-32UKXC\", \"description\": \"Aircraft Compact-Air 240/24 compressor accessory set\", \"properties\": {\"intake_l_min\": \"240\", \"noise_db\": \"97\", \"wheels\": \"true\"}}, {\"line_no\": 5, \"requested_qty\": 9, \"competitor_code\": \"CMP-HKAPN2\", \"description\": \"UVEX PHEOS HELMET VISOR kit\", \"properties\": {\"pack_count\": \"1\", \"protection_type\": \"face\", \"size\": \"helmet mounted\"}}]}}}, {\"name\": \"duplicate-noisy\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"declined\", \"error\": \"OCR must identify one branch and both complete totals\"}}, {\"name\": \"wrong-total\", \"fn\": \"FC\", \"status\": \"PASS\", \"result\": {\"status\": \"declined\", \"error\": \"OCR must identify one branch and both complete totals\"}}, {\"name\": \"archived-t023\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": null}, {\"name\": \"clean\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": [[4, 38990, \"PT-MOW-STI-MA235-AK30\"], [14, 17990, \"PT-WASH-OS-UAI35\"]]}, {\"name\": \"bad-subtotal\", \"fn\": \"DM\", \"status\": \"PASS\", \"result\": null}]}\n"
+  },
+  "preflight": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 544,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 6,
+      "output_bytes": 544,
+      "output_truncated": false,
+      "sdk_calls": 3,
+      "seq": 5,
+      "session": "s8145",
+      "step": null
+    },
+    "notices": [],
+    "output": "{\"verdict\": \"WARN\", \"checks\": [[\"PASS\", \"size\", \"65281 bytes\"], [\"PASS\", \"parse\", \"parses; top-level reached the first SDK call\"], [\"PASS\", \"imports\", \"all module-level imports resolve\"], [\"PASS\", \"monty\", \"no banned constructs at module level\"], [\"PASS\", \"dup-defs\", \"1 top-level defs, no shadows\"], [\"WARN\", \"sdk-api\", \"lz-wrapped source: SDK calls live inside the encoded blob, not in the visible text\"], [\"PASS\", \"outcomes\", \"none literal (variables only)\"], [\"PASS\", \"moat\", \"kept: crosslist markers intact (1,1,1)\"]], \"src_bytes\": 65281}\n"
+  }
+}

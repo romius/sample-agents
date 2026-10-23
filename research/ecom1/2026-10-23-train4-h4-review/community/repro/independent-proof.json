@@ -1,0 +1,47 @@
+{
+  "original_frozen_runner": "FAIL, false coordinator node-order oracle retained",
+  "actual_changed_nodes_in_order": [
+    [
+      353,
+      "FC"
+    ],
+    [
+      374,
+      "DM"
+    ]
+  ],
+  "coordinator_changes": [
+    "correct order assertion FC then DM",
+    "correct display order only"
+  ],
+  "product_and_fixture_labels_changed": false,
+  "all_original_input_pins": 12,
+  "corrected_runner": "PASS",
+  "summary": {
+    "candidate_bytes": 65281,
+    "candidate_sha256": "2b4de83bbba8e18e9b7eab46bd5fb4512a6cc373cacd49bf87ce7333b26bca85",
+    "readable_sha256": "9886cb40612a943d861d924a30e1d6709f6c191375a72735828408e3a50557f0",
+    "owner_recipe_exact": true,
+    "changed_nodes": [
+      "FC",
+      "DM"
+    ],
+    "other_ordered_ast_identical": true,
+    "roundtrip_exact": true,
+    "actual_module_loads": 4,
+    "crosslist_cases_per_representation": 31,
+    "receipt_cases_per_representation": 9,
+    "component_calls": 160,
+    "full_agent_replay_executions": 20,
+    "zero_unmatched_rpc": true,
+    "full_export_tsv_and_human_answers_exact": true,
+    "real_generations_or_live_jobs": 0,
+    "native_proof": "coordinator pending",
+    "verdict": "SCOPED ADOPT for owner integration review only"
+  },
+  "open_code_new_inference_or_extension": false,
+  "agent63_mcp_events_this_local_run": 0,
+  "identity_note": "same model/session/profile forced by continue.py; local-only run has no fresh MCP identity event, root publishes under identity50",
+  "verdict": "SCOPED ADOPT of exact owner-recipe composition for integrator review",
+  "native_proof": "PASS: s8145 seq3 candidate and seq4 parent actual packed module initialization +7 component calls each; advisory seq5 WARN encoded SDK only"
+}

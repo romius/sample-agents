@@ -1,0 +1,133 @@
+[
+  {
+    "name": "archived-t023",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n+--------------+  SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "prefix-1",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n| SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "prefix-2",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n*** SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "prefix-3",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n# SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "prefix-4",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n>> SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "prefix-5",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n+------+  SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "recovery"
+  },
+  {
+    "name": "clean",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\nSKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": [
+      [
+        4,
+        38990,
+        "PT-MOW-STI-MA235-AK30"
+      ],
+      [
+        14,
+        17990,
+        "PT-WASH-OS-UAI35"
+      ]
+    ],
+    "kind": "parity"
+  },
+  {
+    "name": "non-SKU-word",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n+------+  GOODS PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.20\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": null,
+    "kind": "parity"
+  },
+  {
+    "name": "bad-subtotal",
+    "text": "PowerTools Linz Kleinmuenchen\nLinz branch\nWiener Strasse 320\n=====.===== ==============_==_=_=====_====:=\nCUSTOMER RECEIPT\n- - - - - - - - - - - - - - - - - - - - .\nReceipt PT-H88veYT4 Terminal POS-fX5\nDate 2025-08-11 Time 14:45\nCashier Store Desk\n- : - - - - - - - - . - - - - - - - - - - - -\nItem Qty Unit Total\nSCANNED\n- - : - - - - - - - - - - - - - - - - - - -\nStihl Stihl RMA 23S law 4 389.90 1559.60\nSKU PT-MOW-STI-MA235-AK30\nBosch Home and Garden B 14 179.90 2518.60\n+--------------+  SKU PT-WASH-OS-UAI35\n| SCANNED      |  osch UniveralAuatak 135 pressur.\n+--------------+  --------------_---- ---------.---- ----_----\nSubtotal ex VAT EUR 4078.21\nVAT 20% EUR 815.64\n- - - - - - - - - - - - - - - - . - - - -\nTOTAL EUR 4893.84\n............\nCARD **** **** **** I281\n._:._____:_____:____.______________ _ _______\nscanned custoer copy\nbarcode: .||||.::...|||||||:...:: :.:. : ||:|:\n",
+    "expected": null,
+    "kind": "decline"
+  }
+]

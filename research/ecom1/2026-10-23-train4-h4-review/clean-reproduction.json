@@ -1,0 +1,53 @@
+{
+  "status": "PASS",
+  "command": "env -u PYTHONDONTWRITEBYTECODE /private/tmp/ecom1-uv-cache/archive-v0/r9YlNqEbpR-drZJxnu69d/bin/python research/ecom1/2026-10-23-train4-h4-review/reproduce.py",
+  "python": "3.14.3",
+  "pydantic-monty": "1.2.0",
+  "whole_agent_executions": 64,
+  "module_runtime_evaluations": 80,
+  "byte_identical_outputs": 8,
+  "external_bytecode_flag_required": false,
+  "outputs": [
+    {
+      "path": "parent.py",
+      "bytes": 65281,
+      "sha256": "2b4de83bbba8e18e9b7eab46bd5fb4512a6cc373cacd49bf87ce7333b26bca85"
+    },
+    {
+      "path": "parent-readable.py",
+      "bytes": 106047,
+      "sha256": "9886cb40612a943d861d924a30e1d6709f6c191375a72735828408e3a50557f0"
+    },
+    {
+      "path": "agent.py",
+      "bytes": 65355,
+      "sha256": "dcd8c371d7d214cff7f2e8e83cb467e9b41e4e3f21fd4292fc9cdf6c77455d4f"
+    },
+    {
+      "path": "readable.py",
+      "bytes": 106144,
+      "sha256": "97e3c6d1290f61d6f740a5b966f83391859617d12ea2f1993f629b1df33f77ad"
+    },
+    {
+      "path": "formatted-readable.py",
+      "bytes": 138890,
+      "sha256": "ef2a9c30cfceed9e38d3065d81142dc9728833e7fc103d253dc3e5c53d3fcd75"
+    },
+    {
+      "path": "build-result.json",
+      "bytes": 960,
+      "sha256": "3320cb31fc3970098e08b736d5f65f5748dfade91cd6290ba0037ce5a9ee17b9"
+    },
+    {
+      "path": "replay-results.json",
+      "bytes": 2168315,
+      "sha256": "add858ee45cb5304eab60cadf80216161d9cff082ea617b4708885b3e34c2977"
+    },
+    {
+      "path": "analysis.json",
+      "bytes": 23374,
+      "sha256": "d8f1999ac73746ac771d065399951fccae3fab5d7a590ddae0ffdfc527025b58"
+    }
+  ],
+  "scope": "Clean temporary-copy offline reproduction. Fixed archived model replies; no paid calls, live-world requests or score inference."
+}

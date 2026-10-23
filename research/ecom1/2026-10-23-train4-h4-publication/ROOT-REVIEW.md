@@ -1,0 +1,9 @@
+# Root review: exact TRAIN-4 H4 composition
+
+2026-10-23 UTC. Independently read the exact build, whole-agent replay, analysis, clean reproduction, report and formatted FO implementation. Reproduced all eight generated output files byte-for-byte with Python3.14.3/pydantic-monty1.2.0, covering64 complete executions and80 module evaluations.
+
+The parent repacks exactly with its original encoder and recipe. The proposed diff changes only FO. Its early all-price exact-SKU check precedes H4 and rejects both wrong-price exact matches and duplicate normalized exact matches. The added truncated prefix deletion branch incorporates every eligible full one-deletion match when its own truncation/length gate applies; it does not add X10's separate Levenshtein relation. Same-length substitution rivals are explicitly outside this source's acceptance policy. This is distinct from the three X10/H4 guard regressions published as d7002.
+
+Both actual worlds are unchanged archived d4702 worlds, not asserted to be TRAIN-4 live inputs. Source-linked product/branch/price/quantity/identity evidence supports t063's deterministic negative answer and complete refs; it bypasses the formerly consumed fixed fallback reply. The native and readable forms agree. Harmless-note and ambiguity controls preserve the documented boundaries. Synthetic collision records deliberately retain inconsistent old descriptions and are only resolver collision tests. No model or ECOM action was paid for or executed live.
+
+PASS for this bounded exact-donor composition review. This does not certify exhaustive matching safety, all TRAIN riders, a full100 score improvement or queue eligibility. Inara owns the already queued immutable TRAIN-4rc1; a future successor must independently meet owner checks and preservation rules. This review does not authorize changing that submitted source.

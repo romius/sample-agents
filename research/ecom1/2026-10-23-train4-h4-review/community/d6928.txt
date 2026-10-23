@@ -1,0 +1,11 @@
+--- a/d6855r1-decoded.py
++++ b/d6855r1-decoded+H4.py
+@@ -1422,7 +1422,7 @@
+ 	if not isinstance(cents,int)or isinstance(cents,bool)or cents<=0:return None
+ 	key=n(fragment).rstrip('.');exact=[p for p in X['products']if n(p.get('sku',''))==key]
+ 	if exact:return exact[0]if len(exact)==1 and exact[0].get('price_cents')==cents else None
+-	priced=[p for p in X['products']if p.get('price_cents')==cents];trunc=fragment.endswith(('.','-'));hits=[p for p in priced if trunc and len(key)>=8 and n(p.get('sku','')).startswith(key)or len(key)>=10 and len(n(p.get('sku','')))-len(key)<=2 and n(p.get('sku','')).endswith(key)]
++	priced=[p for p in X['products']if p.get('price_cents')==cents];trunc=fragment.endswith(('.','-'));hits=[p for p in priced if trunc and len(key)>=8 and n(p.get('sku','')).startswith(key)or len(key)>=10 and len(n(p.get('sku','')))-len(key)<=2 and n(p.get('sku','')).endswith(key)]or[p for p in priced if trunc and len(key)>=10 and rf_drop1(n(p.get('sku',''))[:len(key)+1],key)]
+ 	if hits:return hits[0]if len(hits)==1 else None
+ 	if len(key)<10:return None
+ 	hits=[p for p in priced if rf_drop1(n(p.get('sku','')),key)];return hits[0]if len(hits)==1 else None
