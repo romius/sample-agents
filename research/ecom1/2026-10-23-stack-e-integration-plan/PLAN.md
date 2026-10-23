@@ -1,11 +1,11 @@
-# Current integration plan — d4353r1 (updated01:26UTC)
+# Current integration plan — d4353r1 (updated01:37UTC)
 
 This section supersedes the historical STACK E plan below. Start from current verified recordd4353r1,63211B,94.72095/100;exactinstalledd298r19/sourcehash588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e. Readabled4354r1,buildd4355r1,packerd3268r2. Exactbuildclosure andall100audit arein2026-10-23-d4353-record-review. Ourcompleted d4702directlydescendsfromthisparent,scoring87.08894;92/100instructionsdiffer,soits−7.63201pointdeltaisnotapairedcausalestimate.
 
 | Area | Current decision | Evidence / gate |
 |---|---|---|
 | Parent behavior | Inherit d4353 unchanged, including receipt recovery, stock/cleanup, injection, existing staff/discount/existence/3DS and Delete404 containment. | Exactbuild reproduction;100completed94.72095. Do notduplicatehandlers. |
-| OCR layout | First eligible minimal candidate: one assignment,63411B SHA420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8. | ParserfunctionidenticaltoStackE;300parserchecks+112wholeagentreplayspassonnewparent. Independentreview/cleanarchive/Git+Brainpending. |
+| OCR layout | First eligible minimal candidate: one assignment,63411B SHA420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8. | ParserfunctionidenticaltoStackE;300parserchecks+112wholeagentreplayspassonnewparent. Both independent reviews and clean archive extraction/repacking PASS. Exact candidate d6729r1, archive d6728 (495files/1187491B, SHAe19207c4e4373c516f5e470c7ad3b1a0dd159924e6abc66da3cafc4be8600ebd), Git47912eb. |
 | Cleanup | Retain deterministic success path; pursue narrow partial-error uncertainty repair separately. | d4702 disabled cleanup. Actualt039deleted3of4aftermalformedmodelJSONandfalsecompletion;48 whole-agent cells now reproduce all seven archived d4702 requests and its false completion. Parent deletes all four under a declared simulated fourth-delete acknowledgement; injected unconfirmed fourth-delete error still produces partial OUTCOME_OK. |
 | Exec404 | Preserve narrow missing-executable coverage as separate integration after native wholeagent and benign checks. | The exact d4353 recovery helper excludes Exec404 entirely after its Delete404 special case. The narrow donor would add coverage for not_found plus runtime-tool-not-found; it is not a replacement of the broad Stack E guard. No mutation retry. |
 | Inference | Rebase design, do not transplant oldcontrol-flowremoval. | d4353mainbitgn.llmisoutsidebroadtry;StackE3main+forcedretryabsent. Archive6676oldparent194+28+10checksismechanismevidence. Newrouter/helper/main/forced,cancellation,SDK429andmutationchecksrequired. |

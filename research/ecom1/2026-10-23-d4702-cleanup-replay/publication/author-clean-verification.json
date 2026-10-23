@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "archive": "/tmp/ecom1-d4702-cleanup-replay.zip",
+  "archive_sha256": "e86ff6a49ab13d90f8088bc705e5dd9b445eeae9ead089d8d0409f4ff8bf9917",
+  "archive_bytes": 2469825,
+  "members": 27,
+  "manifest_sha256": "79e29d64cc8fee316fcdb521536a7f60630710aeaf6cadc13a31aa84ba5a3dfa",
+  "deterministic_two_builds_identical": true,
+  "all_members_exact": true,
+  "clean_reproduction": {
+    "directory": "/var/folders/px/h2tbfkd177v7w8r4xg5h7ycw0000gn/T/d4702-cleanup-clean-um19awn0/review",
+    "python": "3.14.3",
+    "pydantic_monty": "1.2.0",
+    "script": "reproduce.py",
+    "executions": 56,
+    "all_sealed_files_unchanged": true
+  },
+  "scope": "Archived-world mechanism evidence. No actual inference or ECOM calls. Unobserved successful Delete responses explicitly simulated. No full100 causal score estimate."
+}

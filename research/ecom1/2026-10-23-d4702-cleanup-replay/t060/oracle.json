@@ -1,0 +1,16 @@
+{
+  "rule": "Actual instruction requests all files under explicit root; all9 List entries are files; no suffix filter. No candidate parser used.",
+  "expected_deletes": [
+    "/tmp/cleanup-6JCNXc4q/cache-note-07.tmp",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-00.tmp",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-02.tmp",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-03.txt",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-04.log",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-05.tmp",
+    "/tmp/cleanup-6JCNXc4q/queue-fragment-06.log",
+    "/tmp/cleanup-6JCNXc4q/stale-export-01.log",
+    "/tmp/cleanup-6JCNXc4q/stale-export-08.log"
+  ],
+  "expected_message": "/tmp/cleanup-6JCNXc4q/cache-note-07.tmp\n/tmp/cleanup-6JCNXc4q/queue-fragment-00.tmp\n/tmp/cleanup-6JCNXc4q/queue-fragment-02.tmp\n/tmp/cleanup-6JCNXc4q/queue-fragment-03.txt\n/tmp/cleanup-6JCNXc4q/queue-fragment-04.log\n/tmp/cleanup-6JCNXc4q/queue-fragment-05.tmp\n/tmp/cleanup-6JCNXc4q/queue-fragment-06.log\n/tmp/cleanup-6JCNXc4q/stale-export-01.log\n/tmp/cleanup-6JCNXc4q/stale-export-08.log",
+  "actual_deletes": []
+}

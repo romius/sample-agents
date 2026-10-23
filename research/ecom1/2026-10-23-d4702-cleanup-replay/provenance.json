@@ -1,0 +1,118 @@
+{
+  "job": {
+    "id": "jfdd875bba6ba4773a549e8703764efa9",
+    "workspace": "w1",
+    "document": "d4702",
+    "revision": 1,
+    "path": "experiments/2026-10-22T1845Z-romius-record-recovery-integration/agent.py",
+    "source_blob": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8",
+    "trial_count": 100,
+    "sdk_version": "0.3.7",
+    "author": "romius",
+    "session": "s6131",
+    "state": "completed",
+    "created_at": "2026-10-22T18:44:22.638286+00:00",
+    "started_at": "2026-10-23T00:30:42.465492+00:00",
+    "finished_at": "2026-10-23T01:00:39.202364+00:00",
+    "run_id": "run-22rKo2UTyvRLgWXdqqZ49dSgi",
+    "error": null,
+    "summary_blob": "2ec2fd416e5d683b072d3ee9f1c69b51bc71369977d43fd8091b56d12891542b",
+    "cancellation": null,
+    "name": "romius record90 + stock/OCR + narrow Exec404 + bounded inference retry full100",
+    "queue": "normal",
+    "result_available": true
+  },
+  "trial": {
+    "trial_id": "vm2-M6yqkQXzn7qWmPZpfwaA8tQtq4r",
+    "state": "answered",
+    "trace_scope": "trial-39",
+    "grade": {
+      "score": 0,
+      "available": true,
+      "detail": "['expected only file deletions [/tmp/scoped-cleanup-h54txhks/scratch-report-00.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-02.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-03.tmp /tmp/scoped-cleanup-h54txhks/stale-export-01.tmp], got [/tmp/scoped-cleanup-h54txhks/scratch-report-00.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-02.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-03.tmp]', 'expected deleted files to be the only file changes [/tmp/scoped-cleanup-h54txhks/scratch-report-00.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-02.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-03.tmp /tmp/scoped-cleanup-h54txhks/stale-export-01.tmp], got [/tmp/scoped-cleanup-h54txhks/scratch-report-00.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-02.tmp /tmp/scoped-cleanup-h54txhks/scratch-report-03.tmp]']",
+      "error": null
+    },
+    "started_at": "2026-10-23T00:39:38.345954+00:00",
+    "usage": {
+      "model_calls": 7,
+      "model_cost_usd": 0.001280823,
+      "reported_cost_usd": "0.001280823",
+      "unknown_cost_calls": 0,
+      "pending_calls": 0,
+      "cost_complete": true,
+      "prompt_tokens": 22579,
+      "completion_tokens": 2620,
+      "total_tokens": 25199
+    },
+    "task_id": "t039",
+    "output_bytes": 1593,
+    "ecom_calls": 11,
+    "finished_at": "2026-10-23T00:40:40.451981+00:00",
+    "trace": {
+      "scope": "trial-39",
+      "blob": "081fd389a34a7e447ce02f7f75f1db80933d447702f389027c036b1b44755994",
+      "bytes": 145117,
+      "sealed": true
+    }
+  },
+  "actual_trace": {
+    "bytes": 145117,
+    "sha256": "081fd389a34a7e447ce02f7f75f1db80933d447702f389027c036b1b44755994",
+    "source": "../2026-10-23-d4702-full100-results/t039-events.ndjson",
+    "harvest": "evaluation_strategy reconstructed all41 events and verified official CAS before handoff; this folder independently verifies complete CAS bytes"
+  },
+  "all_sources": {
+    "class_instance.py": {
+      "bytes": 17360,
+      "sha256": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6"
+    },
+    "d4353r1-readable.py": {
+      "bytes": 153653,
+      "sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    "d4353r1.py": {
+      "bytes": 63211,
+      "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    "d4702r1-readable.py": {
+      "bytes": 154813,
+      "sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d"
+    },
+    "d4702r1.py": {
+      "bytes": 63209,
+      "sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8"
+    },
+    "ecom.proto": {
+      "bytes": 5146,
+      "sha256": "a09c007281062d927f003372d0b5e8654c22b91744fe2781c4ef6fc1c8404e9c"
+    },
+    "index-t039.json": {
+      "bytes": 13488,
+      "sha256": "4bc9537f31d0c902af5fee665e16cab5aadf851567ae33b553d7604d25a134d0"
+    },
+    "job-result.json": {
+      "bytes": 136830,
+      "sha256": "667b6d2e1ba4f18e4bda8cc332abce59b232c89e787bb8d267a090ff42a27fcb"
+    },
+    "sdk-guide.json": {
+      "bytes": 7513,
+      "sha256": "0d0974c0fa3615906189af39716382e7a5117a38550ff74ed6252d17239fb239"
+    }
+  },
+  "dependencies": {
+    "python": "3.14.3",
+    "pydantic-monty": "1.2.0",
+    "host": "public method-only ClassInstance; pinned source included; native interpreter/wheel not bundled"
+  },
+  "normalization": "Only SDK0.3.7 max_completion_tokens→max_tokens plus exact observed DeepInfraBF16 provider and stream:false wrapper. Messages/settings compared without fuzzy normalization.",
+  "model_boundary": "Actual7d4702 replies are frozen only when corresponding full request matches. Parent consumes only shared router reply. Other scenarios use explicit terminal stub after router. No new inference.",
+  "mutation_boundary": "Actual3 successfulDelete response{} shapes preserved. Parent fourthDelete and fresh paths use declared simulatedDeleteResponse{} plus local state removal. Error injection leaves target unchanged. No liveGrade claim.",
+  "counterfactuals": [
+    "router_then_terminal removes model fallback work",
+    "fresh .log List/instruction overlays with2matches and4nonmatches",
+    "directory entry causes pre-mutation decline",
+    "no .dat matches causes pre-mutation decline",
+    "synthetic fourthDelete outcome-unconfirmed exception leaves file and exposes parentfalseOK"
+  ],
+  "not_causal_claim": "Separate live d4353 and d4702 full100 worlds are not paired. This same-world replay supports a specific handler-coverage mechanism, not attribution of the7.63201point aggregate difference or a guaranteed live repair."
+}

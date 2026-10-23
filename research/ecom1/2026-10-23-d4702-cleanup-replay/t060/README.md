@@ -1,0 +1,11 @@
+# Separate t060 all-files witness: eight executions
+
+This extension leaves the original t03948-cell report unchanged. Eight additional exact-source whole-agent executions compare d4353r1 and d4702r1, packed/readable, CPython/native method-only ClassInstance, on the same actual t060 world.
+
+All25 events,62165 bytes, match official CAS `fb120fbc6584a2a0c3a8d0a482c95991928ec6c605ededf630b61542306b21c2`. Trial `vm2-M6yqkQXzn7qWmPZpfwaA8tQtq5D` belongs to the same d4702 job. Its instruction asks to delete all files beneath `/tmp/cleanup-6JCNXc4q`, leaving everything else alone, then return sorted paths. The actual List8542 contains nine files with `.tmp`, `.txt` and `.log` extensions. Since the request says all files, the independent oracle includes all nine, without any suffix filter.
+
+The archived model lists the directory, then response8544 reports `OUTCOME_NONE_UNSUPPORTED`, claiming multi-file deletion cannot be performed with a single allowed action. There are no Delete requests. The actual grade is0 for the unsupported outcome. The exact d4702 replay matches all three model wire requests, every RPC and the final Answer. Thus this is a separate fallback failure, not the malformed-action sequence in t039.
+
+The parent matches its all-files cleanup template, consumes the identical router request/reply, selects all nine returned file paths and returns their exact sorted list with `OUTCOME_OK`. **All nine Delete acknowledgements and local state removals are declared simulations**, because this trace contains no actual Delete. The empty reply follows the pinned DeleteResponse schema and observed t039 successes; it does not establish real server acceptance, future recovery or a live grade.
+
+All four forms agree exactly, with zero unmatched RPCs. No production candidate was changed and no inference was performed. `replay.py` reuses the exact base host definitions with this separately reconstructed archived world; its hash is recorded. Run it with Python3.14.3/pydantic-monty1.2.0. `world.json`, `oracle.json` and `replay-results.json` are regenerated locally. Parent vs child full100 runs are not paired worlds, and the combined56 offline executions are not independent benchmark tasks or a score estimate.

@@ -1,0 +1,51 @@
+{"status": "verified complete CAS", "events": 41, "models": 7, "listed_entries": 8, "expected_deletes": 4, "actual_deletes": 3}
+{
+  "status": "passed",
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "executions": 48,
+  "cases": [
+    "actual_frozen",
+    "router_then_terminal",
+    "fresh_suffix",
+    "fresh_directory_decline",
+    "fresh_no_match_decline",
+    "partial_delete_error"
+  ],
+  "exact_trace_sha256": "081fd389a34a7e447ce02f7f75f1db80933d447702f389027c036b1b44755994",
+  "native_host": "public method-only ClassInstance",
+  "actual_wire_replay": "d4702 all7requests match after SDK completion-token alias/providerwrapper; d4353 onlysharedrouterrequest executed and matched",
+  "all_four_forms_equal": true,
+  "zero_unmatched_calls": true,
+  "actual_model_calls": 0,
+  "actual_ecom_calls": 0,
+  "scope": "Archived-world mechanism evidence; fourth Delete success is simulated. Fresh fixtures and failure injection declared. No real provider recovery or live grade claim."
+}
+{
+  "status": "passed",
+  "executions": 8,
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "trace_sha256": "fb120fbc6584a2a0c3a8d0a482c95991928ec6c605ededf630b61542306b21c2",
+  "trace_events": 25,
+  "shared_host_source_sha256": "28fe97b43b68d02b1010836a7114ddddf1d8a4886c2ea988005fd72d065943e8",
+  "zero_unmatched_calls": true,
+  "all_four_forms_equal": true,
+  "actual_d4702_all3_wire_requests_exact": true,
+  "parent_shared_router_wire_request_exact": true,
+  "parent9successful_deletes_simulated": true,
+  "model_calls": 0,
+  "ecom_calls": 0,
+  "limits_note": "Frozen actual model replies; all parent Delete acknowledgements/state changes simulated, not actual server outcomes. No task-grade or aggregate-score causal claim."
+}
+PASS exact CAS/source pins,48 original +8 separate executions, all preserved files unchanged.

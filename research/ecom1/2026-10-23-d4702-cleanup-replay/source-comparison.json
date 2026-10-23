@@ -1,0 +1,34 @@
+{
+  "source_files": {
+    "d4353r1.py": {
+      "source_path": "research/ecom1/2026-10-22-record-integration/parent_agent.py",
+      "bytes": 63211,
+      "sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e"
+    },
+    "d4353r1-readable.py": {
+      "source_path": "research/ecom1/2026-10-22-record-integration/parent_readable.py",
+      "bytes": 153653,
+      "sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b"
+    },
+    "d4702r1.py": {
+      "source_path": "research/ecom1/2026-10-22-record-integration/agent.py",
+      "bytes": 63209,
+      "sha256": "b5bf80e4eb3eb4f5ee86dfad2442606e33da8102a9edbac85222ecc395d507f8"
+    },
+    "d4702r1-readable.py": {
+      "source_path": "research/ecom1/2026-10-22-record-integration/readable.py",
+      "bytes": 154813,
+      "sha256": "b6b1fd92d1770c736e4f19e2ebcc33af1559fa9a7e8345957fcc4cb347f87f3d"
+    }
+  },
+  "function_i2c_cleanup_ast_identical": true,
+  "I2C_MODULES": {
+    "d4353r1-readable.py": "[['cleanup', i2c_cleanup], ['stock_butnot', i2c_stock_butnot]]",
+    "d4702r1-readable.py": "[['stock_butnot', i2c_stock_butnot]]"
+  },
+  "actual_t039_instruction": "Under /tmp/scoped-cleanup-H54TXHks, delete only files whose basename ends exactly in `.tmp`. Leave every other file there untouched. Return only the deleted paths, one per line, sorted alphabetically.",
+  "matches_supported_template": true,
+  "parsed_root": "/tmp/scoped-cleanup-H54TXHks",
+  "parsed_extension": ".tmp",
+  "scope": "Static source/template comparison. Complete48-cell exact-source behavioral evidence is separately preserved in replay-results.json."
+}
