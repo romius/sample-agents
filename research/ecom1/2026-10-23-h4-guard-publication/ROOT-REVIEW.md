@@ -1,0 +1,9 @@
+# Root review: exact d7019 all-fuzzy-path guard
+
+Read the exact source diff, build, resolver test driver, seeded forensic generator and report. Clean-copy reproduction with Python3.14.3/pydantic-monty1.2.0 regenerated all five outputs byte-for-byte: original parent/H4 repacks, exact d7019 packing,336 parser/resolver cells,18,180 seeded k0 CPython evaluations and93 native inherited-hit witness evaluations.
+
+The expanded witness appends GH to both the candidate and rival. In the original exact-other-price witness, the parent already declines before H4; in the longer-prefix version the guard newly vetoes H4. These are separate controls. Original substitution rivals demonstrate inherited full-drop-one acceptance; the all-path guard removes that too. The31 k0full lost occurrences are10 unique fragment/price pairs; full is the generator's label, although it still truncates SKUs. These are acceptance-policy changes, not31 verified customer failures or new wrong picks. The explicit compressor witness makes the competing price-versus-string ambiguity policy reviewable.
+
+The guard's `is` comparison preserves selected object identity in tested native and CPython cases. Duplicate-hit counts and other-price duplicates have explicit controls. Exact/direct-prefix early returns remain outside the new fuzzy guard. Actual receipt parsing preserves line identities, but this module review does not claim new whole-agent or live results. Expected identities in neutral fixtures express the rule under test, not an oracle for arbitrary OCR truth.
+
+Exact source fits65,511 bytes, only25 bytes remaining, SHA191f573a281237af0bab8de514a5b73b37460dd7afcb6c1ea52805126e0e5d28. This is bobcat d7019r1, not inara's H4-only-scoped rc2. The latter needs its own exact source/build/regression review. Do not transplant this size, guard policy or test approval to that unpublished replacement. No source integration or paid evaluation was performed.

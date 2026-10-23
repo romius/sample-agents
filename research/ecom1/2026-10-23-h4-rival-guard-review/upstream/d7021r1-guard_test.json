@@ -1,0 +1,338 @@
+{
+ "fixtures": [
+  [
+   "PT-DRL-MAXK-ABCDEF alone",
+   [
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF"
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDEF@101",
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDEF@101 (rev order)",
+   [
+    null,
+    null,
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDGF@100",
+   [
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDGF@100 (rev order)",
+   [
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDGF@101",
+   [
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEF + rival PT-DRL-MAK-ABCDGF@101 (rev order)",
+   [
+    "PT-DRL-MAXK-ABCDEF",
+    "PT-DRL-MAXK-ABCDEF",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH alone",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    "PT-DRL-MAXK-ABCDEFGH"
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDEFGH@101",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDEFGH@101 (rev order)",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDGFGH@100",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDGFGH@100 (rev order)",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDGFGH@101",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ],
+  [
+   "PT-DRL-MAXK-ABCDEFGH + rival PT-DRL-MAK-ABCDGFGH@101 (rev order)",
+   [
+    null,
+    "PT-DRL-MAXK-ABCDEFGH",
+    null
+   ]
+  ]
+ ],
+ "held": [
+  [
+   "t023",
+   [
+    [
+     "PT-HDG-STI-HSA50-AK10",
+     "PT-HDG-STI-HSA50-AK10",
+     "PT-HDG-STI-HSA50-AK10"
+    ],
+    [
+     "PT-GRD-MET-W18-125-4AH",
+     "PT-GRD-MET-W18-125-4AH",
+     "PT-GRD-MET-W18-125-4AH"
+    ],
+    [
+     "PT-SND-EIN-TERS18-25",
+     "PT-SND-EIN-TERS18-25",
+     "PT-SND-EIN-TERS18-25"
+    ],
+    [
+     "PT-BIT-ALP-HSS-REDUCED",
+     "PT-BIT-ALP-HSS-REDUCED",
+     "PT-BIT-ALP-HSS-REDUCED"
+    ]
+   ]
+  ],
+  [
+   "t063",
+   [
+    [
+     null,
+     "PT-SAW-MAK-DHS680-5AH",
+     "PT-SAW-MAK-DHS680-5AH"
+    ],
+    [
+     "PT-MOW-STI-RMA235-AK30",
+     "PT-MOW-STI-RMA235-AK30",
+     "PT-MOW-STI-RMA235-AK30"
+    ],
+    [
+     "PT-BIT-BOS-CYL9-12",
+     "PT-BIT-BOS-CYL9-12",
+     "PT-BIT-BOS-CYL9-12"
+    ],
+    [
+     "PT-BLA-BOS-EXPWOOD-190",
+     "PT-BLA-BOS-EXPWOOD-190",
+     "PT-BLA-BOS-EXPWOOD-190"
+    ]
+   ]
+  ]
+ ],
+ "receipts": "8/8 identical H4 vs H4+guard",
+ "robust": {
+  "k0.": {
+   "rc7(d6855)": {
+    "right": 1989,
+    "wrong": 0,
+    "none": 31
+   },
+   "rc7+H4": {
+    "right": 1989,
+    "wrong": 0,
+    "none": 31
+   },
+   "rc7+H4+guard": {
+    "right": 1989,
+    "wrong": 0,
+    "none": 31
+   }
+  },
+  "k0-": {
+   "rc7(d6855)": {
+    "right": 293,
+    "wrong": 0,
+    "none": 1727
+   },
+   "rc7+H4": {
+    "right": 528,
+    "wrong": 0,
+    "none": 1492
+   },
+   "rc7+H4+guard": {
+    "right": 309,
+    "wrong": 0,
+    "none": 1711
+   }
+  },
+  "k0full": {
+   "rc7(d6855)": {
+    "right": 861,
+    "wrong": 0,
+    "none": 1159
+   },
+   "rc7+H4": {
+    "right": 861,
+    "wrong": 0,
+    "none": 1159
+   },
+   "rc7+H4+guard": {
+    "right": 830,
+    "wrong": 0,
+    "none": 1190
+   }
+  },
+  "k1.": {
+   "rc7(d6855)": {
+    "right": 729,
+    "wrong": 1,
+    "none": 1290
+   },
+   "rc7+H4": {
+    "right": 1367,
+    "wrong": 1,
+    "none": 652
+   },
+   "rc7+H4+guard": {
+    "right": 1035,
+    "wrong": 1,
+    "none": 984
+   }
+  },
+  "k1-": {
+   "rc7(d6855)": {
+    "right": 113,
+    "wrong": 0,
+    "none": 1907
+   },
+   "rc7+H4": {
+    "right": 282,
+    "wrong": 0,
+    "none": 1738
+   },
+   "rc7+H4+guard": {
+    "right": 124,
+    "wrong": 0,
+    "none": 1896
+   }
+  },
+  "k1full": {
+   "rc7(d6855)": {
+    "right": 435,
+    "wrong": 0,
+    "none": 1585
+   },
+   "rc7+H4": {
+    "right": 531,
+    "wrong": 0,
+    "none": 1489
+   },
+   "rc7+H4+guard": {
+    "right": 439,
+    "wrong": 0,
+    "none": 1581
+   }
+  },
+  "k2.": {
+   "rc7(d6855)": {
+    "right": 282,
+    "wrong": 0,
+    "none": 1738
+   },
+   "rc7+H4": {
+    "right": 756,
+    "wrong": 0,
+    "none": 1264
+   },
+   "rc7+H4+guard": {
+    "right": 498,
+    "wrong": 0,
+    "none": 1522
+   }
+  },
+  "k2-": {
+   "rc7(d6855)": {
+    "right": 39,
+    "wrong": 0,
+    "none": 1981
+   },
+   "rc7+H4": {
+    "right": 133,
+    "wrong": 0,
+    "none": 1887
+   },
+   "rc7+H4+guard": {
+    "right": 46,
+    "wrong": 0,
+    "none": 1974
+   }
+  },
+  "k2full": {
+   "rc7(d6855)": {
+    "right": 183,
+    "wrong": 0,
+    "none": 1837
+   },
+   "rc7+H4": {
+    "right": 256,
+    "wrong": 0,
+    "none": 1764
+   },
+   "rc7+H4+guard": {
+    "right": 182,
+    "wrong": 0,
+    "none": 1838
+   }
+  }
+ },
+ "cross": {
+  "rc7(d6855)": {
+   "wrong": 518,
+   "n": 20000
+  },
+  "rc7+H4": {
+   "wrong": 637,
+   "n": 20000
+  },
+  "rc7+H4+guard": {
+   "wrong": 516,
+   "n": 20000
+  }
+ }
+}

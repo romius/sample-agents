@@ -1,0 +1,2490 @@
+{
+  "scope": "Exact complete pre-bootstrap modules; resolver/parser only, not whole agent or live inference. Neutral oracles state rule behavior, not arbitrary OCR truth.",
+  "source_pins": {
+    "parent": "9886cb40612a943d861d924a30e1d6709f6c191375a72735828408e3a50557f0",
+    "H4": "97e3c6d1290f61d6f740a5b966f83391859617d12ea2f1993f629b1df33f77ad",
+    "guard": "fc443326b4cebed7473990c923f4231d6bb92a88aae57cacc988a0044c1ebc48"
+  },
+  "cases_per_arm": 56,
+  "CPython_native_evaluations": 336,
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "native_parity": true,
+  "results": {
+    "parent": [
+      {
+        "case": "original_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_unique",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_far_rival",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_equal_value_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_other_price_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_two_distinct_hits",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_wrong_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_substitution_only",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "exact_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_with_near_otherprice",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_prices_same_sku",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_same_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "same_object_alias_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_True",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": true,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_100.0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100.0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_'100'",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": "100",
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_-1",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": -1,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "nontruncated_long_candidate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "short_fragment",
+        "rows": [
+          {
+            "fragment": "PT-AK.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "t023",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t023_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      }
+    ],
+    "H4": [
+      {
+        "case": "original_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              1
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_unique",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_far_rival",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_equal_value_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_other_price_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_two_distinct_hits",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_wrong_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_substitution_only",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "exact_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_with_near_otherprice",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_prices_same_sku",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_same_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "same_object_alias_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_True",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": true,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_100.0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100.0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_'100'",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": "100",
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_-1",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": -1,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "nontruncated_long_candidate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "short_fragment",
+        "rows": [
+          {
+            "fragment": "PT-AK.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "t023",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t023_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": "PT-SAW-MAK-DHS680-5AH",
+            "identity_indices": [
+              67
+            ]
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": "PT-SAW-MAK-DHS680-5AH",
+            "identity_indices": [
+              67
+            ]
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      }
+    ],
+    "guard": [
+      {
+        "case": "original_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "original_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "both_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_exact_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_same_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "candidate_only_extended_sub_other_reverse",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_substitution_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_insertion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_100",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "old_full_drop1_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "new_H4_deletion_101",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_unique",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_far_rival",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAXK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "H4_equal_value_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_other_price_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_two_distinct_hits",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_wrong_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "H4_substitution_only",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "exact",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEF",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "exact_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_alone",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_with_near_otherprice",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_prices_same_sku",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": "PT-DRL-MAK-ABCDEFGH",
+            "identity_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "case": "direct_prefix_two_same_price",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "same_object_alias_duplicate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_True",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": true,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_100.0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 100.0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_'100'",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": "100",
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_0",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": 0,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "invalid_price_-1",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF.",
+            "price": -1,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "nontruncated_long_candidate",
+        "rows": [
+          {
+            "fragment": "PT-DRL-MAK-ABCDEF",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "short_fragment",
+        "rows": [
+          {
+            "fragment": "PT-AK.",
+            "price": 100,
+            "quantity": 1,
+            "sku": null,
+            "identity_indices": []
+          }
+        ]
+      },
+      {
+        "case": "t023",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t023_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "price": 24990,
+            "quantity": 1,
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "identity_indices": [
+              92
+            ]
+          },
+          {
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "price": 29990,
+            "quantity": 1,
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "identity_indices": [
+              71
+            ]
+          },
+          {
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "price": 10990,
+            "quantity": 1,
+            "sku": "PT-SND-EIN-TERS18-25",
+            "identity_indices": [
+              52
+            ]
+          },
+          {
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "identity_indices": [
+              14
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": "PT-SAW-MAK-DHS680-5AH",
+            "identity_indices": [
+              67
+            ]
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      },
+      {
+        "case": "t063_benign_note",
+        "rows": [
+          {
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "price": 42990,
+            "quantity": 1,
+            "sku": "PT-SAW-MAK-DHS680-5AH",
+            "identity_indices": [
+              67
+            ]
+          },
+          {
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "price": 38990,
+            "quantity": 12,
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "identity_indices": [
+              96
+            ]
+          },
+          {
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "price": 3490,
+            "quantity": 1,
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "identity_indices": [
+              22
+            ]
+          },
+          {
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "price": 4490,
+            "quantity": 1,
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "identity_indices": [
+              29
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

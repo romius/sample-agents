@@ -1,0 +1,33 @@
+{
+  "scope": "Clean-copy exact offline reproduction; no live calls",
+  "python": "3.14.3 (main, Mar 10 2026, 18:02:52) [Clang 21.1.4 ]",
+  "monty_version": "1.2.0",
+  "runs": [
+    {
+      "script": "build.py",
+      "exit_code": 0
+    },
+    {
+      "script": "review.py",
+      "exit_code": 0
+    },
+    {
+      "script": "forensic_k0.py",
+      "exit_code": 0
+    }
+  ],
+  "byte_exact_outputs": {
+    "guard-packed.py": true,
+    "build-result.json": true,
+    "fixtures.json": true,
+    "results.json": true,
+    "forensic-k0-results.json": true
+  },
+  "sha256": {
+    "guard-packed.py": "191f573a281237af0bab8de514a5b73b37460dd7afcb6c1ea52805126e0e5d28",
+    "build-result.json": "844cb6dad2babbeca51f57953b9a572de0a7a1183a700c821169c77a926a8c4e",
+    "fixtures.json": "531ea9e8c1c544acffca180593bb0fbd5814daeccfd2e32b47ddf7c768d27ddb",
+    "results.json": "b15471844f4f398096b6200cfba26497bf6d2f8f946a14e7fde46a910001fe6b",
+    "forensic-k0-results.json": "5e9503b1caea53be1924fec3df48a7079b51e03f65f6416f83e5bb16e548c4d6"
+  }
+}

@@ -1,0 +1,906 @@
+{
+  "scope": "Exact d7020 seeded k0 cells only; source-product identity is generator intent, not ground truth for ambiguous OCR. No full18,180/cross20,000/older8 claim.",
+  "generated_cases": 6060,
+  "CPython_resolver_evaluations": 18180,
+  "additional_native_lost_hit_evaluations": 93,
+  "counts": {
+    "k0.": {
+      "parent": {
+        "right": 1989,
+        "wrong": 0,
+        "none": 31
+      },
+      "H4": {
+        "right": 1989,
+        "wrong": 0,
+        "none": 31
+      },
+      "guard": {
+        "right": 1989,
+        "wrong": 0,
+        "none": 31
+      }
+    },
+    "k0-": {
+      "parent": {
+        "right": 293,
+        "wrong": 0,
+        "none": 1727
+      },
+      "H4": {
+        "right": 528,
+        "wrong": 0,
+        "none": 1492
+      },
+      "guard": {
+        "right": 309,
+        "wrong": 0,
+        "none": 1711
+      }
+    },
+    "k0full": {
+      "parent": {
+        "right": 861,
+        "wrong": 0,
+        "none": 1159
+      },
+      "H4": {
+        "right": 861,
+        "wrong": 0,
+        "none": 1159
+      },
+      "guard": {
+        "right": 830,
+        "wrong": 0,
+        "none": 1190
+      }
+    }
+  },
+  "lost_inherited_without_marker": [
+    {
+      "intended_source_sku": "PT-CMP-AIR-CA240-24",
+      "fragment": "PT-CMP-AIR-CA240-2",
+      "source_length": 19,
+      "fragment_length": 18,
+      "price": 17990,
+      "results": {
+        "parent": "PT-CMP-AIR-CA240-24",
+        "H4": "PT-CMP-AIR-CA240-24",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-CMP-AIR-CA240-6",
+          "price_cents": 12990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-13",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 1990,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-13",
+        "H4": "PT-BIT-ALP-HSS-13",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-19",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-13",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 1990,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-13",
+        "H4": "PT-BIT-ALP-HSS-13",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-19",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-19",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 2490,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-19",
+        "H4": "PT-BIT-ALP-HSS-19",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-13",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-19",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 2490,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-19",
+        "H4": "PT-BIT-ALP-HSS-19",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-13",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-19",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 2490,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-19",
+        "H4": "PT-BIT-ALP-HSS-19",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-13",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-19",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 2490,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-19",
+        "H4": "PT-BIT-ALP-HSS-19",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-13",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-ALP-HSS-19",
+      "fragment": "PT-BIT-ALP-HSS-1",
+      "source_length": 17,
+      "fragment_length": 16,
+      "price": 2490,
+      "results": {
+        "parent": "PT-BIT-ALP-HSS-19",
+        "H4": "PT-BIT-ALP-HSS-19",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-ALP-HSS-13",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-ALP-HSS-41",
+          "price_cents": 5990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-10",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 2990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-10",
+        "H4": "PT-BIT-BOS-CYL9-10",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-12",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3490,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-12",
+        "H4": "PT-BIT-BOS-CYL9-12",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-12",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3490,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-12",
+        "H4": "PT-BIT-BOS-CYL9-12",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-12",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3490,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-12",
+        "H4": "PT-BIT-BOS-CYL9-12",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-12",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3490,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-12",
+        "H4": "PT-BIT-BOS-CYL9-12",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-12",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3490,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-12",
+        "H4": "PT-BIT-BOS-CYL9-12",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-15",
+          "price_cents": 3990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-15",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-15",
+        "H4": "PT-BIT-BOS-CYL9-15",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-15",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-15",
+        "H4": "PT-BIT-BOS-CYL9-15",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-15",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-15",
+        "H4": "PT-BIT-BOS-CYL9-15",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-15",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-15",
+        "H4": "PT-BIT-BOS-CYL9-15",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BIT-BOS-CYL9-15",
+      "fragment": "PT-BIT-BOS-CYL9-1",
+      "source_length": 18,
+      "fragment_length": 17,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BIT-BOS-CYL9-15",
+        "H4": "PT-BIT-BOS-CYL9-15",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BIT-BOS-CYL9-10",
+          "price_cents": 2990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-12",
+          "price_cents": 3490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-4",
+          "price_cents": 1490,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-7",
+          "price_cents": 1990,
+          "normalized_edit_distance": 1
+        },
+        {
+          "sku": "PT-BIT-BOS-CYL9-8",
+          "price_cents": 2490,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BLA-BOS-EXPWOOD-160",
+      "fragment": "PT-BLA-BOS-EXPWOOD-16",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BLA-BOS-EXPWOOD-160",
+        "H4": "PT-BLA-BOS-EXPWOOD-160",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BLA-BOS-EXPWOOD-216",
+          "price_cents": 6990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BLA-BOS-EXPWOOD-160",
+      "fragment": "PT-BLA-BOS-EXPWOOD-16",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BLA-BOS-EXPWOOD-160",
+        "H4": "PT-BLA-BOS-EXPWOOD-160",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BLA-BOS-EXPWOOD-216",
+          "price_cents": 6990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BLA-BOS-EXPWOOD-160",
+      "fragment": "PT-BLA-BOS-EXPWOOD-16",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BLA-BOS-EXPWOOD-160",
+        "H4": "PT-BLA-BOS-EXPWOOD-160",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BLA-BOS-EXPWOOD-216",
+          "price_cents": 6990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BLA-BOS-EXPWOOD-160",
+      "fragment": "PT-BLA-BOS-EXPWOOD-16",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BLA-BOS-EXPWOOD-160",
+        "H4": "PT-BLA-BOS-EXPWOOD-160",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BLA-BOS-EXPWOOD-216",
+          "price_cents": 6990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-BLA-BOS-EXPWOOD-160",
+      "fragment": "PT-BLA-BOS-EXPWOOD-16",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 3990,
+      "results": {
+        "parent": "PT-BLA-BOS-EXPWOOD-160",
+        "H4": "PT-BLA-BOS-EXPWOOD-160",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-BLA-BOS-EXPWOOD-216",
+          "price_cents": 6990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-GRD-BOS-GWS1400-150",
+      "fragment": "PT-GRD-BOS-GWS1400-15",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 11990,
+      "results": {
+        "parent": "PT-GRD-BOS-GWS1400-150",
+        "H4": "PT-GRD-BOS-GWS1400-150",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-GRD-BOS-GWS1400-125",
+          "price_cents": 9990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-GRD-BOS-GWS1400-150",
+      "fragment": "PT-GRD-BOS-GWS1400-15",
+      "source_length": 22,
+      "fragment_length": 21,
+      "price": 11990,
+      "results": {
+        "parent": "PT-GRD-BOS-GWS1400-150",
+        "H4": "PT-GRD-BOS-GWS1400-150",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-GRD-BOS-GWS1400-125",
+          "price_cents": 9990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-MOW-EIN-GECM36-2X4",
+      "fragment": "PT-MOW-EIN-GECM36-2X",
+      "source_length": 21,
+      "fragment_length": 20,
+      "price": 29990,
+      "results": {
+        "parent": "PT-MOW-EIN-GECM36-2X4",
+        "H4": "PT-MOW-EIN-GECM36-2X4",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-MOW-EIN-GECM36-2X5",
+          "price_cents": 34990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-MOW-EIN-GECM36-2X4",
+      "fragment": "PT-MOW-EIN-GECM36-2X",
+      "source_length": 21,
+      "fragment_length": 20,
+      "price": 29990,
+      "results": {
+        "parent": "PT-MOW-EIN-GECM36-2X4",
+        "H4": "PT-MOW-EIN-GECM36-2X4",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-MOW-EIN-GECM36-2X5",
+          "price_cents": 34990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-MOW-EIN-GECM36-2X4",
+      "fragment": "PT-MOW-EIN-GECM36-2X",
+      "source_length": 21,
+      "fragment_length": 20,
+      "price": 29990,
+      "results": {
+        "parent": "PT-MOW-EIN-GECM36-2X4",
+        "H4": "PT-MOW-EIN-GECM36-2X4",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-MOW-EIN-GECM36-2X5",
+          "price_cents": 34990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-MOW-EIN-GECM36-2X5",
+      "fragment": "PT-MOW-EIN-GECM36-2X",
+      "source_length": 21,
+      "fragment_length": 20,
+      "price": 34990,
+      "results": {
+        "parent": "PT-MOW-EIN-GECM36-2X5",
+        "H4": "PT-MOW-EIN-GECM36-2X5",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-MOW-EIN-GECM36-2X4",
+          "price_cents": 29990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    },
+    {
+      "intended_source_sku": "PT-MOW-EIN-GECM36-2X5",
+      "fragment": "PT-MOW-EIN-GECM36-2X",
+      "source_length": 21,
+      "fragment_length": 20,
+      "price": 34990,
+      "results": {
+        "parent": "PT-MOW-EIN-GECM36-2X5",
+        "H4": "PT-MOW-EIN-GECM36-2X5",
+        "guard": null
+      },
+      "all_price_near_rivals": [
+        {
+          "sku": "PT-MOW-EIN-GECM36-2X4",
+          "price_cents": 29990,
+          "normalized_edit_distance": 1
+        }
+      ]
+    }
+  ],
+  "note": "The author mode named full randomly shortens the SKU even when k=0. These31 are inherited resolver acceptances now declined; not31 independently verified valid customer requests. They are not new wrong SKU selections."
+}

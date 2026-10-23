@@ -1,0 +1,19 @@
+1423c1423
+< 	key=n(fragment).rstrip('.');exact=[p for p in X['products']if n(p.get('sku',''))==key]
+---
+> 	key=n(fragment).rstrip('.');L=len(key);S=[(n(p.get('sku','')),p)for p in X['products']];exact=[p for s,p in S if s==key]
+1425c1425
+< 	priced=[p for p in X['products']if p.get('price_cents')==cents];trunc=fragment.endswith(('.','-'));hits=[p for p in priced if trunc and len(key)>=8 and n(p.get('sku','')).startswith(key)or len(key)>=10 and len(n(p.get('sku','')))-len(key)<=2 and n(p.get('sku','')).endswith(key)]or[p for p in priced if trunc and len(key)>=10 and rf_drop1(n(p.get('sku',''))[:len(key)+1],key)]
+---
+> 	priced=[(s,p)for s,p in S if p.get('price_cents')==cents];t=fragment.endswith(('.','-'));hits=[p for s,p in priced if t and L>=8 and s.startswith(key)or L>=10 and len(s)-L<=2 and s.endswith(key)]
+1427,1428c1427,1433
+< 	if len(key)<10:return None
+< 	hits=[p for p in priced if rf_drop1(n(p.get('sku','')),key)];return hits[0]if len(hits)==1 else None
+---
+> 	if L<10:return None
+> 	hits=[p for s,p in priced if t and rf_drop1(s[:L+1],key)]or[p for s,p in priced if rf_drop1(s,key)]
+> 	if len(hits)!=1:return None
+> 	for s,p in S:
+> 		b=s[:L]if t else s
+> 		if p is not hits[0]and(len(b)==L and sum(x!=y for x,y in zip(b,key))<2 or rf_drop1(s[:L+1]if t else s,key)or rf_drop1(key,s[:L-1]if t else s)):return None
+> 	return hits[0]
