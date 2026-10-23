@@ -1,0 +1,773 @@
+[
+  {
+    "name": "healthy"
+  },
+  {
+    "name": "malformed_then_valid",
+    "malformed": 1
+  },
+  {
+    "name": "length_then_valid",
+    "length": 2
+  },
+  {
+    "name": "malformed_forced",
+    "malformed": 3
+  },
+  {
+    "name": "router_503",
+    "stage": "router",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_timeout",
+    "stage": "router",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_400",
+    "stage": "router",
+    "retry": false,
+    "cancel": false,
+    "error": "HTTP 400 connection parameter invalid",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_429",
+    "stage": "router",
+    "retry": false,
+    "cancel": false,
+    "error": "OpenRouter HTTP 429: rate limited",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99,
+    "sdk_attempts": 5
+  },
+  {
+    "name": "router_unknown",
+    "stage": "router",
+    "retry": false,
+    "cancel": false,
+    "error": "database is locked",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_cancel",
+    "stage": "router",
+    "retry": false,
+    "cancel": true,
+    "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_negated_cancel",
+    "stage": "router",
+    "retry": true,
+    "cancel": false,
+    "error": "OpenRouter HTTP 503: request was not cancelled; upstream unavailable",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "router_503_recovers",
+    "stage": "router",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 1,
+    "recovery": true
+  },
+  {
+    "name": "router_timeout_recovers",
+    "stage": "router",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "router"
+    ],
+    "failures": 1,
+    "recovery": true
+  },
+  {
+    "name": "main_503",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_timeout",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_400",
+    "stage": "main",
+    "retry": false,
+    "cancel": false,
+    "error": "HTTP 400 connection parameter invalid",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_429",
+    "stage": "main",
+    "retry": false,
+    "cancel": false,
+    "error": "OpenRouter HTTP 429: rate limited",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99,
+    "sdk_attempts": 5
+  },
+  {
+    "name": "main_unknown",
+    "stage": "main",
+    "retry": false,
+    "cancel": false,
+    "error": "database is locked",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_cancel",
+    "stage": "main",
+    "retry": false,
+    "cancel": true,
+    "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_negated_cancel",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "OpenRouter HTTP 503: request was not cancelled; upstream unavailable",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99
+  },
+  {
+    "name": "main_503_recovers",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 1,
+    "recovery": true
+  },
+  {
+    "name": "main_timeout_recovers",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 1,
+    "recovery": true
+  },
+  {
+    "name": "forced_503",
+    "stage": "forced",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_timeout",
+    "stage": "forced",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_400",
+    "stage": "forced",
+    "retry": false,
+    "cancel": false,
+    "error": "HTTP 400 connection parameter invalid",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_429",
+    "stage": "forced",
+    "retry": false,
+    "cancel": false,
+    "error": "OpenRouter HTTP 429: rate limited",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3,
+    "sdk_attempts": 5
+  },
+  {
+    "name": "forced_unknown",
+    "stage": "forced",
+    "retry": false,
+    "cancel": false,
+    "error": "database is locked",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_cancel",
+    "stage": "forced",
+    "retry": false,
+    "cancel": true,
+    "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_negated_cancel",
+    "stage": "forced",
+    "retry": true,
+    "cancel": false,
+    "error": "OpenRouter HTTP 503: request was not cancelled; upstream unavailable",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 99,
+    "malformed": 3
+  },
+  {
+    "name": "forced_503_recovers",
+    "stage": "forced",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 1,
+    "recovery": true,
+    "malformed": 3
+  },
+  {
+    "name": "forced_timeout_recovers",
+    "stage": "forced",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "forced"
+    ],
+    "failures": 1,
+    "recovery": true,
+    "malformed": 3
+  },
+  {
+    "name": "helper_503",
+    "stage": "helper",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "HTTP 503 unavailable",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_timeout",
+    "stage": "helper",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_400",
+    "stage": "helper",
+    "retry": false,
+    "cancel": false,
+    "error": "HTTP 400 connection parameter invalid",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "HTTP 400 connection parameter invalid",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_429",
+    "stage": "helper",
+    "retry": false,
+    "cancel": false,
+    "error": "OpenRouter HTTP 429: rate limited",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "OpenRouter HTTP 429: rate limited",
+    "helper_failures": 99,
+    "sdk_attempts": 5
+  },
+  {
+    "name": "helper_unknown",
+    "stage": "helper",
+    "retry": false,
+    "cancel": false,
+    "error": "database is locked",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "database is locked",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_cancel",
+    "stage": "helper",
+    "retry": false,
+    "cancel": true,
+    "error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_negated_cancel",
+    "stage": "helper",
+    "retry": true,
+    "cancel": false,
+    "error": "OpenRouter HTTP 503: request was not cancelled; upstream unavailable",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 99,
+    "helper_error": "OpenRouter HTTP 503: request was not cancelled; upstream unavailable",
+    "helper_failures": 99
+  },
+  {
+    "name": "helper_503_recovers",
+    "stage": "helper",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 1,
+    "recovery": true,
+    "helper_error": "HTTP 503 unavailable",
+    "helper_failures": 1
+  },
+  {
+    "name": "helper_timeout_recovers",
+    "stage": "helper",
+    "retry": true,
+    "cancel": false,
+    "error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "fail_stages": [
+      "helper"
+    ],
+    "failures": 1,
+    "recovery": true,
+    "helper_error": "Inference outcome/cost unconfirmed: TimeoutError: The read operation timed out",
+    "helper_failures": 1
+  },
+  {
+    "name": "helper_healthy",
+    "stage": "helper",
+    "retry": false,
+    "cancel": false,
+    "helper_error": "unused",
+    "helper_failures": 0
+  },
+  {
+    "name": "transient_then400",
+    "errors": [
+      "HTTP 503 unavailable",
+      "HTTP 400 invalid parameter"
+    ]
+  },
+  {
+    "name": "transient_then_unknown",
+    "errors": [
+      "HTTP 503 unavailable",
+      "database is locked"
+    ]
+  },
+  {
+    "name": "transient_then_cancel",
+    "errors": [
+      "HTTP 503 unavailable",
+      "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}"
+    ]
+  },
+  {
+    "name": "third_attempt_success",
+    "errors": [
+      "HTTP 504 unavailable",
+      "HTTP 504 unavailable"
+    ]
+  },
+  {
+    "name": "sdk429_internal_recovery",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 0,
+    "error": "unused",
+    "sdk_attempts": 5
+  },
+  {
+    "name": "actual_http200_null_content",
+    "null_content": 3,
+    "null_responses": [
+      {
+        "id": "gen-1792715671-jDQGudMarOdOZUiE65RC",
+        "object": "chat.completion",
+        "created": 1792715671,
+        "model": "openai/gpt-oss-120b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "refusal": null,
+              "reasoning": "We need to create a TSV crosslist report based on OCR and catalogue. Need to lookup catalogue for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita saw blade 165\"}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "We need to create a TSV crosslist report based on OCR and catalogue. Need to lookup catalogue for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita saw blade 165\"}",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 4620,
+          "completion_tokens": 70,
+          "total_tokens": 4690,
+          "cost": 0.00018284,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.00018284,
+            "upstream_inference_prompt_cost": 0.00017094,
+            "upstream_inference_completions_cost": 1.19e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 60,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "id": "gen-1792715673-RXCtDlw5C3msju56FeVl",
+        "object": "chat.completion",
+        "created": 1792715673,
+        "model": "openai/gpt-oss-120b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "refusal": null,
+              "reasoning": "We need to produce a single JSON action. The task: read OCR, create TSV crosslist report at /exports/crosslist-At8kacoq.tsv. Need to generate report based on catalogue and branch info. We need to lookup catalogue products for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita Specialized saw blade set 165\"}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "We need to produce a single JSON action. The task: read OCR, create TSV crosslist report at /exports/crosslist-At8kacoq.tsv. Need to generate report based on catalogue and branch info. We need to lookup catalogue products for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita Specialized saw blade set 165\"}",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 4637,
+          "completion_tokens": 105,
+          "total_tokens": 4742,
+          "cost": 0.000189419,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000189419,
+            "upstream_inference_prompt_cost": 0.000171569,
+            "upstream_inference_completions_cost": 1.785e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 96,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      },
+      {
+        "id": "gen-1792715676-vMemUJFfq9qPTX8oqY1L",
+        "object": "chat.completion",
+        "created": 1792715676,
+        "model": "openai/gpt-oss-120b",
+        "provider": "DeepInfra",
+        "system_fingerprint": null,
+        "service_tier": "default",
+        "choices": [
+          {
+            "index": 0,
+            "logprobs": null,
+            "finish_reason": "stop",
+            "native_finish_reason": "stop",
+            "message": {
+              "role": "assistant",
+              "content": null,
+              "refusal": null,
+              "reasoning": "We need to produce a single action JSON. The task: read OCR, create TSV crosslist report at /exports/crosslist-At8kacoq.tsv. Need to generate report based on catalogue and branch info. We need to lookup catalogue products for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm etc. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita Specialized saw blade set 165\"}",
+              "reasoning_details": [
+                {
+                  "type": "reasoning.text",
+                  "text": "We need to produce a single action JSON. The task: read OCR, create TSV crosslist report at /exports/crosslist-At8kacoq.tsv. Need to generate report based on catalogue and branch info. We need to lookup catalogue products for each line. Use catalog tool. Let's search for Makita saw blade set 165 mm etc. Use catalog query.{\"tool\":\"catalog\",\"query\":\"Makita Specialized saw blade set 165\"}",
+                  "format": "unknown",
+                  "index": 0
+                }
+              ]
+            }
+          }
+        ],
+        "usage": {
+          "prompt_tokens": 4654,
+          "completion_tokens": 105,
+          "total_tokens": 4759,
+          "cost": 0.000190048,
+          "is_byok": false,
+          "prompt_tokens_details": {
+            "cached_tokens": 0,
+            "cache_write_tokens": 0,
+            "audio_tokens": 0,
+            "video_tokens": 0
+          },
+          "cost_details": {
+            "upstream_inference_cost": 0.000190048,
+            "upstream_inference_prompt_cost": 0.000172198,
+            "upstream_inference_completions_cost": 1.785e-05
+          },
+          "completion_tokens_details": {
+            "reasoning_tokens": 97,
+            "image_tokens": 0,
+            "audio_tokens": 0
+          }
+        }
+      }
+    ],
+    "forced_response": {
+      "id": "gen-1792715680-A21guYchNJP3rDi3aUln",
+      "object": "chat.completion",
+      "created": 1792715680,
+      "model": "openai/gpt-oss-120b",
+      "provider": "DeepInfra",
+      "system_fingerprint": null,
+      "service_tier": "default",
+      "choices": [
+        {
+          "index": 0,
+          "logprobs": null,
+          "finish_reason": "stop",
+          "native_finish_reason": "stop",
+          "message": {
+            "role": "assistant",
+            "content": "{\"tool\":\"read\",\"path\":\"/proc/locations/Vienna/store-vie-meidling.json\"}",
+            "refusal": null,
+            "reasoning": "We need to produce a report_completion. The user wants best supported answer, matching outcome, exact refs read. The task: they asked to create a TSV crosslist report at /exports/crosslist-At8kacoq.tsv based on OCR and policies. We attempted but didn't produce. Now they say stop working, reply with report_completion only: the best supported answer, the matching outcome and exact refs you read.\n\nWe need to assess if we can fulfill. We have OCR content, we have store location data for Vienna Meidling. Need to locate branch ID? The store file likely contains branch info. Let's read store-vie-meidling.json.",
+            "reasoning_details": [
+              {
+                "type": "reasoning.text",
+                "text": "We need to produce a report_completion. The user wants best supported answer, matching outcome, exact refs read. The task: they asked to create a TSV crosslist report at /exports/crosslist-At8kacoq.tsv based on OCR and policies. We attempted but didn't produce. Now they say stop working, reply with report_completion only: the best supported answer, the matching outcome and exact refs you read.\n\nWe need to assess if we can fulfill. We have OCR content, we have store location data for Vienna Meidling. Need to locate branch ID? The store file likely contains branch info. Let's read store-vie-meidling.json.",
+                "format": "unknown",
+                "index": 0
+              }
+            ]
+          }
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 4683,
+        "completion_tokens": 165,
+        "total_tokens": 4848,
+        "cost": 0.000201321,
+        "is_byok": false,
+        "prompt_tokens_details": {
+          "cached_tokens": 0,
+          "cache_write_tokens": 0,
+          "audio_tokens": 0,
+          "video_tokens": 0
+        },
+        "cost_details": {
+          "upstream_inference_cost": 0.000201321,
+          "upstream_inference_prompt_cost": 0.000173271,
+          "upstream_inference_completions_cost": 2.805e-05
+        },
+        "completion_tokens_details": {
+          "reasoning_tokens": 153,
+          "image_tokens": 0,
+          "audio_tokens": 0
+        }
+      }
+    }
+  },
+  {
+    "name": "write_side_effect_then_error",
+    "write_first": true,
+    "first_action": {
+      "tool": "write",
+      "path": "/exports/crosslist-JgSownP1.tsv",
+      "content": "SCRIPTED artifact"
+    },
+    "mutation_error": "BitGN HTTP 503: result unconfirmed"
+  },
+  {
+    "name": "delete_side_effect_then_error",
+    "write_first": true,
+    "first_action": {
+      "tool": "delete",
+      "path": "/exports/crosslist-JgSownP1.tsv"
+    },
+    "mutation_error": "BitGN HTTP 503: result unconfirmed"
+  },
+  {
+    "name": "exec_side_effect_then_error",
+    "write_first": true,
+    "first_action": {
+      "tool": "exec",
+      "path": "/bin/discount",
+      "args": [
+        "SCRIPTED"
+      ],
+      "stdin": ""
+    },
+    "mutation_error": "BitGN HTTP 503: result unconfirmed"
+  },
+  {
+    "name": "successful_write_then_inference_error",
+    "write_first": true,
+    "after_write_error": "HTTP 503 unavailable"
+  },
+  {
+    "name": "forced_answer_side_effect_then_error",
+    "malformed": 3,
+    "answer_error": "BitGN HTTP 503: Answer result unconfirmed"
+  },
+  {
+    "name": "mixed_sdk429_then503",
+    "stage": "main",
+    "retry": true,
+    "cancel": false,
+    "error": "HTTP 503 unavailable",
+    "fail_stages": [
+      "main"
+    ],
+    "failures": 99,
+    "sdk_attempts": 5
+  }
+]

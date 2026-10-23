@@ -1,0 +1,55 @@
+{
+  "parent": "d4353r1",
+  "parent_reproduced": true,
+  "readable_payload_ast_equal": true,
+  "unchanged_functions": [
+    "dispatch",
+    "recoverable_lookup_error",
+    "crosslist_parse_ocr",
+    "i2c_cleanup"
+  ],
+  "candidates": {
+    "sdk-only": {
+      "files": {
+        "readable.py": {
+          "bytes": 155400,
+          "sha256": "4af0e7c9a8496b11366d63253c64ccb4b84ae56ac43e071d2e6b7be460d3015b"
+        },
+        "decoded.py": {
+          "bytes": 147928,
+          "sha256": "555bd8df2a9a5e91a30071e055e8714df821bef3961d8796cea99e5bed82097e"
+        },
+        "agent.py": {
+          "bytes": 63969,
+          "sha256": "f57cd915d9ac27fea0dd54ef39cacc26858363c59a3c961a6a3db4a747655d18"
+        },
+        "candidate.diff": {
+          "bytes": 5783,
+          "sha256": "1f8c6d4783c2ae7bb9cd676589c6d9ca06396bddd8f9f93f9e0b13f414c7410d"
+        }
+      },
+      "headroom": 1567
+    },
+    "guest-owned": {
+      "files": {
+        "readable.py": {
+          "bytes": 156494,
+          "sha256": "7760590415d16843c4829ce44073fbdf4133664dc1ebe64cbda29a877e74ec0f"
+        },
+        "decoded.py": {
+          "bytes": 149022,
+          "sha256": "493342e210bbb0a4d434b8e0e321e7b283aeb667ac0b048f711bd03b5e6c134f"
+        },
+        "agent.py": {
+          "bytes": 64304,
+          "sha256": "d54f36a91a88c9b2925a68111ac4815aa6d09a3e920b4218ea38e5cec80c5dbc"
+        },
+        "candidate.diff": {
+          "bytes": 7361,
+          "sha256": "9cb80a400ab1df5bca191840d2992a4f79461a84c85682e921e1442f8ac72847"
+        }
+      },
+      "headroom": 1232
+    }
+  }
+}

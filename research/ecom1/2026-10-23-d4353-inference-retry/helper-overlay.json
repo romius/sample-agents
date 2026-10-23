@@ -1,0 +1,26 @@
+{
+  "instruction": "Do you have 1 'mystery model QZX777' (but not PT-UNKNOWN) in stock in Graz Center?",
+  "policy_path": "/docs/catalogue-lookup.md",
+  "policy": "Products live in `/proc/catalog`. Answer the SKU only when exactly one product matches. Cite the candidate and all mentioned SKUs. Otherwise clarify.",
+  "availability_policy": "Same-day stock is max(on_hand - reserved, 0). Products absent from a branch inventory have zero stock. Future availability uses arrival_in_days.",
+  "router_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "content": "{\"docs\":[]}"
+        }
+      }
+    ]
+  },
+  "helper_success_response": {
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "message": {
+          "content": "{}"
+        }
+      }
+    ]
+  }
+}

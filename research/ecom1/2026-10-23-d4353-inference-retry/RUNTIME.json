@@ -1,0 +1,20 @@
+{
+  "python": "3.14.3",
+  "pydantic-monty": "1.2.0",
+  "class_instance_source_sha256": "a27e69d1df8c46a24d996b02bb4e0bcb1aea465c3c5b3d51846c78e38f7e82c6",
+  "host_methods": [
+    "task",
+    "call",
+    "answer",
+    "llm",
+    "usage"
+  ],
+  "lazy_attributes": false,
+  "limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "build_runtime": "Python3.12.7 and3.14.3; standard library only",
+  "requirements_file": "requirements.txt"
+}

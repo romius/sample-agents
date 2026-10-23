@@ -1,0 +1,178 @@
+--- d4353r1
++++ guest-owned
+@@ -74,6 +74,58 @@
+   "catalog": ["query"], "stores": ["query"], "stock": ["store", "skus"],
+ }
+ 
++
++def inference_cancelled(exc):
++ text = str(exc)
++ for prefix in ("Inference outcome/cost unconfirmed: ", "TimeoutError: ", "ConnectionError: ", "ConnectionResetError: ", "ConnectionAbortedError: ", "ConnectionRefusedError: ", "RemoteDisconnected: "):
++  if text.startswith(prefix):
++   text = text[len(prefix):]
++ http = re.match(r"^(?:OpenRouter )?HTTP [0-9]{3}(?::| |$)", text)
++ if http:
++  text = text[http.end():].strip()
++  if text.startswith("{"):
++   try:
++    body = json.loads(text)
++   except (ValueError, TypeError):
++    return False
++   error = body.get("error") if isinstance(body, dict) else None
++   text = error.get("message", "") if isinstance(error, dict) else ""
++   if not isinstance(text, str):
++    return False
++ return re.match(r"(?i)^(?:(?:cancelled|canceled)(?:$|[: ])|(?:sandbox )?(?:job|request) (?:was )?(?:cancelled|canceled)\b|cancellation requested(?:$|[: ]))", text) is not None
++
++def inference_retryable(exc):
++ if inference_cancelled(exc):
++  return False
++ text = str(exc)
++ prefix = "Inference outcome/cost unconfirmed: "
++ if text.startswith(prefix):
++  text = text[len(prefix):]
++ if inference_cancelled(RuntimeError(text)):
++  return False
++ status = re.match(r"^(?:OpenRouter )?HTTP ([0-9]{3})(?::| |$)", text)
++ if status:
++  if status.group(1) not in ("502", "503", "504"):
++   return False
++  body = text[status.end():].strip()
++  if body.startswith(("{", "[")):
++   try:
++    body = json.loads(body)
++   except (ValueError, TypeError):
++    return False
++   if not isinstance(body, dict) or any(k in body for k in ("id", "choices", "usage")):
++    return False
++  return True
++ return text.startswith(("TimeoutError:", "ConnectionError:", "ConnectionResetError:",
++                         "ConnectionAbortedError:", "ConnectionRefusedError:", "RemoteDisconnected:"))
++
++def inference_call(*args, **kwargs):
++ for attempt in range(3):
++  try:
++   return bitgn.llm(*args, **kwargs)
++  except Exception as exc:
++   if attempt == 2 or not inference_retryable(exc):
++    raise
+ 
+ def normalize_action(function):
+   if not isinstance(function, dict):
+@@ -392,11 +444,17 @@
+   candidates = [path for path in candidates if path != "/docs/security.md"]
+   if not candidates:
+     return []
+-  response = bitgn.llm(MODEL, [
+-    {"role": "system", "content": ROUTER},
+-    {"role": "user", "content": "Store instructions (/AGENTS.MD):\n" + agents_text
+-      + "\n\nPolicy documents:\n" + "\n".join(candidates) + "\n\nUser request:\n" + instruction},
+-  ], max_completion_tokens=1024, reasoning={"effort": "low"}, temperature=0)
++  try:
++    response = inference_call(MODEL, [
++      {"role": "system", "content": ROUTER},
++      {"role": "user", "content": "Store instructions (/AGENTS.MD):\n" + agents_text
++        + "\n\nPolicy documents:\n" + "\n".join(candidates) + "\n\nUser request:\n" + instruction},
++    ], max_completion_tokens=1024, reasoning={"effort": "low"}, temperature=0)
++  except Exception as exc:
++    if inference_cancelled(exc):
++      raise
++    print("llm-guard: router", str(exc)[:200])
++    return []
+   choice = response["choices"][0]
+   if choice.get("finish_reason") == "length":
+     return []
+@@ -3334,13 +3392,15 @@
+ def i2c_llm_narrow(ins, products):
+     # one schema-checked call; the family token must already occur in the instruction
+     try:
+-        resp = bitgn.llm("openai/gpt-oss-120b", [
++        resp = inference_call("openai/gpt-oss-120b", [
+             {"role": "system", "content": "Extract catalogue constraints as one JSON object and nothing else. "
+              "Keys: family (short model token already written in the request, such as ddf485), "
+              "price_max_eur (number or null). Do not invent a model the request does not contain."},
+             {"role": "user", "content": ins}], max_completion_tokens=200, temperature=0)
+         body = ((resp.get("choices") or [{}])[0].get("message") or {}).get("content") or ""
+-    except Exception:
++    except Exception as exc:
++        if inference_cancelled(exc):
++            raise
+         return None
+     a, b = body.find("{"), body.rfind("}")
+     if a < 0 or b <= a:
+@@ -3440,6 +3500,8 @@
+         try:
+             r = fn(ins)
+         except Exception as exc:
++            if inference_cancelled(exc):
++                raise
+             print("i2c:", name, "error, falling back:", str(exc)[:160])
+             r = None
+         if r is not None:
+@@ -3487,6 +3549,7 @@
+ bootstrap_count = len(messages)
+ 
+ answered = False
++inference_failed = False
+ invalid_steps = 0
+ yes_no_asked = False
+ marker = injection_markers(INSTRUCTION)
+@@ -3553,6 +3616,8 @@
+   try:
+     i2c_res = i2c_dispatch(INSTRUCTION)
+   except Exception as exc:
++    if inference_cancelled(exc):
++      raise
+     print("i2c: dispatch failed, falling back", str(exc)[:200])
+     i2c_res = None
+   if i2c_res is not None:
+@@ -3609,8 +3674,15 @@
+ for index in range(0 if answered else MAX_STEPS):
+   while len(json.dumps(messages).encode("utf-8")) > 56000 and len(messages) > bootstrap_count + 2:
+     messages = messages[:bootstrap_count] + messages[bootstrap_count + 2:]
+-  response = bitgn.llm(MODEL, messages, max_completion_tokens=2048,
+-             reasoning={"effort": "medium"}, temperature=0)
++  try:
++    response = inference_call(MODEL, messages, max_completion_tokens=2048,
++               reasoning={"effort": "medium"}, temperature=0)
++  except Exception as exc:
++    if inference_cancelled(exc):
++      raise
++    print("llm-guard: main", str(exc)[:200])
++    inference_failed = True
++    break
+   choice = response["choices"][0]
+   content = choice["message"].get("content") or ""
+   if choice.get("finish_reason") == "length":
+@@ -3656,12 +3728,19 @@
+     break
+   messages.append({"role": "user", "content": observation(function, result)})
+ 
+-if not answered:
++if not answered and not inference_failed:
+   messages.append({"role": "user", "content": "Stop working now. Reply with report_completion only: "
+           "the best supported answer, the matching outcome and the exact refs you read."})
+   try:
+-    response = bitgn.llm(MODEL, messages, max_completion_tokens=2048,
+-              reasoning={"effort": "medium"}, temperature=0)
++    try:
++      response = inference_call(MODEL, messages, max_completion_tokens=2048,
++                reasoning={"effort": "medium"}, temperature=0)
++    except Exception as exc:
++      if inference_cancelled(exc):
++        raise
++      print("llm-guard: forced", str(exc)[:200])
++      inference_failed = True
++      response = {"choices": [{"message": {"content": ""}}]}
+     function = parse_step(response["choices"][0]["message"].get("content") or "")
+     if function["tool"] == "report_completion":
+       dispatch(function)
+@@ -3669,7 +3748,7 @@
+   except (ValueError, KeyError, IndexError, TypeError) as exc:
+     print("Forced report failed", str(exc))
+ if not answered:
+-  bitgn.answer("The sample reached its 30-step limit without completing the task.",
++  bitgn.answer("Inference failed; no further model request was issued." if inference_failed else "The sample reached its 30-step limit without completing the task.",
+         outcome="OUTCOME_ERR_INTERNAL", refs=merged_refs([], "", "OUTCOME_ERR_INTERNAL"))
+ print(bitgn.usage())
+ 

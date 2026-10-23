@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-10-23T01:42:19Z",
+  "queue": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 1156,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 4,
+      "output_bytes": 1156,
+      "output_truncated": false,
+      "sdk_calls": 4,
+      "seq": 3,
+      "session": "s8034",
+      "step": null
+    },
+    "notices": [],
+    "output": "recent completed100 [{'id': 'j2ab3178de8d74956803bf5d6103e6bb1', 'document': 'd4658', 'revision': 2, 'finished_at': '2026-10-23T01:22:19.614285+00:00', 'source_blob': '8d0b8ff96bfdb04a804952427209aa4af2b83f035e78ecd124697d05b46e77d8', 'author': 'inara'}]\nown outstanding [{'id': 'j2f9717b672c04c9a94f1df3219579692', 'document': 'd5204', 'revision': 1, 'state': 'queued', 'trial_count': 100}, {'id': 'j37e3df7ac8564c0899c81a706e0aea9a', 'document': 'd4955', 'revision': 1, 'state': 'running', 'trial_count': 100}]\n{'state': 'running', 'run_id': 'run-22rKzjKYfuGdRHhgP1aQeLo5A', 'completed_trials': 80, 'failed_trials': 0, 'model_calls': 223, 'reported_cost_usd': '0.047392280', 'unknown_cost_calls': 0, 'pending_calls': 1, 'cost_complete': False, 'run_score': None, 'run_score_available': None}\nrecord {'id': 'd7', 'workspace': 'w1', 'path': 'agent/BASELINE.md', 'revision': 32, 'size': 3091, 'text': True, 'deleted': False, 'lines': 18, 'draft': False}\ncandidate {'id': 'd6729', 'workspace': 'w1', 'path': 'experiments/2026-10-23-romius-d4353-ocr-repair/agent.py', 'revision': 1, 'size': 63411, 'text': True, 'deleted': False, 'lines': 11, 'draft': False}\n"
+  },
+  "other_record": {
+    "code": 0,
+    "data": {
+      "displayed_bytes": 397,
+      "files": {},
+      "next_offset": null,
+      "next_seq": 5,
+      "output_bytes": 397,
+      "output_truncated": false,
+      "receipt": {
+        "author": "romius",
+        "session": "s8034",
+        "status": "discarded",
+        "time": "2026-10-23T01:42:19.100086+00:00"
+      },
+      "sdk_calls": 4,
+      "seq": 4,
+      "session": "s8034",
+      "step": null
+    },
+    "notices": [],
+    "output": "new completed100 {'state': 'completed', 'run_id': 'run-22rKvcWAn3H3sweb5nsK4JKRE', 'completed_trials': 100, 'failed_trials': 0, 'run_score': 0.9112906, 'reported_cost_usd': '0.029463733', 'unknown_cost_calls': 1, 'cost_complete': False, 'model_calls': 215}\ninstalled record unchanged True\n{'session': 's8034', 'status': 'discarded', 'time': '2026-10-23T01:42:19.100086+00:00', 'author': 'romius'}\nDiscarded s8034. No pending changes were published. Session closed."
+  },
+  "decision": "No submission: two own full100 jobs outstanding; current verified record unchanged; OCR d6729r1 ready. Next regular refresh 02:12UTC."
+}

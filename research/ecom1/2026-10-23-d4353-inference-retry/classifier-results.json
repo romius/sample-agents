@@ -1,0 +1,405 @@
+{
+  "status": "PASS",
+  "cases": [
+    [
+      "HTTP 400 connection timeout unavailable",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 429: rejected",
+      false,
+      false
+    ],
+    [
+      "HTTP 401 unauthorized",
+      false,
+      false
+    ],
+    [
+      "HTTP 500 internal error",
+      false,
+      false
+    ],
+    [
+      "HTTP 503 unavailable",
+      false,
+      true
+    ],
+    [
+      "HTTP 503 request cancelled",
+      true,
+      false
+    ],
+    [
+      "Cancelled: connection closed",
+      true,
+      false
+    ],
+    [
+      "HTTP 503 request was not cancelled; unavailable",
+      false,
+      true
+    ],
+    [
+      "HTTP 400 invalid cancellation_policy",
+      false,
+      false
+    ],
+    [
+      "TimeoutError: request was not cancelled",
+      false,
+      true
+    ],
+    [
+      "Inference outcome/cost unconfirmed: TimeoutError: Request cancelled",
+      true,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"choices\":[]}",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"usage\":{}}",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"id\":\"\"}",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {broken",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"error\":{\"message\":\"upstream unavailable\"}}",
+      false,
+      true
+    ],
+    [
+      "temporary connection timeout unavailable",
+      false,
+      false
+    ],
+    [
+      "request canceled",
+      true,
+      false
+    ],
+    [
+      "Cancellation requested",
+      true,
+      false
+    ],
+    [
+      "Sandbox job cancelled",
+      true,
+      false
+    ],
+    [
+      "ConnectionError: unknown connection failure",
+      false,
+      true
+    ],
+    [
+      "OpenRouter HTTP 503: request cancelled",
+      true,
+      false
+    ],
+    [
+      "Inference outcome/cost unconfirmed: OpenRouter HTTP 503: request cancelled",
+      true,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"error\":{\"message\":\"request cancelled\"}}",
+      true,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: {\"error\":{\"message\":\"request was not cancelled; upstream unavailable\"}}",
+      false,
+      true
+    ],
+    [
+      "OpenRouter HTTP 503: [broken",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: [{\"id\":\"gen-synthetic\",\"choices\":[],\"usage\":{}}]",
+      false,
+      false
+    ],
+    [
+      "OpenRouter HTTP 503: []",
+      false,
+      false
+    ]
+  ],
+  "results": {
+    "CPython": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ]
+    ],
+    "native": [
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        true,
+        false
+      ],
+      [
+        false,
+        true
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ],
+      [
+        false,
+        false
+      ]
+    ]
+  },
+  "actual_timeout_receipts": [
+    {
+      "file": "new-failure-t003.json",
+      "sha256": "bb0bf1220b0e54dc91b75dd1ef9295dcd5c4692a2468858f4b38493bed8a336d",
+      "seq": 580,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified": true
+    },
+    {
+      "file": "new-failure-t045.json",
+      "sha256": "9015d465311d23a466e2215c49809116f2ca529f9d38a4aaa39fb71676872a69",
+      "seq": 5866,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified": true
+    },
+    {
+      "file": "new-failure-t056.json",
+      "sha256": "188ab77e1d28dda99ff52afb7554487ef652ffd9a0604aba2f4b15d0dafc9558",
+      "seq": 7176,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified": true
+    },
+    {
+      "file": "new-failure-t059.json",
+      "sha256": "9845fc853c13e33190e03208b46b0d623482a9105170002f17e682584f1b7c23",
+      "seq": 7308,
+      "error": "TimeoutError: The read operation timed out",
+      "wrapper_verified": true
+    }
+  ]
+}

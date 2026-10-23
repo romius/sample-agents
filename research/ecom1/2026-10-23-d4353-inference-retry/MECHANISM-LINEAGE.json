@@ -1,0 +1,14 @@
+{
+  "reused_from": "research/ecom1/2026-10-23-stack-e-inference-retry/guest-owned/readable.py",
+  "sha256": "1e1cf576addd9f1f4527b27581b02c6eddc22018f8bc6b6ebe6a1bc060259e21",
+  "functions": [
+    "inference_cancelled",
+    "inference_retryable",
+    "inference_call"
+  ],
+  "scope": "Previously reviewed classifier/owner mechanics only. Current source boundaries, parent, helper reachability, packer and tests are d4353-specific; no old-parent aggregate improvement claim.",
+  "local_mechanism_files": {
+    "cancellation.py": "6e3f0a823a3f963b965a13bca740a6278c553d406069b167eb91735e5246c027",
+    "guest_retry.py": "e05c59185a2cb9bd5636af67c21b7e36f15f83e5e2e766e536b398d546efb727"
+  }
+}
