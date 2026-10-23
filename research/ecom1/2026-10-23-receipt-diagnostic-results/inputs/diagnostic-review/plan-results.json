@@ -1,0 +1,131 @@
+{
+  "status": "frozen plan structural and causal-scope review passed; no model-result claim",
+  "plan_seal_sha256": "df20578d1daa74a886ea00d87603d3d06d2ff641aa3bfe9ab13a3f5ded0d25c0",
+  "sealed_files": 23,
+  "dependency_files": 14,
+  "exact_logical_cells": 20,
+  "unique_request_hashes": 6,
+  "prompt_alias_groups": [
+    {
+      "requests": [
+        "A023-P",
+        "B023-P"
+      ],
+      "logical_calls": 4,
+      "sha256": "31d4fb9f996eeb26b94293efc9ab21cf8b29f60157ff9f8b761ae2f020ed1d00"
+    },
+    {
+      "requests": [
+        "A023-H"
+      ],
+      "logical_calls": 2,
+      "sha256": "1d027fa1bd5d73759bf7f5ed4d0869e91393741031145713447120ab22690f89"
+    },
+    {
+      "requests": [
+        "A063-P",
+        "U063-P"
+      ],
+      "logical_calls": 4,
+      "sha256": "c210f3dbaf11ce8d58bc2fff1431b7bcd89075ecba6eed362f70814afd6b6233"
+    },
+    {
+      "requests": [
+        "A063-H",
+        "V063-P",
+        "V063-H"
+      ],
+      "logical_calls": 6,
+      "sha256": "a882ccf2f18f505b9191d12f175055fbce36766da578838911b52db668e24976"
+    },
+    {
+      "requests": [
+        "B023-H"
+      ],
+      "logical_calls": 2,
+      "sha256": "b98ebed23e5526dfc36618824cc1605d3bc357be312cdc816817e460a189a7b9"
+    },
+    {
+      "requests": [
+        "U063-H"
+      ],
+      "logical_calls": 2,
+      "sha256": "8183ac6144eaaa9a7cf9b159e611f3014d92eb4f7f080eda57b4ef7cf99adae5"
+    }
+  ],
+  "captured_native_executions_checked": 8,
+  "native_executions_rerun_here": 0,
+  "overlays": [
+    {
+      "fixture": "B023",
+      "before_after_content_hashes_verified": true,
+      "only_upload_content_hash_changed": true,
+      "H_only_final_user_read_exposure": true,
+      "P_prompt_identical_to_primary": true
+    },
+    {
+      "fixture": "U063",
+      "before_after_content_hashes_verified": true,
+      "only_upload_content_hash_changed": true,
+      "H_only_final_user_read_exposure": true,
+      "P_prompt_identical_to_primary": true
+    }
+  ],
+  "sizes": [
+    {
+      "request": "A023-P",
+      "SDK_arguments_default_bytes": 16602,
+      "observed_envelope_projection_default_bytes": 16730
+    },
+    {
+      "request": "A023-H",
+      "SDK_arguments_default_bytes": 19606,
+      "observed_envelope_projection_default_bytes": 19734
+    },
+    {
+      "request": "A063-P",
+      "SDK_arguments_default_bytes": 16571,
+      "observed_envelope_projection_default_bytes": 16699
+    },
+    {
+      "request": "A063-H",
+      "SDK_arguments_default_bytes": 19388,
+      "observed_envelope_projection_default_bytes": 19516
+    },
+    {
+      "request": "B023-P",
+      "SDK_arguments_default_bytes": 16602,
+      "observed_envelope_projection_default_bytes": 16730
+    },
+    {
+      "request": "B023-H",
+      "SDK_arguments_default_bytes": 19709,
+      "observed_envelope_projection_default_bytes": 19837
+    },
+    {
+      "request": "U063-P",
+      "SDK_arguments_default_bytes": 16571,
+      "observed_envelope_projection_default_bytes": 16699
+    },
+    {
+      "request": "U063-H",
+      "SDK_arguments_default_bytes": 19555,
+      "observed_envelope_projection_default_bytes": 19683
+    },
+    {
+      "request": "V063-P",
+      "SDK_arguments_default_bytes": 19388,
+      "observed_envelope_projection_default_bytes": 19516
+    },
+    {
+      "request": "V063-H",
+      "SDK_arguments_default_bytes": 19388,
+      "observed_envelope_projection_default_bytes": 19516
+    }
+  ],
+  "manual_rubric_not_auto_scored": true,
+  "provider_wire_unverified": true,
+  "ordered_plan_preserved": true,
+  "model_calls": 0,
+  "mutation_of_frozen_plan": false
+}

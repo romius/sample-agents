@@ -1,0 +1,107 @@
+{
+  "status": "PASS independent accounting integrity controls",
+  "real_trace_sha256": "9132a0080a931db689d2abeb99766a7fcb5e5a7110a069cd9fc5dc967ff9193e",
+  "real_trace_reconciled": true,
+  "real_logical_calls": 20,
+  "real_physical_attempts": 20,
+  "real_cost": {
+    "reported_cost_usd": "0.004132794",
+    "observed_cost_usd": "0.004132794",
+    "summary_declares_complete": true,
+    "unknown_attempt_costs": [],
+    "observed_tokens": {
+      "prompt_tokens": 84612,
+      "completion_tokens": 5895,
+      "total_tokens": 90507
+    },
+    "tokens_match": true,
+    "cost_match": true,
+    "cost_complete": true
+  },
+  "synthetic_resealed_counterexamples": [
+    {
+      "case": "changed_temperature",
+      "expected_issue": "exact_wire_request",
+      "reported_issues": [
+        "exact_wire_request"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "changed_observed_provider",
+      "expected_issue": "observed_provider",
+      "reported_issues": [
+        "observed_provider"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "changed_observed_model",
+      "expected_issue": "observed_model_alias",
+      "reported_issues": [
+        "observed_model_alias"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "missing_response",
+      "expected_issue": "attempt_request_terminal_count",
+      "reported_issues": [
+        "attempt_request_terminal_count"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "duplicate_sequence",
+      "expected_issue": "unordered_or_duplicate_sequence",
+      "reported_issues": [
+        "unordered_or_duplicate_sequence",
+        "StartTrial_count"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "wrong_trial",
+      "expected_issue": "event_trial_identity",
+      "reported_issues": [
+        "event_trial_identity"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "changed_cost",
+      "expected_issue": "complete_accounting_mismatch",
+      "reported_issues": [
+        "complete_accounting_mismatch"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "changed_tokens",
+      "expected_issue": "complete_accounting_mismatch",
+      "reported_issues": [
+        "complete_accounting_mismatch"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "unexpected_action",
+      "expected_issue": "unexpected_ECOM_action",
+      "reported_issues": [
+        "unexpected_ECOM_action",
+        "StartTrial_count"
+      ],
+      "cost_complete": false
+    },
+    {
+      "case": "wrong_source",
+      "expected_issue": "source_identity",
+      "reported_issues": [
+        "source_identity"
+      ],
+      "cost_complete": false
+    }
+  ],
+  "model_calls": 0,
+  "semantic_judgments": null
+}

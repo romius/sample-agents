@@ -1,0 +1,46 @@
+{
+  "scope": "Isolated local transcription and identity-join reproduction, not re-inference or automatic semantic validation",
+  "python": "3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "external_dependencies": {
+    "blinded/items.json": {
+      "bytes": 460032,
+      "sha256": "6fe011dd2802a2d756bef79ba5903feabbe12fa1d037f2eeb0f3577b52e2c987"
+    },
+    "blinded/RUBRIC.md": {
+      "bytes": 4935,
+      "sha256": "8ca133d3f6e869b2de98247f007f3752928326f3e7d684dfa2ac8dee4d04e06f"
+    },
+    "blinded/mapping-private.json": {
+      "bytes": 5281,
+      "sha256": "1871dc63241a0325b2bd455a601d651cd817ffb1539207cb535b7e35e0f22fd0"
+    },
+    "primary/FIRST-REVIEW-SEAL.json": {
+      "bytes": 583,
+      "sha256": "8d7d165b939f1df30da2e5087c7361e85903304f310eb6469330a6192c637d75"
+    },
+    "primary/first-review.json": {
+      "bytes": 40152,
+      "sha256": "60ebb1ed3f1f9e0f37e5fb14fa80d2f6b96f0341ba6532e2462a74d9f919a0a2"
+    },
+    "primary_review.py": {
+      "bytes": 9440,
+      "sha256": "0fb15ac5f8d0cab10ff6272eb89fa8414f12bd9d92e92dfe12ed9a9690bdf75c"
+    }
+  },
+  "script_outputs": [
+    {
+      "script": "write_blind_review.py",
+      "stdout": "Wrote twenty manual judgments with full evidence; no semantic scoring.\n"
+    },
+    {
+      "script": "reconcile.py",
+      "stdout": "20 full-content joins and ten manual pair identities verified; first seals unchanged.\n"
+    }
+  ],
+  "byte_exact_outputs": {
+    "blind-review.json": true,
+    "BLIND-REVIEW.md": true,
+    "reconciliation.json": true
+  },
+  "first_review_seal_unchanged": true
+}

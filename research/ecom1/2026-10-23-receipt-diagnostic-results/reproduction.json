@@ -1,0 +1,66 @@
+{
+  "status": "PASS isolated offline reproduction",
+  "python": "3.12.7 (v3.12.7:0b05ead877f, Sep 30 2024, 23:18:00) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "dependency_pins": 76,
+  "seals_verified": {
+    "primary/FIRST-REVIEW-SEAL.json": 4,
+    "independent/FIRST-REVIEW-SEAL.json": 4,
+    "independent/FINAL-SEAL.json": 9,
+    "inputs/diagnostic-plan/SHA256SUMS.json": 23,
+    "inputs/diagnostic-runner/SHA256SUMS.json": 41
+  },
+  "copied_files_compared": 238,
+  "byte_exact_all_compared_files": true,
+  "scripts": [
+    {
+      "script": "reassemble.py",
+      "stdout_sha256": "835b08c4049c0dbe4b78e8226bdfd801cdd4330270fd15e3ec2312baec1cd4d5",
+      "exit_code": 0
+    },
+    {
+      "script": "validate.py",
+      "stdout_sha256": "16237f9ae1c0d5c91cce7c78520f2765e75e46256c06599f612e9fdd18c22d43",
+      "exit_code": 0
+    },
+    {
+      "script": "test_validation.py",
+      "stdout_sha256": "11957beac0c7d011dfac7161a98e9d3794d7e11a22002d14357a5e5e05016656",
+      "exit_code": 0
+    },
+    {
+      "script": "prepare_blind.py",
+      "stdout_sha256": "f95f4023b4276ee2a75221ec809ccfa2e0454a84d15546c394a1eddc040493ac",
+      "exit_code": 0
+    },
+    {
+      "script": "primary_review.py",
+      "stdout_sha256": "fa9504fad7b9bb5f81613a71dd99ea7d0ff545b61c1165bee1f7966c85eac60b",
+      "exit_code": 0
+    },
+    {
+      "script": "make_readout.py",
+      "stdout_sha256": "3c8edb87ea4b82c3bf068b3b860348671fe16de86c2ad821c15256fd4e132252",
+      "exit_code": 0
+    },
+    {
+      "script": "independent/write_blind_review.py",
+      "stdout_sha256": "bd13d1e9dc64bccf3d5407b45a1b52421d6bc2e00455e0862e44cd648c58c33a",
+      "exit_code": 0
+    },
+    {
+      "script": "independent/reconcile.py",
+      "stdout_sha256": "85f39ced715146209e2d642e3dd0d17d796ff7a6565e368fd44bbadf03c368a0",
+      "exit_code": 0
+    },
+    {
+      "script": "exact root check_accounting.py staged in temporary sibling",
+      "stdout_sha256": "4a1fd9bad0d36e90552cfe79cc362c1f5b3e82f8070cac00ee61bdb1092f7e4d",
+      "exit_code": 0
+    }
+  ],
+  "structural_controls": 23,
+  "independent_root_controls": 10,
+  "real_model_calls": 0,
+  "semantic_labels": "Literal manual judgments transcribed and joined, never auto-scored.",
+  "raw_evidence_modified": false
+}

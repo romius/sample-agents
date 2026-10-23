@@ -1,0 +1,95 @@
+{
+  "status": "OFFLINE PREPARED; NOT SUBMITTED",
+  "logical_calls": 20,
+  "fixtures": 5,
+  "repeats": 2,
+  "plan_sha256": "6bf14797b4b0f76f56ceb2526a764d533747a2944a847b8dcfa7287c2302429b",
+  "original_plan_seal_sha256": "df20578d1daa74a886ea00d87603d3d06d2ff641aa3bfe9ab13a3f5ded0d25c0",
+  "runner_sha256": "df80e8c6c71c696c82775212235cebdf5e5f3fa36e35849da63605f6c7fe4fed",
+  "readable_bytes": 198379,
+  "readable_sha256": "d3a42d51461a67117e4db7ed353eb19f629693dd3b8c699a003da529430a0884",
+  "packed_bytes": 23837,
+  "packed_sha256": "4237825f66d2215a805d6ddd1823b9bf0e803798ce34b63aeb3b60696673626f",
+  "frozen_sha256": "6ccaf70cfdd245f5f6c69c153443aab93d67c3b5b1162424f96e8696aa8fef0b",
+  "dependencies_sha256": "3741facd6a8d47b3165acd04e48bee3f943639b9870fde1be61d99b98c8f6299",
+  "sdk": "0.3.7 archived guide; routing must be verified on any future live trace",
+  "model": "openai/gpt-oss-120b",
+  "provider": "SDK-pinned DeepInfra BF16; no provider override",
+  "settings": {
+    "max_completion_tokens": 2048,
+    "reasoning": {
+      "effort": "medium"
+    },
+    "temperature": 0
+  },
+  "request_sizes": [
+    {
+      "fixture": "A023",
+      "arm": "P",
+      "canonical_argument_bytes": 16561,
+      "default_json_argument_estimate_bytes": 16602
+    },
+    {
+      "fixture": "A023",
+      "arm": "H",
+      "canonical_argument_bytes": 19557,
+      "default_json_argument_estimate_bytes": 19606
+    },
+    {
+      "fixture": "A063",
+      "arm": "P",
+      "canonical_argument_bytes": 16530,
+      "default_json_argument_estimate_bytes": 16571
+    },
+    {
+      "fixture": "A063",
+      "arm": "H",
+      "canonical_argument_bytes": 19339,
+      "default_json_argument_estimate_bytes": 19388
+    },
+    {
+      "fixture": "B023",
+      "arm": "P",
+      "canonical_argument_bytes": 16561,
+      "default_json_argument_estimate_bytes": 16602
+    },
+    {
+      "fixture": "B023",
+      "arm": "H",
+      "canonical_argument_bytes": 19660,
+      "default_json_argument_estimate_bytes": 19709
+    },
+    {
+      "fixture": "U063",
+      "arm": "P",
+      "canonical_argument_bytes": 16530,
+      "default_json_argument_estimate_bytes": 16571
+    },
+    {
+      "fixture": "U063",
+      "arm": "H",
+      "canonical_argument_bytes": 19506,
+      "default_json_argument_estimate_bytes": 19555
+    },
+    {
+      "fixture": "V063",
+      "arm": "P",
+      "canonical_argument_bytes": 19339,
+      "default_json_argument_estimate_bytes": 19388
+    },
+    {
+      "fixture": "V063",
+      "arm": "H",
+      "canonical_argument_bytes": 19339,
+      "default_json_argument_estimate_bytes": 19388
+    }
+  ],
+  "private_wire_encoding_verified": false,
+  "guest_retries": 0,
+  "inference_exception_policy": "bounded error/stop log then rethrow; remaining cells not dispatched",
+  "raw_result_policy": "immutable response/error events; stdout previews are not linkage keys",
+  "carrier_answer": "only after all20 calls return; OUTCOME_NONE_UNSUPPORTED; grade irrelevant",
+  "ecom_actions": false,
+  "model_output_execution": false,
+  "real_model_calls_during_preparation": 0
+}
