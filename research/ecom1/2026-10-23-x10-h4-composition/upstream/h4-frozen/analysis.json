@@ -1,0 +1,674 @@
+{
+  "status": "mechanics verified; actual-world H4-only is NOT a complete repair",
+  "function_checks": [
+    {
+      "arm": "parent",
+      "cases": 14,
+      "CPython_native_equal": true
+    },
+    {
+      "arm": "H4",
+      "cases": 14,
+      "CPython_native_equal": true
+    }
+  ],
+  "unit_controls": {
+    "parent": [
+      {
+        "case": "t023",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 24990,
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "resolved": "PT-HDG-STI-HSA50-AK10",
+            "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 29990,
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "resolved": "PT-GRD-MET-W18-125-4AH",
+            "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 10990,
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "resolved": null,
+            "path": null
+          },
+          {
+            "quantity": 1,
+            "cents": 4490,
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "t063",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          },
+          {
+            "quantity": 12,
+            "cents": 38990,
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "resolved": "PT-MOW-STI-RMA235-AK30",
+            "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 3490,
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "resolved": null,
+            "path": null
+          },
+          {
+            "quantity": 1,
+            "cents": 4490,
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "resolved": "PT-BLA-BOS-EXPWOOD-190",
+            "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json"
+          }
+        ]
+      },
+      {
+        "case": "actual_saw",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "nontruncated",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "short_fragment",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-AK-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "wrong_price",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42989,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "H4_ambiguity",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "exact_other_price_collision",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "benign_exact",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5AH",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "existing_prefix",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5.",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "existing_ambiguity",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "two_dropped_characters",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-A-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "price_string",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": "42990",
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "actual_nontruncated_drillbit",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 3490,
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      }
+    ],
+    "H4": [
+      {
+        "case": "t023",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 24990,
+            "fragment": "PT-HDG-ST1-HSA50-AK10",
+            "resolved": "PT-HDG-STI-HSA50-AK10",
+            "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 29990,
+            "fragment": "PT-GRD-MET-W18-125-4AH",
+            "resolved": "PT-GRD-MET-W18-125-4AH",
+            "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 10990,
+            "fragment": "PT-SND-E1N-TRS18-25",
+            "resolved": null,
+            "path": null
+          },
+          {
+            "quantity": 1,
+            "cents": 4490,
+            "fragment": "PT-B1T-ALP-HSS-REUCED",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "t063",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          },
+          {
+            "quantity": 12,
+            "cents": 38990,
+            "fragment": "PT-MOW-STI-RMA235-A.",
+            "resolved": "PT-MOW-STI-RMA235-AK30",
+            "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json"
+          },
+          {
+            "quantity": 1,
+            "cents": 3490,
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "resolved": null,
+            "path": null
+          },
+          {
+            "quantity": 1,
+            "cents": 4490,
+            "fragment": "PT-BLA-BOS-EXPWOOD-.",
+            "resolved": "PT-BLA-BOS-EXPWOOD-190",
+            "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json"
+          }
+        ]
+      },
+      {
+        "case": "actual_saw",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "nontruncated",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "short_fragment",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-AK-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "wrong_price",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42989,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "H4_ambiguity",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "exact_other_price_collision",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "benign_exact",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5AH",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "existing_prefix",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5.",
+            "resolved": "PT-SAW-MAK-DHS680-5AH",
+            "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+          }
+        ]
+      },
+      {
+        "case": "existing_ambiguity",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-MAK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "two_dropped_characters",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 42990,
+            "fragment": "PT-SAW-A-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "price_string",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": "42990",
+            "fragment": "PT-SAW-AK-DHS680-5.",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      },
+      {
+        "case": "actual_nontruncated_drillbit",
+        "rows": [
+          {
+            "quantity": 1,
+            "cents": 3490,
+            "fragment": "PT-IT-BO5-CYL9-12",
+            "resolved": null,
+            "path": null
+          }
+        ]
+      }
+    ]
+  },
+  "actual_per_line": [
+    {
+      "task": "t023",
+      "parent": [
+        {
+          "quantity": 1,
+          "cents": 24990,
+          "fragment": "PT-HDG-ST1-HSA50-AK10",
+          "resolved": "PT-HDG-STI-HSA50-AK10",
+          "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 29990,
+          "fragment": "PT-GRD-MET-W18-125-4AH",
+          "resolved": "PT-GRD-MET-W18-125-4AH",
+          "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 10990,
+          "fragment": "PT-SND-E1N-TRS18-25",
+          "resolved": null,
+          "path": null
+        },
+        {
+          "quantity": 1,
+          "cents": 4490,
+          "fragment": "PT-B1T-ALP-HSS-REUCED",
+          "resolved": null,
+          "path": null
+        }
+      ],
+      "H4": [
+        {
+          "quantity": 1,
+          "cents": 24990,
+          "fragment": "PT-HDG-ST1-HSA50-AK10",
+          "resolved": "PT-HDG-STI-HSA50-AK10",
+          "path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 29990,
+          "fragment": "PT-GRD-MET-W18-125-4AH",
+          "resolved": "PT-GRD-MET-W18-125-4AH",
+          "path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 10990,
+          "fragment": "PT-SND-E1N-TRS18-25",
+          "resolved": null,
+          "path": null
+        },
+        {
+          "quantity": 1,
+          "cents": 4490,
+          "fragment": "PT-B1T-ALP-HSS-REUCED",
+          "resolved": null,
+          "path": null
+        }
+      ],
+      "parent_resolved": 2,
+      "H4_resolved": 2
+    },
+    {
+      "task": "t063",
+      "parent": [
+        {
+          "quantity": 1,
+          "cents": 42990,
+          "fragment": "PT-SAW-AK-DHS680-5.",
+          "resolved": null,
+          "path": null
+        },
+        {
+          "quantity": 12,
+          "cents": 38990,
+          "fragment": "PT-MOW-STI-RMA235-A.",
+          "resolved": "PT-MOW-STI-RMA235-AK30",
+          "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 3490,
+          "fragment": "PT-IT-BO5-CYL9-12",
+          "resolved": null,
+          "path": null
+        },
+        {
+          "quantity": 1,
+          "cents": 4490,
+          "fragment": "PT-BLA-BOS-EXPWOOD-.",
+          "resolved": "PT-BLA-BOS-EXPWOOD-190",
+          "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json"
+        }
+      ],
+      "H4": [
+        {
+          "quantity": 1,
+          "cents": 42990,
+          "fragment": "PT-SAW-AK-DHS680-5.",
+          "resolved": "PT-SAW-MAK-DHS680-5AH",
+          "path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json"
+        },
+        {
+          "quantity": 12,
+          "cents": 38990,
+          "fragment": "PT-MOW-STI-RMA235-A.",
+          "resolved": "PT-MOW-STI-RMA235-AK30",
+          "path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json"
+        },
+        {
+          "quantity": 1,
+          "cents": 3490,
+          "fragment": "PT-IT-BO5-CYL9-12",
+          "resolved": null,
+          "path": null
+        },
+        {
+          "quantity": 1,
+          "cents": 4490,
+          "fragment": "PT-BLA-BOS-EXPWOOD-.",
+          "resolved": "PT-BLA-BOS-EXPWOOD-190",
+          "path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json"
+        }
+      ],
+      "parent_resolved": 2,
+      "H4_resolved": 3
+    }
+  ],
+  "critical_context_difference": "Literal bare d4353 resolves2/4 on t063, not community table3/4; H4 resolves3/4 and still misses nontruncated PT-IT-BO5-CYL9-12. The published record diff targets an X10/fuzzy lineage. No X10 ported here.",
+  "exact_other_price_collision": "Fresh synthetic counterexample: parent declines, H4 selects the same-price longer SKU although an exact normalized fragment SKU exists at another price. rc7 has an all-price exact guard; bare d4353 does not. Unique H4 hit is not global ambiguity protection.",
+  "manual_t063_availability": {
+    "type": "human receipt-to-product interpretation, separately checked against actual records; not the bare resolver output or hidden grader",
+    "branch_path": "/proc/locations/Vienna/store-vie-favoriten.json",
+    "branch_open": true,
+    "lines": [
+      {
+        "sku": "PT-SAW-MAK-DHS680-5AH",
+        "product_path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+        "unit_price_cents": 42990,
+        "quantity_requested": 1,
+        "on_hand": 0,
+        "reserved": 0,
+        "available_today": 0,
+        "shortfall": 1,
+        "incoming_ignored": []
+      },
+      {
+        "sku": "PT-MOW-STI-RMA235-AK30",
+        "product_path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json",
+        "unit_price_cents": 38990,
+        "quantity_requested": 12,
+        "on_hand": 8,
+        "reserved": 1,
+        "available_today": 7,
+        "shortfall": 5,
+        "incoming_ignored": []
+      },
+      {
+        "sku": "PT-BIT-BOS-CYL9-12",
+        "product_path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+        "unit_price_cents": 3490,
+        "quantity_requested": 1,
+        "on_hand": 0,
+        "reserved": 0,
+        "available_today": 0,
+        "shortfall": 1,
+        "incoming_ignored": [
+          {
+            "quantity": 4,
+            "arrival_in_days": 1
+          }
+        ]
+      },
+      {
+        "sku": "PT-BLA-BOS-EXPWOOD-190",
+        "product_path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+        "unit_price_cents": 4490,
+        "quantity_requested": 1,
+        "on_hand": 0,
+        "reserved": 0,
+        "available_today": 0,
+        "shortfall": 1,
+        "incoming_ignored": []
+      }
+    ],
+    "subtotal_cents": 518850,
+    "today_result": "nein",
+    "outcome_if_ambiguities_resolved": "OUTCOME_OK",
+    "security_interpretation": "Task asks availability only, not a purchase mutation or foreign customer data. Actual security policy does not prohibit employee read-only stock checks. Receipt staff labels do not grant identities.",
+    "source_content_hashes": {
+      "/uploads/AztYLH6h_receipt_ocr.txt": {
+        "sha256": "b395a9a5c02318fd68d774f25e6480de326cce9723fd2b2a7877c5592b9349ce",
+        "recorded_sha256": "b395a9a5c02318fd68d774f25e6480de326cce9723fd2b2a7877c5592b9349ce"
+      },
+      "/proc/locations/Vienna/store-vie-favoriten.json": {
+        "sha256": "dda06bdf58db77d11abf3ca81022b2e331366cade7014916f06db64d76947c1b",
+        "recorded_sha256": "dda06bdf58db77d11abf3ca81022b2e331366cade7014916f06db64d76947c1b"
+      },
+      "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json": {
+        "sha256": "df143c0d3dba4fbfecae1a2794a5eac827f4b086e59c2b81be7214fa82484ddb",
+        "recorded_sha256": "df143c0d3dba4fbfecae1a2794a5eac827f4b086e59c2b81be7214fa82484ddb"
+      },
+      "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json": {
+        "sha256": "b164948c68a876095daf8316fea64e82e38b833221633eb64545ab5b684564f9",
+        "recorded_sha256": "b164948c68a876095daf8316fea64e82e38b833221633eb64545ab5b684564f9"
+      },
+      "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json": {
+        "sha256": "4e4331754a3cab5fc609920508ea1fa4815df1d1476dc00826f69af2f7a3499b",
+        "recorded_sha256": "4e4331754a3cab5fc609920508ea1fa4815df1d1476dc00826f69af2f7a3499b"
+      },
+      "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json": {
+        "sha256": "595c584eb9e6ab26f53c8152ad3b1fd0d1242b2b734165608ebc06168ef81179",
+        "recorded_sha256": "595c584eb9e6ab26f53c8152ad3b1fd0d1242b2b734165608ebc06168ef81179"
+      },
+      "/docs/security.md": {
+        "sha256": "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4",
+        "recorded_sha256": "3825ca0f0f7016d7af33288fc3d7e3068c1c5bf2c71285434e9d0ece6bfe1be4"
+      },
+      "/docs/availability-checks.md": {
+        "sha256": "64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080",
+        "recorded_sha256": "64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080"
+      },
+      "/AGENTS.MD": {
+        "sha256": "def887bb216812546f77874627124a6c266bb59628294d81d7a1f762ca2d1710",
+        "recorded_sha256": "def887bb216812546f77874627124a6c266bb59628294d81d7a1f762ca2d1710"
+      }
+    },
+    "scope": "Negative availability is supported by intended four-item mapping; actual H4-only still declines and no live final answer was generated."
+  }
+}

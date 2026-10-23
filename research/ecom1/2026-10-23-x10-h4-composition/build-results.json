@@ -1,0 +1,58 @@
+{
+  "status": "offline composition; H4 guard bypass deliberately preserved",
+  "original_X10_delta": {
+    "changed": [
+      "rcp_items#0",
+      "rcp_product#0"
+    ],
+    "added": [
+      "rcp_dist#0"
+    ],
+    "removed": []
+  },
+  "arms": {
+    "d4353": {
+      "readable_sha256": "48e517632e1b193dd83a379ea8f79aca74af9ca90f59f0a3def0d728208d1d1a",
+      "packed_sha256": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+      "packed_bytes": 63211,
+      "headroom": 2325
+    },
+    "d4353_H4": {
+      "readable_sha256": "f9352063f38e02eb831eb1a984ba9b4ef125e6ebbeb69e5daf2e201faa65a831",
+      "packed_sha256": "ae15cefc7d739ef6331ce646f24534ca90365a23133bdcf94103f6df6680c4af",
+      "packed_bytes": 63380,
+      "headroom": 2156,
+      "delta_from_uncomposed_arm": {
+        "changed": [
+          "rcp_product#0"
+        ],
+        "added": [
+          "rcp_drop1#0"
+        ],
+        "removed": []
+      }
+    },
+    "X10": {
+      "readable_sha256": "2c27fc301ce24bbb81803fa20ac105bdae7dabb990bbff5e90aef1e76932fd99",
+      "packed_sha256": "e58220a01be07757cfd722329ccdaf8d55758af4b9a7d75b86c5a63799504d2d",
+      "packed_bytes": 63589,
+      "headroom": 1947
+    },
+    "X10_H4": {
+      "readable_sha256": "f9f9c30406c5c1f0797c1b549d7a44952eab0bd9fdb7dc56dd2f357dbaa28d94",
+      "packed_sha256": "ee855ab6399676fafcda471e89855169ffca66584702897f24e523d0781998d0",
+      "packed_bytes": 63706,
+      "headroom": 1830,
+      "delta_from_uncomposed_arm": {
+        "changed": [
+          "rcp_product#0"
+        ],
+        "added": [
+          "rcp_drop1#0"
+        ],
+        "removed": []
+      }
+    }
+  },
+  "H4_branch_order": "exact/price-prefix hits, then same-price drop1 truncated prefix, then X10 fuzzy with global-rival guard only when hits remains empty"
+}

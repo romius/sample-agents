@@ -1,0 +1,24 @@
+{
+  "status": "PASS clean offline deterministic reproduction",
+  "files_compared": 44,
+  "scripts": [
+    {
+      "script": "build.py",
+      "status": "passed"
+    },
+    {
+      "script": "replay.py",
+      "status": "passed"
+    },
+    {
+      "script": "analyze.py",
+      "status": "passed"
+    },
+    {
+      "script": "resolver_controls.py",
+      "status": "passed"
+    }
+  ],
+  "model_calls": 0,
+  "original_files_unchanged": true
+}

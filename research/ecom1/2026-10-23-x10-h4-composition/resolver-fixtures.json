@@ -1,0 +1,225 @@
+{
+  "scope": "Neutral synthetic resolver-only dictionaries, not whole ECOM records or actual observed catalogue. Expected outputs document current implementations; ambiguity expectations are X10 guard-preservation controls, not hidden human intent.",
+  "fixtures": [
+    {
+      "case": "unique_truncated_drop",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        }
+      ],
+      "expected": [
+        null,
+        "drop_candidate",
+        "drop_candidate",
+        "drop_candidate"
+      ],
+      "interpretation": "H4 broadens bare parent; unique X10 fuzzy target also accepted."
+    },
+    {
+      "case": "different_price_exact_rival",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101
+        }
+      ],
+      "expected": [
+        null,
+        "drop_candidate",
+        null,
+        "drop_candidate"
+      ],
+      "interpretation": "Composition bypasses X10 global-price closer-rival rejection."
+    },
+    {
+      "case": "same_price_equal_distance_rival",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "same_price_substitution",
+          "sku": "PT-DRL-MAK-ABCDGF",
+          "price_cents": 100
+        }
+      ],
+      "expected": [
+        null,
+        "drop_candidate",
+        null,
+        "drop_candidate"
+      ],
+      "interpretation": "Composition bypasses X10 same-price nearest-distance tie rejection."
+    },
+    {
+      "case": "different_price_equal_distance_rival",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "other_price_substitution",
+          "sku": "PT-DRL-MAK-ABCDGF",
+          "price_cents": 101
+        }
+      ],
+      "expected": [
+        null,
+        "drop_candidate",
+        null,
+        "drop_candidate"
+      ],
+      "interpretation": "Composition bypasses X10 all-price equal-distance rival rejection."
+    },
+    {
+      "case": "two_H4_hits",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "second_drop",
+          "sku": "PT-DRL-MAYK-ABCDEF",
+          "price_cents": 100
+        }
+      ],
+      "expected": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "interpretation": "Ambiguous H4 hits remain rejected."
+    },
+    {
+      "case": "unique_nontruncated_drop",
+      "fragment": "PT-DRL-MAK-ABCDEF",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        }
+      ],
+      "expected": [
+        null,
+        null,
+        "drop_candidate",
+        "drop_candidate"
+      ],
+      "interpretation": "H4 does not broaden nontruncated input; X10 fuzzy route unchanged."
+    },
+    {
+      "case": "nontruncated_exact_rival",
+      "fragment": "PT-DRL-MAK-ABCDEF",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101
+        }
+      ],
+      "expected": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "interpretation": "X10 global rival guard remains active without H4 cut trigger."
+    },
+    {
+      "case": "exact_same_price",
+      "fragment": "PT-DRL-MAK-ABCDEF",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "exact",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 100
+        }
+      ],
+      "expected": [
+        "exact",
+        "exact",
+        "exact",
+        "exact"
+      ],
+      "interpretation": "Clean exact match retained."
+    },
+    {
+      "case": "wrong_price_only",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 101
+        }
+      ],
+      "expected": [
+        null,
+        null,
+        null,
+        null
+      ],
+      "interpretation": "No target at receipt price, all decline."
+    },
+    {
+      "case": "inherited_direct_prefix_other_price_rival",
+      "fragment": "PT-DRL-MAK-ABCDEF.",
+      "cents": 100,
+      "catalogue": [
+        {
+          "fixture_id": "direct_prefix",
+          "sku": "PT-DRL-MAK-ABCDEF-KIT",
+          "price_cents": 100
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101
+        }
+      ],
+      "expected": [
+        "direct_prefix",
+        "direct_prefix",
+        "direct_prefix",
+        "direct_prefix"
+      ],
+      "interpretation": "All-price guard was never universal: direct-prefix route already bypasses it in parent/X10; this is not a new H4 regression."
+    }
+  ]
+}

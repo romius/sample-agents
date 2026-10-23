@@ -1,0 +1,555 @@
+{
+  "status": "manual source-fact oracle verified; not benchmark regrading",
+  "cases": [
+    {
+      "task": "t023",
+      "upload_path": "/uploads/hrNh9v44_receipt_ocr.txt",
+      "upload_content_sha256": "098af54b122847096d977fc8160198a58ac952ec63715cea52471ec9a8ff7254",
+      "policy_content_sha256": "64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080",
+      "branch_path": "/proc/stores/store-linz-hafen.json",
+      "branch_content_sha256": "9a85d14dbb9ce882bbf877851d8725df7f4d75531b2ee0f2b0d09f67a7cbc2e8",
+      "branch_is_open": true,
+      "manual_transcription_subtotal": 70460,
+      "items": [
+        {
+          "quantity": 1,
+          "unit_cents": 24990,
+          "OCR_fragment": "PT-HDG-ST1-HSA50-AK10",
+          "manual_resolved_SKU": "PT-HDG-STI-HSA50-AK10",
+          "product_name": "Stihl HSA 50 hedge trimmer set AK 10",
+          "product_path": "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+          "product_content_sha256": "bc17336a4b1c9c1c7c5f815f62012ff26ab0c3c7a1b4e4eda78803d6dfdcf38e",
+          "actual_inventory_row": {
+            "sku": "PT-HDG-STI-HSA50-AK10",
+            "on_hand": 3,
+            "reserved": 3
+          },
+          "same_day_available": 0,
+          "short": true
+        },
+        {
+          "quantity": 1,
+          "unit_cents": 29990,
+          "OCR_fragment": "PT-GRD-MET-W18-125-4AH",
+          "manual_resolved_SKU": "PT-GRD-MET-W18-125-4AH",
+          "product_name": "Metabo W 18 LTX 125 angle grinder kit 2x4.0Ah",
+          "product_path": "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+          "product_content_sha256": "51395e2d4870e1db3c1c5294ddd44c51e9bfaaa786979c885b77b48e288211e7",
+          "actual_inventory_row": {
+            "sku": "PT-GRD-MET-W18-125-4AH",
+            "on_hand": 0,
+            "reserved": 0,
+            "incoming": [
+              {
+                "quantity": 2,
+                "arrival_in_days": 7
+              }
+            ]
+          },
+          "same_day_available": 0,
+          "short": true
+        },
+        {
+          "quantity": 1,
+          "unit_cents": 10990,
+          "OCR_fragment": "PT-SND-E1N-TRS18-25",
+          "manual_resolved_SKU": "PT-SND-EIN-TERS18-25",
+          "product_name": "Einhell TE-RS 18 Li sander starter kit",
+          "product_path": "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+          "product_content_sha256": "b6e8ded76115f923a5f9ccc0dbb14e821015579c2133fec09847cf5a4f11168c",
+          "actual_inventory_row": {
+            "sku": "PT-SND-EIN-TERS18-25",
+            "on_hand": 0,
+            "reserved": 0,
+            "incoming": [
+              {
+                "quantity": 8,
+                "arrival_in_days": 7
+              }
+            ]
+          },
+          "same_day_available": 0,
+          "short": true
+        },
+        {
+          "quantity": 1,
+          "unit_cents": 4490,
+          "OCR_fragment": "PT-B1T-ALP-HSS-REUCED",
+          "manual_resolved_SKU": "PT-BIT-ALP-HSS-REDUCED",
+          "product_name": "Alpen HSS Sprint reduced-shank drill bit set 6-piece",
+          "product_path": "/proc/catalog/Alpen/PT-BIT-ALP-HSS-REDUCED.json",
+          "product_content_sha256": "9b9a5f3fc9beafd9d3abc3cc31fe743605f975a3e6dbce21436c9a040a77b658",
+          "actual_inventory_row": {
+            "sku": "PT-BIT-ALP-HSS-REDUCED",
+            "on_hand": 0,
+            "reserved": 0,
+            "incoming": [
+              {
+                "quantity": 2,
+                "arrival_in_days": 3
+              }
+            ]
+          },
+          "same_day_available": 0,
+          "short": true
+        }
+      ],
+      "all_selected_inventory_rows_explicit": true,
+      "availability_oracle": "negative; one or more required quantities exceeds max(on_hand-reserved,0), incoming excluded for today",
+      "arms": [
+        {
+          "arm": "d4353",
+          "parsed_items": [
+            [
+              1,
+              24990,
+              "PT-HDG-ST1-HSA50-AK10"
+            ],
+            [
+              1,
+              29990,
+              "PT-GRD-MET-W18-125-4AH"
+            ],
+            [
+              1,
+              10990,
+              "PT-SND-E1N-TRS18-25"
+            ],
+            [
+              1,
+              4490,
+              "PT-B1T-ALP-HSS-REUCED"
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-HDG-STI-HSA50-AK10",
+            "PT-GRD-MET-W18-125-4AH",
+            null,
+            null
+          ],
+          "resolved_count": 2,
+          "router_plus_fallback_boundaries": 2,
+          "deterministic_all_rows_resolved": false,
+          "answer": {
+            "message": "FALSE(2)",
+            "outcome": "OUTCOME_OK",
+            "refs": [
+              "/docs/security.md",
+              "/docs/checkout.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": true
+        },
+        {
+          "arm": "d4353_H4",
+          "parsed_items": [
+            [
+              1,
+              24990,
+              "PT-HDG-ST1-HSA50-AK10"
+            ],
+            [
+              1,
+              29990,
+              "PT-GRD-MET-W18-125-4AH"
+            ],
+            [
+              1,
+              10990,
+              "PT-SND-E1N-TRS18-25"
+            ],
+            [
+              1,
+              4490,
+              "PT-B1T-ALP-HSS-REUCED"
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-HDG-STI-HSA50-AK10",
+            "PT-GRD-MET-W18-125-4AH",
+            null,
+            null
+          ],
+          "resolved_count": 2,
+          "router_plus_fallback_boundaries": 2,
+          "deterministic_all_rows_resolved": false,
+          "answer": {
+            "message": "FALSE(2)",
+            "outcome": "OUTCOME_OK",
+            "refs": [
+              "/docs/security.md",
+              "/docs/checkout.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": true
+        },
+        {
+          "arm": "X10",
+          "parsed_items": [
+            [
+              1,
+              24990,
+              "PT-HDG-ST1-HSA50-AK10"
+            ],
+            [
+              1,
+              29990,
+              "PT-GRD-MET-W18-125-4AH"
+            ],
+            [
+              1,
+              10990,
+              "PT-SND-E1N-TRS18-25"
+            ],
+            [
+              1,
+              4490,
+              "PT-B1T-ALP-HSS-REUCED"
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-HDG-STI-HSA50-AK10",
+            "PT-GRD-MET-W18-125-4AH",
+            "PT-SND-EIN-TERS18-25",
+            "PT-BIT-ALP-HSS-REDUCED"
+          ],
+          "resolved_count": 4,
+          "router_plus_fallback_boundaries": 1,
+          "deterministic_all_rows_resolved": true,
+          "answer": {
+            "message": "FALSE(2)",
+            "outcome": "OUTCOME_OK",
+            "refs": [
+              "/uploads/hrNh9v44_receipt_ocr.txt",
+              "/proc/stores/store-linz-hafen.json",
+              "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+              "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+              "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+              "/proc/catalog/Alpen/PT-BIT-ALP-HSS-REDUCED.json",
+              "/docs/security.md",
+              "/docs/availability-checks.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": false
+        },
+        {
+          "arm": "X10_H4",
+          "parsed_items": [
+            [
+              1,
+              24990,
+              "PT-HDG-ST1-HSA50-AK10"
+            ],
+            [
+              1,
+              29990,
+              "PT-GRD-MET-W18-125-4AH"
+            ],
+            [
+              1,
+              10990,
+              "PT-SND-E1N-TRS18-25"
+            ],
+            [
+              1,
+              4490,
+              "PT-B1T-ALP-HSS-REUCED"
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-HDG-STI-HSA50-AK10",
+            "PT-GRD-MET-W18-125-4AH",
+            "PT-SND-EIN-TERS18-25",
+            "PT-BIT-ALP-HSS-REDUCED"
+          ],
+          "resolved_count": 4,
+          "router_plus_fallback_boundaries": 1,
+          "deterministic_all_rows_resolved": true,
+          "answer": {
+            "message": "FALSE(2)",
+            "outcome": "OUTCOME_OK",
+            "refs": [
+              "/uploads/hrNh9v44_receipt_ocr.txt",
+              "/proc/stores/store-linz-hafen.json",
+              "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+              "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+              "/proc/catalog/Einhell/PT-SND-EIN-TERS18-25.json",
+              "/proc/catalog/Alpen/PT-BIT-ALP-HSS-REDUCED.json",
+              "/docs/security.md",
+              "/docs/availability-checks.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": false
+        }
+      ]
+    },
+    {
+      "task": "t063",
+      "upload_path": "/uploads/AztYLH6h_receipt_ocr.txt",
+      "upload_content_sha256": "b395a9a5c02318fd68d774f25e6480de326cce9723fd2b2a7877c5592b9349ce",
+      "policy_content_sha256": "64056696a13636249d1d5f48db85f9d5b24332cefcbdfad83d2820b080f68080",
+      "branch_path": "/proc/locations/Vienna/store-vie-favoriten.json",
+      "branch_content_sha256": "dda06bdf58db77d11abf3ca81022b2e331366cade7014916f06db64d76947c1b",
+      "branch_is_open": true,
+      "manual_transcription_subtotal": 518850,
+      "items": [
+        {
+          "quantity": 1,
+          "unit_cents": 42990,
+          "OCR_fragment": "PT-SAW-AK-DHS680-5.",
+          "manual_resolved_SKU": "PT-SAW-MAK-DHS680-5AH",
+          "product_name": "Makita DHS680 LXT circular saw kit 2x5.0Ah",
+          "product_path": "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+          "product_content_sha256": "df143c0d3dba4fbfecae1a2794a5eac827f4b086e59c2b81be7214fa82484ddb",
+          "actual_inventory_row": {
+            "sku": "PT-SAW-MAK-DHS680-5AH",
+            "on_hand": 0,
+            "reserved": 0
+          },
+          "same_day_available": 0,
+          "short": true
+        },
+        {
+          "quantity": 12,
+          "unit_cents": 38990,
+          "OCR_fragment": "PT-MOW-STI-RMA235-A.",
+          "manual_resolved_SKU": "PT-MOW-STI-RMA235-AK30",
+          "product_name": "Stihl RMA 235 lawn mower set AK 30",
+          "product_path": "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json",
+          "product_content_sha256": "b164948c68a876095daf8316fea64e82e38b833221633eb64545ab5b684564f9",
+          "actual_inventory_row": {
+            "sku": "PT-MOW-STI-RMA235-AK30",
+            "on_hand": 8,
+            "reserved": 1
+          },
+          "same_day_available": 7,
+          "short": true
+        },
+        {
+          "quantity": 1,
+          "unit_cents": 3490,
+          "OCR_fragment": "PT-IT-BO5-CYL9-12",
+          "manual_resolved_SKU": "PT-BIT-BOS-CYL9-12",
+          "product_name": "Bosch CYL-9 MultiConstruction drill bit set 12-piece",
+          "product_path": "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+          "product_content_sha256": "4e4331754a3cab5fc609920508ea1fa4815df1d1476dc00826f69af2f7a3499b",
+          "actual_inventory_row": {
+            "sku": "PT-BIT-BOS-CYL9-12",
+            "on_hand": 0,
+            "reserved": 0,
+            "incoming": [
+              {
+                "quantity": 4,
+                "arrival_in_days": 1
+              }
+            ]
+          },
+          "same_day_available": 0,
+          "short": true
+        },
+        {
+          "quantity": 1,
+          "unit_cents": 4490,
+          "OCR_fragment": "PT-BLA-BOS-EXPWOOD-.",
+          "manual_resolved_SKU": "PT-BLA-BOS-EXPWOOD-190",
+          "product_name": "Bosch Expert for Wood saw blade pack 190 mm",
+          "product_path": "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+          "product_content_sha256": "595c584eb9e6ab26f53c8152ad3b1fd0d1242b2b734165608ebc06168ef81179",
+          "actual_inventory_row": {
+            "sku": "PT-BLA-BOS-EXPWOOD-190",
+            "on_hand": 0,
+            "reserved": 0
+          },
+          "same_day_available": 0,
+          "short": true
+        }
+      ],
+      "all_selected_inventory_rows_explicit": true,
+      "availability_oracle": "negative; one or more required quantities exceeds max(on_hand-reserved,0), incoming excluded for today",
+      "arms": [
+        {
+          "arm": "d4353",
+          "parsed_items": [
+            [
+              1,
+              42990,
+              "PT-SAW-AK-DHS680-5."
+            ],
+            [
+              12,
+              38990,
+              "PT-MOW-STI-RMA235-A."
+            ],
+            [
+              1,
+              3490,
+              "PT-IT-BO5-CYL9-12"
+            ],
+            [
+              1,
+              4490,
+              "PT-BLA-BOS-EXPWOOD-."
+            ]
+          ],
+          "resolved_SKUs": [
+            null,
+            "PT-MOW-STI-RMA235-AK30",
+            null,
+            "PT-BLA-BOS-EXPWOOD-190"
+          ],
+          "resolved_count": 2,
+          "router_plus_fallback_boundaries": 2,
+          "deterministic_all_rows_resolved": false,
+          "answer": {
+            "message": "The current identity is not a customer, so you cannot purchase a basket.",
+            "outcome": "OUTCOME_DENIED_SECURITY",
+            "refs": [
+              "/bin/id",
+              "/docs/security.md",
+              "/docs/checkout.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": true
+        },
+        {
+          "arm": "d4353_H4",
+          "parsed_items": [
+            [
+              1,
+              42990,
+              "PT-SAW-AK-DHS680-5."
+            ],
+            [
+              12,
+              38990,
+              "PT-MOW-STI-RMA235-A."
+            ],
+            [
+              1,
+              3490,
+              "PT-IT-BO5-CYL9-12"
+            ],
+            [
+              1,
+              4490,
+              "PT-BLA-BOS-EXPWOOD-."
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-SAW-MAK-DHS680-5AH",
+            "PT-MOW-STI-RMA235-AK30",
+            null,
+            "PT-BLA-BOS-EXPWOOD-190"
+          ],
+          "resolved_count": 3,
+          "router_plus_fallback_boundaries": 2,
+          "deterministic_all_rows_resolved": false,
+          "answer": {
+            "message": "The current identity is not a customer, so you cannot purchase a basket.",
+            "outcome": "OUTCOME_DENIED_SECURITY",
+            "refs": [
+              "/bin/id",
+              "/docs/security.md",
+              "/docs/checkout.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": true
+        },
+        {
+          "arm": "X10",
+          "parsed_items": [
+            [
+              1,
+              42990,
+              "PT-SAW-AK-DHS680-5."
+            ],
+            [
+              12,
+              38990,
+              "PT-MOW-STI-RMA235-A."
+            ],
+            [
+              1,
+              3490,
+              "PT-IT-BO5-CYL9-12"
+            ],
+            [
+              1,
+              4490,
+              "PT-BLA-BOS-EXPWOOD-."
+            ]
+          ],
+          "resolved_SKUs": [
+            null,
+            "PT-MOW-STI-RMA235-AK30",
+            "PT-BIT-BOS-CYL9-12",
+            "PT-BLA-BOS-EXPWOOD-190"
+          ],
+          "resolved_count": 3,
+          "router_plus_fallback_boundaries": 2,
+          "deterministic_all_rows_resolved": false,
+          "answer": {
+            "message": "The current identity is not a customer, so you cannot purchase a basket.",
+            "outcome": "OUTCOME_DENIED_SECURITY",
+            "refs": [
+              "/bin/id",
+              "/docs/security.md",
+              "/docs/checkout.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": true
+        },
+        {
+          "arm": "X10_H4",
+          "parsed_items": [
+            [
+              1,
+              42990,
+              "PT-SAW-AK-DHS680-5."
+            ],
+            [
+              12,
+              38990,
+              "PT-MOW-STI-RMA235-A."
+            ],
+            [
+              1,
+              3490,
+              "PT-IT-BO5-CYL9-12"
+            ],
+            [
+              1,
+              4490,
+              "PT-BLA-BOS-EXPWOOD-."
+            ]
+          ],
+          "resolved_SKUs": [
+            "PT-SAW-MAK-DHS680-5AH",
+            "PT-MOW-STI-RMA235-AK30",
+            "PT-BIT-BOS-CYL9-12",
+            "PT-BLA-BOS-EXPWOOD-190"
+          ],
+          "resolved_count": 4,
+          "router_plus_fallback_boundaries": 1,
+          "deterministic_all_rows_resolved": true,
+          "answer": {
+            "message": "nein",
+            "outcome": "OUTCOME_OK",
+            "refs": [
+              "/uploads/AztYLH6h_receipt_ocr.txt",
+              "/proc/locations/Vienna/store-vie-favoriten.json",
+              "/proc/catalog/Makita/PT-SAW-MAK-DHS680-5AH.json",
+              "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json",
+              "/proc/catalog/Bosch Professional/PT-BIT-BOS-CYL9-12.json",
+              "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+              "/docs/security.md",
+              "/docs/availability-checks.md"
+            ]
+          },
+          "frozen_fallback_not_new_model_output": false
+        }
+      ]
+    }
+  ],
+  "scope": "actual archived worlds only; manual SKU/quantity transcription independently checked against source facts; no synthetic inventory or absent-row guessing"
+}

@@ -1,0 +1,22 @@
+--- X10
++++ X10_H4
+@@ -1872,6 +1872,10 @@
+   original = _receipt_original_items(text)
+   return original if original is not None else _receipt_original_items(text, True)
+ 
++def rcp_drop1(a, b):
++  return len(a) == len(b) + 1 and any(a[:i] + a[i + 1:] == b for i in range(len(a)))
++
++
+ def rcp_product(fragment, cents):
+   key = ocr_key(fragment).rstrip(".")
+   cut = fragment.endswith((".", "-"))
+@@ -1882,6 +1886,8 @@
+       continue
+     if sku == key or (cut and len(key) >= 8 and sku.startswith(key)) or (len(key) >= 10 and len(sku) - len(key) <= 2 and sku.endswith(key)):
+       hits.append(product)
++  if not hits and cut and len(key) >= 10:
++    hits = [p for p in WORLD["products"] if p.get("price_cents") == cents and rcp_drop1(ocr_key(p.get("sku", ""))[:len(key) + 1], key)]
+   if not hits and len(key) >= 10:
+     near = sorted([(rcp_dist(ocr_key(p.get("sku", "")), key), p) for p in WORLD["products"] if p.get("price_cents") == cents], key=lambda n: n[0])
+     near = [n for n in near if n[0] <= 2]

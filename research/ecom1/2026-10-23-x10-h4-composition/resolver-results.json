@@ -1,0 +1,885 @@
+{
+  "status": "three H4-before-fuzzy guard bypass counterexamples reproduced; composition unqualified",
+  "source_pins": {
+    "d4353": "48e517632e1b193dd83a379ea8f79aca74af9ca90f59f0a3def0d728208d1d1a",
+    "d4353_H4": "f9352063f38e02eb831eb1a984ba9b4ef125e6ebbeb69e5daf2e201faa65a831",
+    "X10": "2c27fc301ce24bbb81803fa20ac105bdae7dabb990bbff5e90aef1e76932fd99",
+    "X10_H4": "f9f9c30406c5c1f0797c1b549d7a44952eab0bd9fdb7dc56dd2f357dbaa28d94"
+  },
+  "fixtures": 10,
+  "arm_permutation_cells": 80,
+  "native_and_CPython_evaluations": 160,
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "all_permutations_same_identity": true,
+  "rows": [
+    {
+      "arm": "d4353",
+      "case": "unique_truncated_drop",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "unique_truncated_drop",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "different_price_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "different_price_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "same_price_equal_distance_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "same_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "different_price_equal_distance_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "different_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "two_H4_hits",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "two_H4_hits",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "unique_nontruncated_drop",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "unique_nontruncated_drop",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "nontruncated_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "nontruncated_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "exact_same_price",
+      "order": "forward",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "exact_same_price",
+      "order": "reverse",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "wrong_price_only",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "wrong_price_only",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "forward",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "reverse",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "unique_truncated_drop",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "unique_truncated_drop",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "different_price_exact_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "different_price_exact_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "same_price_equal_distance_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "same_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "different_price_equal_distance_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "different_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "two_H4_hits",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "two_H4_hits",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "unique_nontruncated_drop",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "unique_nontruncated_drop",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "nontruncated_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "nontruncated_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "exact_same_price",
+      "order": "forward",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "exact_same_price",
+      "order": "reverse",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "wrong_price_only",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "wrong_price_only",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "forward",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "d4353_H4",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "reverse",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "unique_truncated_drop",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "unique_truncated_drop",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "different_price_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "different_price_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "same_price_equal_distance_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "same_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "different_price_equal_distance_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "different_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "two_H4_hits",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "two_H4_hits",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "unique_nontruncated_drop",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "unique_nontruncated_drop",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "nontruncated_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "nontruncated_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "exact_same_price",
+      "order": "forward",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "exact_same_price",
+      "order": "reverse",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "wrong_price_only",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "wrong_price_only",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "forward",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "reverse",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "unique_truncated_drop",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "unique_truncated_drop",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "different_price_exact_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "different_price_exact_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "same_price_equal_distance_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "same_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "different_price_equal_distance_rival",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "different_price_equal_distance_rival",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "two_H4_hits",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "two_H4_hits",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "unique_nontruncated_drop",
+      "order": "forward",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "unique_nontruncated_drop",
+      "order": "reverse",
+      "selected": "drop_candidate",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "nontruncated_exact_rival",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "nontruncated_exact_rival",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "exact_same_price",
+      "order": "forward",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "exact_same_price",
+      "order": "reverse",
+      "selected": "exact",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "wrong_price_only",
+      "order": "forward",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "wrong_price_only",
+      "order": "reverse",
+      "selected": null,
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "forward",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    },
+    {
+      "arm": "X10_H4",
+      "case": "inherited_direct_prefix_other_price_rival",
+      "order": "reverse",
+      "selected": "direct_prefix",
+      "CPython_native_parity": true
+    }
+  ],
+  "evidence": [
+    {
+      "case": "unique_truncated_drop",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": "drop_candidate",
+        "X10": "drop_candidate",
+        "X10_H4": "drop_candidate"
+      },
+      "interpretation": "H4 broadens bare parent; unique X10 fuzzy target also accepted."
+    },
+    {
+      "case": "different_price_exact_rival",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101,
+          "normalized_SKU": "PT-DR1-MAK-A8CDEF",
+          "full_edit_distance_to_key": 0,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": false
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": "drop_candidate",
+        "X10": null,
+        "X10_H4": "drop_candidate"
+      },
+      "interpretation": "Composition bypasses X10 global-price closer-rival rejection."
+    },
+    {
+      "case": "same_price_equal_distance_rival",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "same_price_substitution",
+          "sku": "PT-DRL-MAK-ABCDGF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAK-A8CDGF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": true
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": "drop_candidate",
+        "X10": null,
+        "X10_H4": "drop_candidate"
+      },
+      "interpretation": "Composition bypasses X10 same-price nearest-distance tie rejection."
+    },
+    {
+      "case": "different_price_equal_distance_rival",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "other_price_substitution",
+          "sku": "PT-DRL-MAK-ABCDGF",
+          "price_cents": 101,
+          "normalized_SKU": "PT-DR1-MAK-A8CDGF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": false
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": "drop_candidate",
+        "X10": null,
+        "X10_H4": "drop_candidate"
+      },
+      "interpretation": "Composition bypasses X10 all-price equal-distance rival rejection."
+    },
+    {
+      "case": "two_H4_hits",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "second_drop",
+          "sku": "PT-DRL-MAYK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAYK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": null,
+        "X10": null,
+        "X10_H4": null
+      },
+      "interpretation": "Ambiguous H4 hits remain rejected."
+    },
+    {
+      "case": "unique_nontruncated_drop",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": false,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": null,
+        "X10": "drop_candidate",
+        "X10_H4": "drop_candidate"
+      },
+      "interpretation": "H4 does not broaden nontruncated input; X10 fuzzy route unchanged."
+    },
+    {
+      "case": "nontruncated_exact_rival",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": false,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101,
+          "normalized_SKU": "PT-DR1-MAK-A8CDEF",
+          "full_edit_distance_to_key": 0,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": false
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": null,
+        "X10": null,
+        "X10_H4": null
+      },
+      "interpretation": "X10 global rival guard remains active without H4 cut trigger."
+    },
+    {
+      "case": "exact_same_price",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": false,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "exact",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAK-A8CDEF",
+          "full_edit_distance_to_key": 0,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": true
+        }
+      ],
+      "return_by_arm": {
+        "d4353": "exact",
+        "d4353_H4": "exact",
+        "X10": "exact",
+        "X10_H4": "exact"
+      },
+      "interpretation": "Clean exact match retained."
+    },
+    {
+      "case": "wrong_price_only",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "drop_candidate",
+          "sku": "PT-DRL-MAXK-ABCDEF",
+          "price_cents": 101,
+          "normalized_SKU": "PT-DR1-MAXK-A8CDEF",
+          "full_edit_distance_to_key": 1,
+          "H4_prefix_drop_positions": [
+            9
+          ],
+          "receipt_price_matches": false
+        }
+      ],
+      "return_by_arm": {
+        "d4353": null,
+        "d4353_H4": null,
+        "X10": null,
+        "X10_H4": null
+      },
+      "interpretation": "No target at receipt price, all decline."
+    },
+    {
+      "case": "inherited_direct_prefix_other_price_rival",
+      "normalized_fragment_key": "PT-DR1-MAK-A8CDEF",
+      "truncated_flag": true,
+      "catalogue_evidence": [
+        {
+          "fixture_id": "direct_prefix",
+          "sku": "PT-DRL-MAK-ABCDEF-KIT",
+          "price_cents": 100,
+          "normalized_SKU": "PT-DR1-MAK-A8CDEF-K1T",
+          "full_edit_distance_to_key": 4,
+          "H4_prefix_drop_positions": [
+            17
+          ],
+          "receipt_price_matches": true
+        },
+        {
+          "fixture_id": "exact_other_price",
+          "sku": "PT-DRL-MAK-ABCDEF",
+          "price_cents": 101,
+          "normalized_SKU": "PT-DR1-MAK-A8CDEF",
+          "full_edit_distance_to_key": 0,
+          "H4_prefix_drop_positions": [],
+          "receipt_price_matches": false
+        }
+      ],
+      "return_by_arm": {
+        "d4353": "direct_prefix",
+        "d4353_H4": "direct_prefix",
+        "X10": "direct_prefix",
+        "X10_H4": "direct_prefix"
+      },
+      "interpretation": "All-price guard was never universal: direct-prefix route already bypasses it in parent/X10; this is not a new H4 regression."
+    }
+  ],
+  "model_calls": 0,
+  "no_proposed_repair_applied": true
+}
