@@ -1,0 +1,28 @@
+{
+  "purpose": "Retarget initial review to immutable initial-prototype snapshot; do not reinterpret initial findings as current revision",
+  "copied_exact_initial_build_dependencies": {
+    "parent-readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "parent-decoded.py": "48e517632e1b193dd83a379ea8f79aca74af9ca90f59f0a3def0d728208d1d1a",
+    "parent.py": "588b654758ea1ee07935feeb65b430fb3b7a6ca40c4bd712b9de0517de6d3a2e",
+    "lzpack.py": "d93f463bd68d03438854f283ef7c478d72a8de236e71eba27a6bb10a7d50e02a"
+  },
+  "script_changes": {
+    "review.py": {
+      "before_sha256": "c00cffc9dcc376e97e49fc40f0593fb1046936844365abb2e24ee963a6a65a6a",
+      "after_sha256": "abdd64b2b14cf1e97443eb8b4ebad892755951f84cc8e209a6fe11c24d019b3d",
+      "change": "input path relocation only"
+    },
+    "build_reproduce.py": {
+      "before_sha256": "474b535902848a6fb90d0773eff371d67ae9697142a48fb751edfb6e649cdd36",
+      "after_sha256": "68d13fe69075de7da3307b8a095a33a2be6379bfe055cd02d561407500966142",
+      "change": "input path relocation only"
+    }
+  },
+  "preserved_initial_outputs": {
+    "REVIEW.md": "83146fa0d3450dbf89f4442c206b20a24a796b31b6cb6653248cb81b425cfb0c",
+    "results.json": "56b06a900bda0a671a956d16c2d01db738fdf0b038b5c08a7b82758f07027945",
+    "build-results.json": "6d422ad74bd2ea0778c505c077136527109c8217449a42693f57dd0763da9116"
+  },
+  "reproduction": "both scripts rerun under Python3.12.7; initial result bytes unchanged; isolated initial build exact",
+  "plan_path": "../2026-10-23-d4353-fallback-evidence-plan (sibling of receipt-handoff, unchanged)"
+}

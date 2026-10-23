@@ -1,0 +1,135 @@
+{
+  "status": "Plan only; no candidate source, model calls or runtime experiment",
+  "exact_parent": "d4353r1/d4354r1",
+  "parent_readable_sha256": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+  "observed_source": "d4702r1",
+  "same_function_AST": {
+    "receipt_availability": true,
+    "rcp_form": true,
+    "rcp_request": true,
+    "rcp_upload": true,
+    "rcp_items": true,
+    "rcp_product": true,
+    "rcp_store": true,
+    "receipt_refs": true,
+    "merged_refs": true,
+    "note_result": true,
+    "note_policy_read": true
+  },
+  "parent_function_locations": {
+    "receipt_availability": {
+      "line": 2146,
+      "end_line": 2187,
+      "sha256": "242604a2de1344b33f2fde54675ea9e896149f36aabbb9a8788249eb3a7b9b2e"
+    },
+    "rcp_form": {
+      "line": 2032,
+      "end_line": 2038,
+      "sha256": "20fa074ed62766a7fcaa1546af0be9edbbdbe83cf9d0108ea8d471adc6687262"
+    },
+    "rcp_request": {
+      "line": 2041,
+      "end_line": 2045,
+      "sha256": "0edc106c660b31591cd579017cc74a94fcd903d6a5f4c62225ad85cce04f1428"
+    },
+    "rcp_upload": {
+      "line": 2048,
+      "end_line": 2057,
+      "sha256": "6c4cbe80f8f8eb9a7cf3d9bf47e018f8b22ae9d63aa04b27ba1455afda254e2c"
+    },
+    "rcp_items": {
+      "line": 2118,
+      "end_line": 2120,
+      "sha256": "1412bd8f05a14e50956cae0e4e3c5aa1645fc551ff26d536e427c5b972bb7866"
+    },
+    "rcp_product": {
+      "line": 2122,
+      "end_line": 2132,
+      "sha256": "e9e0d5e66709a607882789fb97de3a7a12c2dce45435ef84a1a89d1a8400cff1"
+    },
+    "rcp_store": {
+      "line": 2135,
+      "end_line": 2143,
+      "sha256": "d8a8d7a700b395d78d13ffc72527364c91a7138d6c1bad0c31c2810d9a5eb7c8"
+    },
+    "receipt_refs": {
+      "line": 656,
+      "end_line": 681,
+      "sha256": "4e02dc3e2d6e6ae26f1ff8cd6b1ec6aa6f5a5ced232d699e6d39f3cb70ca5bf7"
+    },
+    "merged_refs": {
+      "line": 272,
+      "end_line": 300,
+      "sha256": "5aa16da1bf3c565d84c86acbc6b739f264af1fc48d183b17bf66db076149cb19"
+    },
+    "note_result": {
+      "line": 194,
+      "end_line": 221,
+      "sha256": "ebdf6deb3abb88592c750adec73390196e523a23e0783fb0a13e9cbdf44d074e"
+    },
+    "note_policy_read": {
+      "line": 224,
+      "end_line": 230,
+      "sha256": "2a073504ec418e85a461d82fc84add25b36f9abe05760fc4a097f4c287d1fa91"
+    }
+  },
+  "important_differences": [
+    "d4353 has direct bitgn.llm, d4702 wraps inference in MSR; all observed trigger replies were HTTP200.",
+    "observation() differs in its Exec error branch; Read formatting and the receipt helper path are unchanged.",
+    "Identical helper source establishes applicability of the boundary, not the same outcome in a different record-run world."
+  ],
+  "audit_seal_sha256": "e7af2fd4d41301d9a38a14a1b67f4e6f76b00a56543377a5fd465b6f9111d3d8",
+  "evidence": [
+    {
+      "task": "t023",
+      "policy_read_seq": 3567,
+      "upload_read_seq": 3571,
+      "model_request_seq": 3818,
+      "upload_path": "/uploads/hrNh9v44_receipt_ocr.txt",
+      "upload_content_sha256": "098af54b122847096d977fc8160198a58ac952ec63715cea52471ec9a8ff7254",
+      "upload_utf8_bytes": 1235,
+      "full_upload_present_in_actual_messages": false,
+      "upload_path_present_in_actual_messages": false,
+      "actual_message_count": 8,
+      "counterfactual_message_count": 10,
+      "actual_request_json_default_bytes": 16730,
+      "hypothetical_policy_and_upload_request_json_default_bytes": 19352,
+      "size_projection_limit": "Python default JSON serialization estimate only; actual SDK0.3.7/native request serialization must be checked before any candidate dispatch.",
+      "case_role": "Lost helper-read source before first main request"
+    },
+    {
+      "task": "t063",
+      "policy_read_seq": 9365,
+      "upload_read_seq": 9369,
+      "model_request_seq": 9616,
+      "upload_path": "/uploads/AztYLH6h_receipt_ocr.txt",
+      "upload_content_sha256": "b395a9a5c02318fd68d774f25e6480de326cce9723fd2b2a7877c5592b9349ce",
+      "upload_utf8_bytes": 1041,
+      "full_upload_present_in_actual_messages": false,
+      "upload_path_present_in_actual_messages": false,
+      "actual_message_count": 8,
+      "counterfactual_message_count": 10,
+      "actual_request_json_default_bytes": 16699,
+      "hypothetical_policy_and_upload_request_json_default_bytes": 19134,
+      "size_projection_limit": "Python default JSON serialization estimate only; actual SDK0.3.7/native request serialization must be checked before any candidate dispatch.",
+      "case_role": "Lost helper-read source before first main request"
+    },
+    {
+      "task": "t043",
+      "policy_read_seq": 6347,
+      "upload_read_seq": 6351,
+      "model_request_seq": 6376,
+      "upload_path": "/uploads/ccVybYAU_receipt_ocr.txt",
+      "upload_content_sha256": "dc2ff9f15de898711c7773a1871c5fa10337f3907d44484cb7af19ea5d3ab0fa",
+      "upload_utf8_bytes": 989,
+      "full_upload_present_in_actual_messages": true,
+      "upload_path_present_in_actual_messages": true,
+      "actual_message_count": 22,
+      "counterfactual_message_count": 24,
+      "actual_request_json_default_bytes": 25485,
+      "hypothetical_policy_and_upload_request_json_default_bytes": 27858,
+      "size_projection_limit": "Python default JSON serialization estimate only; actual SDK0.3.7/native request serialization must be checked before any candidate dispatch.",
+      "case_role": "Already-visible OCR control after explicit model reread; do not append duplicates"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "status": "bounded revision2 pressure checks passed; full-agent/wire qualification pending",
+  "pins": {
+    "handoff.py": "c532b5df31ea1d44947da33171da167d28b2408c81200ed5d746a617760cef75",
+    "build.py": "759bc9a36f51067179e3e9b382dc99b246a0710699662aec726ae23ba12489b3",
+    "readable.py": "03cfb7301e8e55fd3bf4b51e974264c4108ecdee76589b235604530205bc4939",
+    "agent.py": "1594a8403c660542dca851898ffc17a9cd0dd999f34dc854b09acf94f169497f"
+  },
+  "cases": [
+    {
+      "case": "pressure_count_0",
+      "before_bytes": 57349,
+      "after_bytes": 57349,
+      "added_after": 0,
+      "exact_parent_history_after_pressure": true
+    },
+    {
+      "case": "pressure_count_1",
+      "before_bytes": 61791,
+      "after_bytes": 57349,
+      "added_after": 0,
+      "exact_parent_history_after_pressure": true
+    },
+    {
+      "case": "pressure_count_2",
+      "before_bytes": 66233,
+      "after_bytes": 57349,
+      "added_after": 0,
+      "exact_parent_history_after_pressure": true
+    },
+    {
+      "case": "original_new_overflow_resolved",
+      "initial_candidate_bytes": 66961,
+      "revised_bytes": 57447,
+      "parent_bytes": 57447,
+      "exact_parent_messages": true
+    },
+    {
+      "case": "benign_identical",
+      "bytes": 9596,
+      "unchanged": true
+    },
+    {
+      "case": "forced_append_crosses_threshold",
+      "before_bytes": 55875,
+      "with_stop_bytes": 56037,
+      "after_bytes": 45971,
+      "exact_parent_forced_history": true
+    },
+    {
+      "case": "inherited_parent_overflow_preserved",
+      "bytes": 104149,
+      "not_claimed_fixed": true
+    },
+    {
+      "case": "range_survives_prior_history_pruning",
+      "original_prefix_and_final_pair_preserved": true
+    }
+  ],
+  "CPython_native_exact_parity": true,
+  "native_limits": {
+    "max_feed_duration_secs": 10,
+    "max_turn_duration_secs": 10,
+    "max_suspensions": 1000
+  },
+  "python": "3.14.3",
+  "monty": "1.2.0",
+  "two_source_callsites_verified": true,
+  "provenance_callback_stubbed": true,
+  "model_calls": 0
+}

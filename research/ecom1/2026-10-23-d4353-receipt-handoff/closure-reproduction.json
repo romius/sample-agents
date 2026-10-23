@@ -1,0 +1,27 @@
+{
+  "status": "PASS",
+  "scripts": [
+    "build.py",
+    "test_native_structure.py",
+    "independent/review.py",
+    "independent/build_reproduce.py",
+    "independent/revision2/review.py",
+    "independent/wire-review/review.py",
+    "whole-agent/reproduce.py"
+  ],
+  "compared_files": 111,
+  "byte_identical_files": 110,
+  "metadata_only_differences": {
+    "independent/build-results.json": {
+      "python": [
+        "3.12.7",
+        "3.14.3"
+      ]
+    }
+  },
+  "whole_agent_executions": 336,
+  "native_structural_executions": 23,
+  "no_network_or_model_calls": true,
+  "private_wire_encoding_verified": false,
+  "live_model_or_score_improvement_established": false
+}

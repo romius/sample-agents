@@ -1,0 +1,186 @@
+{
+  "status": "structural controls executed; history-cap counterexample found",
+  "source_pins": {
+    "handoff.py": "47caf25bcc9e1dfad6a578728ec630fbd13e390a4c4d186e3ab2abcb76f90c35",
+    "build.py": "05a27dea0ea56ad574119d9b5b628174504a467b416a777db7823edc53cdb5d3",
+    "parent-readable.py": "f898132a754187b0052a637e1ca4caaccdd3ac46f72df80bc11d2b37b3737d0b",
+    "agent.py": "be2da6a9169f42472cd5f363180b48bacb07c4ac75ef4ead250784c0d8e551b3"
+  },
+  "checks": [
+    {
+      "case": "normal_complete",
+      "added": 2,
+      "serialized_messages_bytes": 800,
+      "source_bytes_preserved": true
+    },
+    {
+      "case": "complete_existing_observations",
+      "byte_identical": true,
+      "provenance_unchanged": true
+    },
+    {
+      "case": "repeated_handoff",
+      "idempotent": true
+    },
+    {
+      "case": "conflicting_prior_content",
+      "explicit_descriptor": true,
+      "upload_provenance_not_promoted": true,
+      "prior_bytes_untouched": true
+    },
+    {
+      "case": "server_truncated",
+      "descriptor_only": true,
+      "serialized_bytes": 947
+    },
+    {
+      "case": "oversize_characters",
+      "descriptor_only": true,
+      "serialized_bytes": 926
+    },
+    {
+      "case": "oversize_escaped_bytes",
+      "descriptor_only": true,
+      "serialized_bytes": 926
+    },
+    {
+      "case": "oversized_metadata",
+      "whole_transfer_rejected": true
+    },
+    {
+      "case": "bootstrap_already_over_cap",
+      "unchanged": true
+    },
+    {
+      "case": "invalid_capture_shapes",
+      "five_rejected": true
+    },
+    {
+      "case": "reference_ablation",
+      "results": {
+        "neither": {
+          "messages_bytes": 164,
+          "refs_by_outcome": {
+            "OUTCOME_OK": [],
+            "OUTCOME_NONE_CLARIFICATION": [],
+            "OUTCOME_NONE_UNSUPPORTED": [],
+            "OUTCOME_DENIED_SECURITY": []
+          }
+        },
+        "context_only": {
+          "messages_bytes": 800,
+          "refs_by_outcome": {
+            "OUTCOME_OK": [],
+            "OUTCOME_NONE_CLARIFICATION": [],
+            "OUTCOME_NONE_UNSUPPORTED": [],
+            "OUTCOME_DENIED_SECURITY": []
+          }
+        },
+        "provenance_only": {
+          "messages_bytes": 164,
+          "refs_by_outcome": {
+            "OUTCOME_OK": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_NONE_CLARIFICATION": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_NONE_UNSUPPORTED": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_DENIED_SECURITY": [
+              "/docs/availability-checks.md"
+            ]
+          }
+        },
+        "combined": {
+          "messages_bytes": 800,
+          "refs_by_outcome": {
+            "OUTCOME_OK": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_NONE_CLARIFICATION": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_NONE_UNSUPPORTED": [
+              "/uploads/receipt.txt",
+              "/docs/availability-checks.md"
+            ],
+            "OUTCOME_DENIED_SECURITY": [
+              "/docs/availability-checks.md"
+            ]
+          }
+        }
+      },
+      "limitation": "receipt_refs stubbed to identity; exact generic merged_refs only, not full answer path"
+    },
+    {
+      "case": "history_cap_counterexample",
+      "parent_messages_bytes": 57447,
+      "candidate_messages_bytes": 66961,
+      "candidate_protected_prefix_bytes": 53588,
+      "last_pair_bytes": 13373,
+      "wrapper_not_included": true,
+      "violation_before_sdk_wrapper": true
+    },
+    {
+      "case": "forced_report",
+      "candidate_after_append_bytes": 67123,
+      "no_postappend_bound_in_parent": true
+    },
+    {
+      "case": "injection_payload",
+      "bytes_preserved_as_existing_read_observation": true,
+      "system_unchanged": true,
+      "helper_performs_no_rpc": true,
+      "model_compliance_or_action_safety_not_established": true
+    },
+    {
+      "case": "missing_metadata",
+      "capture_accepts": true,
+      "hash_not_invented": true,
+      "limitation": "server metadata presence/hash validity not validated by helper"
+    },
+    {
+      "case": "three_archived_witness_projections",
+      "results": [
+        {
+          "task_id": "t023",
+          "before_messages": 8,
+          "after_messages": 10,
+          "before_bytes": 16471,
+          "after_bytes": 19475,
+          "byte_identical": false
+        },
+        {
+          "task_id": "t043",
+          "before_messages": 22,
+          "after_messages": 22,
+          "before_bytes": 25226,
+          "after_bytes": 25226,
+          "byte_identical": true
+        },
+        {
+          "task_id": "t063",
+          "before_messages": 8,
+          "after_messages": 10,
+          "before_bytes": 16440,
+          "after_bytes": 19257,
+          "byte_identical": false
+        }
+      ],
+      "not_full_world_replay": true
+    },
+    {
+      "case": "different_prior_metadata",
+      "explicit_conflict": true
+    }
+  ],
+  "scope": "CPython function-level extraction; no native whole-agent/model experiment; no semantic success claim",
+  "plan_sha256": "3b10cf4b6a511ed75a825161741c2082c8b738b82bb494af0c9fd7763a1d44ef"
+}

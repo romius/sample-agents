@@ -1,0 +1,272 @@
+{
+  "status": "PASS",
+  "whole_agent_executions": 336,
+  "native_executions": 168,
+  "no_rpc_changes_between_arms": true,
+  "no_derived_tree_used": true,
+  "mechanistic_ablation": [
+    {
+      "task": "t023",
+      "case": "archived",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "FALSE(2)",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "FALSE(2)",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/uploads/hrNh9v44_receipt_ocr.txt",
+            "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+            "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+            "/docs/checkout.md",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t023",
+      "case": "fixed_ok",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "TRUE(1)",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "TRUE(1)",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/uploads/hrNh9v44_receipt_ocr.txt",
+            "/proc/catalog/Stihl/PT-HDG-STI-HSA50-AK10.json",
+            "/proc/catalog/Metabo/PT-GRD-MET-W18-125-4AH.json",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t023",
+      "case": "fixed_denial",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "SCRIPTED denial",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "SCRIPTED denial",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t023",
+      "case": "fixed_clarification",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "SCRIPTED please clarify the receipt",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "SCRIPTED please clarify the receipt",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/uploads/hrNh9v44_receipt_ocr.txt",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t063",
+      "case": "archived",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "The current identity is not a customer, so you cannot purchase a basket.",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/bin/id",
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "The current identity is not a customer, so you cannot purchase a basket.",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/bin/id",
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t063",
+      "case": "fixed_ok",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "ja",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "ja",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/uploads/AztYLH6h_receipt_ocr.txt",
+            "/proc/locations/Vienna/store-vie-favoriten.json",
+            "/proc/catalog/Stihl/PT-MOW-STI-RMA235-AK30.json",
+            "/proc/catalog/Bosch Professional/PT-BLA-BOS-EXPWOOD-190.json",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t063",
+      "case": "fixed_denial",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "SCRIPTED denial",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "SCRIPTED denial",
+          "outcome": "OUTCOME_DENIED_SECURITY",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    },
+    {
+      "task": "t063",
+      "case": "fixed_clarification",
+      "main_messages_parent": 8,
+      "main_messages_combined": 10,
+      "rpc_calls_all_arms": 132,
+      "parent_answer": [
+        {
+          "message": "SCRIPTED please clarify the receipt",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md"
+          ]
+        }
+      ],
+      "combined_answer": [
+        {
+          "message": "SCRIPTED please clarify the receipt",
+          "outcome": "OUTCOME_NONE_CLARIFICATION",
+          "refs": [
+            "/docs/security.md",
+            "/docs/checkout.md",
+            "/uploads/AztYLH6h_receipt_ocr.txt",
+            "/docs/availability-checks.md"
+          ]
+        }
+      ],
+      "context_only_equals_parent_answer": true,
+      "provenance_only_equals_combined_answer": true,
+      "transferred_contents_exact": true
+    }
+  ],
+  "scope": "Fixed outputs; no actual task score or model response improvement established."
+}

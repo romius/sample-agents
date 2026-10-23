@@ -1,0 +1,311 @@
+{
+  "status": "offline request-value projections pass bounded conditional size checks; private encoder unverified",
+  "guide": "SDK0.3.7",
+  "observed_nonmessage_request_values": {
+    "model": "openai/gpt-oss-120b",
+    "reasoning": {
+      "effort": "medium"
+    },
+    "temperature": 0,
+    "max_tokens": 2048,
+    "stream": false,
+    "provider": {
+      "only": [
+        "deepinfra/bf16"
+      ],
+      "quantizations": [
+        "bf16"
+      ],
+      "allow_fallbacks": false,
+      "require_parameters": true
+    }
+  },
+  "actual_request_projections": [
+    {
+      "task_id": "t023",
+      "actual_trace_seq": 3818,
+      "actual_request_fields": [
+        "model",
+        "messages",
+        "reasoning",
+        "temperature",
+        "max_tokens",
+        "stream",
+        "provider"
+      ],
+      "actual_messages": 8,
+      "projected_messages": 10,
+      "source_events_seq": [
+        3567,
+        3571
+      ],
+      "actual_request_serializations": {
+        "escaped_default": 16730,
+        "escaped_compact": 16678,
+        "utf8_default": 16730,
+        "utf8_compact": 16678
+      },
+      "projected_request_serializations": {
+        "escaped_default": 19734,
+        "escaped_compact": 19674,
+        "utf8_default": 19734,
+        "utf8_compact": 19674
+      },
+      "projected_messages_serializations": {
+        "escaped_default": 19475,
+        "escaped_compact": 19436,
+        "utf8_default": 19475,
+        "utf8_compact": 19436
+      },
+      "default_envelope_overhead": 259,
+      "projected_default_envelope_overhead": 259,
+      "unchanged_nonmessage_values": true,
+      "hypothetical_not_wire": true
+    },
+    {
+      "task_id": "t063",
+      "actual_trace_seq": 9616,
+      "actual_request_fields": [
+        "model",
+        "messages",
+        "reasoning",
+        "temperature",
+        "max_tokens",
+        "stream",
+        "provider"
+      ],
+      "actual_messages": 8,
+      "projected_messages": 10,
+      "source_events_seq": [
+        9365,
+        9369
+      ],
+      "actual_request_serializations": {
+        "escaped_default": 16699,
+        "escaped_compact": 16647,
+        "utf8_default": 16699,
+        "utf8_compact": 16647
+      },
+      "projected_request_serializations": {
+        "escaped_default": 19516,
+        "escaped_compact": 19456,
+        "utf8_default": 19516,
+        "utf8_compact": 19456
+      },
+      "projected_messages_serializations": {
+        "escaped_default": 19257,
+        "escaped_compact": 19218,
+        "utf8_default": 19257,
+        "utf8_compact": 19218
+      },
+      "default_envelope_overhead": 259,
+      "projected_default_envelope_overhead": 259,
+      "unchanged_nonmessage_values": true,
+      "hypothetical_not_wire": true
+    },
+    {
+      "task_id": "t043",
+      "actual_trace_seq": 6376,
+      "actual_request_fields": [
+        "model",
+        "messages",
+        "reasoning",
+        "temperature",
+        "max_tokens",
+        "stream",
+        "provider"
+      ],
+      "actual_messages": 22,
+      "projected_messages": 22,
+      "source_events_seq": [
+        6347,
+        6351
+      ],
+      "actual_request_serializations": {
+        "escaped_default": 25485,
+        "escaped_compact": 25377,
+        "utf8_default": 25485,
+        "utf8_compact": 25377
+      },
+      "projected_request_serializations": {
+        "escaped_default": 25485,
+        "escaped_compact": 25377,
+        "utf8_default": 25485,
+        "utf8_compact": 25377
+      },
+      "projected_messages_serializations": {
+        "escaped_default": 25226,
+        "escaped_compact": 25139,
+        "utf8_default": 25226,
+        "utf8_compact": 25139
+      },
+      "default_envelope_overhead": 259,
+      "projected_default_envelope_overhead": 259,
+      "unchanged_nonmessage_values": true,
+      "hypothetical_not_wire": true
+    }
+  ],
+  "overhead_decomposition": [
+    {
+      "added_field": "messages object wrapper",
+      "default_bytes_increment": 14
+    },
+    {
+      "added_field": "model",
+      "default_bytes_increment": 32
+    },
+    {
+      "added_field": "reasoning",
+      "default_bytes_increment": 35
+    },
+    {
+      "added_field": "temperature",
+      "default_bytes_increment": 18
+    },
+    {
+      "added_field": "max_tokens",
+      "default_bytes_increment": 20
+    },
+    {
+      "added_field": "stream",
+      "default_bytes_increment": 17
+    },
+    {
+      "added_field": "provider",
+      "default_bytes_increment": 123
+    }
+  ],
+  "default_nonmessage_envelope_overhead": 259,
+  "conditional_cap_envelopes": [
+    {
+      "message_list_default_byte_cap": 54000,
+      "envelope_default_bytes_at_cap": 54259,
+      "margin_to_65536": 11277,
+      "conditional_on_observed_fields_and_serialization": true
+    },
+    {
+      "message_list_default_byte_cap": 56000,
+      "envelope_default_bytes_at_cap": 56259,
+      "margin_to_65536": 9277,
+      "conditional_on_observed_fields_and_serialization": true
+    }
+  ],
+  "serialization_stress": [
+    {
+      "case": "ascii",
+      "content_characters": 8900,
+      "content_utf8_bytes": 8900,
+      "envelope_serializations": {
+        "escaped_default": 9233,
+        "escaped_compact": 9205,
+        "utf8_default": 9233,
+        "utf8_compact": 9205
+      }
+    },
+    {
+      "case": "CJK",
+      "content_characters": 2200,
+      "content_utf8_bytes": 6600,
+      "envelope_serializations": {
+        "escaped_default": 13533,
+        "escaped_compact": 13505,
+        "utf8_default": 6933,
+        "utf8_compact": 6905
+      }
+    },
+    {
+      "case": "emoji",
+      "content_characters": 1100,
+      "content_utf8_bytes": 4400,
+      "envelope_serializations": {
+        "escaped_default": 13533,
+        "escaped_compact": 13505,
+        "utf8_default": 4733,
+        "utf8_compact": 4705
+      }
+    },
+    {
+      "case": "quotes_backslashes",
+      "content_characters": 7000,
+      "content_utf8_bytes": 7000,
+      "envelope_serializations": {
+        "escaped_default": 14333,
+        "escaped_compact": 14305,
+        "utf8_default": 14333,
+        "utf8_compact": 14305
+      }
+    },
+    {
+      "case": "newlines",
+      "content_characters": 8800,
+      "content_utf8_bytes": 8800,
+      "envelope_serializations": {
+        "escaped_default": 11333,
+        "escaped_compact": 11305,
+        "utf8_default": 11333,
+        "utf8_compact": 11305
+      }
+    }
+  ],
+  "long_history_and_forced": {
+    "parent": {
+      "messages_bytes": 57447,
+      "full_observed_envelope_bytes": 57706,
+      "under_65536_default": true
+    },
+    "initial_prototype": {
+      "messages_bytes": 66961,
+      "full_observed_envelope_bytes": 67220,
+      "under_65536_default": false
+    },
+    "revision2_main": {
+      "messages_bytes": 57447,
+      "full_observed_envelope_bytes": 57706,
+      "under_65536_default": true
+    },
+    "revision2_forced": {
+      "messages_bytes": 57609,
+      "full_observed_envelope_bytes": 57868,
+      "under_65536_default": true
+    },
+    "parent_forced": {
+      "messages_bytes": 57609,
+      "full_observed_envelope_bytes": 57868,
+      "under_65536_default": true
+    },
+    "inherited_parent_oversize": {
+      "messages_bytes": 104149,
+      "full_observed_envelope_bytes": 104408,
+      "under_65536_default": false
+    }
+  },
+  "what_is_observed": [
+    "actual llm_request event request object values",
+    "provider/model/settings as recorded",
+    "Read bytes transferred in counterfactual projected objects"
+  ],
+  "what_is_not_observed": [
+    "raw HTTP body bytes sent to OpenRouter",
+    "private SDK serializer/transport implementation",
+    "whether 64KiB guard measures exactly the trace request serialization",
+    "HTTP headers or provider-internal forwarding encodings"
+  ],
+  "no_private_encoder_claim": true,
+  "no_global_request_bound_claim": true,
+  "model_calls": 0,
+  "network_calls": 0,
+  "input_pins": {
+    "t023-policy.ndjson": "aa5c02e6cedc4fc5af17e127f88cb2fa3d0440ef698eea94f9da0c31172a2eee",
+    "t023-upload.ndjson": "5ac5aaf5c64bef5bffa35212615f08c0ae938019619c2845d9f3ee9973af2f67",
+    "t023-model-request.ndjson": "b02287192b9a072f0b93597eae8a87ae3fee6e36413073c3223a6fe5b0137c3e",
+    "t063-policy.ndjson": "78d872cbf912d006e010275ad5d7a41ca23444563e532f88c0037760db01ea45",
+    "t063-upload.ndjson": "21a61c1a71bb76cad7357d6bf1623737ce75d7620a54f20c4b1a1e4cd8f2d6c2",
+    "t063-model-request.ndjson": "0e74a21fd7ae3821b56a7fd979f3deb84dd6f3bb8eee3299832864d4154dc101",
+    "t043-policy.ndjson": "037f871d686c0b0a969c988a765dcc4bc0caa1e8d63ad93341ccfe067ea668c4",
+    "t043-upload.ndjson": "bd958399665f1490c04377da0ae2cf54f5a9d99621a5c456143f9c126ee3d034",
+    "t043-model-request.ndjson": "ec7641b88e4c48547cee662a48b923f23a657e5f87c4249745a052cc43e164fe",
+    "sdk-guide.json": "0d0974c0fa3615906189af39716382e7a5117a38550ff74ed6252d17239fb239",
+    "handoff.py": "c532b5df31ea1d44947da33171da167d28b2408c81200ed5d746a617760cef75",
+    "observation.py": "3955777ee247f31dc55859f49ffcd8c846068fc92f9245cd3702a9e7e8a53c80"
+  }
+}

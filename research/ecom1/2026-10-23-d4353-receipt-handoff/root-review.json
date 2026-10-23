@@ -1,0 +1,13 @@
+{
+  "status": "PASS bounded offline mechanisms; no live semantic or wire guarantee",
+  "source_sha256": "1594a8403c660542dca851898ffc17a9cd0dd999f34dc854b09acf94f169497f",
+  "root_review": [
+    "Read whole-agent replay/analyze/README and independent wire/pressure reviews.",
+    "336 whole-agent rerun passed after fixing discovered bytecode-cache packaging bug. Sources/results unchanged by test fix.",
+    "Self-contained closure reconstruction:110of111files byte-identical; sole difference is original build-report Python3.12.7 versus current3.14.3 metadata. All sources/test results exact.",
+    "Full worlds independently reconstructed again; actual t023 AGENTS paths confirm corrected prose.",
+    "First prototype size regression and corrected eviction behavior preserved; automatic references remain separately confounded."
+  ],
+  "not_submitted": true,
+  "next_question": "Does a live model use the transferred source appropriately, rather than denying employee access or acting on injected receipt instructions? Separate planned diagnostic, not a score claim."
+}
