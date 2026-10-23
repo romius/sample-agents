@@ -1,0 +1,41 @@
+{
+  "decision": "submit one full100 after refreshed record/queue",
+  "parent": "d4353r1",
+  "candidate": "d6729r1",
+  "candidate_bytes": 63411,
+  "candidate_sha256": "420e904a4cb502221f8609f99bd0f62370deda775abb41b5be9880042f0b7bf8",
+  "hypothesis": "Narrow ASCII hash-delimited scanline normalization permits valid OCR totals while preserving strict numeric/duplicate checks and all other parent behavior.",
+  "validation": "300 parser +112 whole-agent executions independently reviewed/reproduced; exact source archive independently extracted and repacked.",
+  "scope_limits": "Archived/fresh offline controls include scripted router/terminal and simulated mutation acknowledgement. No score gain established; d4702 t016 tilde/footer is not covered.",
+  "parent_record": 94.72095,
+  "record_job": "j6d6d4adb60f241a4a1d111a9719b59dc",
+  "parent_root_exact": true,
+  "remote_candidate_export_equal_local": true,
+  "own_outstanding_before": 0,
+  "own_finished": {
+    "d4955r1": {
+      "score": 87.107223,
+      "failed_trials": 0,
+      "model_calls": 267,
+      "reported_cost_usd": "0.054029475",
+      "cost_complete": true
+    },
+    "d5204r1": {
+      "score": 0,
+      "failed_trials": 100,
+      "model_calls": 0,
+      "reported_cost_usd": "0",
+      "cost_complete": true
+    }
+  },
+  "latest_peer_completed": "d5054r1 79.762495/100,16 execution failures; not a record",
+  "archive": "d6728r1",
+  "git_sources": "47912eb",
+  "git_publication": "2c90aed",
+  "full100_this_cycle": 1,
+  "limit": "normal two-outstanding; at most one new full100 per30minute cycle; inventory exception consumed",
+  "read_instructions": "d1r4",
+  "sdk": "0.3.7",
+  "community": "d6589r2 exclusion notes rechecked; broad search unavailable due4second walllimit, no speculative claim adopted",
+  "future": "Continue every-task result audit; promote only completed100 strict winner exact tested bytes."
+}
