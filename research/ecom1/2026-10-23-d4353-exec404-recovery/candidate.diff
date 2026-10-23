@@ -1,0 +1,33 @@
+--- d4353r1
++++ narrow-exec404
+@@ -703,6 +703,21 @@
+   message = str(exc)
+   if message.startswith("RuntimeError: "):
+     message = message[len("RuntimeError: "):]
++  if function["tool"] == "exec" and message.startswith("BitGN HTTP 404: "):
++    try:
++      detail = json.loads(message[len("BitGN HTTP 404: "):])
++    except (ValueError, TypeError):
++      return None
++    if (isinstance(detail, dict) and detail.get("code") == "not_found"
++        and isinstance(detail.get("message"), str)
++        and detail["message"].startswith("runtime tool not found:")):
++      return {"lookup_error": {"status": 404, "code": "not_found", "detail": detail},
++          "unavailable_tool": function.get("path", ""),
++          "guidance": "This executable is unavailable; the runtime did not run it. "
++                      "Exec is not a shell. Use native tree/list/find/search/read actions "
++                      "to discover and read records, or discover supported /bin tools. "
++                      "Do not repeat this executable or infer missing records from this error."}
++    return None
+   if message.startswith("BitGN HTTP 4") and not message.startswith("BitGN HTTP 404: "):
+     return {"lookup_error": {"status": message[11:14], "detail": message[16:]},
+         "guidance": "The runtime rejected this call; nothing was changed. Fix the "
+@@ -742,7 +757,7 @@
+     body = json.dumps(result)
+   if result.get("truncated") or len(body) > 10000:
+     body = body[:10000] + "\n[TRUNCATED: use a narrower query or line range.]"
+-  if function["tool"] == "exec" and (result.get("exitCode") or "lookup_error" in result):
++  if function["tool"] == "exec" and not result.get("unavailable_tool") and (result.get("exitCode") or "lookup_error" in result):
+     body += tool_help(function.get("path", ""))
+   return json.dumps(function) + "\n" + body
+ 

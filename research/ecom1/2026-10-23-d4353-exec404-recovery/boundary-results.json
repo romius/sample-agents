@@ -1,0 +1,873 @@
+{
+  "status": "PASS",
+  "scope": "Isolated exact function/native host boundary controls; whole-agent replay separate",
+  "representation": [
+    {
+      "name": "raw_http",
+      "python_host_exception_argument": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "native_guest_str": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "uncaught_final_line": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "matches_archived_final_line": false
+    },
+    {
+      "name": "archived_rpc_error",
+      "python_host_exception_argument": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "native_guest_str": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "uncaught_final_line": "RuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "matches_archived_final_line": true
+    },
+    {
+      "name": "incorrect_extra_prefix",
+      "python_host_exception_argument": "RuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "native_guest_str": "RuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "uncaught_final_line": "RuntimeError: RuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      "matches_archived_final_line": false
+    }
+  ],
+  "cases": [
+    [
+      "actual_raw",
+      "exec",
+      "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      true
+    ],
+    [
+      "actual_saved",
+      "exec",
+      "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      true
+    ],
+    [
+      "fresh_missing_binary",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"runtime tool not found: /bin/unavailable\"}",
+      true
+    ],
+    [
+      "generic404",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"not found\"}",
+      false
+    ],
+    [
+      "invoice404",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"invoice not found: INV-7\"}",
+      false
+    ],
+    [
+      "payment404",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"payment not found: pay-9\"}",
+      false
+    ],
+    [
+      "prefix_collision",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"runtime tool not foundry inventory missing\"}",
+      false
+    ],
+    [
+      "missing_colon",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"runtime tool not found\"}",
+      false
+    ],
+    [
+      "wrong_code",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"invoice_missing\", \"message\": \"runtime tool not found: not found\"}",
+      false
+    ],
+    [
+      "wrong_message_type",
+      "exec",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": [\"runtime tool not found: not found\"]}",
+      false
+    ],
+    [
+      "malformed_json",
+      "exec",
+      "BitGN HTTP 404: {broken",
+      false
+    ],
+    [
+      "array_json",
+      "exec",
+      "BitGN HTTP 404: []",
+      false
+    ],
+    [
+      "null_json",
+      "exec",
+      "BitGN HTTP 404: null",
+      false
+    ],
+    [
+      "wrong_status",
+      "exec",
+      "BitGN HTTP 500: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      false
+    ],
+    [
+      "extra_wrapper",
+      "exec",
+      "RuntimeError: RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+      false
+    ],
+    [
+      "read404",
+      "read",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"file not found\"}",
+      null
+    ],
+    [
+      "delete404",
+      "delete",
+      "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"not found\"}",
+      null
+    ],
+    [
+      "delete_malformed404",
+      "delete",
+      "BitGN HTTP 404: {broken",
+      null
+    ],
+    [
+      "non404400",
+      "exec",
+      "BitGN HTTP 400: invalid arguments",
+      null
+    ],
+    [
+      "non404429",
+      "exec",
+      "BitGN HTTP 429: retry later",
+      null
+    ],
+    [
+      "non404403",
+      "exec",
+      "BitGN HTTP 403: denied",
+      null
+    ]
+  ],
+  "results": {
+    "parent/CPython": {
+      "results": [
+        [
+          "actual_raw",
+          null,
+          null
+        ],
+        [
+          "actual_saved",
+          null,
+          null
+        ],
+        [
+          "fresh_missing_binary",
+          null,
+          null
+        ],
+        [
+          "generic404",
+          null,
+          null
+        ],
+        [
+          "invoice404",
+          null,
+          null
+        ],
+        [
+          "payment404",
+          null,
+          null
+        ],
+        [
+          "prefix_collision",
+          null,
+          null
+        ],
+        [
+          "missing_colon",
+          null,
+          null
+        ],
+        [
+          "wrong_code",
+          null,
+          null
+        ],
+        [
+          "wrong_message_type",
+          null,
+          null
+        ],
+        [
+          "malformed_json",
+          null,
+          null
+        ],
+        [
+          "array_json",
+          null,
+          null
+        ],
+        [
+          "null_json",
+          null,
+          null
+        ],
+        [
+          "wrong_status",
+          null,
+          null
+        ],
+        [
+          "extra_wrapper",
+          null,
+          null
+        ],
+        [
+          "read404",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "file not found"
+              }
+            },
+            "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+          },
+          "{\"tool\": \"read\", \"path\": \"/tmp/example\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"file not found\"}}, \"guidance\": \"This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly.\"}"
+        ],
+        [
+          "delete404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{\"code\": \"not_found\", \"message\": \"not found\"}"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{\\\"code\\\": \\\"not_found\\\", \\\"message\\\": \\\"not found\\\"}\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "delete_malformed404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{broken"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{broken\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "non404400",
+          {
+            "lookup_error": {
+              "status": "400",
+              "detail": "invalid arguments"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"400\", \"detail\": \"invalid arguments\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}\n[usage of /bin/ls]\nSCRIPTED help"
+        ],
+        [
+          "non404429",
+          {
+            "lookup_error": {
+              "status": "429",
+              "detail": "retry later"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"429\", \"detail\": \"retry later\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ],
+        [
+          "non404403",
+          {
+            "lookup_error": {
+              "status": "403",
+              "detail": "denied"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"403\", \"detail\": \"denied\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ]
+      ],
+      "help_calls": [
+        [
+          "Exec",
+          {
+            "path": "/bin/ls",
+            "args": [
+              "--help"
+            ]
+          }
+        ]
+      ]
+    },
+    "parent/native": {
+      "results": [
+        [
+          "actual_raw",
+          null,
+          null
+        ],
+        [
+          "actual_saved",
+          null,
+          null
+        ],
+        [
+          "fresh_missing_binary",
+          null,
+          null
+        ],
+        [
+          "generic404",
+          null,
+          null
+        ],
+        [
+          "invoice404",
+          null,
+          null
+        ],
+        [
+          "payment404",
+          null,
+          null
+        ],
+        [
+          "prefix_collision",
+          null,
+          null
+        ],
+        [
+          "missing_colon",
+          null,
+          null
+        ],
+        [
+          "wrong_code",
+          null,
+          null
+        ],
+        [
+          "wrong_message_type",
+          null,
+          null
+        ],
+        [
+          "malformed_json",
+          null,
+          null
+        ],
+        [
+          "array_json",
+          null,
+          null
+        ],
+        [
+          "null_json",
+          null,
+          null
+        ],
+        [
+          "wrong_status",
+          null,
+          null
+        ],
+        [
+          "extra_wrapper",
+          null,
+          null
+        ],
+        [
+          "read404",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "file not found"
+              }
+            },
+            "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+          },
+          "{\"tool\": \"read\", \"path\": \"/tmp/example\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"file not found\"}}, \"guidance\": \"This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly.\"}"
+        ],
+        [
+          "delete404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{\"code\": \"not_found\", \"message\": \"not found\"}"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{\\\"code\\\": \\\"not_found\\\", \\\"message\\\": \\\"not found\\\"}\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "delete_malformed404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{broken"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{broken\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "non404400",
+          {
+            "lookup_error": {
+              "status": "400",
+              "detail": "invalid arguments"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"400\", \"detail\": \"invalid arguments\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}\n[usage of /bin/ls]\nSCRIPTED help"
+        ],
+        [
+          "non404429",
+          {
+            "lookup_error": {
+              "status": "429",
+              "detail": "retry later"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"429\", \"detail\": \"retry later\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ],
+        [
+          "non404403",
+          {
+            "lookup_error": {
+              "status": "403",
+              "detail": "denied"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"403\", \"detail\": \"denied\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ]
+      ],
+      "help_calls": [
+        [
+          "Exec",
+          {
+            "path": "/bin/ls",
+            "args": [
+              "--help"
+            ]
+          }
+        ]
+      ]
+    },
+    "candidate/CPython": {
+      "results": [
+        [
+          "actual_raw",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: not found"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: not found\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "actual_saved",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: not found"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: not found\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "fresh_missing_binary",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: /bin/unavailable"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: /bin/unavailable\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "generic404",
+          null,
+          null
+        ],
+        [
+          "invoice404",
+          null,
+          null
+        ],
+        [
+          "payment404",
+          null,
+          null
+        ],
+        [
+          "prefix_collision",
+          null,
+          null
+        ],
+        [
+          "missing_colon",
+          null,
+          null
+        ],
+        [
+          "wrong_code",
+          null,
+          null
+        ],
+        [
+          "wrong_message_type",
+          null,
+          null
+        ],
+        [
+          "malformed_json",
+          null,
+          null
+        ],
+        [
+          "array_json",
+          null,
+          null
+        ],
+        [
+          "null_json",
+          null,
+          null
+        ],
+        [
+          "wrong_status",
+          null,
+          null
+        ],
+        [
+          "extra_wrapper",
+          null,
+          null
+        ],
+        [
+          "read404",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "file not found"
+              }
+            },
+            "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+          },
+          "{\"tool\": \"read\", \"path\": \"/tmp/example\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"file not found\"}}, \"guidance\": \"This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly.\"}"
+        ],
+        [
+          "delete404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{\"code\": \"not_found\", \"message\": \"not found\"}"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{\\\"code\\\": \\\"not_found\\\", \\\"message\\\": \\\"not found\\\"}\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "delete_malformed404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{broken"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{broken\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "non404400",
+          {
+            "lookup_error": {
+              "status": "400",
+              "detail": "invalid arguments"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"400\", \"detail\": \"invalid arguments\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}\n[usage of /bin/ls]\nSCRIPTED help"
+        ],
+        [
+          "non404429",
+          {
+            "lookup_error": {
+              "status": "429",
+              "detail": "retry later"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"429\", \"detail\": \"retry later\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ],
+        [
+          "non404403",
+          {
+            "lookup_error": {
+              "status": "403",
+              "detail": "denied"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"403\", \"detail\": \"denied\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ]
+      ],
+      "help_calls": [
+        [
+          "Exec",
+          {
+            "path": "/bin/ls",
+            "args": [
+              "--help"
+            ]
+          }
+        ]
+      ]
+    },
+    "candidate/native": {
+      "results": [
+        [
+          "actual_raw",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: not found"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: not found\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "actual_saved",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: not found"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: not found\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "fresh_missing_binary",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "runtime tool not found: /bin/unavailable"
+              }
+            },
+            "unavailable_tool": "/bin/ls",
+            "guidance": "This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"runtime tool not found: /bin/unavailable\"}}, \"unavailable_tool\": \"/bin/ls\", \"guidance\": \"This executable is unavailable; the runtime did not run it. Exec is not a shell. Use native tree/list/find/search/read actions to discover and read records, or discover supported /bin tools. Do not repeat this executable or infer missing records from this error.\"}"
+        ],
+        [
+          "generic404",
+          null,
+          null
+        ],
+        [
+          "invoice404",
+          null,
+          null
+        ],
+        [
+          "payment404",
+          null,
+          null
+        ],
+        [
+          "prefix_collision",
+          null,
+          null
+        ],
+        [
+          "missing_colon",
+          null,
+          null
+        ],
+        [
+          "wrong_code",
+          null,
+          null
+        ],
+        [
+          "wrong_message_type",
+          null,
+          null
+        ],
+        [
+          "malformed_json",
+          null,
+          null
+        ],
+        [
+          "array_json",
+          null,
+          null
+        ],
+        [
+          "null_json",
+          null,
+          null
+        ],
+        [
+          "wrong_status",
+          null,
+          null
+        ],
+        [
+          "extra_wrapper",
+          null,
+          null
+        ],
+        [
+          "read404",
+          {
+            "lookup_error": {
+              "status": 404,
+              "code": "not_found",
+              "detail": {
+                "code": "not_found",
+                "message": "file not found"
+              }
+            },
+            "guidance": "This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly."
+          },
+          "{\"tool\": \"read\", \"path\": \"/tmp/example\"}\n{\"lookup_error\": {\"status\": 404, \"code\": \"not_found\", \"detail\": {\"code\": \"not_found\", \"message\": \"file not found\"}}, \"guidance\": \"This lookup failed and returned no data. Discover the correct path with tree/list/find or use an observed path. This failure does not establish that the requested record is absent everywhere. Do not invent contents or cite an unread guessed path. If blocked, report the blocker honestly.\"}"
+        ],
+        [
+          "delete404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{\"code\": \"not_found\", \"message\": \"not found\"}"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{\\\"code\\\": \\\"not_found\\\", \\\"message\\\": \\\"not found\\\"}\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "delete_malformed404",
+          {
+            "delete_error": {
+              "status": 404,
+              "detail": "{broken"
+            },
+            "outcome_unconfirmed": true,
+            "guidance": "The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions."
+          },
+          "{\"tool\": \"delete\", \"path\": \"/tmp/example\"}\n{\"delete_error\": {\"status\": 404, \"detail\": \"{broken\"}, \"outcome_unconfirmed\": true, \"guidance\": \"The runtime reported not found for this Delete; its effect is unconfirmed. Do not retry this path. List the directory to check, continue with the remaining exact observed targets and report only confirmed deletions.\"}"
+        ],
+        [
+          "non404400",
+          {
+            "lookup_error": {
+              "status": "400",
+              "detail": "invalid arguments"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"400\", \"detail\": \"invalid arguments\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}\n[usage of /bin/ls]\nSCRIPTED help"
+        ],
+        [
+          "non404429",
+          {
+            "lookup_error": {
+              "status": "429",
+              "detail": "retry later"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"429\", \"detail\": \"retry later\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ],
+        [
+          "non404403",
+          {
+            "lookup_error": {
+              "status": "403",
+              "detail": "denied"
+            },
+            "guidance": "The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach."
+          },
+          "{\"tool\": \"exec\", \"path\": \"/bin/ls\"}\n{\"lookup_error\": {\"status\": \"403\", \"detail\": \"denied\"}, \"guidance\": \"The runtime rejected this call; nothing was changed. Fix the arguments (paths must be files where a file is expected) or choose another approach.\"}"
+        ]
+      ],
+      "help_calls": [
+        [
+          "Exec",
+          {
+            "path": "/bin/ls",
+            "args": [
+              "--help"
+            ]
+          }
+        ]
+      ]
+    }
+  },
+  "sql_exitCode1_observation_equal": true,
+  "classifier_evaluations": 84
+}

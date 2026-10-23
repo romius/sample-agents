@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "sealed_files_reproduced_unchanged": 516,
+  "scope": "Independent structural reproduction of reviewer judgments and targeted evidence, not full action history or new business-fact certification.",
+  "steps": [
+    {
+      "script": "build_review.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"successful_tasks\": 90,\n  \"unique_exact_events\": 394,\n  \"start_trial_events\": 90,\n  \"answer_requests\": 90,\n  \"answer_acknowledgements\": 90,\n  \"complete_agent_finished_outputs\": 90,\n  \"all_event_lengths_and_index_lengths_match\": true,\n  \"all_trial_instruction_ids_and_official_output_lengths_match\": true,\n  \"read_content_hashes_verified\": 1,\n  \"raw_complete_trial_cas_reassembly\": false,\n  \"invalid_action_tasks\": {\n    \"t002\": 2,\n    \"t020\": 1,\n    \"t021\": 1,\n    \"t025\": 1,\n    \"t065\": 1,\n    \"t091\": 2\n  },\n  \"all_agent_finished_usage_zero_model_calls\": true,\n  \"official_total_model_calls_successes\": 184,\n  \"model_calls_during_audit\": 0,\n  \"brain_mutations\": 0,\n  \"manual_judgments_not_automatic_semantic_scorer\": true\n}\n",
+      "stderr": ""
+    },
+    {
+      "script": "verify_targeted.py",
+      "exit_code": 0,
+      "stdout": "{\n  \"status\": \"passed\",\n  \"cleanup\": [\n    {\n      \"task_id\": \"t039\",\n      \"listed\": 12,\n      \"selected\": 7,\n      \"exact_delete_requests_and_success_acknowledgements\": true,\n      \"only_matching_delete_requests_in_complete_index\": true,\n      \"exact_sorted_final_answer\": true,\n      \"simulated_acknowledgements\": false,\n      \"post_delete_readback\": false\n    },\n    {\n      \"task_id\": \"t060\",\n      \"listed\": 4,\n      \"selected\": 4,\n      \"exact_delete_requests_and_success_acknowledgements\": true,\n      \"only_matching_delete_requests_in_complete_index\": true,\n      \"exact_sorted_final_answer\": true,\n      \"simulated_acknowledgements\": false,\n      \"post_delete_readback\": false\n    }\n  ],\n  \"export\": {\n    \"task_id\": \"t091\",\n    \"first_successfully_written_row_field_counts\": [\n      7,\n      8,\n      8,\n      8,\n      8,\n      8\n    ],\n    \"corrected_successfully_written_row_field_counts\": [\n      7,\n      7,\n      7,\n      7,\n      7,\n      7\n    ],\n    \"change_is_removal_of_one_trailing_zero_per_data_row\": true,\n    \"both_write_acknowledgements_actual\": true,\n    \"list_exports_404_recovered\": true,\n    \"forecast_numbers_independently_validated\": false\n  },\n  \"scope\": \"Literal archived List selection, actual mutation acknowledgement and CSV shape checks only; no automatic grading of arbitrary text or full CAS reconstruction.\"\n}\n",
+      "stderr": ""
+    }
+  ]
+}

@@ -1,0 +1,1555 @@
+{
+  "status": "PASS",
+  "executions": 32,
+  "cases": 8,
+  "runtime": "3.14.3",
+  "monty": "1.2.0",
+  "no_network_or_model_calls": true,
+  "scope": "All host failures and cancellation rejection are simulated, not observed live SDK cancellation behavior.",
+  "results": [
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "healthy",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json"
+      ],
+      "answer_attempts": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 119,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "healthy",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json"
+      ],
+      "answer_attempts": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 119,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_400_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 257,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_400_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 257,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_timeout_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 254,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_timeout_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 254,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_empty_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 226,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_empty_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 226,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_long_unknown_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 346,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_long_unknown_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 346,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_unicode_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 278,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_unicode_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 278,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "cancelled_and_answer_rejected",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [],
+      "model_calls": 1,
+      "stdout_bytes": 174,
+      "termination_error": "SIMULATED host refuses Answer after cancellation"
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "cancelled_and_answer_rejected",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [],
+      "model_calls": 1,
+      "stdout_bytes": 174,
+      "termination_error": "RuntimeError: SIMULATED host refuses Answer after cancellation"
+    },
+    {
+      "form": "readable.py",
+      "engine": "cpython",
+      "case": "third_value_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 249,
+      "termination_error": null
+    },
+    {
+      "form": "readable.py",
+      "engine": "native",
+      "case": "third_value_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 249,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "healthy",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json"
+      ],
+      "answer_attempts": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 119,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "healthy",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json"
+      ],
+      "answer_attempts": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+          "outcome": "OUTCOME_OK",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 119,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_400_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 257,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_400_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 257,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_timeout_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 254,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_timeout_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 254,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_empty_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 226,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_empty_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 226,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_long_unknown_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 346,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_long_unknown_after",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 346,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_unicode_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 278,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_unicode_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 278,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "cancelled_and_answer_rejected",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [],
+      "model_calls": 1,
+      "stdout_bytes": 174,
+      "termination_error": "SIMULATED host refuses Answer after cancellation"
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "cancelled_and_answer_rejected",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [],
+      "model_calls": 1,
+      "stdout_bytes": 174,
+      "termination_error": "RuntimeError: SIMULATED host refuses Answer after cancellation"
+    },
+    {
+      "form": "agent.py",
+      "engine": "cpython",
+      "case": "third_value_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 249,
+      "termination_error": null
+    },
+    {
+      "form": "agent.py",
+      "engine": "native",
+      "case": "third_value_error_before",
+      "attempts": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+      ],
+      "acknowledged": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "deleted": [
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp"
+      ],
+      "remaining": [
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+        "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json",
+        "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+        "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+      ],
+      "answer_attempts": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "accepted_answers": [
+        {
+          "message": "Cleanup stopped: deletion outcome unconfirmed for /tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp. Confirmed deleted paths:\n/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+          "outcome": "OUTCOME_ERR_INTERNAL",
+          "refs": [
+            "/tmp/scoped-cleanup-H54TXHks",
+            "/docs/security.md"
+          ]
+        }
+      ],
+      "model_calls": 1,
+      "stdout_bytes": 249,
+      "termination_error": null
+    }
+  ]
+}

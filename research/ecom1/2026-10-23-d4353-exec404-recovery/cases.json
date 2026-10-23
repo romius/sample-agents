@@ -1,0 +1,154 @@
+[
+  {
+    "name": "actual_boundary",
+    "error": "RuntimeError: BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+    "recover": true
+  },
+  {
+    "name": "raw_http_equivalent",
+    "error": "BitGN HTTP 404: {\"code\":\"not_found\",\"message\":\"runtime tool not found: not found\"}",
+    "recover": true
+  },
+  {
+    "name": "fresh_missing_executable",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"runtime tool not found: /bin/new-tool\"}",
+    "action": {
+      "tool": "exec",
+      "path": "/bin/new-tool",
+      "args": []
+    },
+    "recover": true
+  },
+  {
+    "name": "generic404",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"not found\"}"
+  },
+  {
+    "name": "invoice404",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"invoice not found: INV-7\"}",
+    "action": {
+      "tool": "exec",
+      "path": "/bin/invoice",
+      "args": [
+        "INV-7"
+      ]
+    }
+  },
+  {
+    "name": "payment404",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"payment not found: pay-9\"}",
+    "action": {
+      "tool": "exec",
+      "path": "/bin/payments",
+      "args": [
+        "pay-9"
+      ]
+    }
+  },
+  {
+    "name": "malformed_json",
+    "error": "BitGN HTTP 404: {broken"
+  },
+  {
+    "name": "array_json",
+    "error": "BitGN HTTP 404: []"
+  },
+  {
+    "name": "prefix_collision",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"runtime tool not foundry inventory missing\"}"
+  },
+  {
+    "name": "nonstring_message",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": [\"runtime tool not found: not found\"]}"
+  },
+  {
+    "name": "wrong_code",
+    "error": "BitGN HTTP 404: {\"code\": \"permission_denied\", \"message\": \"runtime tool not found: not found\"}"
+  },
+  {
+    "name": "non404500",
+    "error": "BitGN HTTP 500: runtime tool not found: not found"
+  },
+  {
+    "name": "non404400",
+    "error": "BitGN HTTP 400: invalid arguments",
+    "inherited_recovery": true
+  },
+  {
+    "name": "non404403",
+    "error": "BitGN HTTP 403: denied",
+    "inherited_recovery": true
+  },
+  {
+    "name": "existing_sql_exit1",
+    "result": {
+      "exitCode": 1,
+      "stderr": "SQL syntax error"
+    },
+    "action": {
+      "tool": "exec",
+      "path": "/bin/sql",
+      "args": [
+        "bad query"
+      ]
+    },
+    "inherited_recovery": true
+  },
+  {
+    "name": "healthy_exec",
+    "result": {
+      "stdout": "SCRIPTED success"
+    },
+    "inherited_recovery": true
+  },
+  {
+    "name": "delete404",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"not found\"}",
+    "action": {
+      "tool": "delete",
+      "path": "/tmp/scripted-target"
+    },
+    "inherited_recovery": true
+  },
+  {
+    "name": "delete_malformed404",
+    "error": "BitGN HTTP 404: {broken",
+    "action": {
+      "tool": "delete",
+      "path": "/tmp/scripted-target"
+    },
+    "inherited_recovery": true
+  },
+  {
+    "name": "delete500",
+    "error": "BitGN HTTP 500: failed",
+    "action": {
+      "tool": "delete",
+      "path": "/tmp/scripted-target"
+    }
+  },
+  {
+    "name": "invoice404_after_effect",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"invoice not found: INV-7\"}",
+    "action": {
+      "tool": "exec",
+      "path": "/bin/invoice",
+      "args": [
+        "INV-7"
+      ]
+    },
+    "side_effect": true
+  },
+  {
+    "name": "payment404_after_effect",
+    "error": "BitGN HTTP 404: {\"code\": \"not_found\", \"message\": \"payment not found: pay-9\"}",
+    "action": {
+      "tool": "exec",
+      "path": "/bin/payments",
+      "args": [
+        "pay-9"
+      ]
+    },
+    "side_effect": true
+  }
+]

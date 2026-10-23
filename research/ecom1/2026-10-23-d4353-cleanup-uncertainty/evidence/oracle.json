@@ -1,0 +1,24 @@
+{
+  "method": "Independent literal basename suffix rule from actual task and List entries; no candidate parser used",
+  "instruction": "Under /tmp/scoped-cleanup-H54TXHks, delete only files whose basename ends exactly in `.tmp`. Leave every other file there untouched. Return only the deleted paths, one per line, sorted alphabetically.",
+  "selected_paths": [
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp",
+    "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp"
+  ],
+  "unselected_paths": [
+    "/tmp/scoped-cleanup-H54TXHks/keep-export-00.log",
+    "/tmp/scoped-cleanup-H54TXHks/keep-export-01.json",
+    "/tmp/scoped-cleanup-H54TXHks/keep-export-02.log",
+    "/tmp/scoped-cleanup-H54TXHks/keep-export-03.json"
+  ],
+  "expected_message": "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp\n/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp\n/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+  "actual_deletes": [
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-00.tmp",
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-02.tmp",
+    "/tmp/scoped-cleanup-H54TXHks/scratch-report-03.tmp"
+  ],
+  "missing_actual_delete": "/tmp/scoped-cleanup-H54TXHks/stale-export-01.tmp",
+  "note": "Live grader confirms missing deletion. This oracle checks local simulated final state; it is not a fresh grade."
+}

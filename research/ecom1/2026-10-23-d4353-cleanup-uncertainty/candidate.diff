@@ -1,0 +1,13 @@
+--- d4353r1
++++ cleanup-uncertainty
+@@ -2641,6 +2641,10 @@
+             done.append(p)
+         except Exception as exc:
+             print("i2c cleanup: delete failed", p, str(exc)[:120])
++            return {"message": "Cleanup stopped: deletion outcome unconfirmed for " + p
++                    + ". Confirmed deleted paths:" + ("\n" + "\n".join(done) if done else " none"),
++                    "outcome": "OUTCOME_ERR_INTERNAL", "refs": [root, "/docs/security.md"],
++                    "why": "stopped after unconfirmed Delete; no retry"}
+     return {"message": "\n".join(done), "outcome": "OUTCOME_OK", "refs": [root, "/docs/security.md"],
+             "why": "deleted %d of %d" % (len(done), len(ents))}
+ 

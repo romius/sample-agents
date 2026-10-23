@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "cleanup": [
+    {
+      "task_id": "t039",
+      "listed": 12,
+      "selected": 7,
+      "exact_delete_requests_and_success_acknowledgements": true,
+      "only_matching_delete_requests_in_complete_index": true,
+      "exact_sorted_final_answer": true,
+      "simulated_acknowledgements": false,
+      "post_delete_readback": false
+    },
+    {
+      "task_id": "t060",
+      "listed": 4,
+      "selected": 4,
+      "exact_delete_requests_and_success_acknowledgements": true,
+      "only_matching_delete_requests_in_complete_index": true,
+      "exact_sorted_final_answer": true,
+      "simulated_acknowledgements": false,
+      "post_delete_readback": false
+    }
+  ],
+  "export": {
+    "task_id": "t091",
+    "first_successfully_written_row_field_counts": [
+      7,
+      8,
+      8,
+      8,
+      8,
+      8
+    ],
+    "corrected_successfully_written_row_field_counts": [
+      7,
+      7,
+      7,
+      7,
+      7,
+      7
+    ],
+    "change_is_removal_of_one_trailing_zero_per_data_row": true,
+    "both_write_acknowledgements_actual": true,
+    "list_exports_404_recovered": true,
+    "forecast_numbers_independently_validated": false
+  },
+  "scope": "Literal archived List selection, actual mutation acknowledgement and CSV shape checks only; no automatic grading of arbitrary text or full CAS reconstruction."
+}
